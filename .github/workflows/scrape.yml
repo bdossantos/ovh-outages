@@ -1,0 +1,29 @@
+name: Fetch latest OVH outages data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "1,16,31,46 * * * *"
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetches repo
+        uses: actions/checkout@v2
+      - name: Get and format api
+        run: |-
+          curl https://bare-metal-servers.status-ovhcloud.com/api/v2/summary.json | jq . > bare_metal_cloud_outages.json
+          curl https://hosted-private-cloud.status-ovhcloud.com/api/v2/summary.json | jq . > hosted_private_cloud_outages.json
+          curl https://network.status-ovhcloud.com/api/v2/summary.json | jq . > network_and_infrastructure_outages.json
+          curl https://public-cloud.status-ovhcloud.com/api/v2/summary.json | jq . > public_cloud_outages.json
+          curl https://web-cloud.status-ovhcloud.com/api/v2/summary.json | jq . > web_cloud_outages.json
+      - name: Add results to repo
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A *.json
+          timestamp=$(date -u -Is)
+          git commit -m "Update data on ${timestamp}"
+          git push
