@@ -23,7 +23,10 @@ jobs:
         run: |-
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
-          git add -A *.json
-          timestamp=$(date -u -Is)
-          git commit -m "Update data on ${timestamp}"
-          git push
+          if git add *.json; then
+            # check if there are any changes that are staged but not committed
+            if ! git diff --cached --exit-code; then
+              git commit -v -m "chore: automated build from $(git rev-parse --short HEAD)"
+              git push
+            fi
+          fi
