@@ -5,11 +5,11 @@ at [OVH](https://www.status-ovhcloud.com), a cloud computing platform.
 
 ## How to use
 
-- Visit the [history for the `bare_metal_cloud_outages.json`](https://github.com/marcolussetti/aws-outages/commits/main/bare_metal_cloud_outages.json) file.
-- Visit the [history for the `hosted_private_cloud_outages.json`](https://github.com/marcolussetti/aws-outages/commits/main/hosted_private_cloud_outages.json) file.
-- Visit the [history for the `network_and_infrastructure_outages.json`](https://github.com/marcolussetti/aws-outages/commits/main/network_and_infrastructure_outages.json) file.
-- Visit the [history for the `public_cloud_outages.json`](https://github.com/marcolussetti/aws-outages/commits/main/public_cloud_outages.json) file.
-- Visit the [history for the `web_cloud_outages.json`](https://github.com/marcolussetti/aws-outages/commits/main/web_cloud_outages.json) file.
+- Visit the [history for the `bare_metal_cloud_outages.json`](https://github.com/bdossantos/ovh-outages/commits/main/bare_metal_cloud_outages.json) file.
+- Visit the [history for the `hosted_private_cloud_outages.json`](https://github.com/bdossantos/ovh-outages/commits/main/hosted_private_cloud_outages.json) file.
+- Visit the [history for the `network_and_infrastructure_outages.json`](https://github.com/bdossantos/ovh-outages/commits/main/network_and_infrastructure_outages.json) file.
+- Visit the [history for the `public_cloud_outages.json`](https://github.com/bdossantos/ovh-outages/commits/main/public_cloud_outages.json) file.
+- Visit the [history for the `web_cloud_outages.json`](https://github.com/bdossantos/ovh-outages/commits/main/web_cloud_outages.json) file.
 
 ## Credits
 
