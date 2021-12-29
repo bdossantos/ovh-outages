@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-29T11:47:03.801Z"
+    "updated_at": "2021-12-29T12:37:23.170Z"
   },
   "components": [
     {
@@ -1288,9 +1288,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2021-12-29T10:31:07.248Z",
+      "updated_at": "2021-12-29T12:37:23.120Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1843,7 +1843,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2021-10-20T08:14:14.720Z",
       "position": 14,
@@ -2129,7 +2129,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "w3qg480c034n",
+      "name": "[EU RBX2A][Private Cloud] - tete-520",
+      "status": "investigating",
+      "created_at": "2021-12-29T12:37:23.088Z",
+      "updated_at": "2021-12-29T12:37:23.167Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kx539zfnrf4b",
+      "started_at": "2021-12-29T12:37:23.079Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "xy66c014mqk4",
+          "status": "investigating",
+          "body": "Please note the incident on <vcenter/vcsa/pcc master rbx2a/...>\n\nFollowing all the necessary information.\n\n<b>Start time :</b> 29/12/2021 11:38 UTC\n<b>User impact :</b> Datastore  unavailable: pcc-002561, pcc-002572 , pcc-003005 - \n<b>Technical impact (DC/geographical area) :</b> EU RBX2A\n<b>Root cause :</b> Diag in progress\n<b>Scope of impact :</b> tete-520 cluster is down\n<b>Time resolution :</b> Unknown ETA\n<b>On-going actions :</b> Diag in progress\n\nThank you for your understanding\n\nOVHcloud Technical team",
+          "incident_id": "w3qg480c034n",
+          "created_at": "2021-12-29T12:37:23.165Z",
+          "updated_at": "2021-12-29T12:37:23.165Z",
+          "display_at": "2021-12-29T12:37:23.165Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "degraded_performance",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2021-12-29T12:37:23.120Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "8xnpzl0h7b2y",
@@ -2801,7 +2854,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
