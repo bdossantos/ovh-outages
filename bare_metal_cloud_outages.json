@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2021-12-30T22:40:04.253Z"
+    "updated_at": "2021-12-31T10:52:25.786Z"
   },
   "components": [
     {
@@ -1182,9 +1182,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2021-12-27T08:47:01.461Z",
+      "updated_at": "2021-12-31T10:52:25.742Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1197,7 +1197,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1761,21 +1761,6 @@
       "only_show_if_degraded": false
     },
     {
-      "id": "cd2zv75llwvs",
-      "name": "SYD",
-      "status": "operational",
-      "created_at": "2021-07-09T07:32:39.942Z",
-      "updated_at": "2021-11-10T16:00:32.347Z",
-      "position": 8,
-      "description": null,
-      "showcase": false,
-      "start_date": "2021-07-09",
-      "group_id": "3ygk7lc032zm",
-      "page_id": "1qzzx4z9jvmv",
-      "group": false,
-      "only_show_if_degraded": false
-    },
-    {
       "id": "rv3d43gm55j6",
       "name": "SYD",
       "status": "operational",
@@ -1786,6 +1771,21 @@
       "showcase": false,
       "start_date": "2021-07-09",
       "group_id": "qbnk4c01glsl",
+      "page_id": "1qzzx4z9jvmv",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
+      "id": "cd2zv75llwvs",
+      "name": "SYD",
+      "status": "operational",
+      "created_at": "2021-07-09T07:32:39.942Z",
+      "updated_at": "2021-11-10T16:00:32.347Z",
+      "position": 8,
+      "description": null,
+      "showcase": false,
+      "start_date": "2021-07-09",
+      "group_id": "3ygk7lc032zm",
       "page_id": "1qzzx4z9jvmv",
       "group": false,
       "only_show_if_degraded": false
@@ -2127,6 +2127,58 @@
   ],
   "incidents": [
     {
+      "id": "cs188xg7l4zs",
+      "name": "[RBX2][Network] NASHA Zpool",
+      "status": "investigating",
+      "created_at": "2021-12-31T10:52:25.714Z",
+      "updated_at": "2021-12-31T10:52:25.784Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/v9sym1c5grgn",
+      "started_at": "2021-12-31T10:52:25.707Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2mqvpv9mg1x7",
+          "status": "investigating",
+          "body": "b>Start time :</b> 31/12/2021 08:00 UTC\n<b>User impact :</b> NASHA zpool-123641 zpool-123643 zpool-123646 zpool-123649 zpool-123848 zpool-124021 zpool-124418 zpool-125443 zpool-127482 zpool-128159\n<b>Technical impact (DC/geographical area) :</b> RBX2\n<b>Root cause :</b> service switch fault, software blocking point\n<b>Scope of impact :</b> NASHA tete-357a service switch fault\n<b>Time resolution :</b> Unknown ETA\n<b>On-going actions :</b> fix service switch",
+          "incident_id": "cs188xg7l4zs",
+          "created_at": "2021-12-31T10:52:25.782Z",
+          "updated_at": "2021-12-31T10:52:25.782Z",
+          "display_at": "2021-12-31T10:52:25.782Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2021-12-31T10:52:25.742Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "v2l2y7x0308s",
       "name": "[BHS1][Backup Storage] - ftpback-bhs1-130",
       "status": "investigating",
@@ -2374,9 +2426,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2021-12-27T08:47:01.461Z",
+          "updated_at": "2021-12-31T10:52:25.742Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2408,6 +2460,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
