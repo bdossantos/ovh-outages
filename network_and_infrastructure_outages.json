@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-04T06:00:30.665Z"
+    "updated_at": "2022-01-04T06:23:50.252Z"
   },
   "components": [
     {
@@ -607,9 +607,9 @@
     {
       "id": "84zk3wk4nv6k",
       "name": "Datacenters || WAW1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-10T14:20:54.627Z",
-      "updated_at": "2022-01-04T05:00:30.028Z",
+      "updated_at": "2022-01-04T06:17:06.867Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -815,7 +815,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ltjtbm4vrn8l",
+      "name": "[WAW1][Cooling System] - W14A15 / W14A14",
+      "status": "identified",
+      "created_at": "2022-01-04T06:17:06.845Z",
+      "updated_at": "2022-01-04T06:17:06.983Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/jhj9yfcc4v9q",
+      "started_at": "2022-01-04T06:17:06.841Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "mcw2s3bghm70",
+          "status": "identified",
+          "body": "<b>Start time :</b>  04/01/2022 05:45 UTC\n<b>Service impact :</b> 4 hosts from W14A15 and W14A14 are currently down\n<b>Root cause :</b> Water leak of one of the polards in W14A15\n<b>Ongoing actions :</b> Our teams are doing their best to solve the issue. We apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "ltjtbm4vrn8l",
+          "created_at": "2022-01-04T06:17:06.981Z",
+          "updated_at": "2022-01-04T06:17:06.981Z",
+          "display_at": "2022-01-04T06:17:06.981Z",
+          "affected_components": [
+            {
+              "code": "84zk3wk4nv6k",
+              "name": "Datacenters || WAW1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "84zk3wk4nv6k",
+          "name": "Datacenters || WAW1",
+          "status": "partial_outage",
+          "created_at": "2021-11-10T14:20:54.627Z",
+          "updated_at": "2022-01-04T06:17:06.867Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "lf1zdrjbs018",
@@ -1051,9 +1104,9 @@
         {
           "id": "84zk3wk4nv6k",
           "name": "Datacenters || WAW1",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-01-04T05:00:30.028Z",
+          "updated_at": "2022-01-04T06:17:06.867Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -2890,9 +2943,9 @@
         {
           "id": "84zk3wk4nv6k",
           "name": "Datacenters || WAW1",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-01-04T05:00:30.028Z",
+          "updated_at": "2022-01-04T06:17:06.867Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -3307,9 +3360,9 @@
         {
           "id": "84zk3wk4nv6k",
           "name": "Datacenters || WAW1",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-01-04T05:00:30.028Z",
+          "updated_at": "2022-01-04T06:17:06.867Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -3583,9 +3636,9 @@
         {
           "id": "84zk3wk4nv6k",
           "name": "Datacenters || WAW1",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-01-04T05:00:30.028Z",
+          "updated_at": "2022-01-04T06:17:06.867Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -5692,7 +5745,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
