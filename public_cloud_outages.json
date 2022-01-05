@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-05T12:23:47.561Z"
+    "updated_at": "2022-01-05T16:38:20.172Z"
   },
   "components": [
     {
@@ -267,9 +267,9 @@
     {
       "id": "xb1cxsvc2sz3",
       "name": "BHS1",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-05T14:38:23.776Z",
-      "updated_at": "2022-01-05T09:00:33.999Z",
+      "updated_at": "2022-01-05T16:29:34.466Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2210,7 +2210,7 @@
     {
       "id": "h194x5nqfv9k",
       "name": "Compute || BHS",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-05T14:38:25.565Z",
       "updated_at": "2021-11-05T14:41:17.078Z",
       "position": 18,
@@ -2381,263 +2381,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "vy97vltj8z1l",
-      "name": "[BHS][Public Network & Vrack] - Flapping network",
-      "status": "monitoring",
-      "created_at": "2022-01-05T11:36:25.559Z",
-      "updated_at": "2022-01-05T12:15:17.646Z",
-      "monitoring_at": "2022-01-05T12:15:17.631Z",
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/4ywp71hq5b92",
-      "started_at": "2022-01-05T11:36:25.539Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "g4b2rwcz4hlp",
-          "status": "monitoring",
-          "body": "Our engineers have restored traffic and isolated the equipment that caused the incident.\nWe are keeping the situation under observation",
-          "incident_id": "vy97vltj8z1l",
-          "created_at": "2022-01-05T12:15:17.631Z",
-          "updated_at": "2022-01-05T12:15:17.631Z",
-          "display_at": "2022-01-05T12:15:17.631Z",
-          "affected_components": [
-            {
-              "code": "d04h93qmzh02",
-              "name": "Network || Public Network - BHS1",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "bkqjybbympsb",
-              "name": "Network || Public Network - BHS3",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "w2mn3vz013gc",
-              "name": "Network || Public Network - BHS5",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "pg3c8dv017l9",
-              "name": "Network || Private network (vRack) - BHS1",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "nlkpwmqb3y9m",
-              "name": "Network || Private network (vRack) - BHS3",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "7ddm4y4m73l0",
-              "name": "Network || Private network (vRack) - BHS5",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "680khynxw98d",
-          "status": "identified",
-          "body": "Cause has been identified and our engineers are working on resolving the incident.",
-          "incident_id": "vy97vltj8z1l",
-          "created_at": "2022-01-05T11:59:56.031Z",
-          "updated_at": "2022-01-05T11:59:56.031Z",
-          "display_at": "2022-01-05T11:59:56.031Z",
-          "affected_components": [
-            {
-              "code": "d04h93qmzh02",
-              "name": "Network || Public Network - BHS1",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bkqjybbympsb",
-              "name": "Network || Public Network - BHS3",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "w2mn3vz013gc",
-              "name": "Network || Public Network - BHS5",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "pg3c8dv017l9",
-              "name": "Network || Private network (vRack) - BHS1",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "nlkpwmqb3y9m",
-              "name": "Network || Private network (vRack) - BHS3",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "7ddm4y4m73l0",
-              "name": "Network || Private network (vRack) - BHS5",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "m122ftpyggmj",
-          "status": "investigating",
-          "body": "<b>Start time :</b>  05/01/2022 11:00 UTC\n<b>Service impact :</b> We are experiencing network flap on BHS1, BHS2 and BHS3 regions. \n<b>Ongoing actions :</b>  Our engineers are currently investigating the root cause",
-          "incident_id": "vy97vltj8z1l",
-          "created_at": "2022-01-05T11:36:25.807Z",
-          "updated_at": "2022-01-05T11:36:25.807Z",
-          "display_at": "2022-01-05T11:36:25.807Z",
-          "affected_components": [
-            {
-              "code": "d04h93qmzh02",
-              "name": "Network || Public Network - BHS1",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "bkqjybbympsb",
-              "name": "Network || Public Network - BHS3",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "w2mn3vz013gc",
-              "name": "Network || Public Network - BHS5",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "pg3c8dv017l9",
-              "name": "Network || Private network (vRack) - BHS1",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "nlkpwmqb3y9m",
-              "name": "Network || Private network (vRack) - BHS3",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "7ddm4y4m73l0",
-              "name": "Network || Private network (vRack) - BHS5",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "d04h93qmzh02",
-          "name": "BHS1",
-          "status": "operational",
-          "created_at": "2021-07-08T08:15:50.874Z",
-          "updated_at": "2022-01-05T12:15:17.536Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-08",
-          "group_id": "b3zxrv8vsr9k",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "pg3c8dv017l9",
-          "name": "BHS1",
-          "status": "operational",
-          "created_at": "2021-11-05T14:37:32.731Z",
-          "updated_at": "2022-01-05T12:15:17.520Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "ph3zzlctfczb",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "nlkpwmqb3y9m",
-          "name": "BHS3",
-          "status": "operational",
-          "created_at": "2021-11-05T14:37:33.293Z",
-          "updated_at": "2022-01-05T12:15:17.551Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "ph3zzlctfczb",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "bkqjybbympsb",
-          "name": "BHS3",
-          "status": "operational",
-          "created_at": "2021-07-08T08:15:51.494Z",
-          "updated_at": "2022-01-05T12:15:17.566Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-08",
-          "group_id": "b3zxrv8vsr9k",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7ddm4y4m73l0",
-          "name": "BHS5",
-          "status": "operational",
-          "created_at": "2021-11-05T14:37:33.843Z",
-          "updated_at": "2022-01-05T12:15:17.581Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "ph3zzlctfczb",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "w2mn3vz013gc",
-          "name": "BHS5",
-          "status": "operational",
-          "created_at": "2021-07-08T08:15:52.122Z",
-          "updated_at": "2022-01-05T12:15:17.596Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-08",
-          "group_id": "b3zxrv8vsr9k",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
     {
       "id": "qb3lhfz66hz6",
       "name": "[SGP1][Compute] Limited b2 & c2 stock",
@@ -3104,93 +2847,6 @@
       "components": [],
       "scheduled_for": "2022-02-28T09:00:00.000Z",
       "scheduled_until": "2022-02-28T10:00:00.000Z"
-    },
-    {
-      "id": "pl9x7jmxp11r",
-      "name": "[BHS1][Public Cloud] Upgrade to Stein",
-      "status": "in_progress",
-      "created_at": "2021-12-10T22:43:25.754Z",
-      "updated_at": "2022-01-05T09:00:34.058Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6sv215q9ycny",
-      "started_at": "2021-12-10T22:43:25.748Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "1vfw2vdls15h",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "pl9x7jmxp11r",
-          "created_at": "2022-01-05T09:00:34.053Z",
-          "updated_at": "2022-01-05T09:00:34.053Z",
-          "display_at": "2022-01-05T09:00:34.053Z",
-          "affected_components": [
-            {
-              "code": "xb1cxsvc2sz3",
-              "name": "Compute || BHS - BHS1",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bb6ng08dj3jb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "pl9x7jmxp11r",
-          "created_at": "2022-01-05T08:00:31.660Z",
-          "updated_at": "2022-01-05T08:00:31.660Z",
-          "display_at": "2022-01-05T08:00:31.660Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "28qj1r74vw8z",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 05/01/2021 09:00 UTC \n<b>End time :</b> 05/01/2021 17:00 UTC\n<b>Service impact :</b> API unavailable / no action on manager for all BHS1\n<b>Service improvement :</b> Upgrade Openstack from Newton to Stein",
-          "incident_id": "pl9x7jmxp11r",
-          "created_at": "2021-12-10T22:43:25.806Z",
-          "updated_at": "2021-12-10T22:43:25.806Z",
-          "display_at": "2021-12-10T22:43:25.806Z",
-          "affected_components": [
-            {
-              "code": "xb1cxsvc2sz3",
-              "name": "Compute || BHS - BHS1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xb1cxsvc2sz3",
-          "name": "BHS1",
-          "status": "under_maintenance",
-          "created_at": "2021-11-05T14:38:23.776Z",
-          "updated_at": "2022-01-05T09:00:33.999Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "h194x5nqfv9k",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-05T09:00:00.000Z",
-      "scheduled_until": "2022-01-05T17:00:00.000Z"
     },
     {
       "id": "gstvml1nxkrj",
