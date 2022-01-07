@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-07T09:24:21.037Z"
+    "updated_at": "2022-01-07T16:25:23.449Z"
   },
   "components": [
     {
@@ -2384,9 +2384,9 @@
     {
       "id": "d69n13mj9jbl",
       "name": "[BHS1/SBG7/GRA9][vRack] - ARP spoof restricted",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2022-01-07T08:49:44.949Z",
-      "updated_at": "2022-01-07T08:49:45.027Z",
+      "updated_at": "2022-01-07T16:25:23.439Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2394,6 +2394,26 @@
       "started_at": "2022-01-07T08:49:44.941Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "dl2k83sg7msc",
+          "status": "identified",
+          "body": "<b>Root cause :</b> Configuration issue with port security groups implementation on vRack networks causing ARP spoofing to be restricted which is impacting when using an instance as a router such as pfSense\n<b>Ongoing actions :</b> Our engineers have identified the root cause and currently working on a patch. We will provide an ETA as soon as possible.",
+          "incident_id": "d69n13mj9jbl",
+          "created_at": "2022-01-07T16:25:23.436Z",
+          "updated_at": "2022-01-07T16:25:23.436Z",
+          "display_at": "2022-01-07T16:25:23.436Z",
+          "affected_components": [
+            {
+              "code": "pg3c8dv017l9",
+              "name": "Network || Private network (vRack) - BHS1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "b2xqtkh41lf7",
           "status": "investigating",
