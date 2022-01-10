@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-10T14:23:56.231Z"
+    "updated_at": "2022-01-10T14:45:18.127Z"
   },
   "components": [
     {
@@ -2127,63 +2127,11 @@
   ],
   "incidents": [
     {
-      "id": "c2rtj7sdl6s1",
-      "name": "[RBX7][Dedicated Servers] - R715A13",
-      "status": "investigating",
-      "created_at": "2022-01-10T13:53:15.642Z",
-      "updated_at": "2022-01-10T13:53:15.745Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/1n7vqt6hbrd3",
-      "started_at": "2022-01-10T13:53:15.633Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "d9s7q34dt5cf",
-          "status": "investigating",
-          "body": "<b>Start time :</b>  10/01/2022 13:42 UTC\n<b>Service impact :</b> The servers in the R715A13 rack are unreachable\n<b>Ongoing actions :</b> The technical teams are currently investigating",
-          "incident_id": "c2rtj7sdl6s1",
-          "created_at": "2022-01-10T13:53:15.741Z",
-          "updated_at": "2022-01-10T13:53:15.741Z",
-          "display_at": "2022-01-10T13:53:15.741Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-01-10T13:53:15.684Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
       "id": "0xsblnql7wwc",
       "name": "[Global][VPS- Additional Services] cPanel licenses",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2022-01-10T09:41:00.613Z",
-      "updated_at": "2022-01-10T09:57:53.374Z",
+      "updated_at": "2022-01-10T14:45:18.117Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2191,6 +2139,86 @@
       "started_at": "2022-01-10T09:41:00.591Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "872080kpd2gm",
+          "status": "identified",
+          "body": "<b>Root cause :</b> We are experiencing difficulties in making API calls to cPanel. These difficulties come from the SSL configuration.  \n<b>Ongoing actions :</b> Our teams are working on a fix.\n<b>Time to resolution :</b> The situation should be solved during the evening or early tomorrow morning",
+          "incident_id": "0xsblnql7wwc",
+          "created_at": "2022-01-10T14:45:18.113Z",
+          "updated_at": "2022-01-10T14:45:18.113Z",
+          "display_at": "2022-01-10T14:45:18.113Z",
+          "affected_components": [
+            {
+              "code": "dwdh0g8v11gm",
+              "name": "Virtual Private Servers || Additional services - ERI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "wz4qnkmxqr5m",
+              "name": "Virtual Private Servers || Additional services - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3rp1y05pdscf",
+              "name": "Virtual Private Servers || Additional services - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "klpq1n76hb3t",
+              "name": "Virtual Private Servers || Additional services - LIM",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zrq6bqg3kqb8",
+              "name": "Virtual Private Servers || Additional services - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qmnlktv51s22",
+              "name": "Virtual Private Servers || Additional services - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "h53rf873nx5l",
+              "name": "Virtual Private Servers || Additional services - SGP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "xt44f5rt83fc",
+              "name": "Virtual Private Servers || Additional services - SYD",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "msl8bm7vrsd4",
+              "name": "Licensing || All Services - Zone Europe",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k1yzq4lsl8g1",
+              "name": "Licensing || All Services - Zone APAC",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y5cs4r8q3cy7",
+              "name": "Licensing || All Services - Zone Canada",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "swrdx9p8rwj4",
           "status": "investigating",
@@ -2502,6 +2530,58 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "c2rtj7sdl6s1",
+      "name": "[RBX7][Dedicated Servers] - R715A13",
+      "status": "investigating",
+      "created_at": "2022-01-10T13:53:15.642Z",
+      "updated_at": "2022-01-10T13:53:15.745Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/1n7vqt6hbrd3",
+      "started_at": "2022-01-10T13:53:15.633Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "d9s7q34dt5cf",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  10/01/2022 13:42 UTC\n<b>Service impact :</b> The servers in the R715A13 rack are unreachable\n<b>Ongoing actions :</b> The technical teams are currently investigating",
+          "incident_id": "c2rtj7sdl6s1",
+          "created_at": "2022-01-10T13:53:15.741Z",
+          "updated_at": "2022-01-10T13:53:15.741Z",
+          "display_at": "2022-01-10T13:53:15.741Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-01-10T13:53:15.684Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
