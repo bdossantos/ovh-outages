@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-11T00:59:32.708Z"
+    "updated_at": "2022-01-11T01:30:31.470Z"
   },
   "components": [
     {
@@ -110,9 +110,9 @@
     {
       "id": "22t7pf7c6ky1",
       "name": "LIM1",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:19:53.034Z",
-      "updated_at": "2021-12-24T03:59:26.162Z",
+      "updated_at": "2022-01-11T01:30:30.487Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -343,7 +343,7 @@
     {
       "id": "vmrgldv3x56g",
       "name": "Datacenters || LIM",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:19:55.284Z",
       "updated_at": "2021-11-10T14:24:37.425Z",
       "position": 4,
@@ -528,9 +528,9 @@
     {
       "id": "02w2qqv00ll9",
       "name": "RBX7",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:20.034Z",
-      "updated_at": "2022-01-10T16:56:32.051Z",
+      "updated_at": "2022-01-11T01:30:30.507Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -818,57 +818,45 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "nst1n5j4bx0r",
-      "name": "N93 ISSU campain",
+      "id": "mbmwnnkc7fk7",
+      "name": "[WAW1][Infrastructure] - TOR Switch",
       "status": "scheduled",
-      "created_at": "2021-12-01T14:41:10.783Z",
-      "updated_at": "2022-01-11T00:29:30.729Z",
+      "created_at": "2022-01-04T05:38:11.835Z",
+      "updated_at": "2022-01-11T00:59:31.328Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/3c4gl6xlhzk0",
-      "started_at": "2021-12-01T14:41:10.767Z",
+      "shortlink": "https://stspg.io/1yfr778c6krc",
+      "started_at": "2022-01-04T05:38:11.829Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "9xj10qxpd8x5",
+          "id": "77mtrv0xl8wn",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "nst1n5j4bx0r",
-          "created_at": "2022-01-11T00:29:30.454Z",
-          "updated_at": "2022-01-11T00:29:30.454Z",
-          "display_at": "2022-01-11T00:29:30.454Z",
+          "incident_id": "mbmwnnkc7fk7",
+          "created_at": "2022-01-11T00:59:31.241Z",
+          "updated_at": "2022-01-11T00:59:31.241Z",
+          "display_at": "2022-01-11T00:59:31.241Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "k780ywr4x5hw",
+          "id": "1pcsv0bv4mb1",
           "status": "scheduled",
-          "body": "According to our lifecycle management, we are upgrading some top of rack switches:\nfra1-lim1-sdtor146a-n93\nfra1-lim1-sdtor148a-n93\nfra1-lim1-sdtor151a-n93\ngra2-sdtor638a-n93\nrbx7-sdtor353a-n93\n\nAn impact of 5 minutes per switch is expected on the public traffic\nMaintenance will occur on 11 january 2022 from 2:30am to 4:00am",
-          "incident_id": "nst1n5j4bx0r",
-          "created_at": "2021-12-01T14:41:10.841Z",
-          "updated_at": "2021-12-01T14:41:10.841Z",
-          "display_at": "2021-12-01T14:41:10.841Z",
+          "body": "<b>Start time :</b> 11/01/2022 02:00 UTC\n<b>End time :</b> 11/01/2022 05:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Upgrate TOR Switch to version v4,23,6",
+          "incident_id": "mbmwnnkc7fk7",
+          "created_at": "2022-01-04T05:38:11.899Z",
+          "updated_at": "2022-01-04T05:38:11.899Z",
+          "display_at": "2022-01-04T05:38:11.899Z",
           "affected_components": [
             {
-              "code": "22t7pf7c6ky1",
-              "name": "Datacenters || LIM - LIM1",
+              "code": "84zk3wk4nv6k",
+              "name": "Datacenters || WAW1",
               "old_status": "operational",
               "new_status": "operational"
-            },
-            {
-              "code": "02w2qqv00ll9",
-              "name": "Datacenters || RBX - RBX7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "f4vdn73g6790",
-              "name": "Datacenters || GRA - GRA2",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -878,53 +866,23 @@
       ],
       "components": [
         {
-          "id": "22t7pf7c6ky1",
-          "name": "LIM1",
+          "id": "84zk3wk4nv6k",
+          "name": "Datacenters || WAW1",
           "status": "operational",
-          "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
-          "position": 1,
+          "created_at": "2021-11-10T14:20:54.627Z",
+          "updated_at": "2022-01-05T05:00:30.595Z",
+          "position": 10,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "vmrgldv3x56g",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2022-01-10T15:00:43.941Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "02w2qqv00ll9",
-          "name": "RBX7",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2022-01-10T16:56:32.051Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "group_id": null,
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-01-11T01:30:00.000Z",
-      "scheduled_until": "2022-01-11T03:00:00.000Z"
+      "scheduled_for": "2022-01-11T02:00:00.000Z",
+      "scheduled_until": "2022-01-11T05:00:00.000Z"
     },
     {
       "id": "4tdr6fpncdt5",
@@ -981,73 +939,6 @@
           "created_at": "2021-11-10T14:20:53.084Z",
           "updated_at": "2022-01-10T05:38:43.642Z",
           "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-11T02:00:00.000Z",
-      "scheduled_until": "2022-01-11T05:00:00.000Z"
-    },
-    {
-      "id": "mbmwnnkc7fk7",
-      "name": "[WAW1][Infrastructure] - TOR Switch",
-      "status": "scheduled",
-      "created_at": "2022-01-04T05:38:11.835Z",
-      "updated_at": "2022-01-11T00:59:31.328Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1yfr778c6krc",
-      "started_at": "2022-01-04T05:38:11.829Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "77mtrv0xl8wn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "mbmwnnkc7fk7",
-          "created_at": "2022-01-11T00:59:31.241Z",
-          "updated_at": "2022-01-11T00:59:31.241Z",
-          "display_at": "2022-01-11T00:59:31.241Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1pcsv0bv4mb1",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 11/01/2022 02:00 UTC\n<b>End time :</b> 11/01/2022 05:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Upgrate TOR Switch to version v4,23,6",
-          "incident_id": "mbmwnnkc7fk7",
-          "created_at": "2022-01-04T05:38:11.899Z",
-          "updated_at": "2022-01-04T05:38:11.899Z",
-          "display_at": "2022-01-04T05:38:11.899Z",
-          "affected_components": [
-            {
-              "code": "84zk3wk4nv6k",
-              "name": "Datacenters || WAW1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "84zk3wk4nv6k",
-          "name": "Datacenters || WAW1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-01-05T05:00:30.595Z",
-          "position": 10,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
@@ -1128,65 +1019,11 @@
       "scheduled_until": "2022-01-11T04:00:00.000Z"
     },
     {
-      "id": "jnw3hpljrnsg",
-      "name": "[GRA3] [Network] sdtor63b-n93",
-      "status": "scheduled",
-      "created_at": "2022-01-05T05:35:13.935Z",
-      "updated_at": "2022-01-08T15:02:02.251Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/03y8qr84w783",
-      "started_at": "2022-01-05T05:35:13.991Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "mr92nrkkb3cv",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 11/01/2022 02:30 UTC\n<b>End time :</b> 11/01/2022 03:03 UTC\n<b>Service impact :</b> Public network & Private Vrack network will be down for 1 hour\n<b>Service improvement :</b> Switch replacement",
-          "incident_id": "jnw3hpljrnsg",
-          "created_at": "2022-01-05T05:35:13.991Z",
-          "updated_at": "2022-01-08T15:02:02.246Z",
-          "display_at": "2022-01-05T05:35:13.991Z",
-          "affected_components": [
-            {
-              "code": "mlw1x23q8nrt",
-              "name": "Datacenters || GRA - GRA3",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mlw1x23q8nrt",
-          "name": "GRA3",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:39.377Z",
-          "updated_at": "2022-01-10T14:54:11.431Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-11T02:30:00.000Z",
-      "scheduled_until": "2022-01-11T03:30:00.000Z"
-    },
-    {
       "id": "sw13bcyr14zr",
       "name": "[BHS][Infrastructure] - TOR Switch",
       "status": "scheduled",
       "created_at": "2022-01-04T05:22:02.255Z",
-      "updated_at": "2022-01-04T05:22:02.329Z",
+      "updated_at": "2022-01-11T01:30:30.779Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1194,6 +1031,19 @@
       "started_at": "2022-01-04T05:22:02.240Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "s32j7yqbtlxk",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "sw13bcyr14zr",
+          "created_at": "2022-01-11T01:30:30.243Z",
+          "updated_at": "2022-01-11T01:30:30.243Z",
+          "display_at": "2022-01-11T01:30:30.243Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "hg2wytlh078l",
           "status": "scheduled",
@@ -1381,6 +1231,73 @@
       ],
       "scheduled_for": "2022-01-11T02:30:00.000Z",
       "scheduled_until": "2022-01-11T11:00:00.000Z"
+    },
+    {
+      "id": "jnw3hpljrnsg",
+      "name": "[GRA3] [Network] sdtor63b-n93",
+      "status": "scheduled",
+      "created_at": "2022-01-05T05:35:13.935Z",
+      "updated_at": "2022-01-11T01:30:31.455Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/03y8qr84w783",
+      "started_at": "2022-01-05T05:35:13.991Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "szckr21j67j0",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jnw3hpljrnsg",
+          "created_at": "2022-01-11T01:30:31.262Z",
+          "updated_at": "2022-01-11T01:30:31.262Z",
+          "display_at": "2022-01-11T01:30:31.262Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mr92nrkkb3cv",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 11/01/2022 02:30 UTC\n<b>End time :</b> 11/01/2022 03:03 UTC\n<b>Service impact :</b> Public network & Private Vrack network will be down for 1 hour\n<b>Service improvement :</b> Switch replacement",
+          "incident_id": "jnw3hpljrnsg",
+          "created_at": "2022-01-05T05:35:13.991Z",
+          "updated_at": "2022-01-08T15:02:02.246Z",
+          "display_at": "2022-01-05T05:35:13.991Z",
+          "affected_components": [
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Datacenters || GRA - GRA3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2022-01-10T14:54:11.431Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-11T02:30:00.000Z",
+      "scheduled_until": "2022-01-11T03:30:00.000Z"
     },
     {
       "id": "gwwh478blfcv",
@@ -1791,9 +1708,9 @@
         {
           "id": "02w2qqv00ll9",
           "name": "RBX7",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2022-01-10T16:56:32.051Z",
+          "updated_at": "2022-01-11T01:30:30.507Z",
           "position": 7,
           "description": null,
           "showcase": false,
@@ -2271,9 +2188,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2301,9 +2218,9 @@
         {
           "id": "02w2qqv00ll9",
           "name": "RBX7",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2022-01-10T16:56:32.051Z",
+          "updated_at": "2022-01-11T01:30:30.507Z",
           "position": 7,
           "description": null,
           "showcase": false,
@@ -2331,6 +2248,68 @@
       ],
       "scheduled_for": "2022-01-11T11:30:00.000Z",
       "scheduled_until": "2022-01-11T14:30:00.000Z"
+    },
+    {
+      "id": "g3h3n4jfz0nn",
+      "name": "[US][Backbone] - SMAUG NYC Migration",
+      "status": "scheduled",
+      "created_at": "2022-01-04T22:05:40.089Z",
+      "updated_at": "2022-01-04T22:05:40.139Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/x6wrcjhqhfgd",
+      "started_at": "2022-01-04T22:05:40.084Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "r3rkbqgdl9q4",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 12/01/2021 05:00 UTC\n<b>End time :</b> 12/01/2021 13:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> We have to switch to the new SMAUG architecture because the old Thorn architecture no longer supports the traffic we have on this site.\nThis change is for transfer of peering from nwk-5 to nyc-ny1-pb2-8k.",
+          "incident_id": "g3h3n4jfz0nn",
+          "created_at": "2022-01-04T22:05:40.136Z",
+          "updated_at": "2022-01-04T22:05:40.136Z",
+          "display_at": "2022-01-04T22:05:40.136Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2022-01-12T05:00:00.000Z",
+      "scheduled_until": "2022-01-12T13:00:00.000Z"
+    },
+    {
+      "id": "5zdhm6gqsv4h",
+      "name": "[US][Backbone] - SMAUG NYC Migration",
+      "status": "scheduled",
+      "created_at": "2022-01-04T21:53:46.248Z",
+      "updated_at": "2022-01-04T21:53:46.320Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fc7ggn2hxt1m",
+      "started_at": "2022-01-04T21:53:46.243Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "1hhh1p20zf23",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 12/01/2021 05:00 UTC\n<b>End time :</b> 12/01/2021 13:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> We have to switch to the new SMAUG architecture because the old Thorn architecture no longer supports the traffic we have on this site.\nThis change is for the transfer of peering from nwk-1 to nyc-ny1-pb1-8k.",
+          "incident_id": "5zdhm6gqsv4h",
+          "created_at": "2022-01-04T21:53:46.317Z",
+          "updated_at": "2022-01-04T21:53:46.317Z",
+          "display_at": "2022-01-04T21:53:46.317Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2022-01-12T05:00:00.000Z",
+      "scheduled_until": "2022-01-12T13:00:00.000Z"
     },
     {
       "id": "80jbqs2my97h",
@@ -2532,68 +2511,6 @@
       ],
       "scheduled_for": "2022-01-12T05:00:00.000Z",
       "scheduled_until": "2022-01-12T07:00:00.000Z"
-    },
-    {
-      "id": "5zdhm6gqsv4h",
-      "name": "[US][Backbone] - SMAUG NYC Migration",
-      "status": "scheduled",
-      "created_at": "2022-01-04T21:53:46.248Z",
-      "updated_at": "2022-01-04T21:53:46.320Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/fc7ggn2hxt1m",
-      "started_at": "2022-01-04T21:53:46.243Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "1hhh1p20zf23",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 12/01/2021 05:00 UTC\n<b>End time :</b> 12/01/2021 13:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> We have to switch to the new SMAUG architecture because the old Thorn architecture no longer supports the traffic we have on this site.\nThis change is for the transfer of peering from nwk-1 to nyc-ny1-pb1-8k.",
-          "incident_id": "5zdhm6gqsv4h",
-          "created_at": "2022-01-04T21:53:46.317Z",
-          "updated_at": "2022-01-04T21:53:46.317Z",
-          "display_at": "2022-01-04T21:53:46.317Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2022-01-12T05:00:00.000Z",
-      "scheduled_until": "2022-01-12T13:00:00.000Z"
-    },
-    {
-      "id": "g3h3n4jfz0nn",
-      "name": "[US][Backbone] - SMAUG NYC Migration",
-      "status": "scheduled",
-      "created_at": "2022-01-04T22:05:40.089Z",
-      "updated_at": "2022-01-04T22:05:40.139Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/x6wrcjhqhfgd",
-      "started_at": "2022-01-04T22:05:40.084Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "r3rkbqgdl9q4",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 12/01/2021 05:00 UTC\n<b>End time :</b> 12/01/2021 13:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> We have to switch to the new SMAUG architecture because the old Thorn architecture no longer supports the traffic we have on this site.\nThis change is for transfer of peering from nwk-5 to nyc-ny1-pb2-8k.",
-          "incident_id": "g3h3n4jfz0nn",
-          "created_at": "2022-01-04T22:05:40.136Z",
-          "updated_at": "2022-01-04T22:05:40.136Z",
-          "display_at": "2022-01-04T22:05:40.136Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2022-01-12T05:00:00.000Z",
-      "scheduled_until": "2022-01-12T13:00:00.000Z"
     },
     {
       "id": "7j95k1qc8njj",
@@ -3698,9 +3615,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3752,9 +3669,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3806,9 +3723,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3860,9 +3777,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3914,9 +3831,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3968,9 +3885,9 @@
         {
           "id": "22t7pf7c6ky1",
           "name": "LIM1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:19:53.034Z",
-          "updated_at": "2021-12-24T03:59:26.162Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3983,6 +3900,141 @@
       ],
       "scheduled_for": "2022-02-24T05:00:00.000Z",
       "scheduled_until": "2022-02-24T07:00:00.000Z"
+    },
+    {
+      "id": "nst1n5j4bx0r",
+      "name": "N93 ISSU campain",
+      "status": "in_progress",
+      "created_at": "2021-12-01T14:41:10.783Z",
+      "updated_at": "2022-01-11T01:30:30.754Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3c4gl6xlhzk0",
+      "started_at": "2021-12-01T14:41:10.767Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "8w3qyqh3bnpj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "nst1n5j4bx0r",
+          "created_at": "2022-01-11T01:30:30.750Z",
+          "updated_at": "2022-01-11T01:30:30.750Z",
+          "display_at": "2022-01-11T01:30:30.750Z",
+          "affected_components": [
+            {
+              "code": "22t7pf7c6ky1",
+              "name": "Datacenters || LIM - LIM1",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Datacenters || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9xj10qxpd8x5",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "nst1n5j4bx0r",
+          "created_at": "2022-01-11T00:29:30.454Z",
+          "updated_at": "2022-01-11T00:29:30.454Z",
+          "display_at": "2022-01-11T00:29:30.454Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k780ywr4x5hw",
+          "status": "scheduled",
+          "body": "According to our lifecycle management, we are upgrading some top of rack switches:\nfra1-lim1-sdtor146a-n93\nfra1-lim1-sdtor148a-n93\nfra1-lim1-sdtor151a-n93\ngra2-sdtor638a-n93\nrbx7-sdtor353a-n93\n\nAn impact of 5 minutes per switch is expected on the public traffic\nMaintenance will occur on 11 january 2022 from 2:30am to 4:00am",
+          "incident_id": "nst1n5j4bx0r",
+          "created_at": "2021-12-01T14:41:10.841Z",
+          "updated_at": "2021-12-01T14:41:10.841Z",
+          "display_at": "2021-12-01T14:41:10.841Z",
+          "affected_components": [
+            {
+              "code": "22t7pf7c6ky1",
+              "name": "Datacenters || LIM - LIM1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Datacenters || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f4vdn73g6790",
+              "name": "Datacenters || GRA - GRA2",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "22t7pf7c6ky1",
+          "name": "LIM1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:19:53.034Z",
+          "updated_at": "2022-01-11T01:30:30.487Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vmrgldv3x56g",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2022-01-10T15:00:43.941Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2022-01-11T01:30:30.507Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-11T01:30:00.000Z",
+      "scheduled_until": "2022-01-11T03:00:00.000Z"
     },
     {
       "id": "f1nm7g435kc6",
