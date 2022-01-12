@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-11T16:24:29.731Z"
+    "updated_at": "2022-01-12T08:42:12.342Z"
   },
   "components": [
     {
@@ -2382,40 +2382,11 @@
   ],
   "incidents": [
     {
-      "id": "t262nb7cxc5g",
-      "name": "PCI - DE1 - host1451871",
-      "status": "investigating",
-      "created_at": "2022-01-11T02:20:59.348Z",
-      "updated_at": "2022-01-11T02:20:59.399Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/hqvlt6t2t73c",
-      "started_at": "2022-01-11T02:20:59.343Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "zy47bf2h29l5",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1451871.de1.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n8134843b-72de-4a98-a9bb-d804839f599d\nf07f4581-a774-424a-b9e1-cc3fd38dfb98\n1cb2110f-7635-4993-a6db-9ff24eeb3915\nb233d7ac-1c03-4cc8-befc-351f1b721953",
-          "incident_id": "t262nb7cxc5g",
-          "created_at": "2022-01-11T02:20:59.398Z",
-          "updated_at": "2022-01-11T02:20:59.398Z",
-          "display_at": "2022-01-11T02:20:59.398Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    },
-    {
       "id": "d69n13mj9jbl",
       "name": "[BHS1/SBG7/GRA9][vRack] - ARP spoof restricted",
       "status": "identified",
       "created_at": "2022-01-07T08:49:44.949Z",
-      "updated_at": "2022-01-07T16:25:23.439Z",
+      "updated_at": "2022-01-12T08:42:12.333Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2423,6 +2394,26 @@
       "started_at": "2022-01-07T08:49:44.941Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "z5s5pd0bppkk",
+          "status": "identified",
+          "body": "<b>Ongoing actions :</b>Our technical teams are still working on a patch to resolve the incident. Due to the technical complexity of the incident, many internal tests must be performed before a public deployment to avoid any degradation of the situation. We apologize for the inconvenience caused",
+          "incident_id": "d69n13mj9jbl",
+          "created_at": "2022-01-12T08:42:12.330Z",
+          "updated_at": "2022-01-12T08:42:12.330Z",
+          "display_at": "2022-01-12T08:42:12.330Z",
+          "affected_components": [
+            {
+              "code": "pg3c8dv017l9",
+              "name": "Network || Private network (vRack) - BHS1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dl2k83sg7msc",
           "status": "identified",
@@ -2481,6 +2472,35 @@
           "only_show_if_degraded": false
         }
       ]
+    },
+    {
+      "id": "t262nb7cxc5g",
+      "name": "PCI - DE1 - host1451871",
+      "status": "investigating",
+      "created_at": "2022-01-11T02:20:59.348Z",
+      "updated_at": "2022-01-11T02:20:59.399Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/hqvlt6t2t73c",
+      "started_at": "2022-01-11T02:20:59.343Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "zy47bf2h29l5",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1451871.de1.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n8134843b-72de-4a98-a9bb-d804839f599d\nf07f4581-a774-424a-b9e1-cc3fd38dfb98\n1cb2110f-7635-4993-a6db-9ff24eeb3915\nb233d7ac-1c03-4cc8-befc-351f1b721953",
+          "incident_id": "t262nb7cxc5g",
+          "created_at": "2022-01-11T02:20:59.398Z",
+          "updated_at": "2022-01-11T02:20:59.398Z",
+          "display_at": "2022-01-11T02:20:59.398Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
     },
     {
       "id": "qb3lhfz66hz6",
