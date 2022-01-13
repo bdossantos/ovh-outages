@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-13T09:24:09.827Z"
+    "updated_at": "2022-01-13T11:00:36.701Z"
   },
   "components": [
     {
@@ -218,9 +218,9 @@
     {
       "id": "snrc66fccrvf",
       "name": "BHS2",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-10T14:20:27.348Z",
-      "updated_at": "2022-01-13T08:00:02.765Z",
+      "updated_at": "2022-01-13T11:00:30.540Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -822,7 +822,7 @@
       "name": "[BHS1][Cooling System] - T01A47",
       "status": "scheduled",
       "created_at": "2022-01-12T21:11:11.838Z",
-      "updated_at": "2022-01-12T21:11:11.893Z",
+      "updated_at": "2022-01-13T11:00:36.678Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -830,6 +830,19 @@
       "started_at": "2022-01-12T21:11:11.831Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "b1dw7bz66w6d",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "vs3kzkhj6q72",
+          "created_at": "2022-01-13T11:00:36.280Z",
+          "updated_at": "2022-01-13T11:00:36.280Z",
+          "display_at": "2022-01-13T11:00:36.280Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dcw13d8w5m94",
           "status": "scheduled",
@@ -1020,9 +1033,9 @@
         {
           "id": "snrc66fccrvf",
           "name": "BHS2",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
+          "updated_at": "2022-01-13T11:00:30.540Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -1221,9 +1234,9 @@
         {
           "id": "snrc66fccrvf",
           "name": "BHS2",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
+          "updated_at": "2022-01-13T11:00:30.540Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -1325,6 +1338,60 @@
         }
       ],
       "scheduled_for": "2022-01-17T10:00:00.000Z",
+      "scheduled_until": "2022-01-17T23:00:00.000Z"
+    },
+    {
+      "id": "mzgshgz9f9f0",
+      "name": "[LIM1][Network] - SDAGG upgrade",
+      "status": "scheduled",
+      "created_at": "2022-01-13T10:46:09.106Z",
+      "updated_at": "2022-01-13T10:46:09.184Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/622n3yj8r784",
+      "started_at": "2022-01-13T10:46:08.999Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "kc3xb8tlbxty",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 17/01/2022 21:00 UTC\n<b>End time :</b> 17/01/2022 23:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  Upgrade all SDAGG Bart in order to have a homogeneous park.",
+          "incident_id": "mzgshgz9f9f0",
+          "created_at": "2022-01-13T10:46:09.181Z",
+          "updated_at": "2022-01-13T10:46:09.181Z",
+          "display_at": "2022-01-13T10:46:09.181Z",
+          "affected_components": [
+            {
+              "code": "22t7pf7c6ky1",
+              "name": "Datacenters || LIM - LIM1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "22t7pf7c6ky1",
+          "name": "LIM1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:19:53.034Z",
+          "updated_at": "2022-01-11T03:00:29.383Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vmrgldv3x56g",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-17T21:00:00.000Z",
       "scheduled_until": "2022-01-17T23:00:00.000Z"
     },
     {
@@ -1436,6 +1503,81 @@
       "scheduled_until": "2022-01-18T15:00:00.000Z"
     },
     {
+      "id": "99r6wh46wym1",
+      "name": "[LIM1/ERI1][Network] - SDAGG upgrade",
+      "status": "scheduled",
+      "created_at": "2022-01-13T10:40:44.744Z",
+      "updated_at": "2022-01-13T10:40:44.802Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yq8pqbv1k8xp",
+      "started_at": "2022-01-13T10:40:44.734Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "k6f2ydjj5gdz",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/01/2022 21:00 UTC\n<b>End time :</b> 18/01/2022 23:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  Upgrade all SDAGG Bart in order to have a homogeneous park.",
+          "incident_id": "99r6wh46wym1",
+          "created_at": "2022-01-13T10:40:44.799Z",
+          "updated_at": "2022-01-13T10:40:44.799Z",
+          "display_at": "2022-01-13T10:40:44.799Z",
+          "affected_components": [
+            {
+              "code": "22t7pf7c6ky1",
+              "name": "Datacenters || LIM - LIM1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "l38v4l1b1vt8",
+              "name": "Datacenters || ERI - ERI1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "22t7pf7c6ky1",
+          "name": "LIM1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:19:53.034Z",
+          "updated_at": "2022-01-11T03:00:29.383Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vmrgldv3x56g",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "l38v4l1b1vt8",
+          "name": "ERI1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:45.650Z",
+          "updated_at": "2022-01-12T08:00:38.140Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "sdpm85zsx4w3",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-18T21:00:00.000Z",
+      "scheduled_until": "2022-01-18T23:00:00.000Z"
+    },
+    {
       "id": "r8tt3792lbb8",
       "name": "[GRA1-2-3][Infrastructure] -Thermography",
       "status": "scheduled",
@@ -1532,102 +1674,6 @@
       "scheduled_until": "2022-01-19T15:00:00.000Z"
     },
     {
-      "id": "jnrrrt45t4wz",
-      "name": "[SBG][Infrastructure] UPS",
-      "status": "scheduled",
-      "created_at": "2021-12-28T21:33:22.766Z",
-      "updated_at": "2021-12-28T21:33:22.839Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/mw9bgqdzhmb6",
-      "started_at": "2021-12-28T21:33:22.755Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "zdk0m487ksjh",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/01/2022 07:00 UTC \n<b>End time :</b> 19/01/2022 16:00 UTC \n<b>Service impact :</b> none \n<b>Service improvement :</b> commissioning UPS",
-          "incident_id": "jnrrrt45t4wz",
-          "created_at": "2021-12-28T21:33:22.835Z",
-          "updated_at": "2021-12-28T21:33:22.835Z",
-          "display_at": "2021-12-28T21:33:22.835Z",
-          "affected_components": [
-            {
-              "code": "2k7jxkf0w8f4",
-              "name": "Datacenters || SBG - SBG1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "n3pn0f28b99n",
-              "name": "Datacenters || SBG - SBG3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "n39cfc7qz4vh",
-              "name": "Datacenters || SBG - SBG4",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2k7jxkf0w8f4",
-          "name": "SBG1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:00.223Z",
-          "updated_at": "2021-12-16T15:09:57.511Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "n3pn0f28b99n",
-          "name": "SBG3",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:01.143Z",
-          "updated_at": "2022-01-12T14:00:42.434Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "n39cfc7qz4vh",
-          "name": "SBG4",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:01.976Z",
-          "updated_at": "2022-01-03T07:00:38.763Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-19T07:00:00.000Z",
-      "scheduled_until": "2022-01-19T16:00:00.000Z"
-    },
-    {
       "id": "2ls90dwzggz6",
       "name": "[RBX3/5/6][Infrastructure]-Power Usage Effectiveness",
       "status": "scheduled",
@@ -1722,6 +1768,102 @@
       ],
       "scheduled_for": "2022-01-19T07:00:00.000Z",
       "scheduled_until": "2022-01-27T16:00:00.000Z"
+    },
+    {
+      "id": "jnrrrt45t4wz",
+      "name": "[SBG][Infrastructure] UPS",
+      "status": "scheduled",
+      "created_at": "2021-12-28T21:33:22.766Z",
+      "updated_at": "2021-12-28T21:33:22.839Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mw9bgqdzhmb6",
+      "started_at": "2021-12-28T21:33:22.755Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "zdk0m487ksjh",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/01/2022 07:00 UTC \n<b>End time :</b> 19/01/2022 16:00 UTC \n<b>Service impact :</b> none \n<b>Service improvement :</b> commissioning UPS",
+          "incident_id": "jnrrrt45t4wz",
+          "created_at": "2021-12-28T21:33:22.835Z",
+          "updated_at": "2021-12-28T21:33:22.835Z",
+          "display_at": "2021-12-28T21:33:22.835Z",
+          "affected_components": [
+            {
+              "code": "2k7jxkf0w8f4",
+              "name": "Datacenters || SBG - SBG1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n3pn0f28b99n",
+              "name": "Datacenters || SBG - SBG3",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n39cfc7qz4vh",
+              "name": "Datacenters || SBG - SBG4",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2k7jxkf0w8f4",
+          "name": "SBG1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:00.223Z",
+          "updated_at": "2021-12-16T15:09:57.511Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n3pn0f28b99n",
+          "name": "SBG3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:01.143Z",
+          "updated_at": "2022-01-12T14:00:42.434Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n39cfc7qz4vh",
+          "name": "SBG4",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:01.976Z",
+          "updated_at": "2022-01-03T07:00:38.763Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-19T07:00:00.000Z",
+      "scheduled_until": "2022-01-19T16:00:00.000Z"
     },
     {
       "id": "zdrflk9lf4cj",
@@ -1853,60 +1995,6 @@
       "scheduled_until": "2022-01-19T23:00:00.000Z"
     },
     {
-      "id": "1npsq8nzdbb1",
-      "name": "[RBX3][Infrastructure] - UPS1",
-      "status": "scheduled",
-      "created_at": "2021-12-28T21:50:37.537Z",
-      "updated_at": "2021-12-28T21:50:37.584Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yy0yz09yr963",
-      "started_at": "2021-12-28T21:50:37.531Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "gyy7x4c4dtp5",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 20/01/2022 07:00 UTC\n<b>End time :</b> 20/01/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Add a total bypass to supply the corrugated cabinets without going through the inverter",
-          "incident_id": "1npsq8nzdbb1",
-          "created_at": "2021-12-28T21:50:37.582Z",
-          "updated_at": "2021-12-28T21:50:37.582Z",
-          "display_at": "2021-12-28T21:50:37.582Z",
-          "affected_components": [
-            {
-              "code": "gmpjyy3kgdlv",
-              "name": "Datacenters || RBX - RBX3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gmpjyy3kgdlv",
-          "name": "RBX3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:17.105Z",
-          "updated_at": "2022-01-06T23:18:38.258Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-20T07:00:00.000Z",
-      "scheduled_until": "2022-01-20T16:00:00.000Z"
-    },
-    {
       "id": "yj947cxcmlbl",
       "name": "[RBX8][Infrastructure] - Electrical connection",
       "status": "scheduled",
@@ -2002,6 +2090,60 @@
           "created_at": "2021-11-10T14:20:15.916Z",
           "updated_at": "2022-01-11T17:00:31.892Z",
           "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-20T07:00:00.000Z",
+      "scheduled_until": "2022-01-20T16:00:00.000Z"
+    },
+    {
+      "id": "1npsq8nzdbb1",
+      "name": "[RBX3][Infrastructure] - UPS1",
+      "status": "scheduled",
+      "created_at": "2021-12-28T21:50:37.537Z",
+      "updated_at": "2021-12-28T21:50:37.584Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yy0yz09yr963",
+      "started_at": "2021-12-28T21:50:37.531Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "gyy7x4c4dtp5",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/01/2022 07:00 UTC\n<b>End time :</b> 20/01/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Add a total bypass to supply the corrugated cabinets without going through the inverter",
+          "incident_id": "1npsq8nzdbb1",
+          "created_at": "2021-12-28T21:50:37.582Z",
+          "updated_at": "2021-12-28T21:50:37.582Z",
+          "display_at": "2021-12-28T21:50:37.582Z",
+          "affected_components": [
+            {
+              "code": "gmpjyy3kgdlv",
+              "name": "Datacenters || RBX - RBX3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gmpjyy3kgdlv",
+          "name": "RBX3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:17.105Z",
+          "updated_at": "2022-01-06T23:18:38.258Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
@@ -2219,60 +2361,6 @@
       "scheduled_until": "2022-01-28T07:42:00.000Z"
     },
     {
-      "id": "3t9c1fbfzn6b",
-      "name": "[GRA3][Infrastructure] - Rack G317",
-      "status": "scheduled",
-      "created_at": "2022-01-12T00:28:43.598Z",
-      "updated_at": "2022-01-12T00:28:43.639Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hn0ycyvgg2n9",
-      "started_at": "2022-01-12T00:28:43.593Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "v286vrbc961m",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 24/01/2022 07:00 UTC\n<b>End time :</b> 27/01/2022 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  Supply of a new electrical cabinet.",
-          "incident_id": "3t9c1fbfzn6b",
-          "created_at": "2022-01-12T00:28:43.637Z",
-          "updated_at": "2022-01-12T00:28:43.637Z",
-          "display_at": "2022-01-12T00:28:43.637Z",
-          "affected_components": [
-            {
-              "code": "mlw1x23q8nrt",
-              "name": "Datacenters || GRA - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mlw1x23q8nrt",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:39.377Z",
-          "updated_at": "2022-01-11T15:00:32.215Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-24T07:00:00.000Z",
-      "scheduled_until": "2022-01-27T15:00:00.000Z"
-    },
-    {
       "id": "mhljjtpr1j3s",
       "name": "[GRA2][Energy]Yearly maintenance UPS 12T2",
       "status": "scheduled",
@@ -2325,6 +2413,60 @@
       ],
       "scheduled_for": "2022-01-24T07:00:00.000Z",
       "scheduled_until": "2022-01-24T16:00:00.000Z"
+    },
+    {
+      "id": "3t9c1fbfzn6b",
+      "name": "[GRA3][Infrastructure] - Rack G317",
+      "status": "scheduled",
+      "created_at": "2022-01-12T00:28:43.598Z",
+      "updated_at": "2022-01-12T00:28:43.639Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hn0ycyvgg2n9",
+      "started_at": "2022-01-12T00:28:43.593Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "v286vrbc961m",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 24/01/2022 07:00 UTC\n<b>End time :</b> 27/01/2022 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  Supply of a new electrical cabinet.",
+          "incident_id": "3t9c1fbfzn6b",
+          "created_at": "2022-01-12T00:28:43.637Z",
+          "updated_at": "2022-01-12T00:28:43.637Z",
+          "display_at": "2022-01-12T00:28:43.637Z",
+          "affected_components": [
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Datacenters || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2022-01-11T15:00:32.215Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-24T07:00:00.000Z",
+      "scheduled_until": "2022-01-27T15:00:00.000Z"
     },
     {
       "id": "byhsmndwjssv",
@@ -3027,93 +3169,6 @@
       ],
       "scheduled_for": "2022-02-24T05:00:00.000Z",
       "scheduled_until": "2022-02-24T07:00:00.000Z"
-    },
-    {
-      "id": "wfztry3tmp1d",
-      "name": "[BHS2][GENERIC] - Cisco Switch update",
-      "status": "in_progress",
-      "created_at": "2022-01-11T14:41:06.265Z",
-      "updated_at": "2022-01-13T08:00:03.001Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pcxk5dpnqvpf",
-      "started_at": "2022-01-11T14:41:06.257Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "7p7hdqbww2pf",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "wfztry3tmp1d",
-          "created_at": "2022-01-13T08:00:02.997Z",
-          "updated_at": "2022-01-13T08:00:02.997Z",
-          "display_at": "2022-01-13T08:00:02.997Z",
-          "affected_components": [
-            {
-              "code": "snrc66fccrvf",
-              "name": "Datacenters || BHS - BHS2",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bhp81nh2kbhf",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "wfztry3tmp1d",
-          "created_at": "2022-01-13T07:00:35.166Z",
-          "updated_at": "2022-01-13T07:00:35.166Z",
-          "display_at": "2022-01-13T07:00:35.166Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hpsnzfbf3mv8",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 13/01/2022  08:00 UTC\n<b>End time :</b> 13/01/2022  11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement [Optionnal] :</b>  We need to update the DC core switches to newer version 7.0.3.I7.9 for reliability and vendor support.",
-          "incident_id": "wfztry3tmp1d",
-          "created_at": "2022-01-11T14:41:06.315Z",
-          "updated_at": "2022-01-11T14:41:06.315Z",
-          "display_at": "2022-01-11T14:41:06.315Z",
-          "affected_components": [
-            {
-              "code": "snrc66fccrvf",
-              "name": "Datacenters || BHS - BHS2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "snrc66fccrvf",
-          "name": "BHS2",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-01-13T08:00:00.000Z",
-      "scheduled_until": "2022-01-13T11:00:00.000Z"
     },
     {
       "id": "g82mbq26bh6b",
@@ -4168,9 +4223,9 @@
         {
           "id": "snrc66fccrvf",
           "name": "BHS2",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
+          "updated_at": "2022-01-13T11:00:30.540Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -4395,9 +4450,9 @@
         {
           "id": "snrc66fccrvf",
           "name": "BHS2",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
+          "updated_at": "2022-01-13T11:00:30.540Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -4745,9 +4800,9 @@
         {
           "id": "snrc66fccrvf",
           "name": "BHS2",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2022-01-13T08:00:02.765Z",
+          "updated_at": "2022-01-13T11:00:30.540Z",
           "position": 2,
           "description": null,
           "showcase": false,
