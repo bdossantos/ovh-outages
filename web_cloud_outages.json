@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-19T16:08:37.139Z"
+    "updated_at": "2022-01-19T21:24:06.954Z"
   },
   "components": [
     {
@@ -4020,6 +4020,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "r97ls1k0mhgj",
+      "name": "[France][Over the box] - Upgrade campaign",
+      "status": "scheduled",
+      "created_at": "2022-01-19T21:06:18.952Z",
+      "updated_at": "2022-01-19T21:06:19.034Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5jkq4c6jzvc4",
+      "started_at": "2022-01-19T21:06:18.947Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "hpd166bbnqfy",
+          "status": "scheduled",
+          "body": "<b>Start time :</b>08/02/2022 10:15 UTC\n<b>End time :</b>04/04/2022 09:15 UTC\n<b>Service impact :</b> Short downtime while upgrading system \n<b>Service improvement  :</b>  A few month back, we introduce a new version of our provisionning backend, which is used to setup remote actions on the overthebox device. The previous version is deprecated and existing overthebox need to be migrated toversion  v0.6.33. We are planning to start to migrate customer on support level standard from February 8, and Premium customer from February 28.\nEnd of migrations is planned for April 4.\n\n If you wish to upgrade the device on your own, you can follow this guide : <a href=\"https://docs.ovh.com/fr/overthebox/config-upgrade/\">https://docs.ovh.com/fr/overthebox/config-upgrade/</a>",
+          "incident_id": "r97ls1k0mhgj",
+          "created_at": "2022-01-19T21:06:19.032Z",
+          "updated_at": "2022-01-19T21:06:19.032Z",
+          "display_at": "2022-01-19T21:06:19.032Z",
+          "affected_components": [
+            {
+              "code": "d5hn8j63p716",
+              "name": "OverTheBox || OverTheBox",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d5hn8j63p716",
+          "name": "OverTheBox || OverTheBox",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:35.547Z",
+          "updated_at": "2022-01-09T13:45:14.603Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": null,
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-08T10:15:00.000Z",
+      "scheduled_until": "2022-04-04T09:15:00.000Z"
+    },
     {
       "id": "pbkx4z996kdw",
       "name": "[GRA][Web Hosting] - sql010 SharedSQL migration",
