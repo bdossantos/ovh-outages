@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-25T23:41:14.899Z"
+    "updated_at": "2022-01-26T01:53:57.289Z"
   },
   "components": [
     {
@@ -1288,9 +1288,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2022-01-25T21:54:56.513Z",
+      "updated_at": "2022-01-26T01:53:57.226Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1843,7 +1843,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2021-10-20T08:14:14.720Z",
       "position": 14,
@@ -2129,100 +2129,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "0lx7tx80j0ts",
-      "name": "[RBX2][Storage] - tete-165/tete-171/tete-172/tete-125",
-      "status": "identified",
-      "created_at": "2022-01-25T21:54:56.445Z",
-      "updated_at": "2022-01-25T23:41:14.891Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/32wnwwvc2pwj",
-      "started_at": "2022-01-25T21:54:56.000Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "q3kyf4sjrw96",
-          "status": "identified",
-          "body": "<b>User impact :</b> Some PCC storage on tete-165, tete-171, tete-125 are unreachable.\n<b>Technical impact (DC/geographical area) :</b> RBX2a\n<b>Ongoing Actions:</b> The service has returned for the tete-172 :\npcc-002955\npcc-002956\npcc-002944\npcc-002493\npcc-003575\npcc-002424\n\nHere is the list of pools still impacted:\ntete-165\npcc-002136\npcc-000713\npcc-003211\npcc-000714\npcc-000719\npcc-000717\npcc-000724\n\ntete-171\npcc-000504\npcc-003197\n\ntete-125\npcc-001351",
-          "incident_id": "0lx7tx80j0ts",
-          "created_at": "2022-01-25T23:40:24.455Z",
-          "updated_at": "2022-01-25T23:41:14.886Z",
-          "display_at": "2022-01-25T23:40:24.000Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "VMware Private Cloud || RBX - Storage",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jytnfxxxktnj",
-          "status": "identified",
-          "body": "<b>Update :</b> A network equipment has failed on this rack which caused an outage for the mentioned storage nodes and datasets. While High Availability was activated on all clusters of this rack, 4 of the clusters failed to switch on the failover node because of different and individual physical problems.\nWe are currently working on restoring the availability of these storage datasets as soon as possible.\nWe will keep you updated.",
-          "incident_id": "0lx7tx80j0ts",
-          "created_at": "2022-01-25T23:22:09.861Z",
-          "updated_at": "2022-01-25T23:22:09.861Z",
-          "display_at": "2022-01-25T23:22:09.861Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "VMware Private Cloud || RBX - Storage",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jy3f0zb048kq",
-          "status": "investigating",
-          "body": "Please note the incident on PCC Storage.\n\nFollowing all the necessary information.\n\n<b>Start time:</b>  25/01/2022 21:15 UTC\n<b>User impact :</b> Some PCC storage on tete-165, tete-171, tete-172, tete-125 are unreachable.\n<b>Technical impact (DC/geographical area) :</b> RBX2a\n<b>Ongoing Actions:</b> Our teams are in the process of doing what is necessary to correct the incident as soon as possible.\n\nThank you for your understanding\n\nOVHcloud Technical team",
-          "incident_id": "0lx7tx80j0ts",
-          "created_at": "2022-01-25T21:54:56.589Z",
-          "updated_at": "2022-01-25T21:56:51.844Z",
-          "display_at": "2022-01-25T21:54:56.000Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "VMware Private Cloud || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-01-25T21:54:56.513Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "g2tlh3ks2p3t",
@@ -2439,9 +2346,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-01-25T21:54:56.513Z",
+          "updated_at": "2022-01-26T01:53:57.226Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2502,7 +2409,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
