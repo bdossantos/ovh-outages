@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-26T21:07:45.726Z"
+    "updated_at": "2022-01-26T21:43:30.543Z"
   },
   "components": [
     {
@@ -2315,38 +2315,63 @@
           "only_show_if_degraded": false
         }
       ]
-    },
+    }
+  ],
+  "scheduled_maintenances": [
     {
-      "id": "55ysyyhy5qt7",
-      "name": "VPS - BHS2 - host412895",
-      "status": "investigating",
-      "created_at": "2022-01-21T13:57:58.030Z",
-      "updated_at": "2022-01-21T13:57:58.075Z",
+      "id": "v09hxtzr11b7",
+      "name": "[LIM1][vRack] - Upgrade Baremetal RTvRack exchanger to version 4.23",
+      "status": "scheduled",
+      "created_at": "2022-01-26T21:33:10.464Z",
+      "updated_at": "2022-01-26T21:33:10.541Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/llz6v3sp7rj1",
-      "started_at": "2022-01-21T13:57:58.023Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/fhsbst5fgsk7",
+      "started_at": "2022-01-26T21:33:10.455Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "rv5r2jhdccvt",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost412895.bhs2.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n41e16fa1-e1c6-49bc-88c2-6ffca61cfaa4\n642f43c4-06e8-4edc-a9b1-77704fb8465e\nc534704d-9ff5-4006-8966-c2b18209b662\n4a010306-b0a6-4cbb-8a56-8de6bc2154ec\n29f2555a-2d0d-4bf3-93d2-5197848e17fb\n6a9aae28-61ae-4a9b-ba39-45d2abb72f13\nd90ea3f6-3743-4dcb-a1cc-098dd26de5c6\n29a1e97c-3e6b-441d-a5a0-45c4d33c16b0\n4515e81d-6beb-429a-8179-8f1712163854\n86ce0f12-e50f-4abd-aeaa-42937d71559f\n1a61d5b7-f892-450d-a651-56e51d26f5d5\ncb74bdaa-a259-47a1-a7c5-bbdba84bb53f\n08f09c00-4005-46c4-9cd3-74c79dd75880\ne8029a98-3727-4212-ac4c-9bf372969ebe\ndfc37831-9502-4fae-ab24-6754b73e8fa2\n3b34105b-0538-4e04-9b60-73c665a034d3\n0b2ea2bc-fa5c-46d6-a344-0dfa7955d144\neabbfca8-f2fb-43e0-a23c-b3741b8c4be4\n2727542e-3deb-4bec-bb56-bed624331ca3\n1cb9fc93-513f-4dc0-a7c7-69be0fa41c22\nda07302d-4768-4e72-9c88-621c8ea90fc3",
-          "incident_id": "55ysyyhy5qt7",
-          "created_at": "2022-01-21T13:57:58.072Z",
-          "updated_at": "2022-01-21T13:57:58.072Z",
-          "display_at": "2022-01-21T13:57:58.072Z",
-          "affected_components": null,
+          "id": "w2qx0h1f5k3j",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 31/01/2022 21:00 UTC \n<b>End time :</b> 01/02/2022 02:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management, we need to upgrade all RTvRack exchanger to version 4.23 in order to have a homogeneous park.",
+          "incident_id": "v09hxtzr11b7",
+          "created_at": "2022-01-26T21:33:10.538Z",
+          "updated_at": "2022-01-26T21:33:10.538Z",
+          "display_at": "2022-01-26T21:33:10.538Z",
+          "affected_components": [
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
-    }
-  ],
-  "scheduled_maintenances": [
+      "components": [
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2022-01-20T09:31:03.213Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-01-31T21:00:00.000Z",
+      "scheduled_until": "2022-02-01T02:00:00.000Z"
+    },
     {
       "id": "nv71djpdxzzq",
       "name": "[GRA, RBX, SBG, BHS / France, Canada][ Cisco ASA firewall] – Baremetal – Cisco ASA firewall – Planned Service End of Life",
