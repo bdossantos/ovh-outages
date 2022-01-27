@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-01-27T11:01:25.929Z"
+    "updated_at": "2022-01-27T11:24:05.213Z"
   },
   "components": [
     {
@@ -2665,21 +2665,6 @@
           "only_show_if_degraded": false
         },
         {
-          "id": "3c28t4c8zpwk",
-          "name": "USA",
-          "status": "operational",
-          "created_at": "2021-11-05T14:38:12.660Z",
-          "updated_at": "2021-11-05T14:38:13.216Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "k1z8jy8dlxdb",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
           "id": "94t3pzlv3hrn",
           "name": "BHS",
           "status": "operational",
@@ -2695,16 +2680,16 @@
           "only_show_if_degraded": false
         },
         {
-          "id": "6v1xttsxcg1r",
-          "name": "ERI",
+          "id": "3c28t4c8zpwk",
+          "name": "USA",
           "status": "operational",
-          "created_at": "2021-11-05T14:37:19.687Z",
-          "updated_at": "2021-11-05T14:37:22.756Z",
-          "position": 2,
+          "created_at": "2021-11-05T14:38:12.660Z",
+          "updated_at": "2021-11-05T14:38:13.216Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-05",
-          "group_id": "9gmvt8ttywcv",
+          "group_id": "k1z8jy8dlxdb",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -2720,6 +2705,21 @@
           "showcase": false,
           "start_date": "2021-11-05",
           "group_id": "94qd3sg99c8b",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "6v1xttsxcg1r",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-11-05T14:37:19.687Z",
+          "updated_at": "2021-11-05T14:37:22.756Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "9gmvt8ttywcv",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -2809,7 +2809,7 @@
       "name": "[UK1][Public Cloud] Upgrade to Stein",
       "status": "scheduled",
       "created_at": "2022-01-27T10:42:31.036Z",
-      "updated_at": "2022-01-27T10:42:31.095Z",
+      "updated_at": "2022-01-27T11:02:04.043Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2820,10 +2820,10 @@
         {
           "id": "yccgmhztqj7m",
           "status": "scheduled",
-          "body": "A maintenance operation is scheduled for the BHS1 region on <b>February 15, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n\nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.uk1.cloud.ovh.net\">https://compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.uk1.cloud.ovh.net\">https://network.compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.uk1.cloud.ovh.net\">https://volume.compute.uk1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.uk1.cloud.ovh.net\">https://image.compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://workflow.uk1.cloud.ovh.net\">https://workflow.uk1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.uk1.cloud.ovh.net\">https://workflow.uk1.cloud.ovh.net</a>\n\n\nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n\n\nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n\n\nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "body": "A maintenance operation is scheduled for the UK1 region on <b>February 15, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n\nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.uk1.cloud.ovh.net\">https://compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.uk1.cloud.ovh.net\">https://network.compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.uk1.cloud.ovh.net\">https://volume.compute.uk1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.uk1.cloud.ovh.net\">https://image.compute.uk1.cloud.ovh.net</a>\n    <a href=\"https://workflow.uk1.cloud.ovh.net\">https://workflow.uk1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.uk1.cloud.ovh.net\">https://workflow.uk1.cloud.ovh.net</a>\n\n\nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n\n\nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n\n\nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
           "incident_id": "mltz6rv3fpt5",
           "created_at": "2022-01-27T10:42:31.092Z",
-          "updated_at": "2022-01-27T10:42:31.092Z",
+          "updated_at": "2022-01-27T11:02:04.038Z",
           "display_at": "2022-01-27T10:42:31.092Z",
           "affected_components": [
             {
@@ -2863,7 +2863,7 @@
       "name": "[WAW1][Public Cloud] Upgrade to Stein",
       "status": "scheduled",
       "created_at": "2022-01-27T10:48:41.356Z",
-      "updated_at": "2022-01-27T10:50:00.790Z",
+      "updated_at": "2022-01-27T11:01:49.564Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2874,10 +2874,10 @@
         {
           "id": "xqq55b460dpc",
           "status": "scheduled",
-          "body": "A maintenance operation is scheduled for the BHS1 region on <b>February 22, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.waw1.cloud.ovh.net\">https://compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.waw1.cloud.ovh.net\">https://network.compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.waw1.cloud.ovh.net\">https://volume.compute.waw1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.waw1.cloud.ovh.net\">https://image.compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://workflow.waw1.cloud.ovh.net\">https://workflow.waw1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.waw1.cloud.ovh.net\">https://workflow.waw1.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n\nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "body": "A maintenance operation is scheduled for the WAW1 region on <b>February 22, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.waw1.cloud.ovh.net\">https://compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.waw1.cloud.ovh.net\">https://network.compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.waw1.cloud.ovh.net\">https://volume.compute.waw1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.waw1.cloud.ovh.net\">https://image.compute.waw1.cloud.ovh.net</a>\n    <a href=\"https://workflow.waw1.cloud.ovh.net\">https://workflow.waw1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.waw1.cloud.ovh.net\">https://workflow.waw1.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n\nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
           "incident_id": "8brj06qwy9k7",
           "created_at": "2022-01-27T10:48:41.414Z",
-          "updated_at": "2022-01-27T10:48:41.414Z",
+          "updated_at": "2022-01-27T11:01:49.560Z",
           "display_at": "2022-01-27T10:48:41.414Z",
           "affected_components": [
             {
@@ -3063,6 +3063,134 @@
       ],
       "scheduled_for": "2022-03-01T20:00:00.000Z",
       "scheduled_until": "2022-03-02T02:00:00.000Z"
+    },
+    {
+      "id": "ndlqlxcmf8hj",
+      "name": "[BHS5][Public Cloud] Upgrade to Stein",
+      "status": "scheduled",
+      "created_at": "2022-01-27T11:05:50.483Z",
+      "updated_at": "2022-01-27T11:05:50.545Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ry0fktdqh86q",
+      "started_at": "2022-01-27T11:05:50.476Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1bvpxkk8fq7g",
+          "status": "scheduled",
+          "body": "A maintenance operation is scheduled for the BHS5 region on <b>March 03, 2022, between 09:00 and 15:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.bhs5.cloud.ovh.net\">https://compute.bhs5.cloud.ovh.net</a>\n    <a href=\"https://network.compute.bhs5.cloud.ovh.net\">https://network.compute.bhs5.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.bhs5.cloud.ovh.net\">https://volume.compute.bhs5.cloud.ovh.net</a> \n    <a href=\"https://image.compute.bhs5.cloud.ovh.net\">https://image.compute.bhs5.cloud.ovh.net</a>\n    <a href=\"https://workflow.bhs5.cloud.ovh.net\">https://workflow.bhs5.cloud.ovh.net</a> \n    <a href=\"https://orchestration.bhs5.cloud.ovh.net\">https://workflow.bhs5.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "incident_id": "ndlqlxcmf8hj",
+          "created_at": "2022-01-27T11:05:50.543Z",
+          "updated_at": "2022-01-27T11:05:50.543Z",
+          "display_at": "2022-01-27T11:05:50.543Z",
+          "affected_components": [
+            {
+              "code": "sy1vggdjj254",
+              "name": "Compute || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "sy1vggdjj254",
+          "name": "BHS5",
+          "status": "operational",
+          "created_at": "2021-11-05T14:38:24.445Z",
+          "updated_at": "2021-12-30T08:22:00.382Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "h194x5nqfv9k",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-03T09:00:00.000Z",
+      "scheduled_until": "2022-03-03T15:00:00.000Z"
+    },
+    {
+      "id": "4dpczcr5frzm",
+      "name": "[GRA11][Public Cloud] Upgrade to Stein",
+      "status": "scheduled",
+      "created_at": "2022-01-27T11:09:43.008Z",
+      "updated_at": "2022-01-27T11:15:13.110Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ld0krxzcnjdv",
+      "started_at": "2022-01-27T11:09:42.999Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "sr8y3b9wr8sd",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "4dpczcr5frzm",
+          "created_at": "2022-01-27T11:15:13.108Z",
+          "updated_at": "2022-01-27T11:15:13.108Z",
+          "display_at": "2022-01-27T11:15:13.108Z",
+          "affected_components": [
+            {
+              "code": "qzsjgqbdlj7j",
+              "name": "Compute || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2yny0fm6ht83",
+          "status": "scheduled",
+          "body": "A maintenance operation is scheduled for the GRA11 region on <b>March 08, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.gra11.cloud.ovh.net\">https://compute.gra11.cloud.ovh.net</a>\n    <a href=\"https://network.compute.gra11.cloud.ovh.net\">https://network.compute.gra11.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.gra11.cloud.ovh.net\">https://volume.compute.gra11.cloud.ovh.net</a> \n    <a href=\"https://image.compute.gra11.cloud.ovh.net\">https://image.compute.gra11.cloud.ovh.net</a>\n    <a href=\"https://workflow.gra11.cloud.ovh.net\">https://workflow.gra11.cloud.ovh.net</a> \n    <a href=\"https://orchestration.gra11.cloud.ovh.net\">https://workflow.gra11.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "incident_id": "4dpczcr5frzm",
+          "created_at": "2022-01-27T11:09:43.066Z",
+          "updated_at": "2022-01-27T11:15:02.272Z",
+          "display_at": "2022-01-27T11:09:43.066Z",
+          "affected_components": [
+            {
+              "code": "2q7b1k6fh9qt",
+              "name": "Compute || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qzsjgqbdlj7j",
+          "name": "GRA11",
+          "status": "operational",
+          "created_at": "2021-11-05T14:38:44.211Z",
+          "updated_at": "2021-11-05T14:38:45.039Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "kt1mmjq8bj9g",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-08T20:00:00.000Z",
+      "scheduled_until": "2022-03-09T02:00:00.000Z"
     },
     {
       "id": "scgcf274wff8",
