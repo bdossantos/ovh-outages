@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-01T09:36:52.208Z"
+    "updated_at": "2022-02-01T10:23:56.744Z"
   },
   "components": [
     {
@@ -3221,6 +3221,37 @@
       "components": [],
       "scheduled_for": "2022-01-17T06:00:00.000Z",
       "scheduled_until": "2022-06-13T06:00:00.000Z"
+    },
+    {
+      "id": "3dmc14xkdvmf",
+      "name": "[Global][Database] postgresql / mysql / redis / kafka / opensearch / kafkaMirrorMaker",
+      "status": "scheduled",
+      "created_at": "2022-02-01T10:16:09.222Z",
+      "updated_at": "2022-02-01T10:16:09.289Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lgcqzqtlvxl5",
+      "started_at": "2022-02-01T10:16:09.217Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "3xy4k1h5q1l2",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/02/2022 11:00 UTC\n<b>End time :</b> 01/02/2022 12:00 UTC\n<b>Service impact :</b> Our partner will have a maintenance on its API. For the cloud products postgresql, mysql, redis, kafka, opensearch and kafkaMirrorMaker, the following operations will not be available:\n\t- service creation/update/delete\n\t- create link between kafkaMirrorMaker and kafka\n\t- creation/update/deletion of users\n\nThe impacted API routes are therefore for $ENGINE the cloud products named above:\n\t•\t[POST] /cloud/project/{serviceName}/database/$ENGINE\n\t•\t[PUT|DELETE] /cloud/project/{serviceName}/database/$ENGINE/{productId}\n\t•\t[POST] /cloud/project/{serviceName}/database/$ENGINE/{productId}/user\n\t•\t[PUT|DELETE] /cloud/project/{serviceName}/database/$ENGINE/{productId}/user/{userId}\n\t•\t[POST] /cloud/project/{serviceName}/database/$ENGINE/{productId}/integretion\n\t•\t[PUT|DELETE] /cloud/project/{serviceName}/database/$ENGINE/{productId}/integretation/{integrationId}\n\n<b>Running services do not have downtime</b>",
+          "incident_id": "3dmc14xkdvmf",
+          "created_at": "2022-02-01T10:16:09.285Z",
+          "updated_at": "2022-02-01T10:16:09.285Z",
+          "display_at": "2022-02-01T10:16:09.285Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2022-02-01T11:00:00.000Z",
+      "scheduled_until": "2022-02-01T12:00:00.000Z"
     },
     {
       "id": "mltz6rv3fpt5",
