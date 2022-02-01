@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-01T09:06:08.526Z"
+    "updated_at": "2022-02-01T09:36:52.208Z"
   },
   "components": [
     {
@@ -3429,11 +3429,65 @@
       "scheduled_until": "2022-02-28T10:00:00.000Z"
     },
     {
+      "id": "nvf2n04xby4g",
+      "name": "[DE1][Public Cloud] Upgrade to Stein",
+      "status": "scheduled",
+      "created_at": "2022-01-27T10:59:58.506Z",
+      "updated_at": "2022-01-31T08:22:02.649Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pzfldt903p16",
+      "started_at": "2022-01-27T10:59:58.497Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kt0h9f3y8rq6",
+          "status": "scheduled",
+          "body": "A maintenance operation is scheduled for the DE1 region on <b>March 01, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.de1.cloud.ovh.net\">https://compute.de1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.de1.cloud.ovh.net\">https://network.compute.de1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.de1.cloud.ovh.net\">https://volume.compute.de1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.de1.cloud.ovh.net\">https://image.compute.de1.cloud.ovh.net</a>\n    <a href=\"https://workflow.de1.cloud.ovh.net\">https://workflow.de1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.de1.cloud.ovh.net\">https://orchestration.de1.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "incident_id": "nvf2n04xby4g",
+          "created_at": "2022-01-27T10:59:58.578Z",
+          "updated_at": "2022-01-31T08:22:02.644Z",
+          "display_at": "2022-01-27T10:59:58.578Z",
+          "affected_components": [
+            {
+              "code": "stt2q70lfkl3",
+              "name": "Compute || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "stt2q70lfkl3",
+          "name": "DE1",
+          "status": "degraded_performance",
+          "created_at": "2021-11-05T14:38:30.297Z",
+          "updated_at": "2022-02-01T08:24:13.692Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "b99cxhjtwh0j",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-01T20:00:00.000Z",
+      "scheduled_until": "2022-03-02T02:00:00.000Z"
+    },
+    {
       "id": "j538cq8z17nx",
       "name": "[GRA5/GRA7/GRA9/SBG5/WAW1/SGP1/VA1/OR1/BHS5/SYD1][Kubernetes] - Kubernetes migration",
       "status": "scheduled",
       "created_at": "2022-01-28T10:56:58.189Z",
-      "updated_at": "2022-01-28T10:56:58.258Z",
+      "updated_at": "2022-02-01T09:36:52.205Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3441,6 +3495,56 @@
       "started_at": "2022-01-28T10:56:58.176Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "l4j4w58lqdlz",
+          "status": "scheduled",
+          "body": "We have to postpone the intervention. We apologize for the inconvenience caused\n<b>Start time :</b> 03/03/2022 08:00 UTC\n<b>End time :</b> 03/03/2022 16:00 UTC",
+          "incident_id": "j538cq8z17nx",
+          "created_at": "2022-02-01T09:36:42.252Z",
+          "updated_at": "2022-02-01T09:36:42.252Z",
+          "display_at": "2022-02-01T09:36:42.252Z",
+          "affected_components": [
+            {
+              "code": "bbkwjltzxf5y",
+              "name": "Containers & Orchestration || Managed Kubernetes - BHS",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "9kv7lpfcwn50",
+              "name": "Containers & Orchestration || Managed Kubernetes - GRA",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "pczwghvqpmvb",
+              "name": "Containers & Orchestration || Managed Kubernetes - SBG",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "bx88mllvktfc",
+              "name": "Containers & Orchestration || Managed Kubernetes - WAW",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "6c9kf8xghcw3",
+              "name": "Containers & Orchestration || Managed Kubernetes - SGP",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "wpdhhqrdx1qq",
+              "name": "Containers & Orchestration || Managed Kubernetes - SYD",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "r5gg3nx833pp",
           "status": "scheduled",
@@ -3584,62 +3688,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-03-01T08:00:00.000Z",
-      "scheduled_until": "2022-03-01T16:00:00.000Z"
-    },
-    {
-      "id": "nvf2n04xby4g",
-      "name": "[DE1][Public Cloud] Upgrade to Stein",
-      "status": "scheduled",
-      "created_at": "2022-01-27T10:59:58.506Z",
-      "updated_at": "2022-01-31T08:22:02.649Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pzfldt903p16",
-      "started_at": "2022-01-27T10:59:58.497Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "kt0h9f3y8rq6",
-          "status": "scheduled",
-          "body": "A maintenance operation is scheduled for the DE1 region on <b>March 01, 2022, between 20:00 and 02:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.de1.cloud.ovh.net\">https://compute.de1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.de1.cloud.ovh.net\">https://network.compute.de1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.de1.cloud.ovh.net\">https://volume.compute.de1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.de1.cloud.ovh.net\">https://image.compute.de1.cloud.ovh.net</a>\n    <a href=\"https://workflow.de1.cloud.ovh.net\">https://workflow.de1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.de1.cloud.ovh.net\">https://orchestration.de1.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
-          "incident_id": "nvf2n04xby4g",
-          "created_at": "2022-01-27T10:59:58.578Z",
-          "updated_at": "2022-01-31T08:22:02.644Z",
-          "display_at": "2022-01-27T10:59:58.578Z",
-          "affected_components": [
-            {
-              "code": "stt2q70lfkl3",
-              "name": "Compute || LIM - DE1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "stt2q70lfkl3",
-          "name": "DE1",
-          "status": "degraded_performance",
-          "created_at": "2021-11-05T14:38:30.297Z",
-          "updated_at": "2022-02-01T08:24:13.692Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-05",
-          "group_id": "b99cxhjtwh0j",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-01T20:00:00.000Z",
-      "scheduled_until": "2022-03-02T02:00:00.000Z"
+      "scheduled_for": "2022-03-03T08:00:00.000Z",
+      "scheduled_until": "2022-03-03T16:00:00.000Z"
     },
     {
       "id": "ndlqlxcmf8hj",
