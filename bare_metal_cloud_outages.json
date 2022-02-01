@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-01T09:10:01.442Z"
+    "updated_at": "2022-02-01T10:55:21.636Z"
   },
   "components": [
     {
@@ -336,9 +336,9 @@
     {
       "id": "2qhbxrpdd5nx",
       "name": "Zone Europe",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:07.615Z",
-      "updated_at": "2022-02-01T08:10:25.148Z",
+      "updated_at": "2022-02-01T10:55:21.579Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -486,7 +486,7 @@
     {
       "id": "nll849j8p6nq",
       "name": "Dedicated Servers || Delivery",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:11.312Z",
       "updated_at": "2021-07-09T07:37:15.959Z",
       "position": 2,
@@ -2127,6 +2127,118 @@
   ],
   "incidents": [
     {
+      "id": "tl3gc4jdqd33",
+      "name": "[EU][Install/Reinstallation/Rescue] Information communication by mail",
+      "status": "monitoring",
+      "created_at": "2022-02-01T08:10:25.000Z",
+      "updated_at": "2022-02-01T10:55:21.633Z",
+      "monitoring_at": "2022-02-01T10:55:21.617Z",
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7jggv0hq6hwr",
+      "started_at": "2022-02-01T08:10:25.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "g3j5f8twhmdm",
+          "status": "monitoring",
+          "body": "<b>Update </b>All communications have been sent. \nWe keep the situation under observation until we determine the origin of these events",
+          "incident_id": "tl3gc4jdqd33",
+          "created_at": "2022-02-01T10:55:21.617Z",
+          "updated_at": "2022-02-01T10:55:21.617Z",
+          "display_at": "2022-02-01T10:55:21.617Z",
+          "affected_components": [
+            {
+              "code": "2qhbxrpdd5nx",
+              "name": "Dedicated Servers || Delivery - Zone Europe",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k0fkdprky2dw",
+          "status": "identified",
+          "body": "<b>Update :</b>We estimate a return to normal within an hour and a half",
+          "incident_id": "tl3gc4jdqd33",
+          "created_at": "2022-02-01T09:06:11.173Z",
+          "updated_at": "2022-02-01T09:06:11.173Z",
+          "display_at": "2022-02-01T09:06:11.173Z",
+          "affected_components": [
+            {
+              "code": "2qhbxrpdd5nx",
+              "name": "Dedicated Servers || Delivery - Zone Europe",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lvj8117yb1jx",
+          "status": "identified",
+          "body": "<b>Update :</b>Mails are pending are being processed. We will keep you informed once all the mails are sent",
+          "incident_id": "tl3gc4jdqd33",
+          "created_at": "2022-02-01T09:02:36.468Z",
+          "updated_at": "2022-02-01T09:02:36.468Z",
+          "display_at": "2022-02-01T09:02:36.468Z",
+          "affected_components": [
+            {
+              "code": "2qhbxrpdd5nx",
+              "name": "Dedicated Servers || Delivery - Zone Europe",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xtk9pf16zzk3",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 01/02/2022 07:00 UTC\n<b>Service impact :</b>Information mails for the Install/Reinstallation instance are no longer sent.\n<b>Related Incident  :</b> <a href=\"https://bare-metal-servers.status-ovhcloud.com/incidents/vgnr2t9fkdsc\">https://bare-metal-servers.status-ovhcloud.com/incidents/vgnr2t9fkdsc</a>\n<b>Workaround  :</b>It is possible to workaround this problem by generating an ssh key by following this guide <a href=\"https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/#creating-an-ssh-key-using-a-linux-or-mac-operating-system\">https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/#creating-an-ssh-key-using-a-linux-or-mac-operating-system</a> or this one : \n• Connect yourself on the OVH manager\n• Click on your name on the top right\n• Select Service management at the bottom of the opened menu\n• Click on SSH Keys in the middle of the page\n• You can then follow this guide to create an ssh key <a href=\"https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-1-creer-des-cles-ssh\">https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-1-creer-des-cles-ssh</a> \n• Create an SSH KEY for the dedicated product by clicking on the ADD ssh key button.\n• Once done you have to click on the key icon at the beggining of the line linked to the key you just added to make it a default SSH key.\n• Then you can reboot your server in rescue mode and use this ssh key to connect to your server in rescue mode.",
+          "incident_id": "tl3gc4jdqd33",
+          "created_at": "2022-02-01T08:10:25.205Z",
+          "updated_at": "2022-02-01T08:20:43.799Z",
+          "display_at": "2022-02-01T08:10:25.000Z",
+          "affected_components": [
+            {
+              "code": "2qhbxrpdd5nx",
+              "name": "Dedicated Servers || Delivery - Zone Europe",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2qhbxrpdd5nx",
+          "name": "Zone Europe",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:07.615Z",
+          "updated_at": "2022-02-01T10:55:21.579Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "nll849j8p6nq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "gw4jbj95md35",
       "name": "[EUROPE][SGP-SYD][Dedicated servers] - API",
       "status": "identified",
@@ -2438,98 +2550,6 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "tl3gc4jdqd33",
-      "name": "[EU][Install/Reinstallation/Rescue] Information communication by mail",
-      "status": "identified",
-      "created_at": "2022-02-01T08:10:25.110Z",
-      "updated_at": "2022-02-01T09:06:11.176Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/7jggv0hq6hwr",
-      "started_at": "2022-02-01T08:10:25.000Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "k0fkdprky2dw",
-          "status": "identified",
-          "body": "<b>Update :</b>We estimate a return to normal within an hour and a half",
-          "incident_id": "tl3gc4jdqd33",
-          "created_at": "2022-02-01T09:06:11.173Z",
-          "updated_at": "2022-02-01T09:06:11.173Z",
-          "display_at": "2022-02-01T09:06:11.173Z",
-          "affected_components": [
-            {
-              "code": "2qhbxrpdd5nx",
-              "name": "Dedicated Servers || Delivery - Zone Europe",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lvj8117yb1jx",
-          "status": "identified",
-          "body": "<b>Update :</b>Mails are pending are being processed. We will keep you informed once all the mails are sent",
-          "incident_id": "tl3gc4jdqd33",
-          "created_at": "2022-02-01T09:02:36.468Z",
-          "updated_at": "2022-02-01T09:02:36.468Z",
-          "display_at": "2022-02-01T09:02:36.468Z",
-          "affected_components": [
-            {
-              "code": "2qhbxrpdd5nx",
-              "name": "Dedicated Servers || Delivery - Zone Europe",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xtk9pf16zzk3",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 01/02/2022 07:00 UTC\n<b>Service impact :</b>Information mails for the Install/Reinstallation instance are no longer sent.\n<b>Related Incident  :</b> <a href=\"https://bare-metal-servers.status-ovhcloud.com/incidents/vgnr2t9fkdsc\">https://bare-metal-servers.status-ovhcloud.com/incidents/vgnr2t9fkdsc</a>\n<b>Workaround  :</b>It is possible to workaround this problem by generating an ssh key by following this guide <a href=\"https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/#creating-an-ssh-key-using-a-linux-or-mac-operating-system\">https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/#creating-an-ssh-key-using-a-linux-or-mac-operating-system</a> or this one : \n• Connect yourself on the OVH manager\n• Click on your name on the top right\n• Select Service management at the bottom of the opened menu\n• Click on SSH Keys in the middle of the page\n• You can then follow this guide to create an ssh key <a href=\"https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-1-creer-des-cles-ssh\">https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-1-creer-des-cles-ssh</a> \n• Create an SSH KEY for the dedicated product by clicking on the ADD ssh key button.\n• Once done you have to click on the key icon at the beggining of the line linked to the key you just added to make it a default SSH key.\n• Then you can reboot your server in rescue mode and use this ssh key to connect to your server in rescue mode.",
-          "incident_id": "tl3gc4jdqd33",
-          "created_at": "2022-02-01T08:10:25.205Z",
-          "updated_at": "2022-02-01T08:20:43.799Z",
-          "display_at": "2022-02-01T08:10:25.000Z",
-          "affected_components": [
-            {
-              "code": "2qhbxrpdd5nx",
-              "name": "Dedicated Servers || Delivery - Zone Europe",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2qhbxrpdd5nx",
-          "name": "Zone Europe",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:32:07.615Z",
-          "updated_at": "2022-02-01T08:10:25.148Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "nll849j8p6nq",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
