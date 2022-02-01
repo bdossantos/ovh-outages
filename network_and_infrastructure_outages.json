@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-01T20:01:56.227Z"
+    "updated_at": "2022-02-01T21:01:35.218Z"
   },
   "components": [
     {
@@ -95,9 +95,9 @@
     {
       "id": "66ctp89pwlcd",
       "name": "GRA1",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:37.816Z",
-      "updated_at": "2022-02-01T15:02:16.299Z",
+      "updated_at": "2022-02-01T21:01:34.684Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -278,7 +278,7 @@
     {
       "id": "cxhdwyc4lvgf",
       "name": "Datacenters || GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:40.180Z",
       "updated_at": "2021-11-10T14:24:37.414Z",
       "position": 3,
@@ -818,45 +818,57 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "36bgzm4rx35s",
-      "name": "[GRA1][Network] - SDAGG upgrade",
+      "id": "swxwyjk9zybw",
+      "name": "[APAC][BACKBONE] -   Cleanup BGP sessions in new RR",
       "status": "scheduled",
-      "created_at": "2022-01-24T18:33:52.702Z",
-      "updated_at": "2022-02-01T20:00:31.328Z",
+      "created_at": "2022-02-01T20:57:49.763Z",
+      "updated_at": "2022-02-01T20:59:31.170Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/bd3c8lb4xryt",
-      "started_at": "2022-01-24T18:33:52.694Z",
+      "shortlink": "https://stspg.io/dtdt36jmj7ft",
+      "started_at": "2022-02-01T20:57:49.752Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "j8sj3pfrml54",
+          "id": "jyjvgyg73ypn",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "36bgzm4rx35s",
-          "created_at": "2022-02-01T20:00:31.164Z",
-          "updated_at": "2022-02-01T20:00:31.164Z",
-          "display_at": "2022-02-01T20:00:31.164Z",
+          "incident_id": "swxwyjk9zybw",
+          "created_at": "2022-02-01T20:59:31.052Z",
+          "updated_at": "2022-02-01T20:59:31.052Z",
+          "display_at": "2022-02-01T20:59:31.052Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "45xpjcbxdwhv",
+          "id": "m39xj5bx6vfc",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 01/02/2022 21:00 UTC\n<b>End time :</b> 01/02/2022 23:59 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Upgrade all SDAGG Bart in order to have a homogeneous park.",
-          "incident_id": "36bgzm4rx35s",
-          "created_at": "2022-01-24T18:33:52.753Z",
-          "updated_at": "2022-01-24T18:33:52.753Z",
-          "display_at": "2022-01-24T18:33:52.753Z",
+          "body": "<b>Start time :</b>  01/02/2022 22:00 UTC\n<b>End time :</b> 01/02/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> On our new route reflectors, we have some bgp peers which are no more in use. The goal  is to remove all old bgp peers, then we will clean all peer sessions in Active or Idle state.",
+          "incident_id": "swxwyjk9zybw",
+          "created_at": "2022-02-01T20:57:49.829Z",
+          "updated_at": "2022-02-01T20:57:49.829Z",
+          "display_at": "2022-02-01T20:57:49.829Z",
           "affected_components": [
             {
-              "code": "66ctp89pwlcd",
-              "name": "Datacenters || GRA - GRA1",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "code": "s6fd9v65w7c3",
+              "name": "Datacenters || SYD - SYD1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zlmhfg14mvn6",
+              "name": "Datacenters || SYD - SYD2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bs5xcsc4m9vm",
+              "name": "Datacenters || SGP1",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -866,23 +878,53 @@
       ],
       "components": [
         {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
+          "id": "s6fd9v65w7c3",
+          "name": "SYD1",
           "status": "operational",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "created_at": "2021-11-10T14:20:08.513Z",
+          "updated_at": "2022-02-01T19:20:30.411Z",
           "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
+          "group_id": "b2zrcdtcfxpw",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zlmhfg14mvn6",
+          "name": "SYD2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:09.250Z",
+          "updated_at": "2022-02-01T19:20:30.427Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "b2zrcdtcfxpw",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bs5xcsc4m9vm",
+          "name": "Datacenters || SGP1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:53.904Z",
+          "updated_at": "2022-02-01T19:20:30.441Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-02-01T21:00:00.000Z",
-      "scheduled_until": "2022-02-01T23:59:00.000Z"
+      "scheduled_for": "2022-02-01T22:00:00.000Z",
+      "scheduled_until": "2022-02-01T23:30:00.000Z"
     },
     {
       "id": "01kvm1y9cxrs",
@@ -1706,9 +1748,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2417,9 +2459,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2534,9 +2576,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3447,9 +3489,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3621,9 +3663,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3879,9 +3921,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3924,6 +3966,93 @@
       ],
       "scheduled_for": "2022-02-28T07:02:00.000Z",
       "scheduled_until": "2022-02-28T15:29:00.000Z"
+    },
+    {
+      "id": "36bgzm4rx35s",
+      "name": "[GRA1][Network] - SDAGG upgrade",
+      "status": "in_progress",
+      "created_at": "2022-01-24T18:33:52.702Z",
+      "updated_at": "2022-02-01T21:01:35.197Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bd3c8lb4xryt",
+      "started_at": "2022-01-24T18:33:52.694Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "6nz40zdzv3qj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "36bgzm4rx35s",
+          "created_at": "2022-02-01T21:01:35.192Z",
+          "updated_at": "2022-02-01T21:01:35.192Z",
+          "display_at": "2022-02-01T21:01:35.192Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j8sj3pfrml54",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "36bgzm4rx35s",
+          "created_at": "2022-02-01T20:00:31.164Z",
+          "updated_at": "2022-02-01T20:00:31.164Z",
+          "display_at": "2022-02-01T20:00:31.164Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "45xpjcbxdwhv",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/02/2022 21:00 UTC\n<b>End time :</b> 01/02/2022 23:59 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Upgrade all SDAGG Bart in order to have a homogeneous park.",
+          "incident_id": "36bgzm4rx35s",
+          "created_at": "2022-01-24T18:33:52.753Z",
+          "updated_at": "2022-01-24T18:33:52.753Z",
+          "display_at": "2022-01-24T18:33:52.753Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-01T21:00:00.000Z",
+      "scheduled_until": "2022-02-01T23:59:00.000Z"
     },
     {
       "id": "h113cxzgx5pc",
@@ -4528,9 +4657,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4608,9 +4737,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5149,9 +5278,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5316,9 +5445,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5414,9 +5543,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-01T15:02:16.299Z",
+          "updated_at": "2022-02-01T21:01:34.684Z",
           "position": 1,
           "description": null,
           "showcase": false,
