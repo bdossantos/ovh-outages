@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-09T18:00:29.942Z"
+    "updated_at": "2022-02-09T19:25:46.283Z"
   },
   "components": [
     {
@@ -25,9 +25,9 @@
     {
       "id": "66ctp89pwlcd",
       "name": "GRA1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:37.816Z",
-      "updated_at": "2022-02-09T16:00:29.670Z",
+      "updated_at": "2022-02-09T19:03:41.588Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -278,7 +278,7 @@
     {
       "id": "cxhdwyc4lvgf",
       "name": "Datacenters || GRA",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:40.180Z",
       "updated_at": "2021-11-10T14:24:37.414Z",
       "position": 3,
@@ -815,7 +815,80 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "s4rcd6c62p18",
+      "name": "[GRA1][Network] - Routers",
+      "status": "identified",
+      "created_at": "2022-02-09T19:03:41.558Z",
+      "updated_at": "2022-02-09T19:25:46.275Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p0n2l3z55zfn",
+      "started_at": "2022-02-09T19:03:41.000Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "l3pnh6q1v7z7",
+          "status": "identified",
+          "body": "<b>Start time :</b>  09/02/2022 18:34 UTC\n<b>Service impact :</b> Some customers were facing some packet loss.\n<b>Root cause :</b> A link was causing the loss.\n<b>Ongoing actions :</b> No more loss since 18:50 UTC, our teams managed to isolate the link causing the issue. They are currently working to solve the issue permanently.",
+          "incident_id": "s4rcd6c62p18",
+          "created_at": "2022-02-09T19:13:47.163Z",
+          "updated_at": "2022-02-09T19:25:46.270Z",
+          "display_at": "2022-02-09T19:13:47.000Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pb7mq41bgjrm",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  09/02/2022 18:34 UTC\n<b>Service impact :</b> Some customers are facing some packet loss.\n<b>Ongoing actions :</b>  Our teams are working to solve the issue.\nWe apologize for the inconvenience and thank you for your understanding",
+          "incident_id": "s4rcd6c62p18",
+          "created_at": "2022-02-09T19:03:41.651Z",
+          "updated_at": "2022-02-09T19:08:49.349Z",
+          "display_at": "2022-02-09T19:03:41.000Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "degraded_performance",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "dtg40j96z9y5",
@@ -2029,9 +2102,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2311,9 +2384,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2697,9 +2770,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3279,9 +3352,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3729,9 +3802,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4029,9 +4102,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4554,9 +4627,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4738,9 +4811,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-09T16:00:29.670Z",
+          "updated_at": "2022-02-09T19:03:41.588Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5172,7 +5245,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
