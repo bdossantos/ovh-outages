@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-14T21:41:27.257Z"
+    "updated_at": "2022-02-14T22:23:49.775Z"
   },
   "components": [
     {
@@ -2552,6 +2552,81 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "t1kylwzr8g9q",
+      "name": "[RBX7/SBG3][Dedicated servers] - Upgrade RTvRack",
+      "status": "scheduled",
+      "created_at": "2022-02-14T22:23:49.675Z",
+      "updated_at": "2022-02-14T22:23:49.771Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cfvvp4l5gycw",
+      "started_at": "2022-02-14T22:23:49.663Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "j4r1plsccx0n",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 15/02/2022 21:00 UTC\n<b>End time :</b> 15/02/2022 23:59 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> In regard to our lifecycle management, we need to upgrade all RTvRack exchanger to a new version in order to have a homogeneous park.",
+          "incident_id": "t1kylwzr8g9q",
+          "created_at": "2022-02-14T22:23:49.767Z",
+          "updated_at": "2022-02-14T22:23:49.767Z",
+          "display_at": "2022-02-14T22:23:49.767Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-02-14T15:51:19.645Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2022-02-07T16:05:09.920Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-15T21:00:00.000Z",
+      "scheduled_until": "2022-02-15T23:59:00.000Z"
+    },
     {
       "id": "0q98cs2xs99c",
       "name": "[RBX4][Network] - Moving servers altigo-d20093-2 50D29",
