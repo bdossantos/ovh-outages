@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-15T19:59:31.183Z"
+    "updated_at": "2022-02-15T20:23:51.817Z"
   },
   "components": [
     {
@@ -100,7 +100,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1268,9 +1268,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-02-09T09:36:57.131Z",
+      "updated_at": "2022-02-15T20:07:07.766Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2127,6 +2127,58 @@
   ],
   "incidents": [
     {
+      "id": "lpzz2nbrxk3q",
+      "name": "[RBX4][Dedicated servers]  50D and 51D",
+      "status": "identified",
+      "created_at": "2022-02-15T20:07:07.728Z",
+      "updated_at": "2022-02-15T20:07:08.133Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fjz8jpg3rgvh",
+      "started_at": "2022-02-15T20:07:07.719Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "ytn1nqsgl7nb",
+          "status": "identified",
+          "body": "<b>Start time :</b>  15/02/2022 19:41 UTC\n<b>Service impact :</b>2 rooms are impacted\n<b>Root cause :</b> A water leak has broken through a ceiling. It impacted some racks.\n<b>Ongoing actions :</b> Our technicians are currently working on",
+          "incident_id": "lpzz2nbrxk3q",
+          "created_at": "2022-02-15T20:07:08.130Z",
+          "updated_at": "2022-02-15T20:07:08.130Z",
+          "display_at": "2022-02-15T20:07:08.130Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2022-02-15T20:07:07.766Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "vsg797ny2dtc",
       "name": "[Global][Dedicated servers] - API",
       "status": "monitoring",
@@ -2612,9 +2664,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-02-09T09:36:57.131Z",
+          "updated_at": "2022-02-15T20:07:07.766Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3207,7 +3259,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
