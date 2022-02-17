@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-17T06:00:49.516Z"
+    "updated_at": "2022-02-17T06:30:31.816Z"
   },
   "components": [
     {
@@ -889,7 +889,7 @@
       "name": "[GRA][Infrastructure] - DC electricity",
       "status": "scheduled",
       "created_at": "2022-01-21T01:21:28.714Z",
-      "updated_at": "2022-01-21T01:21:28.769Z",
+      "updated_at": "2022-02-17T06:30:31.790Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -897,6 +897,19 @@
       "started_at": "2022-01-21T01:21:28.705Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "sdcnqq9fbh8y",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "hfbyjjh4nfdm",
+          "created_at": "2022-02-17T06:30:31.517Z",
+          "updated_at": "2022-02-17T06:30:31.517Z",
+          "display_at": "2022-02-17T06:30:31.517Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6msprc10vr7f",
           "status": "scheduled",
@@ -1035,6 +1048,60 @@
       "scheduled_until": "2022-02-17T12:30:00.000Z"
     },
     {
+      "id": "hddccgdrz0lx",
+      "name": "[BHS8][Infrastructure] - BHS0806B05B",
+      "status": "scheduled",
+      "created_at": "2022-02-11T00:11:14.365Z",
+      "updated_at": "2022-02-11T00:11:14.406Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qvxbclqxtqyp",
+      "started_at": "2022-02-11T00:11:14.359Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "rxnzxpnd0cvc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 17/02/2022 12:00 UTC\n<b>End time :</b> 17/02/2022 21:00 UTC\n<b>Service impact :</b> Disconnection of the IPMI and TOR switch for about 5 minutes \n<b>Service improvement :</b> Electrical migration of the IPMI and TOR switch of  BHS0806B05B rack",
+          "incident_id": "hddccgdrz0lx",
+          "created_at": "2022-02-11T00:11:14.404Z",
+          "updated_at": "2022-02-11T00:11:14.404Z",
+          "display_at": "2022-02-11T00:11:14.404Z",
+          "affected_components": [
+            {
+              "code": "m4pzrlrxvvgt",
+              "name": "Datacenters || BHS - BHS8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m4pzrlrxvvgt",
+          "name": "BHS8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:32.046Z",
+          "updated_at": "2022-02-11T10:51:19.848Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-17T12:00:00.000Z",
+      "scheduled_until": "2022-02-17T21:00:00.000Z"
+    },
+    {
       "id": "77nw9z60cxlf",
       "name": "[BHS8][Infrastructure] - BHS0806B05A",
       "status": "scheduled",
@@ -1109,60 +1176,6 @@
           "created_at": "2022-02-11T00:14:35.710Z",
           "updated_at": "2022-02-11T00:14:35.710Z",
           "display_at": "2022-02-11T00:14:35.710Z",
-          "affected_components": [
-            {
-              "code": "m4pzrlrxvvgt",
-              "name": "Datacenters || BHS - BHS8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "m4pzrlrxvvgt",
-          "name": "BHS8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-02-11T10:51:19.848Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-02-17T12:00:00.000Z",
-      "scheduled_until": "2022-02-17T21:00:00.000Z"
-    },
-    {
-      "id": "hddccgdrz0lx",
-      "name": "[BHS8][Infrastructure] - BHS0806B05B",
-      "status": "scheduled",
-      "created_at": "2022-02-11T00:11:14.365Z",
-      "updated_at": "2022-02-11T00:11:14.406Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qvxbclqxtqyp",
-      "started_at": "2022-02-11T00:11:14.359Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "rxnzxpnd0cvc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 17/02/2022 12:00 UTC\n<b>End time :</b> 17/02/2022 21:00 UTC\n<b>Service impact :</b> Disconnection of the IPMI and TOR switch for about 5 minutes \n<b>Service improvement :</b> Electrical migration of the IPMI and TOR switch of  BHS0806B05B rack",
-          "incident_id": "hddccgdrz0lx",
-          "created_at": "2022-02-11T00:11:14.404Z",
-          "updated_at": "2022-02-11T00:11:14.404Z",
-          "display_at": "2022-02-11T00:11:14.404Z",
           "affected_components": [
             {
               "code": "m4pzrlrxvvgt",
@@ -1683,30 +1696,30 @@
       "scheduled_until": "2022-02-21T13:00:00.000Z"
     },
     {
-      "id": "t6d0tbns2t62",
-      "name": "[RBX6][Cooling System] - Airflow",
+      "id": "8wdpnvkqzbyj",
+      "name": "[GRA2][Infrastructure] network/energy rooms",
       "status": "scheduled",
-      "created_at": "2022-02-11T01:38:31.883Z",
-      "updated_at": "2022-02-11T01:38:31.949Z",
+      "created_at": "2022-02-05T06:31:32.053Z",
+      "updated_at": "2022-02-05T06:31:32.134Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/yyn6w9lhxls7",
-      "started_at": "2022-02-11T01:38:31.874Z",
+      "shortlink": "https://stspg.io/jxfvy64s87tv",
+      "started_at": "2022-02-05T06:31:32.043Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "9dgf7j6yq78z",
+          "id": "j2stq1hq4r14",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 21/02/2022 08:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Change the ventilation direction of the fans for cooling network equipment.",
-          "incident_id": "t6d0tbns2t62",
-          "created_at": "2022-02-11T01:38:31.946Z",
-          "updated_at": "2022-02-11T01:38:31.946Z",
-          "display_at": "2022-02-11T01:38:31.946Z",
+          "body": "<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 21/02/2022 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> The purpose of the operation is to add a 10A circuit breaker in the cabinet (via normaclip) to supply the monitoring box for the supervision of the air conditioners.",
+          "incident_id": "8wdpnvkqzbyj",
+          "created_at": "2022-02-05T06:31:32.130Z",
+          "updated_at": "2022-02-05T06:31:32.130Z",
+          "display_at": "2022-02-05T06:31:32.130Z",
           "affected_components": [
             {
-              "code": "5rlwxw2f24qh",
-              "name": "Datacenters || RBX - RBX6",
+              "code": "f4vdn73g6790",
+              "name": "Datacenters || GRA - GRA2",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -1718,86 +1731,12 @@
       ],
       "components": [
         {
-          "id": "5rlwxw2f24qh",
-          "name": "RBX6",
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
           "status": "operational",
-          "created_at": "2021-11-10T14:20:19.265Z",
-          "updated_at": "2022-02-14T18:34:35.072Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-02-21T08:00:00.000Z",
-      "scheduled_until": "2022-02-21T08:30:00.000Z"
-    },
-    {
-      "id": "rzszk8pr36wg",
-      "name": "[GRA3][Infrastructure] - G316",
-      "status": "scheduled",
-      "created_at": "2022-02-02T00:16:50.807Z",
-      "updated_at": "2022-02-03T16:09:25.394Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0w97z6bnxvpw",
-      "started_at": "2022-02-02T00:16:50.798Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "jpv0j7qfqr4d",
-          "status": "scheduled",
-          "body": "<b>Update : </b>We have to move the intervention to a later date. We apologize for the inconvenience caused\n<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 24/02/2022  15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Supply of a new electrical cabinet",
-          "incident_id": "rzszk8pr36wg",
-          "created_at": "2022-02-03T16:09:14.477Z",
-          "updated_at": "2022-02-03T16:09:14.477Z",
-          "display_at": "2022-02-03T16:09:14.477Z",
-          "affected_components": [
-            {
-              "code": "mlw1x23q8nrt",
-              "name": "Datacenters || GRA - GRA3",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tnjl2rfb56wg",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 07/02/2022 08:00 UTC\n<b>End time :</b> 10/02/2022  15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Supply of a new electrical cabinet",
-          "incident_id": "rzszk8pr36wg",
-          "created_at": "2022-02-02T00:16:50.865Z",
-          "updated_at": "2022-02-02T00:16:50.865Z",
-          "display_at": "2022-02-02T00:16:50.865Z",
-          "affected_components": [
-            {
-              "code": "mlw1x23q8nrt",
-              "name": "Datacenters || GRA - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mlw1x23q8nrt",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:39.377Z",
-          "updated_at": "2022-02-16T16:06:49.717Z",
-          "position": 3,
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2022-02-16T16:00:30.590Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
@@ -1808,7 +1747,7 @@
         }
       ],
       "scheduled_for": "2022-02-21T08:00:00.000Z",
-      "scheduled_until": "2022-02-24T15:00:00.000Z"
+      "scheduled_until": "2022-02-21T15:00:00.000Z"
     },
     {
       "id": "mvyw9yx0l443",
@@ -1907,30 +1846,50 @@
       "scheduled_until": "2022-03-03T15:00:00.000Z"
     },
     {
-      "id": "8wdpnvkqzbyj",
-      "name": "[GRA2][Infrastructure] network/energy rooms",
+      "id": "rzszk8pr36wg",
+      "name": "[GRA3][Infrastructure] - G316",
       "status": "scheduled",
-      "created_at": "2022-02-05T06:31:32.053Z",
-      "updated_at": "2022-02-05T06:31:32.134Z",
+      "created_at": "2022-02-02T00:16:50.807Z",
+      "updated_at": "2022-02-03T16:09:25.394Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/jxfvy64s87tv",
-      "started_at": "2022-02-05T06:31:32.043Z",
+      "shortlink": "https://stspg.io/0w97z6bnxvpw",
+      "started_at": "2022-02-02T00:16:50.798Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "j2stq1hq4r14",
+          "id": "jpv0j7qfqr4d",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 21/02/2022 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> The purpose of the operation is to add a 10A circuit breaker in the cabinet (via normaclip) to supply the monitoring box for the supervision of the air conditioners.",
-          "incident_id": "8wdpnvkqzbyj",
-          "created_at": "2022-02-05T06:31:32.130Z",
-          "updated_at": "2022-02-05T06:31:32.130Z",
-          "display_at": "2022-02-05T06:31:32.130Z",
+          "body": "<b>Update : </b>We have to move the intervention to a later date. We apologize for the inconvenience caused\n<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 24/02/2022  15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Supply of a new electrical cabinet",
+          "incident_id": "rzszk8pr36wg",
+          "created_at": "2022-02-03T16:09:14.477Z",
+          "updated_at": "2022-02-03T16:09:14.477Z",
+          "display_at": "2022-02-03T16:09:14.477Z",
           "affected_components": [
             {
-              "code": "f4vdn73g6790",
-              "name": "Datacenters || GRA - GRA2",
+              "code": "mlw1x23q8nrt",
+              "name": "Datacenters || GRA - GRA3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tnjl2rfb56wg",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 07/02/2022 08:00 UTC\n<b>End time :</b> 10/02/2022  15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Supply of a new electrical cabinet",
+          "incident_id": "rzszk8pr36wg",
+          "created_at": "2022-02-02T00:16:50.865Z",
+          "updated_at": "2022-02-02T00:16:50.865Z",
+          "display_at": "2022-02-02T00:16:50.865Z",
+          "affected_components": [
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Datacenters || GRA - GRA3",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -1942,12 +1901,12 @@
       ],
       "components": [
         {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
           "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2022-02-16T16:00:30.590Z",
-          "position": 2,
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2022-02-16T16:06:49.717Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
@@ -1958,7 +1917,61 @@
         }
       ],
       "scheduled_for": "2022-02-21T08:00:00.000Z",
-      "scheduled_until": "2022-02-21T15:00:00.000Z"
+      "scheduled_until": "2022-02-24T15:00:00.000Z"
+    },
+    {
+      "id": "t6d0tbns2t62",
+      "name": "[RBX6][Cooling System] - Airflow",
+      "status": "scheduled",
+      "created_at": "2022-02-11T01:38:31.883Z",
+      "updated_at": "2022-02-11T01:38:31.949Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yyn6w9lhxls7",
+      "started_at": "2022-02-11T01:38:31.874Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "9dgf7j6yq78z",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/02/2022 08:00 UTC\n<b>End time :</b> 21/02/2022 08:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Change the ventilation direction of the fans for cooling network equipment.",
+          "incident_id": "t6d0tbns2t62",
+          "created_at": "2022-02-11T01:38:31.946Z",
+          "updated_at": "2022-02-11T01:38:31.946Z",
+          "display_at": "2022-02-11T01:38:31.946Z",
+          "affected_components": [
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Datacenters || RBX - RBX6",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2022-02-14T18:34:35.072Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-21T08:00:00.000Z",
+      "scheduled_until": "2022-02-21T08:30:00.000Z"
     },
     {
       "id": "km46zj6mk030",
@@ -3601,26 +3614,26 @@
       "scheduled_until": "2022-03-08T16:00:00.000Z"
     },
     {
-      "id": "29dc18vb8ft3",
+      "id": "r8x7qcmz7w16",
       "name": "[RBX2][Network] - Relocation of servers",
       "status": "scheduled",
-      "created_at": "2022-02-09T02:46:19.467Z",
-      "updated_at": "2022-02-10T01:42:58.818Z",
+      "created_at": "2022-02-09T02:25:35.092Z",
+      "updated_at": "2022-02-10T01:43:39.038Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/86rd0n1304gv",
-      "started_at": "2022-02-09T02:46:19.458Z",
+      "shortlink": "https://stspg.io/whxg5z0x8fv5",
+      "started_at": "2022-02-09T02:25:35.082Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "g9zlp59s7mxs",
+          "id": "qwg1njj6sn5d",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 10/03/2022 05:00 UTC\n<b>End time :</b> 10/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
-          "incident_id": "29dc18vb8ft3",
-          "created_at": "2022-02-09T02:46:19.524Z",
-          "updated_at": "2022-02-09T02:46:19.524Z",
-          "display_at": "2022-02-09T02:46:19.524Z",
+          "body": "<b>Start time :</b> 09/03/2022 05:00 UTC\n<b>End time :</b> 09/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
+          "incident_id": "r8x7qcmz7w16",
+          "created_at": "2022-02-09T02:25:35.154Z",
+          "updated_at": "2022-02-09T02:25:35.154Z",
+          "display_at": "2022-02-09T02:25:35.154Z",
           "affected_components": [
             {
               "code": "p5jg5r8hjzk6",
@@ -3655,26 +3668,26 @@
       "scheduled_until": "2022-03-09T14:00:00.000Z"
     },
     {
-      "id": "r8x7qcmz7w16",
+      "id": "29dc18vb8ft3",
       "name": "[RBX2][Network] - Relocation of servers",
       "status": "scheduled",
-      "created_at": "2022-02-09T02:25:35.092Z",
-      "updated_at": "2022-02-10T01:43:39.038Z",
+      "created_at": "2022-02-09T02:46:19.467Z",
+      "updated_at": "2022-02-10T01:42:58.818Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/whxg5z0x8fv5",
-      "started_at": "2022-02-09T02:25:35.082Z",
+      "shortlink": "https://stspg.io/86rd0n1304gv",
+      "started_at": "2022-02-09T02:46:19.458Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "qwg1njj6sn5d",
+          "id": "g9zlp59s7mxs",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 09/03/2022 05:00 UTC\n<b>End time :</b> 09/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
-          "incident_id": "r8x7qcmz7w16",
-          "created_at": "2022-02-09T02:25:35.154Z",
-          "updated_at": "2022-02-09T02:25:35.154Z",
-          "display_at": "2022-02-09T02:25:35.154Z",
+          "body": "<b>Start time :</b> 10/03/2022 05:00 UTC\n<b>End time :</b> 10/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
+          "incident_id": "29dc18vb8ft3",
+          "created_at": "2022-02-09T02:46:19.524Z",
+          "updated_at": "2022-02-09T02:46:19.524Z",
+          "display_at": "2022-02-09T02:46:19.524Z",
           "affected_components": [
             {
               "code": "p5jg5r8hjzk6",
