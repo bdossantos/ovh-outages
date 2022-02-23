@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-23T16:38:57.498Z"
+    "updated_at": "2022-02-23T16:55:43.609Z"
   },
   "components": [
     {
@@ -2382,35 +2382,6 @@
   ],
   "incidents": [
     {
-      "id": "gv845tplv6mj",
-      "name": "PCI - BHS3 - host327360",
-      "status": "investigating",
-      "created_at": "2022-02-23T16:38:57.440Z",
-      "updated_at": "2022-02-23T16:38:57.495Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/72gskd0kgt4j",
-      "started_at": "2022-02-23T16:38:57.432Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "44w1tmw5wpk0",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost327360.bhs3.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n6f749ef6-6837-48b3-bdf1-fd133233db64\n3eae35fa-ab64-42ea-a07b-b783d92f5621\na7597db6-3119-4b22-9b9e-88f651c6d921\n3bdaf9ee-d3e2-4742-ac26-badf0e42445c\n42103884-a397-43d5-ad25-827384844185\n9a1dce89-6899-4110-afa8-df1952b623a3\n4aec8272-f59b-4f1e-b9c1-6804a73e5423\n8efafc3a-4879-4837-8817-621c7e5ac195\n0fa7ae17-12d0-4990-b801-43aa9289c711",
-          "incident_id": "gv845tplv6mj",
-          "created_at": "2022-02-23T16:38:57.492Z",
-          "updated_at": "2022-02-23T16:38:57.492Z",
-          "display_at": "2022-02-23T16:38:57.492Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    },
-    {
       "id": "wp5mr4bk5crk",
       "name": "PCI - GRA1 - host764847",
       "status": "investigating",
@@ -3025,6 +2996,102 @@
       ],
       "scheduled_for": "2022-03-03T09:00:00.000Z",
       "scheduled_until": "2022-03-03T15:00:00.000Z"
+    },
+    {
+      "id": "v0z3pz3ffcxl",
+      "name": "[SBG5/GRA5/GRA7][OpenStack] - Deletion of legacy routers",
+      "status": "scheduled",
+      "created_at": "2022-02-23T16:55:43.546Z",
+      "updated_at": "2022-02-23T16:55:43.607Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yr81wcdtmps2",
+      "started_at": "2022-02-23T16:55:43.534Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "nfg06wcn7x04",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 07/03/2022 09:00 UTC\n<b>End time :</b> 07/03/2022 10:00 UTC\n<b>Service impact :</b> Customers risk losing network connectivity if they do not provision a router before maintenance.\n<b>Service improvement :</b> We will delete all legacy routers and floating IP's that are currently running on SBG5 GRA5 and GRA7 regions.\n<b>Workaround :</b> The creation of new routers will be available when the region is upgraded to OpenStack Stein. New routers are already available on GRA9 for testing now.",
+          "incident_id": "v0z3pz3ffcxl",
+          "created_at": "2022-02-23T16:55:43.604Z",
+          "updated_at": "2022-02-23T16:55:43.604Z",
+          "display_at": "2022-02-23T16:55:43.604Z",
+          "affected_components": [
+            {
+              "code": "bb70tcxy7y53",
+              "name": "Compute || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "cg9628c1n6dg",
+              "name": "Compute || GRA - GRA5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "px9hhrfrkmth",
+              "name": "Compute || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bb70tcxy7y53",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2021-11-05T14:38:17.920Z",
+          "updated_at": "2022-02-01T10:55:50.492Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "ct6z16w87n07",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cg9628c1n6dg",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2021-11-05T14:38:42.344Z",
+          "updated_at": "2022-02-01T10:55:50.604Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "kt1mmjq8bj9g",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "px9hhrfrkmth",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2021-11-05T14:38:42.980Z",
+          "updated_at": "2022-02-01T10:55:50.626Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-05",
+          "group_id": "kt1mmjq8bj9g",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-07T09:00:00.000Z",
+      "scheduled_until": "2022-03-07T10:00:00.000Z"
     },
     {
       "id": "4dpczcr5frzm",
