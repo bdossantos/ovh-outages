@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-23T06:23:50.398Z"
+    "updated_at": "2022-02-23T07:00:35.365Z"
   },
   "components": [
     {
@@ -125,9 +125,9 @@
     {
       "id": "l38v4l1b1vt8",
       "name": "ERI1",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:45.650Z",
-      "updated_at": "2022-02-16T10:09:00.695Z",
+      "updated_at": "2022-02-23T07:00:25.008Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -155,7 +155,7 @@
     {
       "id": "sdpm85zsx4w3",
       "name": "Datacenters || ERI",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:46.526Z",
       "updated_at": "2021-11-10T14:24:33.773Z",
       "position": 2,
@@ -173,9 +173,9 @@
     {
       "id": "p5jg5r8hjzk6",
       "name": "RBX2",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:15.916Z",
-      "updated_at": "2022-02-22T05:00:31.001Z",
+      "updated_at": "2022-02-23T07:00:25.614Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -818,43 +818,30 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "7fj8pdn590bj",
-      "name": "[GRA1][Infrastructure] - G116B03 - G116B22 - G117B13 - G117B22 - G118B09 - G118B13",
+      "id": "tfpkg9ymgsrw",
+      "name": "[BHS7][Cooling System] - B715B10",
       "status": "scheduled",
-      "created_at": "2022-02-22T11:50:22.102Z",
-      "updated_at": "2022-02-23T05:59:37.870Z",
+      "created_at": "2022-02-16T06:35:42.473Z",
+      "updated_at": "2022-02-16T06:35:42.532Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/pmhfg5z1665d",
-      "started_at": "2022-02-22T11:50:22.094Z",
+      "shortlink": "https://stspg.io/7p3l5kcysnl3",
+      "started_at": "2022-02-16T06:35:42.465Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "3k0hqytq8wmt",
+          "id": "0v6myldzp19d",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "7fj8pdn590bj",
-          "created_at": "2022-02-23T05:59:37.616Z",
-          "updated_at": "2022-02-23T05:59:37.616Z",
-          "display_at": "2022-02-23T05:59:37.616Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1j8dmcn9f11t",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 24/02/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Battery replacement on racks G116B03 - G116B22 - G117B13 - G117B22 - G118B09 - G118B13",
-          "incident_id": "7fj8pdn590bj",
-          "created_at": "2022-02-22T11:50:22.156Z",
-          "updated_at": "2022-02-22T11:50:22.156Z",
-          "display_at": "2022-02-22T11:50:22.156Z",
+          "body": "<b>Start time :</b> 23/02/2022 12:00 UTC\n<b>End time :</b> 25/02/2022 01:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
+          "incident_id": "tfpkg9ymgsrw",
+          "created_at": "2022-02-16T06:35:42.529Z",
+          "updated_at": "2022-02-16T06:35:42.529Z",
+          "display_at": "2022-02-16T06:35:42.529Z",
           "affected_components": [
             {
-              "code": "66ctp89pwlcd",
-              "name": "Datacenters || GRA - GRA1",
+              "code": "v0kyk7zsjqvd",
+              "name": "Datacenters || BHS - BHS7",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             }
@@ -866,157 +853,23 @@
       ],
       "components": [
         {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-02-21T06:45:39.019Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-02-23T07:00:00.000Z",
-      "scheduled_until": "2022-02-24T16:00:00.000Z"
-    },
-    {
-      "id": "0slkpmpdn0ql",
-      "name": "[RBX2B][Storage] - Datastores",
-      "status": "scheduled",
-      "created_at": "2022-02-18T03:52:40.499Z",
-      "updated_at": "2022-02-23T05:59:37.324Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w689vdj992mz",
-      "started_at": "2022-02-18T03:52:40.491Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "z4c3lkh0h6v3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0slkpmpdn0ql",
-          "created_at": "2022-02-23T05:59:37.044Z",
-          "updated_at": "2022-02-23T05:59:37.044Z",
-          "display_at": "2022-02-23T05:59:37.044Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "x96rhpqh8bbk",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 24/02/2022 12:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> We are going to migrate RBX2B datastores to a new configuration management tool",
-          "incident_id": "0slkpmpdn0ql",
-          "created_at": "2022-02-18T03:52:40.557Z",
-          "updated_at": "2022-02-18T03:52:40.557Z",
-          "display_at": "2022-02-18T03:52:40.557Z",
-          "affected_components": [
-            {
-              "code": "p5jg5r8hjzk6",
-              "name": "Datacenters || RBX - RBX2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p5jg5r8hjzk6",
-          "name": "RBX2",
+          "id": "v0kyk7zsjqvd",
+          "name": "BHS7",
           "status": "operational",
-          "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
-          "position": 2,
+          "created_at": "2021-11-10T14:20:31.279Z",
+          "updated_at": "2022-02-23T01:19:23.143Z",
+          "position": 7,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "group_id": "p5hsr9gwdmns",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-02-23T07:00:00.000Z",
-      "scheduled_until": "2022-02-24T12:30:00.000Z"
-    },
-    {
-      "id": "2yq4czk3340p",
-      "name": "[ERI][Infrastructure] - E105C07",
-      "status": "scheduled",
-      "created_at": "2022-01-28T09:03:34.875Z",
-      "updated_at": "2022-02-23T05:59:32.547Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pncnw4q58vg6",
-      "started_at": "2022-01-28T09:03:34.867Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "08cnbvlm7c9y",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "2yq4czk3340p",
-          "created_at": "2022-02-23T05:59:32.260Z",
-          "updated_at": "2022-02-23T05:59:32.260Z",
-          "display_at": "2022-02-23T05:59:32.260Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "t9wj235sty92",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 23/02/2022 12:00 UTC\n<b>Service impact :</b> Network and servers  in rack will be down during maintenance\n<b>Service improvement :</b> Cables replacement",
-          "incident_id": "2yq4czk3340p",
-          "created_at": "2022-01-28T09:03:34.937Z",
-          "updated_at": "2022-01-28T09:03:34.937Z",
-          "display_at": "2022-01-28T09:03:34.937Z",
-          "affected_components": [
-            {
-              "code": "l38v4l1b1vt8",
-              "name": "Datacenters || ERI - ERI1",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "l38v4l1b1vt8",
-          "name": "ERI1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2022-02-16T10:09:00.695Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "sdpm85zsx4w3",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-02-23T07:00:00.000Z",
-      "scheduled_until": "2022-02-23T12:00:00.000Z"
+      "scheduled_for": "2022-02-23T12:00:00.000Z",
+      "scheduled_until": "2022-02-25T01:00:00.000Z"
     },
     {
       "id": "v4m391hdt47d",
@@ -1220,60 +1073,6 @@
       "scheduled_until": "2022-02-24T21:00:00.000Z"
     },
     {
-      "id": "tfpkg9ymgsrw",
-      "name": "[BHS7][Cooling System] - B715B10",
-      "status": "scheduled",
-      "created_at": "2022-02-16T06:35:42.473Z",
-      "updated_at": "2022-02-16T06:35:42.532Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7p3l5kcysnl3",
-      "started_at": "2022-02-16T06:35:42.465Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "0v6myldzp19d",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/02/2022 12:00 UTC\n<b>End time :</b> 25/02/2022 01:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
-          "incident_id": "tfpkg9ymgsrw",
-          "created_at": "2022-02-16T06:35:42.529Z",
-          "updated_at": "2022-02-16T06:35:42.529Z",
-          "display_at": "2022-02-16T06:35:42.529Z",
-          "affected_components": [
-            {
-              "code": "v0kyk7zsjqvd",
-              "name": "Datacenters || BHS - BHS7",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "v0kyk7zsjqvd",
-          "name": "BHS7",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:31.279Z",
-          "updated_at": "2022-02-23T01:19:23.143Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-02-23T12:00:00.000Z",
-      "scheduled_until": "2022-02-25T01:00:00.000Z"
-    },
-    {
       "id": "jwlkqg0c2xy1",
       "name": "[RBX][NETWORK] - Decommissioning vss-9a/b-6k",
       "status": "scheduled",
@@ -1368,9 +1167,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -1569,9 +1368,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -1713,9 +1512,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -1929,9 +1728,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2037,9 +1836,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2145,9 +1944,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2295,9 +2094,9 @@
         {
           "id": "l38v4l1b1vt8",
           "name": "ERI1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2022-02-16T10:09:00.695Z",
+          "updated_at": "2022-02-23T07:00:25.008Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2310,60 +2109,6 @@
       ],
       "scheduled_for": "2022-02-28T08:00:00.000Z",
       "scheduled_until": "2022-02-28T16:00:00.000Z"
-    },
-    {
-      "id": "kx1frwf49mr4",
-      "name": "[RBX2][Network] - Relocation of servers",
-      "status": "scheduled",
-      "created_at": "2022-02-09T01:40:58.147Z",
-      "updated_at": "2022-02-10T01:48:37.738Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0966kx2h6c8d",
-      "started_at": "2022-02-09T01:40:58.138Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "x2r2d5lw3kft",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 01/03/2022 05:00 UTC\n<b>End time :</b> 01/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the server to another location.",
-          "incident_id": "kx1frwf49mr4",
-          "created_at": "2022-02-09T01:40:58.207Z",
-          "updated_at": "2022-02-09T01:40:58.207Z",
-          "display_at": "2022-02-09T01:40:58.207Z",
-          "affected_components": [
-            {
-              "code": "p5jg5r8hjzk6",
-              "name": "Datacenters || RBX - RBX2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p5jg5r8hjzk6",
-          "name": "RBX2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-01T05:00:00.000Z",
-      "scheduled_until": "2022-03-01T14:00:00.000Z"
     },
     {
       "id": "0jwn251gdk3f",
@@ -2420,6 +2165,60 @@
       "scheduled_until": "2022-03-01T06:00:00.000Z"
     },
     {
+      "id": "kx1frwf49mr4",
+      "name": "[RBX2][Network] - Relocation of servers",
+      "status": "scheduled",
+      "created_at": "2022-02-09T01:40:58.147Z",
+      "updated_at": "2022-02-10T01:48:37.738Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0966kx2h6c8d",
+      "started_at": "2022-02-09T01:40:58.138Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "x2r2d5lw3kft",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/03/2022 05:00 UTC\n<b>End time :</b> 01/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the server to another location.",
+          "incident_id": "kx1frwf49mr4",
+          "created_at": "2022-02-09T01:40:58.207Z",
+          "updated_at": "2022-02-09T01:40:58.207Z",
+          "display_at": "2022-02-09T01:40:58.207Z",
+          "affected_components": [
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p5jg5r8hjzk6",
+          "name": "RBX2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.916Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-01T05:00:00.000Z",
+      "scheduled_until": "2022-03-01T14:00:00.000Z"
+    },
+    {
       "id": "2yld6fd3rsxc",
       "name": "[RBX2][Network] - Relocation of servers",
       "status": "scheduled",
@@ -2457,9 +2256,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2528,6 +2327,60 @@
       "scheduled_until": "2022-03-02T11:00:00.000Z"
     },
     {
+      "id": "wv1zx2b4068n",
+      "name": "[RBX2][Network] - Relocation of servers",
+      "status": "scheduled",
+      "created_at": "2022-02-09T02:04:33.582Z",
+      "updated_at": "2022-02-10T01:47:24.083Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tm1h732dw2wr",
+      "started_at": "2022-02-09T02:04:33.572Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "z3jwvcx3hwhb",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 03/03/2022 05:00 UTC\n<b>End time :</b> 03/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the server to another location.",
+          "incident_id": "wv1zx2b4068n",
+          "created_at": "2022-02-09T02:04:33.649Z",
+          "updated_at": "2022-02-09T02:04:33.649Z",
+          "display_at": "2022-02-09T02:04:33.649Z",
+          "affected_components": [
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p5jg5r8hjzk6",
+          "name": "RBX2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.916Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-03T05:00:00.000Z",
+      "scheduled_until": "2022-03-03T14:00:00.000Z"
+    },
+    {
       "id": "zg8kfdh8cw5h",
       "name": "[Lim][Cooling]hot/cold PVC pipe",
       "status": "scheduled",
@@ -2580,60 +2433,6 @@
       ],
       "scheduled_for": "2022-03-03T05:00:00.000Z",
       "scheduled_until": "2022-03-03T08:00:00.000Z"
-    },
-    {
-      "id": "wv1zx2b4068n",
-      "name": "[RBX2][Network] - Relocation of servers",
-      "status": "scheduled",
-      "created_at": "2022-02-09T02:04:33.582Z",
-      "updated_at": "2022-02-10T01:47:24.083Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/tm1h732dw2wr",
-      "started_at": "2022-02-09T02:04:33.572Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "z3jwvcx3hwhb",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 03/03/2022 05:00 UTC\n<b>End time :</b> 03/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the server to another location.",
-          "incident_id": "wv1zx2b4068n",
-          "created_at": "2022-02-09T02:04:33.649Z",
-          "updated_at": "2022-02-09T02:04:33.649Z",
-          "display_at": "2022-02-09T02:04:33.649Z",
-          "affected_components": [
-            {
-              "code": "p5jg5r8hjzk6",
-              "name": "Datacenters || RBX - RBX2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p5jg5r8hjzk6",
-          "name": "RBX2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-03T05:00:00.000Z",
-      "scheduled_until": "2022-03-03T14:00:00.000Z"
     },
     {
       "id": "v7mq6lry8qln",
@@ -2823,9 +2622,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2877,9 +2676,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3039,9 +2838,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3110,6 +2909,60 @@
       "scheduled_until": "2022-03-08T16:00:00.000Z"
     },
     {
+      "id": "r8x7qcmz7w16",
+      "name": "[RBX2][Network] - Relocation of servers",
+      "status": "scheduled",
+      "created_at": "2022-02-09T02:25:35.092Z",
+      "updated_at": "2022-02-10T01:43:39.038Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/whxg5z0x8fv5",
+      "started_at": "2022-02-09T02:25:35.082Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "qwg1njj6sn5d",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/03/2022 05:00 UTC\n<b>End time :</b> 09/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
+          "incident_id": "r8x7qcmz7w16",
+          "created_at": "2022-02-09T02:25:35.154Z",
+          "updated_at": "2022-02-09T02:25:35.154Z",
+          "display_at": "2022-02-09T02:25:35.154Z",
+          "affected_components": [
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p5jg5r8hjzk6",
+          "name": "RBX2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.916Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-09T05:00:00.000Z",
+      "scheduled_until": "2022-03-09T14:00:00.000Z"
+    },
+    {
       "id": "29dc18vb8ft3",
       "name": "[RBX2][Network] - Relocation of servers",
       "status": "scheduled",
@@ -3147,9 +3000,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3216,60 +3069,6 @@
       ],
       "scheduled_for": "2022-03-09T05:00:00.000Z",
       "scheduled_until": "2022-03-09T08:00:00.000Z"
-    },
-    {
-      "id": "r8x7qcmz7w16",
-      "name": "[RBX2][Network] - Relocation of servers",
-      "status": "scheduled",
-      "created_at": "2022-02-09T02:25:35.092Z",
-      "updated_at": "2022-02-10T01:43:39.038Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/whxg5z0x8fv5",
-      "started_at": "2022-02-09T02:25:35.082Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "qwg1njj6sn5d",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/03/2022 05:00 UTC\n<b>End time :</b> 09/03/2022 14:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server)\n<b>Service improvement :</b> Move the servers to another location.",
-          "incident_id": "r8x7qcmz7w16",
-          "created_at": "2022-02-09T02:25:35.154Z",
-          "updated_at": "2022-02-09T02:25:35.154Z",
-          "display_at": "2022-02-09T02:25:35.154Z",
-          "affected_components": [
-            {
-              "code": "p5jg5r8hjzk6",
-              "name": "Datacenters || RBX - RBX2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p5jg5r8hjzk6",
-          "name": "RBX2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-09T05:00:00.000Z",
-      "scheduled_until": "2022-03-09T14:00:00.000Z"
     },
     {
       "id": "r5y64dx3vzqc",
@@ -3363,9 +3162,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3471,9 +3270,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3525,9 +3324,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3579,9 +3378,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3687,9 +3486,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3756,6 +3555,260 @@
       ],
       "scheduled_for": "2022-04-06T06:00:00.000Z",
       "scheduled_until": "2022-04-06T15:00:00.000Z"
+    },
+    {
+      "id": "7fj8pdn590bj",
+      "name": "[GRA1][Infrastructure] - G116B03 - G116B22 - G117B13 - G117B22 - G118B09 - G118B13",
+      "status": "in_progress",
+      "created_at": "2022-02-22T11:50:22.102Z",
+      "updated_at": "2022-02-23T07:00:35.325Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pmhfg5z1665d",
+      "started_at": "2022-02-22T11:50:22.094Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "41z8xn7lnrj2",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "7fj8pdn590bj",
+          "created_at": "2022-02-23T07:00:35.322Z",
+          "updated_at": "2022-02-23T07:00:35.322Z",
+          "display_at": "2022-02-23T07:00:35.322Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3k0hqytq8wmt",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7fj8pdn590bj",
+          "created_at": "2022-02-23T05:59:37.616Z",
+          "updated_at": "2022-02-23T05:59:37.616Z",
+          "display_at": "2022-02-23T05:59:37.616Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1j8dmcn9f11t",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 24/02/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Battery replacement on racks G116B03 - G116B22 - G117B13 - G117B22 - G118B09 - G118B13",
+          "incident_id": "7fj8pdn590bj",
+          "created_at": "2022-02-22T11:50:22.156Z",
+          "updated_at": "2022-02-22T11:50:22.156Z",
+          "display_at": "2022-02-22T11:50:22.156Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-02-21T06:45:39.019Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-23T07:00:00.000Z",
+      "scheduled_until": "2022-02-24T16:00:00.000Z"
+    },
+    {
+      "id": "0slkpmpdn0ql",
+      "name": "[RBX2B][Storage] - Datastores",
+      "status": "in_progress",
+      "created_at": "2022-02-18T03:52:40.499Z",
+      "updated_at": "2022-02-23T07:00:25.709Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w689vdj992mz",
+      "started_at": "2022-02-18T03:52:40.491Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "76v8hwl4jk44",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "0slkpmpdn0ql",
+          "created_at": "2022-02-23T07:00:25.701Z",
+          "updated_at": "2022-02-23T07:00:25.701Z",
+          "display_at": "2022-02-23T07:00:25.701Z",
+          "affected_components": [
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z4c3lkh0h6v3",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "0slkpmpdn0ql",
+          "created_at": "2022-02-23T05:59:37.044Z",
+          "updated_at": "2022-02-23T05:59:37.044Z",
+          "display_at": "2022-02-23T05:59:37.044Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "x96rhpqh8bbk",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 24/02/2022 12:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> We are going to migrate RBX2B datastores to a new configuration management tool",
+          "incident_id": "0slkpmpdn0ql",
+          "created_at": "2022-02-18T03:52:40.557Z",
+          "updated_at": "2022-02-18T03:52:40.557Z",
+          "display_at": "2022-02-18T03:52:40.557Z",
+          "affected_components": [
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p5jg5r8hjzk6",
+          "name": "RBX2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.916Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-23T07:00:00.000Z",
+      "scheduled_until": "2022-02-24T12:30:00.000Z"
+    },
+    {
+      "id": "2yq4czk3340p",
+      "name": "[ERI][Infrastructure] - E105C07",
+      "status": "in_progress",
+      "created_at": "2022-01-28T09:03:34.875Z",
+      "updated_at": "2022-02-23T07:00:25.077Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pncnw4q58vg6",
+      "started_at": "2022-01-28T09:03:34.867Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "vpj31dcdxhty",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "2yq4czk3340p",
+          "created_at": "2022-02-23T07:00:25.071Z",
+          "updated_at": "2022-02-23T07:00:25.071Z",
+          "display_at": "2022-02-23T07:00:25.071Z",
+          "affected_components": [
+            {
+              "code": "l38v4l1b1vt8",
+              "name": "Datacenters || ERI - ERI1",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "08cnbvlm7c9y",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "2yq4czk3340p",
+          "created_at": "2022-02-23T05:59:32.260Z",
+          "updated_at": "2022-02-23T05:59:32.260Z",
+          "display_at": "2022-02-23T05:59:32.260Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t9wj235sty92",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/02/2022 07:00 UTC\n<b>End time :</b> 23/02/2022 12:00 UTC\n<b>Service impact :</b> Network and servers  in rack will be down during maintenance\n<b>Service improvement :</b> Cables replacement",
+          "incident_id": "2yq4czk3340p",
+          "created_at": "2022-01-28T09:03:34.937Z",
+          "updated_at": "2022-01-28T09:03:34.937Z",
+          "display_at": "2022-01-28T09:03:34.937Z",
+          "affected_components": [
+            {
+              "code": "l38v4l1b1vt8",
+              "name": "Datacenters || ERI - ERI1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "l38v4l1b1vt8",
+          "name": "ERI1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:45.650Z",
+          "updated_at": "2022-02-23T07:00:25.008Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "sdpm85zsx4w3",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-02-23T07:00:00.000Z",
+      "scheduled_until": "2022-02-23T12:00:00.000Z"
     },
     {
       "id": "m5kd9y2pz5t8",
@@ -4600,9 +4653,9 @@
         {
           "id": "p5jg5r8hjzk6",
           "name": "RBX2",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:15.916Z",
-          "updated_at": "2022-02-22T05:00:31.001Z",
+          "updated_at": "2022-02-23T07:00:25.614Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -5105,9 +5158,9 @@
         {
           "id": "l38v4l1b1vt8",
           "name": "ERI1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2022-02-16T10:09:00.695Z",
+          "updated_at": "2022-02-23T07:00:25.008Z",
           "position": 1,
           "description": null,
           "showcase": false,
