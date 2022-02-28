@@ -4,15 +4,15 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-02-28T13:56:58.529Z"
+    "updated_at": "2022-02-28T14:30:32.830Z"
   },
   "components": [
     {
       "id": "qcwk8kn06rpl",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:07.646Z",
-      "updated_at": "2022-01-05T15:22:01.230Z",
+      "updated_at": "2022-02-28T14:30:32.749Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -521,9 +521,9 @@
     {
       "id": "g869v1xfdrjy",
       "name": "BHS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:08.810Z",
-      "updated_at": "2021-12-31T14:11:08.986Z",
+      "updated_at": "2022-02-28T14:30:32.768Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2024,7 +2024,7 @@
     {
       "id": "7nxs1wy28gc7",
       "name": "Storage and Backups || Backup Storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:11.420Z",
       "updated_at": "2021-07-09T07:37:44.340Z",
       "position": 17,
@@ -2127,69 +2127,84 @@
   ],
   "incidents": [
     {
-      "id": "mqjcv629jqw4",
-      "name": "VPS - GRA6 - host945304",
+      "id": "bxnqnvgf4tdg",
+      "name": "[EU][Storage and Backups] - FTP Backup",
       "status": "investigating",
-      "created_at": "2022-02-28T13:56:58.467Z",
-      "updated_at": "2022-02-28T13:56:58.526Z",
+      "created_at": "2022-02-28T14:30:32.706Z",
+      "updated_at": "2022-02-28T14:30:32.826Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/4bxmfr7l891t",
-      "started_at": "2022-02-28T13:56:58.458Z",
+      "shortlink": "https://stspg.io/1rwxccyhkfwp",
+      "started_at": "2022-02-28T14:30:32.695Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "4qkdqdj63yv4",
+          "id": "v3dh7230l674",
           "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost945304.gra6.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\nc1e1ef65-5854-4106-bc74-b31b0a0a49d6",
-          "incident_id": "mqjcv629jqw4",
-          "created_at": "2022-02-28T13:56:58.522Z",
-          "updated_at": "2022-02-28T13:56:58.522Z",
-          "display_at": "2022-02-28T13:56:58.522Z",
-          "affected_components": null,
+          "body": "<b>Start time :</b>  28/02/2022 13:00 UTC\n<b>Service impact :</b> A few hours of delay for the new backup-storage delivery\n<b>Ongoing actions :</b>  Our teams are currently working to solve the problem.",
+          "incident_id": "bxnqnvgf4tdg",
+          "created_at": "2022-02-28T14:30:32.823Z",
+          "updated_at": "2022-02-28T14:30:32.823Z",
+          "display_at": "2022-02-28T14:30:32.823Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g869v1xfdrjy",
+              "name": "Storage and Backups || Backup Storage - BHS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
-    },
-    {
-      "id": "ggvzrz58nyx6",
-      "name": "VPS - GRA6 - host1509718",
-      "status": "investigating",
-      "created_at": "2022-02-28T03:02:58.034Z",
-      "updated_at": "2022-02-28T03:02:58.090Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/mk62sfqp8vf4",
-      "started_at": "2022-02-28T03:02:58.025Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
+      "components": [
         {
-          "id": "68yj514qcr4m",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1509718.gra6.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\na673e38d-c7b1-44a6-97f6-063219d03452\n562a021c-59be-4d82-9008-953c3265b0d0\naa83a61c-fc7c-4a13-9835-edb773e9cdb9\n7d370a2d-d3c8-4ec5-8bfa-98ba556e760c\nf0cd4d96-5130-4c43-966f-f7660ad01924\n5d8047cf-bcb9-4229-a142-89729c1736e4\n1f3746cd-b303-45d0-8ebb-be25e1a0590f\n1c3a468d-fbf9-42a1-80a8-088f1f0096b5\na26e55a5-5eb9-483d-ada4-e103ca5419a0\nf421e513-2200-489c-9555-0cfc7da089ab\ndba610d9-c23b-4aef-af7d-982cec2c1c14\n8262ebe5-0230-40ba-9145-1156b9498e69\nd46d1f6b-cac2-4322-88c9-3da4863daa15\n13bf3f94-a4c2-48ae-8a06-7c5ccc1b1c1f\nec994e9d-f4ff-47d1-8de6-b7040195f85c\n3b90cc1b-081e-4cdc-bbae-25bd3d00f0c3\nd958c581-ac2a-4eb2-ac91-911ca6971224\na59a77a0-134a-41d2-a50b-f3c438a34612\n0c8ee7dd-25ce-458a-8773-b0faeb8db9e1\n5516ed3f-3126-4b59-85fa-cc5a952186f0\n75937b82-33b8-45dc-aff5-85a136d2316a\nf1b65b91-b266-4d58-8d6d-bd1c8760e829\n6352ca50-419e-4234-be85-debf3d75f07e\n629e87fd-80d5-4d73-8f6f-b6583cb10899",
-          "incident_id": "ggvzrz58nyx6",
-          "created_at": "2022-02-28T03:02:58.087Z",
-          "updated_at": "2022-02-28T03:02:58.087Z",
-          "display_at": "2022-02-28T03:02:58.087Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2022-02-28T14:30:32.749Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g869v1xfdrjy",
+          "name": "BHS",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:08.810Z",
+          "updated_at": "2022-02-28T14:30:32.768Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
         }
-      ],
-      "components": []
+      ]
     },
     {
       "id": "vsg797ny2dtc",
       "name": "[Global][Dedicated servers] - API",
       "status": "monitoring",
       "created_at": "2022-02-03T16:47:33.124Z",
-      "updated_at": "2022-02-15T17:05:59.709Z",
+      "updated_at": "2022-02-28T14:15:48.276Z",
       "monitoring_at": "2022-02-08T16:29:26.142Z",
       "resolved_at": null,
       "impact": "minor",
@@ -2197,6 +2212,74 @@
       "started_at": "2022-02-08T11:03:55.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "9j3rxdqlywx0",
+          "status": "monitoring",
+          "body": "<b>Update :</b>Our technical teams continue to work on the incident. To date they have identified software dependencies that lead to the discovery of new bugs when fixing an identified bug. The teams are currently working to identify all the bugs present",
+          "incident_id": "vsg797ny2dtc",
+          "created_at": "2022-02-28T14:15:48.273Z",
+          "updated_at": "2022-02-28T14:15:48.273Z",
+          "display_at": "2022-02-28T14:15:48.273Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "p1l8zngh2vc3",
+              "name": "Dedicated Servers || Global Infrastructure - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rv3d43gm55j6",
+              "name": "Dedicated Servers || Global Infrastructure - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9ql1xfsb8z8h",
           "status": "monitoring",
@@ -2743,6 +2826,35 @@
           "only_show_if_degraded": false
         }
       ]
+    },
+    {
+      "id": "ggvzrz58nyx6",
+      "name": "VPS - GRA6 - host1509718",
+      "status": "investigating",
+      "created_at": "2022-02-28T03:02:58.034Z",
+      "updated_at": "2022-02-28T03:02:58.090Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/mk62sfqp8vf4",
+      "started_at": "2022-02-28T03:02:58.025Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "68yj514qcr4m",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1509718.gra6.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\na673e38d-c7b1-44a6-97f6-063219d03452\n562a021c-59be-4d82-9008-953c3265b0d0\naa83a61c-fc7c-4a13-9835-edb773e9cdb9\n7d370a2d-d3c8-4ec5-8bfa-98ba556e760c\nf0cd4d96-5130-4c43-966f-f7660ad01924\n5d8047cf-bcb9-4229-a142-89729c1736e4\n1f3746cd-b303-45d0-8ebb-be25e1a0590f\n1c3a468d-fbf9-42a1-80a8-088f1f0096b5\na26e55a5-5eb9-483d-ada4-e103ca5419a0\nf421e513-2200-489c-9555-0cfc7da089ab\ndba610d9-c23b-4aef-af7d-982cec2c1c14\n8262ebe5-0230-40ba-9145-1156b9498e69\nd46d1f6b-cac2-4322-88c9-3da4863daa15\n13bf3f94-a4c2-48ae-8a06-7c5ccc1b1c1f\nec994e9d-f4ff-47d1-8de6-b7040195f85c\n3b90cc1b-081e-4cdc-bbae-25bd3d00f0c3\nd958c581-ac2a-4eb2-ac91-911ca6971224\na59a77a0-134a-41d2-a50b-f3c438a34612\n0c8ee7dd-25ce-458a-8773-b0faeb8db9e1\n5516ed3f-3126-4b59-85fa-cc5a952186f0\n75937b82-33b8-45dc-aff5-85a136d2316a\nf1b65b91-b266-4d58-8d6d-bd1c8760e829\n6352ca50-419e-4234-be85-debf3d75f07e\n629e87fd-80d5-4d73-8f6f-b6583cb10899",
+          "incident_id": "ggvzrz58nyx6",
+          "created_at": "2022-02-28T03:02:58.087Z",
+          "updated_at": "2022-02-28T03:02:58.087Z",
+          "display_at": "2022-02-28T03:02:58.087Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
     }
   ],
   "scheduled_maintenances": [
@@ -2919,7 +3031,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
