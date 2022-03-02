@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-02T15:51:18.058Z"
+    "updated_at": "2022-03-02T17:23:51.658Z"
   },
   "components": [
     {
@@ -438,7 +438,7 @@
     {
       "id": "zllgrccdn4nk",
       "name": "Datacenters || RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:21.603Z",
       "updated_at": "2021-11-10T14:25:00.852Z",
       "position": 6,
@@ -463,9 +463,9 @@
     {
       "id": "5rlwxw2f24qh",
       "name": "RBX6",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:19.265Z",
-      "updated_at": "2022-03-01T04:40:07.873Z",
+      "updated_at": "2022-03-02T17:05:33.759Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -815,7 +815,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ws9cn9xfml18",
+      "name": "[RBX6][Network Infrastructure] 46A16",
+      "status": "investigating",
+      "created_at": "2022-03-02T17:05:33.726Z",
+      "updated_at": "2022-03-02T17:05:33.807Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cjmxvb6srx6b",
+      "started_at": "2022-03-02T17:05:33.719Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "xfl8sz1hfyv6",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  02/03/2022 16:45 UTC\n<b>Service impact :</b> problems with the bay's power supply .\n<b>Ongoing actions :</b>   An intervention is in progress to fix about 8 servers concerned and probably change the motherboard",
+          "incident_id": "ws9cn9xfml18",
+          "created_at": "2022-03-02T17:05:33.805Z",
+          "updated_at": "2022-03-02T17:05:33.805Z",
+          "display_at": "2022-03-02T17:05:33.805Z",
+          "affected_components": [
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Datacenters || RBX - RBX6",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "degraded_performance",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2022-03-02T17:05:33.759Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "smbfyyf6cmtv",
@@ -3106,6 +3159,73 @@
       "scheduled_until": "2022-04-06T15:00:00.000Z"
     },
     {
+      "id": "kbms96gg4hft",
+      "name": "[BHS4][Cooling System] T04D09",
+      "status": "in_progress",
+      "created_at": "2022-03-02T17:16:55.653Z",
+      "updated_at": "2022-03-02T17:17:46.720Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/p9q8wcgkprzt",
+      "started_at": "2022-03-02T17:16:55.643Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "14vj8z2m706l",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "kbms96gg4hft",
+          "created_at": "2022-03-02T17:17:46.717Z",
+          "updated_at": "2022-03-02T17:17:46.717Z",
+          "display_at": "2022-03-02T17:17:46.717Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "159jz3xvyztd",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 02/03/2022 12:00 UTC\n<b>End time :</b> 04/03/2022 02:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement:</b> Water manifold replacement",
+          "incident_id": "kbms96gg4hft",
+          "created_at": "2022-03-02T17:16:55.727Z",
+          "updated_at": "2022-03-02T17:16:55.727Z",
+          "display_at": "2022-03-02T17:16:55.727Z",
+          "affected_components": [
+            {
+              "code": "wjpq5n3hnjhx",
+              "name": "Datacenters || BHS - BHS4",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wjpq5n3hnjhx",
+          "name": "BHS4",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:28.786Z",
+          "updated_at": "2022-03-02T12:00:44.086Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-02T17:17:00.000Z",
+      "scheduled_until": "2022-03-04T13:17:00.000Z"
+    },
+    {
       "id": "4q83prwkzqwg",
       "name": "[GRA2][Cooling System] - G252B07",
       "status": "in_progress",
@@ -3779,9 +3899,9 @@
         {
           "id": "5rlwxw2f24qh",
           "name": "RBX6",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-10T14:20:19.265Z",
-          "updated_at": "2022-03-01T04:40:07.873Z",
+          "updated_at": "2022-03-02T17:05:33.759Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -4464,7 +4584,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
