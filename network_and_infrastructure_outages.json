@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-02T17:43:19.915Z"
+    "updated_at": "2022-03-02T18:23:51.682Z"
   },
   "components": [
     {
@@ -682,9 +682,9 @@
     {
       "id": "j7zy4nsp8gbk",
       "name": "Network || LAX - WAS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:58.019Z",
-      "updated_at": "2022-02-20T17:14:18.721Z",
+      "updated_at": "2022-03-02T18:04:00.244Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -816,6 +816,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "3cbqrdhhf6s5",
+      "name": "[Backbone][Network] - Latency for clients APAC -SYD",
+      "status": "investigating",
+      "created_at": "2022-03-02T18:04:00.213Z",
+      "updated_at": "2022-03-02T18:04:00.504Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gbrvjcgxwx1l",
+      "started_at": "2022-03-02T18:04:00.208Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "pk27bf887259",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  02/03/2022 17:48 UTC\n<b>Service impact :</b> Latency and Packet loss between the West Coast (USA) and SYD\n<b>Ongoing actions :</b> Our team are investigating, and we will provide updates as soon as possible.",
+          "incident_id": "3cbqrdhhf6s5",
+          "created_at": "2022-03-02T18:04:00.502Z",
+          "updated_at": "2022-03-02T18:04:00.502Z",
+          "display_at": "2022-03-02T18:04:00.502Z",
+          "affected_components": [
+            {
+              "code": "j7zy4nsp8gbk",
+              "name": "Network || LAX - WAS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "j7zy4nsp8gbk",
+          "name": "Network || LAX - WAS",
+          "status": "degraded_performance",
+          "created_at": "2021-11-10T14:20:58.019Z",
+          "updated_at": "2022-03-02T18:04:00.244Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "ws9cn9xfml18",
       "name": "[RBX6][Network Infrastructure] 46A16",
