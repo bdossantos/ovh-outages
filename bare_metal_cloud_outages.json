@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-11T08:01:06.967Z"
+    "updated_at": "2022-03-11T08:52:11.947Z"
   },
   "components": [
     {
@@ -291,9 +291,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2022-03-11T08:01:06.867Z",
+      "updated_at": "2022-03-11T08:41:14.881Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -671,9 +671,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2022-03-07T17:55:00.508Z",
+      "updated_at": "2022-03-11T08:47:10.269Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1182,7 +1182,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2127,31 +2127,31 @@
   ],
   "incidents": [
     {
-      "id": "0wqs7brn4xcx",
-      "name": "[BHS1][Dedicated Servers] - T01C19",
+      "id": "6nwgc195t69c",
+      "name": "[GRA1][Dedicated Server] - G116B02",
       "status": "identified",
-      "created_at": "2022-03-11T07:26:42.809Z",
-      "updated_at": "2022-03-11T08:01:06.959Z",
+      "created_at": "2022-03-11T08:47:10.228Z",
+      "updated_at": "2022-03-11T08:52:11.940Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/wq382zkfy7vd",
-      "started_at": "2022-03-11T07:26:42.801Z",
+      "shortlink": "https://stspg.io/qclgvbsmmn09",
+      "started_at": "2022-03-11T08:47:10.219Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "9gk9v9w4n9y5",
+          "id": "2724vvgfw70f",
           "status": "identified",
-          "body": "<b>Service impact :</b> Equipments in rack T01C19 is no longer connected to the public network\n<b>Root cause :</b> The switch connected to the rack had a hardware failure\n<b>Ongoing actions :</b> Our teams proceed to the replacement of the equipment\n<b>Time to resolution :</b> We estimate the time to replace the switch at 45 minutes",
-          "incident_id": "0wqs7brn4xcx",
-          "created_at": "2022-03-11T08:01:06.957Z",
-          "updated_at": "2022-03-11T08:01:06.957Z",
-          "display_at": "2022-03-11T08:01:06.957Z",
+          "body": "<b>Service impact :</b> Most of the servers are back to normal.\nOne last server is being analyzed by our technical teams",
+          "incident_id": "6nwgc195t69c",
+          "created_at": "2022-03-11T08:52:11.937Z",
+          "updated_at": "2022-03-11T08:52:11.937Z",
+          "display_at": "2022-03-11T08:52:11.937Z",
           "affected_components": [
             {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
               "new_status": "partial_outage"
             }
           ],
@@ -2160,17 +2160,17 @@
           "tweet_id": null
         },
         {
-          "id": "3vdyxzp243t7",
+          "id": "d1p5qqjrr9pz",
           "status": "investigating",
-          "body": "<b>Start time :</b>  11/03/2022 07:14 UTC\n<b>Service impact :</b> Dedicated servers are unreachable in this rack\n<b>Ongoing actions :</b>  Our technical teams investigate to determine the origin of the loss of access",
-          "incident_id": "0wqs7brn4xcx",
-          "created_at": "2022-03-11T07:26:42.897Z",
-          "updated_at": "2022-03-11T07:26:42.897Z",
-          "display_at": "2022-03-11T07:26:42.897Z",
+          "body": "<b>Start time :</b>  11/03/2022 08:32 UTC\n<b>Service impact :</b> Following an incident on the cooling system, servers are no longer functional on the rack \n<b>Ongoing actions :</b>  Our technical teams are currently investigating to restore the servers",
+          "incident_id": "6nwgc195t69c",
+          "created_at": "2022-03-11T08:47:10.333Z",
+          "updated_at": "2022-03-11T08:47:10.333Z",
+          "display_at": "2022-03-11T08:47:10.333Z",
           "affected_components": [
             {
-              "code": "gbwv1h71spbm",
-              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2182,16 +2182,16 @@
       ],
       "components": [
         {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2022-03-11T08:01:06.867Z",
-          "position": 1,
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2022-03-11T08:47:10.269Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -2809,9 +2809,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2022-03-07T17:55:00.508Z",
+          "updated_at": "2022-03-11T08:47:10.269Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3241,9 +3241,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2022-03-11T08:01:06.867Z",
+          "updated_at": "2022-03-11T08:41:14.881Z",
           "position": 1,
           "description": null,
           "showcase": false,
