@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-16T14:11:41.481Z"
+    "updated_at": "2022-03-16T15:01:26.894Z"
   },
   "components": [
     {
@@ -2713,83 +2713,11 @@
   ],
   "incidents": [
     {
-      "id": "fwfjk685tfgz",
-      "name": "[GLOBAL][VOIP] - Conference unavailable",
-      "status": "monitoring",
-      "created_at": "2022-03-16T13:36:56.674Z",
-      "updated_at": "2022-03-16T14:11:41.478Z",
-      "monitoring_at": "2022-03-16T14:11:41.463Z",
-      "resolved_at": null,
-      "impact": "critical",
-      "shortlink": "https://stspg.io/nk154v8kx9c4",
-      "started_at": "2022-03-16T13:36:56.666Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "zfn2bfgwtc76",
-          "status": "monitoring",
-          "body": "The conference service is back. We will keep the situation under observation for the next half hour",
-          "incident_id": "fwfjk685tfgz",
-          "created_at": "2022-03-16T14:11:41.463Z",
-          "updated_at": "2022-03-16T14:11:41.463Z",
-          "display_at": "2022-03-16T14:11:41.463Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "major_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dwxb9j4l3tth",
-          "status": "investigating",
-          "body": "<b>Start time :</b>  16/03/2022 13:15 UTC\n<b>Service impact :</b> The conference service is currently disrupted. \nCurrent conferences are functional. \nIt is not possible to join ongoing conferences or to generate new ones\n<b>Ongoing actions :</b> Our technical teams investigate to determine the origin of this malfunction",
-          "incident_id": "fwfjk685tfgz",
-          "created_at": "2022-03-16T13:36:56.760Z",
-          "updated_at": "2022-03-16T13:36:56.760Z",
-          "display_at": "2022-03-16T13:36:56.760Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "operational",
-              "new_status": "major_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3mxgdcpk20wg",
-          "name": "Conferences",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:18.231Z",
-          "updated_at": "2022-03-16T14:11:41.423Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "sch37jd056nk",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
       "id": "542yccvd60xs",
       "name": "[Dordogne/France][Internet Access] - xDSL",
       "status": "identified",
       "created_at": "2022-03-15T17:22:19.006Z",
-      "updated_at": "2022-03-16T10:29:34.583Z",
+      "updated_at": "2022-03-16T15:01:26.886Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2797,6 +2725,38 @@
       "started_at": "2022-03-15T17:22:18.999Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "f1r965m2n77h",
+          "status": "identified",
+          "body": "<b>Update :</b> We have identified LDP tunnel bugs (tunnel in charge of access authentication) on our DSLAM cluster between Périgueux and Bordeaux. Investigations are underway to resolve this behavior.",
+          "incident_id": "542yccvd60xs",
+          "created_at": "2022-03-16T15:01:26.883Z",
+          "updated_at": "2022-03-16T15:01:26.883Z",
+          "display_at": "2022-03-16T15:01:26.883Z",
+          "affected_components": [
+            {
+              "code": "48dzwd5z7mvn",
+              "name": "Internet Access || ADSL",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "yz9fwwkrfnqw",
+              "name": "Internet Access || FTTH",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hl62mf0y8gp6",
+              "name": "Internet Access || SDSL",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5cpb0k0rk14b",
           "status": "identified",
