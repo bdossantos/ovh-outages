@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-17T09:40:46.507Z"
+    "updated_at": "2022-03-17T16:46:08.093Z"
   },
   "components": [
     {
@@ -1288,9 +1288,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2022-03-17T09:40:46.444Z",
+      "updated_at": "2022-03-17T16:46:08.031Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1843,7 +1843,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2021-10-20T08:14:14.720Z",
       "position": 14,
@@ -2135,7 +2135,7 @@
       "name": "[RBX2][Hosted private Cloud] - Redundancy degradation",
       "status": "investigating",
       "created_at": "2022-03-15T19:06:46.156Z",
-      "updated_at": "2022-03-16T09:29:17.846Z",
+      "updated_at": "2022-03-17T16:46:08.085Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2143,6 +2143,46 @@
       "started_at": "2022-03-15T19:06:46.150Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "2ngc7fcr9lhs",
+          "status": "investigating",
+          "body": "<b> UPDATE:</b> Services are slowly returning to normal, the tete that remains affected is:  tete-3141b.",
+          "incident_id": "tx52qn3xm5pz",
+          "created_at": "2022-03-17T16:46:08.082Z",
+          "updated_at": "2022-03-17T16:46:08.082Z",
+          "display_at": "2022-03-17T16:46:08.082Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y78p4y8z5f8y",
+          "status": "investigating",
+          "body": "<b> UPDATE:</b> Services are slowly returning to normal, the tete that remains affected is:  tete-3141b.",
+          "incident_id": "tx52qn3xm5pz",
+          "created_at": "2022-03-17T16:45:22.639Z",
+          "updated_at": "2022-03-17T16:45:22.639Z",
+          "display_at": "2022-03-17T16:45:22.639Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "brrg33tll9rr",
           "status": "investigating",
@@ -2208,9 +2248,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-03-17T09:40:46.444Z",
+          "updated_at": "2022-03-17T16:46:08.031Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3178,7 +3218,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
