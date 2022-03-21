@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-21T16:00:23.132Z"
+    "updated_at": "2022-03-21T17:01:21.583Z"
   },
   "components": [
     {
@@ -805,9 +805,9 @@
     {
       "id": "b0tn422clgws",
       "name": "Mailbox Access",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:53.305Z",
-      "updated_at": "2022-03-16T08:22:56.813Z",
+      "updated_at": "2022-03-21T17:01:21.193Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -917,9 +917,9 @@
     {
       "id": "qhkmp4s3jghc",
       "name": "Mailbox Access",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:31.586Z",
-      "updated_at": "2022-03-10T02:31:50.922Z",
+      "updated_at": "2022-03-21T17:01:21.231Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -992,7 +992,7 @@
     {
       "id": "k04vzm9j7ytt",
       "name": "Collaborative solutions || Hosted Exchange",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:33.947Z",
       "updated_at": "2021-11-02T16:27:30.594Z",
       "position": 4,
@@ -1196,7 +1196,7 @@
     {
       "id": "3m6hgf41071w",
       "name": "Collaborative solutions || Private Exchange",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:55.817Z",
       "updated_at": "2021-11-02T16:27:58.369Z",
       "position": 5,
@@ -3803,11 +3803,42 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "22dhyrfqxd6j",
+      "name": "[Global][VOIP] - Upgrading Yealink T53/T53w/T54w phones firmwares",
+      "status": "scheduled",
+      "created_at": "2022-03-16T23:44:17.854Z",
+      "updated_at": "2022-03-16T23:48:20.924Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wvwg919t8130",
+      "started_at": "2022-03-16T23:44:17.850Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "8qhp12ydfz6r",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/03/2022 22:00 UTC\n<b>End time :</b> 24/03/2022 00:00 UTC\n<b>Service impact :</b> All phones will be rebooted after the firmware update.\n<b>Service improvement :</b> In an effort to homogenise the customer park, we will be updating the firmware version of the Yealink T53/T53w/T54w phones.",
+          "incident_id": "22dhyrfqxd6j",
+          "created_at": "2022-03-16T23:44:17.894Z",
+          "updated_at": "2022-03-16T23:44:17.894Z",
+          "display_at": "2022-03-16T23:44:17.894Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2022-03-21T22:00:00.000Z",
+      "scheduled_until": "2022-03-24T00:00:00.000Z"
+    },
+    {
       "id": "nxfvvc8g3ndb",
       "name": "[RBX/GRA/SBG][Exchange] - Access security improvemment",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2022-03-17T01:22:10.254Z",
-      "updated_at": "2022-03-21T16:00:23.120Z",
+      "updated_at": "2022-03-21T17:01:21.559Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3815,6 +3846,32 @@
       "started_at": "2022-03-17T01:22:10.240Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "66vjh68d11yk",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "nxfvvc8g3ndb",
+          "created_at": "2022-03-21T17:01:21.548Z",
+          "updated_at": "2022-03-21T17:01:21.548Z",
+          "display_at": "2022-03-21T17:01:21.548Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "b0tn422clgws",
+              "name": "Collaborative solutions || Private Exchange - Mailbox Access",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "52p77zgc1jrf",
           "status": "scheduled",
@@ -3859,9 +3916,9 @@
         {
           "id": "qhkmp4s3jghc",
           "name": "Mailbox Access",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-06-30T12:19:31.586Z",
-          "updated_at": "2022-03-10T02:31:50.922Z",
+          "updated_at": "2022-03-21T17:01:21.231Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3874,9 +3931,9 @@
         {
           "id": "b0tn422clgws",
           "name": "Mailbox Access",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-06-30T12:19:53.305Z",
-          "updated_at": "2022-03-16T08:22:56.813Z",
+          "updated_at": "2022-03-21T17:01:21.193Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3889,37 +3946,6 @@
       ],
       "scheduled_for": "2022-03-21T17:00:00.000Z",
       "scheduled_until": "2022-03-21T19:00:00.000Z"
-    },
-    {
-      "id": "22dhyrfqxd6j",
-      "name": "[Global][VOIP] - Upgrading Yealink T53/T53w/T54w phones firmwares",
-      "status": "scheduled",
-      "created_at": "2022-03-16T23:44:17.854Z",
-      "updated_at": "2022-03-16T23:48:20.924Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wvwg919t8130",
-      "started_at": "2022-03-16T23:44:17.850Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "8qhp12ydfz6r",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 21/03/2022 22:00 UTC\n<b>End time :</b> 24/03/2022 00:00 UTC\n<b>Service impact :</b> All phones will be rebooted after the firmware update.\n<b>Service improvement :</b> In an effort to homogenise the customer park, we will be updating the firmware version of the Yealink T53/T53w/T54w phones.",
-          "incident_id": "22dhyrfqxd6j",
-          "created_at": "2022-03-16T23:44:17.894Z",
-          "updated_at": "2022-03-16T23:44:17.894Z",
-          "display_at": "2022-03-16T23:44:17.894Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2022-03-21T22:00:00.000Z",
-      "scheduled_until": "2022-03-24T00:00:00.000Z"
     },
     {
       "id": "r97ls1k0mhgj",
