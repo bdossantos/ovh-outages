@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-22T08:00:33.819Z"
+    "updated_at": "2022-03-22T09:01:02.970Z"
   },
   "components": [
     {
@@ -2132,11 +2132,65 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "f3pygjf47zfd",
+      "name": "RBX2/RBX8][Hosted Private Cloud] - Management Network",
+      "status": "scheduled",
+      "created_at": "2022-03-22T04:21:28.412Z",
+      "updated_at": "2022-03-22T04:21:28.473Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wrys94lx8y81",
+      "started_at": "2022-03-22T04:21:28.405Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "nl6zhkk1sgbh",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/03/2022 04:00 UTC\n<b>End time :</b> 23/03/2022 06:00 UTC\n<b>Service impact :</b> Management connectivity for hosted private cloud + High Grade/Scale servers   in RBX will be down (15 minutes) during migration\n<b>Service improvement  :</b> Upgrade of management network hardware",
+          "incident_id": "f3pygjf47zfd",
+          "created_at": "2022-03-22T04:21:28.470Z",
+          "updated_at": "2022-03-22T04:21:28.470Z",
+          "display_at": "2022-03-22T04:21:28.470Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-02-01T00:38:36.353Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-23T04:00:00.000Z",
+      "scheduled_until": "2022-03-23T06:00:00.000Z"
+    },
+    {
       "id": "nlnyqtmgw875",
       "name": "[SBG2A/RBX1A][Hosted private cloud] - Migration of MicroServices",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2022-03-17T01:36:20.917Z",
-      "updated_at": "2022-03-22T08:00:33.799Z",
+      "updated_at": "2022-03-22T09:01:02.960Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2144,6 +2198,19 @@
       "started_at": "2022-03-17T01:36:20.907Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "x21n8jb46fp9",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "nlnyqtmgw875",
+          "created_at": "2022-03-22T09:01:02.956Z",
+          "updated_at": "2022-03-22T09:01:02.956Z",
+          "display_at": "2022-03-22T09:01:02.956Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "fv8c8vsv7vdv",
           "status": "scheduled",
@@ -2218,60 +2285,6 @@
       ],
       "scheduled_for": "2022-03-22T09:00:00.000Z",
       "scheduled_until": "2022-03-22T17:00:00.000Z"
-    },
-    {
-      "id": "f3pygjf47zfd",
-      "name": "RBX2/RBX8][Hosted Private Cloud] - Management Network",
-      "status": "scheduled",
-      "created_at": "2022-03-22T04:21:28.412Z",
-      "updated_at": "2022-03-22T04:21:28.473Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wrys94lx8y81",
-      "started_at": "2022-03-22T04:21:28.405Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "nl6zhkk1sgbh",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/03/2022 04:00 UTC\n<b>End time :</b> 23/03/2022 06:00 UTC\n<b>Service impact :</b> Management connectivity for hosted private cloud + High Grade/Scale servers   in RBX will be down (15 minutes) during migration\n<b>Service improvement  :</b> Upgrade of management network hardware",
-          "incident_id": "f3pygjf47zfd",
-          "created_at": "2022-03-22T04:21:28.470Z",
-          "updated_at": "2022-03-22T04:21:28.470Z",
-          "display_at": "2022-03-22T04:21:28.470Z",
-          "affected_components": [
-            {
-              "code": "nr0vltd8cnk0",
-              "name": "VMware Private Cloud || RBX - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nr0vltd8cnk0",
-          "name": "Network",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-02-01T00:38:36.353Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-23T04:00:00.000Z",
-      "scheduled_until": "2022-03-23T06:00:00.000Z"
     },
     {
       "id": "xxlpjj7vd278",
@@ -2473,21 +2486,6 @@
           "only_show_if_degraded": false
         },
         {
-          "id": "0ld1hfchhyf4",
-          "name": "Compute",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:43:34.076Z",
-          "updated_at": "2022-03-21T18:10:35.113Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "wvfty6xbgj2q",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
           "id": "0qcvrryd4tpb",
           "name": "Compute",
           "status": "under_maintenance",
@@ -2531,90 +2529,25 @@
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-03-21T18:10:00.000Z",
-      "scheduled_until": "2022-03-25T17:00:00.000Z"
-    },
-    {
-      "id": "9nrn5xtdszrs",
-      "name": "[BHS1][Veeam] - Version upgrade",
-      "status": "in_progress",
-      "created_at": "2022-03-10T21:39:00.335Z",
-      "updated_at": "2022-03-21T08:00:50.198Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hy7yj9b23xvb",
-      "started_at": "2022-03-10T21:39:00.327Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "xt2k8ws2vyyr",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "9nrn5xtdszrs",
-          "created_at": "2022-03-21T08:00:50.191Z",
-          "updated_at": "2022-03-21T08:00:50.191Z",
-          "display_at": "2022-03-21T08:00:50.191Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
         },
         {
-          "id": "gr08x6f57xrj",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "9nrn5xtdszrs",
-          "created_at": "2022-03-21T07:00:30.599Z",
-          "updated_at": "2022-03-21T07:00:30.599Z",
-          "display_at": "2022-03-21T07:00:30.599Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xl6w2n6y9xb8",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 21/03/2022 08:00 UTC\n<b>End time :</b> 21/03/2022 11:00 UTC\n<b>Technical impact (DC/geographical area) :</b> BHS1A\n<b>Service impact :</b> Backup and restore are not accessible during the maintenance\n<b>Service improvement :</b> The objective of this maintenance is to upgrade the Veeam Cloud Connect version",
-          "incident_id": "9nrn5xtdszrs",
-          "created_at": "2022-03-10T21:39:00.396Z",
-          "updated_at": "2022-03-10T21:39:00.396Z",
-          "display_at": "2022-03-10T21:39:00.396Z",
-          "affected_components": [
-            {
-              "code": "yvpvpj1xfh49",
-              "name": "Veeam || BHS - Storage",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yvpvpj1xfh49",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:15.684Z",
-          "updated_at": "2022-03-21T17:30:37.417Z",
-          "position": 4,
+          "id": "0ld1hfchhyf4",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:34.076Z",
+          "updated_at": "2022-03-21T18:10:35.113Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "pfgp8y6j65vx",
+          "group_id": "wvfty6xbgj2q",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-03-21T08:00:00.000Z",
-      "scheduled_until": "2022-03-21T11:00:00.000Z"
+      "scheduled_for": "2022-03-21T18:10:00.000Z",
+      "scheduled_until": "2022-03-25T17:00:00.000Z"
     },
     {
       "id": "f7m0ldjrzpd7",
@@ -2780,21 +2713,6 @@
           "only_show_if_degraded": false
         },
         {
-          "id": "0ld1hfchhyf4",
-          "name": "Compute",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:43:34.076Z",
-          "updated_at": "2022-03-21T18:10:35.113Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "wvfty6xbgj2q",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
           "id": "0qcvrryd4tpb",
           "name": "Compute",
           "status": "under_maintenance",
@@ -2835,6 +2753,21 @@
           "showcase": false,
           "start_date": "2021-07-21",
           "group_id": "6rxw73tzc3x8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0ld1hfchhyf4",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:34.076Z",
+          "updated_at": "2022-03-21T18:10:35.113Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
