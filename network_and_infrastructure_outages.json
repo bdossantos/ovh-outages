@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-03-23T18:30:35.281Z"
+    "updated_at": "2022-03-23T21:20:08.955Z"
   },
   "components": [
     {
@@ -543,9 +543,9 @@
     {
       "id": "m4pzrlrxvvgt",
       "name": "BHS8",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-10T14:20:32.046Z",
-      "updated_at": "2022-03-22T11:00:37.758Z",
+      "updated_at": "2022-03-23T21:20:08.892Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -817,6 +817,102 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
+    {
+      "id": "y5m9m1c8mrp1",
+      "name": "[GRA1/RBX7/SBG3][Network] - Configuration update",
+      "status": "scheduled",
+      "created_at": "2022-03-23T21:17:42.116Z",
+      "updated_at": "2022-03-23T21:18:02.001Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zbwlgxqwzr5w",
+      "started_at": "2022-03-23T21:17:42.101Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "fwvlv5vpw10p",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/03/2022 22:00 UTC\n<b>End time :</b> 23/03/2022 23:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Updating the RT vrack configuration of multiple network devices",
+          "incident_id": "y5m9m1c8mrp1",
+          "created_at": "2022-03-23T21:17:42.175Z",
+          "updated_at": "2022-03-23T21:18:01.997Z",
+          "display_at": "2022-03-23T21:17:42.175Z",
+          "affected_components": [
+            {
+              "code": "n3pn0f28b99n",
+              "name": "Datacenters || SBG - SBG3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Datacenters || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-03-22T17:28:27.080Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n3pn0f28b99n",
+          "name": "SBG3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:01.143Z",
+          "updated_at": "2022-03-20T23:00:26.899Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2022-03-21T23:13:01.893Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-03-23T22:00:00.000Z",
+      "scheduled_until": "2022-03-23T23:00:00.000Z"
+    },
     {
       "id": "0532lj8mb3xv",
       "name": "[GRA1][Network] - Updating network devices",
@@ -1488,9 +1584,9 @@
         {
           "id": "m4pzrlrxvvgt",
           "name": "BHS8",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-03-22T11:00:37.758Z",
+          "updated_at": "2022-03-23T21:20:08.892Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3985,134 +4081,6 @@
       "scheduled_until": "2022-04-28T15:00:00.000Z"
     },
     {
-      "id": "gtbm7ntystd4",
-      "name": "[RBX1/RBX3/RBX8 - HALL3][INFRASTRUCTURE] - Generators load test",
-      "status": "scheduled",
-      "created_at": "2022-03-19T00:00:48.040Z",
-      "updated_at": "2022-03-22T11:58:37.366Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/75cgdwwr5yr8",
-      "started_at": "2022-03-19T00:00:48.030Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "jdbphm731qml",
-          "status": "scheduled",
-          "body": "Due to an imponderable, we have to postpone the convention to the following dates : \n<b>Start time :</b> 27/04/2022 06:30 UTC\n<b>End time :</b> 27/04/2022 15:00 UTC",
-          "incident_id": "gtbm7ntystd4",
-          "created_at": "2022-03-22T11:58:14.758Z",
-          "updated_at": "2022-03-22T11:58:14.758Z",
-          "display_at": "2022-03-22T11:58:14.758Z",
-          "affected_components": [
-            {
-              "code": "f4dnnwz43vr4",
-              "name": "Datacenters || RBX - RBX1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "gmpjyy3kgdlv",
-              "name": "Datacenters || RBX - RBX3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Datacenters || RBX - RBX8",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jbvr6zn1xstk",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/04/2022 07:30 UTC\n<b>End time :</b> 14/04/2022 17:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> This maintenance consists of checking the operating condition of the high voltage generators.",
-          "incident_id": "gtbm7ntystd4",
-          "created_at": "2022-03-19T00:00:48.100Z",
-          "updated_at": "2022-03-19T00:00:48.100Z",
-          "display_at": "2022-03-19T00:00:48.100Z",
-          "affected_components": [
-            {
-              "code": "f4dnnwz43vr4",
-              "name": "Datacenters || RBX - RBX1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "gmpjyy3kgdlv",
-              "name": "Datacenters || RBX - RBX3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Datacenters || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f4dnnwz43vr4",
-          "name": "RBX1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:15.203Z",
-          "updated_at": "2022-03-16T03:53:04.476Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "gmpjyy3kgdlv",
-          "name": "RBX3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:17.105Z",
-          "updated_at": "2022-03-14T16:49:04.596Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2022-03-23T18:30:35.193Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-27T06:30:00.000Z",
-      "scheduled_until": "2022-04-27T15:00:00.000Z"
-    },
-    {
       "id": "t3mjqzx2fs47",
       "name": "[GRA2][Cooling System] - G252B03",
       "status": "in_progress",
@@ -4357,9 +4325,9 @@
         {
           "id": "m4pzrlrxvvgt",
           "name": "BHS8",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-03-22T11:00:37.758Z",
+          "updated_at": "2022-03-23T21:20:08.892Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -5156,9 +5124,9 @@
         {
           "id": "m4pzrlrxvvgt",
           "name": "BHS8",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-03-22T11:00:37.758Z",
+          "updated_at": "2022-03-23T21:20:08.892Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -5236,9 +5204,9 @@
         {
           "id": "m4pzrlrxvvgt",
           "name": "BHS8",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-03-22T11:00:37.758Z",
+          "updated_at": "2022-03-23T21:20:08.892Z",
           "position": 8,
           "description": null,
           "showcase": false,
