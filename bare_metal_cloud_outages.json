@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-06T10:15:05.767Z"
+    "updated_at": "2022-04-06T13:52:32.123Z"
   },
   "components": [
     {
@@ -2131,7 +2131,7 @@
       "name": "[BHS5][Public network] - T05G09 -T05G28 - T05G30 - T05G34 - T05G35 - T05G37 - T05G39 - T05H02 - T05H03 - T05H04 - T05H05 - T05H06 - T05H07 - T05H09 - T05H10 - T05H11 - T05H26 - T05H28",
       "status": "monitoring",
       "created_at": "2022-04-06T08:15:31.719Z",
-      "updated_at": "2022-04-06T10:15:05.764Z",
+      "updated_at": "2022-04-06T13:52:32.113Z",
       "monitoring_at": "2022-04-06T10:15:05.746Z",
       "resolved_at": null,
       "impact": "minor",
@@ -2139,6 +2139,26 @@
       "started_at": "2022-04-06T08:15:31.712Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "94xr8l8yp8tb",
+          "status": "monitoring",
+          "body": "Currently, the traffic is ensured by the switches B and A. However, the redundancy is not ensured if B became unreachable. Indeed, only 90% of the traffic would be provided by A.This is due to a hardware issue which is being repaired by one of our manufacturers.",
+          "incident_id": "xkd2ty0yvh2x",
+          "created_at": "2022-04-06T13:52:32.111Z",
+          "updated_at": "2022-04-06T13:52:32.111Z",
+          "display_at": "2022-04-06T13:52:32.111Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6t6wc00k6y02",
           "status": "monitoring",
