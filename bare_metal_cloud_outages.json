@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-11T04:30:29.666Z"
+    "updated_at": "2022-04-11T06:00:24.193Z"
   },
   "components": [
     {
@@ -145,7 +145,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -671,9 +671,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2022-04-11T04:30:29.290Z",
+      "updated_at": "2022-04-11T05:42:28.717Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2243,7 +2243,7 @@
       "name": "[BHS7/LIM1/ERI1/SYD1][vRack] - Upgrade xDC/xBU",
       "status": "scheduled",
       "created_at": "2022-04-06T22:40:08.900Z",
-      "updated_at": "2022-04-06T22:40:08.971Z",
+      "updated_at": "2022-04-11T06:00:24.175Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2251,6 +2251,19 @@
       "started_at": "2022-04-06T22:40:08.888Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "8k4grdrxnpw8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "tw19bn7pl235",
+          "created_at": "2022-04-11T06:00:23.896Z",
+          "updated_at": "2022-04-11T06:00:23.896Z",
+          "display_at": "2022-04-11T06:00:23.896Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "pvh4h6j09jhn",
           "status": "scheduled",
@@ -2635,6 +2648,81 @@
       "scheduled_until": "2022-04-12T09:00:00.000Z"
     },
     {
+      "id": "1m40hj2jkgm4",
+      "name": "[BHS7/LIM1/GRA1][vRack] - Upgrade xDC/xBU",
+      "status": "scheduled",
+      "created_at": "2022-04-06T22:31:06.911Z",
+      "updated_at": "2022-04-07T20:29:24.686Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t1z4zgr1xt4g",
+      "started_at": "2022-04-06T22:31:06.900Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "l5h1smwqxm0m",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 13/04/2022 07:00 UTC \n<b>End time :</b> 13/04/2022 23:59 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management ,we need to upgrade our exchangers RTvRack in order to have a homogeneous park",
+          "incident_id": "1m40hj2jkgm4",
+          "created_at": "2022-04-06T22:31:06.982Z",
+          "updated_at": "2022-04-06T22:31:06.982Z",
+          "display_at": "2022-04-06T22:31:06.982Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2022-04-10T02:09:15.736Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2022-04-08T03:33:55.776Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-04-13T07:00:00.000Z",
+      "scheduled_until": "2022-04-13T23:59:00.000Z"
+    },
+    {
       "id": "cp5zh0rpkwnr",
       "name": "[BHS4][Network System] - Upgrade a network device",
       "status": "scheduled",
@@ -2709,81 +2797,6 @@
           "created_at": "2022-04-06T22:46:46.128Z",
           "updated_at": "2022-04-08T03:18:43.516Z",
           "display_at": "2022-04-06T22:46:46.128Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "ywcwwnktxgh0",
-              "name": "Dedicated Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2022-04-10T02:09:15.736Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ywcwwnktxgh0",
-          "name": "LIM",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:54.272Z",
-          "updated_at": "2022-04-08T03:33:55.776Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-13T07:00:00.000Z",
-      "scheduled_until": "2022-04-13T23:59:00.000Z"
-    },
-    {
-      "id": "1m40hj2jkgm4",
-      "name": "[BHS7/LIM1/GRA1][vRack] - Upgrade xDC/xBU",
-      "status": "scheduled",
-      "created_at": "2022-04-06T22:31:06.911Z",
-      "updated_at": "2022-04-07T20:29:24.686Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/t1z4zgr1xt4g",
-      "started_at": "2022-04-06T22:31:06.900Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "l5h1smwqxm0m",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 13/04/2022 07:00 UTC \n<b>End time :</b> 13/04/2022 23:59 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management ,we need to upgrade our exchangers RTvRack in order to have a homogeneous park",
-          "incident_id": "1m40hj2jkgm4",
-          "created_at": "2022-04-06T22:31:06.982Z",
-          "updated_at": "2022-04-06T22:31:06.982Z",
-          "display_at": "2022-04-06T22:31:06.982Z",
           "affected_components": [
             {
               "code": "hqn6pb8tdzdx",
@@ -3062,97 +3075,10 @@
       ],
       "scheduled_for": "2022-08-31T10:00:00.000Z",
       "scheduled_until": "2022-08-31T11:00:00.000Z"
-    },
-    {
-      "id": "r2ccml4g4rsy",
-      "name": "[GRA1][Dedicated servers] - G102A18",
-      "status": "in_progress",
-      "created_at": "2022-04-05T22:43:50.446Z",
-      "updated_at": "2022-04-11T04:30:29.653Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pp224hdz4n37",
-      "started_at": "2022-04-05T22:43:50.439Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "x7j8rsnyvhx3",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "r2ccml4g4rsy",
-          "created_at": "2022-04-11T04:30:29.649Z",
-          "updated_at": "2022-04-11T04:30:29.649Z",
-          "display_at": "2022-04-11T04:30:29.649Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "q8w1b7kflmw6",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "r2ccml4g4rsy",
-          "created_at": "2022-04-11T03:30:22.770Z",
-          "updated_at": "2022-04-11T03:30:22.770Z",
-          "display_at": "2022-04-11T03:30:22.770Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "06x2zglgvhxg",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 11/04/2022 04:30 UTC\n<b>End time :</b> 11/04/2022 05:30 UTC\n<b>Service impact :</b> The servers will be unavailable during maintenance.\n<b>Service improvement :</b> We are going to restart an electrical equipment that is encountering feedback problems.",
-          "incident_id": "r2ccml4g4rsy",
-          "created_at": "2022-04-05T22:43:50.520Z",
-          "updated_at": "2022-04-05T22:43:50.520Z",
-          "display_at": "2022-04-05T22:43:50.520Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2022-04-11T04:30:29.290Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-11T04:30:00.000Z",
-      "scheduled_until": "2022-04-11T05:30:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
