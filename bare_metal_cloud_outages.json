@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-12T07:29:49.942Z"
+    "updated_at": "2022-04-12T09:29:31.110Z"
   },
   "components": [
     {
@@ -931,9 +931,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2022-04-12T07:29:49.851Z",
+      "updated_at": "2022-04-12T09:09:32.491Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1152,9 +1152,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2022-04-12T07:29:49.886Z",
+      "updated_at": "2022-04-12T09:09:32.506Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2621,9 +2621,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2022-04-12T07:29:49.851Z",
+          "updated_at": "2022-04-12T09:09:32.491Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2636,9 +2636,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-04-12T07:29:49.886Z",
+          "updated_at": "2022-04-12T09:09:32.506Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2668,30 +2668,36 @@
       "scheduled_until": "2022-08-31T11:00:00.000Z"
     },
     {
-      "id": "0hjxcv3pndpp",
-      "name": "[BHS1][Network System] - Upgrade a network device",
+      "id": "3sbb8j0kny4f",
+      "name": "[GRA1/RBX1][vRack] - Upgrade xDC/xBU",
       "status": "in_progress",
-      "created_at": "2022-04-08T23:18:31.559Z",
-      "updated_at": "2022-04-12T07:00:16.896Z",
+      "created_at": "2022-04-12T09:08:50.540Z",
+      "updated_at": "2022-04-12T09:09:32.537Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/vgfnn2xxjjr4",
-      "started_at": "2022-04-08T23:18:31.552Z",
+      "shortlink": "https://stspg.io/cbgvt8866rtm",
+      "started_at": "2022-04-12T09:08:50.530Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "mx8czm16g443",
+          "id": "5vvy74wb7k6p",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0hjxcv3pndpp",
-          "created_at": "2022-04-12T07:00:16.892Z",
-          "updated_at": "2022-04-12T07:00:16.892Z",
-          "display_at": "2022-04-12T07:00:16.892Z",
+          "incident_id": "3sbb8j0kny4f",
+          "created_at": "2022-04-12T09:09:32.535Z",
+          "updated_at": "2022-04-12T09:09:32.535Z",
+          "display_at": "2022-04-12T09:09:32.535Z",
           "affected_components": [
             {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
               "old_status": "operational",
               "new_status": "under_maintenance"
             }
@@ -2701,32 +2707,25 @@
           "tweet_id": null
         },
         {
-          "id": "yyfjkmz5tcgt",
+          "id": "0rd1pwmq6qn6",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0hjxcv3pndpp",
-          "created_at": "2022-04-12T06:00:26.689Z",
-          "updated_at": "2022-04-12T06:00:26.689Z",
-          "display_at": "2022-04-12T06:00:26.689Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dwt6lw604sx8",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 12/04/2022 07:00 UTC \n<b>End time :</b> 12/04/2022 09:00 UTC \n<b>Service impact :</b> Loss of all services behind device for 15 minutes\n<b>Service improvement :</b> The objective of this operation is to upgrade this network device for a homogeneous infrastructure.",
-          "incident_id": "0hjxcv3pndpp",
-          "created_at": "2022-04-08T23:18:31.622Z",
-          "updated_at": "2022-04-08T23:18:31.622Z",
-          "display_at": "2022-04-08T23:18:31.622Z",
+          "body": "<b>Start time :</b> 12/04/2022 07:00 UTC \n<b>End time :</b> 12/04/2022 23:59 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management ,we need to upgrade our exchangers RTvRack in order to have a homogeneous park",
+          "incident_id": "3sbb8j0kny4f",
+          "created_at": "2022-04-12T09:08:50.607Z",
+          "updated_at": "2022-04-12T09:08:50.607Z",
+          "display_at": "2022-04-12T09:08:50.607Z",
           "affected_components": [
             {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -2736,12 +2735,27 @@
       ],
       "components": [
         {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
           "status": "under_maintenance",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2022-04-12T07:00:16.737Z",
-          "position": 1,
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-04-12T09:09:32.491Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-04-12T09:09:32.506Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
@@ -2751,8 +2765,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-04-12T07:00:00.000Z",
-      "scheduled_until": "2022-04-12T09:00:00.000Z"
+      "scheduled_for": "2022-04-12T09:09:00.000Z",
+      "scheduled_until": "2022-04-12T23:59:00.000Z"
     }
   ],
   "status": {
