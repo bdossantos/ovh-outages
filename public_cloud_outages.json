@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-17T08:28:14.977Z"
+    "updated_at": "2022-04-17T08:46:39.558Z"
   },
   "components": [
     {
@@ -3962,100 +3962,6 @@
       "scheduled_until": "2022-06-13T06:00:00.000Z"
     },
     {
-      "id": "1s899p8kmt01",
-      "name": "[GRA7][Public Cloud] Upgrade to Stein",
-      "status": "scheduled",
-      "created_at": "2022-02-02T18:46:38.904Z",
-      "updated_at": "2022-04-06T10:03:26.937Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rqzrbt1thwkc",
-      "started_at": "2022-02-02T18:46:38.896Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "lnztrrz8n99r",
-          "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "1s899p8kmt01",
-          "created_at": "2022-04-06T10:03:26.935Z",
-          "updated_at": "2022-04-06T10:03:26.935Z",
-          "display_at": "2022-04-06T10:03:26.935Z",
-          "affected_components": [
-            {
-              "code": "dwkwkx15h58c",
-              "name": "Compute - Instance || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bw0d1vv8lwmr",
-          "status": "scheduled",
-          "body": "Due to an imponderable we postpone the upgrade operation to Stein for 19/04 from 19h00 UTC to 01h00 UTC",
-          "incident_id": "1s899p8kmt01",
-          "created_at": "2022-03-14T08:38:42.696Z",
-          "updated_at": "2022-03-14T08:38:42.696Z",
-          "display_at": "2022-03-14T08:38:42.696Z",
-          "affected_components": [
-            {
-              "code": "px9hhrfrkmth",
-              "name": "Compute || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8xygl1xnnkdw",
-          "status": "scheduled",
-          "body": "A maintenance operation is scheduled for the GRA7 region on <b>April 05, 2022, between 19:00 and 01:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.gra7.cloud.ovh.net\">https://compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://network.compute.gra7.cloud.ovh.net\">https://network.compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.gra7.cloud.ovh.net\">https://volume.compute.gra7.cloud.ovh.net</a> \n    <a href=\"https://image.compute.gra7.cloud.ovh.net\">https://image.compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://workflow.gra7.cloud.ovh.net\">https://workflow.gra7.cloud.ovh.net</a> \n    <a href=\"https://orchestration.gra7.cloud.ovh.net\">https://orchestration.gra7.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
-          "incident_id": "1s899p8kmt01",
-          "created_at": "2022-02-02T18:46:38.959Z",
-          "updated_at": "2022-02-02T18:46:38.959Z",
-          "display_at": "2022-02-02T18:46:38.959Z",
-          "affected_components": [
-            {
-              "code": "px9hhrfrkmth",
-              "name": "Compute || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dwkwkx15h58c",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:00.118Z",
-          "updated_at": "2022-04-06T09:36:03.499Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xfnf56jsxk5y",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-19T19:00:00.000Z",
-      "scheduled_until": "2022-04-20T01:00:00.000Z"
-    },
-    {
       "id": "wnlm28zl4swm",
       "name": "[Global][Database] Software upgrade",
       "status": "scheduled",
@@ -4213,6 +4119,120 @@
       ],
       "scheduled_for": "2022-04-22T04:00:00.000Z",
       "scheduled_until": "2022-04-22T06:00:00.000Z"
+    },
+    {
+      "id": "1s899p8kmt01",
+      "name": "[GRA7][Public Cloud] Upgrade to Stein",
+      "status": "scheduled",
+      "created_at": "2022-02-02T18:46:38.904Z",
+      "updated_at": "2022-04-17T08:44:23.472Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rqzrbt1thwkc",
+      "started_at": "2022-02-02T18:46:38.896Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "xqhz7rt1zmrw",
+          "status": "scheduled",
+          "body": "This maintenance is postponed for the 17/05/2022 from 17:00 UTC to 23:00 UTC.",
+          "incident_id": "1s899p8kmt01",
+          "created_at": "2022-04-17T08:44:23.468Z",
+          "updated_at": "2022-04-17T08:44:23.468Z",
+          "display_at": "2022-04-17T08:44:23.468Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lnztrrz8n99r",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "1s899p8kmt01",
+          "created_at": "2022-04-06T10:03:26.935Z",
+          "updated_at": "2022-04-06T10:03:26.935Z",
+          "display_at": "2022-04-06T10:03:26.935Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bw0d1vv8lwmr",
+          "status": "scheduled",
+          "body": "Due to an imponderable we postpone the upgrade operation to Stein for 19/04 from 19h00 UTC to 01h00 UTC",
+          "incident_id": "1s899p8kmt01",
+          "created_at": "2022-03-14T08:38:42.696Z",
+          "updated_at": "2022-03-14T08:38:42.696Z",
+          "display_at": "2022-03-14T08:38:42.696Z",
+          "affected_components": [
+            {
+              "code": "px9hhrfrkmth",
+              "name": "Compute || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8xygl1xnnkdw",
+          "status": "scheduled",
+          "body": "A maintenance operation is scheduled for the GRA7 region on <b>April 05, 2022, between 19:00 and 01:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.gra7.cloud.ovh.net\">https://compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://network.compute.gra7.cloud.ovh.net\">https://network.compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.gra7.cloud.ovh.net\">https://volume.compute.gra7.cloud.ovh.net</a> \n    <a href=\"https://image.compute.gra7.cloud.ovh.net\">https://image.compute.gra7.cloud.ovh.net</a>\n    <a href=\"https://workflow.gra7.cloud.ovh.net\">https://workflow.gra7.cloud.ovh.net</a> \n    <a href=\"https://orchestration.gra7.cloud.ovh.net\">https://orchestration.gra7.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
+          "incident_id": "1s899p8kmt01",
+          "created_at": "2022-02-02T18:46:38.959Z",
+          "updated_at": "2022-02-02T18:46:38.959Z",
+          "display_at": "2022-02-02T18:46:38.959Z",
+          "affected_components": [
+            {
+              "code": "px9hhrfrkmth",
+              "name": "Compute || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwkwkx15h58c",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:00.118Z",
+          "updated_at": "2022-04-06T09:36:03.499Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-17T17:00:00.000Z",
+      "scheduled_until": "2022-05-17T23:00:00.000Z"
     },
     {
       "id": "3vfxtvww8hv1",
