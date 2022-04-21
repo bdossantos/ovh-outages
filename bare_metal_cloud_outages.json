@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-21T22:01:11.184Z"
+    "updated_at": "2022-04-21T22:29:57.812Z"
   },
   "components": [
     {
@@ -2127,6 +2127,35 @@
   ],
   "incidents": [
     {
+      "id": "vk50q6dtchdx",
+      "name": "VPS - BHS2 - host412895",
+      "status": "investigating",
+      "created_at": "2022-04-21T22:29:57.748Z",
+      "updated_at": "2022-04-21T22:29:57.809Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5vnh44vttrhv",
+      "started_at": "2022-04-21T22:29:57.742Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "273rpp6q9bjp",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost412895.bhs2.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\na8edcb7c-83c4-4c52-8f78-830c600f6655\n2e6e31b4-0a70-4c9c-8f32-88faa130edd9\n02b82ce2-b1f6-4a22-a188-b541945cb94a\nab3fdc43-a1b2-4d30-98d5-1a958e061906\n328accd5-3f41-4852-b058-6b5e4df32e02\nc42f1753-73c0-44e4-887e-03cd70baead5\nf5e63fcc-c3b6-4997-8d59-67af991c0317\nb29ab100-7b2e-4f89-a203-cc88bd7af82e\n3b45e77f-685e-40d2-b0f1-8dd90a4edbaa\nc304bbf5-c7fd-4017-8844-9d094114bef7\n43074e38-8509-43a0-9a4a-59b36d67f698\n390e71b5-0d6c-4163-8d41-a233d4fef0cd\n7b3e9c7c-d66f-48ab-96d1-e2abfec62218\n12d79f2a-e5d3-4e5f-8acc-9716a655415c\nb49ff1dc-0e94-4601-9e53-27b2d6e05469\n6277b307-d300-436c-8ec9-2a3181eb77a7\n8f1ae8b4-9392-41ca-82b5-1702877759d7\nb38a0d85-69ca-4850-8f5f-72d120bff828\n1bc011b6-87bc-446e-9591-52643bc0c4f5\nbe75f688-1c72-4259-953f-1a1c90afb0b5",
+          "incident_id": "vk50q6dtchdx",
+          "created_at": "2022-04-21T22:29:57.807Z",
+          "updated_at": "2022-04-21T22:29:57.807Z",
+          "display_at": "2022-04-21T22:29:57.807Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
       "id": "dqtfxhqj93ss",
       "name": "VPS - BHS2 - host373276",
       "status": "investigating",
@@ -2215,6 +2244,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "p8dg5gvh3x1s",
+      "name": "[GRA1][Global Infrastructure] - CEPH cluster Upgrade",
+      "status": "scheduled",
+      "created_at": "2022-04-19T13:08:41.964Z",
+      "updated_at": "2022-04-19T13:08:42.036Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0d1qr8j8mny8",
+      "started_at": "2022-04-19T13:08:41.955Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "j9v6089mrnb8",
+          "status": "scheduled",
+          "body": "<b>Start time : </b> 25/04/2022 07:00 UTC\n<b>End time : </b> 25/04/2022 20:00 UTC\n<b>Service impact : </b> Slowdown might be observed to access data hosted on block storage.\nWe are upgrading CEPH cluster in GRA1.",
+          "incident_id": "p8dg5gvh3x1s",
+          "created_at": "2022-04-19T13:08:42.033Z",
+          "updated_at": "2022-04-19T13:08:42.033Z",
+          "display_at": "2022-04-19T13:08:42.033Z",
+          "affected_components": [
+            {
+              "code": "zmsctzv6l4w7",
+              "name": "Virtual Private Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zmsctzv6l4w7",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:33.951Z",
+          "updated_at": "2022-03-10T07:30:22.931Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "3ygk7lc032zm",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-04-25T07:00:00.000Z",
+      "scheduled_until": "2022-04-25T20:00:00.000Z"
+    },
     {
       "id": "xxsrrmqpgnl9",
       "name": "[SBG3/SGP1/BHS7][Network] SDAGG upgrade",
@@ -2310,60 +2393,6 @@
       ],
       "scheduled_for": "2022-04-25T07:00:00.000Z",
       "scheduled_until": "2022-04-25T23:59:00.000Z"
-    },
-    {
-      "id": "p8dg5gvh3x1s",
-      "name": "[GRA1][Global Infrastructure] - CEPH cluster Upgrade",
-      "status": "scheduled",
-      "created_at": "2022-04-19T13:08:41.964Z",
-      "updated_at": "2022-04-19T13:08:42.036Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0d1qr8j8mny8",
-      "started_at": "2022-04-19T13:08:41.955Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "j9v6089mrnb8",
-          "status": "scheduled",
-          "body": "<b>Start time : </b> 25/04/2022 07:00 UTC\n<b>End time : </b> 25/04/2022 20:00 UTC\n<b>Service impact : </b> Slowdown might be observed to access data hosted on block storage.\nWe are upgrading CEPH cluster in GRA1.",
-          "incident_id": "p8dg5gvh3x1s",
-          "created_at": "2022-04-19T13:08:42.033Z",
-          "updated_at": "2022-04-19T13:08:42.033Z",
-          "display_at": "2022-04-19T13:08:42.033Z",
-          "affected_components": [
-            {
-              "code": "zmsctzv6l4w7",
-              "name": "Virtual Private Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "zmsctzv6l4w7",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:33.951Z",
-          "updated_at": "2022-03-10T07:30:22.931Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "3ygk7lc032zm",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-25T07:00:00.000Z",
-      "scheduled_until": "2022-04-25T20:00:00.000Z"
     },
     {
       "id": "8b2yqwtg2nd0",
@@ -2654,102 +2683,6 @@
       "scheduled_until": "2022-04-26T23:00:00.000Z"
     },
     {
-      "id": "3skh8rxklqrf",
-      "name": "[SYD2/SGP1/WAW1][vRack] - Upgrade xDC/xBU",
-      "status": "scheduled",
-      "created_at": "2022-04-19T23:02:12.069Z",
-      "updated_at": "2022-04-19T23:02:12.139Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5zkm0yzv43ft",
-      "started_at": "2022-04-19T23:02:12.058Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "rjdhsdcmw3hz",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 27/04/2022 12:00 UTC \n<b>End time :</b> 27/04/2022 23:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management ,we need to upgrade our exchangers RTvRack in order to have a homogeneous park",
-          "incident_id": "3skh8rxklqrf",
-          "created_at": "2022-04-19T23:02:12.135Z",
-          "updated_at": "2022-04-19T23:02:12.135Z",
-          "display_at": "2022-04-19T23:02:12.135Z",
-          "affected_components": [
-            {
-              "code": "qkvynnwhykk2",
-              "name": "Dedicated Servers || Network - SGP",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5psdpd7s2jnn",
-              "name": "Dedicated Servers || Network - SYD",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7fq8tsvh76tn",
-              "name": "Dedicated Servers || Network - WAW",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qkvynnwhykk2",
-          "name": "SGP",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:57.567Z",
-          "updated_at": "2022-04-20T22:23:21.218Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5psdpd7s2jnn",
-          "name": "SYD",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:58.484Z",
-          "updated_at": "2022-04-19T22:38:00.515Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7fq8tsvh76tn",
-          "name": "WAW",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:55.369Z",
-          "updated_at": "2022-04-19T22:38:00.532Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-04-27T12:00:00.000Z",
-      "scheduled_until": "2022-04-27T23:00:00.000Z"
-    },
-    {
       "id": "t0lq34f6dchq",
       "name": "[GRA2/SYD2/RBX7][Network] SDAGG upgrade",
       "status": "scheduled",
@@ -2844,6 +2777,102 @@
       ],
       "scheduled_for": "2022-04-27T12:00:00.000Z",
       "scheduled_until": "2022-04-27T23:59:00.000Z"
+    },
+    {
+      "id": "3skh8rxklqrf",
+      "name": "[SYD2/SGP1/WAW1][vRack] - Upgrade xDC/xBU",
+      "status": "scheduled",
+      "created_at": "2022-04-19T23:02:12.069Z",
+      "updated_at": "2022-04-19T23:02:12.139Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5zkm0yzv43ft",
+      "started_at": "2022-04-19T23:02:12.058Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rjdhsdcmw3hz",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 27/04/2022 12:00 UTC \n<b>End time :</b> 27/04/2022 23:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> In regards to our lifecycle management ,we need to upgrade our exchangers RTvRack in order to have a homogeneous park",
+          "incident_id": "3skh8rxklqrf",
+          "created_at": "2022-04-19T23:02:12.135Z",
+          "updated_at": "2022-04-19T23:02:12.135Z",
+          "display_at": "2022-04-19T23:02:12.135Z",
+          "affected_components": [
+            {
+              "code": "qkvynnwhykk2",
+              "name": "Dedicated Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5psdpd7s2jnn",
+              "name": "Dedicated Servers || Network - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qkvynnwhykk2",
+          "name": "SGP",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:57.567Z",
+          "updated_at": "2022-04-20T22:23:21.218Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5psdpd7s2jnn",
+          "name": "SYD",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:58.484Z",
+          "updated_at": "2022-04-19T22:38:00.515Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2022-04-19T22:38:00.532Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-04-27T12:00:00.000Z",
+      "scheduled_until": "2022-04-27T23:00:00.000Z"
     },
     {
       "id": "wk3xtwrpyp4p",
@@ -2952,6 +2981,114 @@
       ],
       "scheduled_for": "2022-05-08T21:00:00.000Z",
       "scheduled_until": "2022-05-09T03:00:00.000Z"
+    },
+    {
+      "id": "6l5x3338hlcs",
+      "name": "[RBX2][Dedicated Servers] - 26H04/26H05/26H06/26H07/26H09",
+      "status": "scheduled",
+      "created_at": "2022-04-21T22:22:12.665Z",
+      "updated_at": "2022-04-21T22:22:12.746Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0nnlphm3ls1d",
+      "started_at": "2022-04-21T22:22:12.656Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "5fgwhm1y6vyj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/05/2022 21:00 UTC\n<b>End time :</b> 10/05/2022 03:00 UTC\n<b>Service impact :</b> Servers will be unreachable during the  maintenance\n<b>Service improvement :</b> The objective of this maintenance is to move the servers of the racks to another location",
+          "incident_id": "6l5x3338hlcs",
+          "created_at": "2022-04-21T22:22:12.743Z",
+          "updated_at": "2022-04-21T22:22:12.743Z",
+          "display_at": "2022-04-21T22:22:12.743Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-04-20T18:47:04.296Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-09T21:00:00.000Z",
+      "scheduled_until": "2022-05-10T03:00:00.000Z"
+    },
+    {
+      "id": "94mlhsq0s0qf",
+      "name": "[RBX2][Dedicated Servers] - 26A12/26A13/26A14",
+      "status": "scheduled",
+      "created_at": "2022-04-21T22:10:19.249Z",
+      "updated_at": "2022-04-21T22:10:19.376Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nrqysxv4nc70",
+      "started_at": "2022-04-21T22:10:19.240Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "3pbtlszvxv73",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 02/06/2022 21:00 UTC\n<b>End time :</b> 03/06/2022 03:00 UTC\n<b>Service impact :</b> Servers will be unreachable during the  maintenance\n<b>Service improvement :</b> The objective of this maintenance is to move the servers of the racks to another location",
+          "incident_id": "94mlhsq0s0qf",
+          "created_at": "2022-04-21T22:10:19.372Z",
+          "updated_at": "2022-04-21T22:10:19.372Z",
+          "display_at": "2022-04-21T22:10:19.372Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-04-20T18:47:04.296Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-06-02T21:00:00.000Z",
+      "scheduled_until": "2022-06-03T03:00:00.000Z"
     },
     {
       "id": "n6t88vsqsvm3",
