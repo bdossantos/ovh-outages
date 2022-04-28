@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-28T22:47:46.909Z"
+    "updated_at": "2022-04-28T23:25:31.549Z"
   },
   "components": [
     {
@@ -1207,6 +1207,333 @@
       ],
       "scheduled_for": "2022-05-03T06:00:00.000Z",
       "scheduled_until": "2022-05-03T15:00:00.000Z"
+    },
+    {
+      "id": "3892ftjs5nfc",
+      "name": "[RBX/GRA/SBG][Network] - DNS and ACE",
+      "status": "scheduled",
+      "created_at": "2022-04-28T23:20:10.951Z",
+      "updated_at": "2022-04-28T23:20:11.026Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/268qvmsx915d",
+      "started_at": "2022-04-28T23:20:10.924Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "5hq26j2wqqkw",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 03/05/2022 19:00 UTC\n<b>End time :</b> 03/05/2022 22:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> We are currently using ACE and NSX for the connection to Hosted1 infra for HTTPS, POP3, IMAP4, etc... We want to use only NSX for that. We have to delete the IP of ACE .\n\nSo after that change, Customer will connect to NSX only in order to have access to their emails.\n\nWe are currently working with NSX AND ACE and all is working fine. The load on the CAS i very low because we have a lot of servers.",
+          "incident_id": "3892ftjs5nfc",
+          "created_at": "2022-04-28T23:20:11.023Z",
+          "updated_at": "2022-04-28T23:20:11.023Z",
+          "display_at": "2022-04-28T23:20:11.023Z",
+          "affected_components": [
+            {
+              "code": "2k7jxkf0w8f4",
+              "name": "Datacenters || SBG - SBG1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n3pn0f28b99n",
+              "name": "Datacenters || SBG - SBG3",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n39cfc7qz4vh",
+              "name": "Datacenters || SBG - SBG4",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f4dnnwz43vr4",
+              "name": "Datacenters || RBX - RBX1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "p5jg5r8hjzk6",
+              "name": "Datacenters || RBX - RBX2",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "gmpjyy3kgdlv",
+              "name": "Datacenters || RBX - RBX3",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ztt6jttbfmcr",
+              "name": "Datacenters || RBX - RBX4",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n3bn7csv5k3k",
+              "name": "Datacenters || RBX - RBX5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Datacenters || RBX - RBX6",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Datacenters || RBX - RBX7",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Datacenters || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Datacenters || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f4vdn73g6790",
+              "name": "Datacenters || GRA - GRA2",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Datacenters || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2k7jxkf0w8f4",
+          "name": "SBG1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:00.223Z",
+          "updated_at": "2022-04-27T01:02:29.902Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4dnnwz43vr4",
+          "name": "RBX1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:15.203Z",
+          "updated_at": "2022-04-27T09:10:26.362Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-04-28T13:54:31.696Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2022-04-28T09:45:32.682Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "p5jg5r8hjzk6",
+          "name": "RBX2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.916Z",
+          "updated_at": "2022-04-28T20:00:27.901Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n3pn0f28b99n",
+          "name": "SBG3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:01.143Z",
+          "updated_at": "2022-04-27T01:02:29.918Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gmpjyy3kgdlv",
+          "name": "RBX3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:17.105Z",
+          "updated_at": "2022-04-27T09:10:26.384Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2022-04-14T17:46:49.550Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n39cfc7qz4vh",
+          "name": "SBG4",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:01.976Z",
+          "updated_at": "2022-04-27T01:02:29.932Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ztt6jttbfmcr",
+          "name": "RBX4",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:17.852Z",
+          "updated_at": "2022-04-20T14:34:51.085Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n3bn7csv5k3k",
+          "name": "RBX5",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:18.529Z",
+          "updated_at": "2022-04-25T20:09:12.905Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2022-04-22T12:50:28.822Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2022-04-26T13:46:28.754Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2022-04-27T09:10:26.403Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-03T19:00:00.000Z",
+      "scheduled_until": "2022-05-03T22:00:00.000Z"
     },
     {
       "id": "bdjpqc524jpg",
