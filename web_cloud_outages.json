@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-28T11:00:36.080Z"
+    "updated_at": "2022-04-28T12:00:35.249Z"
   },
   "components": [
     {
@@ -4351,11 +4351,65 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "579r26msn24s",
+      "name": "[GRA7][Web PaaS] - Foundation upgrade",
+      "status": "scheduled",
+      "created_at": "2022-04-27T12:01:48.780Z",
+      "updated_at": "2022-04-27T12:02:21.781Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lwkdgqd4d9bf",
+      "started_at": "2022-04-27T12:01:48.772Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "x5hpcsvpq5fb",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/05/2022 18:00 UTC\n<b>End time :</b> 10/05/2022 01:00 UTC\n<b>Service impact :</b> All projects and environments will continue to function during the upgrade. However, some short interruption may be observed for a few minutes. \nIntegrations and webhooks may fail during the maintenance. \nBut projects provisioning won't be impacted.\n<b>Service improvement :</b> The objective of this maintenance is to upgrade the version of the foundation for WebPaas.",
+          "incident_id": "579r26msn24s",
+          "created_at": "2022-04-27T12:01:48.839Z",
+          "updated_at": "2022-04-27T12:02:21.762Z",
+          "display_at": "2022-04-27T12:01:48.839Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cljxz1bqnkyx",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2021-11-23T11:02:45.256Z",
+          "updated_at": "2022-04-13T03:50:22.981Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-23",
+          "group_id": "dc34f7wx9y5b",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-09T18:00:00.000Z",
+      "scheduled_until": "2022-05-10T01:00:00.000Z"
+    },
+    {
       "id": "w8bdkkm6vr32",
       "name": "[2FA] - New gateway for US phone numbers",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2022-04-27T15:14:13.397Z",
-      "updated_at": "2022-04-28T11:00:35.861Z",
+      "updated_at": "2022-04-28T12:00:35.240Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -4363,6 +4417,19 @@
       "started_at": "2022-04-27T15:14:13.391Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "yk6s9865sqsn",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "w8bdkkm6vr32",
+          "created_at": "2022-04-28T12:00:35.235Z",
+          "updated_at": "2022-04-28T12:00:35.235Z",
+          "display_at": "2022-04-28T12:00:35.235Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xh83y84zrlj1",
           "status": "scheduled",
@@ -4416,60 +4483,6 @@
       ],
       "scheduled_for": "2022-04-28T12:00:00.000Z",
       "scheduled_until": "2022-04-28T14:00:00.000Z"
-    },
-    {
-      "id": "579r26msn24s",
-      "name": "[GRA7][Web PaaS] - Foundation upgrade",
-      "status": "scheduled",
-      "created_at": "2022-04-27T12:01:48.780Z",
-      "updated_at": "2022-04-27T12:02:21.781Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lwkdgqd4d9bf",
-      "started_at": "2022-04-27T12:01:48.772Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "x5hpcsvpq5fb",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/05/2022 18:00 UTC\n<b>End time :</b> 10/05/2022 01:00 UTC\n<b>Service impact :</b> All projects and environments will continue to function during the upgrade. However, some short interruption may be observed for a few minutes. \nIntegrations and webhooks may fail during the maintenance. \nBut projects provisioning won't be impacted.\n<b>Service improvement :</b> The objective of this maintenance is to upgrade the version of the foundation for WebPaas.",
-          "incident_id": "579r26msn24s",
-          "created_at": "2022-04-27T12:01:48.839Z",
-          "updated_at": "2022-04-27T12:02:21.762Z",
-          "display_at": "2022-04-27T12:01:48.839Z",
-          "affected_components": [
-            {
-              "code": "cljxz1bqnkyx",
-              "name": "Web PaaS || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cljxz1bqnkyx",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2021-11-23T11:02:45.256Z",
-          "updated_at": "2022-04-13T03:50:22.981Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-23",
-          "group_id": "dc34f7wx9y5b",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-05-09T18:00:00.000Z",
-      "scheduled_until": "2022-05-10T01:00:00.000Z"
     },
     {
       "id": "gsgkth7nstnn",
@@ -4563,7 +4576,7 @@
       "name": "[GRA1][Cloud-Web] Container upgrade",
       "status": "in_progress",
       "created_at": "2022-04-20T12:46:15.679Z",
-      "updated_at": "2022-04-28T10:29:01.884Z",
+      "updated_at": "2022-04-28T11:35:46.114Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -4574,10 +4587,10 @@
         {
           "id": "g2db2k6xhptl",
           "status": "in_progress",
-          "body": "Due to a technical issue, the current maintenance will be finished next monday the 02/05/2022 in the morning.\nWe apologize for the inconvenience caused.",
+          "body": "Due to a technical issue, the current maintenance will be finished next monday the 02/05/2022 at 15:00 UTC.\nWe apologize for the inconvenience caused.",
           "incident_id": "09fxn6z65yhc",
           "created_at": "2022-04-28T10:29:01.882Z",
-          "updated_at": "2022-04-28T10:29:01.882Z",
+          "updated_at": "2022-04-28T11:35:46.110Z",
           "display_at": "2022-04-28T10:29:01.882Z",
           "affected_components": [
             {
