@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-04-28T22:00:10.781Z"
+    "updated_at": "2022-04-29T04:39:59.457Z"
   },
   "components": [
     {
@@ -2127,6 +2127,35 @@
   ],
   "incidents": [
     {
+      "id": "k246l1kdz0st",
+      "name": "VPS - BHS2 - host412895",
+      "status": "investigating",
+      "created_at": "2022-04-29T04:39:59.411Z",
+      "updated_at": "2022-04-29T04:39:59.455Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6y74lx8x90ng",
+      "started_at": "2022-04-29T04:39:59.404Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2xwllzt1kzn9",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost412895.bhs2.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n184d256f-83a2-47e6-9419-c83e40695af4\nb84a5352-dd5c-4cb2-85fe-1eed61671295\n7fc08023-9bec-46c6-a0fc-51caed9d2bdf\n761739c1-ec1e-4394-9984-6b6e16512805\n922f1eb6-48e3-4fb2-bfc3-b6393e4d4281\na977bf12-29c0-444b-aeb5-e9fc2d50c3ab\n48e052a6-2d4f-48cb-9dcc-d4eae9e7ec5a\n318b90d5-a79b-4ade-a457-3d790e1e5602\nc167ca4f-1740-4b4f-afb4-acdd1625eca0\n90869d58-b959-49b1-a5df-40447754b3bc\n1019b224-1493-4273-96dc-0531cae0678e\n41b30878-eabb-459c-bdf3-f8727e43092d\n101d2207-b7be-42cd-9205-feb8adcd092a\ndff3c898-351f-4f1d-87f8-4531ee9953df\n47b74017-56b2-47c9-98ad-8e9d970b41a4\n07c148bf-8a78-4124-ac6d-940a98cc370e\n37d12582-153d-4449-adf7-9293723fea51\ndeaa5c0f-3bb8-4cc2-98ad-2c08e089e937\nc2441392-b3f2-4e9c-b9ab-9823c8a568c3\n1ebe30c9-3608-4f83-9e95-8989fc95abe9\n5eea09f4-74c8-4978-bea1-cb93b0fcd54f\n6b73dcd5-c5fa-4651-a932-bec7fdb2df03\n6f73ac5c-6085-46f9-b4a0-baef56a70574\nb6e13ff2-edb0-4233-be4c-417228ecbc38",
+          "incident_id": "k246l1kdz0st",
+          "created_at": "2022-04-29T04:39:59.452Z",
+          "updated_at": "2022-04-29T04:39:59.452Z",
+          "display_at": "2022-04-29T04:39:59.452Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
       "id": "d6r4cq7jdpzt",
       "name": "VPS - BHS6 - host371714",
       "status": "investigating",
@@ -3161,6 +3190,60 @@
       ],
       "scheduled_for": "2022-05-09T21:00:00.000Z",
       "scheduled_until": "2022-05-10T03:00:00.000Z"
+    },
+    {
+      "id": "qtclzcy3bxk3",
+      "name": "[RBX1][Network] - 16C05",
+      "status": "scheduled",
+      "created_at": "2022-04-29T04:11:14.422Z",
+      "updated_at": "2022-04-29T04:11:14.479Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/f1h3skqzkdky",
+      "started_at": "2022-04-29T04:11:14.414Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "xn9wsntb1vr7",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 10/05/2022 04:00 UTC\n<b>End time :</b> 10/05/2022 06:00 UTC\n<b>Service impact :</b> Servers will be unreachable during operations (30 minutes per server)\n<b>Service improvement :</b> Polgo (it allows the reboot of remote machines) 17068 suffers malfunctions and it needs to be changed. So we are going to move servers to compatible Apc: polgo17069, a new one.",
+          "incident_id": "qtclzcy3bxk3",
+          "created_at": "2022-04-29T04:11:14.476Z",
+          "updated_at": "2022-04-29T04:11:14.476Z",
+          "display_at": "2022-04-29T04:11:14.476Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-04-28T00:05:08.887Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-10T04:00:00.000Z",
+      "scheduled_until": "2022-05-10T06:00:00.000Z"
     },
     {
       "id": "z0vnmcsx5xyv",
