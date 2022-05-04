@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-05-04T00:28:09.149Z"
+    "updated_at": "2022-05-04T01:24:04.196Z"
   },
   "components": [
     {
@@ -2728,6 +2728,37 @@
       "scheduled_until": "2022-05-10T03:00:00.000Z"
     },
     {
+      "id": "hqzr1dp3m2xk",
+      "name": "[Global][Hosted Private Cloud- Datastores] TOR Switch upgrade",
+      "status": "scheduled",
+      "created_at": "2022-05-04T01:23:32.708Z",
+      "updated_at": "2022-05-04T01:23:32.763Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m99t3s2q0x8q",
+      "started_at": "2022-05-04T01:23:32.704Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "9bzsshqh1jlc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/05/2022 22:00 UTC\n<b>End time :</b> 10/05/2022 04:00 UTC\n<b>Service impact :</b> There will be a few seconds of Input/Output freeze when the service will do a switchover (2 times)\n<b>Service improvement:</b> As part of our continuous improvement policy,this change is to upgrade the Switch version.",
+          "incident_id": "hqzr1dp3m2xk",
+          "created_at": "2022-05-04T01:23:32.760Z",
+          "updated_at": "2022-05-04T01:23:32.760Z",
+          "display_at": "2022-05-04T01:23:32.760Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2022-05-09T22:00:00.000Z",
+      "scheduled_until": "2022-05-10T04:00:00.000Z"
+    },
+    {
       "id": "qtclzcy3bxk3",
       "name": "[RBX1][Network] - 16C05",
       "status": "scheduled",
@@ -3176,6 +3207,102 @@
       ],
       "scheduled_for": "2022-05-11T21:00:00.000Z",
       "scheduled_until": "2022-05-12T03:00:00.000Z"
+    },
+    {
+      "id": "2x7glk6csn8t",
+      "name": "[RBX7 & 8/SBG3/WAW1][Network] - XBU/XDC upgrade",
+      "status": "scheduled",
+      "created_at": "2022-05-04T00:52:47.556Z",
+      "updated_at": "2022-05-04T00:52:47.614Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ps7t92qpvfh8",
+      "started_at": "2022-05-04T00:52:47.546Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "p8c3f7qppw0l",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 12/05/2022 20:00 UTC\n<b>End time :</b> 12/05/2022 23:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> To have a homogeneous park, we need to upgrade all the equipment in the network.",
+          "incident_id": "2x7glk6csn8t",
+          "created_at": "2022-05-04T00:52:47.612Z",
+          "updated_at": "2022-05-04T00:52:47.612Z",
+          "display_at": "2022-05-04T00:52:47.612Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-05-03T22:03:41.642Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2022-05-03T00:34:28.265Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2022-05-04T00:19:37.538Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-12T20:30:00.000Z",
+      "scheduled_until": "2022-05-12T23:30:00.000Z"
     },
     {
       "id": "pymnjm7ljppf",
