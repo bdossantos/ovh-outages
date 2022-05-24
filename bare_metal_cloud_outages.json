@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-05-24T00:24:34.544Z"
+    "updated_at": "2022-05-24T04:00:23.230Z"
   },
   "components": [
     {
@@ -2197,7 +2197,7 @@
       "name": "[RBX2][Dedicated Servers] - Room 26 - 26B14",
       "status": "scheduled",
       "created_at": "2022-05-10T16:45:15.522Z",
-      "updated_at": "2022-05-10T16:45:15.615Z",
+      "updated_at": "2022-05-24T04:00:23.220Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2205,6 +2205,19 @@
       "started_at": "2022-05-10T16:45:15.515Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "df339tknr24z",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "xctt30q01vtz",
+          "created_at": "2022-05-24T04:00:23.069Z",
+          "updated_at": "2022-05-24T04:00:23.069Z",
+          "display_at": "2022-05-24T04:00:23.069Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "f6dngg42htsb",
           "status": "scheduled",
@@ -2513,6 +2526,60 @@
       "scheduled_until": "2022-05-26T04:00:00.000Z"
     },
     {
+      "id": "b5jk5qx1dt0m",
+      "name": "[RBX2][Infrastructure] - Servers relocation",
+      "status": "scheduled",
+      "created_at": "2022-05-11T00:46:21.929Z",
+      "updated_at": "2022-05-11T00:46:21.996Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7g8113jdbfhj",
+      "started_at": "2022-05-11T00:46:21.922Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jty6tlp66nbd",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 25/05/2022 21:00 UTC\n<b>End time :</b> 26/05/2022 03:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server) \n<b>Service improvement :</b> Move the servers to another compatible rack.",
+          "incident_id": "b5jk5qx1dt0m",
+          "created_at": "2022-05-11T00:46:21.994Z",
+          "updated_at": "2022-05-11T00:46:21.994Z",
+          "display_at": "2022-05-11T00:46:21.994Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-05-24T00:24:34.474Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-25T21:00:00.000Z",
+      "scheduled_until": "2022-05-26T03:00:00.000Z"
+    },
+    {
       "id": "t3ks319tx2kk",
       "name": "[GRA2/WAW1/RBX8/SBG3k][vRack] - Upgrade xDC/xBU",
       "status": "scheduled",
@@ -2628,60 +2695,6 @@
       ],
       "scheduled_for": "2022-05-25T21:00:00.000Z",
       "scheduled_until": "2022-05-25T23:00:00.000Z"
-    },
-    {
-      "id": "b5jk5qx1dt0m",
-      "name": "[RBX2][Infrastructure] - Servers relocation",
-      "status": "scheduled",
-      "created_at": "2022-05-11T00:46:21.929Z",
-      "updated_at": "2022-05-11T00:46:21.996Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7g8113jdbfhj",
-      "started_at": "2022-05-11T00:46:21.922Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "jty6tlp66nbd",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 25/05/2022 21:00 UTC\n<b>End time :</b> 26/05/2022 03:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations (30 minutes per server) \n<b>Service improvement :</b> Move the servers to another compatible rack.",
-          "incident_id": "b5jk5qx1dt0m",
-          "created_at": "2022-05-11T00:46:21.994Z",
-          "updated_at": "2022-05-11T00:46:21.994Z",
-          "display_at": "2022-05-11T00:46:21.994Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-05-24T00:24:34.474Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-05-25T21:00:00.000Z",
-      "scheduled_until": "2022-05-26T03:00:00.000Z"
     },
     {
       "id": "gymcxfyzq99m",
@@ -3584,26 +3597,26 @@
       "scheduled_until": "2022-06-01T23:30:00.000Z"
     },
     {
-      "id": "tydmx392x87c",
-      "name": "[RBX2][Infrastructure] - Servers relocation - 26C01 26C02 26C03 26D03",
+      "id": "xlwc8wz4cthz",
+      "name": "[RBX2][Infrastructure] - Servers relocation - 26B02 26C04 26C05 26C06 26C07",
       "status": "scheduled",
-      "created_at": "2022-05-11T02:59:45.467Z",
-      "updated_at": "2022-05-11T02:59:45.522Z",
+      "created_at": "2022-05-11T02:49:14.978Z",
+      "updated_at": "2022-05-11T02:49:15.093Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/fb2fnj8kbl00",
-      "started_at": "2022-05-11T02:59:45.460Z",
+      "shortlink": "https://stspg.io/4z4lqm1r5dlf",
+      "started_at": "2022-05-11T02:49:14.970Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "p73m7m5lm4kq",
+          "id": "7vfbx7zclxn9",
           "status": "scheduled",
           "body": "<b>Start time :</b> 01/06/2022 21:00 UTC\n<b>End time :</b> 02/06/2022 03:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations \n<b>Service improvement :</b> Move the servers to another compatible rack.",
-          "incident_id": "tydmx392x87c",
-          "created_at": "2022-05-11T02:59:45.520Z",
-          "updated_at": "2022-05-11T02:59:45.520Z",
-          "display_at": "2022-05-11T02:59:45.520Z",
+          "incident_id": "xlwc8wz4cthz",
+          "created_at": "2022-05-11T02:49:15.089Z",
+          "updated_at": "2022-05-11T02:49:15.089Z",
+          "display_at": "2022-05-11T02:49:15.089Z",
           "affected_components": [
             {
               "code": "ndg1yh0x4lpd",
@@ -3638,26 +3651,26 @@
       "scheduled_until": "2022-06-02T04:00:00.000Z"
     },
     {
-      "id": "xlwc8wz4cthz",
-      "name": "[RBX2][Infrastructure] - Servers relocation - 26B02 26C04 26C05 26C06 26C07",
+      "id": "tydmx392x87c",
+      "name": "[RBX2][Infrastructure] - Servers relocation - 26C01 26C02 26C03 26D03",
       "status": "scheduled",
-      "created_at": "2022-05-11T02:49:14.978Z",
-      "updated_at": "2022-05-11T02:49:15.093Z",
+      "created_at": "2022-05-11T02:59:45.467Z",
+      "updated_at": "2022-05-11T02:59:45.522Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/4z4lqm1r5dlf",
-      "started_at": "2022-05-11T02:49:14.970Z",
+      "shortlink": "https://stspg.io/fb2fnj8kbl00",
+      "started_at": "2022-05-11T02:59:45.460Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "7vfbx7zclxn9",
+          "id": "p73m7m5lm4kq",
           "status": "scheduled",
           "body": "<b>Start time :</b> 01/06/2022 21:00 UTC\n<b>End time :</b> 02/06/2022 03:00 UTC\n<b>Service impact :</b> The servers will be unreachable during the operations \n<b>Service improvement :</b> Move the servers to another compatible rack.",
-          "incident_id": "xlwc8wz4cthz",
-          "created_at": "2022-05-11T02:49:15.089Z",
-          "updated_at": "2022-05-11T02:49:15.089Z",
-          "display_at": "2022-05-11T02:49:15.089Z",
+          "incident_id": "tydmx392x87c",
+          "created_at": "2022-05-11T02:59:45.520Z",
+          "updated_at": "2022-05-11T02:59:45.520Z",
+          "display_at": "2022-05-11T02:59:45.520Z",
           "affected_components": [
             {
               "code": "ndg1yh0x4lpd",
