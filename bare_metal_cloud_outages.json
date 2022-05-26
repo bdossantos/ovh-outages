@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-05-26T14:23:44.999Z"
+    "updated_at": "2022-05-26T20:00:26.463Z"
   },
   "components": [
     {
@@ -2227,7 +2227,7 @@
       "name": "[RBX2][Infrastructure] - Servers relocation - 26B09 26B10 26B11 26B12 26B13",
       "status": "scheduled",
       "created_at": "2022-05-11T01:39:24.204Z",
-      "updated_at": "2022-05-11T01:39:24.259Z",
+      "updated_at": "2022-05-26T20:00:26.446Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2235,6 +2235,19 @@
       "started_at": "2022-05-11T01:39:24.197Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "2yr4f08jj1yl",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6z2v3jwyhc5c",
+          "created_at": "2022-05-26T20:00:26.246Z",
+          "updated_at": "2022-05-26T20:00:26.246Z",
+          "display_at": "2022-05-26T20:00:26.246Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zjjscn52mx8k",
           "status": "scheduled",
@@ -2385,6 +2398,81 @@
       "scheduled_until": "2022-05-30T14:00:00.000Z"
     },
     {
+      "id": "2gtg23tr357q",
+      "name": "[LIM-GRA][Network] - Internal aggregator operation",
+      "status": "scheduled",
+      "created_at": "2022-05-23T17:16:46.118Z",
+      "updated_at": "2022-05-23T17:16:46.184Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gbzkknntd2lb",
+      "started_at": "2022-05-23T17:16:46.109Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "g2197yshssk0",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 30/05/2022 20:00 UTC\n<b>End time :</b> 30/05/2022 23:59 UTC\n<b>Service impact :</b> None \n<b>Service improvement :</b> We are updating an internal aggregator in order to have a homogeneous park.",
+          "incident_id": "2gtg23tr357q",
+          "created_at": "2022-05-23T17:16:46.177Z",
+          "updated_at": "2022-05-23T17:16:46.177Z",
+          "display_at": "2022-05-23T17:16:46.177Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-05-25T21:25:39.064Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2022-05-25T12:42:47.092Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-05-30T20:00:00.000Z",
+      "scheduled_until": "2022-05-30T23:59:00.000Z"
+    },
+    {
       "id": "7g0f651q0jg0",
       "name": "[GRA-SBG-RBX-WAW][Network] - Internal aggregator operation",
       "status": "scheduled",
@@ -2500,81 +2588,6 @@
       ],
       "scheduled_for": "2022-05-30T20:00:00.000Z",
       "scheduled_until": "2022-05-30T23:30:00.000Z"
-    },
-    {
-      "id": "2gtg23tr357q",
-      "name": "[LIM-GRA][Network] - Internal aggregator operation",
-      "status": "scheduled",
-      "created_at": "2022-05-23T17:16:46.118Z",
-      "updated_at": "2022-05-23T17:16:46.184Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gbzkknntd2lb",
-      "started_at": "2022-05-23T17:16:46.109Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "g2197yshssk0",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 30/05/2022 20:00 UTC\n<b>End time :</b> 30/05/2022 23:59 UTC\n<b>Service impact :</b> None \n<b>Service improvement :</b> We are updating an internal aggregator in order to have a homogeneous park.",
-          "incident_id": "2gtg23tr357q",
-          "created_at": "2022-05-23T17:16:46.177Z",
-          "updated_at": "2022-05-23T17:16:46.177Z",
-          "display_at": "2022-05-23T17:16:46.177Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ywcwwnktxgh0",
-              "name": "Dedicated Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2022-05-25T21:25:39.064Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ywcwwnktxgh0",
-          "name": "LIM",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:54.272Z",
-          "updated_at": "2022-05-25T12:42:47.092Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-05-30T20:00:00.000Z",
-      "scheduled_until": "2022-05-30T23:59:00.000Z"
     },
     {
       "id": "kmg382rmc59k",
