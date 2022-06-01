@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-01T15:01:53.759Z"
+    "updated_at": "2022-06-01T15:06:35.121Z"
   },
   "components": [
     {
@@ -2185,11 +2185,65 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "b1v223gvf85m",
+      "name": "[RBX7][Network] - Network devices update",
+      "status": "scheduled",
+      "created_at": "2022-05-27T19:54:13.377Z",
+      "updated_at": "2022-05-27T19:54:13.435Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j51p8gc4k1xj",
+      "started_at": "2022-05-27T19:54:13.370Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "9bgzz36x8kq7",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 07/06/2022 04:00 UTC\n<b>End time :</b> 07/06/2022 07:00 UTC\n<b>Service impact :</b> A few seconds of I/O deadlock will be observed when the service performs a switchover.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be updating our network equipment.",
+          "incident_id": "b1v223gvf85m",
+          "created_at": "2022-05-27T19:54:13.432Z",
+          "updated_at": "2022-05-27T19:54:13.432Z",
+          "display_at": "2022-05-27T19:54:13.432Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-05-31T06:00:55.959Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-06-07T04:00:00.000Z",
+      "scheduled_until": "2022-06-07T07:00:00.000Z"
+    },
+    {
       "id": "6phs4jw1nsjw",
       "name": "[Global][Hosted private cloud] - Maintenance upgrade host - wave 14",
       "status": "scheduled",
       "created_at": "2022-05-27T17:28:42.773Z",
-      "updated_at": "2022-06-01T15:01:53.753Z",
+      "updated_at": "2022-06-01T15:06:35.118Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2200,10 +2254,10 @@
         {
           "id": "15hsc4vv95r7",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 05/06/2022 06:00 UTC\n<b>End time :</b> 10/06/2022 15:00 UTC\nDescription : If you are from wave 14 you will receive a mail from us and you will be able to schedule again with the manager.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)\n \nIf major update have to be done, it will be two successive reboots like this:\n \nHost v6.0 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.5 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.7 : upgrade minor to the last build 19195723 if needed, reboot.\n \nIf hosts are already on build 19195723, they will be skipped.\n<b>Service impact :</b> Hosts will be rebooted. \n<b>Service improvement  :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
+          "body": "<b>Start time :</b> 07/06/2022 06:00 UTC\n<b>End time :</b> 10/06/2022 15:00 UTC\nDescription : If you are from wave 14 you will receive a mail from us and you will be able to schedule again with the manager.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)\n \nIf major update have to be done, it will be two successive reboots like this:\n \nHost v6.0 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.5 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.7 : upgrade minor to the last build 19195723 if needed, reboot.\n \nIf hosts are already on build 19195723, they will be skipped.\n<b>Service impact :</b> Hosts will be rebooted. \n<b>Service improvement  :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
           "incident_id": "6phs4jw1nsjw",
           "created_at": "2022-05-27T17:28:42.921Z",
-          "updated_at": "2022-06-01T15:01:53.685Z",
+          "updated_at": "2022-06-01T15:06:24.489Z",
           "display_at": "2022-05-27T17:28:42.921Z",
           "affected_components": [
             {
@@ -2382,62 +2436,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-06-06T06:00:00.000Z",
+      "scheduled_for": "2022-06-07T06:00:00.000Z",
       "scheduled_until": "2022-06-10T15:00:00.000Z"
-    },
-    {
-      "id": "b1v223gvf85m",
-      "name": "[RBX7][Network] - Network devices update",
-      "status": "scheduled",
-      "created_at": "2022-05-27T19:54:13.377Z",
-      "updated_at": "2022-05-27T19:54:13.435Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j51p8gc4k1xj",
-      "started_at": "2022-05-27T19:54:13.370Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "9bgzz36x8kq7",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 07/06/2022 04:00 UTC\n<b>End time :</b> 07/06/2022 07:00 UTC\n<b>Service impact :</b> A few seconds of I/O deadlock will be observed when the service performs a switchover.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be updating our network equipment.",
-          "incident_id": "b1v223gvf85m",
-          "created_at": "2022-05-27T19:54:13.432Z",
-          "updated_at": "2022-05-27T19:54:13.432Z",
-          "display_at": "2022-05-27T19:54:13.432Z",
-          "affected_components": [
-            {
-              "code": "nr0vltd8cnk0",
-              "name": "VMware Private Cloud || RBX - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nr0vltd8cnk0",
-          "name": "Network",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-05-31T06:00:55.959Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-06-07T04:00:00.000Z",
-      "scheduled_until": "2022-06-07T07:00:00.000Z"
     },
     {
       "id": "4ss6ds5023f9",
