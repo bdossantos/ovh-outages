@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-03T17:31:01.387Z"
+    "updated_at": "2022-06-03T20:15:16.791Z"
   },
   "components": [
     {
@@ -1597,9 +1597,9 @@
     {
       "id": "kzvr1vx8c8fx",
       "name": "GRA7",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:35:12.003Z",
-      "updated_at": "2022-06-03T17:05:41.144Z",
+      "updated_at": "2022-06-03T20:15:16.710Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2323,9 +2323,9 @@
     {
       "id": "970cjjq2z96q",
       "name": "GRA7",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:37:28.144Z",
-      "updated_at": "2022-06-03T17:31:01.330Z",
+      "updated_at": "2022-06-03T20:15:16.729Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -3142,7 +3142,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2022-04-13T13:25:20.979Z",
       "position": 15,
@@ -3503,7 +3503,7 @@
     {
       "id": "99vzp9gbvfqg",
       "name": "Storage || Volume Snapshot (CEPH)",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:35:21.383Z",
       "updated_at": "2022-04-13T13:25:21.017Z",
       "position": 19,
@@ -4139,99 +4139,6 @@
   ],
   "incidents": [
     {
-      "id": "0y5zg98fcf8p",
-      "name": "[GRA7][Storage] - Volume snapshot",
-      "status": "identified",
-      "created_at": "2022-06-03T17:05:41.109Z",
-      "updated_at": "2022-06-03T17:31:01.379Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/yck19q0d0yxm",
-      "started_at": "2022-06-03T17:05:41.102Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "jg8bnd45704z",
-          "status": "identified",
-          "body": "Our technical teams are working hard on the issue.\nWe will update you when the remaining operations are cleaned.",
-          "incident_id": "0y5zg98fcf8p",
-          "created_at": "2022-06-03T17:31:01.376Z",
-          "updated_at": "2022-06-03T17:31:01.376Z",
-          "display_at": "2022-06-03T17:31:01.376Z",
-          "affected_components": [
-            {
-              "code": "kzvr1vx8c8fx",
-              "name": "Storage || Volume Snapshot (CEPH) - GRA7",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "970cjjq2z96q",
-              "name": "Storage || Block storage - GRA7",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "345nm6vqtw1g",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 03/06/2022 16:00 UTC\n<b>Service impact :</b> Slowdowns may be observed on any action on a OpenStack volume\n<b>Ongoing actions :</b>  Investigating\nOur technical teams are working on resolving the issue. We will post update as significant update are made.",
-          "incident_id": "0y5zg98fcf8p",
-          "created_at": "2022-06-03T17:05:41.187Z",
-          "updated_at": "2022-06-03T17:05:41.187Z",
-          "display_at": "2022-06-03T17:05:41.187Z",
-          "affected_components": [
-            {
-              "code": "kzvr1vx8c8fx",
-              "name": "Storage || Volume Snapshot (CEPH) - GRA7",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "kzvr1vx8c8fx",
-          "name": "GRA7",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T09:35:12.003Z",
-          "updated_at": "2022-06-03T17:05:41.144Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "970cjjq2z96q",
-          "name": "GRA7",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T09:37:28.144Z",
-          "updated_at": "2022-06-03T17:31:01.330Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
       "id": "jcksclfs60qg",
       "name": "PCI - BHS3 - host279153",
       "status": "investigating",
@@ -4812,7 +4719,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
