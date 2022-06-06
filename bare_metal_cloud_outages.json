@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-06T20:23:45.744Z"
+    "updated_at": "2022-06-06T22:01:30.257Z"
   },
   "components": [
     {
@@ -175,7 +175,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -701,9 +701,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2022-06-06T20:07:26.568Z",
+      "updated_at": "2022-06-06T22:01:30.045Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2191,6 +2191,87 @@
     }
   ],
   "incidents": [
+    {
+      "id": "vgcnx9gjcv9k",
+      "name": "[GRA1][Dedicated Servers] - G115B21",
+      "status": "investigating",
+      "created_at": "2022-06-06T22:01:30.001Z",
+      "updated_at": "2022-06-06T22:01:30.254Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/khgt095fylmf",
+      "started_at": "2022-06-06T22:01:29.991Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jvy4tt0sz5mh",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  06/06/2022 21:52 UTC\n<b>Service impact :</b> Some servers are unreachable\n<b>Ongoing actions :</b>  Our technicians are currently working on.",
+          "incident_id": "vgcnx9gjcv9k",
+          "created_at": "2022-06-06T22:01:30.250Z",
+          "updated_at": "2022-06-06T22:01:30.250Z",
+          "display_at": "2022-06-06T22:01:30.250Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2022-06-06T22:01:30.045Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "4c6jwlmqrskf",
+      "name": "VPS - SBG8 - host1261902",
+      "status": "investigating",
+      "created_at": "2022-06-06T22:00:57.544Z",
+      "updated_at": "2022-06-06T22:00:57.611Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/9rzjv47t4nm6",
+      "started_at": "2022-06-06T22:00:57.537Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2lbn8ppmc5sd",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1261902.sbg8.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\na0d91ace-6354-49df-b1a2-99adaf95188e\n38260a7d-ba22-47bd-a972-d2fd434d866b\na4a12cdf-15e9-4112-84d8-465c00c47156\nd7bf3128-aef3-4eae-8956-5bad48666ed5",
+          "incident_id": "4c6jwlmqrskf",
+          "created_at": "2022-06-06T22:00:57.609Z",
+          "updated_at": "2022-06-06T22:00:57.609Z",
+          "display_at": "2022-06-06T22:00:57.609Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
     {
       "id": "8gf37r4pc1hp",
       "name": "[All][Nas Ha] - Manager",
