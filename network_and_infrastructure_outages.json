@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-07T13:29:55.337Z"
+    "updated_at": "2022-06-07T14:05:36.565Z"
   },
   "components": [
     {
@@ -40,9 +40,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2022-06-07T13:27:47.363Z",
+      "updated_at": "2022-06-07T14:05:36.560Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -701,14 +701,34 @@
       "name": "[MRS/SGP][Backbone] - Degraded backbone",
       "status": "investigating",
       "created_at": "2022-06-07T13:13:14.407Z",
-      "updated_at": "2022-06-07T13:29:55.332Z",
+      "updated_at": "2022-06-07T14:05:19.070Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/tyg52d7qp1kw",
-      "started_at": "2022-06-07T13:13:14.403Z",
+      "started_at": "2022-06-07T13:13:14.000Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "jcslvq4y9cs2",
+          "status": "investigating",
+          "body": "<b>Update :</b> Our teams are always working to solve the problem. A rerouting of the traffic is underway.",
+          "incident_id": "pphdyqq9cgyl",
+          "created_at": "2022-06-07T14:05:19.067Z",
+          "updated_at": "2022-06-07T14:05:19.067Z",
+          "display_at": "2022-06-07T14:05:19.067Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "v4884mdyw9wk",
           "status": "investigating",
@@ -732,11 +752,11 @@
         {
           "id": "587dkgbp3zr2",
           "status": "investigating",
-          "body": "<b>Start time :</b> 07/06/2022 12:24 UTC\n<b>End Time :</b> 07/06/2022 12:33 UTC\n<b>Service impact :</b> Backbone links between Marseille and Singapore are currently down\n<b>Ongoing actions :</b> Our teams are currently working to solve the problem",
+          "body": "<b>Start time :</b> 07/06/2022 12:24 UTC\n<b>Service impact :</b> Backbone links between Marseille and Singapore are currently down\n<b>Ongoing actions :</b> Our teams are currently working to solve the problem",
           "incident_id": "pphdyqq9cgyl",
           "created_at": "2022-06-07T13:13:14.477Z",
-          "updated_at": "2022-06-07T13:13:14.477Z",
-          "display_at": "2022-06-07T13:13:14.477Z",
+          "updated_at": "2022-06-07T13:57:49.313Z",
+          "display_at": "2022-06-07T13:13:14.000Z",
           "affected_components": [
             {
               "code": "xxvy97qsff1g",
@@ -754,9 +774,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "partial_outage",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2022-06-07T13:27:47.363Z",
+          "updated_at": "2022-06-07T14:05:36.560Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -836,6 +856,60 @@
       ],
       "scheduled_for": "2022-04-26T09:00:00.000Z",
       "scheduled_until": "2022-04-27T02:00:00.000Z"
+    },
+    {
+      "id": "rnls8gry9k04",
+      "name": "[GRA2][Cooling System] - G242A18",
+      "status": "scheduled",
+      "created_at": "2022-06-07T13:50:11.836Z",
+      "updated_at": "2022-06-07T13:50:11.892Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lkj2jn8mpt97",
+      "started_at": "2022-06-07T13:50:11.828Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "938wpk4b9297",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 07/06/2022 12:30 UTC\n<b>End time :</b> 08/06/2022 14:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
+          "incident_id": "rnls8gry9k04",
+          "created_at": "2022-06-07T13:50:11.890Z",
+          "updated_at": "2022-06-07T13:50:11.890Z",
+          "display_at": "2022-06-07T13:50:11.890Z",
+          "affected_components": [
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2022-06-07T06:35:35.436Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-06-07T15:50:00.000Z",
+      "scheduled_until": "2022-06-08T14:30:00.000Z"
     },
     {
       "id": "knh7cdq9pmzd",
@@ -3312,6 +3386,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Minor Service Outage"
+    "description": "Partially Degraded Service"
   }
 }
