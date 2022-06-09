@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-09T18:23:49.947Z"
+    "updated_at": "2022-06-09T19:00:29.100Z"
   },
   "components": [
     {
@@ -2509,7 +2509,7 @@
       "name": "[RBX8/SBG3][vRack] - Upgrade xDC/xBU",
       "status": "scheduled",
       "created_at": "2022-06-01T17:28:59.629Z",
-      "updated_at": "2022-06-01T17:28:59.684Z",
+      "updated_at": "2022-06-09T19:00:29.020Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2517,6 +2517,19 @@
       "started_at": "2022-06-01T17:28:59.619Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "kb9q0ytb2p85",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "46bzqccgwzsg",
+          "created_at": "2022-06-09T19:00:28.569Z",
+          "updated_at": "2022-06-09T19:00:28.569Z",
+          "display_at": "2022-06-09T19:00:28.569Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "skw606xnp2gc",
           "status": "scheduled",
@@ -3384,6 +3397,81 @@
       "scheduled_until": "2022-06-16T04:30:00.000Z"
     },
     {
+      "id": "n6t88vsqsvm3",
+      "name": "[GRA][BHS] [Data logs] Index backend migration",
+      "status": "scheduled",
+      "created_at": "2022-04-15T00:08:23.343Z",
+      "updated_at": "2022-04-15T13:11:11.123Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q64fgbmg84nn",
+      "started_at": "2022-04-15T00:08:23.397Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "dtnqz8rhgvf5",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 15/06/2022 12:00 UTC\n<b>End time :</b>  15/06/2022 15:00 UTC\n<b>Service impact :</b> No downtime expected in term of log ingestion, but ES API will not be available for a maximum time of two hours.\n<b>Service improvement:</b> The indexation backend of Logs Data Platform will be replaced from Elasticsearch to OpenSearch.\nKibana instances will be replaced by OpenSearch Dashboards ones.\n\nAPIv6 calls related to ElasticSearch backend will be automatically redirected to new OpenSearch backend and will remain available until September 2022.\n\nThe following documentation : https://docs.ovh.com/fr/logs-data-platform/ will be updated few days before the migration.",
+          "incident_id": "n6t88vsqsvm3",
+          "created_at": "2022-04-15T00:08:23.397Z",
+          "updated_at": "2022-04-15T13:11:11.056Z",
+          "display_at": "2022-04-15T00:08:23.397Z",
+          "affected_components": [
+            {
+              "code": "p019p9hghp8x",
+              "name": "Managed Services || Logs Data Platform - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2l5ynkfgmjrz",
+              "name": "Managed Services || Logs Data Platform - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p019p9hghp8x",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:15.647Z",
+          "updated_at": "2021-07-09T07:33:17.578Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "x55hbgf1b67z",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2l5ynkfgmjrz",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:16.757Z",
+          "updated_at": "2021-07-09T07:33:17.587Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "x55hbgf1b67z",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-06-15T12:00:00.000Z",
+      "scheduled_until": "2022-06-15T15:00:00.000Z"
+    },
+    {
       "id": "mh7mrp97wrl9",
       "name": "[SBG3/SYD1/RBX4][Network] - Network equipment version upgrade",
       "status": "scheduled",
@@ -3478,81 +3566,6 @@
       ],
       "scheduled_for": "2022-06-15T12:00:00.000Z",
       "scheduled_until": "2022-06-16T00:00:00.000Z"
-    },
-    {
-      "id": "n6t88vsqsvm3",
-      "name": "[GRA][BHS] [Data logs] Index backend migration",
-      "status": "scheduled",
-      "created_at": "2022-04-15T00:08:23.343Z",
-      "updated_at": "2022-04-15T13:11:11.123Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q64fgbmg84nn",
-      "started_at": "2022-04-15T00:08:23.397Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "dtnqz8rhgvf5",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 15/06/2022 12:00 UTC\n<b>End time :</b>  15/06/2022 15:00 UTC\n<b>Service impact :</b> No downtime expected in term of log ingestion, but ES API will not be available for a maximum time of two hours.\n<b>Service improvement:</b> The indexation backend of Logs Data Platform will be replaced from Elasticsearch to OpenSearch.\nKibana instances will be replaced by OpenSearch Dashboards ones.\n\nAPIv6 calls related to ElasticSearch backend will be automatically redirected to new OpenSearch backend and will remain available until September 2022.\n\nThe following documentation : https://docs.ovh.com/fr/logs-data-platform/ will be updated few days before the migration.",
-          "incident_id": "n6t88vsqsvm3",
-          "created_at": "2022-04-15T00:08:23.397Z",
-          "updated_at": "2022-04-15T13:11:11.056Z",
-          "display_at": "2022-04-15T00:08:23.397Z",
-          "affected_components": [
-            {
-              "code": "p019p9hghp8x",
-              "name": "Managed Services || Logs Data Platform - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2l5ynkfgmjrz",
-              "name": "Managed Services || Logs Data Platform - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p019p9hghp8x",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:15.647Z",
-          "updated_at": "2021-07-09T07:33:17.578Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "x55hbgf1b67z",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2l5ynkfgmjrz",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:16.757Z",
-          "updated_at": "2021-07-09T07:33:17.587Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "x55hbgf1b67z",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-06-15T12:00:00.000Z",
-      "scheduled_until": "2022-06-15T15:00:00.000Z"
     },
     {
       "id": "vhdj667xfv91",
