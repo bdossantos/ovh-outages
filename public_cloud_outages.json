@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-19T04:55:27.535Z"
+    "updated_at": "2022-06-19T05:31:14.486Z"
   },
   "components": [
     {
@@ -4143,7 +4143,7 @@
       "name": "PCI - GRA1 - host673267",
       "status": "identified",
       "created_at": "2022-06-19T04:00:15.939Z",
-      "updated_at": "2022-06-19T04:00:15.987Z",
+      "updated_at": "2022-06-19T05:31:14.481Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -4152,6 +4152,19 @@
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
+          "id": "gpqm5yq5tkwn",
+          "status": "identified",
+          "body": "INFO:  Impacted host: host673267.gra1\nImpacted VMs:\nee9f2de4-3dfc-43f1-92ed-98d2bdfb6c60\n472cf5c1-28ec-43fe-8c26-439713f8a99b\n750092ec-0c54-4fbb-b005-943317d6c1ca\neb8c851d-cf05-4ad1-b034-4b4f68aac609\ne95ce284-f051-4304-9093-92af63383f42\n7ab48793-12b2-4bd0-86c9-14fabb5e8073\n3b35a56e-d4ad-4852-91e2-05faa3e1fc1b\n\nThe above instances used eg-ssd flavors which are advertised as RAID 0 virtual machines (only the eg-* machines are ceph triple replication) and due to the failure of the disk on the host, the data is lost. Our administrators are attempting to restore the VMs. At this moment there is no ETA or guarantee for a successful recovery, however our administrators are doing all possible to have a successful recovery.",
+          "incident_id": "0sbqhjq2lgdj",
+          "created_at": "2022-06-19T05:31:14.479Z",
+          "updated_at": "2022-06-19T05:31:14.479Z",
+          "display_at": "2022-06-19T05:31:14.479Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "cjgkqbg79z1l",
           "status": "identified",
           "body": "Hardware failure. Recovering data from backups",
@@ -4159,35 +4172,6 @@
           "created_at": "2022-06-19T04:00:15.985Z",
           "updated_at": "2022-06-19T04:00:15.985Z",
           "display_at": "2022-06-19T04:00:15.985Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    },
-    {
-      "id": "v4yfb98s7fb0",
-      "name": "PCI - BHS5 - host336837",
-      "status": "investigating",
-      "created_at": "2022-06-19T02:32:24.450Z",
-      "updated_at": "2022-06-19T02:32:24.495Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/r1prk7610h4r",
-      "started_at": "2022-06-19T02:32:24.444Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "s5wy6rm7kxmx",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost336837.bhs5.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n88584b7b-40fd-4b6d-a98d-4b1d95c38cc5\ne8bd2b35-e73e-467e-b6c8-f4d4e54bd98e\n92a76976-dacc-4d97-9170-a22c6cf7a5f8\n1423738e-7356-487b-8e92-38555645f2a8\n6351ee0d-60f6-4092-be9c-a7bc09cefa31\n73cbec41-0d08-4637-8258-f802cf062cb3\nd7717f8b-0f77-4b27-a99b-66788d36ac1f\n68fe6b44-f297-4d50-b8ba-4a2a9d94a863\nc563b531-a3f9-43e2-bf6c-883c97a443c0\n8ddcfee1-fc06-4d8f-b27a-088bccce603a\n5f068e09-d4be-4cd8-a513-239430463b35\nad293bbe-3c05-4e45-a30f-0c1eae3bac22\n5fceda98-4dc4-41c2-9075-73f20ffb5117",
-          "incident_id": "v4yfb98s7fb0",
-          "created_at": "2022-06-19T02:32:24.493Z",
-          "updated_at": "2022-06-19T02:32:24.493Z",
-          "display_at": "2022-06-19T02:32:24.493Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
