@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-19T13:01:39.187Z"
+    "updated_at": "2022-06-19T13:30:35.002Z"
   },
   "components": [
     {
@@ -4137,128 +4137,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "0sbqhjq2lgdj",
-      "name": "PCI - GRA1 - host673267",
-      "status": "identified",
-      "created_at": "2022-06-19T04:00:15.939Z",
-      "updated_at": "2022-06-19T12:33:23.330Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/p1dbj5n7cmmw",
-      "started_at": "2022-06-19T10:48:49.000Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "nxclqhcnbdvk",
-          "status": "identified",
-          "body": "Update: Instance 3b35a56e-d4ad-4852-91e2-05faa3e1fc1b has been recovered with the last internal backup successfully.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T12:33:23.328Z",
-          "updated_at": "2022-06-19T12:33:23.328Z",
-          "display_at": "2022-06-19T12:33:23.328Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "55rc6jwdzksc",
-          "status": "identified",
-          "body": "UPDATE: Instance  e95ce284-f051-4304-9093-92af63383f42 has been recovered with the last internal backup successfully.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T11:59:05.450Z",
-          "updated_at": "2022-06-19T12:06:20.555Z",
-          "display_at": "2022-06-19T11:59:05.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "01fv3gz1zqny",
-          "status": "identified",
-          "body": "UPDATE:  Instance  750092ec-0c54-4fbb-b005-943317d6c1ca has been recovered with the last internal backup successfully.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T11:43:23.133Z",
-          "updated_at": "2022-06-19T12:06:12.753Z",
-          "display_at": "2022-06-19T11:43:23.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "bhn0zbpsj2n5",
-          "status": "identified",
-          "body": "UPDATE:  Instance 472cf5c1-28ec-43fe-8c26-439713f8a99b has been recovered with the last internal backup successfully.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T11:17:59.115Z",
-          "updated_at": "2022-06-19T12:06:05.487Z",
-          "display_at": "2022-06-19T11:17:59.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hb399rsxmqvj",
-          "status": "identified",
-          "body": "UPDATE:  Instance 7ab48793-12b2-4bd0-86c9-14fabb5e8073 has been recovered with the last internal backup successfully.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T10:48:49.498Z",
-          "updated_at": "2022-06-19T12:05:53.315Z",
-          "display_at": "2022-06-19T10:48:49.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rt68r9g4mwgn",
-          "status": "identified",
-          "body": "UPDATE: Instance ee9f2de4-3dfc-43f1-92ed-98d2bdfb6c60 has been recovered with the last internal backup successfully.\n\nThe remaining instances are also attempting to recover from the last internal backup. Unfortunately, we are not able to provide ETA as such recovery takes several hours to complete. Administrators are doing all possible to ensure all services get recovered as soon as possible.\n\nWe apologise for the inconvenience and we advise customers if they have more up to date backups, to restore them after our recovery has completed.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T09:54:45.357Z",
-          "updated_at": "2022-06-19T09:54:45.357Z",
-          "display_at": "2022-06-19T09:54:45.357Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gpqm5yq5tkwn",
-          "status": "identified",
-          "body": "INFO:  Impacted host: host673267.gra1\nImpacted VMs:\nee9f2de4-3dfc-43f1-92ed-98d2bdfb6c60\n472cf5c1-28ec-43fe-8c26-439713f8a99b\n750092ec-0c54-4fbb-b005-943317d6c1ca\neb8c851d-cf05-4ad1-b034-4b4f68aac609\ne95ce284-f051-4304-9093-92af63383f42\n7ab48793-12b2-4bd0-86c9-14fabb5e8073\n3b35a56e-d4ad-4852-91e2-05faa3e1fc1b\n\nThe above instances used eg-ssd flavors which are advertised as RAID 0 virtual machines (only the eg-* machines are ceph triple replication) and due to the failure of the disk on the host, the data is lost. Our administrators are attempting to restore the VMs. At this moment there is no ETA or guarantee for a successful recovery, however our administrators are doing all possible to have a successful recovery.",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T05:31:14.479Z",
-          "updated_at": "2022-06-19T05:31:14.479Z",
-          "display_at": "2022-06-19T05:31:14.479Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "cjgkqbg79z1l",
-          "status": "identified",
-          "body": "Hardware failure. Recovering data from backups",
-          "incident_id": "0sbqhjq2lgdj",
-          "created_at": "2022-06-19T04:00:15.985Z",
-          "updated_at": "2022-06-19T04:00:15.985Z",
-          "display_at": "2022-06-19T04:00:15.985Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "nyp84h01b43m",
