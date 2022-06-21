@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-20T22:29:30.088Z"
+    "updated_at": "2022-06-21T08:24:52.170Z"
   },
   "components": [
     {
@@ -2189,9 +2189,9 @@
     {
       "id": "nmwn56xx25yd",
       "name": "Cluster026",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:15.465Z",
-      "updated_at": "2022-06-20T21:31:44.738Z",
+      "updated_at": "2022-06-21T08:10:52.412Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -2728,6 +2728,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "x0hd2g7f6914",
+      "name": "[GRA1][Webhosting] - Cluster026 - Filerz169",
+      "status": "investigating",
+      "created_at": "2022-06-21T08:10:52.271Z",
+      "updated_at": "2022-06-21T08:11:00.584Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zympvjnnh1p3",
+      "started_at": "2022-06-21T08:10:52.264Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "89ysg16pp22f",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 21/06/2022 06:00 UTC\n<b>Service impact :</b> Slowness to access some websites.\n<b>Root cause :</b> Backup in progress\n<b>Scope of impact :</b> Customers hosted on filerz169",
+          "incident_id": "x0hd2g7f6914",
+          "created_at": "2022-06-21T08:11:00.582Z",
+          "updated_at": "2022-06-21T08:11:00.582Z",
+          "display_at": "2022-06-21T08:11:00.582Z",
+          "affected_components": [
+            {
+              "code": "nmwn56xx25yd",
+              "name": "Web Hosting || Datacenter GRA - Cluster026",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmwn56xx25yd",
+          "name": "Cluster026",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:15.465Z",
+          "updated_at": "2022-06-21T08:10:52.412Z",
+          "position": 18,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "x8v92wbkd9hx",
       "name": "[GRA2][Webhosting] - Cluster 006",
