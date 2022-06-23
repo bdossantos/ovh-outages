@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-23T12:38:47.523Z"
+    "updated_at": "2022-06-23T13:09:24.961Z"
   },
   "components": [
     {
@@ -2194,9 +2194,9 @@
     {
       "id": "nh0g4y1lvwgt",
       "name": "[GRA2][DedicatedServers] - Rack G251B02",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2022-06-23T12:38:08.921Z",
-      "updated_at": "2022-06-23T12:38:47.515Z",
+      "updated_at": "2022-06-23T13:09:24.954Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2204,6 +2204,26 @@
       "started_at": "2022-06-23T12:38:08.912Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "wn19mb35bm0d",
+          "status": "identified",
+          "body": "Impacted servers are coming back up gradually.\nOur technical teams are hands on the remaining impacted servers.",
+          "incident_id": "nh0g4y1lvwgt",
+          "created_at": "2022-06-23T13:09:24.952Z",
+          "updated_at": "2022-06-23T13:09:24.952Z",
+          "display_at": "2022-06-23T13:09:24.952Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dylpb34nq3yq",
           "status": "investigating",
@@ -2237,132 +2257,6 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "khlzp8krbv5m",
-      "name": "[Global][Veeam] - License expiration",
-      "status": "identified",
-      "created_at": "2022-05-31T12:49:17.862Z",
-      "updated_at": "2022-06-16T12:26:16.589Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "none",
-      "shortlink": "https://stspg.io/7wvtc0w47539",
-      "started_at": "2022-05-31T12:49:17.852Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "bl1lrzc7my81",
-          "status": "identified",
-          "body": "<b>Ongoing actions :</b> Our teams have advanced in the resolution of the incident.\nThey are still working to solve the problem.",
-          "incident_id": "khlzp8krbv5m",
-          "created_at": "2022-06-16T12:26:16.585Z",
-          "updated_at": "2022-06-16T12:26:16.585Z",
-          "display_at": "2022-06-16T12:26:16.585Z",
-          "affected_components": [
-            {
-              "code": "msl8bm7vrsd4",
-              "name": "Licensing || All Services - Zone Europe",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k1yzq4lsl8g1",
-              "name": "Licensing || All Services - Zone APAC",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "y5cs4r8q3cy7",
-              "name": "Licensing || All Services - Zone Canada",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l1ltvy006dqz",
-          "status": "identified",
-          "body": "<b>Start time:</b> 31/05/2022 08:00 UTC\n<b>User impact :</b> While updating the Veeam license, customers could see a message that it is expired since 31th May, but we still have a 60 days extension. The service will work as usual and there is no impact on the customers infrastructure.\n<b>Technical impact (DC/geographical area):</b> all\n<b>Scope of impact :</b> Veeam\n<b>Ongoing actions :</b> Updating the license on our side",
-          "incident_id": "khlzp8krbv5m",
-          "created_at": "2022-05-31T12:49:17.917Z",
-          "updated_at": "2022-05-31T12:49:17.917Z",
-          "display_at": "2022-05-31T12:49:17.917Z",
-          "affected_components": [
-            {
-              "code": "msl8bm7vrsd4",
-              "name": "Licensing || All Services - Zone Europe",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k1yzq4lsl8g1",
-              "name": "Licensing || All Services - Zone APAC",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "y5cs4r8q3cy7",
-              "name": "Licensing || All Services - Zone Canada",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "msl8bm7vrsd4",
-          "name": "Zone Europe",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:42.453Z",
-          "updated_at": "2022-03-03T09:03:35.580Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "bsy4rkjpypdx",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k1yzq4lsl8g1",
-          "name": "Zone APAC",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:43.364Z",
-          "updated_at": "2022-01-13T09:52:54.276Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "bsy4rkjpypdx",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "y5cs4r8q3cy7",
-          "name": "Zone Canada",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:44.253Z",
-          "updated_at": "2022-03-03T09:03:35.599Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "bsy4rkjpypdx",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
