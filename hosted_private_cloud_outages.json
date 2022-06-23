@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-23T12:50:50.705Z"
+    "updated_at": "2022-06-23T22:52:25.655Z"
   },
   "components": [
     {
@@ -2532,6 +2532,207 @@
       ],
       "scheduled_for": "2022-06-27T06:00:00.000Z",
       "scheduled_until": "2022-07-01T17:00:00.000Z"
+    },
+    {
+      "id": "j3ywd0p8rp6s",
+      "name": "[Global][Hosted private cloud] - Maintenance upgrade host",
+      "status": "scheduled",
+      "created_at": "2022-06-23T22:52:25.572Z",
+      "updated_at": "2022-06-23T22:52:25.652Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/srjjgjpdn8m0",
+      "started_at": "2022-06-23T22:52:25.543Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "774vxm3fqysw",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 04/07/2022 07:00 UTC \n<b>End time :</b> 08/07/2022 18:00 UTC\nDescription: \n    Builds will be pushed to the host, put in maintenance mode, all Vms will be moved with Vmotion and last hosts will be rebooted .\nIf major update have to be done, it will be two successive reboots like this:\nHost v6.0 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.5 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.7 : upgrade minor to the last build 19195723 if needed, reboot.\nIf hosts are already on 19195723, they will be skipped.\nService impact : If we meet an issue during the reboot of the host , it will be replaced. (20 min)\nService improvement : All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.\nWe will only enterprise customers with VSAN hosts.\nthe boot order will be checked\n89 hosts\n<b>Service impact :</b>  Hosts will be rebooted.\n<b>Service improvement:</b>  All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
+          "incident_id": "j3ywd0p8rp6s",
+          "created_at": "2022-06-23T22:52:25.649Z",
+          "updated_at": "2022-06-23T22:52:25.649Z",
+          "display_at": "2022-06-23T22:52:25.649Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "2p1pxrp0r1qc",
+              "name": "VMware Private Cloud || LON - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "yclrgd0gbxwq",
+              "name": "VMware Private Cloud || LIM - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "0qcvrryd4tpb",
+              "name": "VMware Private Cloud || ERI - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "39pr388ptrs9",
+              "name": "VMware Private Cloud || BHS - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "lwzd6vxxxn8m",
+              "name": "VMware Private Cloud || FRA - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "0ld1hfchhyf4",
+              "name": "VMware Private Cloud || WAW - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0ld1hfchhyf4",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:34.076Z",
+          "updated_at": "2022-06-20T18:00:13.475Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2022-06-20T18:00:13.391Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0qcvrryd4tpb",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:58.594Z",
+          "updated_at": "2022-06-20T18:00:13.374Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2p1pxrp0r1qc",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:53.966Z",
+          "updated_at": "2022-06-20T18:00:13.425Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "tn4jtjt0qvj7",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lwzd6vxxxn8m",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:06.759Z",
+          "updated_at": "2022-06-20T18:00:13.354Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "6rxw73tzc3x8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yclrgd0gbxwq",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:40:10.437Z",
+          "updated_at": "2022-06-20T18:00:13.458Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "39pr388ptrs9",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:42:40.539Z",
+          "updated_at": "2022-06-20T18:00:13.442Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2022-06-20T18:00:13.409Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-04T07:00:00.000Z",
+      "scheduled_until": "2022-07-08T18:00:00.000Z"
     },
     {
       "id": "54xdkfsxs6tp",
