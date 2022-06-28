@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-28T21:25:23.967Z"
+    "updated_at": "2022-06-28T22:02:00.264Z"
   },
   "components": [
     {
@@ -4139,6 +4139,35 @@
   ],
   "incidents": [
     {
+      "id": "85xdwv67wjqw",
+      "name": "PCI - GRA7 - host1305306",
+      "status": "investigating",
+      "created_at": "2022-06-28T22:02:00.129Z",
+      "updated_at": "2022-06-28T22:02:00.259Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/mb75jqr67zbz",
+      "started_at": "2022-06-28T22:02:00.118Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "9jtthx0z1ycy",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1305306.gra7.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\nf37efe6a-c7fc-47fe-b857-adf4e649f613\n96e4b05b-4917-4205-9e93-3d1f149f6b45",
+          "incident_id": "85xdwv67wjqw",
+          "created_at": "2022-06-28T22:02:00.255Z",
+          "updated_at": "2022-06-28T22:02:00.255Z",
+          "display_at": "2022-06-28T22:02:00.255Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
       "id": "fdng8jwtyxh9",
       "name": "PCI - GRA5 - host968322",
       "status": "investigating",
@@ -4343,6 +4372,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "m8l15qn255vv",
+      "name": "[LIM1][Public Cloud][DE1] Rack L115A06 maintenance",
+      "status": "scheduled",
+      "created_at": "2022-06-28T21:35:11.818Z",
+      "updated_at": "2022-06-28T21:35:11.904Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zq4pg7xs5gv4",
+      "started_at": "2022-06-28T21:35:11.810Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6qkbgq6dgy8l",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/07/2022 07:00 UTC\n<b>End time :</b> 18/07/2022 09:00 UTC\n<b>Service impact :</b> Customers with i1 flavor instances could not be migrated and therefore remain in the defective rack, during the maintenance the hosts will be powered off and therefore instances will be offline for arround 2 hours.\n<b>Service improvement :</b> The objectif of this operation is to do a replacement of defect in the rack cooling system.",
+          "incident_id": "m8l15qn255vv",
+          "created_at": "2022-06-28T21:35:11.901Z",
+          "updated_at": "2022-06-28T21:35:11.901Z",
+          "display_at": "2022-06-28T21:35:11.901Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2022-06-28T12:35:58.574Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-18T07:00:00.000Z",
+      "scheduled_until": "2022-07-18T09:00:00.000Z"
+    },
     {
       "id": "x0bz11dct948",
       "name": "[LIM1][Public Cloud][DE1] Rack L115A11 maintenance",
