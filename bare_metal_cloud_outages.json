@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-06-30T09:30:27.049Z"
+    "updated_at": "2022-06-30T09:55:06.376Z"
   },
   "components": [
     {
@@ -2208,6 +2208,81 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
+    {
+      "id": "wq70bx3y4bv5",
+      "name": "[EU-CA][DedicatedServer] - Deliveries and vRack tasks",
+      "status": "scheduled",
+      "created_at": "2022-06-30T09:52:25.116Z",
+      "updated_at": "2022-06-30T09:55:06.372Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kr9s57s3lmvz",
+      "started_at": "2022-06-30T09:52:25.109Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "kfy8781qy7pl",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 04/07/2022 06:30 UTC\n<b>End time :</b> 05/07/2022 09:00 UTC\n<b>Service impact :</b> API slowness might be observed on HCI / Scale / HGR servers ranges.\n<b>Service improvement :</b> We will increase resource for our API.",
+          "incident_id": "wq70bx3y4bv5",
+          "created_at": "2022-06-30T09:52:25.165Z",
+          "updated_at": "2022-06-30T09:54:58.589Z",
+          "display_at": "2022-06-30T09:52:25.165Z",
+          "affected_components": [
+            {
+              "code": "2qhbxrpdd5nx",
+              "name": "Dedicated Servers || Delivery - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9cbsbr7bp9vq",
+              "name": "Dedicated Servers || Delivery - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2qhbxrpdd5nx",
+          "name": "Zone Europe",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:07.615Z",
+          "updated_at": "2022-06-09T06:45:59.689Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "nll849j8p6nq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "9cbsbr7bp9vq",
+          "name": "Zone Canada",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:10.129Z",
+          "updated_at": "2022-05-09T09:30:04.498Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "nll849j8p6nq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-04T06:30:00.000Z",
+      "scheduled_until": "2022-07-05T09:00:00.000Z"
+    },
     {
       "id": "80plk43wrgtb",
       "name": "[FRA1/GRA3/LON1/RBX8][Network] - Network equipment operation",
