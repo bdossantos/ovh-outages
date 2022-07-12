@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-07-12T06:00:37.870Z"
+    "updated_at": "2022-07-12T15:16:36.575Z"
   },
   "components": [
     {
@@ -2484,7 +2484,7 @@
       "name": "[Global][Hosted private cloud] - Maintenance upgrade host",
       "status": "in_progress",
       "created_at": "2022-07-11T20:15:14.114Z",
-      "updated_at": "2022-07-12T06:00:37.843Z",
+      "updated_at": "2022-07-12T15:16:36.564Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2570,10 +2570,10 @@
         {
           "id": "drjmpzk2mys5",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 12/07/2022 06:00 UTC\n<b>End time :</b> 05/08/2022 15:00 UTC\n<b>Description :</b> Builds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)\n \nIf major update have to be done, it will be two successive reboots like this:\n \nHost v6.0 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.5 : upgrade major to v6.7, reboot, then upgrade minor to the last build v6.7, reboot.\nHost v6.7 : upgrade minor to the last build 19195723 if needed, reboot.\n \nIf hosts are already on build 19195723, they will be skipped.\n<b>Service impact :</b> If we meet an issue during the reboot of the host , it will be replaced.\n<b>Service improvement  :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
+          "body": "<b>Start time :</b> 12/07/2022 06:00 UTC\n<b>End time :</b> 05/08/2022 15:00 UTC\n<b>Description :</b> Builds will be pushed to the host by OVHcloud, then Customer will put the host in maintenance Mode and reboot it.\nCustomer will have the possibility to schedule that action during July, as desired.",
           "incident_id": "51cjsxdlgkw8",
           "created_at": "2022-07-11T20:15:14.186Z",
-          "updated_at": "2022-07-11T20:15:14.186Z",
+          "updated_at": "2022-07-12T15:16:36.559Z",
           "display_at": "2022-07-11T20:15:14.186Z",
           "affected_components": [
             {
