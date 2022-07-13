@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-07-13T14:16:03.055Z"
+    "updated_at": "2022-07-13T18:30:23.982Z"
   },
   "components": [
     {
@@ -2213,7 +2213,7 @@
       "name": "[LIM1][Global Infrastructure] CPU temperature",
       "status": "scheduled",
       "created_at": "2022-06-23T02:54:58.208Z",
-      "updated_at": "2022-06-23T02:54:58.248Z",
+      "updated_at": "2022-07-13T18:30:23.970Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2221,6 +2221,19 @@
       "started_at": "2022-06-23T02:54:58.202Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "03q9zpdn6sn2",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "9fyr9f58ml00",
+          "created_at": "2022-07-13T18:30:23.623Z",
+          "updated_at": "2022-07-13T18:30:23.623Z",
+          "display_at": "2022-07-13T18:30:23.623Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "rzk97xllx0nh",
           "status": "scheduled",
@@ -2617,6 +2630,102 @@
       "scheduled_until": "2022-07-18T05:00:00.000Z"
     },
     {
+      "id": "glzw85pqwstv",
+      "name": "[Global][Dedicated Servers] - resetHwFlag removal",
+      "status": "scheduled",
+      "created_at": "2022-06-17T12:12:16.099Z",
+      "updated_at": "2022-06-17T12:12:16.165Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hgzwktcdjkb3",
+      "started_at": "2022-06-17T12:12:16.089Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "n2t8wp8c2qmm",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/07/2022 07:00 UTC\n<b>End time :</b> 18/07/2022 07:10 UTC\n<b>Service impact :</b> Customers using APIv6 with resetHwRaid within their scripts will get an error. \nIn order to solve the error, impacted customers should remove the flag from the script(\"POST /dedicated/server/{serviceName}/install/start\" \"resetHwFlag\" in \"details\").\n<b>Service improvement :</b> As part of our policy of continuous improvement, we will be making modifications to the baremetal software to remove the resetHwRaid optional flag, which could cause confusion as it is now performed systematically.",
+          "incident_id": "glzw85pqwstv",
+          "created_at": "2022-06-17T12:12:16.162Z",
+          "updated_at": "2022-06-17T12:12:16.162Z",
+          "display_at": "2022-06-17T12:12:16.162Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2022-06-27T08:10:41.387Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2022-06-27T08:10:41.404Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2022-06-27T08:10:41.416Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-18T07:00:00.000Z",
+      "scheduled_until": "2022-07-18T07:10:00.000Z"
+    },
+    {
       "id": "70b0lbvh2tdj",
       "name": "[BHS7][DedicatedServers] - Network equipement operation",
       "status": "scheduled",
@@ -2725,102 +2834,6 @@
       "scheduled_until": "2022-07-18T09:00:00.000Z"
     },
     {
-      "id": "glzw85pqwstv",
-      "name": "[Global][Dedicated Servers] - resetHwFlag removal",
-      "status": "scheduled",
-      "created_at": "2022-06-17T12:12:16.099Z",
-      "updated_at": "2022-06-17T12:12:16.165Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hgzwktcdjkb3",
-      "started_at": "2022-06-17T12:12:16.089Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "n2t8wp8c2qmm",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 18/07/2022 07:00 UTC\n<b>End time :</b> 18/07/2022 07:10 UTC\n<b>Service impact :</b> Customers using APIv6 with resetHwRaid within their scripts will get an error. \nIn order to solve the error, impacted customers should remove the flag from the script(\"POST /dedicated/server/{serviceName}/install/start\" \"resetHwFlag\" in \"details\").\n<b>Service improvement :</b> As part of our policy of continuous improvement, we will be making modifications to the baremetal software to remove the resetHwRaid optional flag, which could cause confusion as it is now performed systematically.",
-          "incident_id": "glzw85pqwstv",
-          "created_at": "2022-06-17T12:12:16.162Z",
-          "updated_at": "2022-06-17T12:12:16.162Z",
-          "display_at": "2022-06-17T12:12:16.162Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hgscwllzr4w1",
-          "name": "Zone Europe",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2022-06-27T08:10:41.387Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jds1mz2tgrx4",
-          "name": "Zone APAC",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:25.511Z",
-          "updated_at": "2022-06-27T08:10:41.404Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zjpd57tn2xqv",
-          "name": "Zone Canada",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:26.689Z",
-          "updated_at": "2022-06-27T08:10:41.416Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-07-18T07:00:00.000Z",
-      "scheduled_until": "2022-07-18T07:10:00.000Z"
-    },
-    {
       "id": "jnl6yl1b6wmx",
       "name": "[BHS7][DedicatedServers] - Network equipement operation",
       "status": "scheduled",
@@ -2927,6 +2940,102 @@
       ],
       "scheduled_for": "2022-07-18T19:30:00.000Z",
       "scheduled_until": "2022-07-18T21:30:00.000Z"
+    },
+    {
+      "id": "pbjkh752gwlp",
+      "name": "[GRA1-GRA2-ERI1-LIM1][DedicatedServers] - Network equipement operation",
+      "status": "scheduled",
+      "created_at": "2022-07-12T18:17:12.711Z",
+      "updated_at": "2022-07-12T18:17:12.790Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rf8y87jl2mn3",
+      "started_at": "2022-07-12T18:17:12.698Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "f3xd8b0ffw3n",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/07/2022 20:00 UTC\n<b>End time :</b> 18/07/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do a operation on a network equipment.",
+          "incident_id": "pbjkh752gwlp",
+          "created_at": "2022-07-12T18:17:12.786Z",
+          "updated_at": "2022-07-12T18:17:12.786Z",
+          "display_at": "2022-07-12T18:17:12.786Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5ml6n8xk2fcs",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:50.476Z",
+          "updated_at": "2022-06-30T21:04:43.385Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-07-12T23:37:26.017Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2022-07-12T23:37:26.037Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-18T20:00:00.000Z",
+      "scheduled_until": "2022-07-18T23:30:00.000Z"
     },
     {
       "id": "4pjflp30j9d9",
@@ -3066,102 +3175,6 @@
           "created_at": "2021-07-09T07:34:52.401Z",
           "updated_at": "2022-07-12T23:37:26.054Z",
           "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-07-18T20:00:00.000Z",
-      "scheduled_until": "2022-07-18T23:30:00.000Z"
-    },
-    {
-      "id": "pbjkh752gwlp",
-      "name": "[GRA1-GRA2-ERI1-LIM1][DedicatedServers] - Network equipement operation",
-      "status": "scheduled",
-      "created_at": "2022-07-12T18:17:12.711Z",
-      "updated_at": "2022-07-12T18:17:12.790Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rf8y87jl2mn3",
-      "started_at": "2022-07-12T18:17:12.698Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "f3xd8b0ffw3n",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 18/07/2022 20:00 UTC\n<b>End time :</b> 18/07/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do a operation on a network equipment.",
-          "incident_id": "pbjkh752gwlp",
-          "created_at": "2022-07-12T18:17:12.786Z",
-          "updated_at": "2022-07-12T18:17:12.786Z",
-          "display_at": "2022-07-12T18:17:12.786Z",
-          "affected_components": [
-            {
-              "code": "5ml6n8xk2fcs",
-              "name": "Dedicated Servers || Network - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ywcwwnktxgh0",
-              "name": "Dedicated Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5ml6n8xk2fcs",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:50.476Z",
-          "updated_at": "2022-06-30T21:04:43.385Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2022-07-12T23:37:26.017Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ywcwwnktxgh0",
-          "name": "LIM",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:54.272Z",
-          "updated_at": "2022-07-12T23:37:26.037Z",
-          "position": 4,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
@@ -3862,102 +3875,6 @@
       "scheduled_until": "2022-07-21T11:00:00.000Z"
     },
     {
-      "id": "mgshw7ckyy3n",
-      "name": "[GRA1-GRA2-RBX6-SBG3][DedicatedServers] - Network equipement operation",
-      "status": "scheduled",
-      "created_at": "2022-07-12T18:17:01.631Z",
-      "updated_at": "2022-07-12T18:17:01.693Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xbb1b3zggqbz",
-      "started_at": "2022-07-12T18:17:01.622Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "8nsgtwrh9rfw",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 21/07/2022 20:00 UTC\n<b>End time :</b> 21/07/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do a operation on a network equipment.",
-          "incident_id": "mgshw7ckyy3n",
-          "created_at": "2022-07-12T18:17:01.690Z",
-          "updated_at": "2022-07-12T18:17:01.690Z",
-          "display_at": "2022-07-12T18:17:01.690Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7xy5137wv97w",
-              "name": "Dedicated Servers || Network - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2022-07-12T23:37:26.017Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-07-12T23:37:26.054Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7xy5137wv97w",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:53.351Z",
-          "updated_at": "2022-07-12T23:37:26.071Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-07-21T20:00:00.000Z",
-      "scheduled_until": "2022-07-21T23:30:00.000Z"
-    },
-    {
       "id": "p2trq9rqvs1w",
       "name": "[LIM3-GRA2-RBX7][DedicatedServers] - Network equipement operation",
       "status": "scheduled",
@@ -4041,6 +3958,102 @@
           "created_at": "2021-07-09T07:34:52.401Z",
           "updated_at": "2022-07-12T23:37:26.054Z",
           "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-07-21T20:00:00.000Z",
+      "scheduled_until": "2022-07-21T23:30:00.000Z"
+    },
+    {
+      "id": "mgshw7ckyy3n",
+      "name": "[GRA1-GRA2-RBX6-SBG3][DedicatedServers] - Network equipement operation",
+      "status": "scheduled",
+      "created_at": "2022-07-12T18:17:01.631Z",
+      "updated_at": "2022-07-12T18:17:01.693Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xbb1b3zggqbz",
+      "started_at": "2022-07-12T18:17:01.622Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8nsgtwrh9rfw",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/07/2022 20:00 UTC\n<b>End time :</b> 21/07/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do a operation on a network equipment.",
+          "incident_id": "mgshw7ckyy3n",
+          "created_at": "2022-07-12T18:17:01.690Z",
+          "updated_at": "2022-07-12T18:17:01.690Z",
+          "display_at": "2022-07-12T18:17:01.690Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-07-12T23:37:26.017Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-07-12T23:37:26.054Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2022-07-12T23:37:26.071Z",
+          "position": 6,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
