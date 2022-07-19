@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-07-19T14:23:46.338Z"
+    "updated_at": "2022-07-19T14:58:02.327Z"
   },
   "components": [
     {
@@ -2132,10 +2132,10 @@
   "incidents": [
     {
       "id": "8lksjj4kf45l",
-      "name": "[RBX2B][Hosted private Cloud] - PCC and Backup managment",
+      "name": "[RBX2B][Hosted private Cloud] - Hosted private Cloud hosts and Backup management",
       "status": "identified",
       "created_at": "2022-07-19T13:34:24.034Z",
-      "updated_at": "2022-07-19T14:19:49.443Z",
+      "updated_at": "2022-07-19T14:58:02.306Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2143,6 +2143,58 @@
       "started_at": "2022-07-19T13:34:24.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "z5qbnlgmyrgq",
+          "status": "identified",
+          "body": "<b>Ongoing Actions:</b> Veeam service is available again.\nOur teams are still working on the unavailable datastores.\nWe estimate that the whole situation will get back to normal in 24 hours.",
+          "incident_id": "8lksjj4kf45l",
+          "created_at": "2022-07-19T14:58:02.304Z",
+          "updated_at": "2022-07-19T14:58:02.304Z",
+          "display_at": "2022-07-19T14:58:02.304Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tlk79b90n8zm",
+          "status": "identified",
+          "body": "<b>Ongoing Actions:</b> Our teams stopped temporary the Veeam backup service in order to make all the other services available.\nWe will keep you updated on the situation",
+          "incident_id": "8lksjj4kf45l",
+          "created_at": "2022-07-19T14:35:39.165Z",
+          "updated_at": "2022-07-19T14:44:16.100Z",
+          "display_at": "2022-07-19T14:35:39.000Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "7kr79qdxb6q0",
           "status": "identified",
