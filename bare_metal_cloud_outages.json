@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-07-21T09:28:24.740Z"
+    "updated_at": "2022-07-21T10:16:11.763Z"
   },
   "components": [
     {
@@ -2209,10 +2209,10 @@
   "incidents": [
     {
       "id": "3134rlfzwrjy",
-      "name": "[RBX6][DedicatedServers] - Rack 46F29 & 46F30",
-      "status": "investigating",
+      "name": "[RBX6][DedicatedServers] - Rack 46F29/46F30/46F31",
+      "status": "identified",
       "created_at": "2022-07-21T08:33:14.853Z",
-      "updated_at": "2022-07-21T08:33:45.534Z",
+      "updated_at": "2022-07-21T10:16:11.756Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2220,6 +2220,26 @@
       "started_at": "2022-07-21T08:33:14.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "m7l1s2061n8t",
+          "status": "identified",
+          "body": "<b>Service impact :</b>Some servers on rack 46F31 are down.\n<b>Root cause :</b> Racks have encountered a power failure.\n<b>Ongoing actions :</b>  Racks 46F29 and 46F30 are now operational again. Our teams are working on 46F31",
+          "incident_id": "3134rlfzwrjy",
+          "created_at": "2022-07-21T10:16:11.754Z",
+          "updated_at": "2022-07-21T10:16:11.754Z",
+          "display_at": "2022-07-21T10:16:11.754Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "k6hqmh1ft4t5",
           "status": "investigating",
