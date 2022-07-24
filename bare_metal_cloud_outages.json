@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-07-23T15:31:26.823Z"
+    "updated_at": "2022-07-24T03:30:47.764Z"
   },
   "components": [
     {
@@ -340,7 +340,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1227,9 +1227,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-07-23T04:43:00.961Z",
+      "updated_at": "2022-07-24T03:28:19.289Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2206,7 +2206,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "883pxckfngds",
+      "name": "[RBX7][Dedicated servers] - R714B06",
+      "status": "investigating",
+      "created_at": "2022-07-24T03:28:19.262Z",
+      "updated_at": "2022-07-24T03:30:47.757Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zhvbz580dt2d",
+      "started_at": "2022-07-24T03:28:19.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8n2llyrwxg9t",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  24/07/2022 03:12 UTC\n<b>Service impact :</b> Servers on rack R714B06 are unreachable\n<b>Ongoing actions :</b> Our technical teams are investigating, we will provide updates as soon as possible",
+          "incident_id": "883pxckfngds",
+          "created_at": "2022-07-24T03:28:19.687Z",
+          "updated_at": "2022-07-24T03:30:47.754Z",
+          "display_at": "2022-07-24T03:28:19.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2022-07-24T03:28:19.289Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "qzdn6lcsgx57",
@@ -3497,7 +3550,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
