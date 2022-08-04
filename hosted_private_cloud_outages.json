@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-08-04T01:23:40.157Z"
+    "updated_at": "2022-08-04T03:36:35.334Z"
   },
   "components": [
     {
@@ -1429,9 +1429,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2022-08-04T01:17:08.386Z",
+      "updated_at": "2022-08-04T03:36:35.286Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1843,7 +1843,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "degraded_performance",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2021-10-20T08:14:14.720Z",
       "position": 14,
@@ -2129,60 +2129,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "1qyg865j6m9r",
-      "name": "[RBX2A][Hosted private Cloud] - Additionnal Zpool",
-      "status": "identified",
-      "created_at": "2022-08-04T01:17:08.349Z",
-      "updated_at": "2022-08-04T01:17:08.441Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/rksz4tbrhkqj",
-      "started_at": "2022-08-04T01:17:08.340Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "2cznjx5bt53p",
-          "status": "identified",
-          "body": "<b>Start time:</b>  04/08/2022 00:41 UTC\n<b>User impact :</b> Some zpool are not mounted on the gwssl, sftp access issue\n<b>Technical impact (DC/geographical area) :</b> RBX2A\n<b>Scope of impact :</b> Gateway ssl\n<b>Root cause :</b> Incident caused by operation on a maintenance about storage switchover.",
-          "incident_id": "1qyg865j6m9r",
-          "created_at": "2022-08-04T01:17:08.438Z",
-          "updated_at": "2022-08-04T01:17:08.438Z",
-          "display_at": "2022-08-04T01:17:08.438Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "VMware Private Cloud || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "degraded_performance",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-08-04T01:17:08.386Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "f3b3x0m537zz",
@@ -3464,7 +3411,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
