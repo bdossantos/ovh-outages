@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-08-10T12:48:11.542Z"
+    "updated_at": "2022-08-10T14:29:11.401Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "jlj7vhqxdcsv",
       "name": "SGP1",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-04-06T09:34:06.838Z",
-      "updated_at": "2022-08-10T08:00:29.026Z",
+      "updated_at": "2022-08-10T14:29:11.321Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -3798,7 +3798,7 @@
     {
       "id": "4hd0291hdzf6",
       "name": "Compute - Instance || SGP",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-04-06T09:34:08.548Z",
       "updated_at": "2022-04-13T13:25:21.071Z",
       "position": 25,
@@ -4400,97 +4400,10 @@
       ],
       "scheduled_for": "2022-09-06T07:00:00.000Z",
       "scheduled_until": "2022-09-08T15:00:00.000Z"
-    },
-    {
-      "id": "0fbt5v38hw2k",
-      "name": "[SGP1][Public Cloud] Upgrade to Stein",
-      "status": "in_progress",
-      "created_at": "2022-06-15T23:33:07.446Z",
-      "updated_at": "2022-08-10T08:00:29.131Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2t29nc01qkl9",
-      "started_at": "2022-06-15T23:33:07.438Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "9qn2smzvcfz5",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0fbt5v38hw2k",
-          "created_at": "2022-08-10T08:00:29.122Z",
-          "updated_at": "2022-08-10T08:00:29.122Z",
-          "display_at": "2022-08-10T08:00:29.122Z",
-          "affected_components": [
-            {
-              "code": "jlj7vhqxdcsv",
-              "name": "Compute - Instance || SGP - SGP1",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "wgzwtd6t78j8",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0fbt5v38hw2k",
-          "created_at": "2022-08-10T07:00:22.695Z",
-          "updated_at": "2022-08-10T07:00:22.695Z",
-          "display_at": "2022-08-10T07:00:22.695Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1mj6ghmhy3gr",
-          "status": "scheduled",
-          "body": "A maintenance operation is scheduled for the SGP1 region on <b>August 10, 2022, between 08:00 and 16:00 (UTC)</b>. No disruption is expected on your instances. Some APIs will remain unreachable during the operation.\n \nThe API endpoints that will be maintained are the following:\n    <a href=\"https://compute.sgp1.cloud.ovh.net\">https://compute.sgp1.cloud.ovh.net</a>\n    <a href=\"https://network.compute.sgp1.cloud.ovh.net\">https://network.compute.sgp1.cloud.ovh.net</a>\n    <a href=\"https://volume.compute.sgp1.cloud.ovh.net\">https://volume.compute.sgp1.cloud.ovh.net</a> \n    <a href=\"https://image.compute.sgp1.cloud.ovh.net\">https://image.compute.sgp1.cloud.ovh.net</a>\n    <a href=\"https://workflow.sgp1.cloud.ovh.net\">https://workflow.sgp1.cloud.ovh.net</a> \n    <a href=\"https://orchestration.sgp1.cloud.ovh.net\">https://orchestration.sgp1.cloud.ovh.net</a>\n \nThe other regions will remain accessible by API and via your OVH manager.\nThis operation allows us to prepare for the future. Thanks to this OpenStack upgrade, we will be able to continue to improve our Public Cloud offering by providing you with new features in the coming months.\nThe API calls you are used to using will not change, this new version is backwards compatible with the old one.\nThe target versions of the OpenStack components in this region will be:\n    <b>Glance</b> : 18 (Stein) ; \n    <b>Cinder</b> : 14 (Stein) ; \n    <b>Nova</b> : 19 (Stein) ; \n    <b>Neutron</b> : 14 (Stein) ; \n    <b>Heat</b> : 12 (Stein) ;\n \nThe components not affected by this operation are : \n    <b>Keystone</b> : 11 (Ocata) ;\n    <b>Swift</b> : 2.25 (Ussuri) ; \n    <b>Horizon</b> : 13 (Queens) ; \n    <b>Mistral</b> : 7 (Rocky) ;\n \nThis update is an important step in the development of the product. Other regions will be concerned by equivalent developments in the coming weeks. To know the detail of the new functionalities, go to <a href=\"https://releases.openstack.org/stein/highlights.html\">https://releases.openstack.org/stein/highlights.html</a> \nCompute (Nova) <a href=\"https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton\">https://docs.openstack.org/nova/stein/reference/api-microversion-history.html#maximum-in-newton</a> \nNetwork (Neutron) <a href=\"https://docs.openstack.org/releasenotes/neutron/stein.html\">https://docs.openstack.org/releasenotes/neutron/stein.html</a> \nVolume (Cinder) <a href=\"https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton\">https://docs.openstack.org/cinder/latest/contributor/api_microversion_history.html#maximum-in-newton</a> \nIf you want to test the behavior of the updated software versions you can use the GRA9 and SBG7 regions which already expose the target versions.",
-          "incident_id": "0fbt5v38hw2k",
-          "created_at": "2022-06-15T23:33:07.541Z",
-          "updated_at": "2022-08-08T12:49:32.972Z",
-          "display_at": "2022-06-15T23:33:07.541Z",
-          "affected_components": [
-            {
-              "code": "jlj7vhqxdcsv",
-              "name": "Compute - Instance || SGP - SGP1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jlj7vhqxdcsv",
-          "name": "SGP1",
-          "status": "under_maintenance",
-          "created_at": "2022-04-06T09:34:06.838Z",
-          "updated_at": "2022-08-10T08:00:29.026Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "4hd0291hdzf6",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-08-10T08:00:00.000Z",
-      "scheduled_until": "2022-08-10T16:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
