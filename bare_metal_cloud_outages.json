@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-08-13T19:38:31.539Z"
+    "updated_at": "2022-08-13T20:27:37.671Z"
   },
   "components": [
     {
@@ -2208,6 +2208,78 @@
   ],
   "incidents": [
     {
+      "id": "s2g6c38nb9zn",
+      "name": "[GRA1][Public Network] - G122A12 / G122A11",
+      "status": "investigating",
+      "created_at": "2022-08-13T19:11:09.387Z",
+      "updated_at": "2022-08-13T20:27:37.663Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/t41qbx6pt47x",
+      "started_at": "2022-08-13T19:11:09.380Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8rpxxcqz4d2z",
+          "status": "investigating",
+          "body": "Some services recover their operational capacity.",
+          "incident_id": "s2g6c38nb9zn",
+          "created_at": "2022-08-13T20:27:37.661Z",
+          "updated_at": "2022-08-13T20:27:37.661Z",
+          "display_at": "2022-08-13T20:27:37.661Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5kmhrk14bwnm",
+          "status": "investigating",
+          "body": "<b>Start time :</b>  13/08/2022 18:36UTC\n<b>Service impact :</b> Public network is unreachable for some users.\n<b>Ongoing actions :</b>  Our technicians are currently working on in order to fix it.\n<b>Root cause :</b> This malfunction is due to a water leak.",
+          "incident_id": "s2g6c38nb9zn",
+          "created_at": "2022-08-13T19:11:09.455Z",
+          "updated_at": "2022-08-13T19:11:09.455Z",
+          "display_at": "2022-08-13T19:11:09.455Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b8jvtsrcrclp",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:31:33.023Z",
+          "updated_at": "2022-08-13T19:11:09.414Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "lsxytxgsppq8",
       "name": "VPS - GRA2 - host598584",
       "status": "investigating",
@@ -2293,58 +2365,6 @@
         }
       ],
       "components": []
-    },
-    {
-      "id": "s2g6c38nb9zn",
-      "name": "[GRA1][Public Network] - G122A12 / G122A11",
-      "status": "investigating",
-      "created_at": "2022-08-13T19:11:09.387Z",
-      "updated_at": "2022-08-13T19:11:09.457Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/t41qbx6pt47x",
-      "started_at": "2022-08-13T19:11:09.380Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "5kmhrk14bwnm",
-          "status": "investigating",
-          "body": "<b>Start time :</b>  13/08/2022 18:36UTC\n<b>Service impact :</b> Public network is unreachable for some users.\n<b>Ongoing actions :</b>  Our technicians are currently working on in order to fix it.\n<b>Root cause :</b> This malfunction is due to a water leak.",
-          "incident_id": "s2g6c38nb9zn",
-          "created_at": "2022-08-13T19:11:09.455Z",
-          "updated_at": "2022-08-13T19:11:09.455Z",
-          "display_at": "2022-08-13T19:11:09.455Z",
-          "affected_components": [
-            {
-              "code": "b8jvtsrcrclp",
-              "name": "Virtual Private Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "b8jvtsrcrclp",
-          "name": "GRA",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:31:33.023Z",
-          "updated_at": "2022-08-13T19:11:09.414Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
     },
     {
       "id": "twtptybbptt0",
