@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-08-17T18:50:53.674Z"
+    "updated_at": "2022-08-17T19:58:16.714Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2022-08-17T18:42:43.262Z",
+      "updated_at": "2022-08-17T19:58:16.644Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -711,7 +711,60 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "t09v7htwq4mk",
+      "name": "[CA][Network] - Backbone latency",
+      "status": "investigating",
+      "created_at": "2022-08-17T19:58:16.608Z",
+      "updated_at": "2022-08-17T19:58:16.711Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zy0v1tzgfb3y",
+      "started_at": "2022-08-17T19:58:16.602Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "03mrldwc4f19",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 17/08/2022 18:30 UTC\n<b>Service impact :</b> Customers may face some latency\n<b>Ongoing actions :</b> Our teams are currently working to solve the problem",
+          "incident_id": "t09v7htwq4mk",
+          "created_at": "2022-08-17T19:58:16.708Z",
+          "updated_at": "2022-08-17T19:58:16.708Z",
+          "display_at": "2022-08-17T19:58:16.708Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2022-08-17T19:58:16.644Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "y73453smtxkb",
@@ -751,9 +804,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2022-08-17T18:42:43.262Z",
+          "updated_at": "2022-08-17T19:58:16.644Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1759,7 +1812,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
