@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-08T09:01:18.560Z"
+    "updated_at": "2022-09-08T09:24:13.081Z"
   },
   "components": [
     {
@@ -991,9 +991,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2022-09-07T09:58:40.661Z",
+      "updated_at": "2022-09-08T09:03:55.412Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1227,7 +1227,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2208,6 +2208,58 @@
   ],
   "incidents": [
     {
+      "id": "nnf9ts2yzt64",
+      "name": "[GRA][Network] - Rack GRA0316B05B",
+      "status": "identified",
+      "created_at": "2022-09-08T09:03:55.379Z",
+      "updated_at": "2022-09-08T09:12:47.848Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cy3c62vf33d1",
+      "started_at": "2022-09-08T09:03:55.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "dd4qf4kc7gz4",
+          "status": "identified",
+          "body": "<b>Start time :</b> 07/09/2022 09:23 UTC\n<b>Service impact :</b> Impacted customers may observed additional delay for actions.\n<b>Root cause :</b> Network device malfunction\n<b>Ongoing actions :</b> A fix should be be deployed on 08/09/2022 21:00 UTC.\nOur technical teams are working on resolving the issue. Update will be post as significant progress is made.",
+          "incident_id": "nnf9ts2yzt64",
+          "created_at": "2022-09-08T09:03:55.461Z",
+          "updated_at": "2022-09-08T09:12:47.794Z",
+          "display_at": "2022-09-08T09:03:55.000Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "under_maintenance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-09-08T09:03:55.412Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "dqghk0dyqhdc",
       "name": "VPS - SBG6 SBG8 - rack S344B06",
       "status": "investigating",
@@ -2855,9 +2907,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2022-09-07T09:58:40.661Z",
+          "updated_at": "2022-09-08T09:03:55.412Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2903,7 +2955,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
