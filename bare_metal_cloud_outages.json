@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-12T12:25:08.000Z"
+    "updated_at": "2022-09-12T13:31:29.913Z"
   },
   "components": [
     {
@@ -85,7 +85,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1358,9 +1358,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-09-12T11:13:08.773Z",
+      "updated_at": "2022-09-12T13:31:29.834Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2208,33 +2208,56 @@
   ],
   "incidents": [
     {
-      "id": "s3rz2rqmtwhb",
-      "name": "VPS - UK2 - host1017873",
+      "id": "4k680k2qxhjy",
+      "name": "[RBX8][Dedicated Servers] - R807L15",
       "status": "investigating",
-      "created_at": "2022-09-12T12:25:07.917Z",
-      "updated_at": "2022-09-12T12:25:07.996Z",
+      "created_at": "2022-09-12T13:31:29.798Z",
+      "updated_at": "2022-09-12T13:31:29.909Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/ptm17568l7tf",
-      "started_at": "2022-09-12T12:25:07.908Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/rf0sp3g736hf",
+      "started_at": "2022-09-12T13:31:29.790Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "9dnccgby063k",
+          "id": "cv7cf1ppmw7v",
           "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1017873.uk2.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\nvps575677\nvps766889\nvps505358\nvps774850\nvps717624\nvps699352\nvps759286\nvps814060\nvps816879\nvps607532\nvps564623\nvps639858\nvps795477\nvps572215\nvps716007\nvps816161\nvps810829\nvps807012\nvps720490\nvps801162\nvps801161\nvps801160\nvps661609\nvps702807\nvps724988\nvps773669\nvps769288\nvps767469\nvps767106\nvps641782\nvps764991\nvps763764\nvps760762\nvps756188\nvps748541\nvps721112\nvps734631\nvps744629\nvps742460\nvps735836\nvps732740\nvps728102\nvps620394\nvps686237\nvps670239\nvps656112\nvps667041\nvps658178\nvps619855\nvps652474\nvps654806\nvps652961\nvps650205\nvps646870\nvps641275\nvps639311\nvps626010\nvps622033\nvps617401\nvps614059\nvps608677\nvps607792\nvps606173\nvps596898\nvps595935\nvps595379\nvps583783\nvps583030\nvps575818\nvps573799\nvps569334\nvps567537\nvps565541\nvps563363\nvps551347\nvps551346\nvps550975\nvps551213\nvps515162",
-          "incident_id": "s3rz2rqmtwhb",
-          "created_at": "2022-09-12T12:25:07.992Z",
-          "updated_at": "2022-09-12T12:25:07.992Z",
-          "display_at": "2022-09-12T12:25:07.992Z",
-          "affected_components": null,
+          "body": "<b>Start time :</b> 12/09/2022 11:51 UTC\n<b>Service impact :</b> Some servers in R807L15 rack are no longer responding\n<b>Ongoing actions :</b>  Our teams investigate to determine the origin of the incident",
+          "incident_id": "4k680k2qxhjy",
+          "created_at": "2022-09-12T13:31:29.906Z",
+          "updated_at": "2022-09-12T13:31:29.906Z",
+          "display_at": "2022-09-12T13:31:29.906Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2022-09-12T13:31:29.834Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
     }
   ],
   "scheduled_maintenances": [
@@ -3059,7 +3082,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
