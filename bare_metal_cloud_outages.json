@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-15T05:31:28.314Z"
+    "updated_at": "2022-09-15T06:01:36.034Z"
   },
   "components": [
     {
@@ -175,7 +175,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1332,9 +1332,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-09-15T04:56:46.175Z",
+      "updated_at": "2022-09-15T06:01:35.962Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2206,67 +2206,14 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "rpdk5cxnp8g3",
-      "name": "[RBX1][Dedicated Servers] - 10B01/10B14/10B16/10A08",
-      "status": "investigating",
-      "created_at": "2022-09-15T04:56:46.137Z",
-      "updated_at": "2022-09-15T05:31:28.308Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/1r4vm58t3whr",
-      "started_at": "2022-09-15T04:56:46.000Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "xvrhd0kdb4dz",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 15/09/2022 04:14 UTC\n<b>Service impact :</b> Some servers are unreachable in racks 10B01, 10B14, 10B16 and 10A08\n<b>Ongoing actions :</b>  Our teams are currently working to solve the problem",
-          "incident_id": "rpdk5cxnp8g3",
-          "created_at": "2022-09-15T04:56:46.612Z",
-          "updated_at": "2022-09-15T05:31:28.293Z",
-          "display_at": "2022-09-15T04:56:46.000Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-09-15T04:56:46.175Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "chkzs04lzs52",
       "name": "[BHS7][Network] - Network equipment operation",
       "status": "scheduled",
       "created_at": "2022-09-07T23:34:22.498Z",
-      "updated_at": "2022-09-07T23:34:22.583Z",
+      "updated_at": "2022-09-15T06:00:25.761Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2274,6 +2221,19 @@
       "started_at": "2022-09-07T23:34:22.488Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "61s5491lhy6z",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "chkzs04lzs52",
+          "created_at": "2022-09-15T06:00:25.587Z",
+          "updated_at": "2022-09-15T06:00:25.587Z",
+          "display_at": "2022-09-15T06:00:25.587Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "wf6jqlnbqrg6",
           "status": "scheduled",
@@ -2865,60 +2825,6 @@
       "scheduled_until": "2022-09-22T05:00:00.000Z"
     },
     {
-      "id": "t3g03hmdqt48",
-      "name": "[BHS7][Network] - Network equipment operation",
-      "status": "scheduled",
-      "created_at": "2022-09-08T00:17:55.955Z",
-      "updated_at": "2022-09-08T00:17:56.022Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kcrl8p1xgyv6",
-      "started_at": "2022-09-08T00:17:55.947Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "n17xskt06hws",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 22/09/2022 07:00 UTC\n<b>End time :</b> 22/09/2022 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  In order to maintain continuous improvement of our internal network infrastructure, we will upgrade the version of multiple network equipment.",
-          "incident_id": "t3g03hmdqt48",
-          "created_at": "2022-09-08T00:17:56.019Z",
-          "updated_at": "2022-09-08T00:17:56.019Z",
-          "display_at": "2022-09-08T00:17:56.019Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2022-09-14T10:30:59.178Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-22T07:00:00.000Z",
-      "scheduled_until": "2022-09-22T11:00:00.000Z"
-    },
-    {
       "id": "7t91ydnkbm39",
       "name": "[BHS6][Dedicated Servers] - Network maintenance notification",
       "status": "scheduled",
@@ -2973,6 +2879,60 @@
       "scheduled_until": "2022-09-22T11:30:00.000Z"
     },
     {
+      "id": "t3g03hmdqt48",
+      "name": "[BHS7][Network] - Network equipment operation",
+      "status": "scheduled",
+      "created_at": "2022-09-08T00:17:55.955Z",
+      "updated_at": "2022-09-08T00:17:56.022Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kcrl8p1xgyv6",
+      "started_at": "2022-09-08T00:17:55.947Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "n17xskt06hws",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/09/2022 07:00 UTC\n<b>End time :</b> 22/09/2022 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  In order to maintain continuous improvement of our internal network infrastructure, we will upgrade the version of multiple network equipment.",
+          "incident_id": "t3g03hmdqt48",
+          "created_at": "2022-09-08T00:17:56.019Z",
+          "updated_at": "2022-09-08T00:17:56.019Z",
+          "display_at": "2022-09-08T00:17:56.019Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2022-09-14T10:30:59.178Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-22T07:00:00.000Z",
+      "scheduled_until": "2022-09-22T11:00:00.000Z"
+    },
+    {
       "id": "f7m3wc8xwj98",
       "name": "[RBX6][Dedicated Servers] - 46E16",
       "status": "scheduled",
@@ -3010,9 +2970,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-09-15T04:56:46.175Z",
+          "updated_at": "2022-09-15T06:01:35.962Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3118,9 +3078,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-09-15T04:56:46.175Z",
+          "updated_at": "2022-09-15T06:01:35.962Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3297,7 +3257,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
