@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-15T03:23:41.133Z"
+    "updated_at": "2022-09-15T05:23:58.815Z"
   },
   "components": [
     {
@@ -175,7 +175,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1332,9 +1332,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-09-15T03:15:41.356Z",
+      "updated_at": "2022-09-15T04:56:46.175Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2206,7 +2206,89 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rpdk5cxnp8g3",
+      "name": "[RBX1][Dedicated Servers] - 10B01/10B14/10B16",
+      "status": "investigating",
+      "created_at": "2022-09-15T04:56:46.137Z",
+      "updated_at": "2022-09-15T05:23:58.811Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/1r4vm58t3whr",
+      "started_at": "2022-09-15T04:56:46.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "xvrhd0kdb4dz",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 15/09/2022 04:14 UTC\n<b>Service impact :</b> Some servers are unreachable in racks 10B01, 10B14 and 10B16\n<b>Ongoing actions :</b>  Our teams are currently working to solve the problem",
+          "incident_id": "rpdk5cxnp8g3",
+          "created_at": "2022-09-15T04:56:46.612Z",
+          "updated_at": "2022-09-15T05:23:58.764Z",
+          "display_at": "2022-09-15T04:56:46.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2022-09-15T04:56:46.175Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "qp5r50hyxcqt",
+      "name": "VPS - SGP2 - host361661",
+      "status": "investigating",
+      "created_at": "2022-09-15T05:22:08.997Z",
+      "updated_at": "2022-09-15T05:22:09.045Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/6v66yq2zwz6r",
+      "started_at": "2022-09-15T05:22:08.990Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2c1jqw037hcv",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost361661.sgp2.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n6fc5b73d-fd83-4d8c-a850-7b9129e8aabe\n1e81affb-287b-45f2-aa40-7bfbce605be5\nac14b996-a0fa-4e88-b09e-980456b3036a\ne65a0372-c708-4164-b47f-39c0d241e5b8\n305bc483-831d-4b51-9cde-9d73f0462f4e\nf7c3f55b-33a5-4350-b96c-53fca6bad3d7\n760a4e44-6ae8-44c5-9247-684c08c2b50b\n76aff1c4-9f2a-471f-8739-25f2f7c56c85\nb3e3d3e3-fec5-4f77-8780-5ab52536cccf\n7c762047-1a7c-4245-94fc-fa678961fce3\ne4bd93b7-a12a-4e6b-8612-6fcfaa390311\n3a2abebb-ab54-4e83-ac19-07c5fec5c5fb\n35c08c49-96a8-45a9-b650-707d17d3d34c\ndb98eca8-14c0-4643-8ee7-468f6895c83f\n484eb9f1-66b6-4597-acac-fa5bb39d8faa\n2e4ef223-2b0a-470b-ae17-6140222ec37f\n36969c6c-e1c9-4e0f-961f-c7dd5ee5e34f\naa8754cf-d76c-4632-88fe-8b2654aeedb3\n8e8b3061-3432-4d7b-acee-45c4b71e5e63\n8f9c1b63-fbab-4eca-8a5e-f8b42ba57cd5\n51f91a21-36f7-4eb9-a3a7-4e9e22ff825c\n2ae8c615-7337-4ebf-9fbf-ac4bbe6cd1ab\ncd12584f-a3c2-469a-bf80-bb373b4b2f2d\n8cb9afdd-848f-478a-a8e1-19467c20d0fb\na097b110-f24e-40f0-95f9-de890259de32\ne2e27d5d-cfa0-489f-98a8-63076ac112cb\n6328dc37-43f2-4018-9822-786f82ac5cee\ndbe14093-8d3b-417e-8496-00754c46ccc4\ne7699d5d-1c09-43c6-b0fa-b4efa16ea34b\nc8f656a3-d82a-4573-bea7-fc42cc8d90f7\nd7579ad8-ee8c-4d6f-92ed-42fe6e69dd6d\n3ccb4ef8-6051-415e-8276-70a7203556d4\n780388cb-bc76-42ab-85b5-110aad872bff\n6c6e6a57-7b9e-4714-aa88-a5de48382d57\nfe7be2e1-72db-4a72-b83d-fa639057c928",
+          "incident_id": "qp5r50hyxcqt",
+          "created_at": "2022-09-15T05:22:09.042Z",
+          "updated_at": "2022-09-15T05:22:09.042Z",
+          "display_at": "2022-09-15T05:22:09.042Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "chkzs04lzs52",
@@ -2957,9 +3039,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-09-15T03:15:41.356Z",
+          "updated_at": "2022-09-15T04:56:46.175Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3065,9 +3147,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2022-09-15T03:15:41.356Z",
+          "updated_at": "2022-09-15T04:56:46.175Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3244,7 +3326,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
