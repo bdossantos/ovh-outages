@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-19T03:52:17.008Z"
+    "updated_at": "2022-09-19T05:00:30.394Z"
   },
   "components": [
     {
@@ -2132,11 +2132,128 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "9dmys14yqpx4",
+      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - sharedSQL Upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-15T21:14:08.603Z",
+      "updated_at": "2022-09-15T21:14:15.404Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2h3vr06td5xp",
+      "started_at": "2022-09-15T21:14:08.588Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "2s37hg87wgxc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> Following the PCIDSS recommendations, the sharedSQL are migrated to a new version",
+          "incident_id": "9dmys14yqpx4",
+          "created_at": "2022-09-15T21:14:08.690Z",
+          "updated_at": "2022-09-15T21:14:08.690Z",
+          "display_at": "2022-09-15T21:14:08.690Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "VMware Private Cloud || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2022-09-15T15:41:54.820Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2022-09-15T15:41:54.806Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2022-06-21T14:31:15.044Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2022-08-18T03:11:47.732Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-19T06:00:00.000Z",
+      "scheduled_until": "2022-09-23T16:00:00.000Z"
+    },
+    {
       "id": "0vsqdcc900nn",
       "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - VMware NSX operation",
       "status": "scheduled",
       "created_at": "2022-09-15T20:42:46.062Z",
-      "updated_at": "2022-09-15T20:44:43.356Z",
+      "updated_at": "2022-09-19T05:00:25.418Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2144,6 +2261,19 @@
       "started_at": "2022-09-15T20:42:46.037Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "r07kfqx056y6",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "0vsqdcc900nn",
+          "created_at": "2022-09-19T05:00:25.053Z",
+          "updated_at": "2022-09-19T05:00:25.053Z",
+          "display_at": "2022-09-19T05:00:25.053Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8l4667j4kv62",
           "status": "scheduled",
@@ -2207,11 +2337,187 @@
       "scheduled_until": "2022-09-23T16:00:00.000Z"
     },
     {
+      "id": "s8cwc2n4yqym",
+      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - Host upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-15T21:00:37.996Z",
+      "updated_at": "2022-09-19T05:00:24.595Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/26tf3l9mcr8l",
+      "started_at": "2022-09-15T21:00:37.982Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "c6yx2dcxqwnj",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "s8cwc2n4yqym",
+          "created_at": "2022-09-19T05:00:24.273Z",
+          "updated_at": "2022-09-19T05:00:24.273Z",
+          "display_at": "2022-09-19T05:00:24.273Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t6xcbk3d1q76",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> Builds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)\n<b>Service improvement  :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
+          "incident_id": "s8cwc2n4yqym",
+          "created_at": "2022-09-15T21:00:38.088Z",
+          "updated_at": "2022-09-15T21:00:38.088Z",
+          "display_at": "2022-09-15T21:00:38.088Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2022-09-15T15:41:54.820Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2022-09-15T15:41:54.806Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-19T06:00:00.000Z",
+      "scheduled_until": "2022-09-23T16:00:00.000Z"
+    },
+    {
+      "id": "k8r78cbbc63x",
+      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - vCenter upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-15T21:23:12.572Z",
+      "updated_at": "2022-09-19T05:00:24.039Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/59zk8gpbp16y",
+      "started_at": "2022-09-15T21:23:12.563Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "bnllqr6ks4rj",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "k8r78cbbc63x",
+          "created_at": "2022-09-19T05:00:23.752Z",
+          "updated_at": "2022-09-19T05:00:23.752Z",
+          "display_at": "2022-09-19T05:00:23.752Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f8yj697ww8b8",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> vCenter unavailable during the upgrade operation",
+          "incident_id": "k8r78cbbc63x",
+          "created_at": "2022-09-15T21:23:12.635Z",
+          "updated_at": "2022-09-15T21:23:12.635Z",
+          "display_at": "2022-09-15T21:23:12.635Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nn6zpzd8g3fs",
+              "name": "VMware Private Cloud || SBG - Management plane",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nn6zpzd8g3fs",
+          "name": "Management plane",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.087Z",
+          "updated_at": "2022-04-11T11:55:29.676Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2022-09-14T06:40:11.483Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-19T06:00:00.000Z",
+      "scheduled_until": "2022-09-23T16:00:00.000Z"
+    },
+    {
       "id": "ljs83j7j200v",
       "name": "[Global][VMware Private Cloud] - VMware NSX operation",
       "status": "scheduled",
       "created_at": "2022-09-16T14:05:58.666Z",
-      "updated_at": "2022-09-16T14:05:58.756Z",
+      "updated_at": "2022-09-19T05:00:30.368Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2219,6 +2525,19 @@
       "started_at": "2022-09-16T14:05:58.632Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "lnr5v8gykz2r",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ljs83j7j200v",
+          "created_at": "2022-09-19T05:00:30.005Z",
+          "updated_at": "2022-09-19T05:00:30.005Z",
+          "display_at": "2022-09-19T05:00:30.005Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qt7mt3x0q0mn",
           "status": "scheduled",
@@ -2406,273 +2725,6 @@
       ],
       "scheduled_for": "2022-09-19T06:00:00.000Z",
       "scheduled_until": "2022-09-23T17:00:00.000Z"
-    },
-    {
-      "id": "k8r78cbbc63x",
-      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - vCenter upgrade",
-      "status": "scheduled",
-      "created_at": "2022-09-15T21:23:12.572Z",
-      "updated_at": "2022-09-15T21:23:12.677Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/59zk8gpbp16y",
-      "started_at": "2022-09-15T21:23:12.563Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "f8yj697ww8b8",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> vCenter unavailable during the upgrade operation",
-          "incident_id": "k8r78cbbc63x",
-          "created_at": "2022-09-15T21:23:12.635Z",
-          "updated_at": "2022-09-15T21:23:12.635Z",
-          "display_at": "2022-09-15T21:23:12.635Z",
-          "affected_components": [
-            {
-              "code": "r0gb2v5791yj",
-              "name": "VMware Private Cloud || RBX - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "nn6zpzd8g3fs",
-              "name": "VMware Private Cloud || SBG - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nn6zpzd8g3fs",
-          "name": "Management plane",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.087Z",
-          "updated_at": "2022-04-11T11:55:29.676Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r0gb2v5791yj",
-          "name": "Management plane",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2022-09-14T06:40:11.483Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-19T06:00:00.000Z",
-      "scheduled_until": "2022-09-23T16:00:00.000Z"
-    },
-    {
-      "id": "9dmys14yqpx4",
-      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - sharedSQL Upgrade",
-      "status": "scheduled",
-      "created_at": "2022-09-15T21:14:08.603Z",
-      "updated_at": "2022-09-15T21:14:15.404Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2h3vr06td5xp",
-      "started_at": "2022-09-15T21:14:08.588Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "2s37hg87wgxc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> Following the PCIDSS recommendations, the sharedSQL are migrated to a new version",
-          "incident_id": "9dmys14yqpx4",
-          "created_at": "2022-09-15T21:14:08.690Z",
-          "updated_at": "2022-09-15T21:14:08.690Z",
-          "display_at": "2022-09-15T21:14:08.690Z",
-          "affected_components": [
-            {
-              "code": "h49h85c2xwcr",
-              "name": "VMware Private Cloud || RBX - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "VMware Private Cloud || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "4lw2d55nypyj",
-              "name": "VMware Private Cloud || SBG - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "n50qxz88zcfk",
-              "name": "VMware Private Cloud || SBG - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4lw2d55nypyj",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.653Z",
-          "updated_at": "2022-09-15T15:41:54.820Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2022-09-15T15:41:54.806Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "n50qxz88zcfk",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:08.302Z",
-          "updated_at": "2022-06-21T14:31:15.044Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-08-18T03:11:47.732Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-19T06:00:00.000Z",
-      "scheduled_until": "2022-09-23T16:00:00.000Z"
-    },
-    {
-      "id": "s8cwc2n4yqym",
-      "name": "[SBG2A-RBX1A][Hosted Private Cloud] - SecNumCloud - Host upgrade",
-      "status": "scheduled",
-      "created_at": "2022-09-15T21:00:37.996Z",
-      "updated_at": "2022-09-15T21:00:38.092Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/26tf3l9mcr8l",
-      "started_at": "2022-09-15T21:00:37.982Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "t6xcbk3d1q76",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2022 06:00 UTC\n<b>End time :</b> 23/09/2022 16:00 UTC\n<b>Service impact :</b> Builds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)\n<b>Service improvement  :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility and also due to the CVE.",
-          "incident_id": "s8cwc2n4yqym",
-          "created_at": "2022-09-15T21:00:38.088Z",
-          "updated_at": "2022-09-15T21:00:38.088Z",
-          "display_at": "2022-09-15T21:00:38.088Z",
-          "affected_components": [
-            {
-              "code": "h49h85c2xwcr",
-              "name": "VMware Private Cloud || RBX - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "4lw2d55nypyj",
-              "name": "VMware Private Cloud || SBG - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4lw2d55nypyj",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.653Z",
-          "updated_at": "2022-09-15T15:41:54.820Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2022-09-15T15:41:54.806Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-19T06:00:00.000Z",
-      "scheduled_until": "2022-09-23T16:00:00.000Z"
     },
     {
       "id": "37ckj31pqh63",
