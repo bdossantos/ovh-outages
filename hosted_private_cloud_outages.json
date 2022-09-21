@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-21T18:23:55.201Z"
+    "updated_at": "2022-09-21T20:17:26.126Z"
   },
   "components": [
     {
@@ -2133,10 +2133,10 @@
   "scheduled_maintenances": [
     {
       "id": "rfjnw48k7scp",
-      "name": "[RBX7][Network] - TOR device operation",
+      "name": "[RBX7][Network] - Network device operation",
       "status": "scheduled",
       "created_at": "2022-09-14T08:02:37.087Z",
-      "updated_at": "2022-09-14T08:03:15.265Z",
+      "updated_at": "2022-09-21T20:17:26.121Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2184,6 +2184,81 @@
       ],
       "scheduled_for": "2022-09-22T04:00:00.000Z",
       "scheduled_until": "2022-09-22T07:00:00.000Z"
+    },
+    {
+      "id": "fg73zl84369t",
+      "name": "[RBX1A-SBG2A][Network] - SecNumCloud - hosts upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-21T17:39:58.319Z",
+      "updated_at": "2022-09-21T17:39:58.384Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w62n9yb5mxrf",
+      "started_at": "2022-09-21T17:39:58.310Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "knt6ndry0xdy",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> hosts rebooted\n<b>Service improvement :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)",
+          "incident_id": "fg73zl84369t",
+          "created_at": "2022-09-21T17:39:58.382Z",
+          "updated_at": "2022-09-21T17:39:58.382Z",
+          "display_at": "2022-09-21T17:39:58.382Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2022-09-19T06:01:37.337Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2022-09-20T11:08:42.316Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-26T06:00:00.000Z",
+      "scheduled_until": "2022-09-30T16:00:00.000Z"
     },
     {
       "id": "hd0lxn7vfc4g",
@@ -2261,38 +2336,38 @@
       "scheduled_until": "2022-09-30T16:00:00.000Z"
     },
     {
-      "id": "fg73zl84369t",
-      "name": "[RBX1A-SBG2A][Network] - SecNumCloud - hosts upgrade",
+      "id": "br9cxsbhj7g2",
+      "name": "[SBG2A-RBX1A][VMwarePrivateCloud] - SecNumCloud - VMware NSX operation",
       "status": "scheduled",
-      "created_at": "2022-09-21T17:39:58.319Z",
-      "updated_at": "2022-09-21T17:39:58.384Z",
+      "created_at": "2022-09-21T16:20:55.115Z",
+      "updated_at": "2022-09-21T16:20:55.168Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/w62n9yb5mxrf",
-      "started_at": "2022-09-21T17:39:58.310Z",
+      "shortlink": "https://stspg.io/j1qm95zr8gj9",
+      "started_at": "2022-09-21T16:20:55.108Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "knt6ndry0xdy",
+          "id": "fwgp2h13nh0q",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> hosts rebooted\n<b>Service improvement :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)",
-          "incident_id": "fg73zl84369t",
-          "created_at": "2022-09-21T17:39:58.382Z",
-          "updated_at": "2022-09-21T17:39:58.382Z",
-          "display_at": "2022-09-21T17:39:58.382Z",
+          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> Hosts will be put into maintenance mode.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for VMware NSX related product.",
+          "incident_id": "br9cxsbhj7g2",
+          "created_at": "2022-09-21T16:20:55.166Z",
+          "updated_at": "2022-09-21T16:20:55.166Z",
+          "display_at": "2022-09-21T16:20:55.166Z",
           "affected_components": [
             {
-              "code": "h49h85c2xwcr",
-              "name": "VMware Private Cloud || RBX - Compute",
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             },
             {
-              "code": "4lw2d55nypyj",
-              "name": "VMware Private Cloud || SBG - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "nn6zpzd8g3fs",
+              "name": "VMware Private Cloud || SBG - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -2302,31 +2377,31 @@
       ],
       "components": [
         {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
+          "id": "nn6zpzd8g3fs",
+          "name": "Management plane",
           "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2022-09-19T06:01:37.337Z",
-          "position": 3,
+          "created_at": "2021-07-21T08:41:07.087Z",
+          "updated_at": "2022-09-19T06:01:36.756Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
+          "group_id": "ffzs9mslnm1g",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         },
         {
-          "id": "4lw2d55nypyj",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.653Z",
-          "updated_at": "2022-09-20T11:08:42.316Z",
-          "position": 3,
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2022-09-19T06:01:36.793Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
+          "group_id": "57t55jp0633h",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -2409,81 +2484,6 @@
       ],
       "scheduled_for": "2022-09-26T06:00:00.000Z",
       "scheduled_until": "2022-09-28T16:00:00.000Z"
-    },
-    {
-      "id": "br9cxsbhj7g2",
-      "name": "[SBG2A-RBX1A][VMwarePrivateCloud] - SecNumCloud - VMware NSX operation",
-      "status": "scheduled",
-      "created_at": "2022-09-21T16:20:55.115Z",
-      "updated_at": "2022-09-21T16:20:55.168Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j1qm95zr8gj9",
-      "started_at": "2022-09-21T16:20:55.108Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "fwgp2h13nh0q",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> Hosts will be put into maintenance mode.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for VMware NSX related product.",
-          "incident_id": "br9cxsbhj7g2",
-          "created_at": "2022-09-21T16:20:55.166Z",
-          "updated_at": "2022-09-21T16:20:55.166Z",
-          "display_at": "2022-09-21T16:20:55.166Z",
-          "affected_components": [
-            {
-              "code": "r0gb2v5791yj",
-              "name": "VMware Private Cloud || RBX - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "nn6zpzd8g3fs",
-              "name": "VMware Private Cloud || SBG - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nn6zpzd8g3fs",
-          "name": "Management plane",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:41:07.087Z",
-          "updated_at": "2022-09-19T06:01:36.756Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r0gb2v5791yj",
-          "name": "Management plane",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2022-09-19T06:01:36.793Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-26T06:00:00.000Z",
-      "scheduled_until": "2022-09-30T16:00:00.000Z"
     },
     {
       "id": "mkcn621swzn7",
