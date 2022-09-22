@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-22T14:03:51.549Z"
+    "updated_at": "2022-09-22T17:30:23.418Z"
   },
   "components": [
     {
@@ -38,6 +38,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "66ctp89pwlcd",
+      "name": "GRA1",
+      "status": "under_maintenance",
+      "created_at": "2021-11-10T14:20:37.816Z",
+      "updated_at": "2022-09-22T17:26:36.082Z",
+      "position": 1,
+      "description": null,
+      "showcase": false,
+      "start_date": "2021-11-10",
+      "group_id": "cxhdwyc4lvgf",
+      "page_id": "r3y8hrtg97vy",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "l38v4l1b1vt8",
       "name": "ERI1",
       "status": "operational",
@@ -48,21 +63,6 @@
       "showcase": false,
       "start_date": "2021-11-10",
       "group_id": "sdpm85zsx4w3",
-      "page_id": "r3y8hrtg97vy",
-      "group": false,
-      "only_show_if_degraded": false
-    },
-    {
-      "id": "66ctp89pwlcd",
-      "name": "GRA1",
-      "status": "operational",
-      "created_at": "2021-11-10T14:20:37.816Z",
-      "updated_at": "2022-09-22T07:49:05.046Z",
-      "position": 1,
-      "description": null,
-      "showcase": false,
-      "start_date": "2021-11-10",
-      "group_id": "cxhdwyc4lvgf",
       "page_id": "r3y8hrtg97vy",
       "group": false,
       "only_show_if_degraded": false
@@ -338,7 +338,7 @@
     {
       "id": "cxhdwyc4lvgf",
       "name": "Infrastructure || GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:40.180Z",
       "updated_at": "2022-05-20T08:40:50.176Z",
       "position": 4,
@@ -718,7 +718,7 @@
       "name": "[P19][Network] - Network Maintenance Notification",
       "status": "scheduled",
       "created_at": "2022-09-21T22:20:49.035Z",
-      "updated_at": "2022-09-21T22:20:49.093Z",
+      "updated_at": "2022-09-22T17:30:23.407Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -726,6 +726,19 @@
       "started_at": "2022-09-21T22:20:49.030Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "c35zzmxd96s4",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "v2kd03b25b0p",
+          "created_at": "2022-09-22T17:30:23.256Z",
+          "updated_at": "2022-09-22T17:30:23.256Z",
+          "display_at": "2022-09-22T17:30:23.256Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "bdtykqyb86qz",
           "status": "scheduled",
@@ -913,9 +926,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-09-22T07:49:05.046Z",
+          "updated_at": "2022-09-22T17:26:36.082Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2624,6 +2637,80 @@
       ],
       "scheduled_for": "2022-12-01T00:00:00.000Z",
       "scheduled_until": "2022-12-01T03:00:00.000Z"
+    },
+    {
+      "id": "q4cdblr6dy0j",
+      "name": "[GRA1][Cooling System] - G106A07",
+      "status": "in_progress",
+      "created_at": "2022-09-22T17:20:49.903Z",
+      "updated_at": "2022-09-22T17:26:36.519Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hqhsjm62yj0t",
+      "started_at": "2022-09-22T17:20:49.894Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "hg2vnvr25rsy",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "q4cdblr6dy0j",
+          "created_at": "2022-09-22T17:26:36.516Z",
+          "updated_at": "2022-09-22T17:26:36.516Z",
+          "display_at": "2022-09-22T17:26:36.516Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j1kl5jmhqs04",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/09/2022 12:30UTC\n<b>End time :</b> 23/09/2022 14:30UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
+          "incident_id": "q4cdblr6dy0j",
+          "created_at": "2022-09-22T17:20:49.979Z",
+          "updated_at": "2022-09-22T17:20:49.979Z",
+          "display_at": "2022-09-22T17:20:49.979Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-09-22T17:26:36.082Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-22T17:25:00.000Z",
+      "scheduled_until": "2022-09-23T15:25:00.000Z"
     },
     {
       "id": "79lh9d1f770d",
