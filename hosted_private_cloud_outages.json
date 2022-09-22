@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-22T21:27:24.621Z"
+    "updated_at": "2022-09-22T21:56:34.786Z"
   },
   "components": [
     {
@@ -2132,38 +2132,32 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "br9cxsbhj7g2",
-      "name": "[SBG2A-RBX1A][VMwarePrivateCloud] - SecNumCloud - VMware NSX operation",
+      "id": "lhzhr2l4293h",
+      "name": "[RBX1A][Network] - SecNumCloud - Network device operation",
       "status": "scheduled",
-      "created_at": "2022-09-21T16:20:55.115Z",
-      "updated_at": "2022-09-21T16:20:55.168Z",
+      "created_at": "2022-09-22T21:39:58.399Z",
+      "updated_at": "2022-09-22T21:39:58.456Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/j1qm95zr8gj9",
-      "started_at": "2022-09-21T16:20:55.108Z",
+      "shortlink": "https://stspg.io/y3fybj2rkh2j",
+      "started_at": "2022-09-22T21:39:58.391Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "fwgp2h13nh0q",
+          "id": "66lc4hrt4ckd",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> Hosts will be put into maintenance mode.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for VMware NSX related product.",
-          "incident_id": "br9cxsbhj7g2",
-          "created_at": "2022-09-21T16:20:55.166Z",
-          "updated_at": "2022-09-21T16:20:55.166Z",
-          "display_at": "2022-09-21T16:20:55.166Z",
+          "body": "<b>Start time:</b> 26/09/2022 04:00 UTC\n<b>End time:</b> 26/09/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "lhzhr2l4293h",
+          "created_at": "2022-09-22T21:39:58.453Z",
+          "updated_at": "2022-09-22T21:39:58.453Z",
+          "display_at": "2022-09-22T21:39:58.453Z",
           "affected_components": [
             {
-              "code": "r0gb2v5791yj",
-              "name": "VMware Private Cloud || RBX - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "nn6zpzd8g3fs",
-              "name": "VMware Private Cloud || SBG - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -2173,27 +2167,12 @@
       ],
       "components": [
         {
-          "id": "nn6zpzd8g3fs",
-          "name": "Management plane",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:41:07.087Z",
-          "updated_at": "2022-09-19T06:01:36.756Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r0gb2v5791yj",
-          "name": "Management plane",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2022-09-19T06:01:36.793Z",
-          "position": 2,
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:43:18.269Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
@@ -2203,8 +2182,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-09-26T06:00:00.000Z",
-      "scheduled_until": "2022-09-30T16:00:00.000Z"
+      "scheduled_for": "2022-09-26T04:00:00.000Z",
+      "scheduled_until": "2022-09-26T07:00:00.000Z"
     },
     {
       "id": "hd0lxn7vfc4g",
@@ -2273,6 +2252,81 @@
           "showcase": false,
           "start_date": "2021-07-21",
           "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-26T06:00:00.000Z",
+      "scheduled_until": "2022-09-30T16:00:00.000Z"
+    },
+    {
+      "id": "fg73zl84369t",
+      "name": "[RBX1A-SBG2A][Network] - SecNumCloud - hosts upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-21T17:39:58.319Z",
+      "updated_at": "2022-09-21T17:39:58.384Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w62n9yb5mxrf",
+      "started_at": "2022-09-21T17:39:58.310Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "knt6ndry0xdy",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> hosts rebooted\n<b>Service improvement :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)",
+          "incident_id": "fg73zl84369t",
+          "created_at": "2022-09-21T17:39:58.382Z",
+          "updated_at": "2022-09-21T17:39:58.382Z",
+          "display_at": "2022-09-21T17:39:58.382Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2022-09-19T06:01:37.337Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2022-09-20T11:08:42.316Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -2399,6 +2453,81 @@
       "scheduled_until": "2022-09-30T16:00:00.000Z"
     },
     {
+      "id": "br9cxsbhj7g2",
+      "name": "[SBG2A-RBX1A][VMwarePrivateCloud] - SecNumCloud - VMware NSX operation",
+      "status": "scheduled",
+      "created_at": "2022-09-21T16:20:55.115Z",
+      "updated_at": "2022-09-21T16:20:55.168Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j1qm95zr8gj9",
+      "started_at": "2022-09-21T16:20:55.108Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "fwgp2h13nh0q",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> Hosts will be put into maintenance mode.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for VMware NSX related product.",
+          "incident_id": "br9cxsbhj7g2",
+          "created_at": "2022-09-21T16:20:55.166Z",
+          "updated_at": "2022-09-21T16:20:55.166Z",
+          "display_at": "2022-09-21T16:20:55.166Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "nn6zpzd8g3fs",
+              "name": "VMware Private Cloud || SBG - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nn6zpzd8g3fs",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:07.087Z",
+          "updated_at": "2022-09-19T06:01:36.756Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2022-09-19T06:01:36.793Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-26T06:00:00.000Z",
+      "scheduled_until": "2022-09-30T16:00:00.000Z"
+    },
+    {
       "id": "nbxghkrx46jc",
       "name": "[RBX1A][HostedPrivateCloud] - SecNumCloud - Veeam Backup Managed operation",
       "status": "scheduled",
@@ -2474,81 +2603,6 @@
       "scheduled_until": "2022-09-28T16:00:00.000Z"
     },
     {
-      "id": "fg73zl84369t",
-      "name": "[RBX1A-SBG2A][Network] - SecNumCloud - hosts upgrade",
-      "status": "scheduled",
-      "created_at": "2022-09-21T17:39:58.319Z",
-      "updated_at": "2022-09-21T17:39:58.384Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w62n9yb5mxrf",
-      "started_at": "2022-09-21T17:39:58.310Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "knt6ndry0xdy",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC\n<b>End time :</b> 30/09/2022 16:00 UTC\n<b>Service impact :</b> hosts rebooted\n<b>Service improvement :</b> All hosts have to be upgraded frequently due to the VMware's matrix of compatibility.\nBuilds will be pushed to the host, put in maintenance mode, all Virtual machines will be moved with Vmotion and last hosts will be rebooted .\nIf we meet an issue during the reboot of the host , it will be replaced. (20 min)",
-          "incident_id": "fg73zl84369t",
-          "created_at": "2022-09-21T17:39:58.382Z",
-          "updated_at": "2022-09-21T17:39:58.382Z",
-          "display_at": "2022-09-21T17:39:58.382Z",
-          "affected_components": [
-            {
-              "code": "h49h85c2xwcr",
-              "name": "VMware Private Cloud || RBX - Compute",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "4lw2d55nypyj",
-              "name": "VMware Private Cloud || SBG - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2022-09-19T06:01:37.337Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "4lw2d55nypyj",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.653Z",
-          "updated_at": "2022-09-20T11:08:42.316Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-26T06:00:00.000Z",
-      "scheduled_until": "2022-09-30T16:00:00.000Z"
-    },
-    {
       "id": "30dw80df07nf",
       "name": "[SBG2A][Network] - SecNumCloud - Network device operation",
       "status": "scheduled",
@@ -2621,6 +2675,60 @@
       ],
       "scheduled_for": "2022-09-26T08:00:00.000Z",
       "scheduled_until": "2022-09-26T09:00:00.000Z"
+    },
+    {
+      "id": "x1bqz0vl7x81",
+      "name": "[SBG2A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:43:03.087Z",
+      "updated_at": "2022-09-22T21:43:03.153Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ybc8q6y7hz0q",
+      "started_at": "2022-09-22T21:43:03.079Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "m3s3lj7lrjtj",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 27/09/2022 04:00 UTC\n<b>End time:</b> 27/09/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "x1bqz0vl7x81",
+          "created_at": "2022-09-22T21:43:03.150Z",
+          "updated_at": "2022-09-22T21:43:03.150Z",
+          "display_at": "2022-09-22T21:43:03.150Z",
+          "affected_components": [
+            {
+              "code": "jxzhsw05tc07",
+              "name": "VMware Private Cloud || SBG - Network",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jxzhsw05tc07",
+          "name": "Network",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:06.351Z",
+          "updated_at": "2022-09-19T06:01:40.230Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-27T04:00:00.000Z",
+      "scheduled_until": "2022-09-27T07:00:00.000Z"
     },
     {
       "id": "wn7c4nvj0g7r",
@@ -2924,6 +3032,222 @@
       "scheduled_until": "2022-10-03T04:00:00.000Z"
     },
     {
+      "id": "9ptmxfscpsv3",
+      "name": "[RBX1A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:48:48.576Z",
+      "updated_at": "2022-09-22T21:48:48.629Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gqsynhxg98mc",
+      "started_at": "2022-09-22T21:48:48.569Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "d1hdndm018kp",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 03/10/2022 04:00 UTC\n<b>End time:</b> 03/10/2022 06:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "9ptmxfscpsv3",
+          "created_at": "2022-09-22T21:48:48.626Z",
+          "updated_at": "2022-09-22T21:48:48.626Z",
+          "display_at": "2022-09-22T21:48:48.626Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:43:18.269Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-03T04:00:00.000Z",
+      "scheduled_until": "2022-10-03T06:00:00.000Z"
+    },
+    {
+      "id": "0n73smprxw02",
+      "name": "[SBG2A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:46:20.307Z",
+      "updated_at": "2022-09-22T21:46:20.380Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8pbw6rh6mtrg",
+      "started_at": "2022-09-22T21:46:20.298Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "sbhp9jrcd06d",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 03/10/2022 04:00 UTC\n<b>End time:</b> 03/10/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "0n73smprxw02",
+          "created_at": "2022-09-22T21:46:20.376Z",
+          "updated_at": "2022-09-22T21:46:20.376Z",
+          "display_at": "2022-09-22T21:46:20.376Z",
+          "affected_components": [
+            {
+              "code": "jxzhsw05tc07",
+              "name": "VMware Private Cloud || SBG - Network",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jxzhsw05tc07",
+          "name": "Network",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:06.351Z",
+          "updated_at": "2022-09-19T06:01:40.230Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-03T04:00:00.000Z",
+      "scheduled_until": "2022-10-03T09:00:00.000Z"
+    },
+    {
+      "id": "9ygych2yxf2l",
+      "name": "[RBX1A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:51:19.003Z",
+      "updated_at": "2022-09-22T21:51:19.060Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jcljtzbrq5m0",
+      "started_at": "2022-09-22T21:51:18.996Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "yx03rb9pp2rh",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 03/10/2022 06:00 UTC\n<b>End time:</b> 03/10/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "9ygych2yxf2l",
+          "created_at": "2022-09-22T21:51:19.057Z",
+          "updated_at": "2022-09-22T21:51:19.057Z",
+          "display_at": "2022-09-22T21:51:19.057Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:43:18.269Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-03T06:00:00.000Z",
+      "scheduled_until": "2022-10-03T09:00:00.000Z"
+    },
+    {
+      "id": "20nynps4tc6d",
+      "name": "[RBX1A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:54:00.565Z",
+      "updated_at": "2022-09-22T21:54:00.622Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/132qm043l4jm",
+      "started_at": "2022-09-22T21:54:00.557Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "x9pnczz42xj5",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 04/10/2022 04:00 UTC\n<b>End time:</b> 04/10/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "20nynps4tc6d",
+          "created_at": "2022-09-22T21:54:00.619Z",
+          "updated_at": "2022-09-22T21:54:00.619Z",
+          "display_at": "2022-09-22T21:54:00.619Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:43:18.269Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-04T04:00:00.000Z",
+      "scheduled_until": "2022-10-04T09:00:00.000Z"
+    },
+    {
       "id": "6t85jl6hx7gl",
       "name": "[RBX8][Hosted Private Cloud]  Switch Upgrade",
       "status": "scheduled",
@@ -3030,6 +3354,60 @@
       ],
       "scheduled_for": "2022-10-05T04:00:00.000Z",
       "scheduled_until": "2022-10-05T07:00:00.000Z"
+    },
+    {
+      "id": "6q23vt9pqms9",
+      "name": "[SBG2A][Network] - SecNumCloud - Network device operation",
+      "status": "scheduled",
+      "created_at": "2022-09-22T21:56:34.727Z",
+      "updated_at": "2022-09-22T21:56:34.783Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/syntw72smjwp",
+      "started_at": "2022-09-22T21:56:34.719Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "hpyz6058gjn9",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 05/10/2022 04:00 UTC\n<b>End time:</b> 05/10/2022 09:00 UTC\n<b>Service impact:</b> None\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "6q23vt9pqms9",
+          "created_at": "2022-09-22T21:56:34.780Z",
+          "updated_at": "2022-09-22T21:56:34.780Z",
+          "display_at": "2022-09-22T21:56:34.780Z",
+          "affected_components": [
+            {
+              "code": "jxzhsw05tc07",
+              "name": "VMware Private Cloud || SBG - Network",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jxzhsw05tc07",
+          "name": "Network",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:06.351Z",
+          "updated_at": "2022-09-19T06:01:40.230Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-05T04:00:00.000Z",
+      "scheduled_until": "2022-10-05T09:00:00.000Z"
     },
     {
       "id": "jcf1y8n2wzfb",
