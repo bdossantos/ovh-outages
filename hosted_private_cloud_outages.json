@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-22T04:00:48.335Z"
+    "updated_at": "2022-09-22T07:41:03.408Z"
   },
   "components": [
     {
@@ -406,9 +406,9 @@
     {
       "id": "nr0vltd8cnk0",
       "name": "Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:45.110Z",
-      "updated_at": "2022-09-22T04:00:48.211Z",
+      "updated_at": "2022-09-22T07:41:03.363Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2132,36 +2132,83 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "nbxghkrx46jc",
-      "name": "[RBX1A][HostedPrivateCloud] - SecNumCloud - Veeam Backup Managed operation",
+      "id": "rfjnw48k7scp",
+      "name": "[RBX7][Network] - Network device operation",
       "status": "scheduled",
-      "created_at": "2022-09-21T16:34:38.665Z",
-      "updated_at": "2022-09-21T16:34:38.719Z",
+      "created_at": "2022-09-14T08:02:37.087Z",
+      "updated_at": "2022-09-22T07:41:03.400Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/cq1k3f7pjmkl",
-      "started_at": "2022-09-21T16:34:38.658Z",
+      "shortlink": "https://stspg.io/z3hp66f7v7ch",
+      "started_at": "2022-09-14T08:02:37.079Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "9c648b9tcjr1",
+          "id": "lv3zwtdbvjg9",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC \n<b>End time :</b> 28/09/2022 16:00 UTC \n<b>Service impact :</b> Backup and restore actions won't be available during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for Veeam the Backup Managed solution.",
-          "incident_id": "nbxghkrx46jc",
-          "created_at": "2022-09-21T16:34:38.717Z",
-          "updated_at": "2022-09-21T16:34:38.717Z",
-          "display_at": "2022-09-21T16:34:38.717Z",
+          "body": "Due to an imponderable we have to postpone the intervention to finish it.\n We will publish a next update to indicate the new dates",
+          "incident_id": "rfjnw48k7scp",
+          "created_at": "2022-09-22T07:41:03.397Z",
+          "updated_at": "2022-09-22T07:41:03.397Z",
+          "display_at": "2022-09-22T07:41:03.397Z",
           "affected_components": [
             {
-              "code": "rq96v37xyqs3",
-              "name": "Veeam || RBX - Management plane",
-              "old_status": "operational",
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "under_maintenance",
               "new_status": "operational"
-            },
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7r76sdshwtc5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rfjnw48k7scp",
+          "created_at": "2022-09-22T04:00:48.310Z",
+          "updated_at": "2022-09-22T04:00:48.310Z",
+          "display_at": "2022-09-22T04:00:48.310Z",
+          "affected_components": [
             {
-              "code": "6wt6hm8214pj",
-              "name": "Backup as a Service || Veeam Backup Managed",
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "b0q75ng2kh6g",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rfjnw48k7scp",
+          "created_at": "2022-09-22T03:00:33.475Z",
+          "updated_at": "2022-09-22T03:00:33.475Z",
+          "display_at": "2022-09-22T03:00:33.475Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y00yc59dtmns",
+          "status": "scheduled",
+          "body": "<b>Start time:</b> 22/09/2022 04:00 UTC\n<b>End time:</b> 22/09/2022 07:00 UTC\n<b>Service impact:</b> A few seconds of Input/Output freeze when the service will do a switchover (2 times)\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
+          "incident_id": "rfjnw48k7scp",
+          "created_at": "2022-09-14T08:02:37.237Z",
+          "updated_at": "2022-09-14T08:03:09.263Z",
+          "display_at": "2022-09-14T08:02:37.237Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2173,38 +2220,23 @@
       ],
       "components": [
         {
-          "id": "rq96v37xyqs3",
-          "name": "Management plane",
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
           "status": "operational",
-          "created_at": "2021-07-21T08:42:58.741Z",
-          "updated_at": "2022-09-01T14:52:46.051Z",
-          "position": 2,
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:41:03.363Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "xd6whl7x48n9",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "6wt6hm8214pj",
-          "name": "Backup as a Service || Veeam Backup Managed",
-          "status": "operational",
-          "created_at": "2021-07-21T08:43:39.002Z",
-          "updated_at": "2022-01-20T14:26:04.690Z",
-          "position": 26,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": null,
+          "group_id": "57t55jp0633h",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-09-26T06:00:00.000Z",
-      "scheduled_until": "2022-09-28T16:00:00.000Z"
+      "scheduled_for": "2022-09-22T04:00:00.000Z",
+      "scheduled_until": "2022-09-22T07:00:00.000Z"
     },
     {
       "id": "fg73zl84369t",
@@ -2355,6 +2387,81 @@
       ],
       "scheduled_for": "2022-09-26T06:00:00.000Z",
       "scheduled_until": "2022-09-30T16:00:00.000Z"
+    },
+    {
+      "id": "nbxghkrx46jc",
+      "name": "[RBX1A][HostedPrivateCloud] - SecNumCloud - Veeam Backup Managed operation",
+      "status": "scheduled",
+      "created_at": "2022-09-21T16:34:38.665Z",
+      "updated_at": "2022-09-21T16:34:38.719Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cq1k3f7pjmkl",
+      "started_at": "2022-09-21T16:34:38.658Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "9c648b9tcjr1",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 26/09/2022 06:00 UTC \n<b>End time :</b> 28/09/2022 16:00 UTC \n<b>Service impact :</b> Backup and restore actions won't be available during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling an update for Veeam the Backup Managed solution.",
+          "incident_id": "nbxghkrx46jc",
+          "created_at": "2022-09-21T16:34:38.717Z",
+          "updated_at": "2022-09-21T16:34:38.717Z",
+          "display_at": "2022-09-21T16:34:38.717Z",
+          "affected_components": [
+            {
+              "code": "rq96v37xyqs3",
+              "name": "Veeam || RBX - Management plane",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "6wt6hm8214pj",
+              "name": "Backup as a Service || Veeam Backup Managed",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rq96v37xyqs3",
+          "name": "Management plane",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:58.741Z",
+          "updated_at": "2022-09-01T14:52:46.051Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "xd6whl7x48n9",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "6wt6hm8214pj",
+          "name": "Backup as a Service || Veeam Backup Managed",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:39.002Z",
+          "updated_at": "2022-01-20T14:26:04.690Z",
+          "position": 26,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-09-26T06:00:00.000Z",
+      "scheduled_until": "2022-09-28T16:00:00.000Z"
     },
     {
       "id": "br9cxsbhj7g2",
@@ -2660,9 +2767,9 @@
         {
           "id": "nr0vltd8cnk0",
           "name": "Network",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-09-22T04:00:48.211Z",
+          "updated_at": "2022-09-22T07:41:03.363Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2924,6 +3031,60 @@
       "scheduled_until": "2022-10-03T04:00:00.000Z"
     },
     {
+      "id": "6t85jl6hx7gl",
+      "name": "[RBX8][Hosted Private Cloud]  Switch Upgrade",
+      "status": "scheduled",
+      "created_at": "2022-09-15T21:31:44.180Z",
+      "updated_at": "2022-09-15T21:31:44.251Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sn32sr1sh54l",
+      "started_at": "2022-09-15T21:31:44.173Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "z0zw488xys90",
+          "status": "scheduled",
+          "body": "<b>Start time :</b>  05/10/2022 04:00 UTC\n<b>End time :</b> 05/10/2022 07:00 UTC\n<b>Service impact :</b> Our teams will carry out an update operation on storage equipment. This update will be performed first on the nodes in standby. Once the update is complete, a switchover will be performed to update the remaining devices. Expect a few seconds freeze of the inputs/outputs during the switchover.\n<b>Service improvement  :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will be doing a maintenance on a network equipment",
+          "incident_id": "6t85jl6hx7gl",
+          "created_at": "2022-09-15T21:31:44.248Z",
+          "updated_at": "2022-09-15T21:31:44.248Z",
+          "display_at": "2022-09-15T21:31:44.248Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2022-09-22T07:41:03.363Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-05T04:00:00.000Z",
+      "scheduled_until": "2022-10-05T07:00:00.000Z"
+    },
+    {
       "id": "lnxr64tx9pvt",
       "name": "[BHS7][Hosted Private Cloud] - Network & servers operation",
       "status": "scheduled",
@@ -2976,147 +3137,6 @@
       ],
       "scheduled_for": "2022-10-05T04:00:00.000Z",
       "scheduled_until": "2022-10-05T07:00:00.000Z"
-    },
-    {
-      "id": "6t85jl6hx7gl",
-      "name": "[RBX8][Hosted Private Cloud]  Switch Upgrade",
-      "status": "scheduled",
-      "created_at": "2022-09-15T21:31:44.180Z",
-      "updated_at": "2022-09-15T21:31:44.251Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/sn32sr1sh54l",
-      "started_at": "2022-09-15T21:31:44.173Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "z0zw488xys90",
-          "status": "scheduled",
-          "body": "<b>Start time :</b>  05/10/2022 04:00 UTC\n<b>End time :</b> 05/10/2022 07:00 UTC\n<b>Service impact :</b> Our teams will carry out an update operation on storage equipment. This update will be performed first on the nodes in standby. Once the update is complete, a switchover will be performed to update the remaining devices. Expect a few seconds freeze of the inputs/outputs during the switchover.\n<b>Service improvement  :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will be doing a maintenance on a network equipment",
-          "incident_id": "6t85jl6hx7gl",
-          "created_at": "2022-09-15T21:31:44.248Z",
-          "updated_at": "2022-09-15T21:31:44.248Z",
-          "display_at": "2022-09-15T21:31:44.248Z",
-          "affected_components": [
-            {
-              "code": "nr0vltd8cnk0",
-              "name": "VMware Private Cloud || RBX - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nr0vltd8cnk0",
-          "name": "Network",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-09-22T04:00:48.211Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-10-05T04:00:00.000Z",
-      "scheduled_until": "2022-10-05T07:00:00.000Z"
-    },
-    {
-      "id": "rfjnw48k7scp",
-      "name": "[RBX7][Network] - Network device operation",
-      "status": "in_progress",
-      "created_at": "2022-09-14T08:02:37.087Z",
-      "updated_at": "2022-09-22T04:00:48.319Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/z3hp66f7v7ch",
-      "started_at": "2022-09-14T08:02:37.079Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "7r76sdshwtc5",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "rfjnw48k7scp",
-          "created_at": "2022-09-22T04:00:48.310Z",
-          "updated_at": "2022-09-22T04:00:48.310Z",
-          "display_at": "2022-09-22T04:00:48.310Z",
-          "affected_components": [
-            {
-              "code": "nr0vltd8cnk0",
-              "name": "VMware Private Cloud || RBX - Network",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "b0q75ng2kh6g",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rfjnw48k7scp",
-          "created_at": "2022-09-22T03:00:33.475Z",
-          "updated_at": "2022-09-22T03:00:33.475Z",
-          "display_at": "2022-09-22T03:00:33.475Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "y00yc59dtmns",
-          "status": "scheduled",
-          "body": "<b>Start time:</b> 22/09/2022 04:00 UTC\n<b>End time:</b> 22/09/2022 07:00 UTC\n<b>Service impact:</b> A few seconds of Input/Output freeze when the service will do a switchover (2 times)\n<b>Service improvement:</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Hosted Private Cloud products to maintain consistency.",
-          "incident_id": "rfjnw48k7scp",
-          "created_at": "2022-09-14T08:02:37.237Z",
-          "updated_at": "2022-09-14T08:03:09.263Z",
-          "display_at": "2022-09-14T08:02:37.237Z",
-          "affected_components": [
-            {
-              "code": "nr0vltd8cnk0",
-              "name": "VMware Private Cloud || RBX - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "nr0vltd8cnk0",
-          "name": "Network",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-09-22T04:00:48.211Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-09-22T04:00:00.000Z",
-      "scheduled_until": "2022-09-22T07:00:00.000Z"
     },
     {
       "id": "ysbx59yppmrw",
@@ -3549,9 +3569,9 @@
         {
           "id": "nr0vltd8cnk0",
           "name": "Network",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2022-09-22T04:00:48.211Z",
+          "updated_at": "2022-09-22T07:41:03.363Z",
           "position": 1,
           "description": null,
           "showcase": false,
