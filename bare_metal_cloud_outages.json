@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-09-30T11:52:00.094Z"
+    "updated_at": "2022-09-30T16:47:00.094Z"
   },
   "components": [
     {
@@ -1212,7 +1212,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1236,16 +1236,16 @@
       ]
     },
     {
-      "id": "ndg1yh0x4lpd",
+      "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
-      "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2022-09-30T07:12:10.724Z",
+      "status": "degraded_performance",
+      "created_at": "2021-07-09T07:34:52.401Z",
+      "updated_at": "2022-09-30T16:47:00.029Z",
       "position": 5,
       "description": null,
       "showcase": false,
       "start_date": "2021-07-09",
-      "group_id": "qbnk4c01glsl",
+      "group_id": "vp6404b62nhf",
       "page_id": "1qzzx4z9jvmv",
       "group": false,
       "only_show_if_degraded": false
@@ -1386,16 +1386,16 @@
       "only_show_if_degraded": false
     },
     {
-      "id": "r7966tc9cpb9",
+      "id": "ndg1yh0x4lpd",
       "name": "RBX",
       "status": "operational",
-      "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2022-09-30T01:14:47.781Z",
+      "created_at": "2021-07-09T07:33:24.688Z",
+      "updated_at": "2022-09-30T07:12:10.724Z",
       "position": 5,
       "description": null,
       "showcase": false,
       "start_date": "2021-07-09",
-      "group_id": "vp6404b62nhf",
+      "group_id": "qbnk4c01glsl",
       "page_id": "1qzzx4z9jvmv",
       "group": false,
       "only_show_if_degraded": false
@@ -2206,7 +2206,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "6n4cr0l67lqt",
+      "name": "[RBX6][Network] - Rack 46L10",
+      "status": "investigating",
+      "created_at": "2022-09-30T16:46:59.990Z",
+      "updated_at": "2022-09-30T16:47:00.091Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dqcrmsldkg49",
+      "started_at": "2022-09-30T16:46:59.980Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "mkkzmmkjx25m",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 30/09/2022 16:15 UTC\n<b>Service impact :</b> public network unavailable\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
+          "incident_id": "6n4cr0l67lqt",
+          "created_at": "2022-09-30T16:47:00.088Z",
+          "updated_at": "2022-09-30T16:47:00.088Z",
+          "display_at": "2022-09-30T16:47:00.088Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2022-09-30T16:47:00.029Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vtl3htn34ysq",
@@ -2462,9 +2515,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-09-30T01:14:47.781Z",
+          "updated_at": "2022-09-30T16:47:00.029Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2877,7 +2930,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
