@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-10-03T10:36:57.071Z"
+    "updated_at": "2022-10-03T10:48:00.484Z"
   },
   "components": [
     {
@@ -1492,9 +1492,9 @@
     {
       "id": "dwkwkx15h58c",
       "name": "GRA7",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:36:00.118Z",
-      "updated_at": "2022-10-03T09:39:36.993Z",
+      "updated_at": "2022-10-03T10:48:00.418Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3723,7 +3723,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2022-04-13T13:25:21.044Z",
       "position": 22,
@@ -4171,33 +4171,96 @@
   ],
   "incidents": [
     {
-      "id": "0rkr9mf5qzg8",
-      "name": "PCI - UK1 - host1025349",
-      "status": "investigating",
-      "created_at": "2022-10-03T10:36:57.018Z",
-      "updated_at": "2022-10-03T10:36:57.069Z",
-      "monitoring_at": null,
+      "id": "jtpdz3jcfbh4",
+      "name": "[GRA7][Public Cloud] - API",
+      "status": "monitoring",
+      "created_at": "2022-10-03T09:39:36.958Z",
+      "updated_at": "2022-10-03T10:48:00.481Z",
+      "monitoring_at": "2022-10-03T10:48:00.464Z",
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/d9gs5lr9rc99",
-      "started_at": "2022-10-03T10:36:57.012Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/xyvcdzt4058q",
+      "started_at": "2022-10-03T09:39:36.950Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "qg8rgyrf0j8n",
+          "id": "2khy7fw5zf2s",
+          "status": "monitoring",
+          "body": "Our technical teams identified an incident on an internal database causing the failure within the APIs.\nAPIs are now available again.\nWe will keep the situation under observation for the next hour\nWe apologise for any inconvenience caused",
+          "incident_id": "jtpdz3jcfbh4",
+          "created_at": "2022-10-03T10:48:00.464Z",
+          "updated_at": "2022-10-03T10:48:00.464Z",
+          "display_at": "2022-10-03T10:48:00.464Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m9r6df8vwqmx",
           "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1025349.uk1.cloud.ovh.net\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n79959e7f-fadd-4978-bb05-787a5a5666e4\na05b93bc-064b-4465-b09c-b392ca77cec9\n930b3355-9dac-4da8-a768-d13eef5bf330\n8cfcc317-5185-425b-ad38-2d2debd02a20\ndb23db82-51ff-4b13-9559-6832e970a08c\n5bb04bac-bf23-4d3f-b6df-b0472cb1105d\ne758a8ac-8c9a-4f16-ac98-0fcb5853377e\nd44ad38e-6f91-4b6d-a236-a7970d2a66f9\n42fdbbc6-75d8-490e-95ef-bda4be8b1cb6\n2c63d216-a234-4692-837d-f5c430f5385d\n236f5ded-1e09-4cee-af64-0cac41313c02\n17bb2b4c-0b36-489c-b88a-9f9127b66b4c\n32114a5f-2447-46f2-b8b1-4c096c5c92c8\neaa03bd0-0d58-4ea4-801c-2f15b8bcc6f4\n5ff81a5a-e44d-4ea4-a9ae-09c10cc9863b\nfe9094e9-c2b5-46fa-b157-a26ad1558e58\n3fd83924-71ac-46d9-95fa-7fd0f93b3e9b\n305b9970-2988-4b05-87aa-f7be92d37ffe\n8856b064-538e-47ba-a78d-05dea7b5cd6b\n073a4b19-3bd2-4c5a-8453-d02240090429\n6e9b3be7-24c4-4ad6-b7e4-6ef05846de61\n2fbf029c-3d8e-4dbf-88bd-db4c19bdcfe6\n53682b60-1ba3-44ef-9374-9da1d42ae217\ne540bf2c-8e16-459a-a4a6-0ee93c863145\nb3439658-056f-4f77-b724-09631c862bf8\n9106d614-1749-4aea-84b3-620a9a758a19\nae6abf01-4688-4bd7-b35c-5ced87d85e1c\n0dc1a092-a1eb-4d8a-8501-2e76bbf6f9d1\n7f5dfdc4-3217-4270-80dd-eeac3d7a8c51\ndccb8c3e-e546-40fa-a6fe-a25372029385\n2d5cd8a0-93d2-4e7a-99f3-d2c7ae84c6db\n847e7a29-eb7a-4f5c-9271-afeda6a8418a\ncb398d66-a54b-4511-a1f9-d6cf7aaa972c\n5607e8a0-e847-40bf-ad2a-79af1e88d9c8\n462b3b3d-e2c3-44c2-99c2-473d0a2b44ed\n4d509e4c-f27a-40cb-b2e4-9977891aed42\ncabd3f78-6394-41d3-8bce-0e689c619f30\n2702e884-97e2-4f84-b316-93293b5d6782\n247a1102-d950-477b-9740-9d51499e6354\n85720e6b-4194-4a19-a3e4-c3900fce39fc\nd98e6325-7c10-4edd-8db1-b1b07fcf0c34\n494ae170-a017-4e40-87d8-6bd93df89c3a\n4fe1eeab-c68e-4c0e-a235-662bba4da57a\n6f530899-5c08-4bba-9e9d-98b592dafcf7\nfd483237-6ac2-4d70-9dc2-97ee16a75842\n1233c0be-fb6c-4612-8ecf-a5374df03622\n5503b02f-b394-4b2c-af96-a6ea2501b3db\n9e541be8-2b0a-4762-b78f-8da61b27cf58\n357dda5d-4a53-47ba-bc72-43a68f6856d8\n8ee039f0-c32b-4c7a-a926-8929ee385aac\nda54734a-ca16-44bb-8cda-a177e37af525\n1b682fed-0349-44b2-82d8-bb1ada76ec8b\n106c872d-2f89-4991-afe7-a7eb25f45944\n444cb189-dd28-4baa-ba73-893a2cb7fe22\n2af78595-2d0c-4768-8fa0-5e08fc6a7899\n1c39d5c9-1093-4795-8202-d86d77d7efad\n2423b322-6336-4eb4-8c99-834f93fc9afc\n63e632db-06b0-45e1-80d0-b4edd7adeff4\nd6db9e11-009f-4b34-96fe-ba2dd482e43c\n67254bc4-7610-451d-aca0-cbe8a0423de4\ndbad8af1-6f23-4baa-b671-87dcd011a098\nf231691c-dffd-4c0a-91c4-71bd061f662c",
-          "incident_id": "0rkr9mf5qzg8",
-          "created_at": "2022-10-03T10:36:57.066Z",
-          "updated_at": "2022-10-03T10:36:57.066Z",
-          "display_at": "2022-10-03T10:36:57.066Z",
-          "affected_components": null,
+          "body": "We also observe 500 errors in areas other than GRA7.\nWe will get back to you as soon as we have more information",
+          "incident_id": "jtpdz3jcfbh4",
+          "created_at": "2022-10-03T09:42:12.544Z",
+          "updated_at": "2022-10-03T09:42:12.544Z",
+          "display_at": "2022-10-03T09:42:12.544Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qxgzmbhrvv5f",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 03/10/2022 09:30 UTC \n<b>Service impact :</b> APIs of the public cloud offer are unreachable. VM already in operation continue to function normally\n<b>Ongoing actions :</b> Our teams investigate to determine the origin of the incident",
+          "incident_id": "jtpdz3jcfbh4",
+          "created_at": "2022-10-03T09:39:37.055Z",
+          "updated_at": "2022-10-03T09:39:37.055Z",
+          "display_at": "2022-10-03T09:39:37.055Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
+      "components": [
+        {
+          "id": "dwkwkx15h58c",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:00.118Z",
+          "updated_at": "2022-10-03T10:48:00.418Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
     },
     {
       "id": "3hk99737hjq2",
@@ -4314,78 +4377,6 @@
         }
       ],
       "components": []
-    },
-    {
-      "id": "jtpdz3jcfbh4",
-      "name": "[GRA7][Public Cloud] - API",
-      "status": "investigating",
-      "created_at": "2022-10-03T09:39:36.958Z",
-      "updated_at": "2022-10-03T09:42:12.546Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/xyvcdzt4058q",
-      "started_at": "2022-10-03T09:39:36.950Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "m9r6df8vwqmx",
-          "status": "investigating",
-          "body": "We also observe 500 errors in areas other than GRA7.\nWe will get back to you as soon as we have more information",
-          "incident_id": "jtpdz3jcfbh4",
-          "created_at": "2022-10-03T09:42:12.544Z",
-          "updated_at": "2022-10-03T09:42:12.544Z",
-          "display_at": "2022-10-03T09:42:12.544Z",
-          "affected_components": [
-            {
-              "code": "dwkwkx15h58c",
-              "name": "Compute - Instance || GRA - GRA7",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qxgzmbhrvv5f",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 03/10/2022 09:30 UTC \n<b>Service impact :</b> APIs of the public cloud offer are unreachable. VM already in operation continue to function normally\n<b>Ongoing actions :</b> Our teams investigate to determine the origin of the incident",
-          "incident_id": "jtpdz3jcfbh4",
-          "created_at": "2022-10-03T09:39:37.055Z",
-          "updated_at": "2022-10-03T09:39:37.055Z",
-          "display_at": "2022-10-03T09:39:37.055Z",
-          "affected_components": [
-            {
-              "code": "dwkwkx15h58c",
-              "name": "Compute - Instance || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dwkwkx15h58c",
-          "name": "GRA7",
-          "status": "partial_outage",
-          "created_at": "2022-04-06T09:36:00.118Z",
-          "updated_at": "2022-10-03T09:39:36.993Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xfnf56jsxk5y",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
     },
     {
       "id": "xslymrzz0175",
@@ -5033,7 +5024,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
