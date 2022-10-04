@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-10-04T09:24:14.625Z"
+    "updated_at": "2022-10-04T09:50:01.215Z"
   },
   "components": [
     {
@@ -85,7 +85,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -991,9 +991,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2022-10-04T08:33:44.766Z",
+      "updated_at": "2022-10-04T09:50:01.163Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2206,60 +2206,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "x8f65mztkv3z",
-      "name": "[GRA2][Dedicated Servers] - G233A16",
-      "status": "identified",
-      "created_at": "2022-10-04T08:33:44.728Z",
-      "updated_at": "2022-10-04T08:33:45.009Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/9gy52x1w8jdk",
-      "started_at": "2022-10-04T08:33:44.720Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "mhtyf0jxjg23",
-          "status": "identified",
-          "body": "<b>Start time :</b> 04/10/2022 08:24 UTC \n<b>Service impact :</b> Some servers are unreachable in rack G233A16\n<b>Ongoing actions :</b> Our teams are currently working to solve the problem",
-          "incident_id": "x8f65mztkv3z",
-          "created_at": "2022-10-04T08:33:45.006Z",
-          "updated_at": "2022-10-04T08:33:45.006Z",
-          "display_at": "2022-10-04T08:33:45.006Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2022-10-04T08:33:44.766Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "sxj0f09552wc",
@@ -2429,6 +2376,165 @@
       "components": [],
       "scheduled_for": "2022-10-05T06:00:00.000Z",
       "scheduled_until": "2022-10-05T09:00:00.000Z"
+    },
+    {
+      "id": "yt7w6g2ynqdq",
+      "name": "Glance upgrade",
+      "status": "scheduled",
+      "created_at": "2022-10-04T09:45:47.653Z",
+      "updated_at": "2022-10-04T09:45:47.728Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/p4tbkdb98733",
+      "started_at": "2022-10-04T09:45:47.639Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "wgfqqgw0httl",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "yt7w6g2ynqdq",
+          "created_at": "2022-10-04T09:45:47.725Z",
+          "updated_at": "2022-10-04T09:45:47.725Z",
+          "display_at": "2022-10-04T09:45:47.725Z",
+          "affected_components": [
+            {
+              "code": "q5r6wtw0dm70",
+              "name": "Virtual Private Servers || Delivery - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tp2f6kdp94ch",
+              "name": "Virtual Private Servers || Delivery - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jyz5twbznybt",
+              "name": "Virtual Private Servers || Delivery - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "wz4qnkmxqr5m",
+              "name": "Virtual Private Servers || Additional services - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3rp1y05pdscf",
+              "name": "Virtual Private Servers || Additional services - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zrq6bqg3kqb8",
+              "name": "Virtual Private Servers || Additional services - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q5r6wtw0dm70",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:46.898Z",
+          "updated_at": "2022-08-17T18:48:25.349Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "wz4qnkmxqr5m",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:23.983Z",
+          "updated_at": "2022-08-26T11:43:17.861Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tp2f6kdp94ch",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:47.835Z",
+          "updated_at": "2021-07-12T06:16:03.897Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3rp1y05pdscf",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:24.924Z",
+          "updated_at": "2022-08-26T11:43:17.874Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zrq6bqg3kqb8",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:26.913Z",
+          "updated_at": "2022-08-26T11:43:17.899Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jyz5twbznybt",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:49.726Z",
+          "updated_at": "2021-07-09T07:32:54.327Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-05T10:00:00.000Z",
+      "scheduled_until": "2022-10-05T11:30:00.000Z"
     },
     {
       "id": "y9gcz9twnjk2",
@@ -3814,7 +3920,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
