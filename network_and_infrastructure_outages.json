@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-10-19T12:33:01.592Z"
+    "updated_at": "2022-10-19T12:54:19.640Z"
   },
   "components": [
     {
@@ -713,6 +713,58 @@
   ],
   "incidents": [
     {
+      "id": "vjf0854bh728",
+      "name": "[BHS/CHI][Network] - Backbone latencies",
+      "status": "investigating",
+      "created_at": "2022-10-19T12:54:19.588Z",
+      "updated_at": "2022-10-19T12:54:19.637Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/9ymsfff8xwt3",
+      "started_at": "2022-10-19T12:54:19.583Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "xqxf1b0l5nxc",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 19/10/2022 11:37 UTC\n<b>Service impact :</b> The traffic is currently rerouted which causes more latency and saturation on the traffic. \n<b>Root cause :</b> A fiber cut has been detected between Beauharnois and Chicago. \n<b>Ongoing actions :</b> Our teams are currently working on the issue to solve the incident. Update will be posted as significant progress is made.",
+          "incident_id": "vjf0854bh728",
+          "created_at": "2022-10-19T12:54:19.634Z",
+          "updated_at": "2022-10-19T12:54:19.634Z",
+          "display_at": "2022-10-19T12:54:19.634Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2022-10-19T07:06:25.268Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "t51zzpw4f55t",
       "name": "[MRS][Network] - Backbone latencies",
       "status": "identified",
@@ -858,60 +910,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "6lkksfv31jj8",
-      "name": "[RBX7][CoolingSystem] - Rack R716B11",
-      "status": "scheduled",
-      "created_at": "2022-10-19T12:32:36.471Z",
-      "updated_at": "2022-10-19T12:33:01.589Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dwl4f167hzqx",
-      "started_at": "2022-10-19T12:32:36.464Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "lhfzpwvvwrnp",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/10/2022 12:45 UTC\n<b>End time :</b> 26/10/2022 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
-          "incident_id": "6lkksfv31jj8",
-          "created_at": "2022-10-19T12:32:36.522Z",
-          "updated_at": "2022-10-19T12:32:36.522Z",
-          "display_at": "2022-10-19T12:32:36.522Z",
-          "affected_components": [
-            {
-              "code": "02w2qqv00ll9",
-              "name": "Infrastructure || RBX - RBX7",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "02w2qqv00ll9",
-          "name": "RBX7",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2022-10-17T04:32:45.171Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-10-19T12:45:00.000Z",
-      "scheduled_until": "2022-10-26T15:00:00.000Z"
-    },
     {
       "id": "63l280t8r95x",
       "name": "[US][Backbone] - Network equipment operation",
@@ -1279,60 +1277,6 @@
       "scheduled_until": "2022-10-20T16:40:00.000Z"
     },
     {
-      "id": "d6hwn0h9pdhc",
-      "name": "[GRA1][Infrastructure] - Room G138",
-      "status": "scheduled",
-      "created_at": "2022-10-18T23:16:35.548Z",
-      "updated_at": "2022-10-18T23:16:35.612Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/78fx1pyztqxy",
-      "started_at": "2022-10-18T23:16:35.539Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "sbtz5r21ps74",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 24/10/2022 06:00 UTC \n<b>End time :</b> 24/10/2022 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> The objective of this maintenance is to perform annual/curative maintenance of a UPS.",
-          "incident_id": "d6hwn0h9pdhc",
-          "created_at": "2022-10-18T23:16:35.609Z",
-          "updated_at": "2022-10-18T23:16:35.609Z",
-          "display_at": "2022-10-18T23:16:35.609Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2022-10-18T14:11:16.549Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-10-24T06:00:00.000Z",
-      "scheduled_until": "2022-10-24T14:00:00.000Z"
-    },
-    {
       "id": "5fw4kc51b18c",
       "name": "[SBG3][Infrastructure] - UPS preventive maintenance",
       "status": "scheduled",
@@ -1385,6 +1329,60 @@
       ],
       "scheduled_for": "2022-10-24T06:00:00.000Z",
       "scheduled_until": "2022-10-27T15:00:00.000Z"
+    },
+    {
+      "id": "d6hwn0h9pdhc",
+      "name": "[GRA1][Infrastructure] - Room G138",
+      "status": "scheduled",
+      "created_at": "2022-10-18T23:16:35.548Z",
+      "updated_at": "2022-10-18T23:16:35.612Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/78fx1pyztqxy",
+      "started_at": "2022-10-18T23:16:35.539Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "sbtz5r21ps74",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 24/10/2022 06:00 UTC \n<b>End time :</b> 24/10/2022 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> The objective of this maintenance is to perform annual/curative maintenance of a UPS.",
+          "incident_id": "d6hwn0h9pdhc",
+          "created_at": "2022-10-18T23:16:35.609Z",
+          "updated_at": "2022-10-18T23:16:35.609Z",
+          "display_at": "2022-10-18T23:16:35.609Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2022-10-18T14:11:16.549Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-24T06:00:00.000Z",
+      "scheduled_until": "2022-10-24T14:00:00.000Z"
     },
     {
       "id": "tm33y6r6zhdj",
@@ -1441,60 +1439,6 @@
       "scheduled_until": "2022-10-24T22:00:00.000Z"
     },
     {
-      "id": "dsg1x14pnvtc",
-      "name": "[WAW1][CoolingSystem] - W14B11",
-      "status": "scheduled",
-      "created_at": "2022-10-19T00:14:51.876Z",
-      "updated_at": "2022-10-19T00:14:51.927Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/y31tvdlwycdb",
-      "started_at": "2022-10-19T00:14:51.871Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "nvzy2027qm52",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 25/10/2022 06:00 UTC \n<b>End time :</b> 25/10/2022 08:00 UTC \n<b>Service impact :</b> Servers in rack W14B11 will be temporarily unavailable during the maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an internal maintenance on our cooling system",
-          "incident_id": "dsg1x14pnvtc",
-          "created_at": "2022-10-19T00:14:51.924Z",
-          "updated_at": "2022-10-19T00:14:51.924Z",
-          "display_at": "2022-10-19T00:14:51.924Z",
-          "affected_components": [
-            {
-              "code": "84zk3wk4nv6k",
-              "name": "Infrastructure || WAW1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "84zk3wk4nv6k",
-          "name": "Infrastructure || WAW1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:54.627Z",
-          "updated_at": "2022-10-19T06:51:17.326Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-10-25T06:00:00.000Z",
-      "scheduled_until": "2022-10-25T08:00:00.000Z"
-    },
-    {
       "id": "cdz6j6k9szcj",
       "name": "[GRA2][Infrastructure] - Room G217",
       "status": "scheduled",
@@ -1547,6 +1491,60 @@
       ],
       "scheduled_for": "2022-10-25T06:00:00.000Z",
       "scheduled_until": "2022-10-25T14:00:00.000Z"
+    },
+    {
+      "id": "dsg1x14pnvtc",
+      "name": "[WAW1][CoolingSystem] - W14B11",
+      "status": "scheduled",
+      "created_at": "2022-10-19T00:14:51.876Z",
+      "updated_at": "2022-10-19T00:14:51.927Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/y31tvdlwycdb",
+      "started_at": "2022-10-19T00:14:51.871Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "nvzy2027qm52",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 25/10/2022 06:00 UTC \n<b>End time :</b> 25/10/2022 08:00 UTC \n<b>Service impact :</b> Servers in rack W14B11 will be temporarily unavailable during the maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an internal maintenance on our cooling system",
+          "incident_id": "dsg1x14pnvtc",
+          "created_at": "2022-10-19T00:14:51.924Z",
+          "updated_at": "2022-10-19T00:14:51.924Z",
+          "display_at": "2022-10-19T00:14:51.924Z",
+          "affected_components": [
+            {
+              "code": "84zk3wk4nv6k",
+              "name": "Infrastructure || WAW1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "84zk3wk4nv6k",
+          "name": "Infrastructure || WAW1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:54.627Z",
+          "updated_at": "2022-10-19T06:51:17.326Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-25T06:00:00.000Z",
+      "scheduled_until": "2022-10-25T08:00:00.000Z"
     },
     {
       "id": "mdc4t1ktvm4j",
@@ -2139,43 +2137,43 @@
       "scheduled_until": "2022-12-01T03:00:00.000Z"
     },
     {
-      "id": "dy4v6shfwt0n",
-      "name": "[BHS8][CoolingSystem] - Rack BHS0814B03B",
+      "id": "6lkksfv31jj8",
+      "name": "[RBX7][CoolingSystem] - Rack R716B11",
       "status": "in_progress",
-      "created_at": "2022-10-18T09:20:19.410Z",
-      "updated_at": "2022-10-19T11:00:42.141Z",
+      "created_at": "2022-10-19T12:32:36.471Z",
+      "updated_at": "2022-10-19T12:45:38.312Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/7xcb54wdtd6l",
-      "started_at": "2022-10-18T09:20:19.402Z",
+      "shortlink": "https://stspg.io/dwl4f167hzqx",
+      "started_at": "2022-10-19T12:32:36.464Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "hxd2ctzyp3zl",
+          "id": "52lhtfndz9d6",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "dy4v6shfwt0n",
-          "created_at": "2022-10-19T11:00:42.134Z",
-          "updated_at": "2022-10-19T11:00:42.134Z",
-          "display_at": "2022-10-19T11:00:42.134Z",
+          "incident_id": "6lkksfv31jj8",
+          "created_at": "2022-10-19T12:45:38.307Z",
+          "updated_at": "2022-10-19T12:45:38.307Z",
+          "display_at": "2022-10-19T12:45:38.307Z",
           "affected_components": null,
           "deliver_notifications": false,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "q3tvf1dghxq2",
+          "id": "lhfzpwvvwrnp",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 19/10/2022 11:00 UTC\n<b>End time :</b> 19/10/2022 19:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
-          "incident_id": "dy4v6shfwt0n",
-          "created_at": "2022-10-18T09:20:19.462Z",
-          "updated_at": "2022-10-18T09:20:19.462Z",
-          "display_at": "2022-10-18T09:20:19.462Z",
+          "body": "<b>Start time :</b> 19/10/2022 12:45 UTC\n<b>End time :</b> 26/10/2022 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement",
+          "incident_id": "6lkksfv31jj8",
+          "created_at": "2022-10-19T12:32:36.522Z",
+          "updated_at": "2022-10-19T12:32:36.522Z",
+          "display_at": "2022-10-19T12:32:36.522Z",
           "affected_components": [
             {
-              "code": "m4pzrlrxvvgt",
-              "name": "Infrastructure || BHS - BHS8",
+              "code": "02w2qqv00ll9",
+              "name": "Infrastructure || RBX - RBX7",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             }
@@ -2187,23 +2185,23 @@
       ],
       "components": [
         {
-          "id": "m4pzrlrxvvgt",
-          "name": "BHS8",
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
           "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2022-10-17T18:01:31.545Z",
-          "position": 8,
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2022-10-17T04:32:45.171Z",
+          "position": 7,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
+          "group_id": "zllgrccdn4nk",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2022-10-19T11:00:00.000Z",
-      "scheduled_until": "2022-10-19T19:00:00.000Z"
+      "scheduled_for": "2022-10-19T12:45:00.000Z",
+      "scheduled_until": "2022-10-26T15:00:00.000Z"
     },
     {
       "id": "4f32bsjwc3m0",
