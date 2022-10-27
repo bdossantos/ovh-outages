@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-10-27T05:57:17.370Z"
+    "updated_at": "2022-10-27T13:02:02.706Z"
   },
   "components": [
     {
@@ -2713,78 +2713,6 @@
   ],
   "incidents": [
     {
-      "id": "vyl6dqm624fy",
-      "name": "[Tunisia][DNS Hosting] - DNS .TN",
-      "status": "monitoring",
-      "created_at": "2022-10-27T04:33:38.280Z",
-      "updated_at": "2022-10-27T05:57:17.368Z",
-      "monitoring_at": "2022-10-27T05:57:17.354Z",
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/kh3xgv4hn4gk",
-      "started_at": "2022-10-27T04:33:38.272Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "s4b7zrc1yb21",
-          "status": "monitoring",
-          "body": "<b>Update :</b> The service is available again. We keep the ticket under monitoring to confirm with the provider that the incident is fully resolved.",
-          "incident_id": "vyl6dqm624fy",
-          "created_at": "2022-10-27T05:57:17.354Z",
-          "updated_at": "2022-10-27T05:57:17.354Z",
-          "display_at": "2022-10-27T05:57:17.354Z",
-          "affected_components": [
-            {
-              "code": "xx80c318x812",
-              "name": "DNS || DNS Hosting - dns-tn",
-              "old_status": "major_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vc4vtcvn9csq",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 27/10/2022 01:08 UTC \n<b>Service impact :</b> All DNS .TN are unreachable.\n<b>Ongoing actions :</b> Our teams have contacted our service provider to return the services as soon as possible. Update will be post as significant progress is made.",
-          "incident_id": "vyl6dqm624fy",
-          "created_at": "2022-10-27T04:33:38.435Z",
-          "updated_at": "2022-10-27T04:33:38.435Z",
-          "display_at": "2022-10-27T04:33:38.435Z",
-          "affected_components": [
-            {
-              "code": "xx80c318x812",
-              "name": "DNS || DNS Hosting - dns-tn",
-              "old_status": "operational",
-              "new_status": "major_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xx80c318x812",
-          "name": "dns-tn",
-          "status": "operational",
-          "created_at": "2021-10-29T12:13:34.202Z",
-          "updated_at": "2022-10-27T05:57:17.318Z",
-          "position": 27,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-10-29",
-          "group_id": "yjlqxhts1pmd",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
       "id": "q8kvv8321ghz",
       "name": "[GRA][Webhosting] - Cluster 003",
       "status": "identified",
@@ -3671,6 +3599,60 @@
       ],
       "scheduled_for": "2022-10-27T17:00:00.000Z",
       "scheduled_until": "2022-10-28T01:00:00.000Z"
+    },
+    {
+      "id": "wz3sql27thp6",
+      "name": "[Global][SMS] - SMPP Integration",
+      "status": "scheduled",
+      "created_at": "2022-10-27T13:02:02.639Z",
+      "updated_at": "2022-10-27T13:02:02.703Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2t099v494tbc",
+      "started_at": "2022-10-27T13:02:02.631Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "c0lsknd0h2pn",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 27/10/2022 19:00 UTC\n<b>End time :</b> 27/10/2022 20:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Our technical teams will integrate the SMPP (Short Message Peer-to-Peer) feature into our SMS service",
+          "incident_id": "wz3sql27thp6",
+          "created_at": "2022-10-27T13:02:02.700Z",
+          "updated_at": "2022-10-27T13:02:02.700Z",
+          "display_at": "2022-10-27T13:02:02.700Z",
+          "affected_components": [
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d167jln8tkv5",
+          "name": "SMS",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:21.411Z",
+          "updated_at": "2022-10-26T20:06:44.438Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-27T19:00:00.000Z",
+      "scheduled_until": "2022-10-27T20:00:00.000Z"
     },
     {
       "id": "kfn1j9vcxwt4",
