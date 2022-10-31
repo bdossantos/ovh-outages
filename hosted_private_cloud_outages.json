@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-10-31T06:00:26.084Z"
+    "updated_at": "2022-10-31T07:00:09.004Z"
   },
   "components": [
     {
@@ -742,9 +742,9 @@
     {
       "id": "8czvt83rw74b",
       "name": "Management plane",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:42:39.943Z",
-      "updated_at": "2022-10-28T13:12:48.499Z",
+      "updated_at": "2022-10-31T07:00:08.879Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -757,9 +757,9 @@
     {
       "id": "r0gb2v5791yj",
       "name": "Management plane",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:39:45.677Z",
-      "updated_at": "2022-10-28T13:12:48.516Z",
+      "updated_at": "2022-10-31T07:00:08.912Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1843,7 +1843,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2021-10-20T08:14:14.720Z",
       "position": 14,
@@ -2131,94 +2131,6 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
-    {
-      "id": "cy51f56t0tcd",
-      "name": "[RBX2A-RBX2B-BHS1A][HostedPrivateCloud] - vCenter upgrade",
-      "status": "scheduled",
-      "created_at": "2022-10-24T13:47:11.572Z",
-      "updated_at": "2022-10-31T06:00:26.069Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/sblw90rx4693",
-      "started_at": "2022-10-24T13:47:11.559Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "kj8hxnykytv4",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "cy51f56t0tcd",
-          "created_at": "2022-10-31T06:00:25.903Z",
-          "updated_at": "2022-10-31T06:00:25.903Z",
-          "display_at": "2022-10-31T06:00:25.903Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "49vxylwbx1mf",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 31/10/2022 07:00 UTC \n<b>End time :</b> 04/11/2022 17:00 UTC \n<b>Service impact :</b> vCenter will be unavailable during the operation\nFollowing our continuous improvement policy, we are rolling a upgrade for the VMware vCenter Server Appliance solution.",
-          "incident_id": "cy51f56t0tcd",
-          "created_at": "2022-10-24T13:47:11.638Z",
-          "updated_at": "2022-10-24T13:47:11.638Z",
-          "display_at": "2022-10-24T13:47:11.638Z",
-          "affected_components": [
-            {
-              "code": "r0gb2v5791yj",
-              "name": "VMware Private Cloud || RBX - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "8czvt83rw74b",
-              "name": "VMware Private Cloud || BHS - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r0gb2v5791yj",
-          "name": "Management plane",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2022-10-28T13:12:48.516Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "8czvt83rw74b",
-          "name": "Management plane",
-          "status": "operational",
-          "created_at": "2021-07-21T08:42:39.943Z",
-          "updated_at": "2022-10-28T13:12:48.499Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "qb95r65p6tlg",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-10-31T07:00:00.000Z",
-      "scheduled_until": "2022-10-31T08:00:00.000Z"
-    },
     {
       "id": "by30s5vrttnw",
       "name": "[SBG3][Hosted Private Cloud] -   Network & servers  operation",
@@ -2521,6 +2433,120 @@
       "scheduled_until": "2022-12-20T10:00:00.000Z"
     },
     {
+      "id": "cy51f56t0tcd",
+      "name": "[RBX2A-RBX2B-BHS1A][HostedPrivateCloud] - vCenter upgrade",
+      "status": "in_progress",
+      "created_at": "2022-10-24T13:47:11.572Z",
+      "updated_at": "2022-10-31T07:00:08.989Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sblw90rx4693",
+      "started_at": "2022-10-24T13:47:11.559Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "wlz1d76w5xm5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "cy51f56t0tcd",
+          "created_at": "2022-10-31T07:00:08.983Z",
+          "updated_at": "2022-10-31T07:00:08.983Z",
+          "display_at": "2022-10-31T07:00:08.983Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "8czvt83rw74b",
+              "name": "VMware Private Cloud || BHS - Management plane",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kj8hxnykytv4",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "cy51f56t0tcd",
+          "created_at": "2022-10-31T06:00:25.903Z",
+          "updated_at": "2022-10-31T06:00:25.903Z",
+          "display_at": "2022-10-31T06:00:25.903Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "49vxylwbx1mf",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 31/10/2022 07:00 UTC \n<b>End time :</b> 04/11/2022 17:00 UTC \n<b>Service impact :</b> vCenter will be unavailable during the operation\nFollowing our continuous improvement policy, we are rolling a upgrade for the VMware vCenter Server Appliance solution.",
+          "incident_id": "cy51f56t0tcd",
+          "created_at": "2022-10-24T13:47:11.638Z",
+          "updated_at": "2022-10-24T13:47:11.638Z",
+          "display_at": "2022-10-24T13:47:11.638Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "8czvt83rw74b",
+              "name": "VMware Private Cloud || BHS - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8czvt83rw74b",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:42:39.943Z",
+          "updated_at": "2022-10-31T07:00:08.879Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2022-10-31T07:00:08.912Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-10-31T07:00:00.000Z",
+      "scheduled_until": "2022-10-31T08:00:00.000Z"
+    },
+    {
       "id": "wkt391xbj2y7",
       "name": "[Global][Hosted Private Cloud] - Vmware",
       "status": "in_progress",
@@ -2673,21 +2699,6 @@
       ],
       "components": [
         {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2022-10-20T05:26:33.596Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
           "id": "k71wy7ymrc81",
           "name": "Storage",
           "status": "under_maintenance",
@@ -2788,6 +2799,21 @@
           "showcase": false,
           "start_date": "2021-07-21",
           "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2022-10-20T05:26:33.596Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
