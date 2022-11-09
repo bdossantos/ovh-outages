@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-11-09T21:02:36.594Z"
+    "updated_at": "2022-11-09T22:00:31.654Z"
   },
   "components": [
     {
@@ -2213,7 +2213,7 @@
       "name": "[RBX2][Dedicated Servers] 21D01",
       "status": "scheduled",
       "created_at": "2022-11-04T00:56:21.293Z",
-      "updated_at": "2022-11-04T00:56:21.353Z",
+      "updated_at": "2022-11-09T22:00:31.640Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2221,6 +2221,19 @@
       "started_at": "2022-11-04T00:56:21.286Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "m6kqyw4bnxvw",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "r9qfc0gtkf2k",
+          "created_at": "2022-11-09T22:00:31.222Z",
+          "updated_at": "2022-11-09T22:00:31.222Z",
+          "display_at": "2022-11-09T22:00:31.222Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "83dbzk8j908h",
           "status": "scheduled",
@@ -3060,6 +3073,102 @@
       "scheduled_until": "2022-11-17T23:30:00.000Z"
     },
     {
+      "id": "qv6hdkltpr8h",
+      "name": "[GRA3/ERI1/SBG5][Network] - Network equipment operation",
+      "status": "scheduled",
+      "created_at": "2022-11-09T21:58:18.172Z",
+      "updated_at": "2022-11-09T21:58:18.251Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/y0qs2cnssr74",
+      "started_at": "2022-11-09T21:58:18.161Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "f20174l3tx8v",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 17/11/2022 20:00 UTC\n<b>End time :</b> 17/11/2022 22:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance operation on multiple network equipments.",
+          "incident_id": "qv6hdkltpr8h",
+          "created_at": "2022-11-09T21:58:18.248Z",
+          "updated_at": "2022-11-09T21:58:18.248Z",
+          "display_at": "2022-11-09T21:58:18.248Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5ml6n8xk2fcs",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:50.476Z",
+          "updated_at": "2022-11-09T02:46:43.719Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2022-11-09T02:24:33.577Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2022-11-03T21:30:17.386Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-11-17T20:00:00.000Z",
+      "scheduled_until": "2022-11-17T22:30:00.000Z"
+    },
+    {
       "id": "32mq8b16wlyv",
       "name": "[RBX6-RBX7][DedicatedServers] - Network equipment maintenance",
       "status": "scheduled",
@@ -3361,73 +3470,6 @@
       ],
       "scheduled_for": "2022-11-22T20:00:00.000Z",
       "scheduled_until": "2022-11-22T23:30:00.000Z"
-    },
-    {
-      "id": "91mywvs1b36t",
-      "name": "[RBX8][DedicatedServers] - Network equipment maintenance",
-      "status": "in_progress",
-      "created_at": "2022-10-20T18:21:15.850Z",
-      "updated_at": "2022-11-09T20:00:26.097Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/95nk4kqghklz",
-      "started_at": "2022-10-20T18:21:15.817Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "vd98h95tnqdx",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "91mywvs1b36t",
-          "created_at": "2022-11-09T20:00:26.094Z",
-          "updated_at": "2022-11-09T20:00:26.094Z",
-          "display_at": "2022-11-09T20:00:26.094Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "38mljvwjxkv6",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/11/2022 20:00 UTC\n<b>End time :</b> 09/11/2022 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on multiple network equipment.",
-          "incident_id": "91mywvs1b36t",
-          "created_at": "2022-10-20T18:21:16.027Z",
-          "updated_at": "2022-10-20T18:21:16.027Z",
-          "display_at": "2022-10-20T18:21:16.027Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2022-11-09T21:02:36.525Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-11-09T20:00:00.000Z",
-      "scheduled_until": "2022-11-09T23:30:00.000Z"
     }
   ],
   "status": {
