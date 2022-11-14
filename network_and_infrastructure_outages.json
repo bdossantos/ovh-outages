@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-11-14T21:01:28.057Z"
+    "updated_at": "2022-11-14T22:00:26.882Z"
   },
   "components": [
     {
@@ -714,6 +714,73 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "cvt8cf2w9hmj",
+      "name": "[Frankfurt][Network] - Backbone Maintenance Notification",
+      "status": "scheduled",
+      "created_at": "2022-11-08T17:31:15.396Z",
+      "updated_at": "2022-11-14T22:00:23.525Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3vc86mr2929z",
+      "started_at": "2022-11-08T17:31:15.391Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "d795pqtt8b0w",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "cvt8cf2w9hmj",
+          "created_at": "2022-11-14T22:00:23.328Z",
+          "updated_at": "2022-11-14T22:00:23.328Z",
+          "display_at": "2022-11-14T22:00:23.328Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qk5j8btpr41b",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 14/11/2022 23:00 UTC \n<b>End time :</b> 15/11/2022 00:00 UTC \n<b>Service impact :</b> You may experience increased latency to communicate with your services behind this device.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
+          "incident_id": "cvt8cf2w9hmj",
+          "created_at": "2022-11-08T17:31:15.457Z",
+          "updated_at": "2022-11-08T17:31:15.457Z",
+          "display_at": "2022-11-08T17:31:15.457Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "under_maintenance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2022-11-14T21:01:27.990Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-11-14T23:00:00.000Z",
+      "scheduled_until": "2022-11-15T00:00:00.000Z"
+    },
+    {
       "id": "xvt35mjh9txw",
       "name": "[RBX][Backbone] - Link migration",
       "status": "scheduled",
@@ -766,60 +833,6 @@
       ],
       "scheduled_for": "2022-11-14T23:00:00.000Z",
       "scheduled_until": "2022-11-15T05:00:00.000Z"
-    },
-    {
-      "id": "cvt8cf2w9hmj",
-      "name": "[Frankfurt][Network] - Backbone Maintenance Notification",
-      "status": "scheduled",
-      "created_at": "2022-11-08T17:31:15.396Z",
-      "updated_at": "2022-11-08T17:31:15.460Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3vc86mr2929z",
-      "started_at": "2022-11-08T17:31:15.391Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "qk5j8btpr41b",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/11/2022 23:00 UTC \n<b>End time :</b> 15/11/2022 00:00 UTC \n<b>Service impact :</b> You may experience increased latency to communicate with your services behind this device.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
-          "incident_id": "cvt8cf2w9hmj",
-          "created_at": "2022-11-08T17:31:15.457Z",
-          "updated_at": "2022-11-08T17:31:15.457Z",
-          "display_at": "2022-11-08T17:31:15.457Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2022-11-14T21:01:27.990Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-11-14T23:00:00.000Z",
-      "scheduled_until": "2022-11-15T00:00:00.000Z"
     },
     {
       "id": "yng8jlf0gk5n",
@@ -982,6 +995,60 @@
       ],
       "scheduled_for": "2022-11-15T01:00:00.000Z",
       "scheduled_until": "2022-11-15T04:00:00.000Z"
+    },
+    {
+      "id": "r1n9bxm7r3s5",
+      "name": "[SBG5][INFRASTRUCTURE] - High and low voltage emergency power generator testing",
+      "status": "scheduled",
+      "created_at": "2022-11-14T22:00:26.768Z",
+      "updated_at": "2022-11-14T22:00:26.879Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nl7m2bntx8gg",
+      "started_at": "2022-11-14T22:00:26.760Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "j89cc1qpzdq3",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 15/11/2022 07:00UTC \n<b>End time :</b> 16/11/2022 16:00UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b>As part of our test campaign for our electrical works, we are going to put the SBG5 emergency TGBT (High and low voltage emergency power generator) into service and test its operation, switching all the TGBTs one after the other on it, then testing the prioritization of the switches while trying to switch a second TGBT on the Secours5..",
+          "incident_id": "r1n9bxm7r3s5",
+          "created_at": "2022-11-14T22:00:26.876Z",
+          "updated_at": "2022-11-14T22:00:26.876Z",
+          "display_at": "2022-11-14T22:00:26.876Z",
+          "affected_components": [
+            {
+              "code": "mp1qh2crp1cl",
+              "name": "Infrastructure || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp1qh2crp1cl",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-06-20T07:44:01.844Z",
+          "updated_at": "2022-11-14T15:46:00.332Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-06-20",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-11-15T07:00:00.000Z",
+      "scheduled_until": "2022-11-16T16:00:00.000Z"
     },
     {
       "id": "fcyz3kx218px",
@@ -1512,60 +1579,6 @@
       "scheduled_until": "2022-11-17T03:00:00.000Z"
     },
     {
-      "id": "hq4b3b3906f0",
-      "name": "[SBG5][Infrastructure] - Generator maintenance",
-      "status": "scheduled",
-      "created_at": "2022-11-08T22:24:08.631Z",
-      "updated_at": "2022-11-08T22:25:25.415Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/mgz6zhkmyz3w",
-      "started_at": "2022-11-08T22:24:08.624Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "5f88bh616hrn",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 17/11/2022 07:00 UTC  \n<b>End time :</b> 17/11/2022 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance for generators in SBG5.",
-          "incident_id": "hq4b3b3906f0",
-          "created_at": "2022-11-08T22:24:08.680Z",
-          "updated_at": "2022-11-08T22:25:25.412Z",
-          "display_at": "2022-11-08T22:24:08.680Z",
-          "affected_components": [
-            {
-              "code": "mp1qh2crp1cl",
-              "name": "Infrastructure || SBG - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mp1qh2crp1cl",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-06-20T07:44:01.844Z",
-          "updated_at": "2022-11-14T15:46:00.332Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-06-20",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2022-11-17T07:00:00.000Z",
-      "scheduled_until": "2022-11-17T16:00:00.000Z"
-    },
-    {
       "id": "f6n5v8x2d4gy",
       "name": "[SBG3][Infrastructure] - Generator maintenance",
       "status": "scheduled",
@@ -1610,6 +1623,60 @@
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-11-17T07:00:00.000Z",
+      "scheduled_until": "2022-11-17T16:00:00.000Z"
+    },
+    {
+      "id": "hq4b3b3906f0",
+      "name": "[SBG5][Infrastructure] - Generator maintenance",
+      "status": "scheduled",
+      "created_at": "2022-11-08T22:24:08.631Z",
+      "updated_at": "2022-11-08T22:25:25.415Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mgz6zhkmyz3w",
+      "started_at": "2022-11-08T22:24:08.624Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "5f88bh616hrn",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 17/11/2022 07:00 UTC  \n<b>End time :</b> 17/11/2022 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance for generators in SBG5.",
+          "incident_id": "hq4b3b3906f0",
+          "created_at": "2022-11-08T22:24:08.680Z",
+          "updated_at": "2022-11-08T22:25:25.412Z",
+          "display_at": "2022-11-08T22:24:08.680Z",
+          "affected_components": [
+            {
+              "code": "mp1qh2crp1cl",
+              "name": "Infrastructure || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp1qh2crp1cl",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-06-20T07:44:01.844Z",
+          "updated_at": "2022-11-14T15:46:00.332Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-06-20",
           "group_id": "vhfy3slw3nj2",
           "page_id": "r3y8hrtg97vy",
           "group": false,
