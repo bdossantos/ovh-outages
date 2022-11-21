@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2022-11-17T23:23:53.906Z"
+    "updated_at": "2022-11-21T10:47:31.501Z"
   },
   "components": [
     {
@@ -2685,7 +2685,7 @@
       "name": "[GRA][Webhosting] - Cluster 003",
       "status": "identified",
       "created_at": "2022-01-07T11:13:23.892Z",
-      "updated_at": "2022-10-31T15:40:56.384Z",
+      "updated_at": "2022-11-21T10:47:31.474Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2693,6 +2693,26 @@
       "started_at": "2022-01-07T11:13:23.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "05378v6crm0q",
+          "status": "identified",
+          "body": "The generation of the current statistics (owstats) is still temporarily frozen.\nThe regeneration of the past statistics (oct/nov/dec 2021) is completed.",
+          "incident_id": "q8kvv8321ghz",
+          "created_at": "2022-11-21T10:47:31.471Z",
+          "updated_at": "2022-11-21T10:47:31.471Z",
+          "display_at": "2022-11-21T10:47:31.471Z",
+          "affected_components": [
+            {
+              "code": "gl3xpsrcq36n",
+              "name": "Web Hosting || Datacenter GRA - Cluster003",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "yyjc627q9yg8",
           "status": "identified",
@@ -3514,6 +3534,60 @@
     }
   ],
   "scheduled_maintenances": [
+    {
+      "id": "hmhkvcq218yz",
+      "name": "[GRA7][WebPaaS] - Routine Maintenance",
+      "status": "scheduled",
+      "created_at": "2022-11-21T10:39:09.833Z",
+      "updated_at": "2022-11-21T10:39:09.902Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mbdmb9v4yh6y",
+      "started_at": "2022-11-21T10:39:09.824Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "95s6xkj6krrp",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/11/2022 17:00 UTC \n<b>End time :</b> 21/11/2022 19:00 UTC \n<b>Service impact :</b> A short downtime will be experienced. Integrations and webhooks may fail during the maintenance, and you may notice increased deployment times.\n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing an internal maintenance in order to activate a Git feature: Minimized deployment when container resources change.",
+          "incident_id": "hmhkvcq218yz",
+          "created_at": "2022-11-21T10:39:09.899Z",
+          "updated_at": "2022-11-21T10:39:09.899Z",
+          "display_at": "2022-11-21T10:39:09.899Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cljxz1bqnkyx",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2021-11-23T11:02:45.256Z",
+          "updated_at": "2022-11-08T19:51:08.329Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-23",
+          "group_id": "dc34f7wx9y5b",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2022-11-21T17:00:00.000Z",
+      "scheduled_until": "2022-11-21T19:00:00.000Z"
+    },
     {
       "id": "xv1ylrdvmd2j",
       "name": "[Global][VoIP] - ATA191/SPA112 Cisco phone firware update",
