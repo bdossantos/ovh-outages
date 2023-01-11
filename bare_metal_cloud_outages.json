@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-11T02:57:03.995Z"
+    "updated_at": "2023-01-11T03:23:37.205Z"
   },
   "components": [
     {
@@ -2208,83 +2208,11 @@
   ],
   "incidents": [
     {
-      "id": "lz8ll97lkytn",
-      "name": "[ERI1][DedicatedServers] - Racks E102F10 E102E10 E102E07",
-      "status": "identified",
-      "created_at": "2023-01-10T23:21:18.378Z",
-      "updated_at": "2023-01-11T01:44:41.459Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/1nvk21rzqf2v",
-      "started_at": "2023-01-10T23:21:18.369Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "rzrj4plh74ss",
-          "status": "identified",
-          "body": "Most of the impacted servers are operational anew.\nOur technical teams are working on the remaining ones.",
-          "incident_id": "lz8ll97lkytn",
-          "created_at": "2023-01-11T01:44:41.457Z",
-          "updated_at": "2023-01-11T01:44:41.457Z",
-          "display_at": "2023-01-11T01:44:41.457Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9pw95hnhkyzg",
-          "status": "identified",
-          "body": "<b>Start time :</b> 10/01/2023 23:00 UTC\n<b>Service impact :</b> Some servers in the rack E102F10, E102E10, and E102E07 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
-          "incident_id": "lz8ll97lkytn",
-          "created_at": "2023-01-10T23:21:18.468Z",
-          "updated_at": "2023-01-10T23:21:18.468Z",
-          "display_at": "2023-01-10T23:21:18.468Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2023-01-10T23:21:18.416Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
       "id": "1mgkcg5r49ql",
       "name": "[BHS][VPS] - deliveries and services pertubations",
       "status": "monitoring",
       "created_at": "2023-01-11T01:24:25.412Z",
-      "updated_at": "2023-01-11T01:31:16.493Z",
+      "updated_at": "2023-01-11T03:21:57.718Z",
       "monitoring_at": "2023-01-11T01:31:16.476Z",
       "resolved_at": null,
       "impact": "major",
@@ -2292,6 +2220,32 @@
       "started_at": "2023-01-11T01:24:25.403Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "kd1lfp3t6sys",
+          "status": "monitoring",
+          "body": "<a href=\"https://network.status-ovhcloud.com/incidents/xdklzwrtxyzg\">The incident with vRacks</a> is still open but there is significant progress since the last update.\nOur technical teams remain working on the issue.",
+          "incident_id": "1mgkcg5r49ql",
+          "created_at": "2023-01-11T03:21:57.715Z",
+          "updated_at": "2023-01-11T03:21:57.715Z",
+          "display_at": "2023-01-11T03:21:57.715Z",
+          "affected_components": [
+            {
+              "code": "ggz44wtrf9jm",
+              "name": "Virtual Private Servers || Delivery - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "qmnlktv51s22",
+              "name": "Virtual Private Servers || Additional services - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4d9ngxcpyx63",
           "status": "monitoring",
@@ -2398,6 +2352,78 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "lz8ll97lkytn",
+      "name": "[ERI1][DedicatedServers] - Racks E102F10 E102E10 E102E07",
+      "status": "identified",
+      "created_at": "2023-01-10T23:21:18.378Z",
+      "updated_at": "2023-01-11T01:44:41.459Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/1nvk21rzqf2v",
+      "started_at": "2023-01-10T23:21:18.369Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rzrj4plh74ss",
+          "status": "identified",
+          "body": "Most of the impacted servers are operational anew.\nOur technical teams are working on the remaining ones.",
+          "incident_id": "lz8ll97lkytn",
+          "created_at": "2023-01-11T01:44:41.457Z",
+          "updated_at": "2023-01-11T01:44:41.457Z",
+          "display_at": "2023-01-11T01:44:41.457Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9pw95hnhkyzg",
+          "status": "identified",
+          "body": "<b>Start time :</b> 10/01/2023 23:00 UTC\n<b>Service impact :</b> Some servers in the rack E102F10, E102E10, and E102E07 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
+          "incident_id": "lz8ll97lkytn",
+          "created_at": "2023-01-10T23:21:18.468Z",
+          "updated_at": "2023-01-10T23:21:18.468Z",
+          "display_at": "2023-01-10T23:21:18.468Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2023-01-10T23:21:18.416Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -2734,6 +2760,60 @@
       ],
       "scheduled_for": "2023-01-18T21:00:00.000Z",
       "scheduled_until": "2023-01-19T00:00:00.000Z"
+    },
+    {
+      "id": "k1plgm6d68xd",
+      "name": "[SBG3][Dedicated Servers] - Network equipment version upgrade",
+      "status": "scheduled",
+      "created_at": "2023-01-11T03:06:10.258Z",
+      "updated_at": "2023-01-11T03:06:10.331Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v8sf40z53w6p",
+      "started_at": "2023-01-11T03:06:10.248Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "87lkjl7w2v23",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/01/2023 23:00 UTC \n<b>End time :</b> 19/01/2023 05:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a version upgrade on multiple network equipment.",
+          "incident_id": "k1plgm6d68xd",
+          "created_at": "2023-01-11T03:06:10.327Z",
+          "updated_at": "2023-01-11T03:06:10.327Z",
+          "display_at": "2023-01-11T03:06:10.327Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2023-01-10T23:28:35.747Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-01-18T23:00:00.000Z",
+      "scheduled_until": "2023-01-19T05:00:00.000Z"
     },
     {
       "id": "h1gf59bpzw73",
