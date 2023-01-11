@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-11T01:27:05.752Z"
+    "updated_at": "2023-01-11T01:31:13.637Z"
   },
   "components": [
     {
@@ -911,9 +911,9 @@
     {
       "id": "my3dbz55pzrq",
       "name": "BHS3",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:35.569Z",
-      "updated_at": "2023-01-11T01:24:33.629Z",
+      "updated_at": "2023-01-11T01:31:13.552Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -956,9 +956,9 @@
     {
       "id": "d6db30j7nx4r",
       "name": "BHS5",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:37.373Z",
-      "updated_at": "2023-01-11T01:24:33.644Z",
+      "updated_at": "2023-01-11T01:31:13.579Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -3625,7 +3625,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2022-04-13T13:25:21.026Z",
       "position": 20,
@@ -4189,16 +4189,42 @@
     {
       "id": "hnprbdhwcvg2",
       "name": "[BHS3-BHS5][Compute] - instances perturbation",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2023-01-11T01:24:33.597Z",
-      "updated_at": "2023-01-11T01:27:05.745Z",
-      "monitoring_at": null,
+      "updated_at": "2023-01-11T01:31:13.633Z",
+      "monitoring_at": "2023-01-11T01:31:13.617Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/qsnwr2b97yqr",
       "started_at": "2023-01-11T01:24:33.588Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "tn3xfl6d1xlb",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "hnprbdhwcvg2",
+          "created_at": "2023-01-11T01:31:13.617Z",
+          "updated_at": "2023-01-11T01:31:13.617Z",
+          "display_at": "2023-01-11T01:31:13.617Z",
+          "affected_components": [
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "mz9blvtjzshp",
           "status": "investigating",
@@ -4256,9 +4282,9 @@
         {
           "id": "my3dbz55pzrq",
           "name": "BHS3",
-          "status": "partial_outage",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:38:35.569Z",
-          "updated_at": "2023-01-11T01:24:33.629Z",
+          "updated_at": "2023-01-11T01:31:13.552Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -4271,9 +4297,9 @@
         {
           "id": "d6db30j7nx4r",
           "name": "BHS5",
-          "status": "partial_outage",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:38:37.373Z",
-          "updated_at": "2023-01-11T01:24:33.644Z",
+          "updated_at": "2023-01-11T01:31:13.579Z",
           "position": 3,
           "description": null,
           "showcase": false,
