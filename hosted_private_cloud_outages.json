@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-13T00:23:42.988Z"
+    "updated_at": "2023-01-13T06:00:24.967Z"
   },
   "components": [
     {
@@ -2135,7 +2135,7 @@
       "name": "[Global][VMware] - VMware Remote Console",
       "status": "monitoring",
       "created_at": "2023-01-06T18:10:26.000Z",
-      "updated_at": "2023-01-06T21:09:02.586Z",
+      "updated_at": "2023-01-13T06:00:24.958Z",
       "monitoring_at": "2023-01-06T18:10:26.000Z",
       "resolved_at": null,
       "impact": "none",
@@ -2208,10 +2208,10 @@
         {
           "id": "jpswm4ztp30c",
           "status": "monitoring",
-          "body": "<b>Start time :</b> 08/12/2022 09:00 UTC\n<b>User impact :</b> VMware Remote Console (VMRC) in \"legacy connection mode\" (cf https://kb.vmware.com/s/article/76672) is not working anymore with last Hosted Private Cloud infrastructure upgrades.\n<b>Root cause :</b> A configuration change on the \"SSL gateway\" (the machine that acts as a bridge & firewall between your Hosted Private Cloud and the internet and allows you to connect to the vSphere web client among others things) required to adress the VMSA-2022-0030 pulished in december https://www.vmware.com/security/advisories/VMSA-2022-0030.html\n<b>Workaround :</b> We are actively working on a solution to bring back VMRC. In the meantime, you can use the \"Web Remote Console\" available in your vSphere Web Client.\n\n<b>Note :</b> We will probably not bring back the VMRC \"legacy connection mode\" (port 902) because it conflicts with the configuration change required to adress the VMSA-2022-0030. Instead, we are currently working on a solution to allow the VMRC \"standard connection mode\" (port 443). Once deployed, if you previously used the \"legacy connection mode\" you'll have to remove the custom configuration on your workstation, refer to \"Resolution\" section of this VMware guide : https://kb.vmware.com/s/article/76672 to find the lines to remove.",
+          "body": "<b>Start time :</b> 08/12/2022 09:00 UTC\n<b>User impact :</b> VMware Remote Console (VMRC) in \"legacy connection mode\" (cf https://kb.vmware.com/s/article/76672) is not working anymore with last Hosted Private Cloud infrastructure upgrades.\n<b>Root cause :</b> A configuration change on the \"SSL gateway\" (the machine that acts as a bridge & firewall between your Hosted Private Cloud and the internet and allows you to connect to the vSphere web client among others things) required to adress the VMSA-2022-0030 pulished in december https://www.vmware.com/security/advisories/VMSA-2022-0030.html\n<b>Workaround :</b> We are actively working on a solution to bring back VMRC. In the meantime, you can use the \"Web Console\" available in your vSphere Web Client.\n\n<b>Note :</b> We will probably not bring back the VMRC \"legacy connection mode\" (port 902) because it conflicts with the configuration change required to adress the VMSA-2022-0030. Instead, we are currently working on a solution to allow the VMRC \"standard connection mode\" (port 443). Once deployed, if you previously used the \"legacy connection mode\" you'll have to remove the custom configuration on your workstation, refer to \"Resolution\" section of this VMware guide : https://kb.vmware.com/s/article/76672 to find the lines to remove.",
           "incident_id": "80sjgslfrsbv",
           "created_at": "2023-01-06T18:10:26.711Z",
-          "updated_at": "2023-01-06T21:09:02.579Z",
+          "updated_at": "2023-01-13T06:00:24.953Z",
           "display_at": "2023-01-06T18:10:26.000Z",
           "affected_components": [
             {
