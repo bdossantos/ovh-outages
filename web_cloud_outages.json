@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-21T13:23:37.835Z"
+    "updated_at": "2023-01-21T13:46:28.397Z"
   },
   "components": [
     {
@@ -2683,9 +2683,9 @@
     {
       "id": "d35wczp7jqb9",
       "name": "[FR][Databases] - databases C5B",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-01-21T12:25:39.334Z",
-      "updated_at": "2023-01-21T13:07:23.924Z",
+      "updated_at": "2023-01-21T13:46:28.390Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "none",
@@ -2693,6 +2693,19 @@
       "started_at": "2023-01-21T12:25:39.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "4h5stjdqlymw",
+          "status": "identified",
+          "body": "On the B infrastructure It may impact incoming calls which would arrive on another DataBase, and which would therefore not have the information that the line is registered, so the call could not succeed.\nThe malfunction has been identified , it is about the replication of records between the DataBases. Our technicians are currently  fixing it",
+          "incident_id": "d35wczp7jqb9",
+          "created_at": "2023-01-21T13:46:28.387Z",
+          "updated_at": "2023-01-21T13:46:28.387Z",
+          "display_at": "2023-01-21T13:46:28.387Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zc8pf88gzcxq",
           "status": "investigating",
