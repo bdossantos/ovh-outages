@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-25T15:23:46.631Z"
+    "updated_at": "2023-01-26T01:23:51.128Z"
   },
   "components": [
     {
@@ -2506,9 +2506,9 @@
     {
       "id": "2x1r7q8sb98m",
       "name": "SBG5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:08.165Z",
-      "updated_at": "2022-12-14T08:55:38.156Z",
+      "updated_at": "2023-01-26T01:08:10.289Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -3967,7 +3967,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2022-04-13T13:25:21.119Z",
       "position": 30,
@@ -4185,7 +4185,147 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9yddqn5wn1hp",
+      "name": "[SBG][Public Cloud] - SBG0506B06A",
+      "status": "investigating",
+      "created_at": "2023-01-26T01:08:10.263Z",
+      "updated_at": "2023-01-26T01:08:10.334Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/88z36vd8h3qx",
+      "started_at": "2023-01-26T01:08:10.256Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "rwk65jvt6j8k",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 26/01/2023 00:44 UTC \n<b>Service impact :</b> Some servers are unreachable in this rack SBG0506B06A\n<b>Ongoing actions :</b> Our technical teams are investigating on the issue. \nUpdate will be post as significant progress is made.",
+          "incident_id": "9yddqn5wn1hp",
+          "created_at": "2023-01-26T01:08:10.332Z",
+          "updated_at": "2023-01-26T01:08:10.332Z",
+          "display_at": "2023-01-26T01:08:10.332Z",
+          "affected_components": [
+            {
+              "code": "2x1r7q8sb98m",
+              "name": "Network || Public network - SBG5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2x1r7q8sb98m",
+          "name": "SBG5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T10:07:08.165Z",
+          "updated_at": "2023-01-26T01:08:10.289Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "w5321gv03ywk",
+      "name": "PCI - SBG5 - host1579278",
+      "status": "investigating",
+      "created_at": "2023-01-26T00:52:05.326Z",
+      "updated_at": "2023-01-26T00:52:05.381Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wcx5wskt55t7",
+      "started_at": "2023-01-26T00:52:05.318Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1ydvny6xyfz9",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1579278\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\ncbd085ac-86bc-456c-9667-3fdfd4695db2\nd26553d5-78a0-4e9f-bafc-97ddbf54e40a\neb8a9cdf-fa8d-4731-b405-8524237f94bb\ne0ee34a6-c0d2-4f65-878a-219cc1c9559f\n269361e6-a87a-4f4f-aa56-a444d34acf14\nbca204da-df11-4815-acf9-9f2bd56dad1d\nb2501d2f-6873-4f1b-b257-833bdda226db\n28df5356-4dbe-49ea-b2a1-8ba825cfa0e1\ndb7ec84e-65a1-4518-9251-da7f8a377c1b\n50632f13-f365-40b8-a629-55a8c32cddf4\n5cf1a680-28d6-458a-8706-4947cc17f88b\n2ad63249-402f-4b13-846a-593cfad0e25a\n394a7e7f-d078-444a-b36f-2a5c70af5ac2\ne266ab9a-5884-481d-83c6-6cba2e1d3b04\nb53315e8-4aff-4a4b-8b1b-432d63f6ba49\nb453257d-58cf-40ec-a8d8-4da7f80bdb98\n4b3ae03a-c327-4aa9-95b3-4da0f5029126\n234443f9-8e49-428f-a611-6e5b6d025a4d\n150d1441-e633-4375-8e73-f8b758e743df\n956a78bc-174c-43ed-9336-b04ab9d0ee15\n69bf5081-5801-4695-8ced-47de64efb9b0\n629300b5-b798-4237-99b3-7e990f0fe3fa\n67e2760a-1a4c-426e-acef-99f7b2bcb463\nf4698815-02e3-4fb2-b959-8200f40998da\n8a26e580-02f3-4c52-b916-1faffd941108\ncedc1cff-ec4e-4385-b3a5-3e74e619cdda\nfce6761b-001a-404f-b023-898c4305eddb\n1ed716c6-dd21-4465-93cd-8631d49f51ff\nd8c97952-43d8-488d-8288-db67ca042f87\n038884af-fa0b-4c89-84ce-4013d546f8f2\n9a692e34-0475-4c76-b320-b498a62168eb\n7dd4c0c9-88db-4e80-a22a-a853385d244d\na2c08b88-7317-4459-9a21-ecb8d30bc8e5\n15d8c73a-1519-46d7-845c-13eaae53fc4f\nd039606b-1d94-473c-8853-fc5bb75a9d6c\n59f7614e-01d3-41d7-a1c1-79d9e0270e25\n27862e4c-952a-45fc-b9e3-a1dabb9943af\n4666939e-fe01-41f2-9361-810bcbe5839f\n2f813a45-b709-4502-9257-eb313df5ad74\n7eb13b80-f7cc-4e3c-8857-b7219a929508",
+          "incident_id": "w5321gv03ywk",
+          "created_at": "2023-01-26T00:52:05.378Z",
+          "updated_at": "2023-01-26T00:52:05.378Z",
+          "display_at": "2023-01-26T00:52:05.378Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "scpvg001sgx7",
+      "name": "PCI - SBG5 - host1579274",
+      "status": "investigating",
+      "created_at": "2023-01-26T00:52:04.865Z",
+      "updated_at": "2023-01-26T00:52:04.909Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4yqbw5259mlg",
+      "started_at": "2023-01-26T00:52:04.859Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "l0c6zbw4zb5v",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1579274\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n983255f2-3c94-48bd-b6f7-6338d2c2e063\n3cdeafb0-dd8a-4164-ac6d-f478b9a3a815\n5fd89124-3571-4610-9d09-a35180ae1729\n3b27838a-4846-4638-b336-9aa8f2cbd3a0\n02812add-89e2-4b9a-a2d1-d280d1b2394a\n472d9f6c-9007-492a-acb9-c26386413d3b\n23ea4150-dfc3-416e-a902-afe78433a5ee\n579d9162-4425-47d1-af71-89920902dc45\n6247b60e-cbe8-40ca-8096-c6917f0067ee\n05a739c9-6227-436a-bf78-63380fdcba03\n57b3035c-716c-4d2b-95d9-0875409bed69\n8c39846f-fe3b-4317-ad5e-89e5348c15c4\n60643813-8502-41ed-bca3-53c0375ecf2c\ne6c5f643-49dd-4dbc-b9e1-98a08e95e488",
+          "incident_id": "scpvg001sgx7",
+          "created_at": "2023-01-26T00:52:04.906Z",
+          "updated_at": "2023-01-26T00:52:04.906Z",
+          "display_at": "2023-01-26T00:52:04.906Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "gptlthc21gqf",
+      "name": "PCI - SBG5 - host1582646",
+      "status": "investigating",
+      "created_at": "2023-01-26T00:51:03.748Z",
+      "updated_at": "2023-01-26T00:51:03.803Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p9gx48s7rzx8",
+      "started_at": "2023-01-26T00:51:03.741Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1m8zk9qpc6dc",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1582646\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n4573ef91-e052-4bdd-b151-a9d446c36e6a\n1e0e9054-d8bf-41b2-b24c-335068ca5d9e\n58281712-b457-40f6-bb07-0a5720bc0a60\n4f12ef9b-b6b3-4578-a3bd-6943097ed538\n9a33fac6-8247-4ae3-92b5-986b7f053415\n7cfdc391-5ca3-4049-952a-3dd98c6ce5aa\na645cf89-22a5-4ea2-aad4-4393f36889f5\nba9f999a-90b2-4a1c-a28e-8421a411cc3b\n9138a39b-4aa2-44ed-98f8-e637ecca2075\nc3787ee8-0b07-4025-a2e0-286813694115\n153a4c54-ddb3-4d1d-9e3f-5b0a80280271\nc7a6d447-cb9f-4661-af20-ea9982ea26a7\n51d42f05-25d3-4452-a0bf-bebd52de5525\nb9958510-5a96-4c1a-a984-f218ab8bcda6\n787393d2-a1b2-4bef-937b-c830620f861e\ncf863cfa-5a26-44f0-aa76-0288529f23a8\n55f9a5f0-942c-43a6-93d1-7aeb883f1010\nbcb5c2f4-4767-42bb-b7ad-b259d41509b3\nbece6836-dd42-4440-9445-4fd908872399\n379de5fd-4dba-4cf2-b106-8030baaa4209\n00a7fa16-06d5-41d6-86ae-9d1be46c12fb\nc29a2243-f553-40da-b871-435a361b8fe6\n9ff786ed-1e42-48a9-ae1d-fb3f400ebe5f\n5d51a650-beaf-4590-ab44-1464ae10cb7f\nb71fbee3-98df-4d52-9bf2-1e12a2b7fb7e\nd5e08eb0-ade9-4db2-b761-d16e5d3e18f1\n339a096b-c443-4842-b7e3-3dcf48f0af96\n977b97db-53f2-4238-bc43-db2a803ed532\n8b9e6912-0b47-4a6e-bcf6-872301948289\nedfc952e-044e-43fd-874e-6bc3a7bf2888\nad08d2a4-26ca-4f52-ad02-afd03a8f338b\n9734b265-2a7e-4a68-9f65-d555f514600d\n9b2e16ba-c8b0-4684-b900-4c0af46d87d7\nb1da1ecb-ffe5-4465-999f-374c2927cf51\n61541b1d-fda4-49a2-b608-2cd0a0c44aa6\nbb119ab2-512c-45fe-977c-b41af088853f\n8b53e966-ca21-4f24-9082-fb55c95fb3f0\n571fe76f-2dd5-4d5f-af91-04e29d1a9098\ncb51c5a4-a533-44e5-b990-01be501486a6\n2544c1e5-051b-4bd8-b380-be272e49ece7",
+          "incident_id": "gptlthc21gqf",
+          "created_at": "2023-01-26T00:51:03.800Z",
+          "updated_at": "2023-01-26T00:51:03.800Z",
+          "display_at": "2023-01-26T00:51:03.800Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "51fr18gx1c73",
@@ -5384,7 +5524,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
