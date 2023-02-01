@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-01-31T23:28:52.292Z"
+    "updated_at": "2023-02-01T00:00:26.457Z"
   },
   "components": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1257,9 +1257,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-01-27T21:51:35.719Z",
+      "updated_at": "2023-02-01T00:00:26.345Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2080,73 +2080,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "2qy94j01q54s",
-      "name": "[RBX4][Dedicated Servers] - 54D17",
-      "status": "scheduled",
-      "created_at": "2023-01-20T00:41:28.143Z",
-      "updated_at": "2023-01-31T23:00:25.655Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3mgdp3v6dg6x",
-      "started_at": "2023-01-20T00:41:28.136Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "6pp62bl5xgft",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "2qy94j01q54s",
-          "created_at": "2023-01-31T23:00:25.424Z",
-          "updated_at": "2023-01-31T23:00:25.424Z",
-          "display_at": "2023-01-31T23:00:25.424Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1xt106zbmvdt",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 01/02/2023 00:00 UTC\n<b>End time :</b> 01/02/2023 05:00 UTC\n<b>Service impact :</b> Servers unreachable during maintenance (30 minutes max per server)\n<b>Service improvement :</b> Due to defective network equipment, our teams will relocate the servers from rack 54D17 to rack 54D19.",
-          "incident_id": "2qy94j01q54s",
-          "created_at": "2023-01-20T00:41:28.198Z",
-          "updated_at": "2023-01-20T00:41:28.198Z",
-          "display_at": "2023-01-20T00:41:28.198Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-01T00:00:00.000Z",
-      "scheduled_until": "2023-02-01T05:00:00.000Z"
-    },
-    {
       "id": "vc37fqjc9l8p",
       "name": "[RBX4][Network] - Rack 56D15",
       "status": "scheduled",
@@ -2713,6 +2646,123 @@
       "scheduled_until": "2023-02-06T23:30:00.000Z"
     },
     {
+      "id": "x0t8ng14nhwq",
+      "name": "[LIM1/GRA1/RBX1/WAW1][Network] - Network equipment version upgrade",
+      "status": "scheduled",
+      "created_at": "2023-01-31T23:31:51.126Z",
+      "updated_at": "2023-01-31T23:31:51.205Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g5461tmnmxdl",
+      "started_at": "2023-01-31T23:31:51.110Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rfn0117g1gdj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 06/02/2023 20:00 UTC \n<b>End time :</b> 06/02/2023 23:59 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we are rolling out an upgrade to several devices of network equipment.",
+          "incident_id": "x0t8ng14nhwq",
+          "created_at": "2023-01-31T23:31:51.201Z",
+          "updated_at": "2023-01-31T23:31:51.201Z",
+          "display_at": "2023-01-31T23:31:51.201Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2023-01-31T23:26:55.384Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2023-01-31T21:25:31.290Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2023-01-31T17:21:38.494Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2023-01-10T21:36:09.244Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-06T20:00:00.000Z",
+      "scheduled_until": "2023-02-06T23:59:00.000Z"
+    },
+    {
       "id": "x8tqq3lnldcf",
       "name": "[RBX7][BAREMETAL] - Reload network device",
       "status": "scheduled",
@@ -2915,6 +2965,60 @@
       ],
       "scheduled_for": "2023-02-07T20:00:00.000Z",
       "scheduled_until": "2023-02-07T23:59:00.000Z"
+    },
+    {
+      "id": "vm9xxrvwplrj",
+      "name": "[SYD2][Network] - Network equipment version upgrade",
+      "status": "scheduled",
+      "created_at": "2023-01-31T23:33:31.968Z",
+      "updated_at": "2023-01-31T23:33:32.027Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/l1k7pgtq1b54",
+      "started_at": "2023-01-31T23:33:31.960Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "d1fx4phvcw7h",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 08/02/2023 11:00 UTC \n<b>End time :</b> 08/02/2023 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we are rolling out an upgrade to several devices of network equipment.",
+          "incident_id": "vm9xxrvwplrj",
+          "created_at": "2023-01-31T23:33:32.024Z",
+          "updated_at": "2023-01-31T23:33:32.024Z",
+          "display_at": "2023-01-31T23:33:32.024Z",
+          "affected_components": [
+            {
+              "code": "5psdpd7s2jnn",
+              "name": "Dedicated Servers || Network - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5psdpd7s2jnn",
+          "name": "SYD",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:58.484Z",
+          "updated_at": "2023-01-31T15:25:51.638Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-08T11:00:00.000Z",
+      "scheduled_until": "2023-02-08T14:00:00.000Z"
     },
     {
       "id": "bn0xf270hj6c",
@@ -3208,60 +3312,6 @@
       "scheduled_until": "2023-02-13T23:59:00.000Z"
     },
     {
-      "id": "vxsgw4gb36m1",
-      "name": "[RBX1][Dedicated Servers] - 11C03",
-      "status": "scheduled",
-      "created_at": "2023-01-26T23:20:14.661Z",
-      "updated_at": "2023-01-26T23:20:14.730Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q5kmskc5zfxv",
-      "started_at": "2023-01-26T23:20:14.651Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "1nm02ybdmstz",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/02/2023 23:00 UTC \n<b>End time :</b> 15/02/2023 05:00 UTC \n<b>Service impact :</b> Servers will be temporarily unreachable for 30 minutes during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are moving servers from Rack 11C03.",
-          "incident_id": "vxsgw4gb36m1",
-          "created_at": "2023-01-26T23:20:14.726Z",
-          "updated_at": "2023-01-26T23:20:14.726Z",
-          "display_at": "2023-01-26T23:20:14.726Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-14T23:00:00.000Z",
-      "scheduled_until": "2023-02-15T05:00:00.000Z"
-    },
-    {
       "id": "rpkcs4xmln82",
       "name": "[RBX1][Dedicated Servers] - 17B01",
       "status": "scheduled",
@@ -3299,9 +3349,63 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-14T23:00:00.000Z",
+      "scheduled_until": "2023-02-15T05:00:00.000Z"
+    },
+    {
+      "id": "vxsgw4gb36m1",
+      "name": "[RBX1][Dedicated Servers] - 11C03",
+      "status": "scheduled",
+      "created_at": "2023-01-26T23:20:14.661Z",
+      "updated_at": "2023-01-26T23:20:14.730Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q5kmskc5zfxv",
+      "started_at": "2023-01-26T23:20:14.651Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "1nm02ybdmstz",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 14/02/2023 23:00 UTC \n<b>End time :</b> 15/02/2023 05:00 UTC \n<b>Service impact :</b> Servers will be temporarily unreachable for 30 minutes during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are moving servers from Rack 11C03.",
+          "incident_id": "vxsgw4gb36m1",
+          "created_at": "2023-01-26T23:20:14.726Z",
+          "updated_at": "2023-01-26T23:20:14.726Z",
+          "display_at": "2023-01-26T23:20:14.726Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3644,9 +3748,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3752,9 +3856,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3806,9 +3910,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-01-27T21:51:35.719Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3931,60 +4035,6 @@
       "scheduled_until": "2023-02-21T11:00:00.000Z"
     },
     {
-      "id": "djvl6ls5p1rz",
-      "name": "[BHS1][Dedicated Servers] - T01C32",
-      "status": "scheduled",
-      "created_at": "2023-01-26T22:18:07.399Z",
-      "updated_at": "2023-01-26T22:18:07.447Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zb76j2fb2lw1",
-      "started_at": "2023-01-26T22:18:07.392Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "z8k760sfzp85",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 21/02/2023 11:00 UTC \n<b>End time :</b> 21/02/2023 12:00 UTC \n<b>Service impact :</b> Public network will be temporarily unavailable during the maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be replacing a network equipment in rack T01C32",
-          "incident_id": "djvl6ls5p1rz",
-          "created_at": "2023-01-26T22:18:07.445Z",
-          "updated_at": "2023-01-26T22:18:07.445Z",
-          "display_at": "2023-01-26T22:18:07.445Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2023-01-30T17:42:34.464Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-21T11:00:00.000Z",
-      "scheduled_until": "2023-02-21T12:00:00.000Z"
-    },
-    {
       "id": "2r1b2mvt4vdh",
       "name": "[SYD1][Network] - Network equipment version upgrade",
       "status": "scheduled",
@@ -4037,6 +4087,60 @@
       ],
       "scheduled_for": "2023-02-21T11:00:00.000Z",
       "scheduled_until": "2023-02-21T14:00:00.000Z"
+    },
+    {
+      "id": "djvl6ls5p1rz",
+      "name": "[BHS1][Dedicated Servers] - T01C32",
+      "status": "scheduled",
+      "created_at": "2023-01-26T22:18:07.399Z",
+      "updated_at": "2023-01-26T22:18:07.447Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zb76j2fb2lw1",
+      "started_at": "2023-01-26T22:18:07.392Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "z8k760sfzp85",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/02/2023 11:00 UTC \n<b>End time :</b> 21/02/2023 12:00 UTC \n<b>Service impact :</b> Public network will be temporarily unavailable during the maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be replacing a network equipment in rack T01C32",
+          "incident_id": "djvl6ls5p1rz",
+          "created_at": "2023-01-26T22:18:07.445Z",
+          "updated_at": "2023-01-26T22:18:07.445Z",
+          "display_at": "2023-01-26T22:18:07.445Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2023-01-30T17:42:34.464Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-21T11:00:00.000Z",
+      "scheduled_until": "2023-02-21T12:00:00.000Z"
     },
     {
       "id": "g4jbss36bb18",
@@ -4955,30 +5059,63 @@
       "scheduled_until": "2023-03-10T01:00:00.000Z"
     },
     {
-      "id": "w36w8kd7ctx2",
-      "name": "[RBX8][Dedicated Servers] - Network equipment version upgrade",
-      "status": "scheduled",
-      "created_at": "2023-01-27T22:32:46.745Z",
-      "updated_at": "2023-01-27T22:32:46.799Z",
+      "id": "2qy94j01q54s",
+      "name": "[RBX4][Dedicated Servers] - 54D17",
+      "status": "in_progress",
+      "created_at": "2023-01-20T00:41:28.143Z",
+      "updated_at": "2023-02-01T00:00:26.440Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/glyjqqx7zgxz",
-      "started_at": "2023-01-27T22:32:46.737Z",
+      "shortlink": "https://stspg.io/3mgdp3v6dg6x",
+      "started_at": "2023-01-20T00:41:28.136Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "xnxbq12bzpwn",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/03/2023 01:00 UTC\n<b>End time :</b> 14/03/2023 05:00 UTC\n<b>Service impact :</b> No impact is expected for the customers who have set the aggregation properly (OLA configured). \nOtherwise, clients who have not defined the aggregation will have their servers temporarily unreachable for 30 minutes during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a version upgrade on multiple network equipment.",
-          "incident_id": "w36w8kd7ctx2",
-          "created_at": "2023-01-27T22:32:46.796Z",
-          "updated_at": "2023-01-27T22:32:46.796Z",
-          "display_at": "2023-01-27T22:32:46.796Z",
+          "id": "ttykv3vlmxr5",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "2qy94j01q54s",
+          "created_at": "2023-02-01T00:00:26.436Z",
+          "updated_at": "2023-02-01T00:00:26.436Z",
+          "display_at": "2023-02-01T00:00:26.436Z",
           "affected_components": [
             {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6pp62bl5xgft",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "2qy94j01q54s",
+          "created_at": "2023-01-31T23:00:25.424Z",
+          "updated_at": "2023-01-31T23:00:25.424Z",
+          "display_at": "2023-01-31T23:00:25.424Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1xt106zbmvdt",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/02/2023 00:00 UTC\n<b>End time :</b> 01/02/2023 05:00 UTC\n<b>Service impact :</b> Servers unreachable during maintenance (30 minutes max per server)\n<b>Service improvement :</b> Due to defective network equipment, our teams will relocate the servers from rack 54D17 to rack 54D19.",
+          "incident_id": "2qy94j01q54s",
+          "created_at": "2023-01-20T00:41:28.198Z",
+          "updated_at": "2023-01-20T00:41:28.198Z",
+          "display_at": "2023-01-20T00:41:28.198Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -4990,23 +5127,23 @@
       ],
       "components": [
         {
-          "id": "r7966tc9cpb9",
+          "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-01-31T17:21:38.494Z",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-02-01T00:00:26.345Z",
           "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-03-14T01:00:00.000Z",
-      "scheduled_until": "2023-03-14T05:00:00.000Z"
+      "scheduled_for": "2023-02-01T00:00:00.000Z",
+      "scheduled_until": "2023-02-01T05:00:00.000Z"
     },
     {
       "id": "mx12xbr25k08",
