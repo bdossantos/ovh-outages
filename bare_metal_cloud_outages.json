@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-08T13:50:46.005Z"
+    "updated_at": "2023-02-08T14:24:00.408Z"
   },
   "components": [
     {
@@ -173,21 +173,6 @@
       "only_show_if_degraded": false
     },
     {
-      "id": "qcwk8kn06rpl",
-      "name": "RBX",
-      "status": "degraded_performance",
-      "created_at": "2021-07-09T07:34:07.646Z",
-      "updated_at": "2023-02-08T13:50:23.371Z",
-      "position": 1,
-      "description": null,
-      "showcase": false,
-      "start_date": "2021-07-09",
-      "group_id": "7nxs1wy28gc7",
-      "page_id": "1qzzx4z9jvmv",
-      "group": false,
-      "only_show_if_degraded": false
-    },
-    {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
       "status": "operational",
@@ -198,6 +183,21 @@
       "showcase": false,
       "start_date": "2021-07-09",
       "group_id": "vp6404b62nhf",
+      "page_id": "1qzzx4z9jvmv",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
+      "id": "qcwk8kn06rpl",
+      "name": "RBX",
+      "status": "operational",
+      "created_at": "2021-07-09T07:34:07.646Z",
+      "updated_at": "2023-02-08T14:24:00.353Z",
+      "position": 1,
+      "description": null,
+      "showcase": false,
+      "start_date": "2021-07-09",
+      "group_id": "7nxs1wy28gc7",
       "page_id": "1qzzx4z9jvmv",
       "group": false,
       "only_show_if_degraded": false
@@ -1980,7 +1980,7 @@
     {
       "id": "7nxs1wy28gc7",
       "name": "Storage and Backups || Backup Storage",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:11.420Z",
       "updated_at": "2021-07-09T07:37:44.340Z",
       "position": 17,
@@ -2079,56 +2079,33 @@
   ],
   "incidents": [
     {
-      "id": "g024xr6fx4s9",
-      "name": "[RBX][Storage] - BackupStorage ACL",
-      "status": "identified",
-      "created_at": "2023-02-08T13:50:23.347Z",
-      "updated_at": "2023-02-08T13:50:46.001Z",
+      "id": "m7xpn4n1lfn6",
+      "name": "VPS - GRA4 - host650672",
+      "status": "investigating",
+      "created_at": "2023-02-08T14:03:23.248Z",
+      "updated_at": "2023-02-08T14:03:23.326Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/hzszqt5tmgnm",
-      "started_at": "2023-02-08T13:50:23.000Z",
+      "shortlink": "https://stspg.io/wtqrcd26j812",
+      "started_at": "2023-02-08T14:03:23.240Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "yd3sccvtmkff",
-          "status": "identified",
-          "body": "<b>Start time :</b> 08/02/2023 07:00 UTC\n<b>Service impact :</b> ACL modification on BackupStorage does not work.\n<b>Root Cause :</b> Software malfunction\n<b>Ongoing actions :</b> Resolution in progress\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
-          "incident_id": "g024xr6fx4s9",
-          "created_at": "2023-02-08T13:50:23.407Z",
-          "updated_at": "2023-02-08T13:50:45.950Z",
-          "display_at": "2023-02-08T13:50:23.000Z",
-          "affected_components": [
-            {
-              "code": "qcwk8kn06rpl",
-              "name": "Storage and Backups || Backup Storage - RBX",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
+          "id": "krdhct25d4xp",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost650672\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n2e79fdd9-ce83-41bf-8dc8-084f1fa782e6\ndd85e2fb-5373-4254-bf00-1d9072072514\n0ea04ceb-324e-4303-b7d0-ef42c1df32c9\n790fef15-65db-40f1-b6b1-17f9db039d87\n7a3d306e-1c3b-4b2f-959a-47f1b41fb9e1\n0cce0f92-e4e7-4870-b483-de7b1e4231df\nbf949711-f642-443f-a59b-4e9bddfbc31f\ne4d3976a-52ed-4ed1-8974-8baa341187fc\n9a728621-74a5-41da-87a4-e5f067361959\n1283594a-1b1f-487e-a86c-d0faa7e9cb58\n1d363517-3301-49b5-a5be-e65d18f4b820\n75bc829b-1c1a-44b4-82d8-794c507e4d36\nbaa3a2e8-4126-4ba7-9536-83203abc51ec\n51ab9995-9de6-4bff-bd7a-e91944b5dba7\nff6da57f-18c8-415c-925a-1ae22600ebd7\n76a6c9cf-6f89-4ac0-b2b1-7b2bb23cedf0\n06eb39aa-7c03-4bc0-9547-dc73bab07712\ne83bb4e9-86c2-47b0-bb97-53a46f8b3841\n347b9773-05d8-4152-b87b-2f2ff0f1b065\n7fbef4ed-ce12-4774-a77e-d2c03d0ee4cb\n806f6be8-4073-43f1-9ebc-952207c1d133\n0d4ee956-5717-4433-a036-fde6d3d0077d\n9edc69fe-0799-4971-910a-d8cc256b3a4a\ndf5e867f-e654-4daa-a605-2e50536cd8a2\nd990fe01-b8ed-4b38-afe0-29a34bcf4eb1\nf96c8933-c618-44ed-8089-47553e7241bf\n21db119d-1394-437f-8cc9-0a8dbfd124df\na0720285-73e1-4e33-8c9b-c5e3abbbbd99\n77e26ed7-a787-4378-834d-af8448497b4c\nd7c41718-0a47-4121-991a-f092956c1528\n8a3e4b35-af0b-4272-b676-ad5299609f10\nea1bbbcc-5ee1-4505-8dd7-87022b25f8cd\n95bb754d-9f41-4d14-9a44-8328e9371cf9\ne6b8b932-4c6f-4967-8daa-b62d6eeb1e15\n9af14f80-ad5b-41a6-8639-d57c546ba932\neb47af72-e9d0-4e18-a811-4245c20bff6e\na7a90cc4-56b4-4be2-a6b7-d97f24b9a7c6\n8639a84c-1a56-4283-a2a1-f739157dd857\nb7b9a497-e825-4e2a-b63b-948401d9006f\n464ade5e-a233-40c8-beaa-2acc8415950b\n132dc647-b39a-416c-a4a2-19dcaf255516\neab212fe-be40-4994-a140-684da4c35045\n427f9378-d5c8-4bf9-8790-a344f091f125\n8d58c7d1-1cc3-4923-89ce-2e7921655e59\ncfc6af5a-5a93-402e-9fde-d49b035de90e\n91288e2e-1804-498f-927a-f0c77a8e58f9\n029ca4c5-1fca-438e-b55e-d2f24ce11efb\n15bea40c-e3c6-4406-bb16-82ee302be26a\n7426a4bf-1250-47e5-b586-9fc552565c24\n942653ad-8560-4883-bbc1-6f657ab08076",
+          "incident_id": "m7xpn4n1lfn6",
+          "created_at": "2023-02-08T14:03:23.323Z",
+          "updated_at": "2023-02-08T14:03:23.323Z",
+          "display_at": "2023-02-08T14:03:23.323Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "qcwk8kn06rpl",
-          "name": "RBX",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2023-02-08T13:50:23.371Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7nxs1wy28gc7",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
+      "components": []
     },
     {
       "id": "36z03tg6kll3",
@@ -4846,77 +4823,10 @@
       ],
       "scheduled_for": "2023-03-23T01:00:00.000Z",
       "scheduled_until": "2023-03-23T05:00:00.000Z"
-    },
-    {
-      "id": "vm9xxrvwplrj",
-      "name": "[SYD2][Network] - Network equipment version upgrade",
-      "status": "in_progress",
-      "created_at": "2023-01-31T23:33:31.968Z",
-      "updated_at": "2023-02-08T11:00:12.976Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/l1k7pgtq1b54",
-      "started_at": "2023-01-31T23:33:31.960Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "vzy6qbm3qwj5",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "vm9xxrvwplrj",
-          "created_at": "2023-02-08T11:00:12.972Z",
-          "updated_at": "2023-02-08T11:00:12.972Z",
-          "display_at": "2023-02-08T11:00:12.972Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d1fx4phvcw7h",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 08/02/2023 11:00 UTC \n<b>End time :</b> 08/02/2023 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we are rolling out an upgrade to several devices of network equipment.",
-          "incident_id": "vm9xxrvwplrj",
-          "created_at": "2023-01-31T23:33:32.024Z",
-          "updated_at": "2023-01-31T23:33:32.024Z",
-          "display_at": "2023-01-31T23:33:32.024Z",
-          "affected_components": [
-            {
-              "code": "5psdpd7s2jnn",
-              "name": "Dedicated Servers || Network - SYD",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5psdpd7s2jnn",
-          "name": "SYD",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:58.484Z",
-          "updated_at": "2023-01-31T15:25:51.638Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-08T11:00:00.000Z",
-      "scheduled_until": "2023-02-08T14:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
