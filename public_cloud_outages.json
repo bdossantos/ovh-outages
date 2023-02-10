@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-09T23:30:09.765Z"
+    "updated_at": "2023-02-10T00:02:02.344Z"
   },
   "components": [
     {
@@ -4185,38 +4185,62 @@
       ]
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "3ywj0n7cgf4y",
-      "name": "PCI - GRA5 - host945292",
-      "status": "investigating",
-      "created_at": "2023-02-09T23:30:09.716Z",
-      "updated_at": "2023-02-09T23:30:09.762Z",
+      "id": "5r3xpfff1scf",
+      "name": "[GRA][Database] - legacy Redis registries upgrade",
+      "status": "scheduled",
+      "created_at": "2023-02-09T23:59:57.558Z",
+      "updated_at": "2023-02-09T23:59:57.603Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/k3t1x2p4ls41",
-      "started_at": "2023-02-09T23:30:09.710Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0h8pzvmmrs0k",
+      "started_at": "2023-02-09T23:59:57.553Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "q8hrm49y0hrx",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost945292\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n67bd5447-4bab-458e-92f3-35e25c5b6deb\n5a931cef-4e6e-4624-adcd-58079b072f82\nf23fd125-3ca8-4f73-83fd-fdeb8e383a4f\n14d170d7-fe0b-45ad-b0bf-877c813c1be1",
-          "incident_id": "3ywj0n7cgf4y",
-          "created_at": "2023-02-09T23:30:09.760Z",
-          "updated_at": "2023-02-09T23:30:09.760Z",
-          "display_at": "2023-02-09T23:30:09.760Z",
-          "affected_components": null,
+          "id": "5k55rdss79pf",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 13/02/2023 13:00 UTC \n<b>End time :</b> 13/02/2023 16:00 UTC \n<b>Service impact :</b> Garbage collection, replication and vulnerability scan will not be possible during the upgrade on legacy registries.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade for legacy Redis registries",
+          "incident_id": "5r3xpfff1scf",
+          "created_at": "2023-02-09T23:59:57.601Z",
+          "updated_at": "2023-02-09T23:59:57.601Z",
+          "display_at": "2023-02-09T23:59:57.601Z",
+          "affected_components": [
+            {
+              "code": "1vy7xggc5ksv",
+              "name": "Databases || Redis - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
-    }
-  ],
-  "scheduled_maintenances": [
+      "components": [
+        {
+          "id": "1vy7xggc5ksv",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2022-04-06T13:52:28.884Z",
+          "updated_at": "2023-02-09T18:45:45.027Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "l0kf3fyvrmlc",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-13T13:00:00.000Z",
+      "scheduled_until": "2023-02-13T16:00:00.000Z"
+    },
     {
       "id": "m37j7hxgqwtl",
       "name": "[GRA][ManagedPrivateRegistry] - Registries version upgrade",
