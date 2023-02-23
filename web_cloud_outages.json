@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-23T09:43:36.375Z"
+    "updated_at": "2023-02-23T10:31:51.302Z"
   },
   "components": [
     {
@@ -186,9 +186,9 @@
     {
       "id": "n13m067lzlsd",
       "name": "Access SBC",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:11.544Z",
-      "updated_at": "2023-02-17T13:30:21.426Z",
+      "updated_at": "2023-02-23T10:21:11.988Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -396,9 +396,9 @@
     {
       "id": "xx19185dn0z3",
       "name": "Belgium",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:44.960Z",
-      "updated_at": "2022-02-23T19:04:45.320Z",
+      "updated_at": "2023-02-23T10:30:29.352Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1926,7 +1926,7 @@
     {
       "id": "xzvp84m353hd",
       "name": "VoIP || Interconnect",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:47.435Z",
       "updated_at": "2021-10-29T12:27:35.315Z",
       "position": 13,
@@ -2031,7 +2031,7 @@
     {
       "id": "0nnlxrnw4m1y",
       "name": "VoIP || Telephony",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:13.456Z",
       "updated_at": "2021-10-29T12:27:35.340Z",
       "position": 15,
@@ -2711,7 +2711,112 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vgsxm742v0j7",
+      "name": "[Belgium][VoIP] - Outgoing/Ingoing calls degradation",
+      "status": "investigating",
+      "created_at": "2023-02-23T10:30:29.323Z",
+      "updated_at": "2023-02-23T10:31:51.298Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/h8b2r71v43g7",
+      "started_at": "2023-02-23T10:30:29.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "mpkjpyvt04xy",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 23/02/2023 04:00 UTC\n<b>Service impact :</b> You may experience degradations on Belgium ingoing/outgoing calls.\n<b>Ongoing actions :</b> Investigating Our technical teams are working on the issue. Update will be post as significant progress is made",
+          "incident_id": "vgsxm742v0j7",
+          "created_at": "2023-02-23T10:30:29.393Z",
+          "updated_at": "2023-02-23T10:31:41.194Z",
+          "display_at": "2023-02-23T10:30:29.000Z",
+          "affected_components": [
+            {
+              "code": "xx19185dn0z3",
+              "name": "VoIP || Interconnect - Belgium",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xx19185dn0z3",
+          "name": "Belgium",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:44.960Z",
+          "updated_at": "2023-02-23T10:30:29.352Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "gj076ql5ggz5",
+      "name": "[Belguim][VoIP] - Registry Issues",
+      "status": "investigating",
+      "created_at": "2023-02-23T10:21:11.957Z",
+      "updated_at": "2023-02-23T10:21:12.035Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/dyd7f3s63n18",
+      "started_at": "2023-02-23T10:21:11.950Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "fgx2wd3njc9v",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 23/02/2023 04:00 UTC \n<b>Service impact :</b> You may have difficulty registering your phones.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "gj076ql5ggz5",
+          "created_at": "2023-02-23T10:21:12.032Z",
+          "updated_at": "2023-02-23T10:21:12.032Z",
+          "display_at": "2023-02-23T10:21:12.032Z",
+          "affected_components": [
+            {
+              "code": "n13m067lzlsd",
+              "name": "VoIP || Telephony - Access SBC",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n13m067lzlsd",
+          "name": "Access SBC",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:11.544Z",
+          "updated_at": "2023-02-23T10:21:11.988Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "0nnlxrnw4m1y",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zpvjkjzwx560",
@@ -4125,7 +4230,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
