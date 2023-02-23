@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-23T16:43:48.303Z"
+    "updated_at": "2023-02-23T18:15:49.608Z"
   },
   "components": [
     {
@@ -351,9 +351,9 @@
     {
       "id": "cljxz1bqnkyx",
       "name": "GRA7",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-23T11:02:45.256Z",
-      "updated_at": "2023-02-22T23:02:21.895Z",
+      "updated_at": "2023-02-23T18:15:49.553Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2695,7 +2695,7 @@
     {
       "id": "dc34f7wx9y5b",
       "name": "Web PaaS || GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-23T11:02:45.236Z",
       "updated_at": "2021-11-23T11:02:45.236Z",
       "position": 31,
@@ -2858,60 +2858,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "zpvjkjzwx560",
-      "name": "[GRA7][WebPaaS] - Routine Maintenance",
-      "status": "scheduled",
-      "created_at": "2023-02-20T22:44:24.182Z",
-      "updated_at": "2023-02-20T22:51:58.889Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0qyxw761hjb2",
-      "started_at": "2023-02-20T22:44:24.172Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "3b99mnhb6bx6",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/02/2023 19:00 UTC\n<b>End time :</b> 23/02/2023 20:00 UTC\n<b>Service impact :</b> All projects and environments will continue to function during the upgrade; however, Console User Interface, Git and Crons will be unavailable during the reindexing of git logs, which may take up to 6 hours.\n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on customers' projects. This maintenance is expected to not have impact on the projects: no downtime, nor performance issue are expected.",
-          "incident_id": "zpvjkjzwx560",
-          "created_at": "2023-02-20T22:44:24.249Z",
-          "updated_at": "2023-02-20T22:44:24.249Z",
-          "display_at": "2023-02-20T22:44:24.249Z",
-          "affected_components": [
-            {
-              "code": "cljxz1bqnkyx",
-              "name": "Web PaaS || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cljxz1bqnkyx",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2021-11-23T11:02:45.256Z",
-          "updated_at": "2023-02-22T23:02:21.895Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-23",
-          "group_id": "dc34f7wx9y5b",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-23T19:00:00.000Z",
-      "scheduled_until": "2023-02-23T20:00:00.000Z"
-    },
     {
       "id": "tqjpmz89c8z0",
       "name": "[GRA1][WebHosting] - Data Migration",
@@ -3127,6 +3073,80 @@
       ],
       "scheduled_for": "2023-03-02T22:00:00.000Z",
       "scheduled_until": "2023-03-03T01:00:00.000Z"
+    },
+    {
+      "id": "zpvjkjzwx560",
+      "name": "[GRA7][WebPaaS] - Routine Maintenance",
+      "status": "in_progress",
+      "created_at": "2023-02-20T22:44:24.182Z",
+      "updated_at": "2023-02-23T18:15:49.598Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0qyxw761hjb2",
+      "started_at": "2023-02-20T22:44:24.172Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "4ts5419v90yj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "zpvjkjzwx560",
+          "created_at": "2023-02-23T18:15:49.595Z",
+          "updated_at": "2023-02-23T18:15:49.595Z",
+          "display_at": "2023-02-23T18:15:49.595Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3b99mnhb6bx6",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/02/2023 19:00 UTC\n<b>End time :</b> 23/02/2023 20:00 UTC\n<b>Service impact :</b> All projects and environments will continue to function during the upgrade; however, Console User Interface, Git and Crons will be unavailable during the reindexing of git logs, which may take up to 6 hours.\n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on customers' projects. This maintenance is expected to not have impact on the projects: no downtime, nor performance issue are expected.",
+          "incident_id": "zpvjkjzwx560",
+          "created_at": "2023-02-20T22:44:24.249Z",
+          "updated_at": "2023-02-20T22:44:24.249Z",
+          "display_at": "2023-02-20T22:44:24.249Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cljxz1bqnkyx",
+          "name": "GRA7",
+          "status": "under_maintenance",
+          "created_at": "2021-11-23T11:02:45.256Z",
+          "updated_at": "2023-02-23T18:15:49.553Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-23",
+          "group_id": "dc34f7wx9y5b",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-23T19:00:00.000Z",
+      "scheduled_until": "2023-02-23T20:00:00.000Z"
     },
     {
       "id": "6ch0j6f5d9bv",
