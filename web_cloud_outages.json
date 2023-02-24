@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-24T10:43:23.451Z"
+    "updated_at": "2023-02-24T13:30:31.356Z"
   },
   "components": [
     {
@@ -396,9 +396,9 @@
     {
       "id": "xx19185dn0z3",
       "name": "Belgium",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:44.960Z",
-      "updated_at": "2023-02-23T12:40:19.188Z",
+      "updated_at": "2023-02-24T13:30:31.289Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1926,7 +1926,7 @@
     {
       "id": "xzvp84m353hd",
       "name": "VoIP || Interconnect",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:47.435Z",
       "updated_at": "2021-10-29T12:27:35.315Z",
       "position": 13,
@@ -2714,60 +2714,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "8bpds06hwx92",
-      "name": "[Belgium][VoIP] - Network Maintenance",
-      "status": "scheduled",
-      "created_at": "2023-02-24T10:33:11.645Z",
-      "updated_at": "2023-02-24T10:33:11.707Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/d9gqkdckrtym",
-      "started_at": "2023-02-24T10:33:11.638Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "c83r89hpdrm3",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 24/02/2023 13:30 UTC \n<b>End time :</b> 24/02/2023 15:00 UTC \n<b>Service impact :</b> Communication could be impacted during 10sec during the time frame of this intervention\n<b>Related Maintenance :</b> https://network.status-ovhcloud.com/incidents/1dwrvgkpk58v\n<b>Service improvement :</b> Our teams will perform a configuration update of the Brussels POP network equipment.",
-          "incident_id": "8bpds06hwx92",
-          "created_at": "2023-02-24T10:33:11.704Z",
-          "updated_at": "2023-02-24T10:33:11.704Z",
-          "display_at": "2023-02-24T10:33:11.704Z",
-          "affected_components": [
-            {
-              "code": "xx19185dn0z3",
-              "name": "VoIP || Interconnect - Belgium",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xx19185dn0z3",
-          "name": "Belgium",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:44.960Z",
-          "updated_at": "2023-02-23T12:40:19.188Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "xzvp84m353hd",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-02-24T13:30:00.000Z",
-      "scheduled_until": "2023-02-24T15:00:00.000Z"
-    },
-    {
       "id": "q09f1b336b2w",
       "name": "[GRA1][WebHosting] - Data Migration",
       "status": "scheduled",
@@ -2982,6 +2928,80 @@
       ],
       "scheduled_for": "2023-03-02T22:00:00.000Z",
       "scheduled_until": "2023-03-03T01:00:00.000Z"
+    },
+    {
+      "id": "8bpds06hwx92",
+      "name": "[Belgium][VoIP] - Network Maintenance",
+      "status": "in_progress",
+      "created_at": "2023-02-24T10:33:11.645Z",
+      "updated_at": "2023-02-24T13:30:31.344Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/d9gqkdckrtym",
+      "started_at": "2023-02-24T10:33:11.638Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "16x83mmrcchj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "8bpds06hwx92",
+          "created_at": "2023-02-24T13:30:31.340Z",
+          "updated_at": "2023-02-24T13:30:31.340Z",
+          "display_at": "2023-02-24T13:30:31.340Z",
+          "affected_components": [
+            {
+              "code": "xx19185dn0z3",
+              "name": "VoIP || Interconnect - Belgium",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "c83r89hpdrm3",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 24/02/2023 13:30 UTC \n<b>End time :</b> 24/02/2023 15:00 UTC \n<b>Service impact :</b> Communication could be impacted during 10sec during the time frame of this intervention\n<b>Related Maintenance :</b> https://network.status-ovhcloud.com/incidents/1dwrvgkpk58v\n<b>Service improvement :</b> Our teams will perform a configuration update of the Brussels POP network equipment.",
+          "incident_id": "8bpds06hwx92",
+          "created_at": "2023-02-24T10:33:11.704Z",
+          "updated_at": "2023-02-24T10:33:11.704Z",
+          "display_at": "2023-02-24T10:33:11.704Z",
+          "affected_components": [
+            {
+              "code": "xx19185dn0z3",
+              "name": "VoIP || Interconnect - Belgium",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xx19185dn0z3",
+          "name": "Belgium",
+          "status": "under_maintenance",
+          "created_at": "2021-06-30T12:19:44.960Z",
+          "updated_at": "2023-02-24T13:30:31.289Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-02-24T13:30:00.000Z",
+      "scheduled_until": "2023-02-24T15:00:00.000Z"
     },
     {
       "id": "6ch0j6f5d9bv",
