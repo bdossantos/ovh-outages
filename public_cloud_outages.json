@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-27T14:05:03.622Z"
+    "updated_at": "2023-02-27T14:48:33.193Z"
   },
   "components": [
     {
@@ -618,9 +618,9 @@
     {
       "id": "cfp9bz2qvyqt",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:06.918Z",
-      "updated_at": "2023-02-02T10:40:22.914Z",
+      "updated_at": "2023-02-27T14:48:33.126Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3533,7 +3533,7 @@
     {
       "id": "99vzp9gbvfqg",
       "name": "Storage || Volume Snapshot (CEPH)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:21.383Z",
       "updated_at": "2022-04-13T13:25:21.017Z",
       "position": 19,
@@ -4185,7 +4185,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "6kk2dvrfxh42",
+      "name": "[GRA1][Storgage] - CEPH unavailability",
+      "status": "identified",
+      "created_at": "2023-02-27T14:48:33.081Z",
+      "updated_at": "2023-02-27T14:48:33.189Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/nj80f05bq21m",
+      "started_at": "2023-02-27T14:48:33.073Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6f31rl5gpzpr",
+          "status": "identified",
+          "body": "<b>Start time :</b> 27/02/2023 14:36 UTC \n<b>Service impact :</b> Some CEPH cluster are unavailable.\n<b>Ongoing actions :</b> Investigating\nOur technical teams need to shut down some CEPH cluster on to resolved an issue.\nAn update will be post when the clusters are shut down.",
+          "incident_id": "6kk2dvrfxh42",
+          "created_at": "2023-02-27T14:48:33.186Z",
+          "updated_at": "2023-02-27T14:48:33.186Z",
+          "display_at": "2023-02-27T14:48:33.186Z",
+          "affected_components": [
+            {
+              "code": "cfp9bz2qvyqt",
+              "name": "Storage || Volume Snapshot (CEPH) - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cfp9bz2qvyqt",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:06.918Z",
+          "updated_at": "2023-02-27T14:48:33.126Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "63dhwpxzgd0m",
@@ -5398,7 +5451,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
