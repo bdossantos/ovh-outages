@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-02-28T09:58:29.539Z"
+    "updated_at": "2023-02-28T10:30:08.541Z"
   },
   "components": [
     {
@@ -288,9 +288,9 @@
     {
       "id": "zvrfgrvrp8kc",
       "name": "UK1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:16.391Z",
-      "updated_at": "2023-02-15T16:33:59.374Z",
+      "updated_at": "2023-02-28T10:21:02.155Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -3675,7 +3675,7 @@
     {
       "id": "5bttkdz4t240",
       "name": "Compute - Instance || ERI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:17.232Z",
       "updated_at": "2022-04-13T13:25:21.035Z",
       "position": 21,
@@ -4186,6 +4186,107 @@
     }
   ],
   "incidents": [
+    {
+      "id": "jctv7qz6dym8",
+      "name": "PCI - GRA3 - host1582652",
+      "status": "investigating",
+      "created_at": "2023-02-28T10:30:08.483Z",
+      "updated_at": "2023-02-28T10:30:08.538Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bk4qzsrg1v9b",
+      "started_at": "2023-02-28T10:30:08.476Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "62m601cggfsv",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1582652\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n258f4fc3-8404-4ca3-878f-5d85d46f8ca6\nda6509b0-11d5-4b2d-9299-b464623675b5\nf6054812-1691-4e59-b4c3-5895c10f0ca3\nef5b447d-8bd0-44e4-b7c8-252d926073f4\nb24b308d-70d0-40dc-8e2e-534737ce683c\ndb862d3f-0f74-4dcf-8739-6255fe1a84fb\n23a459b7-70be-43f3-8469-81008157c10e\n0e2f470f-738d-42f1-9f25-9be8e6b65e41",
+          "incident_id": "jctv7qz6dym8",
+          "created_at": "2023-02-28T10:30:08.535Z",
+          "updated_at": "2023-02-28T10:30:08.535Z",
+          "display_at": "2023-02-28T10:30:08.535Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "2myw6gw3nvwn",
+      "name": "[ERI1][Dedicates servers] - E101C20/E101C21",
+      "status": "identified",
+      "created_at": "2023-02-28T10:21:02.112Z",
+      "updated_at": "2023-02-28T10:24:49.024Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/p7sy4kd3y4tt",
+      "started_at": "2023-02-28T10:21:02.103Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "cl6c399nwzz1",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "2myw6gw3nvwn",
+          "created_at": "2023-02-28T10:24:49.022Z",
+          "updated_at": "2023-02-28T10:24:49.022Z",
+          "display_at": "2023-02-28T10:24:49.022Z",
+          "affected_components": [
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t3p9y6vw5p54",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 28/02/2023 10:40 UTC \n<b>Service impact :</b> Some servers are unreachable.\n<b>Ongoing actions :</b> Our technicians are currently working on in order to fix it",
+          "incident_id": "2myw6gw3nvwn",
+          "created_at": "2023-02-28T10:21:02.220Z",
+          "updated_at": "2023-02-28T10:21:02.220Z",
+          "display_at": "2023-02-28T10:21:02.220Z",
+          "affected_components": [
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvrfgrvrp8kc",
+          "name": "UK1",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:38:16.391Z",
+          "updated_at": "2023-02-28T10:21:02.155Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "5bttkdz4t240",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "s5f8w88r67ld",
       "name": "PCI - UK1 - host1437026",
@@ -5660,7 +5761,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
