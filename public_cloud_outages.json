@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-01T12:34:27.956Z"
+    "updated_at": "2023-03-01T13:01:00.416Z"
   },
   "components": [
     {
@@ -70,9 +70,9 @@
     {
       "id": "fmy1mbtr2jvd",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:58.595Z",
-      "updated_at": "2023-02-15T11:08:32.083Z",
+      "updated_at": "2023-03-01T13:01:00.182Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2305,7 +2305,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2022-04-13T13:25:20.912Z",
       "position": 8,
@@ -4818,73 +4818,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "rl27tk0dlbny",
-      "name": "[GRA][ManagedPrivateRegistry] - Registries version upgrade",
-      "status": "scheduled",
-      "created_at": "2023-01-17T23:21:36.455Z",
-      "updated_at": "2023-03-01T11:59:57.581Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vshxndcdwrcc",
-      "started_at": "2023-01-17T23:21:36.446Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "262z9725z5dh",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "rl27tk0dlbny",
-          "created_at": "2023-03-01T11:59:57.481Z",
-          "updated_at": "2023-03-01T11:59:57.481Z",
-          "display_at": "2023-03-01T11:59:57.481Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d1v5qjxdzz6s",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 01/03/2023 13:00 UTC\n<b>End time :</b> 01/03/2023 17:00 UTC\n<b>Service impact :</b> The registries will be set in read-only mode and the registries will be unavailable for a few minutes during the operation.\n<b>Service improvement :</b> Following our continuous improvement policy, we need to perform a version upgrade on the registries.",
-          "incident_id": "rl27tk0dlbny",
-          "created_at": "2023-01-17T23:21:36.514Z",
-          "updated_at": "2023-01-17T23:21:36.514Z",
-          "display_at": "2023-01-17T23:21:36.514Z",
-          "affected_components": [
-            {
-              "code": "fmy1mbtr2jvd",
-              "name": "Containers & Orchestration || Managed Private Registry - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "fmy1mbtr2jvd",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2023-02-15T11:08:32.083Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "dbhdvj49c2xr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-03-01T13:00:00.000Z",
-      "scheduled_until": "2023-03-01T17:00:00.000Z"
-    },
-    {
       "id": "rzk0f2lc0nmc",
       "name": "[RBX1/WAW1][Public Cloud] - Network equipment version upgrade",
       "status": "scheduled",
@@ -4984,9 +4917,9 @@
         {
           "id": "fmy1mbtr2jvd",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2023-02-15T11:08:32.083Z",
+          "updated_at": "2023-03-01T13:01:00.182Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5100,9 +5033,9 @@
         {
           "id": "fmy1mbtr2jvd",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2023-02-15T11:08:32.083Z",
+          "updated_at": "2023-03-01T13:01:00.182Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -6140,6 +6073,93 @@
       "components": [],
       "scheduled_for": "2023-03-29T11:00:00.000Z",
       "scheduled_until": "2023-03-29T14:00:00.000Z"
+    },
+    {
+      "id": "rl27tk0dlbny",
+      "name": "[GRA][ManagedPrivateRegistry] - Registries version upgrade",
+      "status": "in_progress",
+      "created_at": "2023-01-17T23:21:36.455Z",
+      "updated_at": "2023-03-01T13:01:00.402Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vshxndcdwrcc",
+      "started_at": "2023-01-17T23:21:36.446Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "gb060rpkstkf",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "rl27tk0dlbny",
+          "created_at": "2023-03-01T13:01:00.392Z",
+          "updated_at": "2023-03-01T13:01:00.392Z",
+          "display_at": "2023-03-01T13:01:00.392Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "262z9725z5dh",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rl27tk0dlbny",
+          "created_at": "2023-03-01T11:59:57.481Z",
+          "updated_at": "2023-03-01T11:59:57.481Z",
+          "display_at": "2023-03-01T11:59:57.481Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "d1v5qjxdzz6s",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/03/2023 13:00 UTC\n<b>End time :</b> 01/03/2023 17:00 UTC\n<b>Service impact :</b> The registries will be set in read-only mode and the registries will be unavailable for a few minutes during the operation.\n<b>Service improvement :</b> Following our continuous improvement policy, we need to perform a version upgrade on the registries.",
+          "incident_id": "rl27tk0dlbny",
+          "created_at": "2023-01-17T23:21:36.514Z",
+          "updated_at": "2023-01-17T23:21:36.514Z",
+          "display_at": "2023-01-17T23:21:36.514Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fmy1mbtr2jvd",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:33:58.595Z",
+          "updated_at": "2023-03-01T13:01:00.182Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "dbhdvj49c2xr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-01T13:00:00.000Z",
+      "scheduled_until": "2023-03-01T17:00:00.000Z"
     },
     {
       "id": "ptrp02v9kl4m",
