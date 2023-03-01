@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-01T10:18:27.807Z"
+    "updated_at": "2023-03-01T11:00:03.536Z"
   },
   "components": [
     {
@@ -4189,9 +4189,9 @@
     {
       "id": "qsnxngjxzzgx",
       "name": "[ALL][Public Cloud][Managed Kubernetes Service] - Cluster deletion requests return error",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-03-01T10:09:20.166Z",
-      "updated_at": "2023-03-01T10:15:27.990Z",
+      "updated_at": "2023-03-01T10:51:31.663Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -4199,6 +4199,178 @@
       "started_at": "2023-03-01T10:09:20.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "my5sy50fm7g6",
+          "status": "identified",
+          "body": "Existing clusters are impacted if the customer requests a deletion.\nCluster creation is operational again",
+          "incident_id": "qsnxngjxzzgx",
+          "created_at": "2023-03-01T10:51:31.660Z",
+          "updated_at": "2023-03-01T10:51:31.660Z",
+          "display_at": "2023-03-01T10:51:31.660Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "49jdf7zj6zfc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SGP1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "xv0rhxd2kfbs",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SYD1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "wv2rf0h84jnq",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-EAST-VA-1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "yqn3gnbvd5nk",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-WEST-OR-1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ldwq94hh9fd8",
+          "status": "identified",
+          "body": "Existing clusters are not impacted.",
+          "incident_id": "qsnxngjxzzgx",
+          "created_at": "2023-03-01T10:47:59.594Z",
+          "updated_at": "2023-03-01T10:47:59.594Z",
+          "display_at": "2023-03-01T10:47:59.594Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "49jdf7zj6zfc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SGP1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "xv0rhxd2kfbs",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SYD1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "wv2rf0h84jnq",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-EAST-VA-1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "yqn3gnbvd5nk",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-WEST-OR-1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "74m2q9y6gjx9",
           "status": "investigating",
@@ -4558,37 +4730,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "ptrp02v9kl4m",
-      "name": "[SYD2][Public Cloud] - Network equipment version upgrade",
-      "status": "scheduled",
-      "created_at": "2023-02-14T17:34:18.326Z",
-      "updated_at": "2023-02-14T17:34:18.377Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8q6j9fhfr68t",
-      "started_at": "2023-02-14T17:34:18.322Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "rmmjr05b98hc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 01/03/2023 11:00 UTC \n<b>End time :</b> 01/03/2023 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be upgrading the version of multiple network equipment",
-          "incident_id": "ptrp02v9kl4m",
-          "created_at": "2023-02-14T17:34:18.374Z",
-          "updated_at": "2023-02-14T17:34:18.374Z",
-          "display_at": "2023-02-14T17:34:18.374Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2023-03-01T11:00:00.000Z",
-      "scheduled_until": "2023-03-01T14:00:00.000Z"
-    },
     {
       "id": "rl27tk0dlbny",
       "name": "[GRA][ManagedPrivateRegistry] - Registries version upgrade",
@@ -5899,6 +6040,50 @@
       "components": [],
       "scheduled_for": "2023-03-29T11:00:00.000Z",
       "scheduled_until": "2023-03-29T14:00:00.000Z"
+    },
+    {
+      "id": "ptrp02v9kl4m",
+      "name": "[SYD2][Public Cloud] - Network equipment version upgrade",
+      "status": "in_progress",
+      "created_at": "2023-02-14T17:34:18.326Z",
+      "updated_at": "2023-03-01T11:00:03.525Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8q6j9fhfr68t",
+      "started_at": "2023-02-14T17:34:18.322Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "4036y6kznb0z",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "ptrp02v9kl4m",
+          "created_at": "2023-03-01T11:00:03.517Z",
+          "updated_at": "2023-03-01T11:00:03.517Z",
+          "display_at": "2023-03-01T11:00:03.517Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rmmjr05b98hc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 01/03/2023 11:00 UTC \n<b>End time :</b> 01/03/2023 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be upgrading the version of multiple network equipment",
+          "incident_id": "ptrp02v9kl4m",
+          "created_at": "2023-02-14T17:34:18.374Z",
+          "updated_at": "2023-02-14T17:34:18.374Z",
+          "display_at": "2023-02-14T17:34:18.374Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2023-03-01T11:00:00.000Z",
+      "scheduled_until": "2023-03-01T14:00:00.000Z"
     }
   ],
   "status": {
