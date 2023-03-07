@@ -4,13 +4,13 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-07T09:09:43.058Z"
+    "updated_at": "2023-03-07T12:18:30.486Z"
   },
   "components": [
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2021-06-30T12:27:22.791Z",
       "position": 1,
@@ -2066,9 +2066,9 @@
     {
       "id": "nfpr6w6674vw",
       "name": "Cluster023",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:13.475Z",
-      "updated_at": "2023-03-07T09:09:42.994Z",
+      "updated_at": "2023-03-07T12:18:29.899Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2712,6 +2712,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "3mjflwt6s28c",
+      "name": "[GRA1][Webhosting] - Cluster023 - Filerz112",
+      "status": "investigating",
+      "created_at": "2023-03-07T12:18:29.863Z",
+      "updated_at": "2023-03-07T12:18:30.483Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/db5p14dp4dcr",
+      "started_at": "2023-03-07T12:18:29.855Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "5w6tgx7y9482",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 07/03/2023 12:12 UTC\n<b>Service impact :</b> Websites slowness on some hosted websites on filerz112\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on resolving the issue.\nUpdate will be post as significant progress is made.",
+          "incident_id": "3mjflwt6s28c",
+          "created_at": "2023-03-07T12:18:30.480Z",
+          "updated_at": "2023-03-07T12:18:30.480Z",
+          "display_at": "2023-03-07T12:18:30.480Z",
+          "affected_components": [
+            {
+              "code": "nfpr6w6674vw",
+              "name": "Web Hosting || Datacenter GRA - Cluster023",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nfpr6w6674vw",
+          "name": "Cluster023",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:13.475Z",
+          "updated_at": "2023-03-07T12:18:29.899Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "49j4nch59qs2",
       "name": "[Global][VoIP] - SMS",
