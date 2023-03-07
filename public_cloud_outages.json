@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-07T15:29:14.978Z"
+    "updated_at": "2023-03-07T16:50:08.331Z"
   },
   "components": [
     {
@@ -806,9 +806,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2023-03-07T14:29:44.480Z",
+      "updated_at": "2023-03-07T16:50:08.269Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3448,7 +3448,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2022-04-13T13:25:21.008Z",
       "position": 18,
@@ -4205,16 +4205,54 @@
     {
       "id": "jr2nyxvljrfm",
       "name": "[GRA/RBX/SBG/BHS][Object Storage] - Disconnection and error 500/503",
-      "status": "identified",
-      "created_at": "2023-03-07T14:22:38.794Z",
-      "updated_at": "2023-03-07T15:29:14.969Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2023-03-07T14:22:38.000Z",
+      "updated_at": "2023-03-07T16:50:08.328Z",
+      "monitoring_at": "2023-03-07T16:50:08.313Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/4hkmzmdqnwfv",
       "started_at": "2023-03-07T14:22:38.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "j7hv37vqvhxz",
+          "status": "monitoring",
+          "body": "We no longer have an impact on the GRA region",
+          "incident_id": "jr2nyxvljrfm",
+          "created_at": "2023-03-07T16:50:08.313Z",
+          "updated_at": "2023-03-07T16:50:08.313Z",
+          "display_at": "2023-03-07T16:50:08.313Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xk8w8njb4trh",
           "status": "identified",
@@ -4343,9 +4381,9 @@
         {
           "id": "k86vmhcsnjtj",
           "name": "GRA",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2023-03-07T14:29:44.480Z",
+          "updated_at": "2023-03-07T16:50:08.269Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -4386,6 +4424,122 @@
           "only_show_if_degraded": false
         }
       ]
+    },
+    {
+      "id": "5ss9hg6wlc7b",
+      "name": "PCI - BHS1 - host279547",
+      "status": "investigating",
+      "created_at": "2023-03-07T16:47:30.323Z",
+      "updated_at": "2023-03-07T16:47:30.373Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/drzh0xlbkb6m",
+      "started_at": "2023-03-07T16:47:30.316Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "c00swrjfm5lk",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost279547\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n0a9dc4e5-7a81-4907-ad48-7001072f4836\n480f6611-55cc-4d54-9b7f-34322355b46b\n62a35c3c-1ff7-477c-b11e-132eb61162cb\n3808eae7-732b-4dac-af51-16605cdfcb93",
+          "incident_id": "5ss9hg6wlc7b",
+          "created_at": "2023-03-07T16:47:30.371Z",
+          "updated_at": "2023-03-07T16:47:30.371Z",
+          "display_at": "2023-03-07T16:47:30.371Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "g2m975vzm1jb",
+      "name": "PCI - BHS1 - host279548",
+      "status": "investigating",
+      "created_at": "2023-03-07T16:47:29.516Z",
+      "updated_at": "2023-03-07T16:47:29.560Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gn1chqs0y7zp",
+      "started_at": "2023-03-07T16:47:29.510Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "16g835xmfj7r",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost279548\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\ndedeb3ea-ace8-44e8-9668-622eed467026\n7a3f5fe1-105e-4880-a422-19a40300d2b6\ndbf25dd9-e65a-4547-b8ec-ff1df870aa8b\nae56bb86-5973-4016-8b43-6e26827e8964",
+          "incident_id": "g2m975vzm1jb",
+          "created_at": "2023-03-07T16:47:29.558Z",
+          "updated_at": "2023-03-07T16:47:29.558Z",
+          "display_at": "2023-03-07T16:47:29.558Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "06mvtqjksnkp",
+      "name": "PCI - BHS3 - host279541",
+      "status": "investigating",
+      "created_at": "2023-03-07T16:47:21.930Z",
+      "updated_at": "2023-03-07T16:47:21.974Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8g86h61n49xv",
+      "started_at": "2023-03-07T16:47:21.923Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "850yjvhdy5bh",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost279541\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n3f100dfe-9502-4bb6-a072-126893b37bc9\n12022f68-d211-4853-ba56-8e0a674ad021",
+          "incident_id": "06mvtqjksnkp",
+          "created_at": "2023-03-07T16:47:21.972Z",
+          "updated_at": "2023-03-07T16:47:21.972Z",
+          "display_at": "2023-03-07T16:47:21.972Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "j60g41tyshbg",
+      "name": "PCI - BHS1 - host279540",
+      "status": "investigating",
+      "created_at": "2023-03-07T16:47:19.632Z",
+      "updated_at": "2023-03-07T16:47:19.691Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x0cb2jfcfx6n",
+      "started_at": "2023-03-07T16:47:19.624Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "s0b0bbs7whjm",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost279540\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n39f32647-ba63-4663-ade9-5fb913e8b7dd\n9267acc5-c5fe-46a7-9356-5c8429cadd9c\na8232d79-1db0-4982-a7f4-5b5d87dba1df\nb66a3442-3421-471c-a14a-029f21b629e8",
+          "incident_id": "j60g41tyshbg",
+          "created_at": "2023-03-07T16:47:19.688Z",
+          "updated_at": "2023-03-07T16:47:19.688Z",
+          "display_at": "2023-03-07T16:47:19.688Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
     }
   ],
   "scheduled_maintenances": [
@@ -5617,7 +5771,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
