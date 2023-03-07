@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-07T14:43:25.345Z"
+    "updated_at": "2023-03-07T15:29:14.978Z"
   },
   "components": [
     {
@@ -378,9 +378,9 @@
     {
       "id": "j60wbjr53lsb",
       "name": "BHS",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:41:28.528Z",
-      "updated_at": "2023-03-07T14:22:38.839Z",
+      "updated_at": "2023-03-07T15:29:14.885Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1569,7 +1569,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2023-03-07T14:29:12.630Z",
-      "updated_at": "2023-03-07T14:29:54.287Z",
+      "updated_at": "2023-03-07T15:29:14.905Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1736,9 +1736,9 @@
     {
       "id": "2pk5hxxqkq21",
       "name": "SBG",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:41:01.981Z",
-      "updated_at": "2023-03-07T14:29:54.295Z",
+      "updated_at": "2023-03-07T15:29:14.923Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -4207,7 +4207,7 @@
       "name": "[GRA/RBX/SBG/BHS][Object Storage] - Disconnection and error 500/503",
       "status": "identified",
       "created_at": "2023-03-07T14:22:38.794Z",
-      "updated_at": "2023-03-07T14:28:35.266Z",
+      "updated_at": "2023-03-07T15:29:14.969Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -4215,6 +4215,82 @@
       "started_at": "2023-03-07T14:22:38.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "xk8w8njb4trh",
+          "status": "identified",
+          "body": "We have fix the regions of BHS; RBX and SBG. We're currently work on GRA region",
+          "incident_id": "jr2nyxvljrfm",
+          "created_at": "2023-03-07T15:29:14.965Z",
+          "updated_at": "2023-03-07T15:29:14.965Z",
+          "display_at": "2023-03-07T15:29:14.965Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v8y8v2pbbm3s",
+          "status": "identified",
+          "body": "Our technical teams continue to work on the fix. We apologize for the inconvenience caused",
+          "incident_id": "jr2nyxvljrfm",
+          "created_at": "2023-03-07T15:13:39.701Z",
+          "updated_at": "2023-03-07T15:13:39.701Z",
+          "display_at": "2023-03-07T15:13:39.701Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "p09vx404y1ks",
           "status": "identified",
@@ -4252,9 +4328,9 @@
         {
           "id": "j60wbjr53lsb",
           "name": "BHS",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-04-06T09:41:28.528Z",
-          "updated_at": "2023-03-07T14:22:38.839Z",
+          "updated_at": "2023-03-07T15:29:14.885Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4280,11 +4356,26 @@
           "only_show_if_degraded": false
         },
         {
+          "id": "q98h9rl6tk0w",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2023-03-07T14:29:12.630Z",
+          "updated_at": "2023-03-07T15:29:14.905Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-03-07",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "2pk5hxxqkq21",
           "name": "SBG",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2023-03-07T14:29:54.295Z",
+          "updated_at": "2023-03-07T15:29:14.923Z",
           "position": 5,
           "description": null,
           "showcase": false,
