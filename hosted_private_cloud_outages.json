@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-09T10:43:35.267Z"
+    "updated_at": "2023-03-09T18:11:54.709Z"
   },
   "components": [
     {
@@ -1168,9 +1168,9 @@
     {
       "id": "0zn92m2m75wv",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:42:59.268Z",
-      "updated_at": "2023-01-26T16:35:09.925Z",
+      "updated_at": "2023-03-09T18:11:54.659Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2011,7 +2011,7 @@
     {
       "id": "xd6whl7x48n9",
       "name": "Veeam || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:43:00.369Z",
       "updated_at": "2021-10-20T08:15:33.837Z",
       "position": 22,
@@ -2129,7 +2129,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ltly22fz6gtp",
+      "name": "[RBX8][HostedPrivateCloud] - Rack R808R26",
+      "status": "identified",
+      "created_at": "2023-03-09T18:11:54.629Z",
+      "updated_at": "2023-03-09T18:11:54.706Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/zgvkrsvthd0q",
+      "started_at": "2023-03-09T18:11:54.622Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "3y8fswm55d4s",
+          "status": "identified",
+          "body": "<b>Start time :</b> 09/03/2023 17:51 UTC\n<b>Service impact :</b> Servers in the rack R808R26 are down.\n<b>Related Incident :</b> <a href=\"https://bare-metal-servers.status-ovhcloud.com/incidents/5108tqp4f9jh\">[RBX8][DedicatedServers] - Rack R808R26 </a>\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be made as significant progress is made.",
+          "incident_id": "ltly22fz6gtp",
+          "created_at": "2023-03-09T18:11:54.704Z",
+          "updated_at": "2023-03-09T18:11:54.704Z",
+          "display_at": "2023-03-09T18:11:54.704Z",
+          "affected_components": [
+            {
+              "code": "0zn92m2m75wv",
+              "name": "Veeam || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0zn92m2m75wv",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:42:59.268Z",
+          "updated_at": "2023-03-09T18:11:54.659Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "xd6whl7x48n9",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "hf3p6rfcv29x",
@@ -3451,7 +3504,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
