@@ -4,13 +4,13 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-08T23:31:10.134Z"
+    "updated_at": "2023-03-09T09:00:17.904Z"
   },
   "components": [
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2021-06-30T12:27:22.791Z",
       "position": 1,
@@ -2066,9 +2066,9 @@
     {
       "id": "nfpr6w6674vw",
       "name": "Cluster023",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:13.475Z",
-      "updated_at": "2023-03-08T14:36:11.307Z",
+      "updated_at": "2023-03-09T08:54:57.444Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2714,10 +2714,10 @@
   "incidents": [
     {
       "id": "9p46511j31f1",
-      "name": "[GRA1][Webhosting] - Cluster023 - Filerz112",
-      "status": "investigating",
+      "name": "[GRA1][Webhosting] - Cluster023 - Filerz112/707",
+      "status": "identified",
       "created_at": "2023-03-08T10:44:46.179Z",
-      "updated_at": "2023-03-08T10:44:46.835Z",
+      "updated_at": "2023-03-09T09:00:17.897Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2725,6 +2725,66 @@
       "started_at": "2023-03-08T10:44:46.171Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "5hqmlp1pwt6b",
+          "status": "identified",
+          "body": "<b>Ongoing actions :</b> 09/03/2023 08:43 UTC, a storage equipment needed to be rebooted for the filerz 707",
+          "incident_id": "9p46511j31f1",
+          "created_at": "2023-03-09T09:00:17.894Z",
+          "updated_at": "2023-03-09T09:00:17.894Z",
+          "display_at": "2023-03-09T09:00:17.894Z",
+          "affected_components": [
+            {
+              "code": "nfpr6w6674vw",
+              "name": "Web Hosting || Datacenter GRA - Cluster023",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "09x5m4v1l5hw",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "9p46511j31f1",
+          "created_at": "2023-03-09T08:58:46.596Z",
+          "updated_at": "2023-03-09T08:58:46.596Z",
+          "display_at": "2023-03-09T08:58:46.596Z",
+          "affected_components": [
+            {
+              "code": "nfpr6w6674vw",
+              "name": "Web Hosting || Datacenter GRA - Cluster023",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t08b6t7f992n",
+          "status": "investigating",
+          "body": "<b>Service impact :</b> Slowness on some hosted websites has been observed on filerz 707 since 09/03/2023 08:43 UTC",
+          "incident_id": "9p46511j31f1",
+          "created_at": "2023-03-09T08:54:57.508Z",
+          "updated_at": "2023-03-09T08:54:57.508Z",
+          "display_at": "2023-03-09T08:54:57.508Z",
+          "affected_components": [
+            {
+              "code": "nfpr6w6674vw",
+              "name": "Web Hosting || Datacenter GRA - Cluster023",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "3r8lhrrnf3t9",
           "status": "investigating",
@@ -2750,9 +2810,9 @@
         {
           "id": "nfpr6w6674vw",
           "name": "Cluster023",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:13.475Z",
-          "updated_at": "2023-03-08T14:36:11.307Z",
+          "updated_at": "2023-03-09T08:54:57.444Z",
           "position": 16,
           "description": null,
           "showcase": false,
@@ -2822,7 +2882,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
