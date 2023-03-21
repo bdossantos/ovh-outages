@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-21T21:05:02.726Z"
+    "updated_at": "2023-03-21T23:14:58.000Z"
   },
   "components": [
     {
@@ -4201,7 +4201,37 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vgtrqlz1pq1c",
+      "name": "PCI - BHS1 - host279103",
+      "status": "investigating",
+      "created_at": "2023-03-21T23:14:57.934Z",
+      "updated_at": "2023-03-21T23:14:57.997Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8h33wrnrgxh1",
+      "started_at": "2023-03-21T23:14:57.924Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "wssl8p95fgvd",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost279103\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n8748b89a-aa04-4236-b71b-5f3c40a9b185\n731f6658-287a-4861-a65f-dd16d308d19c\n614923ce-b7c2-4b52-a467-a94b345a1d43\n86e84ed9-cf71-4878-ba30-467b51debda7\nd31d36bd-9de4-4065-bc1f-e379b01a4846\nb122c2fc-72dd-4a70-9782-663393397702",
+          "incident_id": "vgtrqlz1pq1c",
+          "created_at": "2023-03-21T23:14:57.993Z",
+          "updated_at": "2023-03-21T23:14:57.993Z",
+          "display_at": "2023-03-21T23:14:57.993Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7f72kt4n6cf1",
@@ -4580,6 +4610,60 @@
       "components": [],
       "scheduled_for": "2023-03-29T11:00:00.000Z",
       "scheduled_until": "2023-03-29T14:00:00.000Z"
+    },
+    {
+      "id": "k55gsc0rqmhp",
+      "name": "[GRA1][Network] - Network equipment homogenization",
+      "status": "scheduled",
+      "created_at": "2023-03-21T23:10:05.349Z",
+      "updated_at": "2023-03-21T23:10:05.407Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rxs9z0dgkk7s",
+      "started_at": "2023-03-21T23:10:05.342Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "91f6c6vhdknq",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 29/03/2023 20:00 UTC \n<b>End time :</b> 29/03/2023 23:59 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment to homogenize our network infrastructure related to Public Cloud.",
+          "incident_id": "k55gsc0rqmhp",
+          "created_at": "2023-03-21T23:10:05.404Z",
+          "updated_at": "2023-03-21T23:10:05.404Z",
+          "display_at": "2023-03-21T23:10:05.404Z",
+          "affected_components": [
+            {
+              "code": "9vjdx62wmjgv",
+              "name": "Network || Private network (vRack) - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9vjdx62wmjgv",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:24.318Z",
+          "updated_at": "2022-12-14T08:55:37.897Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xjbj3776977d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-29T20:00:00.000Z",
+      "scheduled_until": "2023-03-29T23:59:00.000Z"
     },
     {
       "id": "xgsct3klc8jn",
