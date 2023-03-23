@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-22T23:43:21.223Z"
+    "updated_at": "2023-03-23T00:44:13.084Z"
   },
   "components": [
     {
@@ -115,9 +115,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2023-03-22T23:24:40.895Z",
+      "updated_at": "2023-03-23T00:34:24.528Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -856,60 +856,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "brjv9w1hf9fq",
-      "name": "[FRA][Network] - Backbone Incident Notification",
-      "status": "investigating",
-      "created_at": "2023-03-22T23:24:40.862Z",
-      "updated_at": "2023-03-22T23:24:40.947Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/141rgcbbp72t",
-      "started_at": "2023-03-22T23:24:40.856Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "tjcbs4jjsty7",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 22/03/2023 22:30 UTC\n<b>Service impact :</b> communication flowing through OVHcloud POP in Frankfurt will be potentially blocked.\nOur technical teams are working on resolving the issue.\nUpdate will be post as significant progress is made.",
-          "incident_id": "brjv9w1hf9fq",
-          "created_at": "2023-03-22T23:24:40.944Z",
-          "updated_at": "2023-03-22T23:24:40.944Z",
-          "display_at": "2023-03-22T23:24:40.944Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "cty1dtmnnr3d",
@@ -976,6 +923,102 @@
         }
       ],
       "scheduled_for": "2023-03-23T07:00:00.000Z",
+      "scheduled_until": "2023-03-23T16:00:00.000Z"
+    },
+    {
+      "id": "6bktmwz68jj6",
+      "name": "[RBX1/RBX3/RBX8][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2023-03-23T00:25:40.738Z",
+      "updated_at": "2023-03-23T00:25:40.782Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/95wdw0vcdd71",
+      "started_at": "2023-03-23T00:25:40.729Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "m65tpwqj16jj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 06/12/2023 07:30 UTC \n<b>End time :</b> 06/12/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "6bktmwz68jj6",
+          "created_at": "2023-03-23T00:25:40.780Z",
+          "updated_at": "2023-03-23T00:25:40.780Z",
+          "display_at": "2023-03-23T00:25:40.780Z",
+          "affected_components": [
+            {
+              "code": "f4dnnwz43vr4",
+              "name": "Infrastructure || RBX - RBX1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "gmpjyy3kgdlv",
+              "name": "Infrastructure || RBX - RBX3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4dnnwz43vr4",
+          "name": "RBX1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:15.203Z",
+          "updated_at": "2023-03-20T07:00:23.321Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gmpjyy3kgdlv",
+          "name": "RBX3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:17.105Z",
+          "updated_at": "2023-03-20T07:00:23.370Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2023-03-20T07:00:23.415Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-23T07:30:00.000Z",
       "scheduled_until": "2023-03-23T16:00:00.000Z"
     },
     {
@@ -1070,9 +1113,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1141,6 +1184,60 @@
       "scheduled_until": "2023-03-24T04:00:00.000Z"
     },
     {
+      "id": "nmrlcd6qzlqj",
+      "name": "[SBG5][Infrastructure] - Electrical background work - SBG0505B07",
+      "status": "scheduled",
+      "created_at": "2023-03-23T00:44:13.038Z",
+      "updated_at": "2023-03-23T00:44:13.082Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6d873zdw9yhr",
+      "started_at": "2023-03-23T00:44:13.032Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "thll2183b06s",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/03/2023 12:00 UTC \n<b>End time :</b> 23/03/2023 16:00 UTC \n<b>Service impact :</b> Disjunction of a TGBT (Main low-voltage board) during the maintenance time.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "nmrlcd6qzlqj",
+          "created_at": "2023-03-23T00:44:13.080Z",
+          "updated_at": "2023-03-23T00:44:13.080Z",
+          "display_at": "2023-03-23T00:44:13.080Z",
+          "affected_components": [
+            {
+              "code": "mp1qh2crp1cl",
+              "name": "Infrastructure || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp1qh2crp1cl",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-06-20T07:44:01.844Z",
+          "updated_at": "2023-03-16T15:40:01.839Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-06-20",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-03-23T12:00:00.000Z",
+      "scheduled_until": "2023-03-23T16:00:00.000Z"
+    },
+    {
       "id": "pkv39g04vs75",
       "name": "[GRA][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
@@ -1178,9 +1275,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1232,9 +1329,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1447,9 +1544,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1555,9 +1652,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1663,9 +1760,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1791,9 +1888,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1899,9 +1996,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1953,9 +2050,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-03-22T23:24:40.895Z",
+          "updated_at": "2023-03-23T00:34:24.528Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4281,156 +4378,6 @@
       "scheduled_until": "2023-10-16T15:00:00.000Z"
     },
     {
-      "id": "rlxysqby81w6",
-      "name": "[RBX5/RBX6/RBX7][Infrastructure] - Electrical background work",
-      "status": "scheduled",
-      "created_at": "2023-02-28T17:47:30.818Z",
-      "updated_at": "2023-02-28T17:47:30.885Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/cqwnbthb8cwg",
-      "started_at": "2023-02-28T17:47:30.800Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "l3sn1xj0gd72",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 17/10/2023 06:30 UTC \n<b>End time :</b> 17/10/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "rlxysqby81w6",
-          "created_at": "2023-02-28T17:47:30.882Z",
-          "updated_at": "2023-02-28T17:47:30.882Z",
-          "display_at": "2023-02-28T17:47:30.882Z",
-          "affected_components": [
-            {
-              "code": "n3bn7csv5k3k",
-              "name": "Infrastructure || RBX - RBX5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5rlwxw2f24qh",
-              "name": "Infrastructure || RBX - RBX6",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "02w2qqv00ll9",
-              "name": "Infrastructure || RBX - RBX7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "n3bn7csv5k3k",
-          "name": "RBX5",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:18.529Z",
-          "updated_at": "2023-03-20T06:00:51.240Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5rlwxw2f24qh",
-          "name": "RBX6",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:19.265Z",
-          "updated_at": "2023-03-20T12:50:46.616Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "02w2qqv00ll9",
-          "name": "RBX7",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2023-03-22T16:10:51.978Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-17T06:30:00.000Z",
-      "scheduled_until": "2023-10-17T15:00:00.000Z"
-    },
-    {
-      "id": "rfqvwc33cf4r",
-      "name": "[RBX8][Infrastructure] - Electrical background work",
-      "status": "scheduled",
-      "created_at": "2023-02-28T18:11:55.583Z",
-      "updated_at": "2023-02-28T18:11:55.631Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lbjwgfw45mjj",
-      "started_at": "2023-02-28T18:11:55.576Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "3r7gg8sd3dkp",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/10/2023 06:30 UTC \n<b>End time :</b> 23/10/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "rfqvwc33cf4r",
-          "created_at": "2023-02-28T18:11:55.628Z",
-          "updated_at": "2023-02-28T18:11:55.628Z",
-          "display_at": "2023-02-28T18:11:55.628Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-03-20T07:00:23.415Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-23T06:30:00.000Z",
-      "scheduled_until": "2023-10-23T15:00:00.000Z"
-    },
-    {
       "id": "7tkpcwkxfq2s",
       "name": "[BHS7][Cooling System] - B714B10",
       "status": "in_progress",
@@ -5649,7 +5596,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
