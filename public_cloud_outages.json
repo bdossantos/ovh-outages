@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-26T20:43:06.576Z"
+    "updated_at": "2023-03-27T08:56:02.315Z"
   },
   "components": [
     {
@@ -25,9 +25,9 @@
     {
       "id": "kj53n33lwykg",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:32:52.354Z",
-      "updated_at": "2022-06-15T13:39:57.630Z",
+      "updated_at": "2023-03-27T08:46:28.127Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -558,9 +558,9 @@
     {
       "id": "5l5zqpzw52bw",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:32:53.230Z",
-      "updated_at": "2022-06-15T13:39:57.648Z",
+      "updated_at": "2023-03-27T08:46:28.154Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1597,7 +1597,7 @@
     {
       "id": "v4ktdlk3grrm",
       "name": "Data & Analytics || Logs Data Platform",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:32:54.198Z",
       "updated_at": "2022-04-13T13:25:20.889Z",
       "position": 5,
@@ -4203,71 +4203,37 @@
   ],
   "incidents": [
     {
-      "id": "1hrhvvzhb28v",
-      "name": "[BHS][Databases] - MongoDB",
-      "status": "monitoring",
-      "created_at": "2023-03-24T12:29:08.652Z",
-      "updated_at": "2023-03-24T19:22:06.043Z",
-      "monitoring_at": "2023-03-24T19:22:06.031Z",
+      "id": "c4fhqjt5zxgt",
+      "name": "[Global][LogsDataPlatorm] - OpenSearch Dashboards unavailable",
+      "status": "investigating",
+      "created_at": "2023-03-27T08:46:28.097Z",
+      "updated_at": "2023-03-27T08:46:43.164Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/qpfg514bfbf5",
-      "started_at": "2023-03-24T12:29:08.643Z",
+      "shortlink": "https://stspg.io/p30mpp67h662",
+      "started_at": "2023-03-27T08:46:28.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "tvxxpvwldjvd",
-          "status": "monitoring",
-          "body": "Our technical teams have set up a temporary solution. \nThe services are operational. \nWe will work on a permanent fix next week.",
-          "incident_id": "1hrhvvzhb28v",
-          "created_at": "2023-03-24T19:22:06.031Z",
-          "updated_at": "2023-03-24T19:22:06.031Z",
-          "display_at": "2023-03-24T19:22:06.031Z",
-          "affected_components": [
-            {
-              "code": "4lzd6zqm0hb3",
-              "name": "Databases || MongoDB - BHS",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gglljnrwn945",
-          "status": "identified",
-          "body": "<b>Root cause :</b> Software issue\n<b>Ongoing actions :</b> Our technical teams are currently working to solve the problem.",
-          "incident_id": "1hrhvvzhb28v",
-          "created_at": "2023-03-24T13:20:22.329Z",
-          "updated_at": "2023-03-24T13:20:22.329Z",
-          "display_at": "2023-03-24T13:20:22.329Z",
-          "affected_components": [
-            {
-              "code": "4lzd6zqm0hb3",
-              "name": "Databases || MongoDB - BHS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vj42qzthzg9c",
+          "id": "571xcq8l3m7n",
           "status": "investigating",
-          "body": "<b>Start time :</b> 24/03/2023 11:30 UTC \n<b>Service impact :</b> Actions like ordering, deleting, editing on Mongodb service are temporarily unavailable. \nExisting services are still running properly.\n<b>Ongoing actions :</b> Investigating",
-          "incident_id": "1hrhvvzhb28v",
-          "created_at": "2023-03-24T12:29:08.752Z",
-          "updated_at": "2023-03-24T12:29:08.752Z",
-          "display_at": "2023-03-24T12:29:08.752Z",
+          "body": "<b>Start time :</b> 27/03/2023 08:41 UTC\n<b>Service impact :</b> Some OpenSearch Dashboards instances are currently not available\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on resolving the issue.\nUpdate will be post as significant progress is made.",
+          "incident_id": "c4fhqjt5zxgt",
+          "created_at": "2023-03-27T08:46:28.199Z",
+          "updated_at": "2023-03-27T08:46:43.111Z",
+          "display_at": "2023-03-27T08:46:28.000Z",
           "affected_components": [
             {
-              "code": "4lzd6zqm0hb3",
-              "name": "Databases || MongoDB - BHS",
-              "old_status": "under_maintenance",
+              "code": "kj53n33lwykg",
+              "name": "Data & Analytics || Logs Data Platform - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "5l5zqpzw52bw",
+              "name": "Data & Analytics || Logs Data Platform - GRA",
+              "old_status": "operational",
               "new_status": "partial_outage"
             }
           ],
@@ -4278,16 +4244,31 @@
       ],
       "components": [
         {
-          "id": "4lzd6zqm0hb3",
+          "id": "kj53n33lwykg",
           "name": "BHS",
-          "status": "operational",
-          "created_at": "2022-04-06T09:42:17.292Z",
-          "updated_at": "2023-03-24T19:22:05.996Z",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:32:52.354Z",
+          "updated_at": "2023-03-27T08:46:28.127Z",
           "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2022-04-06",
-          "group_id": "bsjq07p8h346",
+          "group_id": "v4ktdlk3grrm",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5l5zqpzw52bw",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:32:53.230Z",
+          "updated_at": "2023-03-27T08:46:28.154Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "v4ktdlk3grrm",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -5238,7 +5219,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
