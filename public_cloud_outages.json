@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-28T12:18:49.103Z"
+    "updated_at": "2023-03-28T13:00:00.722Z"
   },
   "components": [
     {
@@ -4204,37 +4204,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "n30sr0xj2b8m",
-      "name": "[SGP1][Network] - vRack Network equipment homogenization",
-      "status": "scheduled",
-      "created_at": "2023-02-28T19:40:04.842Z",
-      "updated_at": "2023-02-28T19:41:04.363Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/91wj3zf2mhqr",
-      "started_at": "2023-02-28T19:40:04.837Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "l3n14kxkjgzj",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 28/03/2023 13:00 UTC \n<b>End time :</b> 28/03/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment to homogenize our network infrastructure.",
-          "incident_id": "n30sr0xj2b8m",
-          "created_at": "2023-02-28T19:40:04.902Z",
-          "updated_at": "2023-02-28T19:40:04.902Z",
-          "display_at": "2023-02-28T19:40:04.902Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2023-03-28T13:00:00.000Z",
-      "scheduled_until": "2023-03-28T16:00:00.000Z"
-    },
-    {
       "id": "k8t48810zhjb",
       "name": "[SYD1][Network] - vRack Network equipment homogenization",
       "status": "scheduled",
@@ -4318,6 +4287,60 @@
       ],
       "scheduled_for": "2023-03-29T20:00:00.000Z",
       "scheduled_until": "2023-03-29T23:59:00.000Z"
+    },
+    {
+      "id": "4b6c38jd7db4",
+      "name": "[SYD2][Workflow Management] - Mistral",
+      "status": "scheduled",
+      "created_at": "2023-03-16T03:09:27.308Z",
+      "updated_at": "2023-03-16T03:09:27.374Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pqk2p20fb7zt",
+      "started_at": "2023-03-16T03:09:27.300Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "60md1nxntlsy",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 05/04/2023 13:00 UTC \n<b>End time :</b> 05/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of SYD2 will be unreachable for 5 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
+          "incident_id": "4b6c38jd7db4",
+          "created_at": "2023-03-16T03:09:27.371Z",
+          "updated_at": "2023-03-16T03:09:27.371Z",
+          "display_at": "2023-03-16T03:09:27.371Z",
+          "affected_components": [
+            {
+              "code": "41vq6txxqtpv",
+              "name": "Containers & Orchestration || Workflow Management - SYD1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "41vq6txxqtpv",
+          "name": "SYD1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:06.305Z",
+          "updated_at": "2023-02-01T17:43:17.355Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "hyh6798xq542",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-05T13:00:00.000Z",
+      "scheduled_until": "2023-04-05T16:00:00.000Z"
     },
     {
       "id": "xgsct3klc8jn",
@@ -4428,60 +4451,6 @@
       "scheduled_until": "2023-04-05T16:00:00.000Z"
     },
     {
-      "id": "4b6c38jd7db4",
-      "name": "[SYD2][Workflow Management] - Mistral",
-      "status": "scheduled",
-      "created_at": "2023-03-16T03:09:27.308Z",
-      "updated_at": "2023-03-16T03:09:27.374Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pqk2p20fb7zt",
-      "started_at": "2023-03-16T03:09:27.300Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "60md1nxntlsy",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 05/04/2023 13:00 UTC \n<b>End time :</b> 05/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of SYD2 will be unreachable for 5 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
-          "incident_id": "4b6c38jd7db4",
-          "created_at": "2023-03-16T03:09:27.371Z",
-          "updated_at": "2023-03-16T03:09:27.371Z",
-          "display_at": "2023-03-16T03:09:27.371Z",
-          "affected_components": [
-            {
-              "code": "41vq6txxqtpv",
-              "name": "Containers & Orchestration || Workflow Management - SYD1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "41vq6txxqtpv",
-          "name": "SYD1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:38:06.305Z",
-          "updated_at": "2023-02-01T17:43:17.355Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "hyh6798xq542",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-05T13:00:00.000Z",
-      "scheduled_until": "2023-04-05T16:00:00.000Z"
-    },
-    {
       "id": "qk63bt601m52",
       "name": "[GRA2][Workflow Management] - Mistral",
       "status": "scheduled",
@@ -4554,6 +4523,80 @@
       ],
       "scheduled_for": "2023-04-05T13:00:00.000Z",
       "scheduled_until": "2023-04-05T16:00:00.000Z"
+    },
+    {
+      "id": "989031017zqw",
+      "name": "[BHS6][Workflow Management] - Mistral",
+      "status": "scheduled",
+      "created_at": "2023-03-16T01:37:49.752Z",
+      "updated_at": "2023-03-16T01:50:08.669Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t0km8prlv384",
+      "started_at": "2023-03-16T01:37:49.742Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "f4tgr74pfzyl",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "989031017zqw",
+          "created_at": "2023-03-16T01:41:28.987Z",
+          "updated_at": "2023-03-16T01:41:28.987Z",
+          "display_at": "2023-03-16T01:41:28.987Z",
+          "affected_components": [
+            {
+              "code": "4q8kxb7dkz77",
+              "name": "Containers & Orchestration || Workflow Management - BHS3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "srlf992n9fsk",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 12/04/2023 13:00 UTC \n<b>End time :</b> 12/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of BHS6 will be unreachable for 5 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
+          "incident_id": "989031017zqw",
+          "created_at": "2023-03-16T01:37:49.830Z",
+          "updated_at": "2023-03-16T01:50:08.665Z",
+          "display_at": "2023-03-16T01:37:49.830Z",
+          "affected_components": [
+            {
+              "code": "0hnpsv699rd3",
+              "name": "Containers & Orchestration || Workflow Management - BHS5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4q8kxb7dkz77",
+          "name": "BHS3",
+          "status": "operational",
+          "created_at": "2022-05-04T10:33:34.448Z",
+          "updated_at": "2022-05-04T10:33:34.448Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "hyh6798xq542",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-12T13:00:00.000Z",
+      "scheduled_until": "2023-04-12T16:00:00.000Z"
     },
     {
       "id": "j1g5xy2jbgq0",
@@ -4738,50 +4781,30 @@
       "scheduled_until": "2023-04-12T16:00:00.000Z"
     },
     {
-      "id": "989031017zqw",
-      "name": "[BHS6][Workflow Management] - Mistral",
+      "id": "ks4lbf1f6jtw",
+      "name": "[US-WEST-OR-2][Workflow Management] - Mistral",
       "status": "scheduled",
-      "created_at": "2023-03-16T01:37:49.752Z",
-      "updated_at": "2023-03-16T01:50:08.669Z",
+      "created_at": "2023-03-16T03:52:32.191Z",
+      "updated_at": "2023-03-16T03:52:32.250Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/t0km8prlv384",
-      "started_at": "2023-03-16T01:37:49.742Z",
+      "shortlink": "https://stspg.io/t65lt8l8zg1l",
+      "started_at": "2023-03-16T03:52:32.184Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "f4tgr74pfzyl",
+          "id": "q7r0fmtv1k70",
           "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "989031017zqw",
-          "created_at": "2023-03-16T01:41:28.987Z",
-          "updated_at": "2023-03-16T01:41:28.987Z",
-          "display_at": "2023-03-16T01:41:28.987Z",
+          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-WEST-OR-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
+          "incident_id": "ks4lbf1f6jtw",
+          "created_at": "2023-03-16T03:52:32.247Z",
+          "updated_at": "2023-03-16T03:52:32.247Z",
+          "display_at": "2023-03-16T03:52:32.247Z",
           "affected_components": [
             {
-              "code": "4q8kxb7dkz77",
-              "name": "Containers & Orchestration || Workflow Management - BHS3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "srlf992n9fsk",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 12/04/2023 13:00 UTC \n<b>End time :</b> 12/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of BHS6 will be unreachable for 5 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
-          "incident_id": "989031017zqw",
-          "created_at": "2023-03-16T01:37:49.830Z",
-          "updated_at": "2023-03-16T01:50:08.665Z",
-          "display_at": "2023-03-16T01:37:49.830Z",
-          "affected_components": [
-            {
-              "code": "0hnpsv699rd3",
-              "name": "Containers & Orchestration || Workflow Management - BHS5",
+              "code": "915njn7ngq6g",
+              "name": "Containers & Orchestration || Workflow Management - US-WEST-OR-1",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -4793,12 +4816,12 @@
       ],
       "components": [
         {
-          "id": "4q8kxb7dkz77",
-          "name": "BHS3",
+          "id": "915njn7ngq6g",
+          "name": "US-WEST-OR-1",
           "status": "operational",
-          "created_at": "2022-05-04T10:33:34.448Z",
-          "updated_at": "2022-05-04T10:33:34.448Z",
-          "position": 17,
+          "created_at": "2022-05-04T10:35:05.466Z",
+          "updated_at": "2023-02-09T18:48:54.840Z",
+          "position": 20,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-04",
@@ -4808,8 +4831,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-04-12T13:00:00.000Z",
-      "scheduled_until": "2023-04-12T16:00:00.000Z"
+      "scheduled_for": "2023-04-20T13:00:00.000Z",
+      "scheduled_until": "2023-04-20T16:00:00.000Z"
     },
     {
       "id": "4pymmcgq4z1j",
@@ -4853,60 +4876,6 @@
           "created_at": "2022-05-04T10:34:45.645Z",
           "updated_at": "2023-02-09T18:50:24.750Z",
           "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "hyh6798xq542",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-20T13:00:00.000Z",
-      "scheduled_until": "2023-04-20T16:00:00.000Z"
-    },
-    {
-      "id": "ks4lbf1f6jtw",
-      "name": "[US-WEST-OR-2][Workflow Management] - Mistral",
-      "status": "scheduled",
-      "created_at": "2023-03-16T03:52:32.191Z",
-      "updated_at": "2023-03-16T03:52:32.250Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/t65lt8l8zg1l",
-      "started_at": "2023-03-16T03:52:32.184Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "q7r0fmtv1k70",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-WEST-OR-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
-          "incident_id": "ks4lbf1f6jtw",
-          "created_at": "2023-03-16T03:52:32.247Z",
-          "updated_at": "2023-03-16T03:52:32.247Z",
-          "display_at": "2023-03-16T03:52:32.247Z",
-          "affected_components": [
-            {
-              "code": "915njn7ngq6g",
-              "name": "Containers & Orchestration || Workflow Management - US-WEST-OR-1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "915njn7ngq6g",
-          "name": "US-WEST-OR-1",
-          "status": "operational",
-          "created_at": "2022-05-04T10:35:05.466Z",
-          "updated_at": "2023-02-09T18:48:54.840Z",
-          "position": 20,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-04",
@@ -4972,6 +4941,50 @@
       ],
       "scheduled_for": "2023-05-09T08:00:00.000Z",
       "scheduled_until": "2023-05-09T16:00:00.000Z"
+    },
+    {
+      "id": "n30sr0xj2b8m",
+      "name": "[SGP1][Network] - vRack Network equipment homogenization",
+      "status": "in_progress",
+      "created_at": "2023-02-28T19:40:04.842Z",
+      "updated_at": "2023-03-28T13:00:00.705Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/91wj3zf2mhqr",
+      "started_at": "2023-02-28T19:40:04.837Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "snbt9xnmxx8b",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "n30sr0xj2b8m",
+          "created_at": "2023-03-28T13:00:00.699Z",
+          "updated_at": "2023-03-28T13:00:00.699Z",
+          "display_at": "2023-03-28T13:00:00.699Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "l3n14kxkjgzj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 28/03/2023 13:00 UTC \n<b>End time :</b> 28/03/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment to homogenize our network infrastructure.",
+          "incident_id": "n30sr0xj2b8m",
+          "created_at": "2023-02-28T19:40:04.902Z",
+          "updated_at": "2023-02-28T19:40:04.902Z",
+          "display_at": "2023-02-28T19:40:04.902Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2023-03-28T13:00:00.000Z",
+      "scheduled_until": "2023-03-28T16:00:00.000Z"
     }
   ],
   "status": {
