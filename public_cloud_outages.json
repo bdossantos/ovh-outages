@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-03-31T11:50:39.849Z"
+    "updated_at": "2023-03-31T14:26:39.243Z"
   },
   "components": [
     {
@@ -806,9 +806,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2023-03-29T10:22:53.237Z",
+      "updated_at": "2023-03-31T14:23:07.515Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3448,7 +3448,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2022-04-13T13:25:21.008Z",
       "position": 18,
@@ -4203,33 +4203,76 @@
   ],
   "incidents": [
     {
-      "id": "lnt911gb88lp",
-      "name": "PCI - GRA1 - host910705",
-      "status": "investigating",
-      "created_at": "2023-03-31T08:47:07.240Z",
-      "updated_at": "2023-03-31T08:47:07.284Z",
+      "id": "1kccvfv8d8ny",
+      "name": "[GRA][Object storage] - S3 standard Offer",
+      "status": "identified",
+      "created_at": "2023-03-31T14:23:07.479Z",
+      "updated_at": "2023-03-31T14:26:39.234Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/yfxtll3g98st",
-      "started_at": "2023-03-31T08:47:07.233Z",
+      "shortlink": "https://stspg.io/fq7mcb6drqd9",
+      "started_at": "2023-03-31T14:23:07.471Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "81tjtrkxr06s",
+          "id": "v1s3h81jfwhs",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "1kccvfv8d8ny",
+          "created_at": "2023-03-31T14:26:39.231Z",
+          "updated_at": "2023-03-31T14:26:39.231Z",
+          "display_at": "2023-03-31T14:26:39.231Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "x8znk7bccb0j",
           "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost910705\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nc99251e8-37c4-412f-bb96-3e22eac641fd\ndb9a6489-e786-4b73-bf93-7de7724bd54d\n08563059-7308-4561-97f7-de7fe37b5d08\n2c053080-55b7-4149-aa27-531b67c0e4ab\n1b48d323-4b07-48ce-8680-eb3920599bd9\n64a6a483-ab69-42a6-a892-24d871ad804a\na01cde12-41a6-4637-b2b7-4976870ff6c7\n3d455901-a23b-4b80-9bb1-86359dd25c87\n04e07eb0-7c33-4636-adb9-e527215df3ca\n6e826f25-773e-4a3a-b21b-95824d1234e5\n56aee13e-0b5c-41a1-8254-4554c85223ff\nc63c0e1f-2e24-4be1-8646-f64d0b2ed20f\n231c8807-d120-4178-b430-2e27686a381a\nf6f05bf3-3c65-4f2c-a463-9379aa5df101\ndb73b7ca-0dce-465f-b39a-e111fbad9746\n86eaed9e-81ad-4bfd-8927-8c308777541e\n20190797-6604-46c3-90dc-a49a2ce61e2c\nc8370eec-092b-47eb-821e-24c529ed3b48\na134a40f-43f6-4be8-898f-56b51b4688b5\na19ac78e-2887-4b46-a4b7-e91f41cf3708\nc2ace299-fc27-460b-990d-78479a19653d\na0b41146-eac9-4d10-bb5e-6af52736b5ff\na23b5e9e-57bb-47cb-903a-365a1fd72099\n740546b7-99ca-4640-90db-2f8261f33d79\n77630c94-e365-4344-b847-cca05ccf8f84\n3008cb4a-0240-4ee5-8226-3f15a4bb8f92\n258dfcde-9447-48a3-9199-f4595d76c221\n68aedb30-d314-4254-b9e9-d7a23b2265b5\n269a91e8-b2c1-4435-952e-90bba708101e\na0981b0f-6f18-44d9-aa23-8ef979a75a8d\n489221c1-cbb5-4501-a20f-4abc359d4aef\n61ffa7d3-e1b9-4bf2-8149-a7597342d5bc\n791a402c-a904-4f0c-a6df-b77a70f250b1\n8f2d44b3-7366-472e-b93a-758320b76cb2\n19849fd3-0a8b-4273-953b-7760174881e4\nb21cf42e-fbb9-432f-8bb7-f915cab50e1e\nb63d932c-a879-4efc-91f5-a911ef9e69c9\na4b045fe-2501-485d-a093-b0530308eca6\nfd67a908-fc88-44ce-a28d-ad7e2a3373fa\n0aa1d0b1-da51-422b-a3f5-ccf0174ee942\ne78ae752-9346-4384-ae76-f3b66e5b9ddb\n3c5992bc-08f1-4218-9c20-37dbb28eb3f0\n3c92978a-74fb-4dbf-bd09-ab036a74adbe\n92e9b108-bd39-4cb2-8572-4d4d05a1ae44\n76ec9aae-1f73-4785-adeb-48e106d5c79e\nf108abac-c20e-45c4-b999-f28c665f68bf\nd156c58b-6443-4b11-b969-de8dc156b57b\n26e111d9-a1c3-4072-b331-7df079fd599f\n4892fdad-034b-423a-8a8b-abceb0d5dff4\ne6701109-a46f-41a6-be8f-78b33f1070cd\nc30e5f8e-689a-4ad6-967d-330e377d2c66\n9070507d-5160-4878-80d5-a7555a39a3d4\n836ccd03-ebc8-41f7-92f7-e0dcdf2f18ac\n6e01f7c6-6348-41a8-b71b-94b7b5119bc0\n972f415e-0d34-4411-b827-0e703f48747c\n5db01a54-e75b-41de-88be-f6064543d5e2\n1d0f000a-ecc8-41de-aaf7-037f5ab58147\ne3a5ac09-2b82-450b-a585-08b319d7568c\n8584ca58-44c6-4d77-ba2f-c496d6852094\ncebdc088-8d2d-4e86-b3ca-d9874ca55d19\n6e34f6b1-22d9-41a4-b05e-ffff90c26b91\nd596fa0d-fa92-4598-9bee-15b1f9f9edcd\nc5a4796d-c986-479a-9462-ecc32da1f2f6\ncf77db2b-0dd2-4b6a-b24d-bb9ee6936e6e\n6d05161e-07b5-442d-9eb0-75ac0980d345\n1f467842-1bc4-471e-8b3e-a8c613387eac\n2c0e1910-44ca-45a5-8e75-37315378c67e",
-          "incident_id": "lnt911gb88lp",
-          "created_at": "2023-03-31T08:47:07.281Z",
-          "updated_at": "2023-03-31T08:47:07.281Z",
-          "display_at": "2023-03-31T08:47:07.281Z",
-          "affected_components": null,
+          "body": "<b>Start time :</b> 22/03/2023 08:00 UTC \n<b>Service impact :</b> Customers experience slowdowns and may encounter sporadic errors\n<b>Ongoing actions :</b> Our technicians are currently working on in order to fix it",
+          "incident_id": "1kccvfv8d8ny",
+          "created_at": "2023-03-31T14:23:07.570Z",
+          "updated_at": "2023-03-31T14:23:07.570Z",
+          "display_at": "2023-03-31T14:23:07.570Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
+      "components": [
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2023-03-31T14:23:07.515Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
     },
     {
       "id": "vl0v6f8pc1pm",
@@ -5057,7 +5100,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
