@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-04T12:43:11.900Z"
+    "updated_at": "2023-04-04T15:33:48.569Z"
   },
   "components": [
     {
@@ -2080,42 +2080,50 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "sn2v8jsk6qr8",
-      "name": "[GRA2/RBX6/ERI1][Dedicated Servers] - Network equipement operation",
+      "id": "tccqfmbdg8nf",
+      "name": "[BHS8][Dedicated Servers] - Network equipment version upgrade",
       "status": "scheduled",
-      "created_at": "2023-03-13T20:52:36.766Z",
-      "updated_at": "2023-03-13T20:54:52.722Z",
+      "created_at": "2023-03-14T22:05:46.493Z",
+      "updated_at": "2023-03-15T08:49:27.258Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/wdnh8550c9f3",
-      "started_at": "2023-03-13T20:52:36.753Z",
+      "shortlink": "https://stspg.io/zv6pyh9x6mk3",
+      "started_at": "2023-03-14T22:05:46.483Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "c6qtzwh7jpsl",
+          "id": "1rp1fvm489ck",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 04/04/2023 20:00 UTC\n<b>End time :</b> 04/04/2023 23:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do an operation on a network equipment.",
-          "incident_id": "sn2v8jsk6qr8",
-          "created_at": "2023-03-13T20:52:36.844Z",
-          "updated_at": "2023-03-13T20:54:52.717Z",
-          "display_at": "2023-03-13T20:52:36.844Z",
+          "body": "Please note the new maintenance date:\n<b>Start time :</b> 05/04/2023 07:00 UTC\n<b>End time :</b> 05/04/2023 11:00 UTC",
+          "incident_id": "tccqfmbdg8nf",
+          "created_at": "2023-03-15T08:48:12.559Z",
+          "updated_at": "2023-03-15T08:48:12.559Z",
+          "display_at": "2023-03-15T08:48:12.559Z",
           "affected_components": [
             {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
               "old_status": "operational",
               "new_status": "operational"
-            },
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vlbnn1dn2zg1",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 05/04/2023 08:00 UTC\n<b>End time :</b> 05/04/2023 12:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a version upgrade on multiple network equipment.",
+          "incident_id": "tccqfmbdg8nf",
+          "created_at": "2023-03-14T22:05:46.575Z",
+          "updated_at": "2023-03-14T22:05:46.575Z",
+          "display_at": "2023-03-14T22:05:46.575Z",
+          "affected_components": [
             {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2127,53 +2135,23 @@
       ],
       "components": [
         {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
           "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2023-04-03T21:35:23.867Z",
-          "position": 2,
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2023-04-03T09:42:09.762Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-04-03T21:35:23.880Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-04-04T02:53:20.273Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-04-04T20:00:00.000Z",
-      "scheduled_until": "2023-04-04T23:30:00.000Z"
+      "scheduled_for": "2023-04-05T07:00:00.000Z",
+      "scheduled_until": "2023-04-05T11:00:00.000Z"
     },
     {
       "id": "v3fdkb0lngrk",
@@ -2216,80 +2194,6 @@
           "created_at": "2023-03-28T19:29:09.632Z",
           "updated_at": "2023-03-28T19:29:09.632Z",
           "display_at": "2023-03-28T19:29:09.632Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2023-04-03T09:42:09.762Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-05T07:00:00.000Z",
-      "scheduled_until": "2023-04-05T11:00:00.000Z"
-    },
-    {
-      "id": "tccqfmbdg8nf",
-      "name": "[BHS8][Dedicated Servers] - Network equipment version upgrade",
-      "status": "scheduled",
-      "created_at": "2023-03-14T22:05:46.493Z",
-      "updated_at": "2023-03-15T08:49:27.258Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zv6pyh9x6mk3",
-      "started_at": "2023-03-14T22:05:46.483Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "1rp1fvm489ck",
-          "status": "scheduled",
-          "body": "Please note the new maintenance date:\n<b>Start time :</b> 05/04/2023 07:00 UTC\n<b>End time :</b> 05/04/2023 11:00 UTC",
-          "incident_id": "tccqfmbdg8nf",
-          "created_at": "2023-03-15T08:48:12.559Z",
-          "updated_at": "2023-03-15T08:48:12.559Z",
-          "display_at": "2023-03-15T08:48:12.559Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vlbnn1dn2zg1",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 05/04/2023 08:00 UTC\n<b>End time :</b> 05/04/2023 12:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a version upgrade on multiple network equipment.",
-          "incident_id": "tccqfmbdg8nf",
-          "created_at": "2023-03-14T22:05:46.575Z",
-          "updated_at": "2023-03-14T22:05:46.575Z",
-          "display_at": "2023-03-14T22:05:46.575Z",
           "affected_components": [
             {
               "code": "hqn6pb8tdzdx",
