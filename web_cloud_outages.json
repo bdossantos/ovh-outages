@@ -4,13 +4,13 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-05T14:30:40.370Z"
+    "updated_at": "2023-04-05T21:00:44.266Z"
   },
   "components": [
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2021-06-30T12:27:22.791Z",
       "position": 1,
@@ -2385,9 +2385,9 @@
     {
       "id": "kd99p0p9dcnc",
       "name": "Cluster030",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:17.848Z",
-      "updated_at": "2023-03-29T17:37:30.079Z",
+      "updated_at": "2023-04-05T21:00:42.974Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -2463,9 +2463,9 @@
     {
       "id": "11z8y8f8wr9z",
       "name": "Cluster031",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-02T16:29:10.457Z",
-      "updated_at": "2023-03-30T10:08:14.724Z",
+      "updated_at": "2023-04-05T20:40:19.737Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -2713,6 +2713,58 @@
   ],
   "incidents": [
     {
+      "id": "jb95vh6sbmmb",
+      "name": "[GRA1][Webhosting] - cluster031- Filerz1597",
+      "status": "identified",
+      "created_at": "2023-04-05T20:40:19.710Z",
+      "updated_at": "2023-04-05T20:40:40.800Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fvwz4klhhk8q",
+      "started_at": "2023-04-05T20:40:19.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "5j5gccs1hzdf",
+          "status": "identified",
+          "body": "<b>Start time :</b> 05/04/2023 11:00 UTC\n<b>Service impact :</b> Websites slowness on filerz1597\n<b>Ongoing actions :</b> Our technical teams are working on this issue.\nUpdate will be post as significant progress is made.",
+          "incident_id": "jb95vh6sbmmb",
+          "created_at": "2023-04-05T20:40:19.810Z",
+          "updated_at": "2023-04-05T20:40:40.742Z",
+          "display_at": "2023-04-05T20:40:19.000Z",
+          "affected_components": [
+            {
+              "code": "11z8y8f8wr9z",
+              "name": "Web Hosting || Datacenter GRA - Cluster031",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "11z8y8f8wr9z",
+          "name": "Cluster031",
+          "status": "degraded_performance",
+          "created_at": "2021-11-02T16:29:10.457Z",
+          "updated_at": "2023-04-05T20:40:19.737Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-02",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "bgts9kkcxzf8",
       "name": "[Global][VoIP] - Telephony Bill generation",
       "status": "monitoring",
@@ -2756,60 +2808,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "w9gfl4snssm6",
-      "name": "[GRA][WebHosting] - Data Migration - Filerz1035",
-      "status": "scheduled",
-      "created_at": "2023-03-29T23:09:13.572Z",
-      "updated_at": "2023-03-29T23:13:04.969Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9zwxgmbswpq3",
-      "started_at": "2023-03-29T23:09:13.565Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "21vq071sfp6z",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 05/04/2023 21:00 UTC\n<b>End time :</b> 05/04/2023 22:00 UTC \n<b>Service impact :</b> Unavailability of the Filerz1035 for around 30 minutes during the migration.\n<b>Service improvement  :</b> Following our continuous improvement policy, we are going to migrate the Filerz1035 to keep our infrastructure up-to-date.",
-          "incident_id": "w9gfl4snssm6",
-          "created_at": "2023-03-29T23:09:13.621Z",
-          "updated_at": "2023-03-29T23:13:04.966Z",
-          "display_at": "2023-03-29T23:09:13.621Z",
-          "affected_components": [
-            {
-              "code": "kd99p0p9dcnc",
-              "name": "Web Hosting || Datacenter GRA - Cluster030",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "kd99p0p9dcnc",
-          "name": "Cluster030",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:17.848Z",
-          "updated_at": "2023-03-29T17:37:30.079Z",
-          "position": 23,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-05T21:00:00.000Z",
-      "scheduled_until": "2023-04-05T22:00:00.000Z"
-    },
     {
       "id": "mdx8zmqh7ms5",
       "name": "[FR][VoIP] - Voicemail messages migration",
@@ -3187,10 +3185,84 @@
       ],
       "scheduled_for": "2023-04-13T21:00:00.000Z",
       "scheduled_until": "2023-04-13T22:00:00.000Z"
+    },
+    {
+      "id": "w9gfl4snssm6",
+      "name": "[GRA][WebHosting] - Data Migration - Filerz1035",
+      "status": "in_progress",
+      "created_at": "2023-03-29T23:09:13.572Z",
+      "updated_at": "2023-04-05T21:00:44.006Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9zwxgmbswpq3",
+      "started_at": "2023-03-29T23:09:13.565Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "6kk0k7jswtnm",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "w9gfl4snssm6",
+          "created_at": "2023-04-05T21:00:43.795Z",
+          "updated_at": "2023-04-05T21:00:43.795Z",
+          "display_at": "2023-04-05T21:00:43.795Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "21vq071sfp6z",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 05/04/2023 21:00 UTC\n<b>End time :</b> 05/04/2023 22:00 UTC \n<b>Service impact :</b> Unavailability of the Filerz1035 for around 30 minutes during the migration.\n<b>Service improvement  :</b> Following our continuous improvement policy, we are going to migrate the Filerz1035 to keep our infrastructure up-to-date.",
+          "incident_id": "w9gfl4snssm6",
+          "created_at": "2023-03-29T23:09:13.621Z",
+          "updated_at": "2023-03-29T23:13:04.966Z",
+          "display_at": "2023-03-29T23:09:13.621Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kd99p0p9dcnc",
+          "name": "Cluster030",
+          "status": "under_maintenance",
+          "created_at": "2021-06-30T12:19:17.848Z",
+          "updated_at": "2023-04-05T21:00:42.974Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-05T21:00:00.000Z",
+      "scheduled_until": "2023-04-05T22:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
