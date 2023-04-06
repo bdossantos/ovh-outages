@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-05T21:35:05.938Z"
+    "updated_at": "2023-04-06T01:15:04.471Z"
   },
   "components": [
     {
@@ -1751,9 +1751,9 @@
     {
       "id": "hs1hyl2fxvyv",
       "name": "GRA7",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:17.106Z",
-      "updated_at": "2023-04-04T21:35:24.560Z",
+      "updated_at": "2023-04-06T01:15:04.424Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3983,7 +3983,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2022-04-13T13:25:21.119Z",
       "position": 30,
@@ -4202,6 +4202,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "h1twz7vxjw7f",
+      "name": "[GRA7][Public Cloud] - Public Network",
+      "status": "investigating",
+      "created_at": "2023-04-06T01:15:04.400Z",
+      "updated_at": "2023-04-06T01:15:04.469Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/j1wmhdlr4yy8",
+      "started_at": "2023-04-06T01:15:04.394Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "85m9bxczn142",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 06/04/2023 05:50 UTC  \n<b>Service impact :</b> The existing network is operational and should work, but instance creation and all network operations may be unavailable.\n<b>Ongoing actions :</b> Our technical teams are investigating on this issue.",
+          "incident_id": "h1twz7vxjw7f",
+          "created_at": "2023-04-06T01:15:04.467Z",
+          "updated_at": "2023-04-06T01:15:04.467Z",
+          "display_at": "2023-04-06T01:15:04.467Z",
+          "affected_components": [
+            {
+              "code": "hs1hyl2fxvyv",
+              "name": "Network || Public network - GRA7",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hs1hyl2fxvyv",
+          "name": "GRA7",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T10:07:17.106Z",
+          "updated_at": "2023-04-06T01:15:04.424Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "9gpvj25b6t8m",
       "name": "[GRA][Containers & Orchestration] - Managed Private Registry",
@@ -4851,6 +4903,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
