@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-13T09:43:19.152Z"
+    "updated_at": "2023-04-13T12:57:35.797Z"
   },
   "components": [
     {
@@ -1342,9 +1342,9 @@
     {
       "id": "dwkwkx15h58c",
       "name": "GRA7",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:36:00.118Z",
-      "updated_at": "2023-03-13T13:20:15.642Z",
+      "updated_at": "2023-04-13T12:56:02.605Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2260,9 +2260,9 @@
     {
       "id": "hs1hyl2fxvyv",
       "name": "GRA7",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T10:07:17.106Z",
-      "updated_at": "2023-04-06T19:37:41.400Z",
+      "updated_at": "2023-04-13T12:56:02.731Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -3769,7 +3769,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2022-04-13T13:25:21.044Z",
       "position": 22,
@@ -4013,7 +4013,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2022-04-13T13:25:21.119Z",
       "position": 30,
@@ -4234,6 +4234,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "zrkhbjct39yz",
+      "name": "[GRA7][Public Cloud ] - OpenStack Network API Latency",
+      "status": "investigating",
+      "created_at": "2023-04-13T12:56:02.495Z",
+      "updated_at": "2023-04-13T12:57:35.795Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x6r6krvyhbdv",
+      "started_at": "2023-04-13T12:56:02.482Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "9g5pcy1xpfyx",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 13/04/2023 12:21 UTC \n<b>Service impact :</b> OpenStack GRA7 is experiencing the high latency and the OpenStack network API may also experience some latency.\n<b>Ongoing actions :</b> Our technical teams are investigating on this issue.",
+          "incident_id": "zrkhbjct39yz",
+          "created_at": "2023-04-13T12:56:02.788Z",
+          "updated_at": "2023-04-13T12:56:02.788Z",
+          "display_at": "2023-04-13T12:56:02.788Z",
+          "affected_components": [
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hs1hyl2fxvyv",
+              "name": "Network || Public network - GRA7",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwkwkx15h58c",
+          "name": "GRA7",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:36:00.118Z",
+          "updated_at": "2023-04-13T12:56:02.605Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hs1hyl2fxvyv",
+          "name": "GRA7",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T10:07:17.106Z",
+          "updated_at": "2023-04-13T12:56:02.731Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "9gpvj25b6t8m",
       "name": "[GRA][Containers & Orchestration] - Managed Private Registry",
@@ -4765,60 +4838,6 @@
       "scheduled_until": "2023-04-20T11:00:00.000Z"
     },
     {
-      "id": "4pymmcgq4z1j",
-      "name": "[US-EAST-VA-2][Workflow Management] - Mistral",
-      "status": "scheduled",
-      "created_at": "2023-03-16T03:40:37.301Z",
-      "updated_at": "2023-03-16T03:50:38.387Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1f7m521lr4b0",
-      "started_at": "2023-03-16T03:40:37.292Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "c6l3sqb00rg4",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-EAST-VA-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
-          "incident_id": "4pymmcgq4z1j",
-          "created_at": "2023-03-16T03:40:37.367Z",
-          "updated_at": "2023-03-16T03:50:38.382Z",
-          "display_at": "2023-03-16T03:40:37.367Z",
-          "affected_components": [
-            {
-              "code": "b46bp51ywd13",
-              "name": "Containers & Orchestration || Workflow Management - US-EAST-VA-1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "b46bp51ywd13",
-          "name": "US-EAST-VA-1",
-          "status": "operational",
-          "created_at": "2022-05-04T10:34:45.645Z",
-          "updated_at": "2023-02-09T18:50:24.750Z",
-          "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "hyh6798xq542",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-20T13:00:00.000Z",
-      "scheduled_until": "2023-04-20T16:00:00.000Z"
-    },
-    {
       "id": "ks4lbf1f6jtw",
       "name": "[US-WEST-OR-2][Workflow Management] - Mistral",
       "status": "scheduled",
@@ -4860,6 +4879,60 @@
           "created_at": "2022-05-04T10:35:05.466Z",
           "updated_at": "2023-02-09T18:48:54.840Z",
           "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "hyh6798xq542",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-20T13:00:00.000Z",
+      "scheduled_until": "2023-04-20T16:00:00.000Z"
+    },
+    {
+      "id": "4pymmcgq4z1j",
+      "name": "[US-EAST-VA-2][Workflow Management] - Mistral",
+      "status": "scheduled",
+      "created_at": "2023-03-16T03:40:37.301Z",
+      "updated_at": "2023-03-16T03:50:38.387Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1f7m521lr4b0",
+      "started_at": "2023-03-16T03:40:37.292Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "c6l3sqb00rg4",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-EAST-VA-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
+          "incident_id": "4pymmcgq4z1j",
+          "created_at": "2023-03-16T03:40:37.367Z",
+          "updated_at": "2023-03-16T03:50:38.382Z",
+          "display_at": "2023-03-16T03:40:37.367Z",
+          "affected_components": [
+            {
+              "code": "b46bp51ywd13",
+              "name": "Containers & Orchestration || Workflow Management - US-EAST-VA-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b46bp51ywd13",
+          "name": "US-EAST-VA-1",
+          "status": "operational",
+          "created_at": "2022-05-04T10:34:45.645Z",
+          "updated_at": "2023-02-09T18:50:24.750Z",
+          "position": 19,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-04",
@@ -5351,6 +5424,291 @@
       ],
       "scheduled_for": "2023-05-22T08:30:00.000Z",
       "scheduled_until": "2023-05-31T16:00:00.000Z"
+    },
+    {
+      "id": "202g01s5kz73",
+      "name": "[GLOBAL][ManagedKubernetesService] Managed nodes OS upgrades for clusters in NO DOWNTIME policy update configuration",
+      "status": "scheduled",
+      "created_at": "2023-04-13T12:53:22.141Z",
+      "updated_at": "2023-04-13T12:53:22.233Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kh8fy85pltv5",
+      "started_at": "2023-04-13T12:53:22.115Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "gyj9l74wrqmn",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 13/06/2023 08:30 UTC \n<b>End time :</b> 15/06/2023 16:00 UTC \n<b>Service impact :</b> No impact is expected but you should have enough nodes in your K8S cluster to allow a rolling upgrade of them and to absorb a rescheduling of your workload without downtime.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will upgrade all public cloud instances (a.k.a. nodes) managed by the MKS team and running in your Kubernetes clusters to upgrade them from the operating system Ubuntu 18.04.06 LTS version to the Ubuntu 22.04.02 LTS version.\nOnly clusters with an upgrade policy set to \"NO DOWNTIME\" are targeted by this maintenance.\nTo prevent non wanted upgrade on services configured in NO DOWNTIME mode, we leave it up to the customers more time to manage this upgrade by themselves.\nBut, as the Ubuntu 18.04 LTS support will be disabled on the 31/05/2023, be aware that in case of critical vulnerability, we kept the right to force upgrade impacted services to patch as soon as possible vulnerable managed control planes and nodes.",
+          "incident_id": "202g01s5kz73",
+          "created_at": "2023-04-13T12:53:22.229Z",
+          "updated_at": "2023-04-13T12:53:22.229Z",
+          "display_at": "2023-04-13T12:53:22.229Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "49jdf7zj6zfc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SGP1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "xv0rhxd2kfbs",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SYD1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "wv2rf0h84jnq",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-EAST-VA-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "yqn3gnbvd5nk",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-WEST-OR-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y7fg5g64zq46",
+          "name": "BHS5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:24.031Z",
+          "updated_at": "2023-04-11T17:12:49.446Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4pjxf199vzgd",
+          "name": "DE1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:23.071Z",
+          "updated_at": "2023-04-11T17:12:49.458Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qrzw3vnl4d1h",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:18.324Z",
+          "updated_at": "2023-04-11T17:12:49.469Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y9679xqf81gv",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:19.672Z",
+          "updated_at": "2023-04-11T17:12:49.479Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "j6gs8vsmjycc",
+          "name": "GRA9",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:20.667Z",
+          "updated_at": "2023-04-11T17:12:49.490Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2hqnlvj9ygcf",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:17.048Z",
+          "updated_at": "2023-04-11T17:12:49.501Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "49jdf7zj6zfc",
+          "name": "SGP1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:26.006Z",
+          "updated_at": "2023-04-11T17:12:49.512Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "xv0rhxd2kfbs",
+          "name": "SYD1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:26.848Z",
+          "updated_at": "2023-04-11T17:12:49.523Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qt0sj8kf6bpn",
+          "name": "WAW1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:21.679Z",
+          "updated_at": "2023-04-11T17:12:49.533Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pj4hrqx6f6km",
+          "name": "UK1",
+          "status": "operational",
+          "created_at": "2022-05-04T10:30:35.072Z",
+          "updated_at": "2023-04-11T17:12:49.544Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "wv2rf0h84jnq",
+          "name": "US-EAST-VA-1",
+          "status": "operational",
+          "created_at": "2022-05-04T10:31:05.800Z",
+          "updated_at": "2023-04-11T17:12:49.554Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yqn3gnbvd5nk",
+          "name": "US-WEST-OR-1",
+          "status": "operational",
+          "created_at": "2022-05-04T10:31:22.478Z",
+          "updated_at": "2023-04-11T17:12:49.565Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-13T08:30:00.000Z",
+      "scheduled_until": "2023-06-15T16:00:00.000Z"
     }
   ],
   "status": {
