@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-18T07:05:03.810Z"
+    "updated_at": "2023-04-18T07:49:52.054Z"
   },
   "components": [
     {
@@ -5491,6 +5491,60 @@
       "scheduled_until": "2023-04-20T11:00:00.000Z"
     },
     {
+      "id": "ks4lbf1f6jtw",
+      "name": "[US-WEST-OR-2][Workflow Management] - Mistral",
+      "status": "scheduled",
+      "created_at": "2023-03-16T03:52:32.191Z",
+      "updated_at": "2023-03-16T03:52:32.250Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t65lt8l8zg1l",
+      "started_at": "2023-03-16T03:52:32.184Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "q7r0fmtv1k70",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-WEST-OR-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
+          "incident_id": "ks4lbf1f6jtw",
+          "created_at": "2023-03-16T03:52:32.247Z",
+          "updated_at": "2023-03-16T03:52:32.247Z",
+          "display_at": "2023-03-16T03:52:32.247Z",
+          "affected_components": [
+            {
+              "code": "915njn7ngq6g",
+              "name": "Containers & Orchestration || Workflow Management - US-WEST-OR-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "915njn7ngq6g",
+          "name": "US-WEST-OR-1",
+          "status": "operational",
+          "created_at": "2022-05-04T10:35:05.466Z",
+          "updated_at": "2023-02-09T18:48:54.840Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "hyh6798xq542",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-04-20T13:00:00.000Z",
+      "scheduled_until": "2023-04-20T16:00:00.000Z"
+    },
+    {
       "id": "4pymmcgq4z1j",
       "name": "[US-EAST-VA-2][Workflow Management] - Mistral",
       "status": "scheduled",
@@ -5545,58 +5599,35 @@
       "scheduled_until": "2023-04-20T16:00:00.000Z"
     },
     {
-      "id": "ks4lbf1f6jtw",
-      "name": "[US-WEST-OR-2][Workflow Management] - Mistral",
+      "id": "7ztr1tsx99b9",
+      "name": "PCI - GRA5 - 9 hosts",
       "status": "scheduled",
-      "created_at": "2023-03-16T03:52:32.191Z",
-      "updated_at": "2023-03-16T03:52:32.250Z",
+      "created_at": "2023-04-18T07:49:52.000Z",
+      "updated_at": "2023-04-18T07:49:52.051Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/t65lt8l8zg1l",
-      "started_at": "2023-03-16T03:52:32.184Z",
+      "shortlink": "https://stspg.io/zmnbwzpb2ywl",
+      "started_at": "2023-04-18T07:49:51.996Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "q7r0fmtv1k70",
+          "id": "x81gm85c95mz",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 20/04/2023 13:00 UTC \n<b>End time :</b> 20/04/2023 16:00 UTC\n<b>Service impact :</b> All mistral endpoints of US-WEST-OR-2 will be unreachable.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will migrate Mistral to a new production platform.",
-          "incident_id": "ks4lbf1f6jtw",
-          "created_at": "2023-03-16T03:52:32.247Z",
-          "updated_at": "2023-03-16T03:52:32.247Z",
-          "display_at": "2023-03-16T03:52:32.247Z",
-          "affected_components": [
-            {
-              "code": "915njn7ngq6g",
-              "name": "Containers & Orchestration || Workflow Management - US-WEST-OR-1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
+          "body": "<div class=\"update-title span3 font-large\">Affected switches</div>\ngra2-pciz2host3-a70\ngra2-pciz2host5-a70\ngra2-pciz2host16-a70\ngra2-pciz2host19-a70\ngra2-pciz2host20-a70\ngra2-pciz2host28-a70\ngra2-pciz2host34-a70\n\n<div class=\"update-title span3 font-large\">Affected racks</div>\nG205A01\nG205A04\nG205A05\nG205A14\nG205A19\nG212A09\nG212A16\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost905424\nhost905433\nhost986234\nhost1001325\nhost1001334\nhost1001948\nhost1001950\nhost1023660\nhost1042499\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below may reboot during maintenance,\ndue to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n02038ae8-6836-42d3-b949-b1d5c3eba06e\n10943f2a-2a69-4eaa-98db-4f28dd3b5235\n2174b703-3a30-4e0b-b6da-70f2ff70143e\n22e355b9-79f1-43ca-aaa9-e41976f856e9\n27ac0005-830f-4f8b-a054-ef8fa2731164\n2f853c3a-90b3-4517-8fa1-2c1daafc312a\n475c3076-d0e9-4189-a0e2-1a82cd6bae5e\n4d24f58c-6717-48e3-bbb2-bcee61e9f88e\n4e102db0-1011-4071-9722-eb168910dc37\n5529c931-346e-4020-8441-3ec9d03de34c\n5668148b-4a53-4ef5-a643-07cc4c97fed9\n654f06a1-297c-43e5-924b-9c86dedd1d94\n676d53b2-0479-441f-803f-2e766371e4d1\n6a68893a-58f3-46b5-a15d-06366eae8c76\n82c89e2c-3add-4a90-9d64-b11eeab46495\n8788d361-0860-48d3-aa81-d255846363fa\n952e1f42-2ac2-43ac-ad5c-ee00c617cc10\n9e65b6fc-55ba-43dd-a9f7-b2e95d835aa7\na520e265-426f-40dd-a574-b2b71d777dcb\nabeaafb1-ae02-4a04-ad66-06b48d80501f\nbf32616a-acf8-4d89-9f48-5aca2bdc061f\nbf3807ce-7b5c-4e56-b3b9-928beff2f383\nbfc10da4-21e7-4e97-b2f9-fd8d454d9f51\nc59c8cd5-9729-46bb-8579-18cc1e917f6e\nd3151b54-c5d0-4ee1-aab6-4f6725d479f4\nd93c81ad-e5fc-4686-a873-984859beff16\ne68b13d3-6853-4386-9dfa-e6a7678543c7\ne9069a86-fe7b-47d8-bdb2-f5536db4fbe6\nf0ff79f9-455a-4ba8-995f-e49cef2d0808\nf6cbaca0-25fc-42b9-8a6a-018df461c2bb\nf9c657f8-ee26-4cc1-b034-16183d5590f0",
+          "incident_id": "7ztr1tsx99b9",
+          "created_at": "2023-04-18T07:49:52.048Z",
+          "updated_at": "2023-04-18T07:49:52.048Z",
+          "display_at": "2023-04-18T07:49:52.048Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "915njn7ngq6g",
-          "name": "US-WEST-OR-1",
-          "status": "operational",
-          "created_at": "2022-05-04T10:35:05.466Z",
-          "updated_at": "2023-02-09T18:48:54.840Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "hyh6798xq542",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-04-20T13:00:00.000Z",
-      "scheduled_until": "2023-04-20T16:00:00.000Z"
+      "components": [],
+      "scheduled_for": "2023-04-25T07:00:00.000Z",
+      "scheduled_until": "2023-04-25T17:00:00.000Z"
     },
     {
       "id": "cc43kwwn4pdr",
