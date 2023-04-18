@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-18T20:00:52.866Z"
+    "updated_at": "2023-04-18T20:43:12.917Z"
   },
   "components": [
     {
@@ -190,7 +190,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -536,9 +536,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2023-04-18T19:26:57.173Z",
+      "updated_at": "2023-04-18T20:32:35.980Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2237,7 +2237,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "959nkmmqwp43",
+      "name": "[ERI1][DedicatedServers] - Rack E101B05",
+      "status": "investigating",
+      "created_at": "2023-04-18T20:32:35.953Z",
+      "updated_at": "2023-04-18T20:32:36.172Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/143dd8yyft4n",
+      "started_at": "2023-04-18T20:32:35.946Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "fx3gzc53bdkm",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 18/04/2023 20:30 UTC\n<b>Service impact :</b> Some servers in the rack E101B05 are no longer responding.\n<b>Root cause :</b> Electrical malfunction\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
+          "incident_id": "959nkmmqwp43",
+          "created_at": "2023-04-18T20:32:36.170Z",
+          "updated_at": "2023-04-18T20:32:36.170Z",
+          "display_at": "2023-04-18T20:32:36.170Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2023-04-18T20:32:35.980Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "zp0n0f6s2nqx",
@@ -4101,7 +4154,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
