@@ -4,13 +4,13 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-25T11:16:33.139Z"
+    "updated_at": "2023-04-25T11:43:19.906Z"
   },
   "components": [
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2021-06-30T12:27:22.791Z",
       "position": 1,
@@ -2278,9 +2278,9 @@
     {
       "id": "mcpg574l0k6w",
       "name": "Cluster027",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:16.093Z",
-      "updated_at": "2023-04-24T15:00:15.980Z",
+      "updated_at": "2023-04-25T11:42:21.023Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2744,6 +2744,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "p9l8zgqh3l2s",
+      "name": "[GRA][WebHosting] - Cluster027 - Filerz256",
+      "status": "identified",
+      "created_at": "2023-04-25T11:42:20.996Z",
+      "updated_at": "2023-04-25T11:42:21.085Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/xvxwgw5t15nd",
+      "started_at": "2023-04-25T11:42:20.990Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "gc4z2yvrg8nd",
+          "status": "identified",
+          "body": "<b>Start time :</b> 25/04/2023 12:32 UTC\n<b>Service impact :</b>  Websites slowness on filerz256\n<b>Root cause :</b> Storage issue\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "p9l8zgqh3l2s",
+          "created_at": "2023-04-25T11:42:21.083Z",
+          "updated_at": "2023-04-25T11:42:21.083Z",
+          "display_at": "2023-04-25T11:42:21.083Z",
+          "affected_components": [
+            {
+              "code": "mcpg574l0k6w",
+              "name": "Web Hosting || Datacenter GRA - Cluster027",
+              "old_status": "under_maintenance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mcpg574l0k6w",
+          "name": "Cluster027",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:16.093Z",
+          "updated_at": "2023-04-25T11:42:21.023Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "tjf4pxpp604v",
       "name": "[Global][Collaborative solutions] - Mailjet email pertubation",
@@ -4239,9 +4291,9 @@
         {
           "id": "mcpg574l0k6w",
           "name": "Cluster027",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:16.093Z",
-          "updated_at": "2023-04-24T15:00:15.980Z",
+          "updated_at": "2023-04-25T11:42:21.023Z",
           "position": 20,
           "description": null,
           "showcase": false,
@@ -4317,7 +4369,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
