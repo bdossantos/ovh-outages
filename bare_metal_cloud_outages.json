@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-26T07:00:05.916Z"
+    "updated_at": "2023-04-26T09:28:28.082Z"
   },
   "components": [
     {
@@ -190,7 +190,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -826,9 +826,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2023-04-25T09:35:34.472Z",
+      "updated_at": "2023-04-26T09:28:28.031Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2237,7 +2237,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m6p8rczttq4n",
+      "name": "[GRA2][DedicatedServers] - Rack G262E03",
+      "status": "investigating",
+      "created_at": "2023-04-26T09:28:27.993Z",
+      "updated_at": "2023-04-26T09:28:28.080Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/pcdk2xz72phy",
+      "started_at": "2023-04-26T09:28:27.986Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "b30v6v322xzg",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 26/04/2023 08:00 UTC\n<b>Service impact :</b> Some servers in the rack G262E03 are down.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
+          "incident_id": "m6p8rczttq4n",
+          "created_at": "2023-04-26T09:28:28.078Z",
+          "updated_at": "2023-04-26T09:28:28.078Z",
+          "display_at": "2023-04-26T09:28:28.078Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2023-04-26T09:28:28.031Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "25wnydpv8jn5",
@@ -2856,9 +2909,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-04-25T09:35:34.472Z",
+          "updated_at": "2023-04-26T09:28:28.031Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3519,7 +3572,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
