@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-27T23:43:14.971Z"
+    "updated_at": "2023-04-28T10:18:47.033Z"
   },
   "components": [
     {
@@ -1438,9 +1438,9 @@
     {
       "id": "d167jln8tkv5",
       "name": "SMS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:21.411Z",
-      "updated_at": "2023-04-26T21:39:30.814Z",
+      "updated_at": "2023-04-28T10:05:53.995Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2010,7 +2010,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2021-10-29T12:27:35.328Z",
       "position": 14,
@@ -2744,6 +2744,78 @@
     }
   ],
   "incidents": [
+    {
+      "id": "2jqq0my8vbbg",
+      "name": "[EU/CA][Telephony] - Sms",
+      "status": "identified",
+      "created_at": "2023-04-28T10:05:53.962Z",
+      "updated_at": "2023-04-28T10:18:47.026Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/f1mgm0ysjn47",
+      "started_at": "2023-04-28T10:05:53.956Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "6pstz4n7ttbk",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "2jqq0my8vbbg",
+          "created_at": "2023-04-28T10:18:47.024Z",
+          "updated_at": "2023-04-28T10:18:47.024Z",
+          "display_at": "2023-04-28T10:18:47.024Z",
+          "affected_components": [
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cw37fs4p035d",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 28/04/2023 08:30 UTC \n<b>Service impact :</b> We have a malfunction on a  database. It may cause a delay in sending sms\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "2jqq0my8vbbg",
+          "created_at": "2023-04-28T10:05:54.046Z",
+          "updated_at": "2023-04-28T10:05:54.046Z",
+          "display_at": "2023-04-28T10:05:54.046Z",
+          "affected_components": [
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d167jln8tkv5",
+          "name": "SMS",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:22:21.411Z",
+          "updated_at": "2023-04-28T10:05:53.995Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "tjf4pxpp604v",
       "name": "[Global][Collaborative solutions] - Mailjet email pertubation",
@@ -4168,7 +4240,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
