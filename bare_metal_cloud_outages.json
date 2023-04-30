@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-04-30T17:27:10.725Z"
+    "updated_at": "2023-04-30T19:23:20.037Z"
   },
   "components": [
     {
@@ -190,7 +190,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -1212,9 +1212,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-04-30T14:55:08.356Z",
+      "updated_at": "2023-04-30T19:23:19.986Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2239,76 +2239,33 @@
   ],
   "incidents": [
     {
-      "id": "v074b5t2tkzj",
-      "name": "[RBX7][Dedicated Servers- Public/Private Network] - R704B13",
-      "status": "identified",
-      "created_at": "2023-04-30T14:55:08.324Z",
-      "updated_at": "2023-04-30T16:04:10.549Z",
+      "id": "05htqbh94lxf",
+      "name": "VPS - DE2 - host972924",
+      "status": "investigating",
+      "created_at": "2023-04-30T19:17:13.440Z",
+      "updated_at": "2023-04-30T19:17:13.475Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/4t1nmtnlkkyy",
-      "started_at": "2023-04-30T14:55:08.000Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pcm2yj13yw2j",
+      "started_at": "2023-04-30T19:17:13.434Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "m0gp5vvvb1p6",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "v074b5t2tkzj",
-          "created_at": "2023-04-30T16:04:10.546Z",
-          "updated_at": "2023-04-30T16:04:10.546Z",
-          "display_at": "2023-04-30T16:04:10.546Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "yhycy5wys8wm",
+          "id": "vpjpttg42jr4",
           "status": "investigating",
-          "body": "<b>Start time :</b> 30/04/2023 14:30 UTC\n<b>Service impact :</b> Public and private networks are unreachable on this rack. All the servers are unreachable\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.",
-          "incident_id": "v074b5t2tkzj",
-          "created_at": "2023-04-30T14:55:08.749Z",
-          "updated_at": "2023-04-30T14:55:27.368Z",
-          "display_at": "2023-04-30T14:55:08.000Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost972924\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps732819\nvps667107\nvps534070\nvps659666\nvps689661\nvps523190\nvps764109\nvps739496\nvps761951\nvps769671\nvps768146\nvps762807\nvps764527\nvps758699\nvps758700\nvps601352\nvps744644\nvps718167\nvps705657\nvps705198\nvps702552\nvps701428\nvps652937\nvps686114\nvps686129\nvps680801\nvps679151\nvps662207\nvps659398\nvps651876\nvps640619\nvps637793\nvps637597\nvps627155\nvps623591\nvps623590\nvps622135\nvps619246\nvps615198\nvps612455\nvps612037\nvps610906\nvps600432\nvps598424\nvps596138\nvps585469",
+          "incident_id": "05htqbh94lxf",
+          "created_at": "2023-04-30T19:17:13.473Z",
+          "updated_at": "2023-04-30T19:17:13.473Z",
+          "display_at": "2023-04-30T19:17:13.473Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-04-30T14:55:08.356Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
+      "components": []
     }
   ],
   "scheduled_maintenances": [
@@ -2822,9 +2779,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-04-30T14:55:08.356Z",
+          "updated_at": "2023-04-30T19:23:19.986Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3959,9 +3916,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-04-30T14:55:08.356Z",
+          "updated_at": "2023-04-30T19:23:19.986Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4715,7 +4672,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
