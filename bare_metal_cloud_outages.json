@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-01T13:05:03.286Z"
+    "updated_at": "2023-05-01T13:52:38.393Z"
   },
   "components": [
     {
@@ -190,7 +190,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2021-07-09T07:37:15.945Z",
       "position": 1,
@@ -826,9 +826,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2023-04-28T19:58:55.025Z",
+      "updated_at": "2023-05-01T13:38:17.951Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -901,9 +901,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2023-04-30T17:14:58.633Z",
+      "updated_at": "2023-05-01T13:52:38.343Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1287,7 +1287,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2237,7 +2237,141 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jv7582972pct",
+      "name": "[GRA3][Dedicated Servers - Public Network] - GRA0326A04B",
+      "status": "identified",
+      "created_at": "2023-05-01T13:38:17.924Z",
+      "updated_at": "2023-05-01T13:52:38.386Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/r3rngnfq0skm",
+      "started_at": "2023-05-01T13:38:17.917Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vqrzmcm620f1",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "jv7582972pct",
+          "created_at": "2023-05-01T13:52:38.383Z",
+          "updated_at": "2023-05-01T13:52:38.383Z",
+          "display_at": "2023-05-01T13:52:38.383Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y08fbn10lg61",
+          "status": "identified",
+          "body": "<b>Service impact :</b> Public network is unreachable.",
+          "incident_id": "jv7582972pct",
+          "created_at": "2023-05-01T13:45:44.596Z",
+          "updated_at": "2023-05-01T13:45:44.596Z",
+          "display_at": "2023-05-01T13:45:44.596Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qndkqw590vc5",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "jv7582972pct",
+          "created_at": "2023-05-01T13:45:04.878Z",
+          "updated_at": "2023-05-01T13:45:04.878Z",
+          "display_at": "2023-05-01T13:45:04.878Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xsxgj55tg6ss",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 01/05/2023 13:29 UTC\n<b>Service impact :</b> Servers are temporarily unreachable\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "jv7582972pct",
+          "created_at": "2023-05-01T13:38:18.175Z",
+          "updated_at": "2023-05-01T13:38:18.175Z",
+          "display_at": "2023-05-01T13:38:18.175Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2023-05-01T13:38:17.951Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "25wnydpv8jn5",
@@ -2308,9 +2442,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2362,9 +2496,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-04-28T19:58:55.025Z",
+          "updated_at": "2023-05-01T13:38:17.951Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2518,9 +2652,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2587,9 +2721,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2776,9 +2910,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2911,9 +3045,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3022,9 +3156,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3145,9 +3279,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-04-28T19:58:55.025Z",
+          "updated_at": "2023-05-01T13:38:17.951Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3280,9 +3414,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3538,9 +3672,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3613,9 +3747,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3694,9 +3828,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3892,9 +4026,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3967,9 +4101,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -4117,9 +4251,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -4192,9 +4326,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -4267,9 +4401,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-04-30T17:14:58.633Z",
+          "updated_at": "2023-05-01T13:52:38.343Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -4662,7 +4796,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
