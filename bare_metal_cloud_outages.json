@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-17T05:42:34.580Z"
+    "updated_at": "2023-05-17T09:43:13.341Z"
   },
   "components": [
     {
@@ -1471,9 +1471,9 @@
     {
       "id": "5k59rcdh4w99",
       "name": "SGP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:31:37.347Z",
-      "updated_at": "2022-07-25T12:28:38.890Z",
+      "updated_at": "2023-05-17T09:37:16.264Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1611,9 +1611,9 @@
     {
       "id": "zgcckqmd57bx",
       "name": "SYD",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:31:38.208Z",
-      "updated_at": "2022-07-25T12:28:38.906Z",
+      "updated_at": "2023-05-17T09:37:16.280Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2201,7 +2201,7 @@
     {
       "id": "40xgq25nqllh",
       "name": "Virtual Private Servers || Network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:31:39.112Z",
       "updated_at": "2023-05-16T11:47:19.561Z",
       "position": 20,
@@ -2253,7 +2253,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lf4z6c4l6n47",
+      "name": "[SYD/SGP][VirtalPrivateServers] - Traffic bandwidth limitation",
+      "status": "identified",
+      "created_at": "2023-05-17T09:37:16.227Z",
+      "updated_at": "2023-05-17T09:37:16.325Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/gd4dp63lh71v",
+      "started_at": "2023-05-17T09:37:16.218Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "hmscrkqhx8d1",
+          "status": "identified",
+          "body": "<b>Start time :</b> 01/05/2023 00:00 UTC\n<b>Service impact :</b> Some VPS traffic have been limited.\n<b>Ongoing actions :</b> Email percentage calculation is in progress. Correct limitation will be apply on each VPS\nFor VPS solutions hosted in Sydney and Singapore: There is traffic limitation : 1TB traffic/month for the Starter and Value ranges, 2TB/month for the Essential range, 3TB/month for the Comfort range, and 4TB/month for the Elite range. Bandwidth is reduced to 10Mbit/s once the monthly quota has been exceeded.\nAn email alert is sent regarding the bandwidth reduction.\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "lf4z6c4l6n47",
+          "created_at": "2023-05-17T09:37:16.323Z",
+          "updated_at": "2023-05-17T09:37:16.323Z",
+          "display_at": "2023-05-17T09:37:16.323Z",
+          "affected_components": [
+            {
+              "code": "5k59rcdh4w99",
+              "name": "Virtual Private Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zgcckqmd57bx",
+              "name": "Virtual Private Servers || Network - SYD",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5k59rcdh4w99",
+          "name": "SGP",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:31:37.347Z",
+          "updated_at": "2023-05-17T09:37:16.264Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zgcckqmd57bx",
+          "name": "SYD",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:31:38.208Z",
+          "updated_at": "2023-05-17T09:37:16.280Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "g2fnxfqc1rpk",
@@ -3498,7 +3572,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
