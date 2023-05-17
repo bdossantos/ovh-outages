@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-17T13:45:40.949Z"
+    "updated_at": "2023-05-17T14:43:25.925Z"
   },
   "components": [
     {
@@ -1471,9 +1471,9 @@
     {
       "id": "5k59rcdh4w99",
       "name": "SGP",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:37.347Z",
-      "updated_at": "2023-05-17T09:37:16.264Z",
+      "updated_at": "2023-05-17T14:39:06.170Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -1611,9 +1611,9 @@
     {
       "id": "zgcckqmd57bx",
       "name": "SYD",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:38.208Z",
-      "updated_at": "2023-05-17T09:37:16.280Z",
+      "updated_at": "2023-05-17T14:39:06.181Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2201,7 +2201,7 @@
     {
       "id": "40xgq25nqllh",
       "name": "Virtual Private Servers || Network",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:39.112Z",
       "updated_at": "2023-05-16T11:47:19.561Z",
       "position": 20,
@@ -2255,103 +2255,33 @@
   ],
   "incidents": [
     {
-      "id": "lf4z6c4l6n47",
-      "name": "[SYD/SGP][VirtalPrivateServers] - Traffic bandwidth limitation",
-      "status": "identified",
-      "created_at": "2023-05-17T09:37:16.227Z",
-      "updated_at": "2023-05-17T13:45:40.941Z",
+      "id": "0w25zztc5rrf",
+      "name": "VPS - UK2 - 6 hosts",
+      "status": "investigating",
+      "created_at": "2023-05-17T14:36:50.490Z",
+      "updated_at": "2023-05-17T14:36:50.527Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/gd4dp63lh71v",
-      "started_at": "2023-05-17T09:37:16.218Z",
+      "shortlink": "https://stspg.io/s3clj8bm8d65",
+      "started_at": "2023-05-17T14:36:50.484Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "tt4c9nkbn2fb",
-          "status": "identified",
-          "body": "<b>Start time :</b> Our teams are in the process of putting a fix in production to solve the problem. Update will be post as significant progress is made.",
-          "incident_id": "lf4z6c4l6n47",
-          "created_at": "2023-05-17T13:45:40.938Z",
-          "updated_at": "2023-05-17T13:45:40.938Z",
-          "display_at": "2023-05-17T13:45:40.938Z",
-          "affected_components": [
-            {
-              "code": "5k59rcdh4w99",
-              "name": "Virtual Private Servers || Network - SGP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "zgcckqmd57bx",
-              "name": "Virtual Private Servers || Network - SYD",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hmscrkqhx8d1",
-          "status": "identified",
-          "body": "<b>Start time :</b> 01/05/2023 00:00 UTC\n<b>Service impact :</b> Some VPS traffic have been limited.\n<b>Ongoing actions :</b> Email percentage calculation is in progress. Correct limitation will be apply on each VPS\nFor VPS solutions hosted in Sydney and Singapore: There is traffic limitation : 1TB traffic/month for the Starter and Value ranges, 2TB/month for the Essential range, 3TB/month for the Comfort range, and 4TB/month for the Elite range. Bandwidth is reduced to 10Mbit/s once the monthly quota has been exceeded.\nAn email alert is sent regarding the bandwidth reduction.\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
-          "incident_id": "lf4z6c4l6n47",
-          "created_at": "2023-05-17T09:37:16.323Z",
-          "updated_at": "2023-05-17T09:37:16.323Z",
-          "display_at": "2023-05-17T09:37:16.323Z",
-          "affected_components": [
-            {
-              "code": "5k59rcdh4w99",
-              "name": "Virtual Private Servers || Network - SGP",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "zgcckqmd57bx",
-              "name": "Virtual Private Servers || Network - SYD",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
+          "id": "7qjz0b4yszm9",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected switches</div>\nlon1-eri1-pciz1host18-a70\n\n<div class=\"update-title span3 font-large\">Affected racks</div>\nE103D01\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1293896\nhost1293897\nhost1293899\nhost1307910\nhost1307917\nhost1307920\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n2beef8ac-ce28-4bf5-8675-f55e628c60d3\n6e24bffb-730c-4764-b033-aea8c6c9527b\n9f7aa240-3540-4412-89bb-3fc3d67d5973\n51dcf575-7834-4ea6-8a5b-8ba6b6484202\n64a31078-22f6-4542-9969-5b04f9698107\nc399400d-a7f4-45d0-a03d-97fc0997395f\ne0bb9cdc-d051-46eb-a718-8919bab9e878\nvps-0ac5351a.vps.ovh.net\nvps-0b1d79ec.vps.ovh.net\nvps-0b3be2d3.vps.ovh.net\nvps-00deaa9e.vps.ovh.net\nvps-0e5e383f.vps.ovh.net\nvps-0eedaa00.vps.ovh.net\nvps-0f5c2448.vps.ovh.net\nvps-1b0ef884.vps.ovh.net\nvps-1b1f9ac8.vps.ovh.net\nvps-1c4b1275.vps.ovh.net\nvps-1d4b66b4.vps.ovh.net\nvps-1d745bae.vps.ovh.net\nvps-1d330259.vps.ovh.net\nvps-1e719c3f.vps.ovh.net\nvps-2a4e5737.vps.ovh.net\nvps-02a31d25.vps.ovh.net\nvps-2ad12551.vps.ovh.net\nvps-2b3dac59.vps.ovh.net\nvps-2c77a06a.vps.ovh.net\nvps-2df079e3.vps.ovh.net\nvps-2e1ddf12.vps.ovh.net\nvps-2f2efe12.vps.ovh.net\nvps-2f30b741.vps.ovh.net\nvps-3a519f99.vps.ovh.net\nvps-3c9d2833.vps.ovh.net\nvps-3c6022d0.vps.ovh.net\nvps-3d2a280c.vps.ovh.net\nvps-3f7b662e.vps.ovh.net\nvps-3f64f629.vps.ovh.net\nvps-3f679672.vps.ovh.net\nvps-4b0c40e8.vps.ovh.net\nvps-4b273638.vps.ovh.net\nvps-4c9a4f4a.vps.ovh.net\nvps-4c90ebf0.vps.ovh.net\nvps-4d0fb637.vps.ovh.net\nvps-4e267e5b.vps.ovh.net\nvps-4ef0b4a4.vps.ovh.net\nvps-5b10e34b.vps.ovh.net\nvps-5be2177a.vps.ovh.net\nvps-5c2f6c95.vps.ovh.net\nvps-5c66bf09.vps.ovh.net\nvps-5e0a23bc.vps.ovh.net\nvps-5ebe9756.vps.ovh.net\nvps-5fc6a059.vps.ovh.net\nvps-6a0cb063.vps.ovh.net\nvps-6a499357.vps.ovh.net\nvps-6aa9f9c0.vps.ovh.net\nvps-6aabc0f0.vps.ovh.net\nvps-6b7bf932.vps.ovh.net\nvps-6b71b57b.vps.ovh.net\nvps-6b89fe9e.vps.ovh.net\nvps-6c104355.vps.ovh.net\nvps-6d125f6c.vps.ovh.net\nvps-6dc77cd7.vps.ovh.net\nvps-6e7bd5be.vps.ovh.net\nvps-6eff7782.vps.ovh.net\nvps-7bd32978.vps.ovh.net\nvps-7c24e70d.vps.ovh.net\nvps-7d5a14f3.vps.ovh.net\nvps-7da51763.vps.ovh.net\nvps-7e119c49.vps.ovh.net\nvps-7edda971.vps.ovh.net\nvps-7f931d27.vps.ovh.net\nvps-7f1390ea.vps.ovh.net\nvps-7fa12f22.vps.ovh.net\nvps-08a7afbc.vps.ovh.net\nvps-8aba12ab.vps.ovh.net\nvps-8af721d7.vps.ovh.net\nvps-8d07c8e4.vps.ovh.net\nvps-8eefc630.vps.ovh.net\nvps-9a6cf4ec.vps.ovh.net\nvps-9c3a67d8.vps.ovh.net\nvps-9d8e4757.vps.ovh.net\nvps-9e37a2d1.vps.ovh.net\nvps-9f183a66.vps.ovh.net\nvps-14e79676.vps.ovh.net\nvps-0014f825.vps.ovh.net\nvps-16c01034.vps.ovh.net\nvps-16f6b415.vps.ovh.net\nvps-26b669c6.vps.ovh.net\nvps-032a60c1.vps.ovh.net\nvps-33af67f0.vps.ovh.net\nvps-33c1d520.vps.ovh.net\nvps-37de6f71.vps.ovh.net\nvps-46dbd598.vps.ovh.net\nvps-51fe21a8.vps.ovh.net\nvps-52d6c928.vps.ovh.net\nvps-53a952b8.vps.ovh.net\nvps-54a87657.vps.ovh.net\nvps-55e4dc79.vps.ovh.net\nvps-58b90f0d.vps.ovh.net\nvps-61affa93.vps.ovh.net\nvps-64ca662e.vps.ovh.net\nvps-65d135de.vps.ovh.net\nvps-68b7faa7.vps.ovh.net\nvps-68daeabe.vps.ovh.net\nvps-69b01b0d.vps.ovh.net\nvps-72b6c081.vps.ovh.net\nvps-73cc7d72.vps.ovh.net\nvps-73f86c90.vps.ovh.net\nvps-75fe2ed1.vps.ovh.net\nvps-76a4080a.vps.ovh.net\nvps-0077e76a.vps.ovh.net\nvps-79a7a1ee.vps.ovh.net\nvps-80ed8910.vps.ovh.net\nvps-81c16a63.vps.ovh.net\nvps-81ee7a22.vps.ovh.net\nvps-82a4034f.vps.ovh.net\nvps-82d78a23.vps.ovh.net\nvps-83f7d948.vps.ovh.net\nvps-86fb0bbb.vps.ovh.net\nvps-87acc27e.vps.ovh.net\nvps-88cc78e3.vps.ovh.net\nvps-88d614dd.vps.ovh.net\nvps-89f8b496.vps.ovh.net\nvps-93b63fbc.vps.ovh.net\nvps-093d9166.vps.ovh.net\nvps-94a2c813.vps.ovh.net\nvps-94b9c7ea.vps.ovh.net\nvps-96bd818f.vps.ovh.net\nvps-153efa15.vps.ovh.net\nvps-160e6f99.vps.ovh.net\nvps-182f2e98.vps.ovh.net\nvps-192d2067.vps.ovh.net\nvps-204f8bfc.vps.ovh.net\nvps-269d0bcf.vps.ovh.net\nvps-338e2439.vps.ovh.net\nvps-360b2bc5.vps.ovh.net\nvps-365babfc.vps.ovh.net\nvps-431f77c2.vps.ovh.net\nvps-491f1eab.vps.ovh.net\nvps-564ade4a.vps.ovh.net\nvps-614b5eb0.vps.ovh.net\nvps-0625ca47.vps.ovh.net\nvps-651f03cc.vps.ovh.net\nvps-656d648d.vps.ovh.net\nvps-659f83f4.vps.ovh.net\nvps-753acf56.vps.ovh.net\nvps-776f927b.vps.ovh.net\nvps-800d8452.vps.ovh.net\nvps-859f0059.vps.ovh.net\nvps-869a936e.vps.ovh.net\nvps-874afff9.vps.ovh.net\nvps-913f5916.vps.ovh.net\nvps-921e7a5e.vps.ovh.net\nvps-962c3710.vps.ovh.net\nvps-1395e25b.vps.ovh.net\nvps-2447b466.vps.ovh.net\nvps-3128ffbf.vps.ovh.net\nvps-3498ab86.vps.ovh.net\nvps-6698d80e.vps.ovh.net\nvps-7152fcf8.vps.ovh.net\nvps-7224f878.vps.ovh.net\nvps-7374d79d.vps.ovh.net\nvps-8247e18e.vps.ovh.net\nvps-8463f4ff.vps.ovh.net\nvps-9614b5c9.vps.ovh.net\nvps-9994c603.vps.ovh.net\nvps-23758d5c.vps.ovh.net\nvps-26087abf.vps.ovh.net\nvps-29443a68.vps.ovh.net\nvps-38425e5d.vps.ovh.net\nvps-38819ee9.vps.ovh.net\nvps-44908f04.vps.ovh.net\nvps-48017ee3.vps.ovh.net\nvps-70836c70.vps.ovh.net\nvps-72698ee3.vps.ovh.net\nvps-75521ff6.vps.ovh.net\nvps-78895cef.vps.ovh.net\nvps-92842c99.vps.ovh.net\nvps-99348b35.vps.ovh.net\nvps-99904fdc.vps.ovh.net\nvps-170421cc.vps.ovh.net\nvps-396593da.vps.ovh.net\nvps-0499715b.vps.ovh.net\nvps-538406b1.vps.ovh.net\nvps-705385ce.vps.ovh.net\nvps-747634a1.vps.ovh.net\nvps-789788a5.vps.ovh.net\nvps-899234b4.vps.ovh.net\nvps-992126e7.vps.ovh.net\nvps-3240042b.vps.ovh.net\nvps-4850445d.vps.ovh.net\nvps-5553303b.vps.ovh.net\nvps-9030404a.vps.ovh.net\nvps-9107051e.vps.ovh.net\nvps-12314816.vps.ovh.net\nvps-68476955.vps.ovh.net\nvps-70773086.vps.ovh.net\nvps-88359738.vps.ovh.net\nvps-91762704.vps.ovh.net\nvps-96397574.vps.ovh.net\nvps-a0d32b06.vps.ovh.net\nvps-a1a57a52.vps.ovh.net\nvps-a1f918ee.vps.ovh.net\nvps-a3b6684a.vps.ovh.net\nvps-a4b06ba2.vps.ovh.net\nvps-a4c7d10d.vps.ovh.net\nvps-a4e7622e.vps.ovh.net\nvps-a4f59c97.vps.ovh.net\nvps-a6ddadc8.vps.ovh.net\nvps-a9cbf5d8.vps.ovh.net\nvps-a19a9f04.vps.ovh.net\nvps-a79e5906.vps.ovh.net\nvps-a315d2fd.vps.ovh.net\nvps-aaaf4aca.vps.ovh.net\nvps-abf76496.vps.ovh.net\nvps-ad4f48cf.vps.ovh.net\nvps-ad8d5dd4.vps.ovh.net\nvps-ae656d8c.vps.ovh.net\nvps-aee67059.vps.ovh.net\nvps-afd91196.vps.ovh.net\nvps-b1a7b975.vps.ovh.net\nvps-b6f751e2.vps.ovh.net\nvps-b7c39cb5.vps.ovh.net\nvps-b36ba3f6.vps.ovh.net\nvps-b58bb142.vps.ovh.net\nvps-b244a1e4.vps.ovh.net\nvps-b029583e.vps.ovh.net\nvps-b41436b9.vps.ovh.net\nvps-b4678779.vps.ovh.net\nvps-b4992447.vps.ovh.net\nvps-ba1ae6f0.vps.ovh.net\nvps-bc058496.vps.ovh.net\nvps-bec4cae9.vps.ovh.net\nvps-bef7e9f1.vps.ovh.net\nvps-bf025b61.vps.ovh.net\nvps-bfcdbb85.vps.ovh.net\nvps-c1e3be46.vps.ovh.net\nvps-c5de3ea9.vps.ovh.net\nvps-c5e67e01.vps.ovh.net\nvps-c8e586b8.vps.ovh.net\nvps-c56a7a40.vps.ovh.net\nvps-c58f7391.vps.ovh.net\nvps-c97c1b67.vps.ovh.net\nvps-c97c52b1.vps.ovh.net\nvps-c110e780.vps.ovh.net\nvps-c475ca0a.vps.ovh.net\nvps-c7192563.vps.ovh.net\nvps-ca6e8c9b.vps.ovh.net\nvps-cb2acb72.vps.ovh.net\nvps-cba70567.vps.ovh.net\nvps-cbdd507c.vps.ovh.net\nvps-cd69f69c.vps.ovh.net\nvps-cdd618cf.vps.ovh.net\nvps-cea4df9d.vps.ovh.net\nvps-cefba2c8.vps.ovh.net\nvps-d0c91c51.vps.ovh.net\nvps-d0d78c80.vps.ovh.net\nvps-d3eff46e.vps.ovh.net\nvps-d4ad77aa.vps.ovh.net\nvps-d4c660b2.vps.ovh.net\nvps-d7c86565.vps.ovh.net\nvps-d24d8f57.vps.ovh.net\nvps-d38eafab.vps.ovh.net\nvps-d76a6d29.vps.ovh.net\nvps-d408c596.vps.ovh.net\nvps-d876eeed.vps.ovh.net\nvps-d921e88a.vps.ovh.net\nvps-d3325ce3.vps.ovh.net\nvps-d2824897.vps.ovh.net\nvps-db5a8bb4.vps.ovh.net\nvps-dc7600a0.vps.ovh.net\nvps-dc401152.vps.ovh.net\nvps-dcbb37dc.vps.ovh.net\nvps-de14a0d2.vps.ovh.net\nvps-de62af95.vps.ovh.net\nvps-de63f513.vps.ovh.net\nvps-e4ea8337.vps.ovh.net\nvps-e6ab937f.vps.ovh.net\nvps-e7d2e83a.vps.ovh.net\nvps-e191b479.vps.ovh.net\nvps-e280c325.vps.ovh.net\nvps-e522ed00.vps.ovh.net\nvps-e758aaf1.vps.ovh.net\nvps-e7658f6a.vps.ovh.net\nvps-e85568cb.vps.ovh.net\nvps-e687221f.vps.ovh.net\nvps-e1446548.vps.ovh.net\nvps-eab18abc.vps.ovh.net\nvps-eb16de09.vps.ovh.net\nvps-eb76a4ff.vps.ovh.net\nvps-ed02d2bc.vps.ovh.net\nvps-ed1313d9.vps.ovh.net\nvps-ee187e1a.vps.ovh.net\nvps-ee693b76.vps.ovh.net\nvps-ef88d698.vps.ovh.net\nvps-ef170394.vps.ovh.net\nvps-ef795467.vps.ovh.net\nvps-f4bfe251.vps.ovh.net\nvps-f8abdc95.vps.ovh.net\nvps-f08f1e32.vps.ovh.net\nvps-f55ef050.vps.ovh.net\nvps-f113db95.vps.ovh.net\nvps-f116ed9f.vps.ovh.net\nvps-f402c497.vps.ovh.net\nvps-f722d9a1.vps.ovh.net\nvps-f0743efc.vps.ovh.net\nvps-f1389352.vps.ovh.net\nvps-fb63acd6.vps.ovh.net\nvps-fc4523e7.vps.ovh.net\nvps-fcb7adae.vps.ovh.net\nvps-fd00a840.vps.ovh.net\nvps-fe6c1f39.vps.ovh.net\nvps-fe9d28ab.vps.ovh.net\nvps-ff7d32b2.vps.ovh.net\nvps-ff8cb0dc.vps.ovh.net\nvps-ffe537a2.vps.ovh.net",
+          "incident_id": "0w25zztc5rrf",
+          "created_at": "2023-05-17T14:36:50.524Z",
+          "updated_at": "2023-05-17T14:36:50.524Z",
+          "display_at": "2023-05-17T14:36:50.524Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "5k59rcdh4w99",
-          "name": "SGP",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:31:37.347Z",
-          "updated_at": "2023-05-17T09:37:16.264Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zgcckqmd57bx",
-          "name": "SYD",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:31:38.208Z",
-          "updated_at": "2023-05-17T09:37:16.280Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
+      "components": []
     }
   ],
   "scheduled_maintenances": [
@@ -3887,7 +3817,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
