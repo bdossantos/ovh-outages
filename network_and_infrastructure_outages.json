@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-17T00:41:26.908Z"
+    "updated_at": "2023-05-17T01:14:53.903Z"
   },
   "components": [
     {
@@ -843,9 +843,9 @@
     {
       "id": "pgf35fxt4ywk",
       "name": "Network Services || vRack Private Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-05-20T08:36:07.479Z",
-      "updated_at": "2023-05-16T11:57:18.304Z",
+      "updated_at": "2023-05-17T01:00:13.112Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -858,73 +858,6 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
-    {
-      "id": "xxgs6zbd8tdb",
-      "name": "[RBX4][vRack] - Network equipment operation",
-      "status": "scheduled",
-      "created_at": "2023-05-10T21:20:15.412Z",
-      "updated_at": "2023-05-16T23:59:59.117Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w28mzp50qxwl",
-      "started_at": "2023-05-10T21:20:15.408Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "3ptppnzmyx84",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xxgs6zbd8tdb",
-          "created_at": "2023-05-16T23:59:59.027Z",
-          "updated_at": "2023-05-16T23:59:59.027Z",
-          "display_at": "2023-05-16T23:59:59.027Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l5dq3ysntnlj",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 17/05/2023 01:00 UTC \n<b>End time :</b> 17/05/2023 02:00 UTC \n<b>Service impact :</b> You may experience a loss of connection for about 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are doing an operation on a network equipment related to vRack infrastructure.",
-          "incident_id": "xxgs6zbd8tdb",
-          "created_at": "2023-05-10T21:20:15.448Z",
-          "updated_at": "2023-05-10T21:20:15.448Z",
-          "display_at": "2023-05-10T21:20:15.448Z",
-          "affected_components": [
-            {
-              "code": "pgf35fxt4ywk",
-              "name": "Network Services || vRack Private Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "pgf35fxt4ywk",
-          "name": "Network Services || vRack Private Network",
-          "status": "operational",
-          "created_at": "2022-05-20T08:36:07.479Z",
-          "updated_at": "2023-05-16T11:57:18.304Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-17T01:00:00.000Z",
-      "scheduled_until": "2023-05-17T02:00:00.000Z"
-    },
     {
       "id": "41j7rnsdw9vx",
       "name": "[RBX8][Infrastructure] - Electrical maintenance",
@@ -1508,6 +1441,60 @@
       "scheduled_until": "2023-05-22T10:00:00.000Z"
     },
     {
+      "id": "1x633g43hgy8",
+      "name": "[GRA1][Network] - LoadBalancer Update",
+      "status": "scheduled",
+      "created_at": "2023-05-17T01:14:53.852Z",
+      "updated_at": "2023-05-17T01:14:53.900Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vhw1dlz1218p",
+      "started_at": "2023-05-17T01:14:53.847Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "sn3bv96f203v",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/05/2023 09:30 UTC \n<b>End time :</b> 22/05/2023 12:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade our load balancer software. \nThis update will be deployed for all webhosting clusters in GRA1.",
+          "incident_id": "1x633g43hgy8",
+          "created_at": "2023-05-17T01:14:53.897Z",
+          "updated_at": "2023-05-17T01:14:53.897Z",
+          "display_at": "2023-05-17T01:14:53.897Z",
+          "affected_components": [
+            {
+              "code": "09f41qrzqycc",
+              "name": "Network Services || OVHcloud Load Balancer",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "09f41qrzqycc",
+          "name": "Network Services || OVHcloud Load Balancer",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:50.064Z",
+          "updated_at": "2023-05-16T11:57:18.300Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-05-22T09:30:00.000Z",
+      "scheduled_until": "2023-05-22T12:30:00.000Z"
+    },
+    {
       "id": "00jdv3ttgj8p",
       "name": "[SJO/PDX][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
@@ -1668,6 +1655,60 @@
       ],
       "scheduled_for": "2023-05-23T06:30:00.000Z",
       "scheduled_until": "2023-05-23T15:30:00.000Z"
+    },
+    {
+      "id": "4rdjjp5jzv0c",
+      "name": "[TORONTO][Network] - Backbone notification",
+      "status": "scheduled",
+      "created_at": "2023-05-17T00:55:49.932Z",
+      "updated_at": "2023-05-17T00:55:49.980Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8cg369l1tqzt",
+      "started_at": "2023-05-17T00:55:49.926Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "b4tqvg90cpzt",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/05/2023 07:00 UTC \n<b>End time :</b> 23/05/2023 10:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our backbone infrastructure, we will be doing an internal maintenance on a network equipment located in Toronto.",
+          "incident_id": "4rdjjp5jzv0c",
+          "created_at": "2023-05-17T00:55:49.978Z",
+          "updated_at": "2023-05-17T00:55:49.978Z",
+          "display_at": "2023-05-17T00:55:49.978Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "operational",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2023-05-16T09:56:05.323Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-05-23T07:00:00.000Z",
+      "scheduled_until": "2023-05-23T10:00:00.000Z"
     },
     {
       "id": "c3njcwtm491t",
@@ -1970,6 +2011,60 @@
       "scheduled_until": "2023-05-24T15:00:00.000Z"
     },
     {
+      "id": "jbj44rwlctfk",
+      "name": "[RBX8][Infrastructure] - Electrical maintenance",
+      "status": "scheduled",
+      "created_at": "2023-04-26T20:23:57.928Z",
+      "updated_at": "2023-04-26T20:23:57.986Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yyq3n2qpx63r",
+      "started_at": "2023-04-26T20:23:57.920Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "r0thhyn0755c",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 25/05/2023 06:00 UTC \n<b>End time :</b> 25/05/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance in RBX8.",
+          "incident_id": "jbj44rwlctfk",
+          "created_at": "2023-04-26T20:23:57.982Z",
+          "updated_at": "2023-04-26T20:23:57.982Z",
+          "display_at": "2023-04-26T20:23:57.982Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2023-05-16T06:30:59.341Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-05-25T06:00:00.000Z",
+      "scheduled_until": "2023-05-25T15:00:00.000Z"
+    },
+    {
       "id": "3l4jp3kz66z8",
       "name": "[RBX3][Infrastructure] - Electrical maintenance",
       "status": "scheduled",
@@ -2076,60 +2171,6 @@
       ],
       "scheduled_for": "2023-05-25T06:00:00.000Z",
       "scheduled_until": "2023-05-25T16:30:00.000Z"
-    },
-    {
-      "id": "jbj44rwlctfk",
-      "name": "[RBX8][Infrastructure] - Electrical maintenance",
-      "status": "scheduled",
-      "created_at": "2023-04-26T20:23:57.928Z",
-      "updated_at": "2023-04-26T20:23:57.986Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yyq3n2qpx63r",
-      "started_at": "2023-04-26T20:23:57.920Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "r0thhyn0755c",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 25/05/2023 06:00 UTC \n<b>End time :</b> 25/05/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance in RBX8.",
-          "incident_id": "jbj44rwlctfk",
-          "created_at": "2023-04-26T20:23:57.982Z",
-          "updated_at": "2023-04-26T20:23:57.982Z",
-          "display_at": "2023-04-26T20:23:57.982Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-05-16T06:30:59.341Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-25T06:00:00.000Z",
-      "scheduled_until": "2023-05-25T15:00:00.000Z"
     },
     {
       "id": "z9zh6ng116h9",
@@ -3916,42 +3957,63 @@
       "scheduled_until": "2023-09-11T12:00:00.000Z"
     },
     {
-      "id": "td4jwydm8tf0",
-      "name": "[RBX1/RBX3/RBX8][Infrastructure] - Electrical background work",
-      "status": "scheduled",
-      "created_at": "2023-02-28T20:05:40.323Z",
-      "updated_at": "2023-02-28T20:05:40.372Z",
+      "id": "xxgs6zbd8tdb",
+      "name": "[RBX4][vRack] - Network equipment operation",
+      "status": "in_progress",
+      "created_at": "2023-05-10T21:20:15.412Z",
+      "updated_at": "2023-05-17T01:00:13.183Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/ptpmfs67x9ns",
-      "started_at": "2023-02-28T20:05:40.313Z",
+      "shortlink": "https://stspg.io/w28mzp50qxwl",
+      "started_at": "2023-05-10T21:20:15.408Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "553zglm5lmrp",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 11/09/2023 11:00 UTC \n<b>End time :</b> 11/09/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "td4jwydm8tf0",
-          "created_at": "2023-02-28T20:05:40.370Z",
-          "updated_at": "2023-02-28T20:05:40.370Z",
-          "display_at": "2023-02-28T20:05:40.370Z",
+          "id": "bgpmtrffxw51",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "xxgs6zbd8tdb",
+          "created_at": "2023-05-17T01:00:13.179Z",
+          "updated_at": "2023-05-17T01:00:13.179Z",
+          "display_at": "2023-05-17T01:00:13.179Z",
           "affected_components": [
             {
-              "code": "f4dnnwz43vr4",
-              "name": "Infrastructure || RBX - RBX1",
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
               "old_status": "operational",
-              "new_status": "operational"
-            },
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3ptppnzmyx84",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "xxgs6zbd8tdb",
+          "created_at": "2023-05-16T23:59:59.027Z",
+          "updated_at": "2023-05-16T23:59:59.027Z",
+          "display_at": "2023-05-16T23:59:59.027Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "l5dq3ysntnlj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 17/05/2023 01:00 UTC \n<b>End time :</b> 17/05/2023 02:00 UTC \n<b>Service impact :</b> You may experience a loss of connection for about 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are doing an operation on a network equipment related to vRack infrastructure.",
+          "incident_id": "xxgs6zbd8tdb",
+          "created_at": "2023-05-10T21:20:15.448Z",
+          "updated_at": "2023-05-10T21:20:15.448Z",
+          "display_at": "2023-05-10T21:20:15.448Z",
+          "affected_components": [
             {
-              "code": "gmpjyy3kgdlv",
-              "name": "Infrastructure || RBX - RBX3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -3963,53 +4025,23 @@
       ],
       "components": [
         {
-          "id": "f4dnnwz43vr4",
-          "name": "RBX1",
+          "id": "pgf35fxt4ywk",
+          "name": "Network Services || vRack Private Network",
           "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:15.203Z",
-          "updated_at": "2023-05-16T06:30:59.289Z",
-          "position": 1,
+          "created_at": "2022-05-20T08:36:07.479Z",
+          "updated_at": "2023-05-17T01:00:13.112Z",
+          "position": 16,
           "description": null,
           "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "gmpjyy3kgdlv",
-          "name": "RBX3",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:17.105Z",
-          "updated_at": "2023-05-16T06:30:59.316Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-05-16T06:30:59.341Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "start_date": "2022-05-20",
+          "group_id": null,
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-09-11T11:00:00.000Z",
-      "scheduled_until": "2023-09-11T15:00:00.000Z"
+      "scheduled_for": "2023-05-17T01:00:00.000Z",
+      "scheduled_until": "2023-05-17T02:00:00.000Z"
     },
     {
       "id": "dq72738lxc22",
