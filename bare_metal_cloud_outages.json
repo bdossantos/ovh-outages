@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-24T07:48:35.846Z"
+    "updated_at": "2023-05-24T08:53:05.884Z"
   },
   "components": [
     {
@@ -1215,7 +1215,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-05-23T20:05:31.269Z",
+      "updated_at": "2023-05-24T08:53:05.838Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2255,11 +2255,83 @@
   ],
   "incidents": [
     {
+      "id": "lcmyr57kbtky",
+      "name": "[RBX7][Dedicated Servers] - Rack R710A21",
+      "status": "monitoring",
+      "created_at": "2023-05-24T08:31:27.312Z",
+      "updated_at": "2023-05-24T08:53:05.881Z",
+      "monitoring_at": "2023-05-24T08:53:05.867Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/131v3jp6l4q2",
+      "started_at": "2023-05-24T08:31:27.303Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "y7rnd4yytzlm",
+          "status": "monitoring",
+          "body": "<b>Update :</b> The servers are available again. We keep a surveillance on them during the maintenance period.",
+          "incident_id": "lcmyr57kbtky",
+          "created_at": "2023-05-24T08:53:05.867Z",
+          "updated_at": "2023-05-24T08:53:05.867Z",
+          "display_at": "2023-05-24T08:53:05.867Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g9ndn21xmxwy",
+          "status": "identified",
+          "body": "<b>Start time :</b> 24/05/2023 07:57 UTC\n<b>Service impact :</b> Servers in the rack R710A21 are no longer responding.\n<b>related Maintenance :</b> https://network.status-ovhcloud.com/incidents/dv49tyh0k02h",
+          "incident_id": "lcmyr57kbtky",
+          "created_at": "2023-05-24T08:31:27.405Z",
+          "updated_at": "2023-05-24T08:31:27.405Z",
+          "display_at": "2023-05-24T08:31:27.405Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-05-24T08:53:05.838Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "d58w04d521p4",
       "name": "[RBX1][Dedicated Servers] - 05C05/05C06",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-05-24T07:28:03.398Z",
-      "updated_at": "2023-05-24T07:28:03.488Z",
+      "updated_at": "2023-05-24T08:46:44.985Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2267,6 +2339,26 @@
       "started_at": "2023-05-24T07:28:03.390Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "gy4bdn37ljrw",
+          "status": "identified",
+          "body": "<b>Update :</b> Our teams are in progress to fix the issue and restore services.",
+          "incident_id": "d58w04d521p4",
+          "created_at": "2023-05-24T08:46:44.982Z",
+          "updated_at": "2023-05-24T08:46:44.982Z",
+          "display_at": "2023-05-24T08:46:44.982Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "0z13x9n8ynxb",
           "status": "investigating",
