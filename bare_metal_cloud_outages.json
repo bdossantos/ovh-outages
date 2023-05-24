@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-24T11:51:42.855Z"
+    "updated_at": "2023-05-24T12:35:03.619Z"
   },
   "components": [
     {
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1389,9 +1389,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2023-03-23T16:27:04.031Z",
+      "updated_at": "2023-05-24T12:35:03.574Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2253,7 +2253,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "r70bbq4y3bjz",
+      "name": "[SBG5][Dedicated Servers] - SBG0505B07A",
+      "status": "identified",
+      "created_at": "2023-05-24T12:35:03.551Z",
+      "updated_at": "2023-05-24T12:35:03.617Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/klbm4grfh8ph",
+      "started_at": "2023-05-24T12:35:03.545Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "4191mt5kj7qt",
+          "status": "identified",
+          "body": "<b>Start time :</b> 24/05/2023 12:00 UTC\n<b>Service impact :</b> Servers in rack SBG0505B07A are temporarily unreachable \n<b>Root cause :</b> Electrical issue\n<b>Ongoing actions :</b> Our technical teams are currently working to solve the problem.",
+          "incident_id": "r70bbq4y3bjz",
+          "created_at": "2023-05-24T12:35:03.615Z",
+          "updated_at": "2023-05-24T12:35:03.615Z",
+          "display_at": "2023-05-24T12:35:03.615Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2023-05-24T12:35:03.574Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "41yvw8tq2ll9",
@@ -3697,7 +3750,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
