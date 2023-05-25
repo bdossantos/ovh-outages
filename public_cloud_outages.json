@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-25T10:10:18.051Z"
+    "updated_at": "2023-05-25T13:15:57.409Z"
   },
   "components": [
     {
@@ -5686,10 +5686,10 @@
     },
     {
       "id": "202g01s5kz73",
-      "name": "[GLOBAL][ManagedKubernetesService] Managed nodes OS upgrades for clusters in NO DOWNTIME policy update configuration",
+      "name": "[GLOBAL][ManagedKubernetesService] Managed nodes OS upgrades for clusters in \"Do not update\" and \"Minimum unavailability\" policy update configuration",
       "status": "scheduled",
       "created_at": "2023-04-13T12:53:22.141Z",
-      "updated_at": "2023-04-13T12:53:22.233Z",
+      "updated_at": "2023-05-25T13:15:57.402Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -5700,10 +5700,10 @@
         {
           "id": "gyj9l74wrqmn",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 13/06/2023 08:30 UTC \n<b>End time :</b> 15/06/2023 16:00 UTC \n<b>Service impact :</b> No impact is expected but you should have enough nodes in your K8S cluster to allow a rolling upgrade of them and to absorb a rescheduling of your workload without downtime.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will upgrade all public cloud instances (a.k.a. nodes) managed by the MKS team and running in your Kubernetes clusters to upgrade them from the operating system Ubuntu 18.04.06 LTS version to the Ubuntu 22.04.02 LTS version.\nOnly clusters with an upgrade policy set to \"NO DOWNTIME\" are targeted by this maintenance.\nTo prevent non wanted upgrade on services configured in NO DOWNTIME mode, we leave it up to the customers more time to manage this upgrade by themselves.\nBut, as the Ubuntu 18.04 LTS support will be disabled on the 31/05/2023, be aware that in case of critical vulnerability, we kept the right to force upgrade impacted services to patch as soon as possible vulnerable managed control planes and nodes.",
+          "body": "<b>Start time :</b> 13/06/2023 08:30 UTC \n<b>End time :</b> 15/06/2023 16:00 UTC \n<b>Service impact :</b> No impact is expected but you should have enough nodes in your K8S cluster to allow a rolling upgrade of them and to absorb a rescheduling of your workload without downtime.\n<b>Service improvement :</b> As part of our continuous improvement policy of our services, we will upgrade all public cloud instances (a.k.a. nodes) managed by the MKS team and running in your Kubernetes clusters to upgrade them from the operating system Ubuntu 18.04.06 LTS version to the Ubuntu 22.04.02 LTS version.\nClusters with an upgrade policy set to \"Do not update / NEVER_UPDATE\" and \"Minimum unavailability / MINIMAL_DOWNTIME\" are targeted by this maintenance.\nTo prevent non wanted upgrade on MKS services, we leave it up to the customers more time to manage this upgrade by themselves.\nBut, as the Ubuntu 18.04 LTS support will be disabled on the 31/05/2023, be aware that in case of critical vulnerability, we kept the right to force upgrade impacted services to patch as soon as possible vulnerable managed control planes and nodes.",
           "incident_id": "202g01s5kz73",
           "created_at": "2023-04-13T12:53:22.229Z",
-          "updated_at": "2023-04-13T12:53:22.229Z",
+          "updated_at": "2023-05-25T13:15:57.399Z",
           "display_at": "2023-04-13T12:53:22.229Z",
           "affected_components": [
             {
