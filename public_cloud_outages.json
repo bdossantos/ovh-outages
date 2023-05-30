@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-05-30T05:00:05.303Z"
+    "updated_at": "2023-05-30T06:02:16.088Z"
   },
   "components": [
     {
@@ -190,9 +190,9 @@
     {
       "id": "g6hk916qw11v",
       "name": "DE1",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:36:11.161Z",
-      "updated_at": "2023-03-16T20:35:31.187Z",
+      "updated_at": "2023-05-30T06:02:15.922Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2663,7 +2663,7 @@
     {
       "id": "0b67gm8w0sqk",
       "name": "Compute - Instance || LIM",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:36:12.146Z",
       "updated_at": "2023-05-16T12:02:13.095Z",
       "position": 8,
@@ -5166,73 +5166,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "l0kfkbxgqvlm",
-      "name": "[DE1][Public Cloud] Move DHCP agents",
-      "status": "scheduled",
-      "created_at": "2023-05-25T04:33:56.259Z",
-      "updated_at": "2023-05-30T05:00:05.290Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9qsg4ct2l1h7",
-      "started_at": "2023-05-25T04:33:56.254Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "fjz64phqq76q",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "l0kfkbxgqvlm",
-          "created_at": "2023-05-30T05:00:05.158Z",
-          "updated_at": "2023-05-30T05:00:05.158Z",
-          "display_at": "2023-05-30T05:00:05.158Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "2lvtv4x5gtzf",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 30/05/2023 06:00 UTC \n<b>End time :</b> 30/05/2023 07:00 UTC \n<b>Service impact :</b> None\n<b>Ongoing actions :</b> As part of our continuous improvement policy, we will relocate DHCP agents from compute nodes to Snat nodes.",
-          "incident_id": "l0kfkbxgqvlm",
-          "created_at": "2023-05-25T04:33:56.303Z",
-          "updated_at": "2023-05-25T04:33:56.303Z",
-          "display_at": "2023-05-25T04:33:56.303Z",
-          "affected_components": [
-            {
-              "code": "g6hk916qw11v",
-              "name": "Compute - Instance || LIM - DE1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g6hk916qw11v",
-          "name": "DE1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:11.161Z",
-          "updated_at": "2023-03-16T20:35:31.187Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "0b67gm8w0sqk",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-30T06:00:00.000Z",
-      "scheduled_until": "2023-05-30T07:00:00.000Z"
-    },
-    {
       "id": "5vd59pntl396",
       "name": "[GRA1][Network] - Network equipment configuration upgrade",
       "status": "scheduled",
@@ -6215,6 +6148,93 @@
       ],
       "scheduled_for": "2023-07-17T11:54:00.000Z",
       "scheduled_until": "2023-07-28T11:54:00.000Z"
+    },
+    {
+      "id": "l0kfkbxgqvlm",
+      "name": "[DE1][Public Cloud] Move DHCP agents",
+      "status": "in_progress",
+      "created_at": "2023-05-25T04:33:56.259Z",
+      "updated_at": "2023-05-30T06:02:16.068Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9qsg4ct2l1h7",
+      "started_at": "2023-05-25T04:33:56.254Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "8l4f3dq8nkx3",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "l0kfkbxgqvlm",
+          "created_at": "2023-05-30T06:02:16.055Z",
+          "updated_at": "2023-05-30T06:02:16.055Z",
+          "display_at": "2023-05-30T06:02:16.055Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fjz64phqq76q",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "l0kfkbxgqvlm",
+          "created_at": "2023-05-30T05:00:05.158Z",
+          "updated_at": "2023-05-30T05:00:05.158Z",
+          "display_at": "2023-05-30T05:00:05.158Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2lvtv4x5gtzf",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 30/05/2023 06:00 UTC \n<b>End time :</b> 30/05/2023 07:00 UTC \n<b>Service impact :</b> None\n<b>Ongoing actions :</b> As part of our continuous improvement policy, we will relocate DHCP agents from compute nodes to Snat nodes.",
+          "incident_id": "l0kfkbxgqvlm",
+          "created_at": "2023-05-25T04:33:56.303Z",
+          "updated_at": "2023-05-25T04:33:56.303Z",
+          "display_at": "2023-05-25T04:33:56.303Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2023-05-30T06:02:15.922Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-05-30T06:00:00.000Z",
+      "scheduled_until": "2023-05-30T07:00:00.000Z"
     },
     {
       "id": "ry58mbzj6jc5",
