@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-01T19:01:05.885Z"
+    "updated_at": "2023-06-01T19:27:15.569Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2023-06-01T18:06:45.048Z",
+      "updated_at": "2023-06-01T19:27:15.518Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -190,9 +190,9 @@
     {
       "id": "4y5wl7fmfgw7",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:48.312Z",
-      "updated_at": "2023-03-09T15:02:21.325Z",
+      "updated_at": "2023-06-01T19:08:27.836Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -205,7 +205,7 @@
     {
       "id": "w0ltw3dpn3sq",
       "name": "Dedicated Servers || Additional services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:51.265Z",
       "updated_at": "2023-05-16T11:45:36.915Z",
       "position": 1,
@@ -306,9 +306,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2023-06-01T12:51:01.244Z",
+      "updated_at": "2023-06-01T19:09:59.264Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1288,7 +1288,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2255,30 +2255,50 @@
   ],
   "incidents": [
     {
-      "id": "b9jyf53nrdpm",
-      "name": "[BHS][Dedicated Servers] - T06G06",
-      "status": "identified",
-      "created_at": "2023-06-01T18:06:45.015Z",
-      "updated_at": "2023-06-01T18:28:40.994Z",
+      "id": "nmwmn9wtctmv",
+      "name": "[BHS7][Dedicated Servers] - B713A09",
+      "status": "investigating",
+      "created_at": "2023-06-01T19:08:27.805Z",
+      "updated_at": "2023-06-01T19:09:59.306Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/pcnxsn6grw95",
-      "started_at": "2023-06-01T18:06:45.000Z",
+      "shortlink": "https://stspg.io/h6h9my9w8rl4",
+      "started_at": "2023-06-01T19:08:27.798Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "yl5dp0y62n38",
-          "status": "identified",
-          "body": "<b>Start time :</b> 01/06/2023 17:40 UTC \n<b>Service impact :</b> The servers in this T06G06 rack are unreachable.\n<b>Root cause :</b> Electrical issue in the rack\n<b>Ongoing actions :</b> our technical teams are working on this incident.",
-          "incident_id": "b9jyf53nrdpm",
-          "created_at": "2023-06-01T18:06:45.101Z",
-          "updated_at": "2023-06-01T18:28:40.991Z",
-          "display_at": "2023-06-01T18:06:45.000Z",
+          "id": "r8qjxj946j0b",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "nmwmn9wtctmv",
+          "created_at": "2023-06-01T19:09:59.303Z",
+          "updated_at": "2023-06-01T19:09:59.303Z",
+          "display_at": "2023-06-01T19:09:59.303Z",
           "affected_components": [
             {
-              "code": "gbwv1h71spbm",
-              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t377d8qrgxx1",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 01/06/2023 18:48 UTC\n<b>Service impact :</b> The public network is unvailable.\n<b>Ongoing actions :</b>  Our technical teams are investigating on the issue. Update will be post as significant progress is made.",
+          "incident_id": "nmwmn9wtctmv",
+          "created_at": "2023-06-01T19:08:27.887Z",
+          "updated_at": "2023-06-01T19:08:27.887Z",
+          "display_at": "2023-06-01T19:08:27.887Z",
+          "affected_components": [
+            {
+              "code": "4y5wl7fmfgw7",
+              "name": "Dedicated Servers || Additional services - BHS",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2290,21 +2310,50 @@
       ],
       "components": [
         {
-          "id": "gbwv1h71spbm",
+          "id": "hqn6pb8tdzdx",
           "name": "BHS",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2023-06-01T18:06:45.048Z",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2023-06-01T19:09:59.264Z",
           "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ]
+    },
+    {
+      "id": "d2hxlmnv4ckg",
+      "name": "VPS - WAW2 - host778078",
+      "status": "investigating",
+      "created_at": "2023-06-01T19:09:04.919Z",
+      "updated_at": "2023-06-01T19:09:04.966Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3ljx3flyfjtt",
+      "started_at": "2023-06-01T19:09:04.911Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "wcmh9ztdngrn",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost778078\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps-be47debb.vps.ovh.net\nvps-013dd7f7.vps.ovh.net\nvps-944b9440.vps.ovh.net\nvps-e6646587.vps.ovh.net\nvps-ca1dc5f1.vps.ovh.net\nvps-243dcb6c.vps.ovh.net\nvps-392d12b2.vps.ovh.net\nvps-b82ad69c.vps.ovh.net\nvps-48abf788.vps.ovh.net\nvps-58db03f2.vps.ovh.net\nvps-8ce353ba.vps.ovh.net\nvps-2575b841.vps.ovh.net\nvps-5f27e49a.vps.ovh.net\nvps-53b1f03d.vps.ovh.net\nvps-23eb640f.vps.ovh.net\nvps-eb3a481d.vps.ovh.net\nvps-f57b7191.vps.ovh.net\nvps-7e7bd81c.vps.ovh.net\nvps-ea0ccd55.vps.ovh.net\nvps-4c8f973c.vps.ovh.net\nvps-5970ecf6.vps.ovh.net\nvps-9a12ff1e.vps.ovh.net\nvps-d92c377b.vps.ovh.net\nvps-6f102449.vps.ovh.net\nvps-3eb124b6.vps.ovh.net\nvps-86b46815.vps.ovh.net\nvps-a9bd133a.vps.ovh.net\nvps-b9a7a190.vps.ovh.net\nvps-946ef2d9.vps.ovh.net\nvps-67758659.vps.ovh.net\nvps-9f030f9a.vps.ovh.net\nvps-a5a77159.vps.ovh.net\nvps-650b7cfb.vps.ovh.net\nvps-b836c856.vps.ovh.net\nvps-08e11b9f.vps.ovh.net\nvps-2567e0ba.vps.ovh.net\nvps-d63e5406.vps.ovh.net\nvps-fb7086fb.vps.ovh.net\nvps-6c5cc14b.vps.ovh.net\nvps-2eb5307f.vps.ovh.net\nvps-c53e0456.vps.ovh.net\nvps-d2ccf8cf.vps.ovh.net\nvps-cb1983bc.vps.ovh.net\nvps-7335dff2.vps.ovh.net\nvps-1857440f.vps.ovh.net\nvps-d75e7904.vps.ovh.net\nvps-ba1be3bb.vps.ovh.net\nvps-09c72a15.vps.ovh.net\nvps-5253d5cb.vps.ovh.net\nvps-583cae94.vps.ovh.net\nvps-5e95209a.vps.ovh.net\nvps-57e9a566.vps.ovh.net\n0b4c2630-6728-443c-b08a-86cb7433b9c4\nvps-af197299.vps.ovh.net\nvps-d58a38f0.vps.ovh.net\nvps-9c6935c4.vps.ovh.net\nvps-6f5858fa.vps.ovh.net\nvps-8d9577fe.vps.ovh.net\nvps-18123612.vps.ovh.net\nvps-f8b88efb.vps.ovh.net\nvps-193ed24f.vps.ovh.net\nvps-1795bd4d.vps.ovh.net\nvps-d826df16.vps.ovh.net\nvps-74621d63.vps.ovh.net\nvps-c79cc0e9.vps.ovh.net\nvps-36a3f1c6.vps.ovh.net\nvps-54c84272.vps.ovh.net\n54c31a85-43b2-4f5b-9d08-516777062f27\nvps-5f7977d2.vps.ovh.net\nvps-cce8aa82.vps.ovh.net\nvps-340102e1.vps.ovh.net\nvps-015e6ff2.vps.ovh.net\nvps-7f0dcd75.vps.ovh.net\nvps-a42abf67.vps.ovh.net\nvps-691f05a6.vps.ovh.net\nvps-6fd34f14.vps.ovh.net\nvps-8120f756.vps.ovh.net\nvps-86638e6b.vps.ovh.net",
+          "incident_id": "d2hxlmnv4ckg",
+          "created_at": "2023-06-01T19:09:04.963Z",
+          "updated_at": "2023-06-01T19:09:04.963Z",
+          "display_at": "2023-06-01T19:09:04.963Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
     }
   ],
   "scheduled_maintenances": [
@@ -3346,9 +3395,9 @@
         {
           "id": "4y5wl7fmfgw7",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:48.312Z",
-          "updated_at": "2023-03-09T15:02:21.325Z",
+          "updated_at": "2023-06-01T19:08:27.836Z",
           "position": 1,
           "description": null,
           "showcase": false,
