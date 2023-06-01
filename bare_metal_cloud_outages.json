@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-01T00:15:28.002Z"
+    "updated_at": "2023-06-01T02:48:07.303Z"
   },
   "components": [
     {
@@ -2259,14 +2259,40 @@
       "name": "[GRA1][DedicatedServers] - Racks G116B02, G116B03, G116B04, G116B05, G116B06, G116B07, G116B08, G116B09, G116B12, G116B11, G116B13, G116B14",
       "status": "identified",
       "created_at": "2023-05-31T21:58:30.106Z",
-      "updated_at": "2023-06-01T00:15:27.995Z",
+      "updated_at": "2023-06-01T02:42:44.066Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
+      "impact": "minor",
       "shortlink": "https://stspg.io/760f4l6dr39b",
       "started_at": "2023-05-31T22:07:29.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "s17bfy5jnk49",
+          "status": "identified",
+          "body": "There is very few impacted servers impacted still.\nOur technical teams continue to work on it.",
+          "incident_id": "1rnf1psq3zdf",
+          "created_at": "2023-06-01T02:42:44.064Z",
+          "updated_at": "2023-06-01T02:42:44.064Z",
+          "display_at": "2023-06-01T02:42:44.064Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "k9wpg9zykr8s",
           "status": "identified",
@@ -3219,160 +3245,6 @@
       ],
       "scheduled_for": "2023-06-22T19:07:00.000Z",
       "scheduled_until": "2023-06-23T01:07:00.000Z"
-    },
-    {
-      "id": "4hjv59ts3cx0",
-      "name": "[RBX1][Network] - Network equipment maintenance",
-      "status": "in_progress",
-      "created_at": "2023-05-27T00:03:56.801Z",
-      "updated_at": "2023-05-31T19:01:09.487Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/30kdr33xxl4s",
-      "started_at": "2023-05-27T00:03:56.794Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "0yg3tdnmhg68",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "4hjv59ts3cx0",
-          "created_at": "2023-05-31T19:01:09.482Z",
-          "updated_at": "2023-05-31T19:01:09.482Z",
-          "display_at": "2023-05-31T19:01:09.482Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5sbg6t7459xg",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "4hjv59ts3cx0",
-          "created_at": "2023-05-31T18:00:06.898Z",
-          "updated_at": "2023-05-31T18:00:06.898Z",
-          "display_at": "2023-05-31T18:00:06.898Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k8cvw0q218lx",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 31/05/2023 19:00 UTC \n<b>End time :</b> 01/06/2023 02:00 UTC \n<b>Service impact :</b> Management IP might be unavailable for 3 minutes on some servers in RBX1\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment",
-          "incident_id": "4hjv59ts3cx0",
-          "created_at": "2023-05-27T00:03:56.845Z",
-          "updated_at": "2023-05-27T00:03:56.845Z",
-          "display_at": "2023-05-27T00:03:56.845Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-05-31T20:09:24.633Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-31T19:00:00.000Z",
-      "scheduled_until": "2023-06-01T02:00:00.000Z"
-    },
-    {
-      "id": "fmrkqcr3mztt",
-      "name": "[RBX1][Network] - Network infrastructure operation",
-      "status": "in_progress",
-      "created_at": "2023-05-30T21:28:49.272Z",
-      "updated_at": "2023-05-31T19:00:33.671Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4cry46zmtfm1",
-      "started_at": "2023-05-30T21:28:49.263Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "gvtkf9cwp30c",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "fmrkqcr3mztt",
-          "created_at": "2023-05-31T19:00:33.666Z",
-          "updated_at": "2023-05-31T19:00:33.666Z",
-          "display_at": "2023-05-31T19:00:33.666Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "6npr7n8cm1gg",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 31/05/2023 19:00 UTC \n<b>End time :</b> 01/06/2023 02:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we are migrating some of our devices.",
-          "incident_id": "fmrkqcr3mztt",
-          "created_at": "2023-05-30T21:28:49.332Z",
-          "updated_at": "2023-05-30T21:28:49.332Z",
-          "display_at": "2023-05-30T21:28:49.332Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-05-31T20:09:24.633Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-05-31T19:00:00.000Z",
-      "scheduled_until": "2023-06-01T02:00:00.000Z"
     },
     {
       "id": "50hgg8rk8yhm",
