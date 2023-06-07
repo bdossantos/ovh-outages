@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-07T06:25:21.366Z"
+    "updated_at": "2023-06-07T07:01:08.086Z"
   },
   "components": [
     {
@@ -2741,9 +2741,9 @@
     {
       "id": "13lcmbp3cvg7",
       "name": "UK",
-      "status": "partial_outage",
+      "status": "major_outage",
       "created_at": "2022-04-06T09:41:43.824Z",
-      "updated_at": "2023-06-07T06:25:21.315Z",
+      "updated_at": "2023-06-07T06:38:35.577Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -5102,7 +5102,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "partial_outage",
+      "status": "major_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-05-16T12:03:40.336Z",
       "position": 39,
@@ -5214,16 +5214,56 @@
     {
       "id": "fqrwcq4mj0w1",
       "name": "[UK][Storage] - Object storage",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-06-07T06:25:21.289Z",
-      "updated_at": "2023-06-07T06:25:21.363Z",
+      "updated_at": "2023-06-07T07:01:08.078Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
+      "impact": "critical",
       "shortlink": "https://stspg.io/4gbqdtm1y418",
       "started_at": "2023-06-07T06:25:21.283Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "snsnxc6txx9w",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "fqrwcq4mj0w1",
+          "created_at": "2023-06-07T07:01:08.075Z",
+          "updated_at": "2023-06-07T07:01:08.075Z",
+          "display_at": "2023-06-07T07:01:08.075Z",
+          "affected_components": [
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8yrz69xz53bh",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "fqrwcq4mj0w1",
+          "created_at": "2023-06-07T06:38:35.636Z",
+          "updated_at": "2023-06-07T06:38:35.636Z",
+          "display_at": "2023-06-07T06:38:35.636Z",
+          "affected_components": [
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "partial_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "48n2dzy24333",
           "status": "investigating",
@@ -5249,9 +5289,9 @@
         {
           "id": "13lcmbp3cvg7",
           "name": "UK",
-          "status": "partial_outage",
+          "status": "major_outage",
           "created_at": "2022-04-06T09:41:43.824Z",
-          "updated_at": "2023-06-07T06:25:21.315Z",
+          "updated_at": "2023-06-07T06:38:35.577Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -6658,7 +6698,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
