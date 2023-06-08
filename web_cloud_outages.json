@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-08T13:14:32.849Z"
+    "updated_at": "2023-06-08T15:25:07.146Z"
   },
   "components": [
     {
@@ -725,9 +725,9 @@
     {
       "id": "0v4sqlp7dhln",
       "name": "Spain",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:45.620Z",
-      "updated_at": "2022-10-19T10:09:55.734Z",
+      "updated_at": "2023-06-08T15:25:07.092Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2433,7 +2433,7 @@
     {
       "id": "xzvp84m353hd",
       "name": "VoIP || Interconnect",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:47.435Z",
       "updated_at": "2023-05-16T12:10:06.294Z",
       "position": 23,
@@ -2760,6 +2760,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "bmzlfv57jst5",
+      "name": "[Spain][VoIP] - Spanish call interconnexion",
+      "status": "investigating",
+      "created_at": "2023-06-08T15:25:07.063Z",
+      "updated_at": "2023-06-08T15:25:07.143Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/dbw9qdz59lyg",
+      "started_at": "2023-06-08T15:25:07.056Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "nrnc8y29ppcn",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 07/06/2023 06:32 UTC \n<b>Service impact :</b> VoIP service is degraded for Spanish customers\n<b>Ongoing actions :</b> Investigating\nIncoming calls to our Spanish customer and outgoing call to emergency services are not available. Outgoing calls from Spanish numbers are available. \nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "bmzlfv57jst5",
+          "created_at": "2023-06-08T15:25:07.141Z",
+          "updated_at": "2023-06-08T15:25:07.141Z",
+          "display_at": "2023-06-08T15:25:07.141Z",
+          "affected_components": [
+            {
+              "code": "0v4sqlp7dhln",
+              "name": "VoIP || Interconnect - Spain",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0v4sqlp7dhln",
+          "name": "Spain",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:45.620Z",
+          "updated_at": "2023-06-08T15:25:07.092Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "8hqngk137spw",
       "name": "[SBG/RBX/GRA/BRU][Core Network] - Call routing",
@@ -4014,7 +4066,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
