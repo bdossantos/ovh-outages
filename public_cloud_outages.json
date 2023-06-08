@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-08T07:29:58.184Z"
+    "updated_at": "2023-06-08T07:59:23.851Z"
   },
   "components": [
     {
@@ -2880,9 +2880,9 @@
     {
       "id": "pkcg4178zmpr",
       "name": "WAW",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:51.088Z",
-      "updated_at": "2023-03-29T10:22:53.329Z",
+      "updated_at": "2023-06-08T07:53:49.086Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5102,7 +5102,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-05-16T12:03:40.336Z",
       "position": 39,
@@ -5210,7 +5210,100 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0mgkhgpsyzq7",
+      "name": "[WAW][Object storage] - Public network",
+      "status": "identified",
+      "created_at": "2023-06-08T07:53:49.061Z",
+      "updated_at": "2023-06-08T07:59:23.845Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/118fjsdf33pq",
+      "started_at": "2023-06-08T07:53:49.053Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "vbxkyb7hg42g",
+          "status": "identified",
+          "body": "<b>Service impact :</b> Public network is operational actually.",
+          "incident_id": "0mgkhgpsyzq7",
+          "created_at": "2023-06-08T07:59:23.843Z",
+          "updated_at": "2023-06-08T07:59:23.843Z",
+          "display_at": "2023-06-08T07:59:23.843Z",
+          "affected_components": [
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4pyvjvgvc04f",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "0mgkhgpsyzq7",
+          "created_at": "2023-06-08T07:57:19.724Z",
+          "updated_at": "2023-06-08T07:57:19.724Z",
+          "display_at": "2023-06-08T07:57:19.724Z",
+          "affected_components": [
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rxtcpx0ylxmm",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/06/2023 02:43 UTC \n<b>Service impact :</b> Public network is unreachable\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue.\nUpdate will be post as significant progress is made.",
+          "incident_id": "0mgkhgpsyzq7",
+          "created_at": "2023-06-08T07:53:49.133Z",
+          "updated_at": "2023-06-08T07:53:49.133Z",
+          "display_at": "2023-06-08T07:53:49.133Z",
+          "affected_components": [
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pkcg4178zmpr",
+          "name": "WAW",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:51.088Z",
+          "updated_at": "2023-06-08T07:53:49.086Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vvmrrqs07c6m",
@@ -6616,7 +6709,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
