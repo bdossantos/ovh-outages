@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-09T16:45:32.655Z"
+    "updated_at": "2023-06-11T20:47:46.071Z"
   },
   "components": [
     {
@@ -420,9 +420,9 @@
     {
       "id": "jpc3qb2s21pm",
       "name": "CCS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:19.223Z",
-      "updated_at": "2023-02-27T09:32:10.496Z",
+      "updated_at": "2023-06-11T20:47:46.020Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1260,9 +1260,9 @@
     {
       "id": "5k7llfjmccm4",
       "name": "Fax",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:20.875Z",
-      "updated_at": "2023-04-13T03:56:49.834Z",
+      "updated_at": "2023-06-11T20:47:46.033Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2470,7 +2470,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2023-05-16T12:10:06.308Z",
       "position": 24,
@@ -2759,7 +2759,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "h1chc0d8t5jk",
+      "name": "[EU][Telephony] - Fax-Cti",
+      "status": "investigating",
+      "created_at": "2023-06-11T20:47:45.994Z",
+      "updated_at": "2023-06-11T20:47:46.069Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8xwv4h30q3d7",
+      "started_at": "2023-06-11T20:47:45.987Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "w4js3p447kxd",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 11/06/2023 19:04 UTC \n<b>Service impact :</b> Customers may have latencies when using phones provisioning and send/receiving faxes.\nCTI ( Telephony-Computer Coupling) is unreachable.\nBetween 11/06/2023 19:10 UTC and 10:10 UTC 30% of calls made were unreachable\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "h1chc0d8t5jk",
+          "created_at": "2023-06-11T20:47:46.067Z",
+          "updated_at": "2023-06-11T20:47:46.067Z",
+          "display_at": "2023-06-11T20:47:46.067Z",
+          "affected_components": [
+            {
+              "code": "jpc3qb2s21pm",
+              "name": "VoIP || Services - CCS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "5k7llfjmccm4",
+              "name": "VoIP || Services - Fax",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jpc3qb2s21pm",
+          "name": "CCS",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:19.223Z",
+          "updated_at": "2023-06-11T20:47:46.020Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5k7llfjmccm4",
+          "name": "Fax",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:22:20.875Z",
+          "updated_at": "2023-06-11T20:47:46.033Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "p3b1ynksnmr8",
@@ -3841,7 +3915,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
