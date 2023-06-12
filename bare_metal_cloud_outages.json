@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-12T08:44:01.318Z"
+    "updated_at": "2023-06-12T10:01:50.906Z"
   },
   "components": [
     {
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1213,9 +1213,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-06-11T19:45:17.364Z",
+      "updated_at": "2023-06-12T10:01:50.854Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2255,6 +2255,58 @@
   ],
   "incidents": [
     {
+      "id": "fwrx20ztk231",
+      "name": "[RBX8][Dedicated Servers] - R808L08/R808L09",
+      "status": "investigating",
+      "created_at": "2023-06-12T10:01:50.828Z",
+      "updated_at": "2023-06-12T10:01:50.904Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/6yq3hfw72rx5",
+      "started_at": "2023-06-12T10:01:50.822Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "6k3qrkllgqd7",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 12/06/2023 09:30 UTC\n<b>Service impact :</b> Multiple servers in racks R808L08 and R808L09\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "fwrx20ztk231",
+          "created_at": "2023-06-12T10:01:50.902Z",
+          "updated_at": "2023-06-12T10:01:50.902Z",
+          "display_at": "2023-06-12T10:01:50.902Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-06-12T10:01:50.854Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "5q1j99prm5y9",
       "name": "VPS - GRA6 - host1030542",
       "status": "investigating",
@@ -2655,9 +2707,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-06-11T19:45:17.364Z",
+          "updated_at": "2023-06-12T10:01:50.854Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3126,14 +3178,82 @@
       "name": "[Global][Additionnal services] - End of Life - RTM package",
       "status": "in_progress",
       "created_at": "2023-05-17T13:11:44.652Z",
-      "updated_at": "2023-05-23T08:54:52.231Z",
+      "updated_at": "2023-06-12T09:53:20.912Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://stspg.io/6hszx3608mjf",
-      "started_at": "2023-05-17T13:11:44.637Z",
+      "started_at": "2023-06-12T09:51:40.732Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "b0m17cd0w3qn",
+          "status": "in_progress",
+          "body": "-",
+          "incident_id": "50hgg8rk8yhm",
+          "created_at": "2023-06-12T09:51:40.732Z",
+          "updated_at": "2023-06-12T09:53:20.868Z",
+          "display_at": "2023-06-12T09:51:40.732Z",
+          "affected_components": [
+            {
+              "code": "4y5wl7fmfgw7",
+              "name": "Dedicated Servers || Additional services - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "299c5tn3jxfr",
+              "name": "Dedicated Servers || Additional services - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5fk4rh8jbsq9",
+              "name": "Dedicated Servers || Additional services - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hk5pl4v7gyqf",
+              "name": "Dedicated Servers || Additional services - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8lgqpd7jdqyq",
+              "name": "Dedicated Servers || Additional services - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "dlpfx1y20r77",
+              "name": "Dedicated Servers || Additional services - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7nhk80mgnyz5",
+              "name": "Dedicated Servers || Additional services - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "53nncc1snmrw",
+              "name": "Dedicated Servers || Additional services - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qz5cvrp93j4x",
+              "name": "Dedicated Servers || Additional services - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9w63jk0pc8g7",
           "status": "in_progress",
@@ -3426,7 +3546,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
