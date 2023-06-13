@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-13T20:20:40.494Z"
+    "updated_at": "2023-06-13T20:44:43.575Z"
   },
   "components": [
     {
@@ -976,7 +976,7 @@
     {
       "id": "pfgp8y6j65vx",
       "name": "Veeam || BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:41:16.967Z",
       "updated_at": "2023-05-16T11:50:22.487Z",
       "position": 3,
@@ -1357,9 +1357,9 @@
     {
       "id": "yvpvpj1xfh49",
       "name": "Storage",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:41:15.684Z",
-      "updated_at": "2023-06-13T19:47:34.701Z",
+      "updated_at": "2023-06-13T20:42:28.429Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2048,60 +2048,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "532fl4wwr4l8",
-      "name": "[BHS1][Hosted Private Cloud] - Veeam",
-      "status": "identified",
-      "created_at": "2023-06-13T19:47:34.672Z",
-      "updated_at": "2023-06-13T19:47:34.744Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/z50t618tpplx",
-      "started_at": "2023-06-13T19:47:34.664Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "lh8fcvp4q4c9",
-          "status": "identified",
-          "body": "<b>Start time :</b> 13/06/2023 18:07 UTC \n<b>Service impact :</b> Some customers can't access Veeam service in BHS1\n<b>Root cause :</b> Hardware issue\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.",
-          "incident_id": "532fl4wwr4l8",
-          "created_at": "2023-06-13T19:47:34.742Z",
-          "updated_at": "2023-06-13T19:47:34.742Z",
-          "display_at": "2023-06-13T19:47:34.742Z",
-          "affected_components": [
-            {
-              "code": "yvpvpj1xfh49",
-              "name": "Veeam || BHS - Storage",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yvpvpj1xfh49",
-          "name": "Storage",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:41:15.684Z",
-          "updated_at": "2023-06-13T19:47:34.701Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "pfgp8y6j65vx",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "607yw21lfw57",
@@ -2215,9 +2162,9 @@
         {
           "id": "yvpvpj1xfh49",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:41:15.684Z",
-          "updated_at": "2023-06-13T19:47:34.701Z",
+          "updated_at": "2023-06-13T20:42:28.429Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2359,6 +2306,60 @@
       ],
       "scheduled_for": "2023-06-19T04:00:00.000Z",
       "scheduled_until": "2023-06-22T07:00:00.000Z"
+    },
+    {
+      "id": "lpql661yw2mb",
+      "name": "[RBX][Hosted Private Cloud] - Upgrade Storage Equipement",
+      "status": "scheduled",
+      "created_at": "2023-06-13T20:36:16.854Z",
+      "updated_at": "2023-06-13T20:36:16.898Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cg8ddts0tjkm",
+      "started_at": "2023-06-13T20:36:16.847Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "wcqn5y403p4z",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/06/2023 08:00 UTC \n<b>End time :</b> 21/06/2023 11:00 UTC \n<b>Service impact :</b> A downtime of 3 hours is expected.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will upgrade some veam backup servers.",
+          "incident_id": "lpql661yw2mb",
+          "created_at": "2023-06-13T20:36:16.896Z",
+          "updated_at": "2023-06-13T20:36:16.896Z",
+          "display_at": "2023-06-13T20:36:16.896Z",
+          "affected_components": [
+            {
+              "code": "rbkzk020ks7g",
+              "name": "Veeam || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rbkzk020ks7g",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:59.780Z",
+          "updated_at": "2023-06-01T03:44:56.423Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "xd6whl7x48n9",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-21T08:00:00.000Z",
+      "scheduled_until": "2023-06-21T11:00:00.000Z"
     },
     {
       "id": "ym2fpvn6mwkb",
@@ -2692,7 +2693,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
