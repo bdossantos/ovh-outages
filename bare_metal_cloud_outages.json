@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-13T23:43:55.254Z"
+    "updated_at": "2023-06-14T01:54:20.008Z"
   },
   "components": [
     {
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1213,9 +1213,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-06-12T17:53:33.224Z",
+      "updated_at": "2023-06-14T01:53:08.382Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2253,7 +2253,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j45qzrfnj7cj",
+      "name": "[RBX1][Dedicated Servers] - 16C06 - 16C07",
+      "status": "investigating",
+      "created_at": "2023-06-14T01:53:08.341Z",
+      "updated_at": "2023-06-14T01:54:20.002Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/357s0tkrw40w",
+      "started_at": "2023-06-14T01:53:08.331Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "kprjgxh32kr1",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 14/06/2023 01:44 UTC\n<b>Service impact :</b> Servers inracks 16C06 and 16C07are unreachable.\n<b>Ongoing actions :</b>Our technical teams are investigating on the issue.\n Update will be post as significant progress is made.",
+          "incident_id": "j45qzrfnj7cj",
+          "created_at": "2023-06-14T01:53:08.786Z",
+          "updated_at": "2023-06-14T01:53:08.786Z",
+          "display_at": "2023-06-14T01:53:08.786Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-06-14T01:53:08.382Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7wqkhbnvy1vm",
@@ -2291,7 +2344,7 @@
       "name": "[BHS7][Network] - B703B07",
       "status": "scheduled",
       "created_at": "2023-06-06T20:11:09.896Z",
-      "updated_at": "2023-06-06T20:11:09.955Z",
+      "updated_at": "2023-06-14T01:29:56.813Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2299,6 +2352,19 @@
       "started_at": "2023-06-06T20:11:09.887Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "vmxc1mgyfztg",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "fzvx01xgnmy8",
+          "created_at": "2023-06-14T01:29:56.617Z",
+          "updated_at": "2023-06-14T01:29:56.617Z",
+          "display_at": "2023-06-14T01:29:56.617Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "yxxndqbg4zds",
           "status": "scheduled",
@@ -2453,9 +2519,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-06-12T17:53:33.224Z",
+          "updated_at": "2023-06-14T01:53:08.382Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3474,7 +3540,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
