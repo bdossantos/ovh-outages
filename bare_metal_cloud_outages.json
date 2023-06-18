@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-18T07:05:05.892Z"
+    "updated_at": "2023-06-18T10:19:33.378Z"
   },
   "components": [
     {
@@ -806,9 +806,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2023-06-18T05:43:26.695Z",
+      "updated_at": "2023-06-18T10:17:41.445Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2255,6 +2255,78 @@
   ],
   "incidents": [
     {
+      "id": "3kr7sp47cbbc",
+      "name": "[GRA2][Public Network] - G242A11",
+      "status": "identified",
+      "created_at": "2023-06-18T10:17:41.416Z",
+      "updated_at": "2023-06-18T10:19:33.372Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/c3h64qr5dpj7",
+      "started_at": "2023-06-18T10:17:41.409Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "fhnhmhhvsl6x",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "3kr7sp47cbbc",
+          "created_at": "2023-06-18T10:19:33.370Z",
+          "updated_at": "2023-06-18T10:19:33.370Z",
+          "display_at": "2023-06-18T10:19:33.370Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9fgqbphw72v2",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 18/06/2023 09:57 UTC\n<b>Service impact :</b> Public network is unreachable on this rack\n<b>Ongoing actions :</b> Our technical teams are working on the issue. \nUpdate will be post as significant progress is made.",
+          "incident_id": "3kr7sp47cbbc",
+          "created_at": "2023-06-18T10:17:41.494Z",
+          "updated_at": "2023-06-18T10:17:41.494Z",
+          "display_at": "2023-06-18T10:17:41.494Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2023-06-18T10:17:41.445Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "3pmvtj7y35w3",
       "name": "[WAW1][Dedicated Servers] - Room W12 W14 W16",
       "status": "monitoring",
@@ -3561,7 +3633,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
