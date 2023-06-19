@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-19T12:07:38.230Z"
+    "updated_at": "2023-06-19T12:54:20.985Z"
   },
   "components": [
     {
@@ -913,32 +913,64 @@
       "scheduled_until": "2023-06-20T03:00:00.000Z"
     },
     {
-      "id": "9gjx1bfg03ty",
-      "name": "[RBX8] - R802L18",
+      "id": "8j6186cqfqm9",
+      "name": "[GRA2/3][Infrastructure] - Electrical maintenance",
       "status": "scheduled",
-      "created_at": "2023-06-15T14:14:08.707Z",
-      "updated_at": "2023-06-15T14:14:08.765Z",
+      "created_at": "2023-06-15T20:28:47.284Z",
+      "updated_at": "2023-06-19T12:54:20.976Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/lrxgt6zkml3d",
-      "started_at": "2023-06-15T14:14:08.698Z",
+      "shortlink": "https://stspg.io/trj8pt2pp8pv",
+      "started_at": "2023-06-15T20:28:47.276Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "frdpkr57n5p9",
+          "id": "rch3f5nnxvkw",
           "status": "scheduled",
-          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect. \n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack \n<b>Start of intervention :</b> 20/06/2023 06:00 UTC \n<b>Rack :</b> R802L18\n<b>Impact :</b> Server outage during the intervention. \n<b>Duration of intervention :</b> 09h00",
-          "incident_id": "9gjx1bfg03ty",
-          "created_at": "2023-06-15T14:14:08.761Z",
-          "updated_at": "2023-06-15T14:14:08.761Z",
-          "display_at": "2023-06-15T14:14:08.761Z",
+          "body": "The maintenance has been rescheduled, the new schedule is :\n\n<b>New start time :</b> 21/06/2023 06:00 UTC \n<b>New end time :</b> 21/06/2023 15:00 UTC",
+          "incident_id": "8j6186cqfqm9",
+          "created_at": "2023-06-19T12:54:08.291Z",
+          "updated_at": "2023-06-19T12:54:08.291Z",
+          "display_at": "2023-06-19T12:54:08.291Z",
           "affected_components": [
             {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
               "old_status": "operational",
               "new_status": "operational"
+            },
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Infrastructure || GRA - GRA3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zqbwqpqf5k3v",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/06/2023 06:00 UTC \n<b>End time :</b> 21/06/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance in GRA2 and GRA3.",
+          "incident_id": "8j6186cqfqm9",
+          "created_at": "2023-06-15T20:28:47.335Z",
+          "updated_at": "2023-06-19T12:54:20.971Z",
+          "display_at": "2023-06-15T20:28:47.335Z",
+          "affected_components": [
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Infrastructure || GRA - GRA3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -948,16 +980,31 @@
       ],
       "components": [
         {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-06-19T04:00:11.521Z",
-          "position": 8,
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2023-06-07T12:28:23.388Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2023-06-14T06:00:16.934Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -967,32 +1014,32 @@
       "scheduled_until": "2023-06-20T15:00:00.000Z"
     },
     {
-      "id": "ztgj9w426dvc",
-      "name": "[RBX8] - R802L18",
+      "id": "vzn3xflq9tx2",
+      "name": "[SBG5][Infrastructure] - Electrical background work",
       "status": "scheduled",
-      "created_at": "2023-06-15T14:39:58.630Z",
-      "updated_at": "2023-06-15T14:39:58.682Z",
+      "created_at": "2023-06-15T02:46:08.193Z",
+      "updated_at": "2023-06-15T02:46:08.243Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/4fh390wv7hgx",
-      "started_at": "2023-06-15T14:39:58.621Z",
+      "shortlink": "https://stspg.io/yx1nhwf1m8vr",
+      "started_at": "2023-06-15T02:46:08.184Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "ft8dffgltwy1",
+          "id": "2v6v65cg6110",
           "status": "scheduled",
-          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect. \n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack \n<b>Start of intervention :</b> 20/06/2023 06:00 UTC \n<b>Rack :</b> R802L18\n<b>Impact :</b> Server outage during the intervention. \n<b>Duration of intervention :</b> 09h00",
-          "incident_id": "ztgj9w426dvc",
-          "created_at": "2023-06-15T14:39:58.679Z",
-          "updated_at": "2023-06-15T14:39:58.679Z",
-          "display_at": "2023-06-15T14:39:58.679Z",
+          "body": "<b>Start time :</b> 20/06/2023 06:00 UTC \n<b>End time :</b> 20/06/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some electrical work.",
+          "incident_id": "vzn3xflq9tx2",
+          "created_at": "2023-06-15T02:46:08.241Z",
+          "updated_at": "2023-06-15T02:46:08.241Z",
+          "display_at": "2023-06-15T02:46:08.241Z",
           "affected_components": [
             {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "mp1qh2crp1cl",
+              "name": "Infrastructure || SBG - SBG5",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -1002,16 +1049,16 @@
       ],
       "components": [
         {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-06-19T04:00:11.521Z",
-          "position": 8,
+          "id": "mp1qh2crp1cl",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-06-20T07:44:01.844Z",
+          "updated_at": "2023-06-18T11:17:04.362Z",
+          "position": 4,
           "description": null,
           "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "start_date": "2022-06-20",
+          "group_id": "vhfy3slw3nj2",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -1183,38 +1230,32 @@
       "scheduled_until": "2023-06-21T14:00:00.000Z"
     },
     {
-      "id": "8j6186cqfqm9",
-      "name": "[GRA2/3][Infrastructure] - Electrical maintenance",
+      "id": "ztgj9w426dvc",
+      "name": "[RBX8] - R802L18",
       "status": "scheduled",
-      "created_at": "2023-06-15T20:28:47.284Z",
-      "updated_at": "2023-06-15T20:28:47.338Z",
+      "created_at": "2023-06-15T14:39:58.630Z",
+      "updated_at": "2023-06-15T14:39:58.682Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/trj8pt2pp8pv",
-      "started_at": "2023-06-15T20:28:47.276Z",
+      "shortlink": "https://stspg.io/4fh390wv7hgx",
+      "started_at": "2023-06-15T14:39:58.621Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "zqbwqpqf5k3v",
+          "id": "ft8dffgltwy1",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 20/06/2023 06:00 UTC \n<b>End time :</b> 20/06/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance in GRA2 and GRA3.",
-          "incident_id": "8j6186cqfqm9",
-          "created_at": "2023-06-15T20:28:47.335Z",
-          "updated_at": "2023-06-15T20:28:47.335Z",
-          "display_at": "2023-06-15T20:28:47.335Z",
+          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect. \n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack \n<b>Start of intervention :</b> 20/06/2023 06:00 UTC \n<b>Rack :</b> R802L18\n<b>Impact :</b> Server outage during the intervention. \n<b>Duration of intervention :</b> 09h00",
+          "incident_id": "ztgj9w426dvc",
+          "created_at": "2023-06-15T14:39:58.679Z",
+          "updated_at": "2023-06-15T14:39:58.679Z",
+          "display_at": "2023-06-15T14:39:58.679Z",
           "affected_components": [
             {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
               "old_status": "operational",
               "new_status": "operational"
-            },
-            {
-              "code": "mlw1x23q8nrt",
-              "name": "Infrastructure || GRA - GRA3",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -1224,31 +1265,16 @@
       ],
       "components": [
         {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2023-06-07T12:28:23.388Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "mlw1x23q8nrt",
-          "name": "GRA3",
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
           "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:39.377Z",
-          "updated_at": "2023-06-14T06:00:16.934Z",
-          "position": 3,
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2023-06-19T04:00:11.521Z",
+          "position": 8,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
+          "group_id": "zllgrccdn4nk",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -1258,32 +1284,32 @@
       "scheduled_until": "2023-06-20T15:00:00.000Z"
     },
     {
-      "id": "vzn3xflq9tx2",
-      "name": "[SBG5][Infrastructure] - Electrical background work",
+      "id": "9gjx1bfg03ty",
+      "name": "[RBX8] - R802L18",
       "status": "scheduled",
-      "created_at": "2023-06-15T02:46:08.193Z",
-      "updated_at": "2023-06-15T02:46:08.243Z",
+      "created_at": "2023-06-15T14:14:08.707Z",
+      "updated_at": "2023-06-15T14:14:08.765Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/yx1nhwf1m8vr",
-      "started_at": "2023-06-15T02:46:08.184Z",
+      "shortlink": "https://stspg.io/lrxgt6zkml3d",
+      "started_at": "2023-06-15T14:14:08.698Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "2v6v65cg6110",
+          "id": "frdpkr57n5p9",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 20/06/2023 06:00 UTC \n<b>End time :</b> 20/06/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some electrical work.",
-          "incident_id": "vzn3xflq9tx2",
-          "created_at": "2023-06-15T02:46:08.241Z",
-          "updated_at": "2023-06-15T02:46:08.241Z",
-          "display_at": "2023-06-15T02:46:08.241Z",
+          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect. \n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack \n<b>Start of intervention :</b> 20/06/2023 06:00 UTC \n<b>Rack :</b> R802L18\n<b>Impact :</b> Server outage during the intervention. \n<b>Duration of intervention :</b> 09h00",
+          "incident_id": "9gjx1bfg03ty",
+          "created_at": "2023-06-15T14:14:08.761Z",
+          "updated_at": "2023-06-15T14:14:08.761Z",
+          "display_at": "2023-06-15T14:14:08.761Z",
           "affected_components": [
             {
-              "code": "mp1qh2crp1cl",
-              "name": "Infrastructure || SBG - SBG5",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -1293,16 +1319,16 @@
       ],
       "components": [
         {
-          "id": "mp1qh2crp1cl",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-06-20T07:44:01.844Z",
-          "updated_at": "2023-06-18T11:17:04.362Z",
-          "position": 4,
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2023-06-19T04:00:11.521Z",
+          "position": 8,
           "description": null,
           "showcase": false,
-          "start_date": "2022-06-20",
-          "group_id": "vhfy3slw3nj2",
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -1408,60 +1434,6 @@
       "scheduled_until": "2023-06-20T15:00:00.000Z"
     },
     {
-      "id": "g2gkxnf4l25t",
-      "name": "[RBX8] - R802R02",
-      "status": "scheduled",
-      "created_at": "2023-05-10T14:04:02.961Z",
-      "updated_at": "2023-05-10T14:04:03.011Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v79snjmh916y",
-      "started_at": "2023-05-10T14:04:02.954Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "9zlxb49pvv90",
-          "status": "scheduled",
-          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect.\n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack\n<b>Start of intervention :</b> 21/06/2023 06:00 UTC\n<b>Rack :</b> R802R02\n<b>Impact :</b> Server outage during the intervention.\n<b>Duration of intervention :</b> 06h00",
-          "incident_id": "g2gkxnf4l25t",
-          "created_at": "2023-05-10T14:04:03.008Z",
-          "updated_at": "2023-05-10T14:04:03.008Z",
-          "display_at": "2023-05-10T14:04:03.008Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-06-19T04:00:11.521Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-06-21T06:00:00.000Z",
-      "scheduled_until": "2023-06-21T12:00:00.000Z"
-    },
-    {
       "id": "vn1r0wlvj47b",
       "name": "[RBX8] - R802L19",
       "status": "scheduled",
@@ -1514,6 +1486,60 @@
       ],
       "scheduled_for": "2023-06-21T06:00:00.000Z",
       "scheduled_until": "2023-06-21T15:00:00.000Z"
+    },
+    {
+      "id": "g2gkxnf4l25t",
+      "name": "[RBX8] - R802R02",
+      "status": "scheduled",
+      "created_at": "2023-05-10T14:04:02.961Z",
+      "updated_at": "2023-05-10T14:04:03.011Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v79snjmh916y",
+      "started_at": "2023-05-10T14:04:02.954Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "9zlxb49pvv90",
+          "status": "scheduled",
+          "body": "<b>Summary :</b> We are going to intervene in the rack to replace a large number of power supply cables that could have an insulation defect.\n<b>Actions :</b> Replacement of the C13/C14 power supply cables of the rack\n<b>Start of intervention :</b> 21/06/2023 06:00 UTC\n<b>Rack :</b> R802R02\n<b>Impact :</b> Server outage during the intervention.\n<b>Duration of intervention :</b> 06h00",
+          "incident_id": "g2gkxnf4l25t",
+          "created_at": "2023-05-10T14:04:03.008Z",
+          "updated_at": "2023-05-10T14:04:03.008Z",
+          "display_at": "2023-05-10T14:04:03.008Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2023-06-19T04:00:11.521Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-21T06:00:00.000Z",
+      "scheduled_until": "2023-06-21T12:00:00.000Z"
     },
     {
       "id": "nhjlydt7z867",
