@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-21T00:43:10.526Z"
+    "updated_at": "2023-06-21T01:27:36.319Z"
   },
   "components": [
     {
@@ -5276,26 +5276,26 @@
   ],
   "incidents": [
     {
-      "id": "5dy1bvpctwly",
+      "id": "zymjlt2jqpjx",
       "name": "PCI - GRA9 - host1628425",
       "status": "investigating",
-      "created_at": "2023-06-21T00:33:11.504Z",
-      "updated_at": "2023-06-21T00:33:11.553Z",
+      "created_at": "2023-06-21T01:27:36.278Z",
+      "updated_at": "2023-06-21T01:27:36.317Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/9pcbz2hf4yl8",
-      "started_at": "2023-06-21T00:33:11.497Z",
+      "shortlink": "https://stspg.io/0pj9hzty6byr",
+      "started_at": "2023-06-21T01:27:36.273Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "62908mrvgq56",
+          "id": "151dztfvs4t5",
           "status": "investigating",
           "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1628425\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\ne33dba02-2e82-4ceb-8fdd-60b1226d5e72",
-          "incident_id": "5dy1bvpctwly",
-          "created_at": "2023-06-21T00:33:11.550Z",
-          "updated_at": "2023-06-21T00:33:11.550Z",
-          "display_at": "2023-06-21T00:33:11.550Z",
+          "incident_id": "zymjlt2jqpjx",
+          "created_at": "2023-06-21T01:27:36.315Z",
+          "updated_at": "2023-06-21T01:27:36.315Z",
+          "display_at": "2023-06-21T01:27:36.315Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
@@ -5986,6 +5986,417 @@
       ],
       "scheduled_for": "2023-06-27T07:00:00.000Z",
       "scheduled_until": "2023-06-27T11:00:00.000Z"
+    },
+    {
+      "id": "5dl07nrf3mfm",
+      "name": "[Global][PublicCloud] - OpenStack - RabbitMQ upgrade",
+      "status": "scheduled",
+      "created_at": "2023-06-21T01:06:40.622Z",
+      "updated_at": "2023-06-21T01:06:40.703Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/46bz893cw1md",
+      "started_at": "2023-06-21T01:06:40.584Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "lyxjn2pzxw5j",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 03/07/2023 01:01 UTC \n<b>End time :</b> 09/08/2023 11:59 UTC \n<b>Service impact :</b> OpenStack API will be unavailable for 30min up to 2H during the operation.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade for RabbitMQ (Message queue service).\nThe upgrade will be rolled out following this schedule :\nw27 (03/07)\n    BHS1                03/07 08:00 UTC\n    SYD1                04/07 13:00 UTC\nw28 (10/07) \n    BHS3                10/07 08:00 UTC\n    SGP1                 11/07 13:00 UTC\n    DE1                   12/07 19:00 UTC\nw29 (17/07)\n    BHS5                17/07 08:00 UTC\n    WAW1              17/07 19:00 UTC\n    SBG5                 18/07 19:00 UTC\n    GRA1                 19/07 19:00 UTC\nw30 (24/07)\n    GRA11               24/07 19:00 UTC\n    UK1                    25/07 19:00 UTC\n    GRA5                 26/07 19:00 UTC\n    SBG7                  27/07 19:00 UTC\nw31 (31/07)\n    US-WEST-OR1 31/07 08:00 UTC\n    GRA9                  31/07 19:00 UTC\n    US-EAST-VA-1 01/08 08:00 UTC\nw32 (07/08)\n    GRA7                  07/08 19:00 UTC\n    GRA3                  08/08 19:00 UTC",
+          "incident_id": "5dl07nrf3mfm",
+          "created_at": "2023-06-21T01:06:40.700Z",
+          "updated_at": "2023-06-21T01:06:40.700Z",
+          "display_at": "2023-06-21T01:06:40.700Z",
+          "affected_components": [
+            {
+              "code": "jlj7vhqxdcsv",
+              "name": "Compute - Instance || SGP - SGP1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "yfhs5qjtqy5f",
+              "name": "Compute - Instance || WAW - WAW1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2f7vd120ygt3",
+              "name": "Compute - Instance || GRA - GRA5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gyxq55djvgqg",
+              "name": "Compute - Instance || GRA - GRA9",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "67wfh3wzl2rx",
+              "name": "Compute - Instance || SYD - SYD1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f48mzw7bpn0d",
+              "name": "Compute - Instance || BHS - BHS1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0hpxc65n3j2y",
+              "name": "Compute - Instance || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "p5srmsq3fmp8",
+              "name": "Compute - Instance || SBG - SBG7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5y3lfn7ctsvg",
+              "name": "Compute - Instance || USA - US-EAST-VA-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "1jxw3tjnvw22",
+              "name": "Compute - Instance || USA - US-WEST-OR-1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jlj7vhqxdcsv",
+          "name": "SGP1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:06.838Z",
+          "updated_at": "2023-02-28T23:11:15.800Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "4hd0291hdzf6",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yfhs5qjtqy5f",
+          "name": "WAW1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:29.628Z",
+          "updated_at": "2023-02-28T23:11:15.814Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0wrwm0pg3p7j",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2023-06-01T03:39:17.043Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2023-06-02T11:06:06.289Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "67wfh3wzl2rx",
+          "name": "SYD1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:53.655Z",
+          "updated_at": "2023-02-28T23:11:15.854Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "cl00g8yvrp73",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zvrfgrvrp8kc",
+          "name": "UK1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:16.391Z",
+          "updated_at": "2023-02-28T23:11:15.866Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "5bttkdz4t240",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f48mzw7bpn0d",
+          "name": "BHS1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:34.420Z",
+          "updated_at": "2023-02-28T23:11:15.879Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5y3lfn7ctsvg",
+          "name": "US-EAST-VA-1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:39:22.236Z",
+          "updated_at": "2022-04-06T09:39:39.506Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "m0l6btt99ph7",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2k4xnh0pwlqx",
+          "name": "GRA3",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:50.709Z",
+          "updated_at": "2023-02-28T23:11:15.892Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "my3dbz55pzrq",
+          "name": "BHS3",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:35.569Z",
+          "updated_at": "2023-02-28T23:11:15.904Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "1jxw3tjnvw22",
+          "name": "US-WEST-OR-1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:39:32.737Z",
+          "updated_at": "2022-04-06T09:39:39.513Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "m0l6btt99ph7",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2f7vd120ygt3",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:56.233Z",
+          "updated_at": "2023-03-13T13:21:45.290Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "d6db30j7nx4r",
+          "name": "BHS5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:37.373Z",
+          "updated_at": "2023-02-28T23:11:15.929Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0hpxc65n3j2y",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:49.027Z",
+          "updated_at": "2023-02-28T23:11:15.942Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yx0ggmlz8k7d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "dwkwkx15h58c",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:00.118Z",
+          "updated_at": "2023-04-13T15:59:52.401Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "p5srmsq3fmp8",
+          "name": "SBG7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:38:49.885Z",
+          "updated_at": "2023-02-28T23:11:15.969Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yx0ggmlz8k7d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gyxq55djvgqg",
+          "name": "GRA9",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:01.088Z",
+          "updated_at": "2023-02-28T23:11:15.982Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2023-02-28T23:11:16.009Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-03T01:01:00.000Z",
+      "scheduled_until": "2023-08-09T23:59:00.000Z"
     },
     {
       "id": "tfq65hzstlp4",
