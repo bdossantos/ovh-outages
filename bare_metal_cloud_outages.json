@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-22T10:20:03.642Z"
+    "updated_at": "2023-06-22T13:19:33.147Z"
   },
   "components": [
     {
@@ -536,9 +536,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2023-06-21T11:42:28.730Z",
+      "updated_at": "2023-06-22T13:17:38.566Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2255,62 +2255,76 @@
   ],
   "incidents": [
     {
-      "id": "2117k92hd4nn",
-      "name": "VPS - GRA4 - host573492",
-      "status": "investigating",
-      "created_at": "2023-06-22T08:57:38.429Z",
-      "updated_at": "2023-06-22T08:57:38.464Z",
+      "id": "0hqpqx1zftx5",
+      "name": "[ERI][DedicatedServers] - E101F15",
+      "status": "identified",
+      "created_at": "2023-06-22T13:17:38.534Z",
+      "updated_at": "2023-06-22T13:19:33.141Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/k794nsszzpww",
-      "started_at": "2023-06-22T08:57:38.423Z",
+      "shortlink": "https://stspg.io/0lbcghkxfp4w",
+      "started_at": "2023-06-22T13:17:38.525Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "tymm5d3gtxvb",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost573492\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\ne746406d-87a2-4685-aab3-5de18b1172a8",
-          "incident_id": "2117k92hd4nn",
-          "created_at": "2023-06-22T08:57:38.462Z",
-          "updated_at": "2023-06-22T08:57:38.462Z",
-          "display_at": "2023-06-22T08:57:38.462Z",
-          "affected_components": null,
+          "id": "gwvpr0fn0rms",
+          "status": "identified",
+          "body": "<b>Start time :</b> 22/06/2023 12:55 UTC\n<b>Service impact :</b> Servers are temporarily unreachable\n<b>Root cause :</b> Servers rebooted\n<b>Ongoing actions :</b> Our teams are checking last servers",
+          "incident_id": "0hqpqx1zftx5",
+          "created_at": "2023-06-22T13:19:33.138Z",
+          "updated_at": "2023-06-22T13:19:33.138Z",
+          "display_at": "2023-06-22T13:19:33.138Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wyrxw7zrkp7z",
+          "status": "identified",
+          "body": "<b>Start time :</b> 22/06/2023 12:55 UTC\n<b>Service impact :</b> Servers rebooted\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.",
+          "incident_id": "0hqpqx1zftx5",
+          "created_at": "2023-06-22T13:17:38.618Z",
+          "updated_at": "2023-06-22T13:17:38.618Z",
+          "display_at": "2023-06-22T13:17:38.618Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
-    },
-    {
-      "id": "v7qhqq3wm4g6",
-      "name": "VPS - BHS2 - host280628",
-      "status": "investigating",
-      "created_at": "2023-06-22T05:51:42.192Z",
-      "updated_at": "2023-06-22T05:51:42.239Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/rr0pdfrx7vz3",
-      "started_at": "2023-06-22T05:51:42.185Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
+      "components": [
         {
-          "id": "tlb2xzwtjp87",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost280628\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps-e0ddd7c9.vps.ovh.ca\nvps-e40860c6.vps.ovh.ca\nvps-75e223aa.vps.ovh.ca\nvps-845f83e4.vps.ovh.ca\nvps-ce73423c.vps.ovh.ca\nvps-9e98b5e5.vps.ovh.ca\nff72d272-f1d3-438a-afb0-a2b96183cf86\nvps-c5e570d5.vps.ovh.ca\nvps-7095629d.vps.ovh.ca\ne322c722-096d-4e9e-980f-ab13ffb36724\nvps-16d11db4.vps.ovh.ca\nvps-7d27dd43.vps.ovh.ca\nvps-8747e184.vps.ovh.ca\nvps-239679a2.vps.ovh.ca\nvps-c76af3be.vps.ovh.ca\nvps-665d0a49.vps.ovh.ca\nvps-c7904c04.vps.ovh.ca\nvps-5c688768.vps.ovh.ca\nvps-e64eff90.vps.ovh.ca\nvps-6842a517.vps.ovh.ca\nvps-d1d50ffa.vps.ovh.ca\nb065ab5d-6f98-400f-b265-3a722ace55f5\nvps-fa9f54c8.vps.ovh.ca\nvps-a42059b3.vps.ovh.ca\nvps-a8540b1a.vps.ovh.ca\nvps-def7d282.vps.ovh.ca\nvps-d4aebb23.vps.ovh.ca\nvps-c0835b9d.vps.ovh.ca\nd7debdfb-6ceb-4238-91ca-22a947d33279\nvps-20e1557a.vps.ovh.ca\nvps-99031d16.vps.ovh.ca\nvps-d8fd5419.vps.ovh.ca\nvps-eac5082e.vps.ovh.ca\nvps-44e9634b.vps.ovh.ca\nvps-0307d2a9.vps.ovh.ca\nvps-ad8f0f0b.vps.ovh.ca\nvps-285c7425.vps.ovh.ca\nvps-9702a63d.vps.ovh.ca\nvps-f930c4b6.vps.ovh.ca\nvps-de1c0ea9.vps.ovh.ca\nvps-c1ef1b53.vps.ovh.ca\nc03de88c-da03-48d3-8927-55b7f6d68e15\nvps-5a2580d0.vps.ovh.ca\nvps-5b5bf78d.vps.ovh.ca\nvps-1b7c3f3a.vps.ovh.ca\nvps-ff91a1f6.vps.ovh.ca\nvps-d9eee2f3.vps.ovh.ca\nvps-14e2c146.vps.ovh.ca\nvps-c9ae95ed.vps.ovh.ca\ndc1adb7d-8b16-4585-939d-b17324a4d7bd\nvps-8abc1c40.vps.ovh.ca\nvps-01a496a7.vps.ovh.ca\nvps-d738fc77.vps.ovh.ca\nvps-47d72034.vps.ovh.ca\nvps-9c6dbd36.vps.ovh.ca\nvps-1efefd4a.vps.ovh.ca\nvps-2816cc81.vps.ovh.ca\nvps-48bcf13f.vps.ovh.ca\nvps-37ab50fc.vps.ovh.ca\nvps-716e67e1.vps.ovh.ca",
-          "incident_id": "v7qhqq3wm4g6",
-          "created_at": "2023-06-22T05:51:42.238Z",
-          "updated_at": "2023-06-22T05:51:42.238Z",
-          "display_at": "2023-06-22T05:51:42.238Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2023-06-22T13:17:38.566Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
         }
-      ],
-      "components": []
+      ]
     },
     {
       "id": "3pmvtj7y35w3",
@@ -3267,7 +3281,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
