@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-22T15:00:04.122Z"
+    "updated_at": "2023-06-22T16:00:19.022Z"
   },
   "components": [
     {
@@ -70,9 +70,9 @@
     {
       "id": "fmy1mbtr2jvd",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:58.595Z",
-      "updated_at": "2023-05-24T17:37:23.284Z",
+      "updated_at": "2023-06-22T16:00:18.912Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -4001,7 +4001,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2023-05-16T12:03:06.585Z",
       "position": 16,
@@ -5274,75 +5274,38 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "slx5n3rh8yyv",
-      "name": "[GRA][Containers & Orchestration] - Managed Private Registry migration",
-      "status": "scheduled",
-      "created_at": "2023-06-16T00:14:25.660Z",
-      "updated_at": "2023-06-22T15:00:04.091Z",
+      "id": "d7f8cgt90rr6",
+      "name": "PCI - GRA9 - host1620602",
+      "status": "investigating",
+      "created_at": "2023-06-22T15:46:35.240Z",
+      "updated_at": "2023-06-22T15:46:35.309Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kpm4wjpth9kz",
-      "started_at": "2023-06-16T00:14:25.653Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/c35sjs64426n",
+      "started_at": "2023-06-22T15:46:35.234Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "xq8ct0t765fl",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "slx5n3rh8yyv",
-          "created_at": "2023-06-22T15:00:03.700Z",
-          "updated_at": "2023-06-22T15:00:03.700Z",
-          "display_at": "2023-06-22T15:00:03.700Z",
+          "id": "f3t1y27w16yl",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1620602\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n5edcb455-bff7-4e83-a442-b9c83c23d372",
+          "incident_id": "d7f8cgt90rr6",
+          "created_at": "2023-06-22T15:46:35.307Z",
+          "updated_at": "2023-06-22T15:46:35.307Z",
+          "display_at": "2023-06-22T15:46:35.307Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
-        },
-        {
-          "id": "z33pjph6stgh",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 22/06/2023 16:00 UTC \n<b>End time :</b> 22/06/2023 20:00 UTC \n<b>Service impact :</b> Registries in plan M/L in GRA region are the only one impacted. \nCustomers won't be able to push new image during a part of the maintenance period. Existing images remain available.\n<b>Service improvement :</b> The objective of this maintenance is to migrate clients that are at the M and L plan level to a different infrastructure.",
-          "incident_id": "slx5n3rh8yyv",
-          "created_at": "2023-06-16T00:14:25.715Z",
-          "updated_at": "2023-06-16T00:14:25.715Z",
-          "display_at": "2023-06-16T00:14:25.715Z",
-          "affected_components": [
-            {
-              "code": "fmy1mbtr2jvd",
-              "name": "Containers & Orchestration || Managed Private Registry - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "fmy1mbtr2jvd",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2023-05-24T17:37:23.284Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "dbhdvj49c2xr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-06-22T16:00:00.000Z",
-      "scheduled_until": "2023-06-22T20:00:00.000Z"
-    },
+      "components": []
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "jzy9h4bkbxl9",
       "name": "[GRA7][Public Cloud] - Customers migration Kubernetes to 1.22",
@@ -6022,6 +5985,93 @@
       "scheduled_until": "2023-07-28T11:54:00.000Z"
     },
     {
+      "id": "slx5n3rh8yyv",
+      "name": "[GRA][Containers & Orchestration] - Managed Private Registry migration",
+      "status": "in_progress",
+      "created_at": "2023-06-16T00:14:25.660Z",
+      "updated_at": "2023-06-22T16:00:19.007Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kpm4wjpth9kz",
+      "started_at": "2023-06-16T00:14:25.653Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "r0kt7w8zbklv",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "slx5n3rh8yyv",
+          "created_at": "2023-06-22T16:00:19.001Z",
+          "updated_at": "2023-06-22T16:00:19.001Z",
+          "display_at": "2023-06-22T16:00:19.001Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xq8ct0t765fl",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "slx5n3rh8yyv",
+          "created_at": "2023-06-22T15:00:03.700Z",
+          "updated_at": "2023-06-22T15:00:03.700Z",
+          "display_at": "2023-06-22T15:00:03.700Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z33pjph6stgh",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/06/2023 16:00 UTC \n<b>End time :</b> 22/06/2023 20:00 UTC \n<b>Service impact :</b> Registries in plan M/L in GRA region are the only one impacted. \nCustomers won't be able to push new image during a part of the maintenance period. Existing images remain available.\n<b>Service improvement :</b> The objective of this maintenance is to migrate clients that are at the M and L plan level to a different infrastructure.",
+          "incident_id": "slx5n3rh8yyv",
+          "created_at": "2023-06-16T00:14:25.715Z",
+          "updated_at": "2023-06-16T00:14:25.715Z",
+          "display_at": "2023-06-16T00:14:25.715Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fmy1mbtr2jvd",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:33:58.595Z",
+          "updated_at": "2023-06-22T16:00:18.912Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "dbhdvj49c2xr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-22T16:00:00.000Z",
+      "scheduled_until": "2023-06-22T20:00:00.000Z"
+    },
+    {
       "id": "1bzfvz52g6dz",
       "name": "[BOD][COLD ARCHIVE] - Update Archive system",
       "status": "in_progress",
@@ -6113,7 +6163,7 @@
       "name": "[GRA5/GRA9/SBG5/WAW1/SGP1/BHS5/SYD1/DE1/UK1/VA1/OR1][Public cloud] - End of life for Kubernetes 1.21",
       "status": "in_progress",
       "created_at": "2023-05-17T02:49:58.409Z",
-      "updated_at": "2023-06-22T12:17:40.379Z",
+      "updated_at": "2023-06-22T15:39:37.221Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -6121,6 +6171,86 @@
       "started_at": "2023-06-06T10:39:43.367Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "c16rcp0mxnkc",
+          "status": "in_progress",
+          "body": "A new end time as been scheduled:\n\n<b>New end time :</b> 23/06/2023 17:00 UTC",
+          "incident_id": "kv4b88qmz8s6",
+          "created_at": "2023-06-22T15:39:37.217Z",
+          "updated_at": "2023-06-22T15:39:37.217Z",
+          "display_at": "2023-06-22T15:39:37.217Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "49jdf7zj6zfc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SGP1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "xv0rhxd2kfbs",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SYD1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "wv2rf0h84jnq",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-EAST-VA-1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "yqn3gnbvd5nk",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - US-WEST-OR-1",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "hmqxd3vcbqzj",
           "status": "in_progress",
