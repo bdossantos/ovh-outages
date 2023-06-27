@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-27T14:43:22.540Z"
+    "updated_at": "2023-06-27T15:52:53.820Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "hgscwllzr4w1",
       "name": "Zone Europe",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:32:24.629Z",
-      "updated_at": "2023-05-04T16:24:07.977Z",
+      "updated_at": "2023-06-27T15:38:24.624Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -461,9 +461,9 @@
     {
       "id": "jds1mz2tgrx4",
       "name": "Zone APAC",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:32:25.511Z",
-      "updated_at": "2023-05-04T16:24:08.010Z",
+      "updated_at": "2023-06-27T15:38:24.647Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -746,9 +746,9 @@
     {
       "id": "zjpd57tn2xqv",
       "name": "Zone Canada",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:32:26.689Z",
-      "updated_at": "2023-05-04T16:03:15.908Z",
+      "updated_at": "2023-06-27T15:38:24.669Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -998,7 +998,7 @@
     {
       "id": "7xz24f8j9l94",
       "name": "Dedicated Servers || Operating System",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:32:27.959Z",
       "updated_at": "2023-05-16T11:45:36.944Z",
       "position": 4,
@@ -2259,7 +2259,7 @@
       "name": "[BHS8][DedicatedServers] - Rack BHS0811B02A",
       "status": "identified",
       "created_at": "2023-06-27T14:21:03.682Z",
-      "updated_at": "2023-06-27T14:21:03.776Z",
+      "updated_at": "2023-06-27T15:52:53.812Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2267,6 +2267,26 @@
       "started_at": "2023-06-27T14:21:03.673Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "s6c1k8wh7brw",
+          "status": "identified",
+          "body": "Most of impacted servers are up anew.\nOut technical teams are working on resolving the issue for the few remaining ones.",
+          "incident_id": "0zn3glbjfh4q",
+          "created_at": "2023-06-27T15:52:53.809Z",
+          "updated_at": "2023-06-27T15:52:53.809Z",
+          "display_at": "2023-06-27T15:52:53.809Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9xvp9q3h7tt1",
           "status": "identified",
@@ -2753,6 +2773,134 @@
       ],
       "scheduled_for": "2023-07-13T19:00:00.000Z",
       "scheduled_until": "2023-07-14T01:00:00.000Z"
+    },
+    {
+      "id": "f05ltt1wt328",
+      "name": "[Global][DedicatedServers] - CentOS 7 CPanel EoL",
+      "status": "in_progress",
+      "created_at": "2023-06-27T15:34:22.293Z",
+      "updated_at": "2023-06-27T15:38:24.721Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bcgr9mzflzl4",
+      "started_at": "2023-06-27T15:34:22.279Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "slbzrplnqc7p",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "f05ltt1wt328",
+          "created_at": "2023-06-27T15:38:24.716Z",
+          "updated_at": "2023-06-27T15:38:24.716Z",
+          "display_at": "2023-06-27T15:38:24.716Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1k44dgv6zl53",
+          "status": "scheduled",
+          "body": "<b>End time :</b> 31/07/2023 00:00 UTC \n<b>Service impact :</b> centos7-cpanel won't be available as deployment anymore\n<b>Related Documentation :</b> <a href=\"https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/\">cPanel Deprecation Plan</a>\n\nWe will support existing CentOS 7 and CloudLinux 7 servers running cPanel & WHM version 110 until these operating systems reach their EoL. \nWe will only support CentOS 7 through LTS version 110.\n\nNew cPanel & WHM installations and upgrades on CentOS 7 and CloudLinux 7 in cPanel & WHM version 112 won't be available.",
+          "incident_id": "f05ltt1wt328",
+          "created_at": "2023-06-27T15:34:22.357Z",
+          "updated_at": "2023-06-27T15:34:22.357Z",
+          "display_at": "2023-06-27T15:34:22.357Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2023-06-27T15:38:24.624Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2023-06-27T15:38:24.647Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2023-06-27T15:38:24.669Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-06-27T15:35:00.000Z",
+      "scheduled_until": "2023-06-27T16:35:00.000Z"
     },
     {
       "id": "cy9024g833sv",
