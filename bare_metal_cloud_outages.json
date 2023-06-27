@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-27T13:52:25.424Z"
+    "updated_at": "2023-06-27T14:29:56.861Z"
   },
   "components": [
     {
@@ -306,9 +306,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2023-06-26T04:23:03.287Z",
+      "updated_at": "2023-06-27T14:21:03.719Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -806,9 +806,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2023-06-26T12:02:10.483Z",
+      "updated_at": "2023-06-27T14:29:56.801Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1288,7 +1288,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2255,6 +2255,58 @@
   ],
   "incidents": [
     {
+      "id": "0zn3glbjfh4q",
+      "name": "[BHS8][DedicatedServers] - Rack BHS0811B02A",
+      "status": "identified",
+      "created_at": "2023-06-27T14:21:03.682Z",
+      "updated_at": "2023-06-27T14:21:03.776Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/rzn9w8h3xcbq",
+      "started_at": "2023-06-27T14:21:03.673Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "9xvp9q3h7tt1",
+          "status": "identified",
+          "body": "<b>Start time :</b> 27/06/2023 14:00 UTC\n<b>Service impact :</b> Servers in the rack BHS0811B02A are no longer responding.\n<b>Root cause :</b> Public switch malfunction.\n<b>Ongoing actions :</b> Our teams identified the incident and solved it.",
+          "incident_id": "0zn3glbjfh4q",
+          "created_at": "2023-06-27T14:21:03.774Z",
+          "updated_at": "2023-06-27T14:21:03.774Z",
+          "display_at": "2023-06-27T14:21:03.774Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2023-06-27T14:21:03.719Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "0cccbp00qzyz",
       "name": "[BHS4][DedicatedServers] - Rack T04D26",
       "status": "investigating",
@@ -2296,138 +2348,6 @@
           "created_at": "2021-07-09T07:33:30.396Z",
           "updated_at": "2023-06-27T13:52:25.358Z",
           "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
-    },
-    {
-      "id": "fcwl3mwh75b9",
-      "name": "[GRA1][DedicatedServers] - Racks G122A08 G122A09",
-      "status": "identified",
-      "created_at": "2023-06-26T12:02:10.462Z",
-      "updated_at": "2023-06-27T03:54:06.102Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/3c2ksghv1693",
-      "started_at": "2023-06-26T12:02:10.456Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "0jp6x7pd49sl",
-          "status": "identified",
-          "body": "Servers in rack G122A09 are reachable.\nOur teams are currently working on servers in rack G122A08.",
-          "incident_id": "fcwl3mwh75b9",
-          "created_at": "2023-06-27T03:54:06.100Z",
-          "updated_at": "2023-06-27T03:54:06.100Z",
-          "display_at": "2023-06-27T03:54:06.100Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "gbn293k62bcr",
-          "status": "identified",
-          "body": "Our teams always work to provide service as quickly as possible.",
-          "incident_id": "fcwl3mwh75b9",
-          "created_at": "2023-06-26T18:56:05.006Z",
-          "updated_at": "2023-06-26T18:56:05.006Z",
-          "display_at": "2023-06-26T18:56:05.006Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "42rd7ldm4jxy",
-          "status": "identified",
-          "body": "<b>Update :</b> Network equipement have been replace in rack G122A09.\nOur teams are currently focusing on the servers that are still unavailable, on a case-by-case basis, in order to restore service as quickly as possible.",
-          "incident_id": "fcwl3mwh75b9",
-          "created_at": "2023-06-26T16:48:03.513Z",
-          "updated_at": "2023-06-26T16:48:03.513Z",
-          "display_at": "2023-06-26T16:48:03.513Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tggdqp9sf670",
-          "status": "identified",
-          "body": "<b>Update :</b> Our teams need to replace network equipment.",
-          "incident_id": "fcwl3mwh75b9",
-          "created_at": "2023-06-26T15:17:24.291Z",
-          "updated_at": "2023-06-26T15:17:24.291Z",
-          "display_at": "2023-06-26T15:17:24.291Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8k41kjzfbbk2",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 26/06/2023 11:58 UTC\n<b>Service impact :</b> Servers in the racks G122A08 and G122A09 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
-          "incident_id": "fcwl3mwh75b9",
-          "created_at": "2023-06-26T12:02:10.527Z",
-          "updated_at": "2023-06-26T12:02:10.527Z",
-          "display_at": "2023-06-26T12:02:10.527Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-06-26T12:02:10.483Z",
-          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
