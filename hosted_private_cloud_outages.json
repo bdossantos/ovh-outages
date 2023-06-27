@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-26T14:26:17.282Z"
+    "updated_at": "2023-06-27T14:57:23.596Z"
   },
   "components": [
     {
@@ -2159,6 +2159,60 @@
       "scheduled_until": "2023-07-04T07:00:00.000Z"
     },
     {
+      "id": "xl014gpfbtxd",
+      "name": "[BHS6][Hosted Private Cloud] - Network equipement operation",
+      "status": "scheduled",
+      "created_at": "2023-06-15T00:22:33.402Z",
+      "updated_at": "2023-06-15T00:22:33.440Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/704shcd1z93n",
+      "started_at": "2023-06-15T00:22:33.396Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "1h5t2gv6s73n",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 05/07/2023 03:00 UTC \n<b>End time :</b> 05/07/2023 07:00 UTC \n<b>Service impact :</b> Customers might experience twice of a few seconds of input/output freeze for storage equipment during the maintenance. \n<b>Service improvement  :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
+          "incident_id": "xl014gpfbtxd",
+          "created_at": "2023-06-15T00:22:33.438Z",
+          "updated_at": "2023-06-15T00:22:33.438Z",
+          "display_at": "2023-06-15T00:22:33.438Z",
+          "affected_components": [
+            {
+              "code": "n1fybgrv7djj",
+              "name": "VMware Private Cloud || BHS - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n1fybgrv7djj",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:41.125Z",
+          "updated_at": "2023-04-18T11:59:01.796Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-05T03:00:00.000Z",
+      "scheduled_until": "2023-07-05T07:00:00.000Z"
+    },
+    {
       "id": "p857sxkqnp15",
       "name": "[RBX7][Hosted Private Cloud] - Network equipement operation",
       "status": "scheduled",
@@ -2213,30 +2267,48 @@
       "scheduled_until": "2023-07-05T07:00:00.000Z"
     },
     {
-      "id": "xl014gpfbtxd",
-      "name": "[BHS6][Hosted Private Cloud] - Network equipement operation",
+      "id": "m1n36qmdwsqv",
+      "name": "[BHS1/ERI1/LIM1/RBX8][HostedPrivateCloud] - Upgrade Storage Equipement",
       "status": "scheduled",
-      "created_at": "2023-06-15T00:22:33.402Z",
-      "updated_at": "2023-06-15T00:22:33.440Z",
+      "created_at": "2023-06-27T14:57:23.546Z",
+      "updated_at": "2023-06-27T14:57:23.594Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/704shcd1z93n",
-      "started_at": "2023-06-15T00:22:33.396Z",
+      "shortlink": "https://stspg.io/vmc993nfhc63",
+      "started_at": "2023-06-27T14:57:23.532Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "1h5t2gv6s73n",
+          "id": "wjm0qbtqrwrq",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 05/07/2023 03:00 UTC \n<b>End time :</b> 05/07/2023 07:00 UTC \n<b>Service impact :</b> Customers might experience twice of a few seconds of input/output freeze for storage equipment during the maintenance. \n<b>Service improvement  :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
-          "incident_id": "xl014gpfbtxd",
-          "created_at": "2023-06-15T00:22:33.438Z",
-          "updated_at": "2023-06-15T00:22:33.438Z",
-          "display_at": "2023-06-15T00:22:33.438Z",
+          "body": "<b>Start time :</b> 05/07/2023 08:00 UTC \n<b>End time :</b> 05/07/2023 11:00 UTC \n<b>Service impact :</b>  A few seconds of I/O freeze when the service will do a switchover (2 times). \n<b>Service improvement :</b> As part of our continuous improvement policy, we will upgrade some veam backup servers.",
+          "incident_id": "m1n36qmdwsqv",
+          "created_at": "2023-06-27T14:57:23.592Z",
+          "updated_at": "2023-06-27T14:57:23.592Z",
+          "display_at": "2023-06-27T14:57:23.592Z",
           "affected_components": [
             {
-              "code": "n1fybgrv7djj",
-              "name": "VMware Private Cloud || BHS - Storage",
+              "code": "yvpvpj1xfh49",
+              "name": "Veeam || BHS - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "36vyrgyn4rzg",
+              "name": "Veeam || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2v7tg400qz4d",
+              "name": "Veeam || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rbkzk020ks7g",
+              "name": "Veeam || RBX - Storage",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2248,23 +2320,68 @@
       ],
       "components": [
         {
-          "id": "n1fybgrv7djj",
+          "id": "yvpvpj1xfh49",
           "name": "Storage",
           "status": "operational",
-          "created_at": "2021-07-21T08:42:41.125Z",
-          "updated_at": "2023-04-18T11:59:01.796Z",
+          "created_at": "2021-07-21T08:41:15.684Z",
+          "updated_at": "2023-06-14T21:28:23.185Z",
           "position": 4,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "qb95r65p6tlg",
+          "group_id": "pfgp8y6j65vx",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "36vyrgyn4rzg",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:36.243Z",
+          "updated_at": "2023-06-15T09:55:43.263Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "6ypc71b8h9yh",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2v7tg400qz4d",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:52.785Z",
+          "updated_at": "2023-06-15T09:55:43.279Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "273hhhft25bz",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rbkzk020ks7g",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:59.780Z",
+          "updated_at": "2023-06-22T14:25:36.658Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "xd6whl7x48n9",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-07-05T03:00:00.000Z",
-      "scheduled_until": "2023-07-05T07:00:00.000Z"
+      "scheduled_for": "2023-07-05T08:00:00.000Z",
+      "scheduled_until": "2023-07-05T11:00:00.000Z"
     },
     {
       "id": "svy5skk5my1t",
