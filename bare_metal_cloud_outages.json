@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-28T07:24:43.149Z"
+    "updated_at": "2023-06-28T07:44:47.084Z"
   },
   "components": [
     {
@@ -411,9 +411,9 @@
     {
       "id": "0mqm7k03cn7d",
       "name": "Zone APAC",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:08.999Z",
-      "updated_at": "2023-01-04T13:48:58.670Z",
+      "updated_at": "2023-06-28T07:41:50.472Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -426,7 +426,7 @@
     {
       "id": "nll849j8p6nq",
       "name": "Dedicated Servers || Delivery",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:11.312Z",
       "updated_at": "2023-05-16T11:45:36.925Z",
       "position": 2,
@@ -2255,33 +2255,76 @@
   ],
   "incidents": [
     {
-      "id": "ddpy7sjhw8d1",
-      "name": "VPS - GRA8 - host1398554",
-      "status": "investigating",
-      "created_at": "2023-06-28T07:24:43.092Z",
-      "updated_at": "2023-06-28T07:24:43.147Z",
+      "id": "9bxwl71rfkv2",
+      "name": "[SYD/SGP][Delivery] - APAC",
+      "status": "identified",
+      "created_at": "2023-06-28T07:41:50.448Z",
+      "updated_at": "2023-06-28T07:44:47.078Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/4ffwf5m9v1w8",
-      "started_at": "2023-06-28T07:24:43.086Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/tmvfn68d88ck",
+      "started_at": "2023-06-28T07:41:50.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "yyjww637gbbk",
+          "id": "lbyv3nymg6dp",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "9bxwl71rfkv2",
+          "created_at": "2023-06-28T07:42:00.571Z",
+          "updated_at": "2023-06-28T07:42:00.571Z",
+          "display_at": "2023-06-28T07:42:00.571Z",
+          "affected_components": [
+            {
+              "code": "0mqm7k03cn7d",
+              "name": "Dedicated Servers || Delivery - Zone APAC",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fw1vpsj4f808",
           "status": "investigating",
-          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1398554\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps-22623235.vps.ovh.net\nvps-2bfced3b.vps.ovh.net\nvps-47fa08f7.vps.ovh.net\nvps-f8432a22.vps.ovh.net\nvps-ad634b1b.vps.ovh.net\nvps-d1af6a0e.vps.ovh.net\nvps-2acf5836.vps.ovh.net\nvps-c0d0c7f0.vps.ovh.net\nvps-fac6ee9d.vps.ovh.net\nvps-1702d37e.vps.ovh.net\nvps-880f46ea.vps.ovh.net\nvps-32db0a12.vps.ovh.net\nvps-7b065c3d.vps.ovh.net\nvps-59c5d771.vps.ovh.net\nvps-07b6cc76.vps.ovh.net\nvps-0c1a5a98.vps.ovh.net\nvps-4b1c3938.vps.ovh.net\nvps-731f1cff.vps.ovh.net\nvps-cfd3f1be.vps.ovh.net\nvps-f0771073.vps.ovh.net\nvps-96bd5709.vps.ovh.net\nvps-9543d4d8.vps.ovh.net\nvps-4755bee5.vps.ovh.net\nvps-09f547a3.vps.ovh.net\nvps-ce6523d4.vps.ovh.net\nvps-ab7a26fd.vps.ovh.net\nvps-76e947a5.vps.ovh.net\nvps-072d58cb.vps.ovh.net\nvps-373cb5aa.vps.ovh.net\nvps-d8ea77a1.vps.ovh.net\nvps-aa41b5e0.vps.ovh.net\nvps-ce55d245.vps.ovh.net\nvps-67cf9a9b.vps.ovh.net\nvps-2184b28c.vps.ovh.net\nvps-8df9ddb0.vps.ovh.net\nvps-49542e7f.vps.ovh.net\nvps-beb8ed31.vps.ovh.net\nvps-c48e2869.vps.ovh.net\nvps-ac741951.vps.ovh.net\nvps-2f521818.vps.ovh.net",
-          "incident_id": "ddpy7sjhw8d1",
-          "created_at": "2023-06-28T07:24:43.145Z",
-          "updated_at": "2023-06-28T07:24:43.145Z",
-          "display_at": "2023-06-28T07:24:43.145Z",
-          "affected_components": null,
+          "body": "<b>Start time :</b> 27/06/2023 07:08 UTC\n<b>Service impact :</b> Lifecycle of APAC servers are unreachable (delivery/suspension/deletion)\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "9bxwl71rfkv2",
+          "created_at": "2023-06-28T07:41:50.509Z",
+          "updated_at": "2023-06-28T07:44:47.018Z",
+          "display_at": "2023-06-28T07:41:50.000Z",
+          "affected_components": [
+            {
+              "code": "0mqm7k03cn7d",
+              "name": "Dedicated Servers || Delivery - Zone APAC",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": []
+      "components": [
+        {
+          "id": "0mqm7k03cn7d",
+          "name": "Zone APAC",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:08.999Z",
+          "updated_at": "2023-06-28T07:41:50.472Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "nll849j8p6nq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
     }
   ],
   "scheduled_maintenances": [
@@ -3444,7 +3487,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
