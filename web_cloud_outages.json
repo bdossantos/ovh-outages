@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-06-30T11:56:19.524Z"
+    "updated_at": "2023-07-03T14:14:58.338Z"
   },
   "components": [
     {
@@ -1570,6 +1570,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "5yjpl8g114px",
+      "name": "Billing",
+      "status": "degraded_performance",
+      "created_at": "2023-07-03T14:12:19.890Z",
+      "updated_at": "2023-07-03T14:14:58.298Z",
+      "position": 7,
+      "description": null,
+      "showcase": false,
+      "start_date": "2023-07-03",
+      "group_id": "sch37jd056nk",
+      "page_id": "gw3vvyn2b3bh",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "hfl47zm4cfwg",
       "name": "Cluster011",
       "status": "operational",
@@ -2440,7 +2455,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2023-05-16T12:10:06.308Z",
       "position": 24,
@@ -2457,7 +2472,8 @@
         "p6pj26mbsqvv",
         "d8pdkwqbmz06",
         "5k7llfjmccm4",
-        "d167jln8tkv5"
+        "d167jln8tkv5",
+        "5yjpl8g114px"
       ]
     },
     {
@@ -2728,6 +2744,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "2x5cqw8666wd",
+      "name": "[GLOBAL][Web Cloud] - VoIP Billing",
+      "status": "identified",
+      "created_at": "2023-07-03T14:14:58.275Z",
+      "updated_at": "2023-07-03T14:14:58.336Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/m5mwmfnz33fd",
+      "started_at": "2023-07-03T14:14:58.269Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "l2s5ql1kpkdl",
+          "status": "identified",
+          "body": "<b>Start time :</b> 01/07/2023 00:00 UTC\n<b>Service impact :</b> Some customers may have calls which have been invoiced twice for the following dates:\n⁃ 26/05/2023 to 29/05/2023\n⁃ 12/06/2023\n<b>Ongoing actions :</b> We are currently working to solve the problem and preparing refunds for impacted customers.",
+          "incident_id": "2x5cqw8666wd",
+          "created_at": "2023-07-03T14:14:58.334Z",
+          "updated_at": "2023-07-03T14:14:58.334Z",
+          "display_at": "2023-07-03T14:14:58.334Z",
+          "affected_components": [
+            {
+              "code": "5yjpl8g114px",
+              "name": "VoIP || Services - Billing",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5yjpl8g114px",
+          "name": "Billing",
+          "status": "degraded_performance",
+          "created_at": "2023-07-03T14:12:19.890Z",
+          "updated_at": "2023-07-03T14:14:58.298Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-03",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "1vdq66dw30gv",
       "name": "[GRA2][Collaborative solutions] - Mailjet email perturbation on cluster007",
