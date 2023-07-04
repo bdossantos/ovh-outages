@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-04T01:29:59.686Z"
+    "updated_at": "2023-07-04T02:16:46.338Z"
   },
   "components": [
     {
@@ -5276,365 +5276,33 @@
   ],
   "incidents": [
     {
-      "id": "853zm0j8q1j4",
-      "name": "[EU/APAC][PublicCloud] - Keystone (authentification) API",
-      "status": "monitoring",
-      "created_at": "2023-07-03T21:52:32.418Z",
-      "updated_at": "2023-07-04T01:29:59.683Z",
-      "monitoring_at": "2023-07-04T01:00:50.000Z",
+      "id": "s4dcw6x7434k",
+      "name": "PCI - DE1 - host979930",
+      "status": "investigating",
+      "created_at": "2023-07-04T02:16:46.282Z",
+      "updated_at": "2023-07-04T02:16:46.335Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
-      "shortlink": "https://stspg.io/7kfgrdf103lh",
-      "started_at": "2023-07-03T21:52:32.408Z",
+      "shortlink": "https://stspg.io/6rbrdq86tg2p",
+      "started_at": "2023-07-04T02:16:46.274Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "mjccq4smjjvl",
-          "status": "monitoring",
-          "body": "<b>Start time :</b> 03/07/2023 21:04 UTC\n<b>Root cause :</b> Keystone (authentication) issue.\n<b>Service status :</b> The situation is back to normal, the service is running nominally.\n<b>Ongoing actions :</b> Monitoring",
-          "incident_id": "853zm0j8q1j4",
-          "created_at": "2023-07-04T01:00:50.718Z",
-          "updated_at": "2023-07-04T01:29:59.667Z",
-          "display_at": "2023-07-04T01:00:50.000Z",
-          "affected_components": [
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "9m4wdr70k60d",
-              "name": "Storage || Object storage - DE",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "q98h9rl6tk0w",
-              "name": "Storage || Object storage - RBX",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "42rlkfllkbpy",
-              "name": "Storage || Object storage - SGP",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "lh1hb31mp6kh",
-              "name": "Storage || Object storage - SYD",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "13lcmbp3cvg7",
-              "name": "Storage || Object storage - UK",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            },
-            {
-              "code": "pkcg4178zmpr",
-              "name": "Storage || Object storage - WAW",
-              "old_status": "degraded_performance",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "yv2fx65hhyw3",
+          "id": "lrd8j8mp47d2",
           "status": "investigating",
-          "body": "We are continuing to investigate this issue.",
-          "incident_id": "853zm0j8q1j4",
-          "created_at": "2023-07-03T22:00:03.997Z",
-          "updated_at": "2023-07-03T22:00:03.997Z",
-          "display_at": "2023-07-03T22:00:03.997Z",
-          "affected_components": [
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "9m4wdr70k60d",
-              "name": "Storage || Object storage - DE",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "q98h9rl6tk0w",
-              "name": "Storage || Object storage - RBX",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "42rlkfllkbpy",
-              "name": "Storage || Object storage - SGP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "lh1hb31mp6kh",
-              "name": "Storage || Object storage - SYD",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "13lcmbp3cvg7",
-              "name": "Storage || Object storage - UK",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "pkcg4178zmpr",
-              "name": "Storage || Object storage - WAW",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3xft10h460wg",
-          "status": "investigating",
-          "body": "We are continuing to investigate this issue.",
-          "incident_id": "853zm0j8q1j4",
-          "created_at": "2023-07-03T21:56:34.468Z",
-          "updated_at": "2023-07-03T21:56:34.468Z",
-          "display_at": "2023-07-03T21:56:34.468Z",
-          "affected_components": [
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "9m4wdr70k60d",
-              "name": "Storage || Object storage - DE",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "q98h9rl6tk0w",
-              "name": "Storage || Object storage - RBX",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "42rlkfllkbpy",
-              "name": "Storage || Object storage - SGP",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "lh1hb31mp6kh",
-              "name": "Storage || Object storage - SYD",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "pkcg4178zmpr",
-              "name": "Storage || Object storage - WAW",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0rfkf0ks2khz",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 03/07/2023 21:04 UTC\n<b>Service impact :</b> Keystone ( authentification) API are temporary unavailable\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
-          "incident_id": "853zm0j8q1j4",
-          "created_at": "2023-07-03T21:52:32.530Z",
-          "updated_at": "2023-07-03T21:52:32.530Z",
-          "display_at": "2023-07-03T21:52:32.530Z",
-          "affected_components": [
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "9m4wdr70k60d",
-              "name": "Storage || Object storage - DE",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "q98h9rl6tk0w",
-              "name": "Storage || Object storage - RBX",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "42rlkfllkbpy",
-              "name": "Storage || Object storage - SGP",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost979930\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\n98559caf-363c-4866-ab13-62c29a695fba\n5e3f95e6-fdd3-4886-ac14-f6070977e418\nfee91825-c652-4779-a44b-87c83cfb6654\n0c1ddf59-25db-4e46-af3d-8260733b1efb\n7be53d16-a47e-4ea3-a945-897264fc2188\n3f7e2773-1aac-4dae-9e70-dbc3a07cb37e\na1f89311-92b3-41af-94f9-92ae0d587bbd\n9b23eb00-f07c-446e-ae20-039fb9e914bf",
+          "incident_id": "s4dcw6x7434k",
+          "created_at": "2023-07-04T02:16:46.332Z",
+          "updated_at": "2023-07-04T02:16:46.332Z",
+          "display_at": "2023-07-04T02:16:46.332Z",
+          "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         }
       ],
-      "components": [
-        {
-          "id": "k86vmhcsnjtj",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2023-07-04T01:00:50.604Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "9m4wdr70k60d",
-          "name": "DE",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:47.972Z",
-          "updated_at": "2023-07-04T01:00:50.616Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "q98h9rl6tk0w",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2023-03-07T14:29:12.630Z",
-          "updated_at": "2023-07-04T01:00:50.628Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-03-07",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2pk5hxxqkq21",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2023-07-04T01:00:50.639Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "42rlkfllkbpy",
-          "name": "SGP",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:59.157Z",
-          "updated_at": "2023-07-04T01:00:50.650Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "lh1hb31mp6kh",
-          "name": "SYD",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:56.096Z",
-          "updated_at": "2023-07-04T01:00:50.662Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "13lcmbp3cvg7",
-          "name": "UK",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:43.824Z",
-          "updated_at": "2023-07-04T01:00:50.673Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "pkcg4178zmpr",
-          "name": "WAW",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:51.088Z",
-          "updated_at": "2023-07-04T01:00:50.684Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ]
+      "components": []
     }
   ],
   "scheduled_maintenances": [
