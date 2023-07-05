@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-05T09:34:34.519Z"
+    "updated_at": "2023-07-05T10:28:54.938Z"
   },
   "components": [
     {
@@ -5276,11 +5276,40 @@
   ],
   "incidents": [
     {
+      "id": "qqhj3mnp0907",
+      "name": "PCI - GRA3 - host799217",
+      "status": "investigating",
+      "created_at": "2023-07-05T10:28:54.869Z",
+      "updated_at": "2023-07-05T10:28:54.934Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/34nxpx4sshcl",
+      "started_at": "2023-07-05T10:28:54.862Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "pwcsw1cwkzdb",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 1 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost799217\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\ncd6bfc46-86c2-476f-8586-bb4161617f36",
+          "incident_id": "qqhj3mnp0907",
+          "created_at": "2023-07-05T10:28:54.931Z",
+          "updated_at": "2023-07-05T10:28:54.931Z",
+          "display_at": "2023-07-05T10:28:54.931Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    },
+    {
       "id": "1shkj36zsphs",
       "name": "[Global][Publiccloud] - Keystone (authentication) API",
       "status": "identified",
       "created_at": "2023-07-05T04:44:19.349Z",
-      "updated_at": "2023-07-05T09:34:34.508Z",
+      "updated_at": "2023-07-05T10:03:42.863Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -5288,6 +5317,518 @@
       "started_at": "2023-07-05T04:44:19.308Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "fwgqc1q3qq7h",
+          "status": "identified",
+          "body": "On July 5th 06:03 am CEST, OVHcloud has identified a partial outage on its services affecting customers of the Public Cloud universe. Services including Control Panel, Kubernetes, Private Registry, VPS were partially unavailable. At 10:05am, following actions from our fully mobilized technical teams, services were back to a nominal state concerning Control Panel, Kubernetes, Private Registry and VPS.\n\nSome services might still be impacted. They should gradually get back to nominal state thanks to the teams efforts.\n\nWe continue to actively monitor the situation with impacted services. We will communicate more information on the cause of the incident as our investigations progress.\n\nWe sincerely apologize to all affected customers.",
+          "incident_id": "1shkj36zsphs",
+          "created_at": "2023-07-05T10:03:42.856Z",
+          "updated_at": "2023-07-05T10:03:42.856Z",
+          "display_at": "2023-07-05T10:03:42.856Z",
+          "affected_components": [
+            {
+              "code": "zdzrlnr3jzsv",
+              "name": "Databases || Kafka - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "p6jzt6sqhz2v",
+              "name": "Databases || Kafka - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "yf0jp3jjvnh1",
+              "name": "Databases || Kafka - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y1hry0506829",
+              "name": "Databases || Kafka - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1jw3tw90ct50",
+              "name": "Databases || Kafka - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "16d3nfc41tnc",
+              "name": "Databases || Kafka - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gdvlmsm0bmqt",
+              "name": "AI & Machine Learning || AI Notebooks - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "mvhys3nh67s1",
+              "name": "AI & Machine Learning || AI Notebooks - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "yfhs5qjtqy5f",
+              "name": "Compute - Instance || WAW - WAW1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "h0z97m0y6kkc",
+              "name": "AI & Machine Learning || AI Deploy - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "s4hx70v7szy0",
+              "name": "AI & Machine Learning || AI Deploy - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2f7vd120ygt3",
+              "name": "Compute - Instance || GRA - GRA5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "gyxq55djvgqg",
+              "name": "Compute - Instance || GRA - GRA9",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4mjqkxrb0wns",
+              "name": "Databases || Cassandra - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "prrjzmbmpnb5",
+              "name": "Databases || Cassandra - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "wh77bh6rk65r",
+              "name": "Databases || Cassandra - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hrx6z2p9r3sc",
+              "name": "Databases || Cassandra - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "hy5jy5w9y1fm",
+              "name": "Databases || Cassandra - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "mv3612qw4h28",
+              "name": "Databases || Cassandra - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "0hpxc65n3j2y",
+              "name": "Compute - Instance || SBG - SBG5",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "p5srmsq3fmp8",
+              "name": "Compute - Instance || SBG - SBG7",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "ymw7jrhnd4jm",
+              "name": "AI & Machine Learning || AI Training - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2r15385mdjxq",
+              "name": "AI & Machine Learning || AI Training - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "107b4jv5jbfx",
+              "name": "Databases || Grafana - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "lbrysv695j1m",
+              "name": "Databases || Grafana - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q6nhgj1scfd7",
+              "name": "Databases || Grafana - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3xz1pqyfkhh1",
+              "name": "Databases || Grafana - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8f8hrd5bpwwh",
+              "name": "Databases || Grafana - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zb6hr7plrbb4",
+              "name": "Databases || Grafana - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "sl3vb48yjshs",
+              "name": "Databases || Kafka Connect - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "f27kcn7k34hf",
+              "name": "Databases || Kafka Connect - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9yqqvlvtp2m9",
+              "name": "Databases || Kafka Connect - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "htwk7g1d5c7z",
+              "name": "Databases || Kafka Connect - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vlgt3vft0m9v",
+              "name": "Databases || Kafka Connect - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8y51nw8d2vjm",
+              "name": "Databases || Kafka Connect - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "32kq4f1cdxp4",
+              "name": "Databases || Kafka MirrorMaker - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "588mlkb658cv",
+              "name": "Databases || Kafka MirrorMaker - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pfdvxp8lm913",
+              "name": "Databases || Kafka MirrorMaker - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8l90s0s5y50c",
+              "name": "Databases || Kafka MirrorMaker - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bs4j7csswy4d",
+              "name": "Databases || Kafka MirrorMaker - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "589kmcwtxht8",
+              "name": "Databases || Kafka MirrorMaker - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "4lzd6zqm0hb3",
+              "name": "Databases || MongoDB - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0szxrdyjn1jz",
+              "name": "Databases || MongoDB - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "760ft5m1mk7s",
+              "name": "Databases || MongoDB - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "nv25wqxhx7kq",
+              "name": "Databases || MongoDB - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0pj0zrgjlnhp",
+              "name": "Databases || MongoDB - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "ml5nwqkj7805",
+              "name": "Databases || MongoDB - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gsdqf0dcl2z2",
+              "name": "Databases || MySQL - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q1cjkqfr649w",
+              "name": "Databases || MySQL - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5yz5x89vb8gg",
+              "name": "Databases || MySQL - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5dcvc6s4d4rr",
+              "name": "Databases || MySQL - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "vxnmkz24113s",
+              "name": "Databases || MySQL - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "z95t4l3vz0bm",
+              "name": "Databases || MySQL - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zj7t886ky8wv",
+              "name": "Databases || OpenSearch - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "lkmhgm44cbk1",
+              "name": "Databases || OpenSearch - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "bl3q6fp98svt",
+              "name": "Databases || OpenSearch - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rfwcp60crxs9",
+              "name": "Databases || OpenSearch - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "44p3613qfp98",
+              "name": "Databases || OpenSearch - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "khhrk76s57hf",
+              "name": "Databases || OpenSearch - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "c71wld8bwy5k",
+              "name": "Databases || PostgreSQL - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k7rpdll3t1xr",
+              "name": "Databases || PostgreSQL - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5m5v67m3y5qq",
+              "name": "Databases || PostgreSQL - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "xtz7hwxcvxmx",
+              "name": "Databases || PostgreSQL - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "jx9chj9gttk4",
+              "name": "Databases || PostgreSQL - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1djy1p3h9t4t",
+              "name": "Databases || PostgreSQL - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2c2bh5hrd2jy",
+              "name": "Databases || Redis - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "252j5h644szj",
+              "name": "Databases || Redis - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1vy7xggc5ksv",
+              "name": "Databases || Redis - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "frszxqb8yk35",
+              "name": "Databases || Redis - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "kqq44dl4nktd",
+              "name": "Databases || Redis - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "m4drwrhd6ng7",
+              "name": "Databases || Redis - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "prmk68599q05",
+              "name": "Databases || M3 Aggregator - BHS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "sy0s9j086c55",
+              "name": "Databases || M3 Aggregator - DE",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "84z035bm33bf",
+              "name": "Databases || M3 Aggregator - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5cg61jmz305y",
+              "name": "Databases || M3 Aggregator - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9yk93q91xss8",
+              "name": "Databases || M3 Aggregator - UK",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "xvcjt5bbfv4j",
+              "name": "Databases || M3 Aggregator - WAW",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x7y61m5wx9mb",
           "status": "identified",
