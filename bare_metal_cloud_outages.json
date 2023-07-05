@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-05T02:28:27.085Z"
+    "updated_at": "2023-07-05T06:43:29.770Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "rc9c9ty035s8",
       "name": "ERI",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:45.995Z",
-      "updated_at": "2023-02-28T19:52:47.023Z",
+      "updated_at": "2023-07-05T06:39:27.825Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -491,9 +491,9 @@
     {
       "id": "q5r6wtw0dm70",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:46.898Z",
-      "updated_at": "2023-02-28T19:52:47.036Z",
+      "updated_at": "2023-07-05T06:39:27.847Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -776,9 +776,9 @@
     {
       "id": "tp2f6kdp94ch",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:47.835Z",
-      "updated_at": "2023-02-28T19:52:47.049Z",
+      "updated_at": "2023-07-05T06:39:27.866Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1033,9 +1033,9 @@
     {
       "id": "2xp3hdd5j6mj",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:48.752Z",
-      "updated_at": "2023-02-28T19:52:47.061Z",
+      "updated_at": "2023-07-05T06:39:27.885Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1183,9 +1183,9 @@
     {
       "id": "jyz5twbznybt",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:49.726Z",
-      "updated_at": "2023-02-28T19:52:47.073Z",
+      "updated_at": "2023-07-05T06:39:27.905Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2147,7 +2147,7 @@
     {
       "id": "7bnd2m358xz1",
       "name": "Virtual Private Servers || Delivery",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:54.277Z",
       "updated_at": "2023-05-16T11:47:19.543Z",
       "position": 18,
@@ -2253,7 +2253,144 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9x71387xkp9l",
+      "name": "[Global][VirtualPrivateServers] - Modification Creation Suppression",
+      "status": "investigating",
+      "created_at": "2023-07-05T06:39:27.770Z",
+      "updated_at": "2023-07-05T06:39:27.967Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/77zw4q50rrmh",
+      "started_at": "2023-07-05T06:39:27.755Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jrm7mddkhhwf",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 05/07/2023 06:00 UTC\n<b>Service impact :</b> Modification Creation Suppression of VPS are unavailable\n<b>Related Incident :</b> <a href=\"https://public-cloud.status-ovhcloud.com/incidents/1shkj36zsphs\">[EU/BHS/APAC][Publiccloud] - Keystone (authentication) API</a>\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "9x71387xkp9l",
+          "created_at": "2023-07-05T06:39:27.963Z",
+          "updated_at": "2023-07-05T06:39:27.963Z",
+          "display_at": "2023-07-05T06:39:27.963Z",
+          "affected_components": [
+            {
+              "code": "rc9c9ty035s8",
+              "name": "Virtual Private Servers || Delivery - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "q5r6wtw0dm70",
+              "name": "Virtual Private Servers || Delivery - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "tp2f6kdp94ch",
+              "name": "Virtual Private Servers || Delivery - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2xp3hdd5j6mj",
+              "name": "Virtual Private Servers || Delivery - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jyz5twbznybt",
+              "name": "Virtual Private Servers || Delivery - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rc9c9ty035s8",
+          "name": "ERI",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:45.995Z",
+          "updated_at": "2023-07-05T06:39:27.825Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q5r6wtw0dm70",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:46.898Z",
+          "updated_at": "2023-07-05T06:39:27.847Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tp2f6kdp94ch",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:47.835Z",
+          "updated_at": "2023-07-05T06:39:27.866Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2xp3hdd5j6mj",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:48.752Z",
+          "updated_at": "2023-07-05T06:39:27.885Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jyz5twbznybt",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:49.726Z",
+          "updated_at": "2023-07-05T06:39:27.905Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7bnd2m358xz1",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tmcbcdkcy4yr",
@@ -3602,7 +3739,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
