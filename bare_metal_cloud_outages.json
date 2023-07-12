@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-12T13:06:58.474Z"
+    "updated_at": "2023-07-12T13:53:42.746Z"
   },
   "components": [
     {
@@ -2269,7 +2269,37 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "mj6qrtv2n8wt",
+      "name": "VPS - GRA6 - host1088314",
+      "status": "investigating",
+      "created_at": "2023-07-12T13:48:44.894Z",
+      "updated_at": "2023-07-12T13:48:44.938Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ktbw9f6yylgs",
+      "started_at": "2023-07-12T13:48:44.888Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "ydtqtmpzxhx5",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 4 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1088314\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps804260\nvps803363\nvps803984\nvps803983\nvps803761\nvps804975\nvps803833\nvps804792\nvps804535\nvps804445\nvps804301\nvps804298\nvps803977\nvps803963\nvps803348\nvps802767",
+          "incident_id": "mj6qrtv2n8wt",
+          "created_at": "2023-07-12T13:48:44.935Z",
+          "updated_at": "2023-07-12T13:48:44.935Z",
+          "display_at": "2023-07-12T13:48:44.935Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tvdtlngfqp6y",
@@ -2549,6 +2579,60 @@
       ],
       "scheduled_for": "2023-07-13T19:00:00.000Z",
       "scheduled_until": "2023-07-14T01:00:00.000Z"
+    },
+    {
+      "id": "mf0yktljds84",
+      "name": "[SBG][Storage and Backups] - Enterprise File Storage",
+      "status": "scheduled",
+      "created_at": "2023-07-12T13:53:42.704Z",
+      "updated_at": "2023-07-12T13:53:42.744Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sk4vf4lrtjqv",
+      "started_at": "2023-07-12T13:53:42.699Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "52qsw0cst9hj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/07/2023 04:00 UTC \n<b>End time :</b> 18/07/2023 13:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will update the version of a cluster OS",
+          "incident_id": "mf0yktljds84",
+          "created_at": "2023-07-12T13:53:42.742Z",
+          "updated_at": "2023-07-12T13:53:42.742Z",
+          "display_at": "2023-07-12T13:53:42.742Z",
+          "affected_components": [
+            {
+              "code": "z14kzn6cfzcr",
+              "name": "Storage and Backups || Enterprise File Storage - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z14kzn6cfzcr",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2023-07-12T04:04:00.831Z",
+          "updated_at": "2023-07-12T04:04:00.831Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-12",
+          "group_id": "ml1ztvr7bhjt",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-18T04:00:00.000Z",
+      "scheduled_until": "2023-07-18T13:00:00.000Z"
     },
     {
       "id": "7dk1v5hcc4hq",
