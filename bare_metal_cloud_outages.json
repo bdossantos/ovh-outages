@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-12T20:00:00.902Z"
+    "updated_at": "2023-07-12T20:20:40.029Z"
   },
   "components": [
     {
@@ -2271,40 +2271,11 @@
   ],
   "incidents": [
     {
-      "id": "r9yrjflgfxrc",
-      "name": "VPS - DE2 - host1023116",
-      "status": "investigating",
-      "created_at": "2023-07-12T19:56:44.228Z",
-      "updated_at": "2023-07-12T19:56:44.258Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/vcvxqkmftmmj",
-      "started_at": "2023-07-12T19:56:44.222Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "nwp9463w7m8f",
-          "status": "investigating",
-          "body": "Estimated time to recovery : 4 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1023116\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps763827\nvps669017\nvps794746\nvps814398\nvps557807\nvps807974\nvps804836\nvps800475\nvps798731\nvps796466\nvps795146\nvps790134\nvps783573\nvps734657\nvps762529\nvps761826\nvps747331\nvps732045\nvps731513\nvps708310\nvps697172\nvps680703\nvps673382\nvps666805\nvps665819\nvps660811\nvps653206\nvps655072\nvps652556\nvps632666\nvps632174\nvps583179\nvps619281\nvps617716\nvps611629\nvps601234\nvps598595\nvps589713\nvps591396\nvps591318\nvps568935\nvps563247\nvps562839\nvps516222",
-          "incident_id": "r9yrjflgfxrc",
-          "created_at": "2023-07-12T19:56:44.256Z",
-          "updated_at": "2023-07-12T19:56:44.256Z",
-          "display_at": "2023-07-12T19:56:44.256Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": []
-    },
-    {
       "id": "j1p6hv1l9b3p",
       "name": "[RBX7][DedicatedServers] - R710A01",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-07-12T19:45:03.487Z",
-      "updated_at": "2023-07-12T19:45:03.584Z",
+      "updated_at": "2023-07-12T20:20:40.022Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2312,6 +2283,26 @@
       "started_at": "2023-07-12T19:45:03.478Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "kv2hds70pm56",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "j1p6hv1l9b3p",
+          "created_at": "2023-07-12T20:20:40.019Z",
+          "updated_at": "2023-07-12T20:20:40.019Z",
+          "display_at": "2023-07-12T20:20:40.019Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "39wkww9l3l0t",
           "status": "investigating",
@@ -2350,6 +2341,35 @@
           "only_show_if_degraded": false
         }
       ]
+    },
+    {
+      "id": "r9yrjflgfxrc",
+      "name": "VPS - DE2 - host1023116",
+      "status": "investigating",
+      "created_at": "2023-07-12T19:56:44.228Z",
+      "updated_at": "2023-07-12T19:56:44.258Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vcvxqkmftmmj",
+      "started_at": "2023-07-12T19:56:44.222Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "nwp9463w7m8f",
+          "status": "investigating",
+          "body": "Estimated time to recovery : 4 hour(s)\n\n<div class=\"update-title span3 font-large\">Affected hosts</div>\nhost1023116\n\n<div class=\"update-title span3 font-large\">Affected instances</div>\n<p>The list of instances listed below are currently\nunavailable, due to hardware fault on the hypervisor(s) previously mentioned. We apologize for\nany inconvenience caused while we resolve this issue.</p>\nvps763827\nvps669017\nvps794746\nvps814398\nvps557807\nvps807974\nvps804836\nvps800475\nvps798731\nvps796466\nvps795146\nvps790134\nvps783573\nvps734657\nvps762529\nvps761826\nvps747331\nvps732045\nvps731513\nvps708310\nvps697172\nvps680703\nvps673382\nvps666805\nvps665819\nvps660811\nvps653206\nvps655072\nvps652556\nvps632666\nvps632174\nvps583179\nvps619281\nvps617716\nvps611629\nvps601234\nvps598595\nvps589713\nvps591396\nvps591318\nvps568935\nvps563247\nvps562839\nvps516222",
+          "incident_id": "r9yrjflgfxrc",
+          "created_at": "2023-07-12T19:56:44.256Z",
+          "updated_at": "2023-07-12T19:56:44.256Z",
+          "display_at": "2023-07-12T19:56:44.256Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": []
     },
     {
       "id": "qdrg4ln8dpbw",
