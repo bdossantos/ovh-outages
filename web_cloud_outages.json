@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-17T16:22:51.569Z"
+    "updated_at": "2023-07-18T07:12:47.662Z"
   },
   "components": [
     {
@@ -2388,9 +2388,9 @@
     {
       "id": "kd99p0p9dcnc",
       "name": "Cluster030",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:17.848Z",
-      "updated_at": "2023-07-14T15:48:00.267Z",
+      "updated_at": "2023-07-18T07:12:47.602Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -2652,7 +2652,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2728,6 +2728,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "bz58f6b2pnrm",
+      "name": "[DC][WebHosting] - Cluster030 - Filerz1031",
+      "status": "investigating",
+      "created_at": "2023-07-18T07:12:47.579Z",
+      "updated_at": "2023-07-18T07:12:47.660Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mfk6zk543zrd",
+      "started_at": "2023-07-18T07:12:47.573Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "0gfzgpq1090h",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 18/07/2023 07:00 UTC\n<b>Service impact :</b> Websites are unreachable on filerz1031\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "bz58f6b2pnrm",
+          "created_at": "2023-07-18T07:12:47.658Z",
+          "updated_at": "2023-07-18T07:12:47.658Z",
+          "display_at": "2023-07-18T07:12:47.658Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kd99p0p9dcnc",
+          "name": "Cluster030",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:17.848Z",
+          "updated_at": "2023-07-18T07:12:47.602Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "1vdq66dw30gv",
       "name": "[GRA2][Collaborative solutions] - Mailjet email perturbation on cluster007",
@@ -3780,9 +3832,9 @@
         {
           "id": "kd99p0p9dcnc",
           "name": "Cluster030",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-06-30T12:19:17.848Z",
-          "updated_at": "2023-07-14T15:48:00.267Z",
+          "updated_at": "2023-07-18T07:12:47.602Z",
           "position": 23,
           "description": null,
           "showcase": false,
@@ -3813,7 +3865,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
