@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-19T22:29:58.018Z"
+    "updated_at": "2023-07-19T23:00:06.971Z"
   },
   "components": [
     {
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -908,9 +908,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2023-07-19T01:25:20.945Z",
+      "updated_at": "2023-07-19T23:00:06.890Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1228,9 +1228,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-07-19T04:24:27.186Z",
+      "updated_at": "2023-07-19T22:40:09.789Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1303,7 +1303,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2271,6 +2271,58 @@
   ],
   "incidents": [
     {
+      "id": "xt2ks55zy2xm",
+      "name": "[RBX1][DedicatedServers] - Rack 11A03",
+      "status": "investigating",
+      "created_at": "2023-07-19T22:40:09.757Z",
+      "updated_at": "2023-07-19T22:40:09.867Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/wm6mh4b7rp3d",
+      "started_at": "2023-07-19T22:40:09.749Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "6cxhbgbdfrg4",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 19/07/2023 22:35 UTC\n<b>Service impact :</b> public switch down\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "xt2ks55zy2xm",
+          "created_at": "2023-07-19T22:40:09.864Z",
+          "updated_at": "2023-07-19T22:40:09.864Z",
+          "display_at": "2023-07-19T22:40:09.864Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-07-19T22:40:09.789Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "3x0425yh067c",
       "name": "[RBX3/6][Backup/Storage] - 43S05 - 43S07 -  46A05 - 46A14",
       "status": "investigating",
@@ -2325,73 +2377,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "yp19sbc8w1cr",
-      "name": "[GRA2][Network] - Network equipment operation - Rack G209A10",
-      "status": "scheduled",
-      "created_at": "2023-06-30T22:28:40.152Z",
-      "updated_at": "2023-07-19T21:59:57.294Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/z6xcw0xtk0qr",
-      "started_at": "2023-06-30T22:28:40.196Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "96tkkry1lyp1",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yp19sbc8w1cr",
-          "created_at": "2023-07-19T21:59:57.206Z",
-          "updated_at": "2023-07-19T21:59:57.206Z",
-          "display_at": "2023-07-19T21:59:57.206Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "p590pzqtvw9x",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/07/2023 23:00 UTC \n<b>End time :</b> 19/07/2023 23:30 UTC \n<b>Service impact :</b> You may observed some loss of connectivity on public network for hosts behind this switch during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on a network equipment.",
-          "incident_id": "yp19sbc8w1cr",
-          "created_at": "2023-06-30T22:28:40.196Z",
-          "updated_at": "2023-07-01T04:06:15.038Z",
-          "display_at": "2023-06-30T22:28:40.196Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-07-19T01:25:20.945Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-07-19T23:00:00.000Z",
-      "scheduled_until": "2023-07-19T23:30:00.000Z"
-    },
-    {
       "id": "wtvlysgz8k47",
       "name": "[GRA2][Network] - Network equipment operation - Rack G201A17",
       "status": "scheduled",
@@ -2442,9 +2427,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-07-19T01:25:20.945Z",
+          "updated_at": "2023-07-19T23:00:06.890Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2550,9 +2535,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-07-19T04:24:27.186Z",
+          "updated_at": "2023-07-19T22:40:09.789Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2739,9 +2724,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-07-19T01:25:20.945Z",
+          "updated_at": "2023-07-19T23:00:06.890Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2874,9 +2859,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-07-19T01:25:20.945Z",
+          "updated_at": "2023-07-19T23:00:06.890Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2919,6 +2904,93 @@
       ],
       "scheduled_for": "2023-08-02T09:00:00.000Z",
       "scheduled_until": "2023-08-02T13:00:00.000Z"
+    },
+    {
+      "id": "yp19sbc8w1cr",
+      "name": "[GRA2][Network] - Network equipment operation - Rack G209A10",
+      "status": "in_progress",
+      "created_at": "2023-06-30T22:28:40.152Z",
+      "updated_at": "2023-07-19T23:00:06.960Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/z6xcw0xtk0qr",
+      "started_at": "2023-06-30T22:28:40.196Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "6ctr2zv9x7yn",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "yp19sbc8w1cr",
+          "created_at": "2023-07-19T23:00:06.954Z",
+          "updated_at": "2023-07-19T23:00:06.954Z",
+          "display_at": "2023-07-19T23:00:06.954Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "96tkkry1lyp1",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yp19sbc8w1cr",
+          "created_at": "2023-07-19T21:59:57.206Z",
+          "updated_at": "2023-07-19T21:59:57.206Z",
+          "display_at": "2023-07-19T21:59:57.206Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p590pzqtvw9x",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/07/2023 23:00 UTC \n<b>End time :</b> 19/07/2023 23:30 UTC \n<b>Service impact :</b> You may observed some loss of connectivity on public network for hosts behind this switch during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on a network equipment.",
+          "incident_id": "yp19sbc8w1cr",
+          "created_at": "2023-06-30T22:28:40.196Z",
+          "updated_at": "2023-07-01T04:06:15.038Z",
+          "display_at": "2023-06-30T22:28:40.196Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2023-07-19T23:00:06.890Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-19T23:00:00.000Z",
+      "scheduled_until": "2023-07-19T23:30:00.000Z"
     },
     {
       "id": "f05ltt1wt328",
