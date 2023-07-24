@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-24T20:47:19.714Z"
+    "updated_at": "2023-07-24T21:50:57.692Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2023-07-23T07:28:43.032Z",
+      "updated_at": "2023-07-24T21:33:59.006Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -821,7 +821,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2269,7 +2269,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "bmsbbn2zw3yx",
+      "name": "[BHS7][Dedicated Servers] - B709B01",
+      "status": "investigating",
+      "created_at": "2023-07-24T21:33:58.975Z",
+      "updated_at": "2023-07-24T21:33:59.100Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/z2t9p05s9hgl",
+      "started_at": "2023-07-24T21:33:58.968Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "gmy22l7m0k3h",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 24/07/2023 21:10 UTC\n<b>Service impact :</b> Some servers are unreachable.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "bmsbbn2zw3yx",
+          "created_at": "2023-07-24T21:33:59.097Z",
+          "updated_at": "2023-07-24T21:33:59.097Z",
+          "display_at": "2023-07-24T21:33:59.097Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2023-07-24T21:33:59.006Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ggs5twbpkqrp",
@@ -2363,9 +2416,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2023-07-23T07:28:43.032Z",
+          "updated_at": "2023-07-24T21:33:59.006Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2896,86 +2949,6 @@
       "scheduled_until": "2023-08-02T13:00:00.000Z"
     },
     {
-      "id": "nbfvhkqxygzp",
-      "name": "[ERI1][Dedicated Servers] - Network maintenance notification",
-      "status": "in_progress",
-      "created_at": "2023-07-20T17:02:19.236Z",
-      "updated_at": "2023-07-24T19:30:07.467Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jkg32jm8ydtg",
-      "started_at": "2023-07-20T17:02:19.228Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "1zydzczzvbz2",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "nbfvhkqxygzp",
-          "created_at": "2023-07-24T19:30:07.463Z",
-          "updated_at": "2023-07-24T19:30:07.463Z",
-          "display_at": "2023-07-24T19:30:07.463Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "47fhghfb2znm",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "nbfvhkqxygzp",
-          "created_at": "2023-07-24T18:30:02.730Z",
-          "updated_at": "2023-07-24T18:30:02.730Z",
-          "display_at": "2023-07-24T18:30:02.730Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4brk98hdt9tc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 24/07/2023 19:30 UTC\n<b>End time :</b> 24/07/2023 23:30UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b> In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do an operation on a network equipment.",
-          "incident_id": "nbfvhkqxygzp",
-          "created_at": "2023-07-20T17:02:19.301Z",
-          "updated_at": "2023-07-20T17:02:19.301Z",
-          "display_at": "2023-07-20T17:02:19.301Z",
-          "affected_components": [
-            {
-              "code": "5ml6n8xk2fcs",
-              "name": "Dedicated Servers || Network - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5ml6n8xk2fcs",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:50.476Z",
-          "updated_at": "2023-07-10T01:04:35.345Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-07-24T19:30:00.000Z",
-      "scheduled_until": "2023-07-24T23:30:00.000Z"
-    },
-    {
       "id": "f05ltt1wt328",
       "name": "[Global][DedicatedServers] - CentOS 7 CPanel EoL",
       "status": "in_progress",
@@ -3105,7 +3078,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
