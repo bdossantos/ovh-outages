@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-26T19:59:58.980Z"
+    "updated_at": "2023-07-26T20:30:06.866Z"
   },
   "components": [
     {
@@ -2388,9 +2388,9 @@
     {
       "id": "kd99p0p9dcnc",
       "name": "Cluster030",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:17.848Z",
-      "updated_at": "2023-07-21T14:20:40.159Z",
+      "updated_at": "2023-07-26T20:30:06.639Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -3040,73 +3040,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "pj596m6hdxn6",
-      "name": "[GRA][Webhosting] - Filerz1011",
-      "status": "scheduled",
-      "created_at": "2023-07-25T16:35:39.945Z",
-      "updated_at": "2023-07-26T19:29:56.960Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9z6yhdnkfrk7",
-      "started_at": "2023-07-25T16:35:39.938Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "tgysj14yhttw",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "pj596m6hdxn6",
-          "created_at": "2023-07-26T19:29:56.876Z",
-          "updated_at": "2023-07-26T19:29:56.876Z",
-          "display_at": "2023-07-26T19:29:56.876Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "syjwpy9ndtt8",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 26/07/2023 20:30 UTC \n<b>End time :</b> 26/07/2023 21:30 UTC \n<b>Service impact :</b> Each filerz will have a downtime of 30 min during the migration.\n<b>Service improvement :</b> We are going to migrate the Filerz1011 (webhosting server) to keep our infrastructure up-to-date.",
-          "incident_id": "pj596m6hdxn6",
-          "created_at": "2023-07-25T16:35:39.991Z",
-          "updated_at": "2023-07-25T16:35:39.991Z",
-          "display_at": "2023-07-25T16:35:39.991Z",
-          "affected_components": [
-            {
-              "code": "kd99p0p9dcnc",
-              "name": "Web Hosting || Datacenter GRA - Cluster030",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "kd99p0p9dcnc",
-          "name": "Cluster030",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:17.848Z",
-          "updated_at": "2023-07-21T14:20:40.159Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-07-26T20:30:00.000Z",
-      "scheduled_until": "2023-07-26T21:30:00.000Z"
-    },
-    {
       "id": "7lb37w5w1nk4",
       "name": "[GRA][WebHosting] - Cluster006 - filerz730",
       "status": "scheduled",
@@ -3226,6 +3159,93 @@
       ],
       "scheduled_for": "2023-07-27T21:00:00.000Z",
       "scheduled_until": "2023-07-27T22:00:00.000Z"
+    },
+    {
+      "id": "pj596m6hdxn6",
+      "name": "[GRA][Webhosting] - Filerz1011",
+      "status": "in_progress",
+      "created_at": "2023-07-25T16:35:39.945Z",
+      "updated_at": "2023-07-26T20:30:06.835Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9z6yhdnkfrk7",
+      "started_at": "2023-07-25T16:35:39.938Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "pyvd402rybfm",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "pj596m6hdxn6",
+          "created_at": "2023-07-26T20:30:06.828Z",
+          "updated_at": "2023-07-26T20:30:06.828Z",
+          "display_at": "2023-07-26T20:30:06.828Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tgysj14yhttw",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "pj596m6hdxn6",
+          "created_at": "2023-07-26T19:29:56.876Z",
+          "updated_at": "2023-07-26T19:29:56.876Z",
+          "display_at": "2023-07-26T19:29:56.876Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "syjwpy9ndtt8",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 26/07/2023 20:30 UTC \n<b>End time :</b> 26/07/2023 21:30 UTC \n<b>Service impact :</b> Each filerz will have a downtime of 30 min during the migration.\n<b>Service improvement :</b> We are going to migrate the Filerz1011 (webhosting server) to keep our infrastructure up-to-date.",
+          "incident_id": "pj596m6hdxn6",
+          "created_at": "2023-07-25T16:35:39.991Z",
+          "updated_at": "2023-07-25T16:35:39.991Z",
+          "display_at": "2023-07-25T16:35:39.991Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kd99p0p9dcnc",
+          "name": "Cluster030",
+          "status": "under_maintenance",
+          "created_at": "2021-06-30T12:19:17.848Z",
+          "updated_at": "2023-07-26T20:30:06.639Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-07-26T20:30:00.000Z",
+      "scheduled_until": "2023-07-26T21:30:00.000Z"
     }
   ],
   "status": {
