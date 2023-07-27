@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-27T16:26:18.452Z"
+    "updated_at": "2023-07-27T16:43:32.162Z"
   },
   "components": [
     {
@@ -205,9 +205,9 @@
     {
       "id": "20rrxqjh2b0p",
       "name": "DE1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:36:30.666Z",
-      "updated_at": "2023-07-14T19:06:14.692Z",
+      "updated_at": "2023-07-27T16:35:58.627Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -550,9 +550,9 @@
     {
       "id": "s7y9gs9htpsv",
       "name": "DE1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-15T08:33:50.726Z",
-      "updated_at": "2023-07-14T19:06:14.704Z",
+      "updated_at": "2023-07-27T16:35:58.643Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1597,9 +1597,9 @@
     {
       "id": "xzv3c6xqvgdq",
       "name": "DE1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T10:07:20.341Z",
-      "updated_at": "2023-07-14T19:06:14.737Z",
+      "updated_at": "2023-07-27T16:35:58.658Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -4961,7 +4961,7 @@
     {
       "id": "xxf4tr946kpr",
       "name": "Network || Gateway",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-15T08:33:50.711Z",
       "updated_at": "2023-05-16T12:03:40.281Z",
       "position": 33,
@@ -4996,7 +4996,7 @@
     {
       "id": "xjbj3776977d",
       "name": "Network || Private network (vRack)",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:36:32.940Z",
       "updated_at": "2023-05-16T12:03:40.289Z",
       "position": 34,
@@ -5031,7 +5031,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2023-05-16T12:03:40.299Z",
       "position": 35,
@@ -5261,9 +5261,9 @@
     {
       "id": "187xrz0r612q",
       "name": "Network || Load-Balancer",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-05-30T20:23:29.363Z",
-      "updated_at": "2023-07-26T17:11:10.485Z",
+      "updated_at": "2023-07-27T16:35:58.670Z",
       "position": 42,
       "description": null,
       "showcase": true,
@@ -5277,10 +5277,10 @@
   "incidents": [
     {
       "id": "s9d31v4xgyvp",
-      "name": "[DE1][Compute] - OpenStack API",
+      "name": "[DE1][PublicCloud] - OpenStack API",
       "status": "identified",
       "created_at": "2023-07-27T16:26:18.370Z",
-      "updated_at": "2023-07-27T16:26:18.449Z",
+      "updated_at": "2023-07-27T16:37:19.168Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -5288,6 +5288,50 @@
       "started_at": "2023-07-27T16:26:18.363Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "b3w2gkgq2mx8",
+          "status": "identified",
+          "body": "Further investigation reported that the API being unavailable, several network services are impacted.",
+          "incident_id": "s9d31v4xgyvp",
+          "created_at": "2023-07-27T16:35:58.712Z",
+          "updated_at": "2023-07-27T16:35:58.712Z",
+          "display_at": "2023-07-27T16:35:58.712Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "20rrxqjh2b0p",
+              "name": "Network || Private network (vRack) - DE1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "xzv3c6xqvgdq",
+              "name": "Network || Public network - DE1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "s7y9gs9htpsv",
+              "name": "Network || Gateway - DE1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "187xrz0r612q",
+              "name": "Network || Load-Balancer",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "tl119vrbxbck",
           "status": "identified",
@@ -5321,6 +5365,66 @@
           "showcase": false,
           "start_date": "2022-04-06",
           "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "20rrxqjh2b0p",
+          "name": "DE1",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:36:30.666Z",
+          "updated_at": "2023-07-27T16:35:58.627Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xjbj3776977d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "s7y9gs9htpsv",
+          "name": "DE1",
+          "status": "degraded_performance",
+          "created_at": "2023-04-15T08:33:50.726Z",
+          "updated_at": "2023-07-27T16:35:58.643Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "xxf4tr946kpr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "xzv3c6xqvgdq",
+          "name": "DE1",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T10:07:20.341Z",
+          "updated_at": "2023-07-27T16:35:58.658Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "187xrz0r612q",
+          "name": "Network || Load-Balancer",
+          "status": "degraded_performance",
+          "created_at": "2023-05-30T20:23:29.363Z",
+          "updated_at": "2023-07-27T16:35:58.670Z",
+          "position": 42,
+          "description": null,
+          "showcase": true,
+          "start_date": "2023-05-30",
+          "group_id": null,
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
