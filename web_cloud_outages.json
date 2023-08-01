@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-07-31T21:43:26.475Z"
+    "updated_at": "2023-08-01T10:30:51.675Z"
   },
   "components": [
     {
@@ -1587,9 +1587,9 @@
     {
       "id": "5yjpl8g114px",
       "name": "Billing",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-07-03T14:12:19.890Z",
-      "updated_at": "2023-07-04T08:48:17.493Z",
+      "updated_at": "2023-08-01T10:18:32.007Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2485,7 +2485,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2023-05-16T12:10:06.308Z",
       "position": 24,
@@ -2760,6 +2760,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "x3flvtzx6hxc",
+      "name": "[GLOBAL][Web Cloud] - VoIP Billing",
+      "status": "investigating",
+      "created_at": "2023-08-01T10:18:31.973Z",
+      "updated_at": "2023-08-01T10:30:51.667Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/28cl34n84mx7",
+      "started_at": "2023-08-01T10:18:31.966Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "mrykqrz5640d",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 01/08/2023 00:00 UTC\n<b>Service impact :</b> Customers may receive blank invoices for their consumption for July 2023.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "x3flvtzx6hxc",
+          "created_at": "2023-08-01T10:18:32.054Z",
+          "updated_at": "2023-08-01T10:30:51.663Z",
+          "display_at": "2023-08-01T10:18:32.000Z",
+          "affected_components": [
+            {
+              "code": "5yjpl8g114px",
+              "name": "VoIP || Services - Billing",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5yjpl8g114px",
+          "name": "Billing",
+          "status": "partial_outage",
+          "created_at": "2023-07-03T14:12:19.890Z",
+          "updated_at": "2023-08-01T10:18:32.007Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-03",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "wblwmbqn6q97",
       "name": "[GRA/BHS][WebHosting] Services upgrade perturbations in Africa, Americas and APAC",
@@ -3635,6 +3687,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
