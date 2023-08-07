@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-04T21:47:45.286Z"
+    "updated_at": "2023-08-07T09:01:42.478Z"
   },
   "components": [
     {
@@ -85,9 +85,9 @@
     {
       "id": "b6lqlttyhq1p",
       "name": "eu001",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:24.329Z",
-      "updated_at": "2023-06-09T16:45:32.601Z",
+      "updated_at": "2023-08-07T08:44:29.196Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2608,7 +2608,7 @@
     {
       "id": "60j7qlwr1wqf",
       "name": "Web Hosting || Databases GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:30.899Z",
       "updated_at": "2023-05-16T14:06:56.313Z",
       "position": 27,
@@ -2765,7 +2765,7 @@
       "name": "[GLOBAL][Web Cloud] - VoIP Billing",
       "status": "monitoring",
       "created_at": "2023-08-01T10:18:31.973Z",
-      "updated_at": "2023-08-04T13:39:32.290Z",
+      "updated_at": "2023-08-07T09:01:42.469Z",
       "monitoring_at": "2023-08-03T10:16:15.000Z",
       "resolved_at": null,
       "impact": "major",
@@ -2773,6 +2773,26 @@
       "started_at": "2023-08-01T10:18:32.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "sk34bppb44qw",
+          "status": "monitoring",
+          "body": "The second part is in progress . The outplan invoice and statements will arrive soon.",
+          "incident_id": "x3flvtzx6hxc",
+          "created_at": "2023-08-07T09:01:42.466Z",
+          "updated_at": "2023-08-07T09:01:42.466Z",
+          "display_at": "2023-08-07T09:01:42.466Z",
+          "affected_components": [
+            {
+              "code": "5yjpl8g114px",
+              "name": "VoIP || Services - Billing",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x1tmvb73wswr",
           "status": "monitoring",
@@ -2866,6 +2886,78 @@
           "showcase": false,
           "start_date": "2023-07-03",
           "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
+      "id": "8xdwhzd5qcc0",
+      "name": "[GRA][Database] -  sharedsql052/063",
+      "status": "identified",
+      "created_at": "2023-08-07T08:44:29.157Z",
+      "updated_at": "2023-08-07T08:47:42.157Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/505r51d5dfw3",
+      "started_at": "2023-08-07T08:44:29.148Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "sg9j88jcmfh2",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "8xdwhzd5qcc0",
+          "created_at": "2023-08-07T08:47:42.154Z",
+          "updated_at": "2023-08-07T08:47:42.154Z",
+          "display_at": "2023-08-07T08:47:42.154Z",
+          "affected_components": [
+            {
+              "code": "b6lqlttyhq1p",
+              "name": "Web Hosting || Databases GRA - eu001",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3n66bq9tv2l5",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 07/08/2023 08:11 UTC \n<b>Service impact :</b> 2 servers sharedsql052.eu001 and sharedsql063.eu001 are unreachable.\nCustomers do not have access to their database on these 2 servers\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "8xdwhzd5qcc0",
+          "created_at": "2023-08-07T08:44:29.252Z",
+          "updated_at": "2023-08-07T08:44:29.252Z",
+          "display_at": "2023-08-07T08:44:29.252Z",
+          "affected_components": [
+            {
+              "code": "b6lqlttyhq1p",
+              "name": "Web Hosting || Databases GRA - eu001",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b6lqlttyhq1p",
+          "name": "eu001",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:21:24.329Z",
+          "updated_at": "2023-08-07T08:44:29.196Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "60j7qlwr1wqf",
           "page_id": "gw3vvyn2b3bh",
           "group": false,
           "only_show_if_degraded": false
@@ -3604,7 +3696,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
