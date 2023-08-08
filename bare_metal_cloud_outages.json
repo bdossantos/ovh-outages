@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-08T12:43:22.292Z"
+    "updated_at": "2023-08-08T13:57:46.875Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "hgscwllzr4w1",
       "name": "Zone Europe",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:32:24.629Z",
-      "updated_at": "2023-07-17T09:08:50.374Z",
+      "updated_at": "2023-08-08T13:57:46.785Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -477,9 +477,9 @@
     {
       "id": "jds1mz2tgrx4",
       "name": "Zone APAC",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:32:25.511Z",
-      "updated_at": "2023-07-17T09:08:50.387Z",
+      "updated_at": "2023-08-08T13:57:46.804Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -762,9 +762,9 @@
     {
       "id": "zjpd57tn2xqv",
       "name": "Zone Canada",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:32:26.689Z",
-      "updated_at": "2023-07-17T09:08:50.404Z",
+      "updated_at": "2023-08-08T13:57:46.819Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1015,7 +1015,7 @@
     {
       "id": "7xz24f8j9l94",
       "name": "Dedicated Servers || Operating System",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:32:27.959Z",
       "updated_at": "2023-05-16T11:45:36.944Z",
       "position": 4,
@@ -2350,7 +2350,102 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1slcrj9dsmfk",
+      "name": "[Worldwide][Dedicated server] - Video/KVM",
+      "status": "investigating",
+      "created_at": "2023-08-08T13:57:46.745Z",
+      "updated_at": "2023-08-08T13:57:46.872Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/vd5zbhckkj97",
+      "started_at": "2023-08-08T13:57:46.735Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "htb27mfhfnvz",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 25/07/2023 18:30 UTC\n<b>Service impact :</b> Video quality via KVM may be degraded for servers running a Windows or WinPE OS. This malfunction only impacts ADV3 servers with a B550D4U-2T motherboard and does not prevent the server from operating normally.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "1slcrj9dsmfk",
+          "created_at": "2023-08-08T13:57:46.869Z",
+          "updated_at": "2023-08-08T13:57:46.869Z",
+          "display_at": "2023-08-08T13:57:46.869Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2023-08-08T13:57:46.785Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2023-08-08T13:57:46.804Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2023-08-08T13:57:46.819Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "myl6fhthzcs9",
@@ -3434,9 +3529,9 @@
         {
           "id": "hgscwllzr4w1",
           "name": "Zone Europe",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2023-07-17T09:08:50.374Z",
+          "updated_at": "2023-08-08T13:57:46.785Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3449,9 +3544,9 @@
         {
           "id": "jds1mz2tgrx4",
           "name": "Zone APAC",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:32:25.511Z",
-          "updated_at": "2023-07-17T09:08:50.387Z",
+          "updated_at": "2023-08-08T13:57:46.804Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3464,9 +3559,9 @@
         {
           "id": "zjpd57tn2xqv",
           "name": "Zone Canada",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:32:26.689Z",
-          "updated_at": "2023-07-17T09:08:50.404Z",
+          "updated_at": "2023-08-08T13:57:46.819Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3536,7 +3631,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
