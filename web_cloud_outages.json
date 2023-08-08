@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-07T21:59:30.102Z"
+    "updated_at": "2023-08-08T08:01:47.646Z"
   },
   "components": [
     {
@@ -1275,9 +1275,9 @@
     {
       "id": "25x5dg0rq4m9",
       "name": "eu010",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-27T14:16:43.175Z",
-      "updated_at": "2023-03-25T08:53:32.092Z",
+      "updated_at": "2023-08-08T07:44:00.421Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1936,7 +1936,7 @@
     {
       "id": "xntx4sdt2k97",
       "name": "Databases || CloudDB GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:49.945Z",
       "updated_at": "2023-05-16T12:10:06.187Z",
       "position": 12,
@@ -2761,6 +2761,78 @@
   ],
   "incidents": [
     {
+      "id": "8c7b276c3qjv",
+      "name": "[GRA][Databases] - CloudDB",
+      "status": "identified",
+      "created_at": "2023-08-08T07:44:00.386Z",
+      "updated_at": "2023-08-08T08:01:47.639Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/866dkg8p7pq7",
+      "started_at": "2023-08-08T07:44:00.377Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "x6yp539m76qy",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "8c7b276c3qjv",
+          "created_at": "2023-08-08T08:01:47.637Z",
+          "updated_at": "2023-08-08T08:01:47.637Z",
+          "display_at": "2023-08-08T08:01:47.637Z",
+          "affected_components": [
+            {
+              "code": "25x5dg0rq4m9",
+              "name": "Databases || CloudDB GRA - eu010",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hjgjhghqwb3b",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/08/2023 06:49 UTC \n<b>Service impact :</b> Databases of clouddb052.eu010 are temporarily unreachable\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "8c7b276c3qjv",
+          "created_at": "2023-08-08T07:44:00.469Z",
+          "updated_at": "2023-08-08T07:44:00.469Z",
+          "display_at": "2023-08-08T07:44:00.469Z",
+          "affected_components": [
+            {
+              "code": "25x5dg0rq4m9",
+              "name": "Databases || CloudDB GRA - eu010",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "25x5dg0rq4m9",
+          "name": "eu010",
+          "status": "partial_outage",
+          "created_at": "2022-04-27T14:16:43.175Z",
+          "updated_at": "2023-08-08T07:44:00.421Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-27",
+          "group_id": "xntx4sdt2k97",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "x3flvtzx6hxc",
       "name": "[GLOBAL][Web Cloud] - VoIP Billing",
       "status": "monitoring",
@@ -3516,7 +3588,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
