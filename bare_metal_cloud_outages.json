@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-08T22:43:45.852Z"
+    "updated_at": "2023-08-09T01:19:57.618Z"
   },
   "components": [
     {
@@ -307,9 +307,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2023-08-05T11:36:03.436Z",
+      "updated_at": "2023-08-09T01:19:57.546Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1275,7 +1275,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2351,6 +2351,58 @@
     }
   ],
   "incidents": [
+    {
+      "id": "0q6v0mdygpjb",
+      "name": "[BHS6][Dedicated Servers] - T06A03 - T06A04",
+      "status": "investigating",
+      "created_at": "2023-08-09T01:19:57.510Z",
+      "updated_at": "2023-08-09T01:19:57.614Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/ybdw767rddsh",
+      "started_at": "2023-08-09T01:19:57.501Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "q4tyxs83dchn",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 09/08/2023 01:05 UTC\n<b>Service impact :</b> Rack network loss\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "0q6v0mdygpjb",
+          "created_at": "2023-08-09T01:19:57.611Z",
+          "updated_at": "2023-08-09T01:19:57.611Z",
+          "display_at": "2023-08-09T01:19:57.611Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2023-08-09T01:19:57.546Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "1slcrj9dsmfk",
       "name": "[Worldwide][Dedicated server] - Video/KVM",
@@ -3583,9 +3635,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2023-08-05T11:36:03.436Z",
+          "updated_at": "2023-08-09T01:19:57.546Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3848,6 +3900,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
