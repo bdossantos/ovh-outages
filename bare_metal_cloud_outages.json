@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-10T00:27:21.502Z"
+    "updated_at": "2023-08-10T01:43:37.517Z"
   },
   "components": [
     {
@@ -552,9 +552,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2023-06-22T17:14:28.326Z",
+      "updated_at": "2023-08-10T01:40:15.362Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -644,7 +644,7 @@
       "name": "ERI",
       "status": "operational",
       "created_at": "2021-07-09T07:34:50.476Z",
-      "updated_at": "2023-08-06T18:10:20.726Z",
+      "updated_at": "2023-08-10T01:40:51.416Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -837,7 +837,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2352,6 +2352,98 @@
   ],
   "incidents": [
     {
+      "id": "klj5634jq76n",
+      "name": "[ERI1][Dedicated Servers] - ERI0112C02B",
+      "status": "identified",
+      "created_at": "2023-08-10T01:31:07.936Z",
+      "updated_at": "2023-08-10T01:40:15.576Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/zhl5qgsmyksd",
+      "started_at": "2023-08-10T01:31:07.927Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jq93y23ftfxp",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "klj5634jq76n",
+          "created_at": "2023-08-10T01:40:15.574Z",
+          "updated_at": "2023-08-10T01:40:15.574Z",
+          "display_at": "2023-08-10T01:40:15.574Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8f3rft8jj7xf",
+          "status": "identified",
+          "body": "<b>Start time :</b> 10/08/2023 01:18 UTC\n<b>Service impact :</b> Servers are unreachable\n<b>Root cause :</b> Electrical dijunction.\n<b>Ongoing actions :</b> Our technical teams are fixing the issue. Update will be posted as significant progress is made.",
+          "incident_id": "klj5634jq76n",
+          "created_at": "2023-08-10T01:35:33.291Z",
+          "updated_at": "2023-08-10T01:35:33.291Z",
+          "display_at": "2023-08-10T01:35:33.291Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ncr8mmrlbvc4",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 10/08/2023 01:18 UTC\n<b>Service impact :</b> Servers are unreachable\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "klj5634jq76n",
+          "created_at": "2023-08-10T01:31:08.051Z",
+          "updated_at": "2023-08-10T01:31:25.472Z",
+          "display_at": "2023-08-10T01:31:08.000Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2023-08-10T01:40:15.362Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
+    {
       "id": "1slcrj9dsmfk",
       "name": "[Worldwide][Dedicated server] - Video/KVM",
       "status": "investigating",
@@ -3381,7 +3473,7 @@
           "name": "ERI",
           "status": "operational",
           "created_at": "2021-07-09T07:34:50.476Z",
-          "updated_at": "2023-08-06T18:10:20.726Z",
+          "updated_at": "2023-08-10T01:40:51.416Z",
           "position": 2,
           "description": null,
           "showcase": false,
