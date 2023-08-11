@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-11T08:43:58.110Z"
+    "updated_at": "2023-08-11T11:48:21.581Z"
   },
   "components": [
     {
@@ -1230,9 +1230,9 @@
     {
       "id": "5k7llfjmccm4",
       "name": "Fax",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-06-30T12:22:20.875Z",
-      "updated_at": "2023-06-12T10:39:22.763Z",
+      "updated_at": "2023-08-11T11:48:21.529Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2485,7 +2485,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2023-05-16T12:10:06.308Z",
       "position": 24,
@@ -2760,6 +2760,153 @@
     }
   ],
   "incidents": [
+    {
+      "id": "grcmxxv1p9mk",
+      "name": "[GLOBAL][VoIP] - Telephony",
+      "status": "identified",
+      "created_at": "2023-08-11T11:38:05.277Z",
+      "updated_at": "2023-08-11T11:48:21.573Z",
+      "monitoring_at": "2023-08-11T11:38:05.335Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9czxcz8q5jrn",
+      "started_at": "2023-08-11T11:38:05.264Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "040c292j6pc0",
+          "status": "identified",
+          "body": "CTI and fax are still unavailable.",
+          "incident_id": "grcmxxv1p9mk",
+          "created_at": "2023-08-11T11:48:21.571Z",
+          "updated_at": "2023-08-11T11:48:21.571Z",
+          "display_at": "2023-08-11T11:48:21.571Z",
+          "affected_components": [
+            {
+              "code": "61qrgfjhdbgs",
+              "name": "VoIP || Telephony - Voicemail",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3mxgdcpk20wg",
+              "name": "VoIP || Services - Conferences",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "p6pj26mbsqvv",
+              "name": "VoIP || Services - IVR & Call Queues",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5k7llfjmccm4",
+              "name": "VoIP || Services - Fax",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bm27qnh5th0g",
+          "status": "monitoring",
+          "body": "<b>Start time :</b> 11/08/2023 10:00 UTC\n<b>End Time :</b>  11/08/2023 11:30 UTC\n<b>Service impact :</b> Incoming/outgoing calls and conferences were unavailable till 11:10 UTC\nVoicemails are available again.\n<b>Ongoing actions :</b> Our technical teams are currently monitoring the situation",
+          "incident_id": "grcmxxv1p9mk",
+          "created_at": "2023-08-11T11:38:05.335Z",
+          "updated_at": "2023-08-11T11:38:05.335Z",
+          "display_at": "2023-08-11T11:38:05.335Z",
+          "affected_components": [
+            {
+              "code": "61qrgfjhdbgs",
+              "name": "VoIP || Telephony - Voicemail",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3mxgdcpk20wg",
+              "name": "VoIP || Services - Conferences",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "p6pj26mbsqvv",
+              "name": "VoIP || Services - IVR & Call Queues",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3mxgdcpk20wg",
+          "name": "Conferences",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:18.231Z",
+          "updated_at": "2023-07-10T18:54:15.198Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "61qrgfjhdbgs",
+          "name": "Voicemail",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:12.806Z",
+          "updated_at": "2023-07-13T05:53:07.043Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "0nnlxrnw4m1y",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "p6pj26mbsqvv",
+          "name": "IVR & Call Queues",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:19.744Z",
+          "updated_at": "2023-07-05T12:46:27.466Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5k7llfjmccm4",
+          "name": "Fax",
+          "status": "major_outage",
+          "created_at": "2021-06-30T12:22:20.875Z",
+          "updated_at": "2023-08-11T11:48:21.529Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    },
     {
       "id": "x3flvtzx6hxc",
       "name": "[GLOBAL][Web Cloud] - VoIP Billing",
@@ -3172,7 +3319,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
