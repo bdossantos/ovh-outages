@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-23T12:04:16.639Z"
+    "updated_at": "2023-08-23T12:50:28.423Z"
   },
   "components": [
     {
@@ -1681,9 +1681,9 @@
     {
       "id": "nyhhlvk1sj03",
       "name": "Provisioning",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-07-19T12:57:30.719Z",
-      "updated_at": "2023-07-19T12:57:30.719Z",
+      "updated_at": "2023-08-23T12:50:28.372Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2485,7 +2485,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2023-05-16T12:10:06.308Z",
       "position": 24,
@@ -2759,7 +2759,60 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "c5g81266cxsh",
+      "name": "[FRANCE][VoIP] - Gigaset phone provisioning issue",
+      "status": "investigating",
+      "created_at": "2023-08-23T12:50:28.341Z",
+      "updated_at": "2023-08-23T12:50:28.420Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/fs43jnxsnybh",
+      "started_at": "2023-08-23T12:50:28.333Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "kb3ly494h1wx",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 23/08/2023 07:00 UTC \n<b>Service impact :</b> Customers who have Gigaset phones aren't able to configure a new phone or apply changes to the current configuration.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "c5g81266cxsh",
+          "created_at": "2023-08-23T12:50:28.418Z",
+          "updated_at": "2023-08-23T12:50:28.418Z",
+          "display_at": "2023-08-23T12:50:28.418Z",
+          "affected_components": [
+            {
+              "code": "nyhhlvk1sj03",
+              "name": "VoIP || Services - Provisioning",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nyhhlvk1sj03",
+          "name": "Provisioning",
+          "status": "partial_outage",
+          "created_at": "2023-07-19T12:57:30.719Z",
+          "updated_at": "2023-08-23T12:50:28.372Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-19",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "r2ldb29yk9d9",
@@ -3304,7 +3357,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
