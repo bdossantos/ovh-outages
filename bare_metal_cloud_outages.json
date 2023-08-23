@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-08-23T20:00:00.078Z"
+    "updated_at": "2023-08-23T21:00:05.899Z"
   },
   "components": [
     {
@@ -352,9 +352,9 @@
     {
       "id": "nlxj253bjpkz",
       "name": "BHS",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-08-01T15:50:23.919Z",
-      "updated_at": "2023-08-23T08:00:06.843Z",
+      "updated_at": "2023-08-23T20:44:26.123Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2138,7 +2138,7 @@
     {
       "id": "fmhmd6m8hs98",
       "name": "Storage and Backups || Block Storage",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-08-01T15:50:23.899Z",
       "updated_at": "2023-08-01T15:50:47.351Z",
       "position": 14,
@@ -2480,55 +2480,30 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "krcbvp56gb21",
-      "name": "[FRA1/RBX6/GRA2][Dedicated Servers] - Network maintenance  notification",
+      "id": "6vnhnt370lfn",
+      "name": "[BHS3][Block Storage] - CEPH cluster Upgrade",
       "status": "scheduled",
-      "created_at": "2023-08-01T00:20:51.704Z",
-      "updated_at": "2023-08-23T20:00:00.063Z",
+      "created_at": "2023-08-23T20:48:28.637Z",
+      "updated_at": "2023-08-23T20:48:28.698Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/0q41mh969m51",
-      "started_at": "2023-08-01T00:20:51.695Z",
+      "shortlink": "https://stspg.io/n2l9mk1plkqg",
+      "started_at": "2023-08-23T20:48:28.629Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "n4z9j9l86b5j",
+          "id": "5xv0v9kv6ml0",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "krcbvp56gb21",
-          "created_at": "2023-08-23T19:59:59.730Z",
-          "updated_at": "2023-08-23T19:59:59.730Z",
-          "display_at": "2023-08-23T19:59:59.730Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ltympd2zvckk",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/08/2023 21:00 UTC\n<b>End time :</b> 24/08/2023 01:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b>  In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do an operation on a network equipment.",
-          "incident_id": "krcbvp56gb21",
-          "created_at": "2023-08-01T00:20:51.756Z",
-          "updated_at": "2023-08-01T00:20:51.756Z",
-          "display_at": "2023-08-01T00:20:51.756Z",
+          "body": "<b>Start time : </b> 29/08/2023 08:00 UTC\n<b>End time : </b> 30/08/2023 15:00 UTC\n<b>Service impact : </b> Lowered performance during maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will upgrade CEPH cluster in BHS3.",
+          "incident_id": "6vnhnt370lfn",
+          "created_at": "2023-08-23T20:48:28.694Z",
+          "updated_at": "2023-08-23T20:48:28.694Z",
+          "display_at": "2023-08-23T20:48:28.694Z",
           "affected_components": [
             {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ywcwwnktxgh0",
-              "name": "Dedicated Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
+              "code": "nlxj253bjpkz",
+              "name": "Storage and Backups || Block Storage - BHS",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2540,53 +2515,23 @@
       ],
       "components": [
         {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
+          "id": "nlxj253bjpkz",
+          "name": "BHS",
           "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2023-08-22T03:15:42.740Z",
-          "position": 3,
+          "created_at": "2023-08-01T15:50:23.919Z",
+          "updated_at": "2023-08-23T20:44:26.123Z",
+          "position": 1,
           "description": null,
           "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ywcwwnktxgh0",
-          "name": "LIM",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:54.272Z",
-          "updated_at": "2023-08-17T05:39:43.766Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-08-22T20:08:46.790Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "start_date": "2023-08-01",
+          "group_id": "fmhmd6m8hs98",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-08-23T21:00:00.000Z",
-      "scheduled_until": "2023-08-24T01:00:00.000Z"
+      "scheduled_for": "2023-08-29T08:00:00.000Z",
+      "scheduled_until": "2023-08-29T15:00:00.000Z"
     },
     {
       "id": "p4r84dcq94dm",
@@ -2901,63 +2846,68 @@
       "scheduled_until": "2023-10-19T01:00:00.000Z"
     },
     {
-      "id": "3wy3kl8tlrhj",
-      "name": "[BHS2][Block Storage] - CEPH Cluster Upgrade",
+      "id": "krcbvp56gb21",
+      "name": "[FRA1/RBX6/GRA2][Dedicated Servers] - Network maintenance  notification",
       "status": "in_progress",
-      "created_at": "2023-08-22T17:26:22.786Z",
-      "updated_at": "2023-08-23T08:00:06.913Z",
+      "created_at": "2023-08-01T00:20:51.704Z",
+      "updated_at": "2023-08-23T21:00:05.878Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/fz8qp2g324zm",
-      "started_at": "2023-08-22T17:26:22.779Z",
+      "shortlink": "https://stspg.io/0q41mh969m51",
+      "started_at": "2023-08-01T00:20:51.695Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "5b78jy44hdyv",
+          "id": "927l8tx21js6",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "3wy3kl8tlrhj",
-          "created_at": "2023-08-23T08:00:06.906Z",
-          "updated_at": "2023-08-23T08:00:06.906Z",
-          "display_at": "2023-08-23T08:00:06.906Z",
-          "affected_components": [
-            {
-              "code": "nlxj253bjpkz",
-              "name": "Storage and Backups || Block Storage - BHS",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "90j53rmll5b3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "3wy3kl8tlrhj",
-          "created_at": "2023-08-23T07:00:39.689Z",
-          "updated_at": "2023-08-23T07:00:39.689Z",
-          "display_at": "2023-08-23T07:00:39.689Z",
+          "incident_id": "krcbvp56gb21",
+          "created_at": "2023-08-23T21:00:05.874Z",
+          "updated_at": "2023-08-23T21:00:05.874Z",
+          "display_at": "2023-08-23T21:00:05.874Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "yhq0c0wfpbxz",
+          "id": "n4z9j9l86b5j",
           "status": "scheduled",
-          "body": "<b>Start time : </b> 23/08/2023 08:00 UTC\n<b>End time : </b> 24/08/2023 15:00 UTC\n<b>Service impact : </b> Lowered performance during maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will upgrade CEPH cluster in BHS2.",
-          "incident_id": "3wy3kl8tlrhj",
-          "created_at": "2023-08-22T17:26:22.843Z",
-          "updated_at": "2023-08-22T17:26:22.843Z",
-          "display_at": "2023-08-22T17:26:22.843Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "krcbvp56gb21",
+          "created_at": "2023-08-23T19:59:59.730Z",
+          "updated_at": "2023-08-23T19:59:59.730Z",
+          "display_at": "2023-08-23T19:59:59.730Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ltympd2zvckk",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/08/2023 21:00 UTC\n<b>End time :</b> 24/08/2023 01:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement  :</b>  In order to maintain continuous improvement of our internal network infrastructure and to have a homogeneous park, we will do an operation on a network equipment.",
+          "incident_id": "krcbvp56gb21",
+          "created_at": "2023-08-01T00:20:51.756Z",
+          "updated_at": "2023-08-01T00:20:51.756Z",
+          "display_at": "2023-08-01T00:20:51.756Z",
           "affected_components": [
             {
-              "code": "nlxj253bjpkz",
-              "name": "Storage and Backups || Block Storage - BHS",
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2969,23 +2919,53 @@
       ],
       "components": [
         {
-          "id": "nlxj253bjpkz",
-          "name": "BHS",
-          "status": "under_maintenance",
-          "created_at": "2023-08-01T15:50:23.919Z",
-          "updated_at": "2023-08-23T08:00:06.843Z",
-          "position": 1,
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2023-08-22T03:15:42.740Z",
+          "position": 3,
           "description": null,
           "showcase": false,
-          "start_date": "2023-08-01",
-          "group_id": "fmhmd6m8hs98",
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2023-08-17T05:39:43.766Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2023-08-22T20:08:46.790Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-08-23T08:00:00.000Z",
-      "scheduled_until": "2023-08-24T15:00:00.000Z"
+      "scheduled_for": "2023-08-23T21:00:00.000Z",
+      "scheduled_until": "2023-08-24T01:00:00.000Z"
     }
   ],
   "status": {
