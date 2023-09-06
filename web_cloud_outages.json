@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-05T16:52:53.090Z"
+    "updated_at": "2023-09-06T08:54:44.065Z"
   },
   "components": [
     {
@@ -2388,9 +2388,9 @@
     {
       "id": "kd99p0p9dcnc",
       "name": "Cluster030",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:17.848Z",
-      "updated_at": "2023-08-31T09:19:42.960Z",
+      "updated_at": "2023-09-06T08:45:14.830Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -2683,7 +2683,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2759,7 +2759,80 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "pfvh4ndxpgn3",
+      "name": "[GRA][Web Hosting] - Cluster030",
+      "status": "identified",
+      "created_at": "2023-09-06T08:45:14.797Z",
+      "updated_at": "2023-09-06T08:46:33.541Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/mxkv9vz1zksf",
+      "started_at": "2023-09-06T08:45:14.789Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "295vzprkn2yb",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "pfvh4ndxpgn3",
+          "created_at": "2023-09-06T08:46:33.532Z",
+          "updated_at": "2023-09-06T08:46:33.532Z",
+          "display_at": "2023-09-06T08:46:33.532Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "002wwskvdn4m",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 06/09/2023 07:00 UTC\n<b>Service impact :</b> Slowdowns observed on some hosted websites\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "pfvh4ndxpgn3",
+          "created_at": "2023-09-06T08:45:14.897Z",
+          "updated_at": "2023-09-06T08:45:14.897Z",
+          "display_at": "2023-09-06T08:45:14.897Z",
+          "affected_components": [
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kd99p0p9dcnc",
+          "name": "Cluster030",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:17.848Z",
+          "updated_at": "2023-09-06T08:45:14.830Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ]
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "t61dzj33ncgx",
@@ -3261,7 +3334,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
