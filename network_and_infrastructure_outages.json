@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-14T06:00:12.304Z"
+    "updated_at": "2023-09-14T07:00:30.702Z"
   },
   "components": [
     {
@@ -115,9 +115,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2023-09-14T04:00:59.049Z",
+      "updated_at": "2023-09-14T06:38:39.790Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -877,7 +877,7 @@
       "name": "[ASIA/USA][Network] - Backbone latency",
       "status": "identified",
       "created_at": "2023-08-30T08:02:36.839Z",
-      "updated_at": "2023-08-30T08:02:36.895Z",
+      "updated_at": "2023-09-14T06:38:39.830Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -885,6 +885,26 @@
       "started_at": "2023-08-30T08:02:36.836Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "sslhvxgcwl4y",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "5qld2n6jwyqn",
+          "created_at": "2023-09-14T06:38:39.827Z",
+          "updated_at": "2023-09-14T06:38:39.827Z",
+          "display_at": "2023-09-14T06:38:39.827Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "under_maintenance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ggck4wkc4kbn",
           "status": "identified",
@@ -910,9 +930,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -926,140 +946,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "yvd34hd321t0",
-      "name": "[GLOBAL][Network] - Backbone Maintenance Notification",
-      "status": "scheduled",
-      "created_at": "2023-09-11T20:37:30.738Z",
-      "updated_at": "2023-09-14T06:00:00.756Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h7ldjc82p6pw",
-      "started_at": "2023-09-11T20:37:30.733Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "3hlktkw6qxtz",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yvd34hd321t0",
-          "created_at": "2023-09-14T06:00:00.464Z",
-          "updated_at": "2023-09-14T06:00:00.464Z",
-          "display_at": "2023-09-14T06:00:00.464Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dq4bsqg9hv39",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/09/2023 07:00 UTC \n<b>End time :</b> 14/09/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
-          "incident_id": "yvd34hd321t0",
-          "created_at": "2023-09-11T20:37:30.792Z",
-          "updated_at": "2023-09-11T20:37:30.792Z",
-          "display_at": "2023-09-11T20:37:30.792Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-14T07:00:00.000Z",
-      "scheduled_until": "2023-09-14T15:00:00.000Z"
-    },
-    {
-      "id": "c3f11lh4lrcd",
-      "name": "[CHI/WAS][Network] - Backbone Maintenance Notification",
-      "status": "scheduled",
-      "created_at": "2023-09-12T22:51:18.035Z",
-      "updated_at": "2023-09-14T06:00:03.488Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2yfb81vgn11k",
-      "started_at": "2023-09-12T22:51:18.031Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "w5v2rxfs3b9j",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "c3f11lh4lrcd",
-          "created_at": "2023-09-14T06:00:03.212Z",
-          "updated_at": "2023-09-14T06:00:03.212Z",
-          "display_at": "2023-09-14T06:00:03.212Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hl59dbqhk47v",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/09/2023 07:00 UTC \n<b>End time :</b> 14/09/2023 07:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
-          "incident_id": "c3f11lh4lrcd",
-          "created_at": "2023-09-12T22:51:18.087Z",
-          "updated_at": "2023-09-12T22:51:18.087Z",
-          "display_at": "2023-09-12T22:51:18.087Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-14T07:00:00.000Z",
-      "scheduled_until": "2023-09-14T07:30:00.000Z"
-    },
     {
       "id": "y9szctvy867h",
       "name": "[RBX][Network] - Backbone maintenance notification",
@@ -1098,9 +984,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1614,9 +1500,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1629,60 +1515,6 @@
       ],
       "scheduled_for": "2023-09-19T00:00:00.000Z",
       "scheduled_until": "2023-09-19T02:00:00.000Z"
-    },
-    {
-      "id": "9p66jbgfrp2h",
-      "name": "[GRA2][Infrastructure] - Electrical maintenance",
-      "status": "scheduled",
-      "created_at": "2023-09-04T21:15:41.942Z",
-      "updated_at": "2023-09-04T21:15:41.978Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/62xbghl5hj33",
-      "started_at": "2023-09-04T21:15:41.937Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "lgpky3xz1yvc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2023 05:45 UTC \n<b>End time :</b> 19/09/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing a maintenance on multiple UPS in GRA2",
-          "incident_id": "9p66jbgfrp2h",
-          "created_at": "2023-09-04T21:15:41.976Z",
-          "updated_at": "2023-09-04T21:15:41.976Z",
-          "display_at": "2023-09-04T21:15:41.976Z",
-          "affected_components": [
-            {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2023-09-07T20:44:27.438Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-19T05:45:00.000Z",
-      "scheduled_until": "2023-09-19T15:00:00.000Z"
     },
     {
       "id": "w93nbyr666r6",
@@ -1726,6 +1558,60 @@
           "created_at": "2021-11-10T14:20:37.816Z",
           "updated_at": "2023-08-31T15:30:41.274Z",
           "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-19T05:45:00.000Z",
+      "scheduled_until": "2023-09-19T15:00:00.000Z"
+    },
+    {
+      "id": "9p66jbgfrp2h",
+      "name": "[GRA2][Infrastructure] - Electrical maintenance",
+      "status": "scheduled",
+      "created_at": "2023-09-04T21:15:41.942Z",
+      "updated_at": "2023-09-04T21:15:41.978Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/62xbghl5hj33",
+      "started_at": "2023-09-04T21:15:41.937Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "lgpky3xz1yvc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2023 05:45 UTC \n<b>End time :</b> 19/09/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing a maintenance on multiple UPS in GRA2",
+          "incident_id": "9p66jbgfrp2h",
+          "created_at": "2023-09-04T21:15:41.976Z",
+          "updated_at": "2023-09-04T21:15:41.976Z",
+          "display_at": "2023-09-04T21:15:41.976Z",
+          "affected_components": [
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2023-09-07T20:44:27.438Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
@@ -2312,60 +2198,6 @@
       "scheduled_until": "2023-09-25T12:00:00.000Z"
     },
     {
-      "id": "z36tcxz68qx2",
-      "name": "[BHS8][Infrastructure] - Electrical background work",
-      "status": "scheduled",
-      "created_at": "2023-09-06T00:26:53.942Z",
-      "updated_at": "2023-09-06T00:26:53.995Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h1bwx91tsjyf",
-      "started_at": "2023-09-06T00:26:53.934Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "x9v89n42tkbj",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 25/09/2023 11:00 UTC \n<b>End time :</b> 26/09/2023 20:00 UTC \n<b>Service impact :</b> Loss of redundancy and single-powered IPMIs during operations.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "z36tcxz68qx2",
-          "created_at": "2023-09-06T00:26:53.992Z",
-          "updated_at": "2023-09-06T00:26:53.992Z",
-          "display_at": "2023-09-06T00:26:53.992Z",
-          "affected_components": [
-            {
-              "code": "m4pzrlrxvvgt",
-              "name": "Infrastructure || BHS - BHS8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "m4pzrlrxvvgt",
-          "name": "BHS8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2023-09-12T22:19:57.215Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-25T11:00:00.000Z",
-      "scheduled_until": "2023-09-26T20:00:00.000Z"
-    },
-    {
       "id": "j6mqyv33rd3l",
       "name": "[RBX8][Infrastructure] - Electrical background work",
       "status": "scheduled",
@@ -2418,6 +2250,60 @@
       ],
       "scheduled_for": "2023-09-25T11:00:00.000Z",
       "scheduled_until": "2023-09-25T15:00:00.000Z"
+    },
+    {
+      "id": "z36tcxz68qx2",
+      "name": "[BHS8][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2023-09-06T00:26:53.942Z",
+      "updated_at": "2023-09-06T00:26:53.995Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/h1bwx91tsjyf",
+      "started_at": "2023-09-06T00:26:53.934Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "x9v89n42tkbj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 25/09/2023 11:00 UTC \n<b>End time :</b> 26/09/2023 20:00 UTC \n<b>Service impact :</b> Loss of redundancy and single-powered IPMIs during operations.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "z36tcxz68qx2",
+          "created_at": "2023-09-06T00:26:53.992Z",
+          "updated_at": "2023-09-06T00:26:53.992Z",
+          "display_at": "2023-09-06T00:26:53.992Z",
+          "affected_components": [
+            {
+              "code": "m4pzrlrxvvgt",
+              "name": "Infrastructure || BHS - BHS8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m4pzrlrxvvgt",
+          "name": "BHS8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:32.046Z",
+          "updated_at": "2023-09-12T22:19:57.215Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-25T11:00:00.000Z",
+      "scheduled_until": "2023-09-26T20:00:00.000Z"
     },
     {
       "id": "v6tcft8j2pj4",
@@ -2673,9 +2559,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4381,52 +4267,244 @@
       "scheduled_until": "2023-11-20T13:00:00.000Z"
     },
     {
-      "id": "591ybqd5wh5r",
-      "name": "[FRA][Network] - Backbone Maintenance Notification",
-      "status": "in_progress",
-      "created_at": "2023-09-07T22:33:33.312Z",
-      "updated_at": "2023-09-14T06:00:12.289Z",
+      "id": "np6j2xmvlmkv",
+      "name": "[RBX5/RBX6/RBX7][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2023-02-28T17:47:40.657Z",
+      "updated_at": "2023-02-28T17:47:40.712Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/xnp9x8l53vsm",
-      "started_at": "2023-09-07T22:33:33.306Z",
+      "shortlink": "https://stspg.io/xz1ww63tnfx7",
+      "started_at": "2023-02-28T17:47:40.645Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "f7v1npc25x03",
+          "id": "gf498ct0ycrf",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/11/2023 12:00 UTC \n<b>End time :</b> 20/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "np6j2xmvlmkv",
+          "created_at": "2023-02-28T17:47:40.709Z",
+          "updated_at": "2023-02-28T17:47:40.709Z",
+          "display_at": "2023-02-28T17:47:40.709Z",
+          "affected_components": [
+            {
+              "code": "n3bn7csv5k3k",
+              "name": "Infrastructure || RBX - RBX5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Infrastructure || RBX - RBX6",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Infrastructure || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3bn7csv5k3k",
+          "name": "RBX5",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:18.529Z",
+          "updated_at": "2023-06-20T15:20:59.365Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2023-09-07T08:11:14.381Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2023-06-20T15:20:59.390Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-20T12:00:00.000Z",
+      "scheduled_until": "2023-11-20T16:00:00.000Z"
+    },
+    {
+      "id": "ppt4g2bwrzc9",
+      "name": "[RBX5/RBX6/RBX7][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2023-02-28T17:47:41.888Z",
+      "updated_at": "2023-02-28T17:47:41.967Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/9wrbhqvjgczf",
+      "started_at": "2023-02-28T17:47:41.877Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "wppqy7qfky81",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 21/11/2023 07:30 UTC \n<b>End time :</b> 21/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "ppt4g2bwrzc9",
+          "created_at": "2023-02-28T17:47:41.964Z",
+          "updated_at": "2023-02-28T17:47:41.964Z",
+          "display_at": "2023-02-28T17:47:41.964Z",
+          "affected_components": [
+            {
+              "code": "n3bn7csv5k3k",
+              "name": "Infrastructure || RBX - RBX5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Infrastructure || RBX - RBX6",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Infrastructure || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3bn7csv5k3k",
+          "name": "RBX5",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:18.529Z",
+          "updated_at": "2023-06-20T15:20:59.365Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2023-09-07T08:11:14.381Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2023-06-20T15:20:59.390Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-21T07:30:00.000Z",
+      "scheduled_until": "2023-11-21T16:00:00.000Z"
+    },
+    {
+      "id": "c3f11lh4lrcd",
+      "name": "[CHI/WAS][Network] - Backbone Maintenance Notification",
+      "status": "in_progress",
+      "created_at": "2023-09-12T22:51:18.035Z",
+      "updated_at": "2023-09-14T07:00:30.675Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2yfb81vgn11k",
+      "started_at": "2023-09-12T22:51:18.031Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "qn5pmhj9713q",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "591ybqd5wh5r",
-          "created_at": "2023-09-14T06:00:12.285Z",
-          "updated_at": "2023-09-14T06:00:12.285Z",
-          "display_at": "2023-09-14T06:00:12.285Z",
+          "incident_id": "c3f11lh4lrcd",
+          "created_at": "2023-09-14T07:00:30.668Z",
+          "updated_at": "2023-09-14T07:00:30.668Z",
+          "display_at": "2023-09-14T07:00:30.668Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "c8x9358p3zj4",
+          "id": "w5v2rxfs3b9j",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "591ybqd5wh5r",
-          "created_at": "2023-09-14T05:00:05.424Z",
-          "updated_at": "2023-09-14T05:00:05.424Z",
-          "display_at": "2023-09-14T05:00:05.424Z",
+          "incident_id": "c3f11lh4lrcd",
+          "created_at": "2023-09-14T06:00:03.212Z",
+          "updated_at": "2023-09-14T06:00:03.212Z",
+          "display_at": "2023-09-14T06:00:03.212Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "q4s24szmt5fv",
+          "id": "hl59dbqhk47v",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 14/09/2023 06:00 UTC \n<b>End time :</b> 14/09/2023 7:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
-          "incident_id": "591ybqd5wh5r",
-          "created_at": "2023-09-07T22:33:33.370Z",
-          "updated_at": "2023-09-07T22:33:33.370Z",
-          "display_at": "2023-09-07T22:33:33.370Z",
+          "body": "<b>Start time :</b> 14/09/2023 07:00 UTC \n<b>End time :</b> 14/09/2023 07:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
+          "incident_id": "c3f11lh4lrcd",
+          "created_at": "2023-09-12T22:51:18.087Z",
+          "updated_at": "2023-09-12T22:51:18.087Z",
+          "display_at": "2023-09-12T22:51:18.087Z",
           "affected_components": [
             {
               "code": "xxvy97qsff1g",
@@ -4444,9 +4522,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4457,8 +4535,88 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-09-14T06:00:00.000Z",
-      "scheduled_until": "2023-09-14T07:00:00.000Z"
+      "scheduled_for": "2023-09-14T07:00:00.000Z",
+      "scheduled_until": "2023-09-14T07:30:00.000Z"
+    },
+    {
+      "id": "yvd34hd321t0",
+      "name": "[GLOBAL][Network] - Backbone Maintenance Notification",
+      "status": "in_progress",
+      "created_at": "2023-09-11T20:37:30.738Z",
+      "updated_at": "2023-09-14T07:00:12.281Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/h7ldjc82p6pw",
+      "started_at": "2023-09-11T20:37:30.733Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "7qgnlzl8sl6z",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "yvd34hd321t0",
+          "created_at": "2023-09-14T07:00:12.275Z",
+          "updated_at": "2023-09-14T07:00:12.275Z",
+          "display_at": "2023-09-14T07:00:12.275Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3hlktkw6qxtz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yvd34hd321t0",
+          "created_at": "2023-09-14T06:00:00.464Z",
+          "updated_at": "2023-09-14T06:00:00.464Z",
+          "display_at": "2023-09-14T06:00:00.464Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "dq4bsqg9hv39",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 14/09/2023 07:00 UTC \n<b>End time :</b> 14/09/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.",
+          "incident_id": "yvd34hd321t0",
+          "created_at": "2023-09-11T20:37:30.792Z",
+          "updated_at": "2023-09-11T20:37:30.792Z",
+          "display_at": "2023-09-11T20:37:30.792Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-14T07:00:00.000Z",
+      "scheduled_until": "2023-09-14T15:00:00.000Z"
     },
     {
       "id": "ql6x1qczyvh8",
@@ -4611,9 +4769,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2023-09-14T04:00:59.049Z",
+          "updated_at": "2023-09-14T06:38:39.790Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5740,7 +5898,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
