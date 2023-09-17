@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-17T04:43:17.450Z"
+    "updated_at": "2023-09-17T05:27:58.142Z"
   },
   "components": [
     {
@@ -837,9 +837,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2023-09-11T08:44:03.038Z",
+      "updated_at": "2023-09-17T05:19:36.830Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1467,9 +1467,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-09-16T23:21:15.977Z",
+      "updated_at": "2023-09-17T05:26:15.052Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2400,18 +2400,91 @@
   ],
   "incidents": [
     {
+      "id": "d7xnj3tf0txj",
+      "name": "[RBX8][Dedicated Servers] - Rack R808R24",
+      "status": "investigating",
+      "created_at": "2023-09-17T05:26:15.013Z",
+      "updated_at": "2023-09-17T05:27:58.139Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hdy82llmz096",
+      "started_at": "2023-09-17T05:26:15.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "brmzb57xq8h3",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 17/09/2023 05:19 UTC\n<b>Service impact :</b> Servers in the rack R808R24 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "d7xnj3tf0txj",
+          "created_at": "2023-09-17T05:26:15.114Z",
+          "updated_at": "2023-09-17T05:27:58.092Z",
+          "display_at": "2023-09-17T05:26:15.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "9826sksj44bz",
       "name": "[GRA1][Dedicated Servers] - G131A04",
-      "status": "monitoring",
+      "status": "investigating",
       "created_at": "2023-09-17T03:53:41.000Z",
-      "updated_at": "2023-09-17T03:58:13.060Z",
+      "updated_at": "2023-09-17T05:19:36.881Z",
       "monitoring_at": "2023-09-17T03:53:41.000Z",
       "resolved_at": null,
-      "impact": "none",
+      "impact": "major",
       "shortlink": "https://stspg.io/b1mcgswvps64",
       "started_at": "2023-09-17T03:53:41.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "db3dmxzprpg7",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 17/09/2023 05:16 UTC\n<b>Service impact :</b> Servers in the rack G131A04 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "9826sksj44bz",
+          "created_at": "2023-09-17T05:19:36.879Z",
+          "updated_at": "2023-09-17T05:19:36.879Z",
+          "display_at": "2023-09-17T05:19:36.879Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "f3vnbmldywqm",
           "status": "monitoring",
@@ -2437,9 +2510,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2023-09-11T08:44:03.038Z",
+          "updated_at": "2023-09-17T05:19:36.830Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2641,9 +2714,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2877,9 +2950,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2931,9 +3004,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3059,9 +3132,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3113,9 +3186,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3242,9 +3315,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-09-16T23:21:15.977Z",
+          "updated_at": "2023-09-17T05:26:15.052Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3635,7 +3708,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
