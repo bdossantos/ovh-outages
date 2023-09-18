@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-18T11:00:02.179Z"
+    "updated_at": "2023-09-18T12:00:19.556Z"
   },
   "components": [
     {
@@ -25,9 +25,9 @@
     {
       "id": "kj53n33lwykg",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:32:52.354Z",
-      "updated_at": "2023-06-01T16:12:16.673Z",
+      "updated_at": "2023-09-18T12:00:19.369Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -580,9 +580,9 @@
     {
       "id": "5l5zqpzw52bw",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:32:53.230Z",
-      "updated_at": "2023-06-01T16:12:16.687Z",
+      "updated_at": "2023-09-18T12:00:19.406Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -4927,7 +4927,7 @@
     {
       "id": "v4ktdlk3grrm",
       "name": "Data & Analytics || Logs Data Platform",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:32:54.198Z",
       "updated_at": "2023-05-16T12:03:06.688Z",
       "position": 30,
@@ -5556,11 +5556,96 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "sqz5qcy1gyz3",
+      "name": "[WAW1][Network] - Network equipment maintenance",
+      "status": "scheduled",
+      "created_at": "2023-09-13T20:39:22.297Z",
+      "updated_at": "2023-09-13T20:39:22.346Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yvlll9mtyy5b",
+      "started_at": "2023-09-13T20:39:22.292Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "rgv3vxxllk68",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2023 00:00 UTC \n<b>End time :</b> 19/09/2023 04:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade multiple network equipment.",
+          "incident_id": "sqz5qcy1gyz3",
+          "created_at": "2023-09-13T20:39:22.344Z",
+          "updated_at": "2023-09-13T20:39:22.344Z",
+          "display_at": "2023-09-13T20:39:22.344Z",
+          "affected_components": [
+            {
+              "code": "qzd48y2mk6l4",
+              "name": "Network || Private network (vRack) - WAW1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qzd48y2mk6l4",
+          "name": "WAW1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:31.515Z",
+          "updated_at": "2023-08-11T01:43:30.118Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xjbj3776977d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-19T00:00:00.000Z",
+      "scheduled_until": "2023-09-19T04:00:00.000Z"
+    },
+    {
+      "id": "xx1hfvlf8331",
+      "name": "[UK1/ UK2 /US-EAST-VA-1 /US-EAST-VA-2 /US-WEST-OR-1 /US-WEST-OR-2 /WAW1/ WAW2] - [K8S] 1.24 Update",
+      "status": "scheduled",
+      "created_at": "2023-09-12T22:32:30.798Z",
+      "updated_at": "2023-09-12T22:32:30.839Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3zddw9k626n5",
+      "started_at": "2023-09-12T22:32:30.794Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "cv10l7spjnl6",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 19/09/2023 11:00 UTC\n<b>End time :</b> 19/09/2023 11:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Kubernetes 1.24 releases updates, to deliver security updates, fix known issues, and introduce new features.",
+          "incident_id": "xx1hfvlf8331",
+          "created_at": "2023-09-12T22:32:30.837Z",
+          "updated_at": "2023-09-12T22:32:30.837Z",
+          "display_at": "2023-09-12T22:32:30.837Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "scheduled_for": "2023-09-19T11:00:00.000Z",
+      "scheduled_until": "2023-09-19T11:30:00.000Z"
+    },
+    {
       "id": "xskzqqpwck78",
       "name": "[CA/EU][LogsDataPlatform] - OpenSearch maintenance notification",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2023-09-14T21:52:19.900Z",
-      "updated_at": "2023-09-18T11:00:02.161Z",
+      "updated_at": "2023-09-18T12:00:19.535Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -5568,6 +5653,32 @@
       "started_at": "2023-09-14T21:52:19.888Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "11qqnlv6dflm",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "xskzqqpwck78",
+          "created_at": "2023-09-18T12:00:19.525Z",
+          "updated_at": "2023-09-18T12:00:19.525Z",
+          "display_at": "2023-09-18T12:00:19.525Z",
+          "affected_components": [
+            {
+              "code": "kj53n33lwykg",
+              "name": "Data & Analytics || Logs Data Platform - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "5l5zqpzw52bw",
+              "name": "Data & Analytics || Logs Data Platform - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "64dfjhg9dd0j",
           "status": "scheduled",
@@ -5662,9 +5773,9 @@
         {
           "id": "kj53n33lwykg",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:32:52.354Z",
-          "updated_at": "2023-06-01T16:12:16.673Z",
+          "updated_at": "2023-09-18T12:00:19.369Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5677,9 +5788,9 @@
         {
           "id": "5l5zqpzw52bw",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:32:53.230Z",
-          "updated_at": "2023-06-01T16:12:16.687Z",
+          "updated_at": "2023-09-18T12:00:19.406Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -5692,91 +5803,6 @@
       ],
       "scheduled_for": "2023-09-18T12:00:00.000Z",
       "scheduled_until": "2023-09-18T14:00:00.000Z"
-    },
-    {
-      "id": "sqz5qcy1gyz3",
-      "name": "[WAW1][Network] - Network equipment maintenance",
-      "status": "scheduled",
-      "created_at": "2023-09-13T20:39:22.297Z",
-      "updated_at": "2023-09-13T20:39:22.346Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yvlll9mtyy5b",
-      "started_at": "2023-09-13T20:39:22.292Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "rgv3vxxllk68",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2023 00:00 UTC \n<b>End time :</b> 19/09/2023 04:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade multiple network equipment.",
-          "incident_id": "sqz5qcy1gyz3",
-          "created_at": "2023-09-13T20:39:22.344Z",
-          "updated_at": "2023-09-13T20:39:22.344Z",
-          "display_at": "2023-09-13T20:39:22.344Z",
-          "affected_components": [
-            {
-              "code": "qzd48y2mk6l4",
-              "name": "Network || Private network (vRack) - WAW1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qzd48y2mk6l4",
-          "name": "WAW1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:31.515Z",
-          "updated_at": "2023-08-11T01:43:30.118Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-19T00:00:00.000Z",
-      "scheduled_until": "2023-09-19T04:00:00.000Z"
-    },
-    {
-      "id": "xx1hfvlf8331",
-      "name": "[UK1/ UK2 /US-EAST-VA-1 /US-EAST-VA-2 /US-WEST-OR-1 /US-WEST-OR-2 /WAW1/ WAW2] - [K8S] 1.24 Update",
-      "status": "scheduled",
-      "created_at": "2023-09-12T22:32:30.798Z",
-      "updated_at": "2023-09-12T22:32:30.839Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3zddw9k626n5",
-      "started_at": "2023-09-12T22:32:30.794Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "cv10l7spjnl6",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 19/09/2023 11:00 UTC\n<b>End time :</b> 19/09/2023 11:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Kubernetes 1.24 releases updates, to deliver security updates, fix known issues, and introduce new features.",
-          "incident_id": "xx1hfvlf8331",
-          "created_at": "2023-09-12T22:32:30.837Z",
-          "updated_at": "2023-09-12T22:32:30.837Z",
-          "display_at": "2023-09-12T22:32:30.837Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [],
-      "scheduled_for": "2023-09-19T11:00:00.000Z",
-      "scheduled_until": "2023-09-19T11:30:00.000Z"
     }
   ],
   "status": {
