@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-17T19:57:04.133Z"
+    "updated_at": "2023-09-18T08:46:24.294Z"
   },
   "components": [
     {
@@ -340,9 +340,9 @@
     {
       "id": "j60wbjr53lsb",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:28.528Z",
-      "updated_at": "2023-09-14T11:43:17.755Z",
+      "updated_at": "2023-09-18T08:46:24.127Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -824,9 +824,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2023-09-14T11:43:17.768Z",
+      "updated_at": "2023-09-18T08:46:24.143Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1218,9 +1218,9 @@
     {
       "id": "9m4wdr70k60d",
       "name": "DE",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:47.972Z",
-      "updated_at": "2023-08-31T09:40:13.365Z",
+      "updated_at": "2023-09-18T08:46:24.158Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1962,9 +1962,9 @@
     {
       "id": "2pk5hxxqkq21",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:01.981Z",
-      "updated_at": "2023-09-14T11:43:17.792Z",
+      "updated_at": "2023-09-18T08:46:24.172Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2295,9 +2295,9 @@
     {
       "id": "42rlkfllkbpy",
       "name": "SGP",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:59.157Z",
-      "updated_at": "2023-07-18T17:16:51.633Z",
+      "updated_at": "2023-09-18T08:46:24.187Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2573,9 +2573,9 @@
     {
       "id": "lh1hb31mp6kh",
       "name": "SYD",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:56.096Z",
-      "updated_at": "2023-07-18T17:16:58.399Z",
+      "updated_at": "2023-09-18T08:46:24.202Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2741,9 +2741,9 @@
     {
       "id": "13lcmbp3cvg7",
       "name": "UK",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:43.824Z",
-      "updated_at": "2023-08-31T09:40:13.389Z",
+      "updated_at": "2023-09-18T08:46:24.217Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2880,9 +2880,9 @@
     {
       "id": "pkcg4178zmpr",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:51.088Z",
-      "updated_at": "2023-08-31T09:40:13.401Z",
+      "updated_at": "2023-09-18T08:46:24.232Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5182,7 +5182,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-05-16T12:03:40.336Z",
       "position": 39,
@@ -5290,7 +5290,208 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jfqd7w62r3by",
+      "name": "[BHS/GRA/DE/SBG/SGP/SYD/UK/WAW][Object Storage] - S3 offer",
+      "status": "investigating",
+      "created_at": "2023-09-18T08:46:24.073Z",
+      "updated_at": "2023-09-18T08:46:24.291Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/k5k6rh31lwlf",
+      "started_at": "2023-09-18T08:46:24.056Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "y07cby2gzpmv",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 14/09/2023 08:54 UTC \n<b>Service impact :</b> Server-Side-Copy with a range return a 400 error in case of object (with MPU) with a size greater than 5GB.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "jfqd7w62r3by",
+          "created_at": "2023-09-18T08:46:24.288Z",
+          "updated_at": "2023-09-18T08:46:24.288Z",
+          "display_at": "2023-09-18T08:46:24.288Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "9m4wdr70k60d",
+              "name": "Storage || Object storage - DE",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "j60wbjr53lsb",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:28.528Z",
+          "updated_at": "2023-09-18T08:46:24.127Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2023-09-18T08:46:24.143Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "9m4wdr70k60d",
+          "name": "DE",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:47.972Z",
+          "updated_at": "2023-09-18T08:46:24.158Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2pk5hxxqkq21",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:01.981Z",
+          "updated_at": "2023-09-18T08:46:24.172Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "42rlkfllkbpy",
+          "name": "SGP",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:59.157Z",
+          "updated_at": "2023-09-18T08:46:24.187Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lh1hb31mp6kh",
+          "name": "SYD",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:56.096Z",
+          "updated_at": "2023-09-18T08:46:24.202Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "13lcmbp3cvg7",
+          "name": "UK",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:43.824Z",
+          "updated_at": "2023-09-18T08:46:24.217Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pkcg4178zmpr",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:51.088Z",
+          "updated_at": "2023-09-18T08:46:24.232Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "xskzqqpwck78",
@@ -5504,7 +5705,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
