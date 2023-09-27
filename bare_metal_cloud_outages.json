@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-27T07:59:58.658Z"
+    "updated_at": "2023-09-27T08:27:03.789Z"
   },
   "components": [
     {
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1467,9 +1467,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-09-27T06:51:23.601Z",
+      "updated_at": "2023-09-27T08:21:38.599Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2398,7 +2398,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "k3k59mzcpjyh",
+      "name": "[RBX8][Dedicated Servers] - Rack R807L04",
+      "status": "identified",
+      "created_at": "2023-09-27T08:21:38.571Z",
+      "updated_at": "2023-09-27T08:27:03.781Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/g2cm6rjdklv9",
+      "started_at": "2023-09-27T08:21:38.564Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "lffx0s676t6d",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "k3k59mzcpjyh",
+          "created_at": "2023-09-27T08:27:03.779Z",
+          "updated_at": "2023-09-27T08:27:03.779Z",
+          "display_at": "2023-09-27T08:27:03.779Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jmcdw4b6kxy0",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 27/09/2023 08:05 UTC\n<b>Service impact :</b> Servers in the rack R807L04 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "k3k59mzcpjyh",
+          "created_at": "2023-09-27T08:21:38.650Z",
+          "updated_at": "2023-09-27T08:21:38.650Z",
+          "display_at": "2023-09-27T08:21:38.650Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-09-27T08:21:38.599Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3kt2gk2tq1c6",
@@ -3195,7 +3269,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
