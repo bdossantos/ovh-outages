@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-28T20:00:23.587Z"
+    "updated_at": "2023-09-28T20:15:47.448Z"
   },
   "components": [
     {
@@ -330,9 +330,9 @@
     {
       "id": "gl3xpsrcq36n",
       "name": "Cluster003",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:03.230Z",
-      "updated_at": "2023-09-19T07:44:53.039Z",
+      "updated_at": "2023-09-28T20:15:46.590Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2667,7 +2667,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2745,73 +2745,6 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
-    {
-      "id": "ztj6ykwpdg12",
-      "name": "[GRA][Webhosting] - Filer780",
-      "status": "scheduled",
-      "created_at": "2023-09-22T21:13:19.846Z",
-      "updated_at": "2023-09-28T19:14:57.137Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dqlht3f6nq1q",
-      "started_at": "2023-09-22T21:13:19.837Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "st1p0y1447h8",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ztj6ykwpdg12",
-          "created_at": "2023-09-28T19:14:56.976Z",
-          "updated_at": "2023-09-28T19:14:56.976Z",
-          "display_at": "2023-09-28T19:14:56.976Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "g6ybqwv37mng",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 28/09/2023 20:15 UTC \n<b>End time :</b> 28/09/2023 21:15 UTC \n<b>Service impact :</b> Each filerz will have a downtime of 30min during the migration\n<b>Service improvement :</b> We are going to migrate the Filerz780 (webhosting server) to keep our infrastructure up-to-date",
-          "incident_id": "ztj6ykwpdg12",
-          "created_at": "2023-09-22T21:13:19.910Z",
-          "updated_at": "2023-09-22T21:13:19.910Z",
-          "display_at": "2023-09-22T21:13:19.910Z",
-          "affected_components": [
-            {
-              "code": "gl3xpsrcq36n",
-              "name": "Web Hosting || Datacenter GRA - Cluster003",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gl3xpsrcq36n",
-          "name": "Cluster003",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:03.230Z",
-          "updated_at": "2023-09-19T07:44:53.039Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-09-28T20:15:00.000Z",
-      "scheduled_until": "2023-09-28T21:15:00.000Z"
-    },
     {
       "id": "3w54psk96rpj",
       "name": "[GRA][Webhosting] - Filer335",
@@ -3040,10 +2973,97 @@
       ],
       "scheduled_for": "2023-10-23T21:00:00.000Z",
       "scheduled_until": "2023-10-23T22:00:00.000Z"
+    },
+    {
+      "id": "ztj6ykwpdg12",
+      "name": "[GRA][Webhosting] - Filer780",
+      "status": "in_progress",
+      "created_at": "2023-09-22T21:13:19.846Z",
+      "updated_at": "2023-09-28T20:15:47.431Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dqlht3f6nq1q",
+      "started_at": "2023-09-22T21:13:19.837Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "s4qlzj1tzy7l",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "ztj6ykwpdg12",
+          "created_at": "2023-09-28T20:15:47.425Z",
+          "updated_at": "2023-09-28T20:15:47.425Z",
+          "display_at": "2023-09-28T20:15:47.425Z",
+          "affected_components": [
+            {
+              "code": "gl3xpsrcq36n",
+              "name": "Web Hosting || Datacenter GRA - Cluster003",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "st1p0y1447h8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ztj6ykwpdg12",
+          "created_at": "2023-09-28T19:14:56.976Z",
+          "updated_at": "2023-09-28T19:14:56.976Z",
+          "display_at": "2023-09-28T19:14:56.976Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g6ybqwv37mng",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 28/09/2023 20:15 UTC \n<b>End time :</b> 28/09/2023 21:15 UTC \n<b>Service impact :</b> Each filerz will have a downtime of 30min during the migration\n<b>Service improvement :</b> We are going to migrate the Filerz780 (webhosting server) to keep our infrastructure up-to-date",
+          "incident_id": "ztj6ykwpdg12",
+          "created_at": "2023-09-22T21:13:19.910Z",
+          "updated_at": "2023-09-22T21:13:19.910Z",
+          "display_at": "2023-09-22T21:13:19.910Z",
+          "affected_components": [
+            {
+              "code": "gl3xpsrcq36n",
+              "name": "Web Hosting || Datacenter GRA - Cluster003",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gl3xpsrcq36n",
+          "name": "Cluster003",
+          "status": "under_maintenance",
+          "created_at": "2021-06-30T12:19:03.230Z",
+          "updated_at": "2023-09-28T20:15:46.590Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-28T20:15:00.000Z",
+      "scheduled_until": "2023-09-28T21:15:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
