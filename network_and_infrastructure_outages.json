@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-09-28T08:26:29.042Z"
+    "updated_at": "2023-09-28T08:58:25.791Z"
   },
   "components": [
     {
@@ -1002,6 +1002,60 @@
       "scheduled_until": "2023-09-28T15:30:00.000Z"
     },
     {
+      "id": "8tg2qvy8ln96",
+      "name": "[GRA1][Network] - Network equipement maintenance",
+      "status": "scheduled",
+      "created_at": "2023-09-28T08:58:25.735Z",
+      "updated_at": "2023-09-28T08:58:25.788Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mmd44skm0dcl",
+      "started_at": "2023-09-28T08:58:25.730Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "5b5cq41rftzt",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 29/09/2023 00:00 UTC\n<b>End time :</b> 29/09/2023 02:00 UTC\n<b>Service impact :</b> Loss of vRack during this maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a Vrack network equipment.",
+          "incident_id": "8tg2qvy8ln96",
+          "created_at": "2023-09-28T08:58:25.786Z",
+          "updated_at": "2023-09-28T08:58:25.786Z",
+          "display_at": "2023-09-28T08:58:25.786Z",
+          "affected_components": [
+            {
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pgf35fxt4ywk",
+          "name": "Network Services || vRack Private Network",
+          "status": "operational",
+          "created_at": "2022-05-20T08:36:07.479Z",
+          "updated_at": "2023-08-04T16:26:03.420Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-09-29T00:00:00.000Z",
+      "scheduled_until": "2023-09-29T02:00:00.000Z"
+    },
+    {
       "id": "13r2d4ld2p1y",
       "name": "[SBG3][Infrastructure] - Electrical background work",
       "status": "scheduled",
@@ -1272,60 +1326,6 @@
       "scheduled_until": "2023-10-03T01:00:00.000Z"
     },
     {
-      "id": "gcd10g1c1wr4",
-      "name": "[SBG5][Infrastructure] - UPS maintenance",
-      "status": "scheduled",
-      "created_at": "2023-09-26T21:12:38.587Z",
-      "updated_at": "2023-09-26T21:12:38.639Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3j9gkt9qqy0d",
-      "started_at": "2023-09-26T21:12:38.578Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "9zy9nyblrrkr",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 03/09/2023 06:00 UTC \n<b>End time :</b> 03/09/2023 15:00 UTC \n<b>Service impact :</b> Switching the UPS to static bypass and battery discharge test\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on UPS",
-          "incident_id": "gcd10g1c1wr4",
-          "created_at": "2023-09-26T21:12:38.637Z",
-          "updated_at": "2023-09-26T21:12:38.637Z",
-          "display_at": "2023-09-26T21:12:38.637Z",
-          "affected_components": [
-            {
-              "code": "mp1qh2crp1cl",
-              "name": "Infrastructure || SBG - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mp1qh2crp1cl",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-06-20T07:44:01.844Z",
-          "updated_at": "2023-09-19T09:33:07.313Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-06-20",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-03T06:00:00.000Z",
-      "scheduled_until": "2023-10-03T15:00:00.000Z"
-    },
-    {
       "id": "sdhxpwc0nj0m",
       "name": "[SBG3][Infrastructure] - Power supply Device Maintenance",
       "status": "scheduled",
@@ -1378,6 +1378,60 @@
       ],
       "scheduled_for": "2023-10-03T06:00:00.000Z",
       "scheduled_until": "2023-10-04T15:00:00.000Z"
+    },
+    {
+      "id": "gcd10g1c1wr4",
+      "name": "[SBG5][Infrastructure] - UPS maintenance",
+      "status": "scheduled",
+      "created_at": "2023-09-26T21:12:38.587Z",
+      "updated_at": "2023-09-26T21:12:38.639Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3j9gkt9qqy0d",
+      "started_at": "2023-09-26T21:12:38.578Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "9zy9nyblrrkr",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 03/09/2023 06:00 UTC \n<b>End time :</b> 03/09/2023 15:00 UTC \n<b>Service impact :</b> Switching the UPS to static bypass and battery discharge test\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on UPS",
+          "incident_id": "gcd10g1c1wr4",
+          "created_at": "2023-09-26T21:12:38.637Z",
+          "updated_at": "2023-09-26T21:12:38.637Z",
+          "display_at": "2023-09-26T21:12:38.637Z",
+          "affected_components": [
+            {
+              "code": "mp1qh2crp1cl",
+              "name": "Infrastructure || SBG - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp1qh2crp1cl",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-06-20T07:44:01.844Z",
+          "updated_at": "2023-09-19T09:33:07.313Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-06-20",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-03T06:00:00.000Z",
+      "scheduled_until": "2023-10-03T15:00:00.000Z"
     },
     {
       "id": "2lmlkmqk55wk",
@@ -4179,60 +4233,6 @@
       ],
       "scheduled_for": "2023-11-21T07:30:00.000Z",
       "scheduled_until": "2023-11-21T16:00:00.000Z"
-    },
-    {
-      "id": "vq5lbps6vd87",
-      "name": "[RBX8][Infrastructure] -  Electrical work",
-      "status": "scheduled",
-      "created_at": "2023-03-03T22:14:20.255Z",
-      "updated_at": "2023-03-05T05:19:11.572Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wrts53ch8h5p",
-      "started_at": "2023-03-03T22:14:20.245Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "hlb9hkfgy5vl",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 29/11/2023 07:30 UTC \n<b>End time :</b> 29/11/2023 13:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement  :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on a UPS in RBX8",
-          "incident_id": "vq5lbps6vd87",
-          "created_at": "2023-03-03T22:14:20.325Z",
-          "updated_at": "2023-03-03T22:14:20.325Z",
-          "display_at": "2023-03-03T22:14:20.325Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-08-28T08:12:38.520Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-29T07:30:00.000Z",
-      "scheduled_until": "2023-11-29T13:00:00.000Z"
     },
     {
       "id": "g644vlw6h99q",
