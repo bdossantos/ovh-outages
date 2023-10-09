@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-09T11:29:58.111Z"
+    "updated_at": "2023-10-09T12:30:13.782Z"
   },
   "components": [
     {
@@ -1320,7 +1320,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1812,9 +1812,9 @@
     {
       "id": "qkvynnwhykk2",
       "name": "SGP",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:57.567Z",
-      "updated_at": "2023-08-03T08:00:31.118Z",
+      "updated_at": "2023-10-09T12:30:13.591Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2401,78 +2401,11 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "h3l8gjhhfl87",
-      "name": "[SGP][Dedicated Servers Public/Private Networks] - Rack 050811",
-      "status": "scheduled",
-      "created_at": "2023-09-29T00:25:21.367Z",
-      "updated_at": "2023-10-09T11:29:58.102Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/524dg3mq97jh",
-      "started_at": "2023-09-29T00:25:21.357Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "rb5q3z1vtrz2",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "h3l8gjhhfl87",
-          "created_at": "2023-10-09T11:29:57.982Z",
-          "updated_at": "2023-10-09T11:29:57.982Z",
-          "display_at": "2023-10-09T11:29:57.982Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "g5h692hmdtkd",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/10/2023 12:30 UTC \n<b>End time :</b> 09/10/2023 14:30 UTC \n<b>Service impact :</b> Public and vRack networks will be unavailable for servers in rack 050811 during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment",
-          "incident_id": "h3l8gjhhfl87",
-          "created_at": "2023-09-29T00:25:21.457Z",
-          "updated_at": "2023-09-30T23:18:27.007Z",
-          "display_at": "2023-09-29T00:25:21.457Z",
-          "affected_components": [
-            {
-              "code": "qkvynnwhykk2",
-              "name": "Dedicated Servers || Network - SGP",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qkvynnwhykk2",
-          "name": "SGP",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:57.567Z",
-          "updated_at": "2023-08-03T08:00:31.118Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-09T12:30:00.000Z",
-      "scheduled_until": "2023-10-09T14:30:00.000Z"
-    },
-    {
       "id": "gxljztx6p6t8",
       "name": "[GLOBAL][NAS HA] - NFSv4.1 support maintenance",
       "status": "scheduled",
       "created_at": "2023-09-12T08:49:30.151Z",
-      "updated_at": "2023-09-12T08:54:09.490Z",
+      "updated_at": "2023-10-09T12:28:06.856Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2480,6 +2413,38 @@
       "started_at": "2023-09-12T08:49:30.140Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "k3crv7s0k339",
+          "status": "scheduled",
+          "body": "The end time of the maintenance has changed.\nBelow you can find the new information regarding the operation.\n\n<b>Start time :</b> 10/10/2023 04:30 UTC \n<b>End time :</b> 12/10/2023 06:30 UTC \n<b>Service impact :</b> During the maintenance, a restart of the server-side NFS daemon will be made. \nSo a service interruption of less than a second may be observed\n<b>Service improvement :</b> The objective of this maintenance is to make NFSv4.1 automatically supported by default on all SSD-based NAS-HA over the current NFSv3.\n\nSome changes might be observed from cutomers side which are as follow:   \n* For your future NAS-HA orders, NFSv4.1 will be used by default when mounting your file shares.\nIf needed, you will be able to choose between v3 and v4.1 when mounting your shares using the mount utility.\n* For existing ones, it will depend on what you did initially:\n               - If you didn't force NFSv3 when mounting your shares: NFSv4.1 will be applied if the server or the client service is restarted. \nYou can decide to force NFSv3 using the same mount utility.\n               - If you forced NFSv3 when mounting your shares: nothing will change, you will keep your original   configuration.",
+          "incident_id": "gxljztx6p6t8",
+          "created_at": "2023-10-09T12:27:08.017Z",
+          "updated_at": "2023-10-09T12:27:08.017Z",
+          "display_at": "2023-10-09T12:27:08.017Z",
+          "affected_components": [
+            {
+              "code": "0pcq2d0yy7wz",
+              "name": "Storage and Backups || NAS HA - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "j0hn31fh46h5",
+              "name": "Storage and Backups || NAS HA - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5sqj5fykl0jy",
+              "name": "Storage and Backups || NAS HA - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "67p2367lq34d",
           "status": "scheduled",
@@ -2561,7 +2526,7 @@
         }
       ],
       "scheduled_for": "2023-10-10T04:30:00.000Z",
-      "scheduled_until": "2023-10-12T13:00:00.000Z"
+      "scheduled_until": "2023-10-12T06:30:00.000Z"
     },
     {
       "id": "0924drqywmcw",
@@ -3282,9 +3247,9 @@
         {
           "id": "qkvynnwhykk2",
           "name": "SGP",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:57.567Z",
-          "updated_at": "2023-08-03T08:00:31.118Z",
+          "updated_at": "2023-10-09T12:30:13.591Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3297,6 +3262,93 @@
       ],
       "scheduled_for": "2023-11-29T21:00:00.000Z",
       "scheduled_until": "2023-11-30T00:00:00.000Z"
+    },
+    {
+      "id": "h3l8gjhhfl87",
+      "name": "[SGP][Dedicated Servers Public/Private Networks] - Rack 050811",
+      "status": "in_progress",
+      "created_at": "2023-09-29T00:25:21.367Z",
+      "updated_at": "2023-10-09T12:30:13.723Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/524dg3mq97jh",
+      "started_at": "2023-09-29T00:25:21.357Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "pqx18wdn289x",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "h3l8gjhhfl87",
+          "created_at": "2023-10-09T12:30:13.718Z",
+          "updated_at": "2023-10-09T12:30:13.718Z",
+          "display_at": "2023-10-09T12:30:13.718Z",
+          "affected_components": [
+            {
+              "code": "qkvynnwhykk2",
+              "name": "Dedicated Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rb5q3z1vtrz2",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "h3l8gjhhfl87",
+          "created_at": "2023-10-09T11:29:57.982Z",
+          "updated_at": "2023-10-09T11:29:57.982Z",
+          "display_at": "2023-10-09T11:29:57.982Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g5h692hmdtkd",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/10/2023 12:30 UTC \n<b>End time :</b> 09/10/2023 14:30 UTC \n<b>Service impact :</b> Public and vRack networks will be unavailable for servers in rack 050811 during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment",
+          "incident_id": "h3l8gjhhfl87",
+          "created_at": "2023-09-29T00:25:21.457Z",
+          "updated_at": "2023-09-30T23:18:27.007Z",
+          "display_at": "2023-09-29T00:25:21.457Z",
+          "affected_components": [
+            {
+              "code": "qkvynnwhykk2",
+              "name": "Dedicated Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qkvynnwhykk2",
+          "name": "SGP",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:57.567Z",
+          "updated_at": "2023-10-09T12:30:13.591Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-09T12:30:00.000Z",
+      "scheduled_until": "2023-10-09T14:30:00.000Z"
     },
     {
       "id": "fzvfy71vmbr7",
@@ -3441,7 +3493,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
