@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-12T01:43:09.758Z"
+    "updated_at": "2023-10-12T06:01:58.181Z"
   },
   "components": [
     {
@@ -40,9 +40,9 @@
     {
       "id": "0pcq2d0yy7wz",
       "name": "RBX",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:52.860Z",
-      "updated_at": "2023-10-10T04:31:04.344Z",
+      "updated_at": "2023-10-12T06:01:58.105Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -397,9 +397,9 @@
     {
       "id": "j0hn31fh46h5",
       "name": "SBG",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:53.649Z",
-      "updated_at": "2023-10-10T04:31:04.381Z",
+      "updated_at": "2023-10-12T06:01:58.119Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -985,9 +985,9 @@
     {
       "id": "5sqj5fykl0jy",
       "name": "BHS",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-28T14:50:53.141Z",
-      "updated_at": "2023-10-10T04:31:04.420Z",
+      "updated_at": "2023-10-12T06:01:58.131Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2245,7 +2245,7 @@
     {
       "id": "0zd81w13qcgg",
       "name": "Storage and Backups || NAS HA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:54.584Z",
       "updated_at": "2023-08-01T15:50:47.381Z",
       "position": 17,
@@ -3085,179 +3085,6 @@
       "scheduled_until": "2023-11-30T00:00:00.000Z"
     },
     {
-      "id": "gxljztx6p6t8",
-      "name": "[GLOBAL][NAS HA] - NFSv4.1 support maintenance",
-      "status": "in_progress",
-      "created_at": "2023-09-12T08:49:30.151Z",
-      "updated_at": "2023-10-10T04:31:04.544Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pcwkdl0nkp17",
-      "started_at": "2023-09-12T08:49:30.140Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "9wmhbpbjf88h",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "gxljztx6p6t8",
-          "created_at": "2023-10-10T04:31:04.529Z",
-          "updated_at": "2023-10-10T04:31:04.529Z",
-          "display_at": "2023-10-10T04:31:04.529Z",
-          "affected_components": [
-            {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "j0hn31fh46h5",
-              "name": "Storage and Backups || NAS HA - SBG",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8sgvgpzgw4w2",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "gxljztx6p6t8",
-          "created_at": "2023-10-10T03:29:58.763Z",
-          "updated_at": "2023-10-10T03:29:58.763Z",
-          "display_at": "2023-10-10T03:29:58.763Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "k3crv7s0k339",
-          "status": "scheduled",
-          "body": "The end time of the maintenance has changed.\nBelow you can find the new information regarding the operation.\n\n<b>Start time :</b> 10/10/2023 04:30 UTC \n<b>End time :</b> 12/10/2023 06:30 UTC \n<b>Service impact :</b> During the maintenance, a restart of the server-side NFS daemon will be made. \nSo a service interruption of less than a second may be observed\n<b>Service improvement :</b> The objective of this maintenance is to make NFSv4.1 automatically supported by default on all SSD-based NAS-HA over the current NFSv3.\n\nSome changes might be observed from cutomers side which are as follow:   \n* For your future NAS-HA orders, NFSv4.1 will be used by default when mounting your file shares.\nIf needed, you will be able to choose between v3 and v4.1 when mounting your shares using the mount utility.\n* For existing ones, it will depend on what you did initially:\n               - If you didn't force NFSv3 when mounting your shares: NFSv4.1 will be applied if the server or the client service is restarted. \nYou can decide to force NFSv3 using the same mount utility.\n               - If you forced NFSv3 when mounting your shares: nothing will change, you will keep your original   configuration.",
-          "incident_id": "gxljztx6p6t8",
-          "created_at": "2023-10-09T12:27:08.017Z",
-          "updated_at": "2023-10-09T12:27:08.017Z",
-          "display_at": "2023-10-09T12:27:08.017Z",
-          "affected_components": [
-            {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "j0hn31fh46h5",
-              "name": "Storage and Backups || NAS HA - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "67p2367lq34d",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 10/10/2023 04:30 UTC \n<b>End time :</b> 12/10/2023 13:00 UTC \n<b>Service impact :</b> During the maintenance, a restart of the server-side NFS daemon will be made. \nSo a service interruption of less than a second may be observed\n<b>Service improvement :</b> The objective of this maintenance is to make NFSv4.1 automatically supported by default on all SSD-based NAS-HA over the current NFSv3.\n\nSome changes might be observed from cutomers side which are as follow:   \n* For your future NAS-HA orders, NFSv4.1 will be used by default when mounting your file shares.\nIf needed, you will be able to choose between v3 and v4.1 when mounting your shares using the mount utility.\n* For existing ones, it will depend on what you did initially:\n               - If you didn't force NFSv3 when mounting your shares: NFSv4.1 will be applied if the server or the client service is restarted. \nYou can decide to force NFSv3 using the same mount utility.\n               - If you forced NFSv3 when mounting your shares: nothing will change, you will keep your original   configuration.",
-          "incident_id": "gxljztx6p6t8",
-          "created_at": "2023-09-12T08:49:30.218Z",
-          "updated_at": "2023-09-12T08:54:09.487Z",
-          "display_at": "2023-09-12T08:49:30.218Z",
-          "affected_components": [
-            {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "j0hn31fh46h5",
-              "name": "Storage and Backups || NAS HA - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0pcq2d0yy7wz",
-          "name": "RBX",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2023-10-10T04:31:04.344Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "j0hn31fh46h5",
-          "name": "SBG",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2023-10-10T04:31:04.381Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5sqj5fykl0jy",
-          "name": "BHS",
-          "status": "under_maintenance",
-          "created_at": "2022-06-28T14:50:53.141Z",
-          "updated_at": "2023-10-10T04:31:04.420Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-06-28",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-10T04:30:00.000Z",
-      "scheduled_until": "2023-10-12T06:30:00.000Z"
-    },
-    {
       "id": "fzvfy71vmbr7",
       "name": "[GLOBAL][Baremetal] - Debian-8-based rescue system (rescue64-pro) removal",
       "status": "in_progress",
@@ -3400,7 +3227,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
