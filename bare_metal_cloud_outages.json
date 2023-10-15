@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-15T04:23:18.360Z"
+    "updated_at": "2023-10-15T08:27:00.958Z"
   },
   "components": [
     {
@@ -1514,7 +1514,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2023-10-15T03:57:12.558Z",
+      "updated_at": "2023-10-15T08:27:00.913Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2400,6 +2400,139 @@
   ],
   "incidents": [
     {
+      "id": "557gj5rycqw4",
+      "name": "[RBX3][Dedicated Servers] - 41B10/41B13/41B14",
+      "status": "identified",
+      "created_at": "2023-10-15T08:17:50.678Z",
+      "updated_at": "2023-10-15T08:27:00.951Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/gk6zfy7z7rkp",
+      "started_at": "2023-10-15T08:17:50.670Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "c5wg2k3glrmy",
+          "status": "identified",
+          "body": "<b>Start time :</b> 15/10/2023 08:02 UTC\n<b>End time :</b> 15/10/2023 08:21 UTC\n<b>Service impact :</b> Services are working as they should be.\n<b>Root cause :</b> It was due to a malfunction on a power supply.",
+          "incident_id": "557gj5rycqw4",
+          "created_at": "2023-10-15T08:27:00.948Z",
+          "updated_at": "2023-10-15T08:27:00.948Z",
+          "display_at": "2023-10-15T08:27:00.948Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bgjfvqxykr9q",
+          "status": "identified",
+          "body": "On racks 41B13, some servers and Public Network are still unreachable.",
+          "incident_id": "557gj5rycqw4",
+          "created_at": "2023-10-15T08:24:45.445Z",
+          "updated_at": "2023-10-15T08:24:45.445Z",
+          "display_at": "2023-10-15T08:24:45.445Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p265ydscf2k2",
+          "status": "identified",
+          "body": "On racks 41B10 and 41B14, the situation is back to normal, the service is running nominally.",
+          "incident_id": "557gj5rycqw4",
+          "created_at": "2023-10-15T08:22:18.414Z",
+          "updated_at": "2023-10-15T08:24:02.239Z",
+          "display_at": "2023-10-15T08:22:18.000Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k5qpp9v9jkb4",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "557gj5rycqw4",
+          "created_at": "2023-10-15T08:21:06.531Z",
+          "updated_at": "2023-10-15T08:21:06.531Z",
+          "display_at": "2023-10-15T08:21:06.531Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2k3tzwrl4pfy",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 15/10/2023 08:02 UTC\n<b>Service impact :</b> Servers are unreachable on these racks.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "557gj5rycqw4",
+          "created_at": "2023-10-15T08:17:50.772Z",
+          "updated_at": "2023-10-15T08:17:50.772Z",
+          "display_at": "2023-10-15T08:17:50.772Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2023-10-15T08:27:00.913Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "cr37j8qbd606",
       "name": "[RBX1][Dedicated Servers] - Rack 09B09",
       "status": "monitoring",
@@ -2459,7 +2592,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-10-15T03:57:12.558Z",
+          "updated_at": "2023-10-15T08:27:00.913Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2514,7 +2647,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-10-15T03:57:12.558Z",
+          "updated_at": "2023-10-15T08:27:00.913Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2589,7 +2722,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2023-10-15T03:57:12.558Z",
+          "updated_at": "2023-10-15T08:27:00.913Z",
           "position": 6,
           "description": null,
           "showcase": false,
