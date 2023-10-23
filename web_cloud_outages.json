@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-23T07:43:27.816Z"
+    "updated_at": "2023-10-23T09:58:39.447Z"
   },
   "components": [
     {
@@ -928,7 +928,7 @@
     {
       "id": "k04vzm9j7ytt",
       "name": "Collaborative solutions || Hosted Exchange",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-06-30T12:19:33.947Z",
       "updated_at": "2023-05-16T12:09:06.678Z",
       "position": 4,
@@ -1290,9 +1290,9 @@
     {
       "id": "bt78b19qf30s",
       "name": "Webmail",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-06-30T12:19:33.386Z",
-      "updated_at": "2023-10-11T12:09:00.215Z",
+      "updated_at": "2023-10-23T09:44:22.463Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2743,7 +2743,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qbjg7qnls7lz",
+      "name": "[RBX/GRA/SBG][Hosted Exchange] - Webmail access",
+      "status": "investigating",
+      "created_at": "2023-10-23T09:44:22.432Z",
+      "updated_at": "2023-10-23T09:45:11.273Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/gpwd02tzpzxx",
+      "started_at": "2023-10-23T09:44:22.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "bh27x02rb7xf",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 23/10/2023 08:00 UTC \n<b>Service impact :</b> Connection to Webmail OWA (ex2.mail.ovh.net) unavailable.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "qbjg7qnls7lz",
+          "created_at": "2023-10-23T09:44:22.509Z",
+          "updated_at": "2023-10-23T09:45:11.234Z",
+          "display_at": "2023-10-23T09:44:22.000Z",
+          "affected_components": [
+            {
+              "code": "bt78b19qf30s",
+              "name": "Collaborative solutions || Hosted Exchange - Webmail",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "bt78b19qf30s",
+          "name": "Webmail",
+          "status": "major_outage",
+          "created_at": "2021-06-30T12:19:33.386Z",
+          "updated_at": "2023-10-23T09:44:22.463Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "k04vzm9j7ytt",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "b3xm8lwzdjtr",
@@ -2852,6 +2906,60 @@
       ],
       "scheduled_for": "2023-10-23T21:00:00.000Z",
       "scheduled_until": "2023-10-23T22:00:00.000Z"
+    },
+    {
+      "id": "v2wt1tbzyv07",
+      "name": "[FR][VoIP] - SBC interconnection update",
+      "status": "scheduled",
+      "created_at": "2023-10-23T09:58:39.399Z",
+      "updated_at": "2023-10-23T09:58:39.445Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6y2xxd83h081",
+      "started_at": "2023-10-23T09:58:39.393Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "ssbc24c9m7d8",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/10/2023 21:00 UTC \n<b>End time :</b> 30/10/2023 23:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Our teams will update our SBC interconnection servers to introduce new features following the evolution of French regulations.",
+          "incident_id": "v2wt1tbzyv07",
+          "created_at": "2023-10-23T09:58:39.443Z",
+          "updated_at": "2023-10-23T09:58:39.443Z",
+          "display_at": "2023-10-23T09:58:39.443Z",
+          "affected_components": [
+            {
+              "code": "9wqkcnmxzstb",
+              "name": "VoIP || Interconnect - France",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9wqkcnmxzstb",
+          "name": "France",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:44.296Z",
+          "updated_at": "2023-06-26T23:41:03.203Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-23T21:00:00.000Z",
+      "scheduled_until": "2023-10-30T23:00:00.000Z"
     },
     {
       "id": "wxrcsglp9fbx",
@@ -3313,7 +3421,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
