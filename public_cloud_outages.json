@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-23T06:59:57.823Z"
+    "updated_at": "2023-10-23T08:01:03.443Z"
   },
   "components": [
     {
@@ -1473,9 +1473,9 @@
     {
       "id": "k6bzjch86wfn",
       "name": "GRA3",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:35:07.956Z",
-      "updated_at": "2023-10-04T21:42:31.718Z",
+      "updated_at": "2023-10-23T08:01:03.343Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -5244,7 +5244,7 @@
     {
       "id": "99vzp9gbvfqg",
       "name": "Storage || Volume Snapshot (Ceph)",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:35:21.383Z",
       "updated_at": "2023-10-18T08:28:18.136Z",
       "position": 42,
@@ -5474,73 +5474,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "v7x9n7mvwy24",
-      "name": "[GRA3][Storage] - Ceph software upgrade",
-      "status": "scheduled",
-      "created_at": "2023-10-04T21:49:31.329Z",
-      "updated_at": "2023-10-23T06:59:57.814Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vf5cp41c2n53",
-      "started_at": "2023-10-04T21:49:31.323Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "0qsb3119mbz3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "v7x9n7mvwy24",
-          "created_at": "2023-10-23T06:59:57.666Z",
-          "updated_at": "2023-10-23T06:59:57.666Z",
-          "display_at": "2023-10-23T06:59:57.666Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jvgcc48nrk7z",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 23/10/2023 08:00 UTC \n<b>End time :</b> 25/10/2023 15:00 UTC \n<b>Service impact :</b> Lowered performance during maintenance\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade of Ceph software to next stable release.",
-          "incident_id": "v7x9n7mvwy24",
-          "created_at": "2023-10-04T21:49:31.375Z",
-          "updated_at": "2023-10-04T21:49:31.375Z",
-          "display_at": "2023-10-04T21:49:31.375Z",
-          "affected_components": [
-            {
-              "code": "k6bzjch86wfn",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k6bzjch86wfn",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T09:35:07.956Z",
-          "updated_at": "2023-10-04T21:42:31.718Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-10-23T08:00:00.000Z",
-      "scheduled_until": "2023-10-25T15:00:00.000Z"
-    },
-    {
       "id": "vn1sdgx50tdc",
       "name": "[RBX][Storage] - Cold Archive",
       "status": "scheduled",
@@ -5701,6 +5634,93 @@
       ],
       "scheduled_for": "2023-10-30T08:00:00.000Z",
       "scheduled_until": "2023-10-31T13:00:00.000Z"
+    },
+    {
+      "id": "v7x9n7mvwy24",
+      "name": "[GRA3][Storage] - Ceph software upgrade",
+      "status": "in_progress",
+      "created_at": "2023-10-04T21:49:31.329Z",
+      "updated_at": "2023-10-23T08:01:03.428Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vf5cp41c2n53",
+      "started_at": "2023-10-04T21:49:31.323Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "nxkj7p96dgrr",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "v7x9n7mvwy24",
+          "created_at": "2023-10-23T08:01:03.424Z",
+          "updated_at": "2023-10-23T08:01:03.424Z",
+          "display_at": "2023-10-23T08:01:03.424Z",
+          "affected_components": [
+            {
+              "code": "k6bzjch86wfn",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA3",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0qsb3119mbz3",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "v7x9n7mvwy24",
+          "created_at": "2023-10-23T06:59:57.666Z",
+          "updated_at": "2023-10-23T06:59:57.666Z",
+          "display_at": "2023-10-23T06:59:57.666Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jvgcc48nrk7z",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 23/10/2023 08:00 UTC \n<b>End time :</b> 25/10/2023 15:00 UTC \n<b>Service impact :</b> Lowered performance during maintenance\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade of Ceph software to next stable release.",
+          "incident_id": "v7x9n7mvwy24",
+          "created_at": "2023-10-04T21:49:31.375Z",
+          "updated_at": "2023-10-04T21:49:31.375Z",
+          "display_at": "2023-10-04T21:49:31.375Z",
+          "affected_components": [
+            {
+              "code": "k6bzjch86wfn",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k6bzjch86wfn",
+          "name": "GRA3",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:35:07.956Z",
+          "updated_at": "2023-10-23T08:01:03.343Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-10-23T08:00:00.000Z",
+      "scheduled_until": "2023-10-25T15:00:00.000Z"
     }
   ],
   "status": {
