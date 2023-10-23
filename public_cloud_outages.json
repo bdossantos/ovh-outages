@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-23T14:31:28.121Z"
+    "updated_at": "2023-10-23T15:43:27.736Z"
   },
   "components": [
     {
@@ -2910,9 +2910,9 @@
     {
       "id": "pkcg4178zmpr",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:51.088Z",
-      "updated_at": "2023-09-18T15:29:42.071Z",
+      "updated_at": "2023-10-23T15:32:44.212Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -5181,7 +5181,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-10-18T08:28:18.122Z",
       "position": 40,
@@ -5292,6 +5292,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "c06n6ph16l77",
+      "name": "[WAW][Storage] -  Object Storage Swift",
+      "status": "identified",
+      "created_at": "2023-10-23T15:32:44.174Z",
+      "updated_at": "2023-10-23T15:32:44.277Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/19tyd90lrw1y",
+      "started_at": "2023-10-23T15:32:44.164Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "930kkgp08szc",
+          "status": "identified",
+          "body": "<b>Start time :</b> 23/10/2023 15:00 UTC \n<b>Service impact :</b> Partial service unavailability\n<b>Root cause :</b> Issue on a loadbalancer\n<b>Ongoing actions :</b> Our technicl teams are  isolating faulty loadbalancer.\nUpdate will be made when significant progress is made.",
+          "incident_id": "c06n6ph16l77",
+          "created_at": "2023-10-23T15:32:44.274Z",
+          "updated_at": "2023-10-23T15:32:44.274Z",
+          "display_at": "2023-10-23T15:32:44.274Z",
+          "affected_components": [
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pkcg4178zmpr",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:51.088Z",
+          "updated_at": "2023-10-23T15:32:44.212Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "jxls7b451m5w",
       "name": "[BHS][Public Cloud] - Network Degradation Incident Notification",
@@ -5724,7 +5777,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
