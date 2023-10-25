@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-24T21:43:29.323Z"
+    "updated_at": "2023-10-25T17:19:12.339Z"
   },
   "components": [
     {
@@ -1657,9 +1657,9 @@
     {
       "id": "nv25wqxhx7kq",
       "name": "SBG",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T13:35:24.365Z",
-      "updated_at": "2023-07-28T12:53:31.672Z",
+      "updated_at": "2023-10-25T17:19:12.281Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -4734,7 +4734,7 @@
     {
       "id": "bsjq07p8h346",
       "name": "Databases || MongoDB",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T13:34:23.055Z",
       "updated_at": "2023-05-16T12:03:06.645Z",
       "position": 24,
@@ -5293,6 +5293,59 @@
   ],
   "incidents": [
     {
+      "id": "rs571kxlfzw1",
+      "name": "[SBG][Databases] - MongoDB",
+      "status": "investigating",
+      "created_at": "2023-10-25T17:19:12.252Z",
+      "updated_at": "2023-10-25T17:19:12.336Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/lwrrfg1g7jhn",
+      "started_at": "2023-10-25T17:19:12.245Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "w6f15hhpyffy",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 25/10/2023 13:00 UTC \n<b>Service impact :</b> Running services are fine. It is not possible to create/delete the mongodb service in SBG as well as create/update/delete the mongodb user and IP restriction on the existing MongoDB user in SBG.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "rs571kxlfzw1",
+          "created_at": "2023-10-25T17:19:12.334Z",
+          "updated_at": "2023-10-25T17:19:12.334Z",
+          "display_at": "2023-10-25T17:19:12.334Z",
+          "affected_components": [
+            {
+              "code": "nv25wqxhx7kq",
+              "name": "Databases || MongoDB - SBG",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nv25wqxhx7kq",
+          "name": "SBG",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T13:35:24.365Z",
+          "updated_at": "2023-10-25T17:19:12.281Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "bsjq07p8h346",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "5rljck1hykzp",
       "name": "[GRA5][Public Cloud] Control-plane certificate expiration issues for clusters reaching a 5 years lifetime.",
       "status": "monitoring",
@@ -5818,7 +5871,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
