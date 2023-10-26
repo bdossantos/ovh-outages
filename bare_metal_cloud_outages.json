@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-26T19:44:34.727Z"
+    "updated_at": "2023-10-26T21:23:00.034Z"
   },
   "components": [
     {
@@ -552,9 +552,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "major_outage",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2023-10-26T15:25:42.300Z",
+      "updated_at": "2023-10-26T21:22:59.987Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "major_outage",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2404,7 +2404,7 @@
       "name": "[ERI1][Dedicated Servers] - E101A14",
       "status": "identified",
       "created_at": "2023-10-26T15:25:42.266Z",
-      "updated_at": "2023-10-26T19:36:39.751Z",
+      "updated_at": "2023-10-26T21:23:00.027Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2412,6 +2412,26 @@
       "started_at": "2023-10-26T15:25:42.258Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "r71gx0psvzc8",
+          "status": "identified",
+          "body": "The network equipment affected was replaced, servers are coming back up, but the vrack is still inaccessible. Our technical teams are still working on the remaining ones.",
+          "incident_id": "3pzx6yg2v1qz",
+          "created_at": "2023-10-26T21:23:00.025Z",
+          "updated_at": "2023-10-26T21:23:00.025Z",
+          "display_at": "2023-10-26T21:23:00.025Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "major_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "h4wrwc28bhbv",
           "status": "identified",
@@ -2477,9 +2497,9 @@
         {
           "id": "klylb1cv9dvj",
           "name": "ERI",
-          "status": "major_outage",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2023-10-26T15:25:42.300Z",
+          "updated_at": "2023-10-26T21:22:59.987Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3784,7 +3804,7 @@
     }
   ],
   "status": {
-    "indicator": "major",
-    "description": "Partial System Outage"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
