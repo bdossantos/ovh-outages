@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-27T03:45:54.592Z"
+    "updated_at": "2023-10-27T08:45:45.419Z"
   },
   "components": [
     {
@@ -946,9 +946,9 @@
     {
       "id": "4lw2d55nypyj",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:07.653Z",
-      "updated_at": "2023-04-21T18:45:22.478Z",
+      "updated_at": "2023-10-27T08:40:22.088Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2023,7 +2023,7 @@
     {
       "id": "ffzs9mslnm1g",
       "name": "VMware Private Cloud || SBG",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:08.920Z",
       "updated_at": "2023-05-16T11:53:27.899Z",
       "position": 26,
@@ -2063,7 +2063,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qvc5z72x8flr",
+      "name": "[SBG][Hosted Private Cloud] - Rack S351B02",
+      "status": "identified",
+      "created_at": "2023-10-27T08:40:22.061Z",
+      "updated_at": "2023-10-27T08:40:22.133Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/krh12zv0ggv6",
+      "started_at": "2023-10-27T08:40:22.054Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "wscnq82n72c2",
+          "status": "identified",
+          "body": "<b>Start time :</b> 27/10/2023 07:13 UTC\n<b>User impact</b> : Some hosts are not available on the rack S351B02.\n<b>Technical impact :</b> SBG1A\n<b>Root cause :</b> Incident due to a problem with the cooling system of the S351B02 rack.\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be post as significant progress is made.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "qvc5z72x8flr",
+          "created_at": "2023-10-27T08:40:22.130Z",
+          "updated_at": "2023-10-27T08:40:22.130Z",
+          "display_at": "2023-10-27T08:40:22.130Z",
+          "affected_components": [
+            {
+              "code": "4lw2d55nypyj",
+              "name": "VMware Private Cloud || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2023-10-27T08:40:22.088Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "r9pyyyrz00gc",
@@ -2706,7 +2760,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
