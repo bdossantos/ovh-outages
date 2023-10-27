@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-27T07:35:44.407Z"
+    "updated_at": "2023-10-27T14:44:56.937Z"
   },
   "components": [
     {
@@ -5297,7 +5297,7 @@
       "name": "[GRA5][Public Cloud] Control-plane certificate expiration issues for clusters reaching a 5 years lifetime.",
       "status": "monitoring",
       "created_at": "2023-10-24T13:58:11.000Z",
-      "updated_at": "2023-10-26T10:19:53.257Z",
+      "updated_at": "2023-10-27T14:34:06.185Z",
       "monitoring_at": "2023-10-24T16:10:31.157Z",
       "resolved_at": null,
       "impact": "major",
@@ -5305,6 +5305,26 @@
       "started_at": "2023-10-24T13:58:11.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "3ql78c6mp3xq",
+          "status": "monitoring",
+          "body": "We started to fix the issue for some specific certificates.\nOur technical team still working to fix globally the issue.\n\nWe will keep your inform when will have more information",
+          "incident_id": "5rljck1hykzp",
+          "created_at": "2023-10-27T14:34:06.183Z",
+          "updated_at": "2023-10-27T14:34:06.183Z",
+          "display_at": "2023-10-27T14:34:06.183Z",
+          "affected_components": [
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "fgm4h3f9dzcy",
           "status": "monitoring",
@@ -5602,6 +5622,144 @@
       ],
       "scheduled_for": "2023-11-13T08:00:00.000Z",
       "scheduled_until": "2023-11-15T15:00:00.000Z"
+    },
+    {
+      "id": "ssscy5l81mtm",
+      "name": "[SGP/SYD/BHS/SBG/GRA][Object Storage] - RFC",
+      "status": "scheduled",
+      "created_at": "2023-10-27T14:44:56.864Z",
+      "updated_at": "2023-10-27T14:44:56.934Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lhg9l0wql8nt",
+      "started_at": "2023-10-27T14:44:56.852Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kj7j0nfkk8fg",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/11/2023 08:30 UTC \n<b>End time :</b> 21/11/2023 10:30 UTC \n<b>Service impact :</b> Customers must follow RFC rules to avoid having disruptions on their requests\n<b>Service improvement :</b> We are planning to upgrade IPLB from November 20th to November 21th.\nThis upgrade will add support for TLS 1.3 as well as strict compliance with RFC7540.\nParticularly on section 8.1.2 which implies that our services will answer http responses with lowercase headers.\nHere is the maintenance planning:\n- <b>Start time :</b> 20/11/2023 08:30 UTC  SGP/SYD/BHS  \n  <b>End time :</b> 20/11/2023 10:30 UTC \n- <b>Start time :</b> 21/11/2023 08:30 UTC  SBG/GRA \n  <b>End time :</b>21/11/2023 10:30 UTC\n<b>Related maintenances:</b> \nhttps://network.status-ovhcloud.com/incidents/wmynv3nz50nq\nhttps://network.status-ovhcloud.com/incidents/27nm3jqxz19z",
+          "incident_id": "ssscy5l81mtm",
+          "created_at": "2023-10-27T14:44:56.931Z",
+          "updated_at": "2023-10-27T14:44:56.931Z",
+          "display_at": "2023-10-27T14:44:56.931Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "j60wbjr53lsb",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2022-04-06T09:41:28.528Z",
+          "updated_at": "2023-09-18T15:29:41.960Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2023-10-10T10:04:12.494Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2pk5hxxqkq21",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2022-04-06T09:41:01.981Z",
+          "updated_at": "2023-10-20T14:54:15.122Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "42rlkfllkbpy",
+          "name": "SGP",
+          "status": "operational",
+          "created_at": "2022-04-06T09:41:59.157Z",
+          "updated_at": "2023-09-18T15:29:42.024Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lh1hb31mp6kh",
+          "name": "SYD",
+          "status": "operational",
+          "created_at": "2022-04-06T09:41:56.096Z",
+          "updated_at": "2023-09-18T15:29:42.040Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-20T08:30:00.000Z",
+      "scheduled_until": "2023-11-21T10:30:00.000Z"
     }
   ],
   "status": {
