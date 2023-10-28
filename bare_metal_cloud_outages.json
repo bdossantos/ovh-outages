@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-10-28T10:26:57.181Z"
+    "updated_at": "2023-10-28T23:30:16.657Z"
   },
   "components": [
     {
@@ -1320,7 +1320,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1674,9 +1674,9 @@
     {
       "id": "7xy5137wv97w",
       "name": "SBG",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:53.351Z",
-      "updated_at": "2023-10-06T16:46:16.197Z",
+      "updated_at": "2023-10-28T23:30:16.596Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -3528,60 +3528,6 @@
       "scheduled_until": "2023-11-15T05:00:00.000Z"
     },
     {
-      "id": "2vxt0qtlnkjs",
-      "name": "[SBG3][Dedicated Servers] - Rack S357A04",
-      "status": "scheduled",
-      "created_at": "2023-10-24T20:49:33.975Z",
-      "updated_at": "2023-10-24T20:49:34.035Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/bk1xbqvzvdf6",
-      "started_at": "2023-10-24T20:49:33.967Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "bwgrfvdx4b9x",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/11/2023 05:30 UTC \n<b>End time :</b> 14/11/2023 06:30 UTC \n<b>Service impact :</b> vRack network will be unavailable during the maintenance for servers in rack S357A04\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment.",
-          "incident_id": "2vxt0qtlnkjs",
-          "created_at": "2023-10-24T20:49:34.031Z",
-          "updated_at": "2023-10-24T20:49:34.031Z",
-          "display_at": "2023-10-24T20:49:34.031Z",
-          "affected_components": [
-            {
-              "code": "7xy5137wv97w",
-              "name": "Dedicated Servers || Network - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7xy5137wv97w",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:53.351Z",
-          "updated_at": "2023-10-06T16:46:16.197Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-14T05:30:00.000Z",
-      "scheduled_until": "2023-11-14T06:30:00.000Z"
-    },
-    {
       "id": "h8zczn48cnpv",
       "name": "[GRA1/SGP1][Dedicated Servers] - Network equipment version upgrade",
       "status": "scheduled",
@@ -3655,6 +3601,80 @@
       ],
       "scheduled_for": "2023-11-29T21:00:00.000Z",
       "scheduled_until": "2023-11-30T00:00:00.000Z"
+    },
+    {
+      "id": "2vxt0qtlnkjs",
+      "name": "[SBG3][Dedicated Servers] - Rack S357A04",
+      "status": "in_progress",
+      "created_at": "2023-10-24T20:49:33.975Z",
+      "updated_at": "2023-10-28T23:30:16.646Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bk1xbqvzvdf6",
+      "started_at": "2023-10-24T20:49:33.967Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "9bxr5c73xxj1",
+          "status": "in_progress",
+          "body": "<b>Update :</b> The switch has again encountered a problem which has led to a reboot. Our teams will perform the maintenance now to solve the problem as soon as possible.",
+          "incident_id": "2vxt0qtlnkjs",
+          "created_at": "2023-10-28T23:30:16.643Z",
+          "updated_at": "2023-10-28T23:30:16.643Z",
+          "display_at": "2023-10-28T23:30:16.643Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bwgrfvdx4b9x",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 14/11/2023 05:30 UTC \n<b>End time :</b> 14/11/2023 06:30 UTC \n<b>Service impact :</b> vRack network will be unavailable during the maintenance for servers in rack S357A04\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment.",
+          "incident_id": "2vxt0qtlnkjs",
+          "created_at": "2023-10-24T20:49:34.031Z",
+          "updated_at": "2023-10-24T20:49:34.031Z",
+          "display_at": "2023-10-24T20:49:34.031Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2023-10-28T23:30:16.596Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-14T05:30:00.000Z",
+      "scheduled_until": "2023-11-14T06:30:00.000Z"
     },
     {
       "id": "fzvfy71vmbr7",
@@ -3799,7 +3819,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
