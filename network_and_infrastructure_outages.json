@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-07T18:00:41.721Z"
+    "updated_at": "2023-11-07T19:00:03.676Z"
   },
   "components": [
     {
@@ -85,9 +85,9 @@
     {
       "id": "66ctp89pwlcd",
       "name": "GRA1",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-11-10T14:20:37.816Z",
-      "updated_at": "2023-11-07T17:45:16.420Z",
+      "updated_at": "2023-11-07T18:59:25.367Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -488,7 +488,7 @@
     {
       "id": "cxhdwyc4lvgf",
       "name": "Infrastructure || GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-11-10T14:20:40.180Z",
       "updated_at": "2023-07-07T08:56:23.949Z",
       "position": 5,
@@ -871,88 +871,14 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "3bp2lmmln1l4",
-      "name": "[GRA][Network] - G117A14",
-      "status": "identified",
-      "created_at": "2023-11-07T17:45:16.389Z",
-      "updated_at": "2023-11-07T18:00:41.712Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/4qqgrqdzslyt",
-      "started_at": "2023-11-07T17:45:16.382Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "r6kfv8r1x344",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "3bp2lmmln1l4",
-          "created_at": "2023-11-07T18:00:41.710Z",
-          "updated_at": "2023-11-07T18:00:41.710Z",
-          "display_at": "2023-11-07T18:00:41.710Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3s1r7y2m8d52",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 07/11/2023 17:16 UTC \n<b>Service impact :</b> Some servers are unreachable in this rack.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
-          "incident_id": "3bp2lmmln1l4",
-          "created_at": "2023-11-07T17:45:16.478Z",
-          "updated_at": "2023-11-07T17:45:16.478Z",
-          "display_at": "2023-11-07T17:45:16.478Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "partial_outage",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "xg08zn1f2qj8",
       "name": "[SGP][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
       "created_at": "2023-10-31T19:29:49.985Z",
-      "updated_at": "2023-10-31T19:29:50.029Z",
+      "updated_at": "2023-11-07T19:00:03.657Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -960,6 +886,19 @@
       "started_at": "2023-10-31T19:29:49.981Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "y5nwx77hc7cd",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "xg08zn1f2qj8",
+          "created_at": "2023-11-07T19:00:03.247Z",
+          "updated_at": "2023-11-07T19:00:03.247Z",
+          "display_at": "2023-11-07T19:00:03.247Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6qbqtym9m6np",
           "status": "scheduled",
@@ -1130,81 +1069,6 @@
       "scheduled_until": "2023-11-07T23:00:00.000Z"
     },
     {
-      "id": "wvbv8xjvq4sm",
-      "name": "[GRA1/GRA2][Infrastructure] - Electrical background work - Racks G132B22 - G233B05 -  G126B16",
-      "status": "scheduled",
-      "created_at": "2023-11-07T08:19:59.745Z",
-      "updated_at": "2023-11-07T08:19:59.797Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v2qkzqb6k4mn",
-      "started_at": "2023-11-07T08:19:59.736Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "qj8dwlyjvmyr",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 08/11/2023 07:00 UTC \n<b>End time :</b> 08/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "wvbv8xjvq4sm",
-          "created_at": "2023-11-07T08:19:59.794Z",
-          "updated_at": "2023-11-07T08:19:59.794Z",
-          "display_at": "2023-11-07T08:19:59.794Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "partial_outage",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2023-09-07T20:44:27.438Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-08T07:00:00.000Z",
-      "scheduled_until": "2023-11-08T16:00:00.000Z"
-    },
-    {
       "id": "n8hhyccjksc1",
       "name": "[RBX5][Infrastructure] - Electrical background work",
       "status": "scheduled",
@@ -1304,6 +1168,81 @@
           "showcase": false,
           "start_date": "2021-11-10",
           "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-08T07:00:00.000Z",
+      "scheduled_until": "2023-11-08T16:00:00.000Z"
+    },
+    {
+      "id": "wvbv8xjvq4sm",
+      "name": "[GRA1/GRA2][Infrastructure] - Electrical background work - Racks G132B22 - G233B05 -  G126B16",
+      "status": "scheduled",
+      "created_at": "2023-11-07T08:19:59.745Z",
+      "updated_at": "2023-11-07T08:19:59.797Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v2qkzqb6k4mn",
+      "started_at": "2023-11-07T08:19:59.736Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "qj8dwlyjvmyr",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 08/11/2023 07:00 UTC \n<b>End time :</b> 08/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "wvbv8xjvq4sm",
+          "created_at": "2023-11-07T08:19:59.794Z",
+          "updated_at": "2023-11-07T08:19:59.794Z",
+          "display_at": "2023-11-07T08:19:59.794Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2023-09-07T20:44:27.438Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -1453,60 +1392,6 @@
       "scheduled_until": "2023-11-08T16:00:00.000Z"
     },
     {
-      "id": "f3mr7j0s3xqc",
-      "name": "[LIM][Network] - Core maintenance notification",
-      "status": "scheduled",
-      "created_at": "2023-11-02T22:29:10.199Z",
-      "updated_at": "2023-11-02T22:31:00.618Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8m2800vjc71x",
-      "started_at": "2023-11-02T22:29:10.193Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "smt03qn116rb",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/11/2023 00:00 UTC\n<b>End time :</b> 09/11/2023 04:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment",
-          "incident_id": "f3mr7j0s3xqc",
-          "created_at": "2023-11-02T22:29:10.259Z",
-          "updated_at": "2023-11-02T22:31:00.614Z",
-          "display_at": "2023-11-02T22:29:10.259Z",
-          "affected_components": [
-            {
-              "code": "0bhylv65q8t9",
-              "name": "Infrastructure || Network Core",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0bhylv65q8t9",
-          "name": "Infrastructure || Network Core",
-          "status": "operational",
-          "created_at": "2023-07-07T08:55:58.377Z",
-          "updated_at": "2023-07-12T03:31:45.983Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-07-07",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-09T00:00:00.000Z",
-      "scheduled_until": "2023-11-09T04:00:00.000Z"
-    },
-    {
       "id": "08239v03p2nf",
       "name": "[PAR][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
@@ -1559,6 +1444,60 @@
       ],
       "scheduled_for": "2023-11-09T00:00:00.000Z",
       "scheduled_until": "2023-11-09T01:00:00.000Z"
+    },
+    {
+      "id": "f3mr7j0s3xqc",
+      "name": "[LIM][Network] - Core maintenance notification",
+      "status": "scheduled",
+      "created_at": "2023-11-02T22:29:10.199Z",
+      "updated_at": "2023-11-02T22:31:00.618Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8m2800vjc71x",
+      "started_at": "2023-11-02T22:29:10.193Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "smt03qn116rb",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/11/2023 00:00 UTC\n<b>End time :</b> 09/11/2023 04:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment",
+          "incident_id": "f3mr7j0s3xqc",
+          "created_at": "2023-11-02T22:29:10.259Z",
+          "updated_at": "2023-11-02T22:31:00.614Z",
+          "display_at": "2023-11-02T22:29:10.259Z",
+          "affected_components": [
+            {
+              "code": "0bhylv65q8t9",
+              "name": "Infrastructure || Network Core",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0bhylv65q8t9",
+          "name": "Infrastructure || Network Core",
+          "status": "operational",
+          "created_at": "2023-07-07T08:55:58.377Z",
+          "updated_at": "2023-07-12T03:31:45.983Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-07",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-09T00:00:00.000Z",
+      "scheduled_until": "2023-11-09T04:00:00.000Z"
     },
     {
       "id": "c704q2vgnbd5",
@@ -1723,30 +1662,30 @@
       "scheduled_until": "2023-11-09T09:30:00.000Z"
     },
     {
-      "id": "bgd1pgz1nymm",
-      "name": "[RBX7][Infrastructure] - Electrical background work",
+      "id": "l1wylqb2078p",
+      "name": "[GRA1][Infrastructure] - Electrical background work G107A03 A11 A15",
       "status": "scheduled",
-      "created_at": "2023-10-31T22:13:01.767Z",
-      "updated_at": "2023-10-31T22:13:01.823Z",
+      "created_at": "2023-11-06T14:05:04.456Z",
+      "updated_at": "2023-11-06T14:05:04.511Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/03dnn365fkpp",
-      "started_at": "2023-10-31T22:13:01.759Z",
+      "shortlink": "https://stspg.io/81y2x2x2xcql",
+      "started_at": "2023-11-06T14:05:04.447Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "8mv6x32n37vy",
+          "id": "m1617fw7pdc1",
           "status": "scheduled",
           "body": "<b>Start time :</b> 09/11/2023 07:00 UTC \n<b>End time :</b> 09/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "bgd1pgz1nymm",
-          "created_at": "2023-10-31T22:13:01.820Z",
-          "updated_at": "2023-10-31T22:13:01.820Z",
-          "display_at": "2023-10-31T22:13:01.820Z",
+          "incident_id": "l1wylqb2078p",
+          "created_at": "2023-11-06T14:05:04.508Z",
+          "updated_at": "2023-11-06T14:05:04.508Z",
+          "display_at": "2023-11-06T14:05:04.508Z",
           "affected_components": [
             {
-              "code": "02w2qqv00ll9",
-              "name": "Infrastructure || RBX - RBX7",
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -1758,16 +1697,16 @@
       ],
       "components": [
         {
-          "id": "02w2qqv00ll9",
-          "name": "RBX7",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.034Z",
-          "updated_at": "2023-11-07T12:15:20.305Z",
-          "position": 7,
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
+          "group_id": "cxhdwyc4lvgf",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
@@ -1868,63 +1807,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-09T07:00:00.000Z",
-      "scheduled_until": "2023-11-09T16:00:00.000Z"
-    },
-    {
-      "id": "l1wylqb2078p",
-      "name": "[GRA1][Infrastructure] - Electrical background work G107A03 A11 A15",
-      "status": "scheduled",
-      "created_at": "2023-11-06T14:05:04.456Z",
-      "updated_at": "2023-11-06T14:05:04.511Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/81y2x2x2xcql",
-      "started_at": "2023-11-06T14:05:04.447Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "m1617fw7pdc1",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 09/11/2023 07:00 UTC \n<b>End time :</b> 09/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
-          "incident_id": "l1wylqb2078p",
-          "created_at": "2023-11-06T14:05:04.508Z",
-          "updated_at": "2023-11-06T14:05:04.508Z",
-          "display_at": "2023-11-06T14:05:04.508Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "partial_outage",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1959,6 +1844,60 @@
           "created_at": "2023-10-31T22:15:16.053Z",
           "updated_at": "2023-10-31T22:15:16.053Z",
           "display_at": "2023-10-31T22:15:16.053Z",
+          "affected_components": [
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Infrastructure || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2023-11-07T12:15:20.305Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-09T07:00:00.000Z",
+      "scheduled_until": "2023-11-09T16:00:00.000Z"
+    },
+    {
+      "id": "bgd1pgz1nymm",
+      "name": "[RBX7][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2023-10-31T22:13:01.767Z",
+      "updated_at": "2023-10-31T22:13:01.823Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/03dnn365fkpp",
+      "started_at": "2023-10-31T22:13:01.759Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "8mv6x32n37vy",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/11/2023 07:00 UTC \n<b>End time :</b> 09/11/2023 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "bgd1pgz1nymm",
+          "created_at": "2023-10-31T22:13:01.820Z",
+          "updated_at": "2023-10-31T22:13:01.820Z",
+          "display_at": "2023-10-31T22:13:01.820Z",
           "affected_components": [
             {
               "code": "02w2qqv00ll9",
@@ -2249,6 +2188,60 @@
       "scheduled_until": "2023-11-09T20:30:00.000Z"
     },
     {
+      "id": "0p09tnvdkr6l",
+      "name": "[GRA1][Network] - Network Core maintenance",
+      "status": "scheduled",
+      "created_at": "2023-10-27T02:36:14.102Z",
+      "updated_at": "2023-10-27T02:36:14.153Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/11qqv2n5qzhm",
+      "started_at": "2023-10-27T02:36:14.097Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "2jl1wstfzcqq",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 09/11/2023 20:00 UTC \n<b>End time :</b> 09/11/2023 22:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment.",
+          "incident_id": "0p09tnvdkr6l",
+          "created_at": "2023-10-27T02:36:14.150Z",
+          "updated_at": "2023-10-27T02:36:14.150Z",
+          "display_at": "2023-10-27T02:36:14.150Z",
+          "affected_components": [
+            {
+              "code": "0bhylv65q8t9",
+              "name": "Infrastructure || Network Core",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0bhylv65q8t9",
+          "name": "Infrastructure || Network Core",
+          "status": "operational",
+          "created_at": "2023-07-07T08:55:58.377Z",
+          "updated_at": "2023-07-12T03:31:45.983Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-07",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-09T20:00:00.000Z",
+      "scheduled_until": "2023-11-09T22:00:00.000Z"
+    },
+    {
       "id": "1zy7ncqn0qsx",
       "name": "[SGP][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
@@ -2303,30 +2296,42 @@
       "scheduled_until": "2023-11-09T22:00:00.000Z"
     },
     {
-      "id": "0p09tnvdkr6l",
-      "name": "[GRA1][Network] - Network Core maintenance",
+      "id": "lkxgwgcvgqjd",
+      "name": "[GRA1/GRA2/GRA3][Infrastructure] - Electrical background work",
       "status": "scheduled",
-      "created_at": "2023-10-27T02:36:14.102Z",
-      "updated_at": "2023-10-27T02:36:14.153Z",
+      "created_at": "2023-11-07T18:41:08.397Z",
+      "updated_at": "2023-11-07T18:41:08.479Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/11qqv2n5qzhm",
-      "started_at": "2023-10-27T02:36:14.097Z",
+      "shortlink": "https://stspg.io/hwg2p71c06nl",
+      "started_at": "2023-11-07T18:41:08.384Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "2jl1wstfzcqq",
+          "id": "5zzk01w2tmcx",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 09/11/2023 20:00 UTC \n<b>End time :</b> 09/11/2023 22:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment.",
-          "incident_id": "0p09tnvdkr6l",
-          "created_at": "2023-10-27T02:36:14.150Z",
-          "updated_at": "2023-10-27T02:36:14.150Z",
-          "display_at": "2023-10-27T02:36:14.150Z",
+          "body": "<b>Start time :</b> 09/11/2022 22:00 UTC\n<b>End time :</b> 10/11/2022 01:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "lkxgwgcvgqjd",
+          "created_at": "2023-11-07T18:41:08.475Z",
+          "updated_at": "2023-11-07T18:41:08.475Z",
+          "display_at": "2023-11-07T18:41:08.475Z",
           "affected_components": [
             {
-              "code": "0bhylv65q8t9",
-              "name": "Infrastructure || Network Core",
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Infrastructure || GRA - GRA3",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2338,23 +2343,53 @@
       ],
       "components": [
         {
-          "id": "0bhylv65q8t9",
-          "name": "Infrastructure || Network Core",
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
           "status": "operational",
-          "created_at": "2023-07-07T08:55:58.377Z",
-          "updated_at": "2023-07-12T03:31:45.983Z",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2023-09-07T20:44:27.438Z",
           "position": 2,
           "description": null,
           "showcase": false,
-          "start_date": "2023-07-07",
-          "group_id": null,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2023-10-26T15:53:41.108Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2023-11-09T20:00:00.000Z",
-      "scheduled_until": "2023-11-09T22:00:00.000Z"
+      "scheduled_for": "2023-11-09T22:00:00.000Z",
+      "scheduled_until": "2023-11-10T01:00:00.000Z"
     },
     {
       "id": "x5bj1hhcsj95",
@@ -2411,60 +2446,6 @@
       "scheduled_until": "2023-11-17T18:24:00.000Z"
     },
     {
-      "id": "6y58f8683fpt",
-      "name": "[GRA2][Infrastructure] - Electrical maintenance",
-      "status": "scheduled",
-      "created_at": "2023-10-23T20:11:58.584Z",
-      "updated_at": "2023-10-23T20:11:58.636Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w7ml89107mq6",
-      "started_at": "2023-10-23T20:11:58.575Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "9wj1j80xz4vv",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 13/11/2023 07:00 UTC \n<b>End time :</b> 13/11/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on multiple UPS",
-          "incident_id": "6y58f8683fpt",
-          "created_at": "2023-10-23T20:11:58.633Z",
-          "updated_at": "2023-10-23T20:11:58.633Z",
-          "display_at": "2023-10-23T20:11:58.633Z",
-          "affected_components": [
-            {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2023-09-07T20:44:27.438Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-13T07:00:00.000Z",
-      "scheduled_until": "2023-11-13T15:00:00.000Z"
-    },
-    {
       "id": "btftgwfp06m1",
       "name": "[SBG3][Infrastructure] - UPS maintenance",
       "status": "scheduled",
@@ -2517,6 +2498,60 @@
       ],
       "scheduled_for": "2023-11-13T07:00:00.000Z",
       "scheduled_until": "2023-11-16T16:00:00.000Z"
+    },
+    {
+      "id": "6y58f8683fpt",
+      "name": "[GRA2][Infrastructure] - Electrical maintenance",
+      "status": "scheduled",
+      "created_at": "2023-10-23T20:11:58.584Z",
+      "updated_at": "2023-10-23T20:11:58.636Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w7ml89107mq6",
+      "started_at": "2023-10-23T20:11:58.575Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "9wj1j80xz4vv",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 13/11/2023 07:00 UTC \n<b>End time :</b> 13/11/2023 15:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on multiple UPS",
+          "incident_id": "6y58f8683fpt",
+          "created_at": "2023-10-23T20:11:58.633Z",
+          "updated_at": "2023-10-23T20:11:58.633Z",
+          "display_at": "2023-10-23T20:11:58.633Z",
+          "affected_components": [
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2023-09-07T20:44:27.438Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-13T07:00:00.000Z",
+      "scheduled_until": "2023-11-13T15:00:00.000Z"
     },
     {
       "id": "rkjkz95y966c",
@@ -3006,9 +3041,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3114,9 +3149,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3222,9 +3257,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4099,60 +4134,6 @@
       "scheduled_until": "2023-11-29T16:00:00.000Z"
     },
     {
-      "id": "vq5lbps6vd87",
-      "name": "[RBX8][Infrastructure] -  Electrical work",
-      "status": "scheduled",
-      "created_at": "2023-03-03T22:14:20.255Z",
-      "updated_at": "2023-03-05T05:19:11.572Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wrts53ch8h5p",
-      "started_at": "2023-03-03T22:14:20.245Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "hlb9hkfgy5vl",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 29/11/2023 07:30 UTC \n<b>End time :</b> 29/11/2023 13:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement  :</b> As part of our continuous improvement policy of our infrastructure, we will be doing an electrical maintenance on a UPS in RBX8",
-          "incident_id": "vq5lbps6vd87",
-          "created_at": "2023-03-03T22:14:20.325Z",
-          "updated_at": "2023-03-03T22:14:20.325Z",
-          "display_at": "2023-03-03T22:14:20.325Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2023-10-27T18:22:32.692Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-29T07:30:00.000Z",
-      "scheduled_until": "2023-11-29T13:00:00.000Z"
-    },
-    {
       "id": "vfykx1xnqkxf",
       "name": "[RBX7][Infrastructure] - Electrical UPS work",
       "status": "in_progress",
@@ -4277,9 +4258,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4618,9 +4599,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4963,9 +4944,9 @@
         {
           "id": "66ctp89pwlcd",
           "name": "GRA1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2023-11-07T17:45:16.420Z",
+          "updated_at": "2023-11-07T18:59:25.367Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5168,7 +5149,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
