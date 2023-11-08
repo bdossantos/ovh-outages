@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-07T21:43:29.601Z"
+    "updated_at": "2023-11-08T13:43:50.892Z"
   },
   "components": [
     {
@@ -898,9 +898,9 @@
     {
       "id": "m635cyjtprmy",
       "name": "Cluster006",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:04.304Z",
-      "updated_at": "2023-10-30T13:28:40.035Z",
+      "updated_at": "2023-11-08T13:33:26.054Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2667,7 +2667,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2744,6 +2744,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "m490h514cn9j",
+      "name": "[GRA2][Web Hosting] - Cluster006",
+      "status": "investigating",
+      "created_at": "2023-11-08T13:33:26.025Z",
+      "updated_at": "2023-11-08T13:33:26.118Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0fnjz5tlc06s",
+      "started_at": "2023-11-08T13:33:26.019Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "s8brn05lz571",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/11/2023 13:24 UTC \n<b>Service impact :</b> Slowness on some hosted websites\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "m490h514cn9j",
+          "created_at": "2023-11-08T13:33:26.116Z",
+          "updated_at": "2023-11-08T13:33:26.116Z",
+          "display_at": "2023-11-08T13:33:26.116Z",
+          "affected_components": [
+            {
+              "code": "m635cyjtprmy",
+              "name": "Web Hosting || Datacenter GRA - Cluster006",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m635cyjtprmy",
+          "name": "Cluster006",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:04.304Z",
+          "updated_at": "2023-11-08T13:33:26.054Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "l5yst60mmnhs",
       "name": "[FR][VoIP] - SMS",
@@ -2883,7 +2936,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
