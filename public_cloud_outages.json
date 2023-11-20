@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-20T07:29:58.227Z"
+    "updated_at": "2023-11-20T08:31:17.595Z"
   },
   "components": [
     {
@@ -340,9 +340,9 @@
     {
       "id": "j60wbjr53lsb",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:28.528Z",
-      "updated_at": "2023-11-15T18:19:50.135Z",
+      "updated_at": "2023-11-20T08:31:17.491Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -839,9 +839,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2023-11-15T18:19:50.149Z",
+      "updated_at": "2023-11-20T08:31:17.503Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1977,9 +1977,9 @@
     {
       "id": "2pk5hxxqkq21",
       "name": "SBG",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:01.981Z",
-      "updated_at": "2023-11-15T18:19:50.186Z",
+      "updated_at": "2023-11-20T08:31:17.521Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2295,9 +2295,9 @@
     {
       "id": "42rlkfllkbpy",
       "name": "SGP",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:59.157Z",
-      "updated_at": "2023-11-15T18:19:50.198Z",
+      "updated_at": "2023-11-20T08:31:17.531Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2588,9 +2588,9 @@
     {
       "id": "lh1hb31mp6kh",
       "name": "SYD",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:56.096Z",
-      "updated_at": "2023-11-15T18:19:50.210Z",
+      "updated_at": "2023-11-20T08:31:17.542Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -5181,7 +5181,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-10-18T08:28:18.122Z",
       "position": 40,
@@ -5496,157 +5496,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "ssscy5l81mtm",
-      "name": "[SGP/SYD/BHS/SBG/GRA][Object Storage] - RFC",
-      "status": "scheduled",
-      "created_at": "2023-10-27T14:44:56.864Z",
-      "updated_at": "2023-11-20T07:29:58.211Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lhg9l0wql8nt",
-      "started_at": "2023-10-27T14:44:56.852Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "pz4z1y4kblby",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ssscy5l81mtm",
-          "created_at": "2023-11-20T07:29:57.895Z",
-          "updated_at": "2023-11-20T07:29:57.895Z",
-          "display_at": "2023-11-20T07:29:57.895Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kj7j0nfkk8fg",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 20/11/2023 08:30 UTC \n<b>End time :</b> 21/11/2023 10:30 UTC \n<b>Service impact :</b> Customers must follow RFC rules to avoid having disruptions on their requests\n<b>Service improvement :</b> We are planning to upgrade IPLB from November 20th to November 21th.\nThis upgrade will add support for TLS 1.3 as well as strict compliance with RFC7540.\nParticularly on section 8.1.2 which implies that our services will answer http responses with lowercase headers.\nHere is the maintenance planning:\n- <b>Start time :</b> 20/11/2023 08:30 UTC  SGP/SYD/BHS  \n  <b>End time :</b> 20/11/2023 10:30 UTC \n- <b>Start time :</b> 21/11/2023 08:30 UTC  SBG/GRA \n  <b>End time :</b>21/11/2023 10:30 UTC\n<b>Related maintenances:</b> \nhttps://network.status-ovhcloud.com/incidents/wmynv3nz50nq\nhttps://network.status-ovhcloud.com/incidents/27nm3jqxz19z",
-          "incident_id": "ssscy5l81mtm",
-          "created_at": "2023-10-27T14:44:56.931Z",
-          "updated_at": "2023-10-27T14:44:56.931Z",
-          "display_at": "2023-10-27T14:44:56.931Z",
-          "affected_components": [
-            {
-              "code": "j60wbjr53lsb",
-              "name": "Storage || Object storage - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "42rlkfllkbpy",
-              "name": "Storage || Object storage - SGP",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "lh1hb31mp6kh",
-              "name": "Storage || Object storage - SYD",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "j60wbjr53lsb",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:28.528Z",
-          "updated_at": "2023-11-15T18:19:50.135Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k86vmhcsnjtj",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2023-11-15T18:19:50.149Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2pk5hxxqkq21",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2023-11-15T18:19:50.186Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "42rlkfllkbpy",
-          "name": "SGP",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:59.157Z",
-          "updated_at": "2023-11-15T18:19:50.198Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "lh1hb31mp6kh",
-          "name": "SYD",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:56.096Z",
-          "updated_at": "2023-11-15T18:19:50.210Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-20T08:30:00.000Z",
-      "scheduled_until": "2023-11-21T10:30:00.000Z"
-    },
     {
       "id": "xgp53pfpxp1f",
       "name": "[GRA/DE1/BHS][ManagedPrivateRegistry] -  Registries upgrade",
@@ -6081,6 +5930,201 @@
       ],
       "scheduled_for": "2024-01-08T07:00:00.000Z",
       "scheduled_until": "2024-01-08T18:00:00.000Z"
+    },
+    {
+      "id": "ssscy5l81mtm",
+      "name": "[SGP/SYD/BHS/SBG/GRA][Object Storage] - RFC",
+      "status": "in_progress",
+      "created_at": "2023-10-27T14:44:56.864Z",
+      "updated_at": "2023-11-20T08:31:17.588Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lhg9l0wql8nt",
+      "started_at": "2023-10-27T14:44:56.852Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "37fq2lqn7c6z",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "ssscy5l81mtm",
+          "created_at": "2023-11-20T08:31:17.586Z",
+          "updated_at": "2023-11-20T08:31:17.586Z",
+          "display_at": "2023-11-20T08:31:17.586Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pz4z1y4kblby",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "ssscy5l81mtm",
+          "created_at": "2023-11-20T07:29:57.895Z",
+          "updated_at": "2023-11-20T07:29:57.895Z",
+          "display_at": "2023-11-20T07:29:57.895Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kj7j0nfkk8fg",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 20/11/2023 08:30 UTC \n<b>End time :</b> 21/11/2023 10:30 UTC \n<b>Service impact :</b> Customers must follow RFC rules to avoid having disruptions on their requests\n<b>Service improvement :</b> We are planning to upgrade IPLB from November 20th to November 21th.\nThis upgrade will add support for TLS 1.3 as well as strict compliance with RFC7540.\nParticularly on section 8.1.2 which implies that our services will answer http responses with lowercase headers.\nHere is the maintenance planning:\n- <b>Start time :</b> 20/11/2023 08:30 UTC  SGP/SYD/BHS  \n  <b>End time :</b> 20/11/2023 10:30 UTC \n- <b>Start time :</b> 21/11/2023 08:30 UTC  SBG/GRA \n  <b>End time :</b>21/11/2023 10:30 UTC\n<b>Related maintenances:</b> \nhttps://network.status-ovhcloud.com/incidents/wmynv3nz50nq\nhttps://network.status-ovhcloud.com/incidents/27nm3jqxz19z",
+          "incident_id": "ssscy5l81mtm",
+          "created_at": "2023-10-27T14:44:56.931Z",
+          "updated_at": "2023-10-27T14:44:56.931Z",
+          "display_at": "2023-10-27T14:44:56.931Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "j60wbjr53lsb",
+          "name": "BHS",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:28.528Z",
+          "updated_at": "2023-11-20T08:31:17.491Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2023-11-20T08:31:17.503Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2pk5hxxqkq21",
+          "name": "SBG",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:01.981Z",
+          "updated_at": "2023-11-20T08:31:17.521Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "42rlkfllkbpy",
+          "name": "SGP",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:59.157Z",
+          "updated_at": "2023-11-20T08:31:17.531Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lh1hb31mp6kh",
+          "name": "SYD",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:56.096Z",
+          "updated_at": "2023-11-20T08:31:17.542Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2023-11-20T08:30:00.000Z",
+      "scheduled_until": "2023-11-21T10:30:00.000Z"
     }
   ],
   "status": {
