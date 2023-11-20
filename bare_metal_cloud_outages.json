@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-18T22:43:06.008Z"
+    "updated_at": "2023-11-20T08:49:57.901Z"
   },
   "components": [
     {
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1467,9 +1467,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2023-11-16T10:16:55.625Z",
+      "updated_at": "2023-11-20T08:37:24.541Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2400,6 +2400,79 @@
   ],
   "incidents": [
     {
+      "id": "3tskmt8vfpyr",
+      "name": "[RBX4][Dedicated Servers] - Rack 42D22",
+      "status": "identified",
+      "created_at": "2023-11-20T08:37:24.508Z",
+      "updated_at": "2023-11-20T08:49:57.890Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/p6qb1w9kldtj",
+      "started_at": "2023-11-20T08:37:24.500Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qg3wrq1zfyb6",
+          "status": "identified",
+          "body": "<b>Start time :</b> 20/11/2023 08:25 UTC\n<b>Service impact :</b> Some servers in the rack 42D22 are no longer responding.\n<b>Root cause :</b> Electrical issue.\n<b>Ongoing actions :</b> Our technical teams are currently working on a fix.",
+          "incident_id": "3tskmt8vfpyr",
+          "created_at": "2023-11-20T08:49:57.888Z",
+          "updated_at": "2023-11-20T08:49:57.888Z",
+          "display_at": "2023-11-20T08:49:57.888Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "61y1qfr7xljk",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 20/11/2023 08:25 UTC\n<b>Service impact :</b> Some servers in the rack 42D22 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "3tskmt8vfpyr",
+          "created_at": "2023-11-20T08:37:24.606Z",
+          "updated_at": "2023-11-20T08:37:24.606Z",
+          "display_at": "2023-11-20T08:37:24.606Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2023-11-20T08:37:24.541Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "sdv7r15bh9lf",
       "name": "[GRA2][Dedicated Servers] - Room G263",
       "status": "monitoring",
@@ -2789,9 +2862,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2023-11-16T10:16:55.625Z",
+          "updated_at": "2023-11-20T08:37:24.541Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3153,7 +3226,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
