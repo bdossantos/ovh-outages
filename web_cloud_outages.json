@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-22T07:43:16.011Z"
+    "updated_at": "2023-11-22T10:01:20.675Z"
   },
   "components": [
     {
@@ -2387,9 +2387,9 @@
     {
       "id": "xfftfpn79dxy",
       "name": "VoIP || Core Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-06-30T12:22:34.903Z",
-      "updated_at": "2023-11-22T07:00:23.514Z",
+      "updated_at": "2023-11-22T09:51:17.115Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -2744,6 +2744,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ss98dwwmn7h4",
+      "name": "[Global][VoIP] - SMS Latency",
+      "status": "identified",
+      "created_at": "2023-11-22T10:01:20.634Z",
+      "updated_at": "2023-11-22T10:01:20.673Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/46hf9drfnyvn",
+      "started_at": "2023-11-22T10:01:20.628Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "7q3mx4j61t07",
+          "status": "identified",
+          "body": "<b>Start time :</b> 22/11/2023 09:00 UTC\n<b>Service impact :</b> There is a latency on sms\n<b>Root cause :</b> Software issue.\n<b>Ongoing actions :</b> Our team are working on the issue.",
+          "incident_id": "ss98dwwmn7h4",
+          "created_at": "2023-11-22T10:01:20.671Z",
+          "updated_at": "2023-11-22T10:01:20.671Z",
+          "display_at": "2023-11-22T10:01:20.671Z",
+          "affected_components": [
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d167jln8tkv5",
+          "name": "SMS",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:21.411Z",
+          "updated_at": "2023-11-17T17:36:12.244Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "vwxytrx2c38n",
       "name": "[RBX/GRA/SBG][Collaborative solutions] - Hosted Exchange",
@@ -3164,80 +3217,6 @@
       ],
       "scheduled_for": "2023-11-22T21:00:00.000Z",
       "scheduled_until": "2023-11-22T21:30:00.000Z"
-    },
-    {
-      "id": "n7t93y7zw68z",
-      "name": "[BRU][VoIP] - Backbone Maintenance Notification",
-      "status": "in_progress",
-      "created_at": "2023-11-22T06:44:28.335Z",
-      "updated_at": "2023-11-22T07:00:23.572Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ds4rmwkcxf2f",
-      "started_at": "2023-11-22T06:44:28.331Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "3lfkmgfmf25j",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "n7t93y7zw68z",
-          "created_at": "2023-11-22T07:00:23.568Z",
-          "updated_at": "2023-11-22T07:00:23.568Z",
-          "display_at": "2023-11-22T07:00:23.568Z",
-          "affected_components": [
-            {
-              "code": "xfftfpn79dxy",
-              "name": "VoIP || Core Network",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "krwsmhd2cn8t",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 22/11/2023 07:00 UTC \n<b>End time :</b> 22/11/2023 09:30 UTC \n<b>Service impact :</b> You may experience increased latency to communicate with your services behind this device.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment configuration.",
-          "incident_id": "n7t93y7zw68z",
-          "created_at": "2023-11-22T06:44:28.387Z",
-          "updated_at": "2023-11-22T06:44:28.387Z",
-          "display_at": "2023-11-22T06:44:28.387Z",
-          "affected_components": [
-            {
-              "code": "xfftfpn79dxy",
-              "name": "VoIP || Core Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xfftfpn79dxy",
-          "name": "VoIP || Core Network",
-          "status": "under_maintenance",
-          "created_at": "2021-06-30T12:22:34.903Z",
-          "updated_at": "2023-11-22T07:00:23.514Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": null,
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-22T07:00:00.000Z",
-      "scheduled_until": "2023-11-22T09:30:00.000Z"
     },
     {
       "id": "cx0k3zm0pjkf",
