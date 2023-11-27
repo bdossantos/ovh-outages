@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-27T13:12:13.975Z"
+    "updated_at": "2023-11-27T13:57:46.399Z"
   },
   "components": [
     {
@@ -40,9 +40,9 @@
     {
       "id": "mb76llj0j7ty",
       "name": "Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:52.260Z",
-      "updated_at": "2023-11-27T05:00:08.607Z",
+      "updated_at": "2023-11-27T13:34:11.793Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1981,7 +1981,7 @@
     {
       "id": "tn4jtjt0qvj7",
       "name": "VMware Private Cloud || LON",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:55.108Z",
       "updated_at": "2023-05-16T11:53:27.885Z",
       "position": 24,
@@ -2067,9 +2067,9 @@
     {
       "id": "mqz71ypzw2hq",
       "name": "[RBX8][Hosted Private Cloud] - R833B10",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2023-11-27T13:01:36.173Z",
-      "updated_at": "2023-11-27T13:12:13.971Z",
+      "updated_at": "2023-11-27T13:57:46.388Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2077,6 +2077,26 @@
       "started_at": "2023-11-27T13:01:36.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "cd6b14wplcb1",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "mqz71ypzw2hq",
+          "created_at": "2023-11-27T13:57:46.385Z",
+          "updated_at": "2023-11-27T13:57:46.385Z",
+          "display_at": "2023-11-27T13:57:46.385Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "92bpn1whfnwg",
           "status": "investigating",
@@ -2481,9 +2501,9 @@
         {
           "id": "mb76llj0j7ty",
           "name": "Network",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:52.260Z",
-          "updated_at": "2023-11-27T05:00:08.607Z",
+          "updated_at": "2023-11-27T13:34:11.793Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2589,9 +2609,9 @@
         {
           "id": "mb76llj0j7ty",
           "name": "Network",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:52.260Z",
-          "updated_at": "2023-11-27T05:00:08.607Z",
+          "updated_at": "2023-11-27T13:34:11.793Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2697,9 +2717,9 @@
         {
           "id": "mb76llj0j7ty",
           "name": "Network",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:52.260Z",
-          "updated_at": "2023-11-27T05:00:08.607Z",
+          "updated_at": "2023-11-27T13:34:11.793Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3954,93 +3974,6 @@
       ],
       "scheduled_for": "2023-12-21T05:00:00.000Z",
       "scheduled_until": "2023-12-21T14:00:00.000Z"
-    },
-    {
-      "id": "0p5h8jt8dswn",
-      "name": "[LON1][Hosted Private Cloud] - Network equipement operation",
-      "status": "in_progress",
-      "created_at": "2023-11-10T23:08:59.168Z",
-      "updated_at": "2023-11-27T05:00:08.773Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gz7sw57czl0w",
-      "started_at": "2023-11-10T23:08:59.159Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "g3lck122vpzk",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0p5h8jt8dswn",
-          "created_at": "2023-11-27T05:00:08.768Z",
-          "updated_at": "2023-11-27T05:00:08.768Z",
-          "display_at": "2023-11-27T05:00:08.768Z",
-          "affected_components": [
-            {
-              "code": "mb76llj0j7ty",
-              "name": "VMware Private Cloud || LON - Network",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w783gtlmqmlz",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0p5h8jt8dswn",
-          "created_at": "2023-11-27T03:59:57.568Z",
-          "updated_at": "2023-11-27T03:59:57.568Z",
-          "display_at": "2023-11-27T03:59:57.568Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "h7ts49y3xsxf",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 27/11/2023 05:00 UTC\n<b>End time :</b> 27/11/2023 14:00 UTC\n<b>Service impact :</b> Customers might experience twice of a few seconds of input/output freeze for storage equipment during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on multiple network equipment.",
-          "incident_id": "0p5h8jt8dswn",
-          "created_at": "2023-11-10T23:08:59.223Z",
-          "updated_at": "2023-11-10T23:08:59.223Z",
-          "display_at": "2023-11-10T23:08:59.223Z",
-          "affected_components": [
-            {
-              "code": "mb76llj0j7ty",
-              "name": "VMware Private Cloud || LON - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mb76llj0j7ty",
-          "name": "Network",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:52.260Z",
-          "updated_at": "2023-11-27T05:00:08.607Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "tn4jtjt0qvj7",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2023-11-27T05:00:00.000Z",
-      "scheduled_until": "2023-11-27T14:00:00.000Z"
     }
   ],
   "status": {
