@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-11-29T09:00:11.052Z"
+    "updated_at": "2023-11-29T13:03:05.807Z"
   },
   "components": [
     {
@@ -839,9 +839,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2023-11-21T17:37:20.733Z",
+      "updated_at": "2023-11-29T13:03:05.751Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -5181,7 +5181,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2023-10-18T08:28:18.122Z",
       "position": 40,
@@ -5292,6 +5292,89 @@
     }
   ],
   "incidents": [
+    {
+      "id": "s5ry2grl5cxd",
+      "name": "[GRA][Public Cloud] - Object Storage S3 Standard/High perf",
+      "status": "investigating",
+      "created_at": "2023-11-29T13:03:05.720Z",
+      "updated_at": "2023-11-29T13:03:05.804Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3n9fhz8977v9",
+      "started_at": "2023-11-29T13:03:05.713Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "xmxt7xwsmwyk",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 29/11/2023 10:30 UTC \n<b>Service impact :</b> Customers may experience 500 and 503 errors\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "s5ry2grl5cxd",
+          "created_at": "2023-11-29T13:03:05.801Z",
+          "updated_at": "2023-11-29T13:03:05.801Z",
+          "display_at": "2023-11-29T13:03:05.801Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2023-11-29T13:03:05.751Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "dcqjd2qbqxtp",
+      "name": "GRA3 - Nova/Neutron API issues",
+      "status": "investigating",
+      "created_at": "2023-11-29T12:49:47.575Z",
+      "updated_at": "2023-11-29T12:49:47.636Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tzn17v8n3swl",
+      "started_at": "2023-11-29T12:49:47.566Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "rjkbhr9vl4qf",
+          "status": "investigating",
+          "body": "We have some issues with our messaging queue system, we are investigating.",
+          "incident_id": "dcqjd2qbqxtp",
+          "created_at": "2023-11-29T12:49:47.633Z",
+          "updated_at": "2023-11-29T12:49:47.633Z",
+          "display_at": "2023-11-29T12:49:47.633Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    },
     {
       "id": "md193dcgq9np",
       "name": "[GRA/SBG][Public Cloud] - PCI product shortage",
@@ -5832,7 +5915,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
