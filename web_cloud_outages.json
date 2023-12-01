@@ -4,15 +4,15 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2023-12-01T00:51:14.184Z"
+    "updated_at": "2023-12-01T09:29:32.904Z"
   },
   "components": [
     {
       "id": "mp4cw2ksr9mb",
       "name": "Registration",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:23.774Z",
-      "updated_at": "2022-10-05T07:54:53.051Z",
+      "updated_at": "2023-12-01T09:21:16.747Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -345,9 +345,9 @@
     {
       "id": "g6wkt1bjr0z1",
       "name": "Renew",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:24.336Z",
-      "updated_at": "2022-12-07T09:00:57.820Z",
+      "updated_at": "2023-12-01T09:21:16.762Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1854,7 +1854,7 @@
     {
       "id": "vpdfhtpb0zph",
       "name": "Domains || Domains Name",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:25.813Z",
       "updated_at": "2023-05-16T12:10:06.173Z",
       "position": 11,
@@ -2745,6 +2745,80 @@
   ],
   "incidents": [
     {
+      "id": "d18pq9h5nn9d",
+      "name": "[Global][Domain] - Verisign delay on delivery",
+      "status": "investigating",
+      "created_at": "2023-12-01T09:21:16.712Z",
+      "updated_at": "2023-12-01T09:29:32.898Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3h5v7nmm2t0t",
+      "started_at": "2023-12-01T09:21:16.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "bx204gs1v36z",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 01/12/2023 08:00 UTC \n<b>Service impact :</b> Some issue on creating and renewing services that is degradation on delivery.\n<b>Ongoing actions :</b> Our technical teams are investigating on the issue. \nUpdate will be post as significant progress is made.",
+          "incident_id": "d18pq9h5nn9d",
+          "created_at": "2023-12-01T09:21:16.819Z",
+          "updated_at": "2023-12-01T09:29:32.835Z",
+          "display_at": "2023-12-01T09:21:16.000Z",
+          "affected_components": [
+            {
+              "code": "mp4cw2ksr9mb",
+              "name": "Domains || Domains Name - Registration",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g6wkt1bjr0z1",
+              "name": "Domains || Domains Name - Renew",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp4cw2ksr9mb",
+          "name": "Registration",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:23.774Z",
+          "updated_at": "2023-12-01T09:21:16.747Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g6wkt1bjr0z1",
+          "name": "Renew",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:24.336Z",
+          "updated_at": "2023-12-01T09:21:16.762Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "78bfx69w5rnv",
       "name": "[GRA1][Web Hosting] - Cluster028 - Filerz981",
       "status": "monitoring",
@@ -3072,7 +3146,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
