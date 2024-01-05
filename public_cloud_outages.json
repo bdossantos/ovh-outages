@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-05T10:25:41.248Z"
+    "updated_at": "2024-01-05T11:27:08.672Z"
   },
   "components": [
     {
@@ -640,9 +640,9 @@
     {
       "id": "mvhys3nh67s1",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:36.767Z",
-      "updated_at": "2023-07-05T16:06:15.687Z",
+      "updated_at": "2024-01-05T11:27:08.584Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -670,9 +670,9 @@
     {
       "id": "s4hx70v7szy0",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:35:37.958Z",
-      "updated_at": "2023-07-05T16:06:15.702Z",
+      "updated_at": "2024-01-05T11:27:08.601Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -685,7 +685,7 @@
     {
       "id": "l2q7qyk1grv1",
       "name": "AI & Machine Learning || AI Deploy",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:35:39.847Z",
       "updated_at": "2023-05-16T12:00:34.839Z",
       "position": 2,
@@ -794,9 +794,9 @@
     {
       "id": "2r15385mdjxq",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:59.277Z",
-      "updated_at": "2023-07-05T16:06:15.747Z",
+      "updated_at": "2024-01-05T11:27:08.614Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1079,7 +1079,7 @@
     {
       "id": "j1jp0gdpgqlz",
       "name": "AI & Machine Learning || AI Notebooks",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:45.256Z",
       "updated_at": "2023-05-16T12:00:34.851Z",
       "position": 3,
@@ -1578,7 +1578,7 @@
     {
       "id": "tf5cbwv29c2z",
       "name": "AI & Machine Learning || AI Training",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:39:08.162Z",
       "updated_at": "2023-05-16T12:00:34.865Z",
       "position": 4,
@@ -5292,6 +5292,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "mgm0ckqqh2vn",
+      "name": "[GRA][AI Training / AI Notebook / AI Deploy] - Mounted volume",
+      "status": "identified",
+      "created_at": "2024-01-05T11:27:08.550Z",
+      "updated_at": "2024-01-05T11:27:08.669Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/pjqs66nsj8ck",
+      "started_at": "2024-01-05T11:27:08.535Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "s2dpcy7x66gm",
+          "status": "identified",
+          "body": "<b>Start time :</b> 04/01/2024 00:01 UTC \n<b>Service impact :</b> mounted volume are currently experiencing latency on read/write operations\n<b>Root cause :</b> Storage issue\n<b>Ongoing actions :</b>\nThe issue has been identified and a fix is being implemented. Update will be posted as significant progress is made.",
+          "incident_id": "mgm0ckqqh2vn",
+          "created_at": "2024-01-05T11:27:08.666Z",
+          "updated_at": "2024-01-05T11:27:08.666Z",
+          "display_at": "2024-01-05T11:27:08.666Z",
+          "affected_components": [
+            {
+              "code": "mvhys3nh67s1",
+              "name": "AI & Machine Learning || AI Notebooks - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "s4hx70v7szy0",
+              "name": "AI & Machine Learning || AI Deploy - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2r15385mdjxq",
+              "name": "AI & Machine Learning || AI Training - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvhys3nh67s1",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:34:36.767Z",
+          "updated_at": "2024-01-05T11:27:08.584Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "j1jp0gdpgqlz",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "s4hx70v7szy0",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:35:37.958Z",
+          "updated_at": "2024-01-05T11:27:08.601Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "l2q7qyk1grv1",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2r15385mdjxq",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:38:59.277Z",
+          "updated_at": "2024-01-05T11:27:08.614Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "tf5cbwv29c2z",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "3s8cs8pm3dkq",
       "name": "[GRA][Public Cloud] - Object Storage S3 Standard/High perf",
