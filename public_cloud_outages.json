@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-06T21:24:47.024Z"
+    "updated_at": "2024-01-08T01:25:56.537Z"
   },
   "components": [
     {
@@ -2187,9 +2187,9 @@
     {
       "id": "jnrg6smtv9yw",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.994Z",
-      "updated_at": "2023-12-11T16:01:56.429Z",
+      "updated_at": "2024-01-08T01:24:31.256Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2535,7 +2535,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -5292,6 +5292,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "xnqjmzd25tq1",
+      "name": "[GRA11][API] - Manager",
+      "status": "identified",
+      "created_at": "2024-01-08T01:24:31.228Z",
+      "updated_at": "2024-01-08T01:25:56.530Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hmljscntbgw4",
+      "started_at": "2024-01-08T01:24:31.216Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "c3k1w8vfdq75",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "xnqjmzd25tq1",
+          "created_at": "2024-01-08T01:25:56.528Z",
+          "updated_at": "2024-01-08T01:25:56.528Z",
+          "display_at": "2024-01-08T01:25:56.528Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6vj4t3fvgz0h",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/01/2024 00:30 UTC \n<b>Service impact :</b> All API operations are unreachable (instance creation, migration...)\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "xnqjmzd25tq1",
+          "created_at": "2024-01-08T01:24:31.301Z",
+          "updated_at": "2024-01-08T01:24:31.301Z",
+          "display_at": "2024-01-08T01:24:31.301Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2024-01-08T01:24:31.256Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "n00209pz1xjw",
       "name": "[GRA][AI Notebook] - S3/Workspace Backend",
