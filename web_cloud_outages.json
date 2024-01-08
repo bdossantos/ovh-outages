@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-06T01:44:44.465Z"
+    "updated_at": "2024-01-08T07:56:49.014Z"
   },
   "components": [
     {
@@ -883,9 +883,9 @@
     {
       "id": "rhyk4h7wh3dc",
       "name": "Cluster005",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-07-18T08:35:33.492Z",
-      "updated_at": "2023-11-02T14:45:36.415Z",
+      "updated_at": "2024-01-08T07:56:48.937Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2667,7 +2667,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2744,6 +2744,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "kyv8n6kjlnyw",
+      "name": "[GRA][Web Hosting] - Cluster005",
+      "status": "investigating",
+      "created_at": "2024-01-08T07:56:48.886Z",
+      "updated_at": "2024-01-08T07:56:49.010Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ksjjlqqcxs21",
+      "started_at": "2024-01-08T07:56:48.875Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "l69pk3gsh3p7",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/01/2024 07:15 UTC \n<b>Service impact :</b> Slowness is being observed for websites hosted in cluster005\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be post as significant progress is made.",
+          "incident_id": "kyv8n6kjlnyw",
+          "created_at": "2024-01-08T07:56:49.006Z",
+          "updated_at": "2024-01-08T07:56:49.006Z",
+          "display_at": "2024-01-08T07:56:49.006Z",
+          "affected_components": [
+            {
+              "code": "rhyk4h7wh3dc",
+              "name": "Web Hosting || Datacenter GRA - Cluster005",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rhyk4h7wh3dc",
+          "name": "Cluster005",
+          "status": "degraded_performance",
+          "created_at": "2023-07-18T08:35:33.492Z",
+          "updated_at": "2024-01-08T07:56:48.937Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-18",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "k279383pcsdq",
       "name": "[FRA][Billing] - Value-Added Services repayment system",
