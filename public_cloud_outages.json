@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-08T20:09:42.152Z"
+    "updated_at": "2024-01-08T20:44:05.587Z"
   },
   "components": [
     {
@@ -2172,9 +2172,9 @@
     {
       "id": "2hqnlvj9ygcf",
       "name": "SBG5",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:17.048Z",
-      "updated_at": "2024-01-08T18:07:39.310Z",
+      "updated_at": "2024-01-08T20:42:07.851Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2445,9 +2445,9 @@
     {
       "id": "fp4k2npcncfx",
       "name": "SBG5",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-15T06:19:04.358Z",
-      "updated_at": "2023-04-15T06:19:04.358Z",
+      "updated_at": "2024-01-08T20:42:07.866Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3748,7 +3748,7 @@
     {
       "id": "3kprrxt18g15",
       "name": "Containers & Orchestration || Load Balancer",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:26.882Z",
       "updated_at": "2023-05-16T12:03:06.570Z",
       "position": 14,
@@ -3867,7 +3867,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2023-05-16T12:03:06.578Z",
       "position": 15,
@@ -5293,6 +5293,80 @@
   ],
   "incidents": [
     {
+      "id": "v7nfv7g1ylrq",
+      "name": "[SBG5][Containers & Orchestration] - Managed Kubernetes Service",
+      "status": "investigating",
+      "created_at": "2024-01-08T20:42:07.816Z",
+      "updated_at": "2024-01-08T20:42:07.922Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/f0gnrcq0glh9",
+      "started_at": "2024-01-08T20:42:07.805Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "sx10hxyn3n8n",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 08/01/2024 19:30 UTC \n<b>Service impact :</b> Some load balancer can't be delivered and managed nodes operation could be impacted in SBG5.\n<b>Related incidents :</b> https://public-cloud.status-ovhcloud.com/incidents/7vqdrjdb76vg\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "v7nfv7g1ylrq",
+          "created_at": "2024-01-08T20:42:07.920Z",
+          "updated_at": "2024-01-08T20:42:07.920Z",
+          "display_at": "2024-01-08T20:42:07.920Z",
+          "affected_components": [
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "under_maintenance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "fp4k2npcncfx",
+              "name": "Containers & Orchestration || Load Balancer - SBG5",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2hqnlvj9ygcf",
+          "name": "SBG5",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:34:17.048Z",
+          "updated_at": "2024-01-08T20:42:07.851Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "fp4k2npcncfx",
+          "name": "SBG5",
+          "status": "degraded_performance",
+          "created_at": "2023-04-15T06:19:04.358Z",
+          "updated_at": "2024-01-08T20:42:07.866Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "3kprrxt18g15",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "7vqdrjdb76vg",
       "name": "[SBG5][Public Cloud] - Neutron API",
       "status": "investigating",
@@ -5818,9 +5892,9 @@
         {
           "id": "2hqnlvj9ygcf",
           "name": "SBG5",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:34:17.048Z",
-          "updated_at": "2024-01-08T18:07:39.310Z",
+          "updated_at": "2024-01-08T20:42:07.851Z",
           "position": 6,
           "description": null,
           "showcase": false,
