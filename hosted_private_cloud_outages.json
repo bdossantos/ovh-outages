@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-11T17:24:51.770Z"
+    "updated_at": "2024-01-11T18:21:30.123Z"
   },
   "components": [
     {
@@ -2753,6 +2753,60 @@
       "scheduled_until": "2024-01-19T20:00:00.000Z"
     },
     {
+      "id": "jdtsqccjhclf",
+      "name": "[WAW1][Hosted Private Cloud] - Network equipement operation",
+      "status": "scheduled",
+      "created_at": "2024-01-10T23:08:23.905Z",
+      "updated_at": "2024-01-10T23:08:23.957Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vzqy4vmjbc0h",
+      "started_at": "2024-01-10T23:08:23.898Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "hp3shxprxx2r",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/01/2024 03:00 UTC \n<b>End time :</b> 22/01/2024 08:00 UTC \n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance. \n<b>Service improvement  :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
+          "incident_id": "jdtsqccjhclf",
+          "created_at": "2024-01-10T23:08:23.955Z",
+          "updated_at": "2024-01-10T23:08:23.955Z",
+          "display_at": "2024-01-10T23:08:23.955Z",
+          "affected_components": [
+            {
+              "code": "f670p38r7bbs",
+              "name": "VMware Private Cloud || WAW - Network",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f670p38r7bbs",
+          "name": "Network",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:32.348Z",
+          "updated_at": "2024-01-09T20:23:27.423Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-01-22T03:00:00.000Z",
+      "scheduled_until": "2024-01-22T08:00:00.000Z"
+    },
+    {
       "id": "xtsrd39kb1l4",
       "name": "[ERI1][Hosted Private Cloud] - Network equipement operation",
       "status": "scheduled",
@@ -2807,32 +2861,80 @@
       "scheduled_until": "2024-01-22T08:00:00.000Z"
     },
     {
-      "id": "jdtsqccjhclf",
-      "name": "[WAW1][Hosted Private Cloud] - Network equipement operation",
+      "id": "4rx1p90xy3lx",
+      "name": "[Global][Hosted Private Cloud] - Upgrade Vrouter to SL2L",
       "status": "scheduled",
-      "created_at": "2024-01-10T23:08:23.905Z",
-      "updated_at": "2024-01-10T23:08:23.957Z",
+      "created_at": "2024-01-11T18:21:30.067Z",
+      "updated_at": "2024-01-11T18:21:30.121Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/vzqy4vmjbc0h",
-      "started_at": "2024-01-10T23:08:23.898Z",
+      "shortlink": "https://stspg.io/cpd8t4jzwzdw",
+      "started_at": "2024-01-11T18:21:30.041Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "hp3shxprxx2r",
+          "id": "ql2fct3pkcfh",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 22/01/2024 03:00 UTC \n<b>End time :</b> 22/01/2024 08:00 UTC \n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance. \n<b>Service improvement  :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
-          "incident_id": "jdtsqccjhclf",
-          "created_at": "2024-01-10T23:08:23.955Z",
-          "updated_at": "2024-01-10T23:08:23.955Z",
-          "display_at": "2024-01-10T23:08:23.955Z",
+          "body": "<b>Start time :</b> 29/01/2024 08:00 UTC\n<b>End time :</b> 02/01/2024 20:00 UTC\n<b>Service impact :</b> Zerto replication cut during the maintenance\n<b>Service improvement :</b> Upgrade Vrouter to SL2L",
+          "incident_id": "4rx1p90xy3lx",
+          "created_at": "2024-01-11T18:21:30.118Z",
+          "updated_at": "2024-01-11T18:21:30.118Z",
+          "display_at": "2024-01-11T18:21:30.118Z",
           "affected_components": [
             {
-              "code": "f670p38r7bbs",
-              "name": "VMware Private Cloud || WAW - Network",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k71wy7ymrc81",
+              "name": "VMware Private Cloud || LON - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "z03dslm46ktz",
+              "name": "VMware Private Cloud || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "VMware Private Cloud || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2m51qtksgds4",
+              "name": "VMware Private Cloud || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n1fybgrv7djj",
+              "name": "VMware Private Cloud || BHS - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "00rkj6r5v5v2",
+              "name": "VMware Private Cloud || FRA - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2j4z6x3p2jgz",
+              "name": "VMware Private Cloud || WAW - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rnctk115qbjl",
+              "name": "VMware Private Cloud || GRA - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -2842,12 +2944,117 @@
       ],
       "components": [
         {
-          "id": "f670p38r7bbs",
-          "name": "Network",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:43:32.348Z",
-          "updated_at": "2024-01-09T20:23:27.423Z",
-          "position": 1,
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2024-01-09T13:32:43.142Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k71wy7ymrc81",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:54.539Z",
+          "updated_at": "2023-11-11T21:05:50.160Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "tn4jtjt0qvj7",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "z03dslm46ktz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:10.951Z",
+          "updated_at": "2023-11-30T09:29:47.104Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2024-01-08T13:31:35.526Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2m51qtksgds4",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:59.147Z",
+          "updated_at": "2024-01-04T13:42:01.571Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n1fybgrv7djj",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:41.125Z",
+          "updated_at": "2024-01-09T13:32:59.958Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "00rkj6r5v5v2",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:11.552Z",
+          "updated_at": "2023-11-11T21:05:50.253Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "6rxw73tzc3x8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2j4z6x3p2jgz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:35.199Z",
+          "updated_at": "2023-11-11T21:05:50.271Z",
+          "position": 4,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
@@ -2855,10 +3062,247 @@
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
+        },
+        {
+          "id": "rnctk115qbjl",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2023-12-19T21:49:03.264Z",
+          "updated_at": "2023-12-19T21:49:03.264Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-01-22T03:00:00.000Z",
-      "scheduled_until": "2024-01-22T08:00:00.000Z"
+      "scheduled_for": "2024-01-29T08:00:00.000Z",
+      "scheduled_until": "2024-02-02T20:00:00.000Z"
+    },
+    {
+      "id": "zgclh96ycdf1",
+      "name": "[Global][Hosted Private Cloud] - Upgrade Vrouter to SL2L",
+      "status": "scheduled",
+      "created_at": "2024-01-11T18:16:29.742Z",
+      "updated_at": "2024-01-11T18:16:29.817Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0sp6k462q28y",
+      "started_at": "2024-01-11T18:16:29.712Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "djhgr112d2cj",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 05/02/2024 08:00 UTC\n<b>End time :</b> 09/02/2024 20:00 UTC\n<b>Service impact :</b> Zerto replication cut during the maintenance\n<b>Service improvement :</b> Upgrade Vrouter to SL2L",
+          "incident_id": "zgclh96ycdf1",
+          "created_at": "2024-01-11T18:16:29.814Z",
+          "updated_at": "2024-01-11T18:16:29.814Z",
+          "display_at": "2024-01-11T18:16:29.814Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "k71wy7ymrc81",
+              "name": "VMware Private Cloud || LON - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "z03dslm46ktz",
+              "name": "VMware Private Cloud || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "VMware Private Cloud || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2m51qtksgds4",
+              "name": "VMware Private Cloud || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n1fybgrv7djj",
+              "name": "VMware Private Cloud || BHS - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "00rkj6r5v5v2",
+              "name": "VMware Private Cloud || FRA - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2j4z6x3p2jgz",
+              "name": "VMware Private Cloud || WAW - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rnctk115qbjl",
+              "name": "VMware Private Cloud || GRA - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2024-01-09T13:32:43.142Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k71wy7ymrc81",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:54.539Z",
+          "updated_at": "2023-11-11T21:05:50.160Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "tn4jtjt0qvj7",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "z03dslm46ktz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:10.951Z",
+          "updated_at": "2023-11-30T09:29:47.104Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2024-01-08T13:31:35.526Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2m51qtksgds4",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:59.147Z",
+          "updated_at": "2024-01-04T13:42:01.571Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n1fybgrv7djj",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:41.125Z",
+          "updated_at": "2024-01-09T13:32:59.958Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "00rkj6r5v5v2",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:11.552Z",
+          "updated_at": "2023-11-11T21:05:50.253Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "6rxw73tzc3x8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2j4z6x3p2jgz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:35.199Z",
+          "updated_at": "2023-11-11T21:05:50.271Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rnctk115qbjl",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2023-12-19T21:49:03.264Z",
+          "updated_at": "2023-12-19T21:49:03.264Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-05T08:00:00.000Z",
+      "scheduled_until": "2024-02-09T20:00:00.000Z"
     },
     {
       "id": "g3sr7gmdftcf",
