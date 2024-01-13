@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-12T22:43:15.434Z"
+    "updated_at": "2024-01-13T01:24:54.858Z"
   },
   "components": [
     {
@@ -939,9 +939,9 @@
     {
       "id": "pgf35fxt4ywk",
       "name": "Network Services || vRack Private Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-20T08:36:07.479Z",
-      "updated_at": "2024-01-10T14:17:21.584Z",
+      "updated_at": "2024-01-13T01:24:54.813Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -952,7 +952,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kn3zdnqhtzys",
+      "name": "[FRA1/GRA2/RBX7/RBX8][Network Services] - vRack",
+      "status": "investigating",
+      "created_at": "2024-01-13T01:16:01.418Z",
+      "updated_at": "2024-01-13T01:24:54.851Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/psgm2tdk62qj",
+      "started_at": "2024-01-13T01:16:01.413Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "l89r148jzv7b",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 13/01/2023 00:17 UTC \n<b>Service impact :</b> vRack is temporarily unavailable for some servers located in FRA1, GRA2, RBX7 and RBX8\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "kn3zdnqhtzys",
+          "created_at": "2024-01-13T01:24:54.849Z",
+          "updated_at": "2024-01-13T01:24:54.849Z",
+          "display_at": "2024-01-13T01:24:54.849Z",
+          "affected_components": [
+            {
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "599ht9gxwyzb",
+          "status": "investigating",
+          "body": "We have detected an issue on our infrastcuture. We will update informations when we will have more détails",
+          "incident_id": "kn3zdnqhtzys",
+          "created_at": "2024-01-13T01:16:01.498Z",
+          "updated_at": "2024-01-13T01:16:01.498Z",
+          "display_at": "2024-01-13T01:16:01.498Z",
+          "affected_components": [
+            {
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pgf35fxt4ywk",
+          "name": "Network Services || vRack Private Network",
+          "status": "partial_outage",
+          "created_at": "2022-05-20T08:36:07.479Z",
+          "updated_at": "2024-01-13T01:24:54.813Z",
+          "position": 19,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "dc52h8tg3pmt",
@@ -2393,9 +2467,9 @@
         {
           "id": "pgf35fxt4ywk",
           "name": "Network Services || vRack Private Network",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2022-05-20T08:36:07.479Z",
-          "updated_at": "2024-01-10T14:17:21.584Z",
+          "updated_at": "2024-01-13T01:24:54.813Z",
           "position": 19,
           "description": null,
           "showcase": false,
@@ -4363,7 +4437,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
