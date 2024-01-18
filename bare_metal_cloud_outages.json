@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-18T07:00:19.172Z"
+    "updated_at": "2024-01-18T08:01:13.767Z"
   },
   "components": [
     {
@@ -1335,7 +1335,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1689,9 +1689,9 @@
     {
       "id": "7xy5137wv97w",
       "name": "SBG",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:53.351Z",
-      "updated_at": "2024-01-03T03:38:22.038Z",
+      "updated_at": "2024-01-18T08:01:13.671Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2564,73 +2564,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "l1ckykcvxmmf",
-      "name": "[SBG3][Dedicated Servers] - Rack S330B06",
-      "status": "scheduled",
-      "created_at": "2024-01-05T03:21:47.616Z",
-      "updated_at": "2024-01-18T07:00:19.158Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qz8tmqbwpptd",
-      "started_at": "2024-01-05T03:21:47.609Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "8p92qpmy0cm4",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "l1ckykcvxmmf",
-          "created_at": "2024-01-18T07:00:18.289Z",
-          "updated_at": "2024-01-18T07:00:18.289Z",
-          "display_at": "2024-01-18T07:00:18.289Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dtz0l12xxpgc",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 18/01/2024 08:00 UTC \n<b>End time :</b> 18/01/2024 17:00 UTC \n<b>Service impact :</b> Each server in rack S330B06 will be unreachable for 30 minutes during the maintenance \n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, our teams will move servers from rack S330B06 to rack S330B01 and  S330B02.",
-          "incident_id": "l1ckykcvxmmf",
-          "created_at": "2024-01-05T03:21:47.667Z",
-          "updated_at": "2024-01-05T03:21:47.667Z",
-          "display_at": "2024-01-05T03:21:47.667Z",
-          "affected_components": [
-            {
-              "code": "7xy5137wv97w",
-              "name": "Dedicated Servers || Network - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7xy5137wv97w",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:53.351Z",
-          "updated_at": "2024-01-03T03:38:22.038Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-01-18T08:00:00.000Z",
-      "scheduled_until": "2024-01-18T17:00:00.000Z"
-    },
     {
       "id": "m6jclbt1lgy4",
       "name": "[RBX8/SBG][Storage and Backups] - NAS HA maintenance notification",
@@ -4216,6 +4149,93 @@
       ],
       "scheduled_for": "2024-02-24T08:00:00.000Z",
       "scheduled_until": "2024-02-24T12:00:00.000Z"
+    },
+    {
+      "id": "l1ckykcvxmmf",
+      "name": "[SBG3][Dedicated Servers] - Rack S330B06",
+      "status": "in_progress",
+      "created_at": "2024-01-05T03:21:47.616Z",
+      "updated_at": "2024-01-18T08:01:13.753Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qz8tmqbwpptd",
+      "started_at": "2024-01-05T03:21:47.609Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "540829lcytc6",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "l1ckykcvxmmf",
+          "created_at": "2024-01-18T08:01:13.749Z",
+          "updated_at": "2024-01-18T08:01:13.749Z",
+          "display_at": "2024-01-18T08:01:13.749Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8p92qpmy0cm4",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "l1ckykcvxmmf",
+          "created_at": "2024-01-18T07:00:18.289Z",
+          "updated_at": "2024-01-18T07:00:18.289Z",
+          "display_at": "2024-01-18T07:00:18.289Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "dtz0l12xxpgc",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 18/01/2024 08:00 UTC \n<b>End time :</b> 18/01/2024 17:00 UTC \n<b>Service impact :</b> Each server in rack S330B06 will be unreachable for 30 minutes during the maintenance \n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, our teams will move servers from rack S330B06 to rack S330B01 and  S330B02.",
+          "incident_id": "l1ckykcvxmmf",
+          "created_at": "2024-01-05T03:21:47.667Z",
+          "updated_at": "2024-01-05T03:21:47.667Z",
+          "display_at": "2024-01-05T03:21:47.667Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2024-01-18T08:01:13.671Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-01-18T08:00:00.000Z",
+      "scheduled_until": "2024-01-18T17:00:00.000Z"
     },
     {
       "id": "5dq8qzzdk3r8",
