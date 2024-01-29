@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-01-29T02:39:32.531Z"
+    "updated_at": "2024-01-29T05:05:30.904Z"
   },
   "components": [
     {
@@ -1173,9 +1173,9 @@
     {
       "id": "d6db30j7nx4r",
       "name": "BHS5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:37.373Z",
-      "updated_at": "2023-11-24T05:00:11.154Z",
+      "updated_at": "2024-01-29T05:05:30.857Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1942,7 +1942,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2023-05-16T12:01:33.078Z",
       "position": 5,
@@ -5355,7 +5355,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vc2ly4y8bv6g",
+      "name": "[BHS5][Compute Instance] - Instances",
+      "status": "investigating",
+      "created_at": "2024-01-29T05:05:30.831Z",
+      "updated_at": "2024-01-29T05:05:30.902Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/bg5myg1lmld1",
+      "started_at": "2024-01-29T05:05:30.825Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "jbb5cpr377st",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 29/01/2024 01:34 UTC \n<b>Service impact :</b> All  Public Cloud instances are unreachable on BHS5\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "vc2ly4y8bv6g",
+          "created_at": "2024-01-29T05:05:30.901Z",
+          "updated_at": "2024-01-29T05:05:30.901Z",
+          "display_at": "2024-01-29T05:05:30.901Z",
+          "affected_components": [
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d6db30j7nx4r",
+          "name": "BHS5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:37.373Z",
+          "updated_at": "2024-01-29T05:05:30.857Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "bq1nj7r3d0ng",
@@ -5771,7 +5825,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
