@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-01T14:51:59.157Z"
+    "updated_at": "2024-02-01T15:36:08.863Z"
   },
   "components": [
     {
@@ -985,9 +985,9 @@
     {
       "id": "5sqj5fykl0jy",
       "name": "BHS",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-06-28T14:50:53.141Z",
-      "updated_at": "2024-02-01T05:00:10.587Z",
+      "updated_at": "2024-02-01T15:36:08.804Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2260,7 +2260,7 @@
     {
       "id": "0zd81w13qcgg",
       "name": "Storage and Backups || NAS HA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:54.584Z",
       "updated_at": "2023-08-01T15:50:47.381Z",
       "position": 17,
@@ -3129,100 +3129,6 @@
       "scheduled_until": "2024-02-24T12:00:00.000Z"
     },
     {
-      "id": "pcmhh8mb9s05",
-      "name": "[BHS][Storage and Backups] - NAS HA maintenance notification",
-      "status": "in_progress",
-      "created_at": "2024-01-24T01:43:08.914Z",
-      "updated_at": "2024-02-01T05:00:10.667Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/f6v8mq60l339",
-      "started_at": "2024-01-24T01:43:08.956Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "3mqgj1x07t16",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "pcmhh8mb9s05",
-          "created_at": "2024-02-01T05:00:10.664Z",
-          "updated_at": "2024-02-01T05:00:10.664Z",
-          "display_at": "2024-02-01T05:00:10.664Z",
-          "affected_components": [
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0j6ynxnmryz8",
-          "status": "scheduled",
-          "body": "<b>New start time :</b> 01/02/2024 05:00 UTC \n<b>New end time :</b> 01/02/2024 07:00 UTC",
-          "incident_id": "pcmhh8mb9s05",
-          "created_at": "2024-01-24T07:24:39.017Z",
-          "updated_at": "2024-01-24T07:24:39.017Z",
-          "display_at": "2024-01-24T07:24:39.017Z",
-          "affected_components": [
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "11vk0998pzxn",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 31/01/2024 10:30 UTC \n<b>End time :</b> 31/01/2024 12:30 UTC \n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will perform an update on the storage servers hosting your data.\nThe scheduled maintenance consists of an application update.\nThis update has led to an improvement in certain security mechanisms, as well as some performance improvements.\n \nFor the duration of the maintenance, we will switch your HA-NAS service from the primary node to the secondary node, then switch it back to the primary node. Each switchover involves a brief interruption of about a few seconds. Apart from these switches, your data will remain available.\n \nIn addition, if you have not forced NFSv3 in your mount options, it is possible that your client will automatically change the NFS version during node failovers and that your mount point will be renegotiated to NFSv4, if it was not already the case.\n \nFor more details, please refer to the following documentation if you want to force a version of NFS : https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-nas-nfs?id=kb_article_view&sysparm_article=KB0046735#nfsv3nfsv4e.",
-          "incident_id": "pcmhh8mb9s05",
-          "created_at": "2024-01-24T01:43:08.956Z",
-          "updated_at": "2024-01-29T13:26:18.064Z",
-          "display_at": "2024-01-24T01:43:08.956Z",
-          "affected_components": [
-            {
-              "code": "5sqj5fykl0jy",
-              "name": "Storage and Backups || NAS HA - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5sqj5fykl0jy",
-          "name": "BHS",
-          "status": "under_maintenance",
-          "created_at": "2022-06-28T14:50:53.141Z",
-          "updated_at": "2024-02-01T05:00:10.587Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-06-28",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-01T05:00:00.000Z",
-      "scheduled_until": "2024-02-01T07:00:00.000Z"
-    },
-    {
       "id": "dlvyccmzt54k",
       "name": "[WAW][Network] - background infrastructure operation",
       "status": "in_progress",
@@ -3384,7 +3290,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
