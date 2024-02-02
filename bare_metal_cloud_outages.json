@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-02T11:48:23.241Z"
+    "updated_at": "2024-02-02T12:55:23.719Z"
   },
   "components": [
     {
@@ -1335,7 +1335,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1530,9 +1530,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2024-01-31T18:32:09.594Z",
+      "updated_at": "2024-02-02T12:55:23.669Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2462,7 +2462,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "mh64chlmr82q",
+      "name": "[Rbx7][Dedicated Server] - R716B04",
+      "status": "investigating",
+      "created_at": "2024-02-02T12:55:23.641Z",
+      "updated_at": "2024-02-02T12:55:23.717Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/j4bm6dk84dnz",
+      "started_at": "2024-02-02T12:55:23.634Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "fynz4xm0psjn",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 02/02/2024 12:41 UTC\n<b>Service impact :</b> Public network is unreachable on this rack\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "mh64chlmr82q",
+          "created_at": "2024-02-02T12:55:23.715Z",
+          "updated_at": "2024-02-02T12:55:23.715Z",
+          "display_at": "2024-02-02T12:55:23.715Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2024-02-02T12:55:23.669Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "c1xm9xyy0vjt",
@@ -3222,9 +3276,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-01-31T18:32:09.594Z",
+          "updated_at": "2024-02-02T12:55:23.669Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3330,9 +3384,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-01-31T18:32:09.594Z",
+          "updated_at": "2024-02-02T12:55:23.669Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3670,7 +3724,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
