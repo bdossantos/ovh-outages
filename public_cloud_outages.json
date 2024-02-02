@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-02T00:38:15.373Z"
+    "updated_at": "2024-02-02T01:21:44.216Z"
   },
   "components": [
     {
@@ -1188,9 +1188,9 @@
     {
       "id": "0hpxc65n3j2y",
       "name": "SBG5",
-      "status": "major_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:38:49.027Z",
-      "updated_at": "2024-02-02T00:36:22.849Z",
+      "updated_at": "2024-02-02T01:14:09.569Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2445,9 +2445,9 @@
     {
       "id": "fp4k2npcncfx",
       "name": "SBG5",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2023-04-15T06:19:04.358Z",
-      "updated_at": "2024-01-08T21:37:31.416Z",
+      "updated_at": "2024-02-02T01:14:33.698Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2522,7 +2522,7 @@
       "name": "SBG5",
       "status": "operational",
       "created_at": "2022-04-06T09:34:17.048Z",
-      "updated_at": "2024-01-24T15:58:28.925Z",
+      "updated_at": "2024-02-02T01:21:24.669Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2906,7 +2906,7 @@
     {
       "id": "yx0ggmlz8k7d",
       "name": "Compute - Instance || SBG",
-      "status": "major_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:38:50.902Z",
       "updated_at": "2023-05-16T12:02:28.364Z",
       "position": 9,
@@ -3233,7 +3233,7 @@
       "name": "SBG5",
       "status": "operational",
       "created_at": "2022-04-06T09:37:04.775Z",
-      "updated_at": "2022-11-02T14:23:47.856Z",
+      "updated_at": "2024-02-02T01:21:44.155Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -3793,7 +3793,7 @@
     {
       "id": "3kprrxt18g15",
       "name": "Containers & Orchestration || Load Balancer",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2022-04-06T09:38:26.882Z",
       "updated_at": "2023-05-16T12:03:06.570Z",
       "position": 14,
@@ -5373,11 +5373,157 @@
   ],
   "incidents": [
     {
+      "id": "k0z033w7lw40",
+      "name": "[SBG5][Public Cloud] - Block Storage",
+      "status": "monitoring",
+      "created_at": "2024-02-02T01:02:28.840Z",
+      "updated_at": "2024-02-02T01:21:44.213Z",
+      "monitoring_at": "2024-02-02T01:21:44.198Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/64qpmfcntvzl",
+      "started_at": "2024-02-02T01:02:28.833Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "ppw7nf19ndt2",
+          "status": "monitoring",
+          "body": "The service is back to normal. Our teams are currently monitoring the situation",
+          "incident_id": "k0z033w7lw40",
+          "created_at": "2024-02-02T01:21:44.198Z",
+          "updated_at": "2024-02-02T01:21:44.198Z",
+          "display_at": "2024-02-02T01:21:44.198Z",
+          "affected_components": [
+            {
+              "code": "w520v751hcrn",
+              "name": "Storage || Block storage - SBG5",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "66632jypmptl",
+          "status": "identified",
+          "body": "<b>Start time :</b> 01/02/2024 23:46 UTC \n<b>Service impact :</b> Volume management (cinder) is temporarily unavailable in SBG5\n<b>Root cause :</b> <a href=\"https://public-cloud.status-ovhcloud.com/incidents/wnsxwdzxdyjp\">Incident link</a> \n<b>Ongoing actions :</b> Our teams are currently working to solve the issue",
+          "incident_id": "k0z033w7lw40",
+          "created_at": "2024-02-02T01:02:28.929Z",
+          "updated_at": "2024-02-02T01:02:28.929Z",
+          "display_at": "2024-02-02T01:02:28.929Z",
+          "affected_components": [
+            {
+              "code": "w520v751hcrn",
+              "name": "Storage || Block storage - SBG5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w520v751hcrn",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:37:04.775Z",
+          "updated_at": "2024-02-02T01:21:44.155Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "2qpmg202h2p6",
+      "name": "[SBG5][Containers & Orchestration] - Managed Kubernetes Service",
+      "status": "monitoring",
+      "created_at": "2024-02-02T00:58:17.899Z",
+      "updated_at": "2024-02-02T01:21:24.721Z",
+      "monitoring_at": "2024-02-02T01:21:24.707Z",
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/bpw9r1ycf63y",
+      "started_at": "2024-02-02T00:58:17.891Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "0j2l4z4cr0r0",
+          "status": "monitoring",
+          "body": "The service is back to normal. Our teams are currently monitoring the situation",
+          "incident_id": "2qpmg202h2p6",
+          "created_at": "2024-02-02T01:21:24.707Z",
+          "updated_at": "2024-02-02T01:21:24.707Z",
+          "display_at": "2024-02-02T01:21:24.707Z",
+          "affected_components": [
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "14lgqg0kl6y1",
+          "status": "identified",
+          "body": "<b>Start time :</b> 01/02/2024 23:46 UTC \n<b>Service impact :</b> Workers nodes cannot be added or deleted\n<b>Root cause :</b> <a href=\"https://public-cloud.status-ovhcloud.com/incidents/wnsxwdzxdyjp\">Incident link</a> \n<b>Ongoing actions :</b> Our teams are currently working to solve the issue",
+          "incident_id": "2qpmg202h2p6",
+          "created_at": "2024-02-02T00:58:18.012Z",
+          "updated_at": "2024-02-02T00:58:18.012Z",
+          "display_at": "2024-02-02T00:58:18.012Z",
+          "affected_components": [
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2hqnlvj9ygcf",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:17.048Z",
+          "updated_at": "2024-02-02T01:21:24.669Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "wnsxwdzxdyjp",
       "name": "[SBG5][Public Cloud] - Load Balancer Outage",
       "status": "investigating",
       "created_at": "2024-02-02T00:36:22.820Z",
-      "updated_at": "2024-02-02T00:38:15.369Z",
+      "updated_at": "2024-02-02T01:14:33.750Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "critical",
@@ -5385,6 +5531,26 @@
       "started_at": "2024-02-02T00:36:22.813Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "hvkcj53pgtph",
+          "status": "investigating",
+          "body": "Our technical teams are currently implementing a fix to solve the issue",
+          "incident_id": "wnsxwdzxdyjp",
+          "created_at": "2024-02-02T01:14:33.747Z",
+          "updated_at": "2024-02-02T01:14:33.747Z",
+          "display_at": "2024-02-02T01:14:33.747Z",
+          "affected_components": [
+            {
+              "code": "fp4k2npcncfx",
+              "name": "Containers & Orchestration || Load Balancer - SBG5",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zpbk1cgwtjqv",
           "status": "investigating",
@@ -5408,16 +5574,16 @@
       ],
       "components": [
         {
-          "id": "0hpxc65n3j2y",
+          "id": "fp4k2npcncfx",
           "name": "SBG5",
           "status": "major_outage",
-          "created_at": "2022-04-06T09:38:49.027Z",
-          "updated_at": "2024-02-02T00:36:22.849Z",
-          "position": 3,
+          "created_at": "2023-04-15T06:19:04.358Z",
+          "updated_at": "2024-02-02T01:14:33.698Z",
+          "position": 6,
           "description": null,
           "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yx0ggmlz8k7d",
+          "start_date": "2023-04-15",
+          "group_id": "3kprrxt18g15",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
