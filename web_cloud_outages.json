@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-05T19:25:02.143Z"
+    "updated_at": "2024-02-05T20:23:25.537Z"
   },
   "components": [
     {
@@ -315,9 +315,9 @@
     {
       "id": "cljxz1bqnkyx",
       "name": "GRA7",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-23T11:02:45.256Z",
-      "updated_at": "2024-02-05T17:00:42.327Z",
+      "updated_at": "2024-02-05T20:10:15.135Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2727,7 +2727,7 @@
     {
       "id": "dc34f7wx9y5b",
       "name": "Web PaaS || GRA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-23T11:02:45.236Z",
       "updated_at": "2021-11-23T11:02:45.236Z",
       "position": 31,
@@ -2960,6 +2960,60 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "t73wsf2x89yk",
+      "name": "[GRA7][WebPaaS] - Routine accounts maintenance",
+      "status": "scheduled",
+      "created_at": "2024-02-05T20:22:10.976Z",
+      "updated_at": "2024-02-05T20:22:25.394Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5wx6d6q1syvw",
+      "started_at": "2024-02-05T20:22:10.968Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "pl02cjszmlyp",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 06/02/2024 20:00 UTC \n<b>End time :</b> 06/02/2024 21:00 UTC \n<b>Service impact :</b> All projects and environments will continue to function during the upgrade; however, at one point, a short downtime of no more than 10 minutes will be experienced. Integrations and webhooks may fail during the maintenance, and you may notice increased deployment times\n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on account service. This maintenance is expected to not have impact on the projects: no downtime, no performance issue are expected.",
+          "incident_id": "t73wsf2x89yk",
+          "created_at": "2024-02-05T20:22:25.390Z",
+          "updated_at": "2024-02-05T20:22:25.390Z",
+          "display_at": "2024-02-05T20:22:25.390Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cljxz1bqnkyx",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2021-11-23T11:02:45.256Z",
+          "updated_at": "2024-02-05T20:10:15.135Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-23",
+          "group_id": "dc34f7wx9y5b",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-06T20:00:00.000Z",
+      "scheduled_until": "2024-02-06T21:00:00.000Z"
+    },
+    {
       "id": "zcl6k5wb2ljr",
       "name": "[GRA2][Web Hosting] - cluster005",
       "status": "scheduled",
@@ -3122,60 +3176,6 @@
       "scheduled_until": "2024-02-13T01:45:00.000Z"
     },
     {
-      "id": "8q62sfvpy3xk",
-      "name": "[GRA][Web Hosting] - Cluster007",
-      "status": "scheduled",
-      "created_at": "2024-02-03T02:40:45.134Z",
-      "updated_at": "2024-02-03T02:40:45.194Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/581fx1v5xbkl",
-      "started_at": "2024-02-03T02:40:45.126Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "29y20d5x7nzl",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 13/02/2024 21:30 UTC \n<b>End time :</b> 13/02/2024 23:00 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
-          "incident_id": "8q62sfvpy3xk",
-          "created_at": "2024-02-03T02:40:45.191Z",
-          "updated_at": "2024-02-03T02:40:45.191Z",
-          "display_at": "2024-02-03T02:40:45.191Z",
-          "affected_components": [
-            {
-              "code": "rlqyny7qzlfq",
-              "name": "Web Hosting || Datacenter GRA - Cluster007",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rlqyny7qzlfq",
-          "name": "Cluster007",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:04.885Z",
-          "updated_at": "2024-02-03T23:21:43.034Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-13T21:30:00.000Z",
-      "scheduled_until": "2024-02-13T23:00:00.000Z"
-    },
-    {
       "id": "djdnvgnm8rbh",
       "name": "[GRA][Web Hosting] - Cluster007",
       "status": "scheduled",
@@ -3230,26 +3230,80 @@
       "scheduled_until": "2024-02-13T23:00:00.000Z"
     },
     {
-      "id": "grlclf0km7sz",
-      "name": "[GRA][Web Hosting] - Cluster031",
+      "id": "8q62sfvpy3xk",
+      "name": "[GRA][Web Hosting] - Cluster007",
       "status": "scheduled",
-      "created_at": "2024-02-03T04:41:31.686Z",
-      "updated_at": "2024-02-03T04:41:31.741Z",
+      "created_at": "2024-02-03T02:40:45.134Z",
+      "updated_at": "2024-02-03T02:40:45.194Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/m9h0q3rpvm7y",
-      "started_at": "2024-02-03T04:41:31.678Z",
+      "shortlink": "https://stspg.io/581fx1v5xbkl",
+      "started_at": "2024-02-03T02:40:45.126Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
         {
-          "id": "730p84r65j27",
+          "id": "29y20d5x7nzl",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 13/02/2024 21:30 UTC \n<b>End time :</b> 13/02/2024 23:00 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
+          "incident_id": "8q62sfvpy3xk",
+          "created_at": "2024-02-03T02:40:45.191Z",
+          "updated_at": "2024-02-03T02:40:45.191Z",
+          "display_at": "2024-02-03T02:40:45.191Z",
+          "affected_components": [
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rlqyny7qzlfq",
+          "name": "Cluster007",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:04.885Z",
+          "updated_at": "2024-02-03T23:21:43.034Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-13T21:30:00.000Z",
+      "scheduled_until": "2024-02-13T23:00:00.000Z"
+    },
+    {
+      "id": "j8nmdfjpdjw2",
+      "name": "[GRA][Web Hosting] - Cluster031",
+      "status": "scheduled",
+      "created_at": "2024-02-03T02:45:08.053Z",
+      "updated_at": "2024-02-03T02:45:08.109Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4q04cljpk82c",
+      "started_at": "2024-02-03T02:45:08.046Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "vn9dvfw97vh2",
           "status": "scheduled",
           "body": "<b>Start time :</b> 13/02/2024 22:30 UTC \n<b>End time :</b> 14/02/2024 00:30 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
-          "incident_id": "grlclf0km7sz",
-          "created_at": "2024-02-03T04:41:31.739Z",
-          "updated_at": "2024-02-03T04:41:31.739Z",
-          "display_at": "2024-02-03T04:41:31.739Z",
+          "incident_id": "j8nmdfjpdjw2",
+          "created_at": "2024-02-03T02:45:08.106Z",
+          "updated_at": "2024-02-03T02:45:08.106Z",
+          "display_at": "2024-02-03T02:45:08.106Z",
           "affected_components": [
             {
               "code": "11z8y8f8wr9z",
@@ -3284,26 +3338,26 @@
       "scheduled_until": "2024-02-14T00:30:00.000Z"
     },
     {
-      "id": "j8nmdfjpdjw2",
+      "id": "grlclf0km7sz",
       "name": "[GRA][Web Hosting] - Cluster031",
       "status": "scheduled",
-      "created_at": "2024-02-03T02:45:08.053Z",
-      "updated_at": "2024-02-03T02:45:08.109Z",
+      "created_at": "2024-02-03T04:41:31.686Z",
+      "updated_at": "2024-02-03T04:41:31.741Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/4q04cljpk82c",
-      "started_at": "2024-02-03T02:45:08.046Z",
+      "shortlink": "https://stspg.io/m9h0q3rpvm7y",
+      "started_at": "2024-02-03T04:41:31.678Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
         {
-          "id": "vn9dvfw97vh2",
+          "id": "730p84r65j27",
           "status": "scheduled",
           "body": "<b>Start time :</b> 13/02/2024 22:30 UTC \n<b>End time :</b> 14/02/2024 00:30 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
-          "incident_id": "j8nmdfjpdjw2",
-          "created_at": "2024-02-03T02:45:08.106Z",
-          "updated_at": "2024-02-03T02:45:08.106Z",
-          "display_at": "2024-02-03T02:45:08.106Z",
+          "incident_id": "grlclf0km7sz",
+          "created_at": "2024-02-03T04:41:31.739Z",
+          "updated_at": "2024-02-03T04:41:31.739Z",
+          "display_at": "2024-02-03T04:41:31.739Z",
           "affected_components": [
             {
               "code": "11z8y8f8wr9z",
@@ -3446,60 +3500,6 @@
       "scheduled_until": "2024-02-14T23:00:00.000Z"
     },
     {
-      "id": "0b7zyt95hvxd",
-      "name": "[GRA][Web Hosting] - Cluster029",
-      "status": "scheduled",
-      "created_at": "2024-02-03T03:28:23.540Z",
-      "updated_at": "2024-02-03T03:30:59.022Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/692488nd0tb7",
-      "started_at": "2024-02-03T03:28:23.534Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "pt7qpwwdq8qr",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 15/02/2024 22:30 UTC \n<b>End time :</b> 16/02/2024 00:30 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
-          "incident_id": "0b7zyt95hvxd",
-          "created_at": "2024-02-03T03:28:23.580Z",
-          "updated_at": "2024-02-03T03:30:59.019Z",
-          "display_at": "2024-02-03T03:28:23.580Z",
-          "affected_components": [
-            {
-              "code": "r2sxl24hfy9w",
-              "name": "Web Hosting || Datacenter GRA - Cluster029",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r2sxl24hfy9w",
-          "name": "Cluster029",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:17.317Z",
-          "updated_at": "2023-12-11T10:48:38.536Z",
-          "position": 21,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-14T22:30:00.000Z",
-      "scheduled_until": "2024-02-15T00:30:00.000Z"
-    },
-    {
       "id": "xl4rc3yzrryb",
       "name": "[GRA][Web Hosting] - Cluster030",
       "status": "scheduled",
@@ -3541,6 +3541,60 @@
           "created_at": "2021-06-30T12:19:17.848Z",
           "updated_at": "2024-02-05T18:21:47.637Z",
           "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-14T22:30:00.000Z",
+      "scheduled_until": "2024-02-15T00:30:00.000Z"
+    },
+    {
+      "id": "0b7zyt95hvxd",
+      "name": "[GRA][Web Hosting] - Cluster029",
+      "status": "scheduled",
+      "created_at": "2024-02-03T03:28:23.540Z",
+      "updated_at": "2024-02-03T03:30:59.022Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/692488nd0tb7",
+      "started_at": "2024-02-03T03:28:23.534Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "pt7qpwwdq8qr",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 15/02/2024 22:30 UTC \n<b>End time :</b> 16/02/2024 00:30 UTC \n<b>Service impact :</b> The filerz will have a downtime of 40min during the migration.\n<b>Service improvement :</b> The goal of this maintenance is to improve the performance and enhance the security of our infrastructure.",
+          "incident_id": "0b7zyt95hvxd",
+          "created_at": "2024-02-03T03:28:23.580Z",
+          "updated_at": "2024-02-03T03:30:59.019Z",
+          "display_at": "2024-02-03T03:28:23.580Z",
+          "affected_components": [
+            {
+              "code": "r2sxl24hfy9w",
+              "name": "Web Hosting || Datacenter GRA - Cluster029",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r2sxl24hfy9w",
+          "name": "Cluster029",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:17.317Z",
+          "updated_at": "2023-12-11T10:48:38.536Z",
+          "position": 21,
           "description": null,
           "showcase": false,
           "start_date": "2021-06-29",
@@ -3714,93 +3768,6 @@
       ],
       "scheduled_for": "2024-02-15T23:45:00.000Z",
       "scheduled_until": "2024-02-16T01:45:00.000Z"
-    },
-    {
-      "id": "mbhvz4pw7gds",
-      "name": "[GRA7][WebPaaS] - Routine accounts maintenance",
-      "status": "in_progress",
-      "created_at": "2024-02-05T11:09:37.170Z",
-      "updated_at": "2024-02-05T17:00:42.381Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1r2ttylkkfb7",
-      "started_at": "2024-02-05T11:09:37.162Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "qd65jd7mq0kk",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "mbhvz4pw7gds",
-          "created_at": "2024-02-05T17:00:42.377Z",
-          "updated_at": "2024-02-05T17:00:42.377Z",
-          "display_at": "2024-02-05T17:00:42.377Z",
-          "affected_components": [
-            {
-              "code": "cljxz1bqnkyx",
-              "name": "Web PaaS || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3rp5qzj4m99h",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "mbhvz4pw7gds",
-          "created_at": "2024-02-05T16:00:00.505Z",
-          "updated_at": "2024-02-05T16:00:00.505Z",
-          "display_at": "2024-02-05T16:00:00.505Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "s7p12c6wjkhf",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 05/02/2024 17:00 UTC \n<b>End time :</b> 05/02/2024 19:00 UTC \n<b>Service impact :</b> All projects and environments will continue to function during the upgrade. Our partner will be performing a routine maintenance to optimize performance service on Accounts. This maintenance is expected to impact performance for Accounts services, including the Console, User Accounting, Provisioning and Billing, although, services will remain available at all times.\n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on account service. This maintenance is expected to not have impact on the projects: no downtime, no performance issue are expected.",
-          "incident_id": "mbhvz4pw7gds",
-          "created_at": "2024-02-05T11:09:37.229Z",
-          "updated_at": "2024-02-05T11:09:37.229Z",
-          "display_at": "2024-02-05T11:09:37.229Z",
-          "affected_components": [
-            {
-              "code": "cljxz1bqnkyx",
-              "name": "Web PaaS || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cljxz1bqnkyx",
-          "name": "GRA7",
-          "status": "under_maintenance",
-          "created_at": "2021-11-23T11:02:45.256Z",
-          "updated_at": "2024-02-05T17:00:42.327Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-23",
-          "group_id": "dc34f7wx9y5b",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-05T17:00:00.000Z",
-      "scheduled_until": "2024-02-05T19:00:00.000Z"
     }
   ],
   "status": {
