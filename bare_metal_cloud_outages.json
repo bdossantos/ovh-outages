@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-08T01:47:51.372Z"
+    "updated_at": "2024-02-08T07:46:09.000Z"
   },
   "components": [
     {
@@ -2574,10 +2574,10 @@
     },
     {
       "id": "4pwx0w27my97",
-      "name": "[HIL][Dedicated Servers] - Network equipment operation",
+      "name": "[ERI][Dedicated Servers] - Network equipment operation",
       "status": "scheduled",
       "created_at": "2024-02-01T21:44:00.202Z",
-      "updated_at": "2024-02-06T15:59:52.306Z",
+      "updated_at": "2024-02-08T07:46:08.992Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2585,6 +2585,26 @@
       "started_at": "2024-02-01T21:44:00.198Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "6mgk6yjgws0p",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "4pwx0w27my97",
+          "created_at": "2024-02-08T07:46:08.990Z",
+          "updated_at": "2024-02-08T07:46:08.990Z",
+          "display_at": "2024-02-08T07:46:08.990Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "lqh0g1z7rb8d",
           "status": "scheduled",
@@ -2612,7 +2632,23 @@
           "tweet_id": null
         }
       ],
-      "components": [],
+      "components": [
+        {
+          "id": "5ml6n8xk2fcs",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:50.476Z",
+          "updated_at": "2024-01-31T18:32:09.552Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
       "scheduled_for": "2024-02-12T08:00:00.000Z",
       "scheduled_until": "2024-02-12T11:30:00.000Z"
     },
@@ -2765,6 +2801,60 @@
       "scheduled_until": "2024-02-12T15:00:00.000Z"
     },
     {
+      "id": "q4j5mhh3615v",
+      "name": "[RBX2][Dedicated Servers] - Rack 31A25/26/27/B28",
+      "status": "scheduled",
+      "created_at": "2024-01-05T03:55:45.303Z",
+      "updated_at": "2024-02-08T07:34:15.681Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rnxqlq3y2wpr",
+      "started_at": "2024-01-05T03:55:45.296Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "ymm3hrm2hmrz",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 12/02/2024 23:00 UTC \n<b>End time :</b> 13/02/2024 06:00 UTC \n<b>Service impact :</b> Each server in racks 31A25/26/27/B28 will be unreachable for 30 minutes during the maintenance \n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, our teams will move servers from racks 331A25/331A26/331A27/331AB28 to racks 31A19/31A20.",
+          "incident_id": "q4j5mhh3615v",
+          "created_at": "2024-01-05T03:55:45.357Z",
+          "updated_at": "2024-01-05T03:55:45.357Z",
+          "display_at": "2024-01-05T03:55:45.357Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-02-08T01:47:51.305Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-02-12T23:00:00.000Z",
+      "scheduled_until": "2024-02-13T06:00:00.000Z"
+    },
+    {
       "id": "r9w0jr91zrr6",
       "name": "[SBG3][Dedicated Servers] - Rack S320B02",
       "status": "scheduled",
@@ -2861,60 +2951,6 @@
       "components": [],
       "scheduled_for": "2024-02-13T08:00:00.000Z",
       "scheduled_until": "2024-02-13T11:30:00.000Z"
-    },
-    {
-      "id": "q4j5mhh3615v",
-      "name": "[RBX2][Dedicated Servers] - Rack 31A25/26/27/B28",
-      "status": "scheduled",
-      "created_at": "2024-01-05T03:55:45.303Z",
-      "updated_at": "2024-01-05T03:55:45.360Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rnxqlq3y2wpr",
-      "started_at": "2024-01-05T03:55:45.296Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "ymm3hrm2hmrz",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 12/02/2024 23:00 UTC \n<b>End time :</b> 13/02/2024 06:00 UTC \n<b>Service impact :</b> Each server in racks 31A25/26/27/B28 will be unreachable for 30 minutes during the maintenance \n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure, our teams will move servers from racks 331A25/331A26/331A27/331AB28 to racks 31A19/31A20.",
-          "incident_id": "q4j5mhh3615v",
-          "created_at": "2024-01-05T03:55:45.357Z",
-          "updated_at": "2024-01-05T03:55:45.357Z",
-          "display_at": "2024-01-05T03:55:45.357Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2024-02-08T01:47:51.305Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-13T23:00:00.000Z",
-      "scheduled_until": "2024-02-14T06:00:00.000Z"
     },
     {
       "id": "lmy3rnkysxl7",
