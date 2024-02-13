@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-13T15:01:00.122Z"
+    "updated_at": "2024-02-13T15:31:18.666Z"
   },
   "components": [
     {
@@ -2187,9 +2187,9 @@
     {
       "id": "jnrg6smtv9yw",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.994Z",
-      "updated_at": "2024-01-25T13:07:06.284Z",
+      "updated_at": "2024-02-13T15:15:32.872Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2550,7 +2550,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -5371,7 +5371,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2t5dcslkpq3q",
+      "name": "[GRA11][Public Cloud] - Openstack API",
+      "status": "investigating",
+      "created_at": "2024-02-13T15:15:32.838Z",
+      "updated_at": "2024-02-13T15:31:18.660Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/llgghvdcgq6d",
+      "started_at": "2024-02-13T15:15:32.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "pj0wkcngb1z4",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 13/02/2024 15:00 UTC \n<b>Service impact :</b> API, API, actions on instances and the network are affected.\n<b>Root cause :</b> Software issue\n<b>Ongoing actions :</b> We are actively working to resolve this problem.\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "2t5dcslkpq3q",
+          "created_at": "2024-02-13T15:31:18.658Z",
+          "updated_at": "2024-02-13T15:31:18.658Z",
+          "display_at": "2024-02-13T15:31:18.658Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hy784dkxd76x",
+          "status": "investigating",
+          "body": "We have detected an issue on our infrastructure. We will update informations when we will have more details.",
+          "incident_id": "2t5dcslkpq3q",
+          "created_at": "2024-02-13T15:15:32.924Z",
+          "updated_at": "2024-02-13T15:17:53.545Z",
+          "display_at": "2024-02-13T15:15:32.000Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2024-02-13T15:15:32.872Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7wrt0pwcnf9l",
@@ -5542,7 +5616,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
