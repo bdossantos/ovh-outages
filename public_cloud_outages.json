@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-13T15:31:18.666Z"
+    "updated_at": "2024-02-13T15:53:09.993Z"
   },
   "components": [
     {
@@ -2505,9 +2505,9 @@
     {
       "id": "lx3sbpqcn3q5",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-01-24T14:39:11.288Z",
-      "updated_at": "2024-01-24T15:58:28.911Z",
+      "updated_at": "2024-02-13T15:53:09.936Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3897,7 +3897,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2023-05-16T12:03:06.578Z",
       "position": 15,
@@ -5373,11 +5373,64 @@
   ],
   "incidents": [
     {
+      "id": "0mwpkwp3bpyc",
+      "name": "[GRA11][Public Cloud] - MKS nodes",
+      "status": "investigating",
+      "created_at": "2024-02-13T15:53:09.904Z",
+      "updated_at": "2024-02-13T15:53:09.990Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/yj3r2m0mv56z",
+      "started_at": "2024-02-13T15:53:09.896Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "7t8nygj89zmn",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 12/02/2024 15:00 UTC \n<b>Service impact :</b> Customers may experience errors on node creation and deletion and PCI volume operations.\n<b>Root cause :</b> https://public-cloud.status-ovhcloud.com/incidents/2t5dcslkpq3q\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "0mwpkwp3bpyc",
+          "created_at": "2024-02-13T15:53:09.988Z",
+          "updated_at": "2024-02-13T15:53:09.988Z",
+          "display_at": "2024-02-13T15:53:09.988Z",
+          "affected_components": [
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2024-02-13T15:53:09.936Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "2t5dcslkpq3q",
       "name": "[GRA11][Public Cloud] - Openstack API",
       "status": "investigating",
       "created_at": "2024-02-13T15:15:32.838Z",
-      "updated_at": "2024-02-13T15:31:18.660Z",
+      "updated_at": "2024-02-13T15:36:40.438Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -5388,11 +5441,11 @@
         {
           "id": "pj0wkcngb1z4",
           "status": "investigating",
-          "body": "<b>Start time :</b> 13/02/2024 15:00 UTC \n<b>Service impact :</b> API, API, actions on instances and the network are affected.\n<b>Root cause :</b> Software issue\n<b>Ongoing actions :</b> We are actively working to resolve this problem.\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "body": "<b>Start time :</b> 13/02/2024 15:00 UTC \n<b>Service impact :</b> Customers may experience errors with the API, actions on instances and the network.\n<b>Ongoing actions :</b> We are actively working to resolve this problem.\nWe apologize for the inconvenience and thank you for your understanding.",
           "incident_id": "2t5dcslkpq3q",
           "created_at": "2024-02-13T15:31:18.658Z",
-          "updated_at": "2024-02-13T15:31:18.658Z",
-          "display_at": "2024-02-13T15:31:18.658Z",
+          "updated_at": "2024-02-13T15:36:40.433Z",
+          "display_at": "2024-02-13T15:31:18.000Z",
           "affected_components": [
             {
               "code": "jnrg6smtv9yw",
