@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-14T11:29:48.363Z"
+    "updated_at": "2024-02-14T12:01:44.298Z"
   },
   "components": [
     {
@@ -40,9 +40,9 @@
     {
       "id": "0pcq2d0yy7wz",
       "name": "RBX",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:52.860Z",
-      "updated_at": "2024-02-14T08:30:56.740Z",
+      "updated_at": "2024-02-14T11:52:10.027Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2006,9 +2006,9 @@
     {
       "id": "7qwkswh276f8",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:29.102Z",
-      "updated_at": "2024-01-28T16:47:23.602Z",
+      "updated_at": "2024-02-14T11:48:51.704Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2308,7 +2308,7 @@
     {
       "id": "0zd81w13qcgg",
       "name": "Storage and Backups || NAS HA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:54.584Z",
       "updated_at": "2023-08-01T15:50:47.381Z",
       "position": 17,
@@ -2462,7 +2462,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "85jv2d52z890",
+      "name": "[WAW1][Dedicated Servers] - Rack WAW0107A03B",
+      "status": "investigating",
+      "created_at": "2024-02-14T11:48:51.672Z",
+      "updated_at": "2024-02-14T11:48:51.754Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/xmykfg5m1rhn",
+      "started_at": "2024-02-14T11:48:51.665Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "q62c4tfdng38",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 14/02/2024 11:29 UTC\n<b>Service impact :</b> Servers in the rack WAW0107A03B are down.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "85jv2d52z890",
+          "created_at": "2024-02-14T11:48:51.752Z",
+          "updated_at": "2024-02-14T11:48:51.752Z",
+          "display_at": "2024-02-14T11:48:51.752Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7qwkswh276f8",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:29.102Z",
+          "updated_at": "2024-02-14T11:48:51.704Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "35fd02lgy7g9",
@@ -3723,21 +3777,21 @@
       "name": "[Worldwide][Dedicated Servers] - APIv6 BringYourOwnImage routes Maintenance",
       "status": "scheduled",
       "created_at": "2024-02-14T00:54:13.201Z",
-      "updated_at": "2024-02-14T00:54:13.291Z",
+      "updated_at": "2024-02-14T12:01:44.294Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://stspg.io/phr9zh6v59xs",
-      "started_at": "2024-02-14T00:54:13.179Z",
+      "started_at": "2024-02-14T00:54:13.287Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
           "id": "xkt1vkfrm3x8",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 19/03/2024 09:30 UTC \n<b>End time :</b> 19/03/2024 09:45 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, this maintenance will enables customers to deploy cloudready images directly on their dedicated server.",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 19/03/2024 09:30 UTC \n<b>End time :</b> 19/03/2024 09:45 UTC \n<b>Service impact :</b> Some API calls definitely removed.\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, this maintenance will enables customers to deploy cloudready images directly on their dedicated server.\n\nThe following API calls will be <b>definitely</b> removed:\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#get-/dedicated/server/-serviceName-/bringYourOwnImage\">GET /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/bringYourOwnImage\">POST /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#delete-/dedicated/server/-serviceName-/bringYourOwnImage\">DELETE /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\nCustomers can still use the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">Bring Your Own Image (BYOI)</a> feature from the API call <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>. More details can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">documentation page</a>.\nThis change was required in order to add the new <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061610\">Bring Your Own Linux (BYOLinux)</a> feature.\n<a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-image-versus-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061597\">Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet - OVHcloud</a>.",
           "incident_id": "srbtblw75lw3",
           "created_at": "2024-02-14T00:54:13.287Z",
-          "updated_at": "2024-02-14T00:54:13.287Z",
+          "updated_at": "2024-02-14T12:01:44.240Z",
           "display_at": "2024-02-14T00:54:13.287Z",
           "affected_components": [
             {
@@ -4023,97 +4077,10 @@
       ],
       "scheduled_for": "2024-03-19T09:30:00.000Z",
       "scheduled_until": "2024-03-19T09:45:00.000Z"
-    },
-    {
-      "id": "z2y5tzwxd14t",
-      "name": "[RBX][Storage and Backups] - NAS HA maintenance notification",
-      "status": "in_progress",
-      "created_at": "2024-02-03T04:25:23.115Z",
-      "updated_at": "2024-02-14T08:30:56.795Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/v65blgnc8mcc",
-      "started_at": "2024-02-03T04:25:23.109Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "q426vg92h9w2",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "z2y5tzwxd14t",
-          "created_at": "2024-02-14T08:30:56.792Z",
-          "updated_at": "2024-02-14T08:30:56.792Z",
-          "display_at": "2024-02-14T08:30:56.792Z",
-          "affected_components": [
-            {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7c0mm8xdtmgl",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "z2y5tzwxd14t",
-          "created_at": "2024-02-14T07:30:08.582Z",
-          "updated_at": "2024-02-14T07:30:08.582Z",
-          "display_at": "2024-02-14T07:30:08.582Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1gczfdc72pjx",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 14/02/2024 08:30 UTC \n<b>End time :</b> 14/02/2024 10:30 UTC \n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance.\n<b>Service improvement :</b> As part of our NAS-HA hosting responsibilities, we will perform infrastructure maintenance.\nThe maintenance will update the storage servers that host your data.\nThis release will improve certain security mechanisms as well as some performance improvements.\nYour data will remain available during the maintenance period.",
-          "incident_id": "z2y5tzwxd14t",
-          "created_at": "2024-02-03T04:25:23.159Z",
-          "updated_at": "2024-02-14T04:19:58.893Z",
-          "display_at": "2024-02-03T04:25:23.159Z",
-          "affected_components": [
-            {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0pcq2d0yy7wz",
-          "name": "RBX",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2024-02-14T08:30:56.740Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-14T08:30:00.000Z",
-      "scheduled_until": "2024-02-14T10:30:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
