@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-14T08:30:56.808Z"
+    "updated_at": "2024-02-14T11:29:48.363Z"
   },
   "components": [
     {
@@ -1487,7 +1487,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-02-14T05:00:48.338Z",
+      "updated_at": "2024-02-14T11:26:24.972Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2524,7 +2524,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2024-02-14T05:00:48.338Z",
+          "updated_at": "2024-02-14T11:26:24.972Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2578,7 +2578,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2024-02-14T05:00:48.338Z",
+          "updated_at": "2024-02-14T11:26:24.972Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2648,24 +2648,24 @@
     },
     {
       "id": "sbx0z1m2v2dh",
-      "name": "[Worldwide][Dedicated Servers] - Netboot rescue-customer Maintenance",
+      "name": "[Worldwide][Dedicated Servers] - Netboot rescue-customer operation",
       "status": "scheduled",
       "created_at": "2024-02-14T01:17:54.880Z",
-      "updated_at": "2024-02-14T01:17:54.924Z",
+      "updated_at": "2024-02-14T11:29:48.359Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
       "shortlink": "https://stspg.io/vckr6q7xm31q",
-      "started_at": "2024-02-14T01:17:54.872Z",
+      "started_at": "2024-02-14T01:17:54.922Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
           "id": "zs4xbgbq2nbc",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 20/02/2024 13:00 UTC \n<b>End time :</b> 20/02/2024 13:15 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, we will be removing duplicate Netboot rescue-customer.",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 20/02/2024 13:00 UTC \n<b>End time :</b> 20/02/2024 13:15 UTC \n<b>Service impact :</b> bootId key value set to 46984 will need to change for servers in CA region.\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, we will be removing duplicate Netboot rescue-customer.\n\nCustomers directly using API call <a href=\"https://ca.api.ovh.com/console/#/dedicated/server/%7BserviceName%7D~PUT\">PUT /dedicated/server/{serviceName}</a> on a dedicated server located in CA region (<b>any dedicated server with service name ending with .net</b>) to switch boot mode to Linux rescue type with bootId key value set to 46984 will need to change to value 46371.\nCustomers taking this bootId value dynamically from API call <a href=\"https://ca.api.ovh.com/console/#/dedicated/server/%7BserviceName%7D/boot~GET\">GET /dedicated/server/{serviceName}/boot?bootType=rescue</a> are not impacted.\nCustomers using API call <a href=\"https://ca.api.ovh.com/console/#/dedicated/server/%7BserviceName%7D~PUT\">PUT dedicated/server/{serviceName}</a> with a bootid value other than 46984 are not impacted. \nFor any dedicated server located in EU or US regions: no impact.",
           "incident_id": "sbx0z1m2v2dh",
           "created_at": "2024-02-14T01:17:54.922Z",
-          "updated_at": "2024-02-14T01:17:54.922Z",
+          "updated_at": "2024-02-14T11:29:48.308Z",
           "display_at": "2024-02-14T01:17:54.922Z",
           "affected_components": [
             {
