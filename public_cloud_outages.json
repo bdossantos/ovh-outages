@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-14T08:05:04.450Z"
+    "updated_at": "2024-02-15T08:44:17.203Z"
   },
   "components": [
     {
@@ -265,9 +265,9 @@
     {
       "id": "zvrfgrvrp8kc",
       "name": "UK1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:16.391Z",
-      "updated_at": "2023-09-06T09:24:25.990Z",
+      "updated_at": "2024-02-15T08:44:17.126Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2262,7 +2262,7 @@
     {
       "id": "5bttkdz4t240",
       "name": "Compute - Instance || ERI",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:38:17.232Z",
       "updated_at": "2023-05-16T12:01:46.058Z",
       "position": 6,
@@ -5371,7 +5371,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lk4s0h49gws2",
+      "name": "[UK1][Compute] - OpenStack API instabilities",
+      "status": "identified",
+      "created_at": "2024-02-15T08:44:17.080Z",
+      "updated_at": "2024-02-15T08:44:17.199Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/kj74nt8t4gc0",
+      "started_at": "2024-02-15T08:44:17.069Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "vnv1bbv48ld8",
+          "status": "identified",
+          "body": "<b>Start time :</b> 15/02/2024 08:30 UTC \n<b>Service impact :</b> OpenStack API may answers with errors.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "lk4s0h49gws2",
+          "created_at": "2024-02-15T08:44:17.195Z",
+          "updated_at": "2024-02-15T08:44:17.195Z",
+          "display_at": "2024-02-15T08:44:17.195Z",
+          "affected_components": [
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvrfgrvrp8kc",
+          "name": "UK1",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:38:16.391Z",
+          "updated_at": "2024-02-15T08:44:17.126Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "5bttkdz4t240",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d0qjs8dbfg0p",
@@ -5429,7 +5483,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
