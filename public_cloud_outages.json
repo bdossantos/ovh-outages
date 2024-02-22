@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-22T14:31:08.858Z"
+    "updated_at": "2024-02-22T14:31:32.594Z"
   },
   "components": [
     {
@@ -5373,6 +5373,79 @@
   ],
   "incidents": [
     {
+      "id": "ls5ys6v3bb2b",
+      "name": "[SBG][Storage] - Object storage standard incident notification",
+      "status": "investigating",
+      "created_at": "2024-02-22T13:23:03.809Z",
+      "updated_at": "2024-02-22T14:31:32.586Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fvgg8yhmj384",
+      "started_at": "2024-02-22T13:23:03.801Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "rq13ksvvbx2m",
+          "status": "investigating",
+          "body": "We are actively working to resolve this problem.",
+          "incident_id": "ls5ys6v3bb2b",
+          "created_at": "2024-02-22T14:31:32.584Z",
+          "updated_at": "2024-02-22T14:31:32.584Z",
+          "display_at": "2024-02-22T14:31:32.584Z",
+          "affected_components": [
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mzmvjv3gjsb7",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 22/02/2024 13:30 UTC \n<b>Service impact :</b> Customers have had disconnections and 500/503 errors.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "ls5ys6v3bb2b",
+          "created_at": "2024-02-22T13:23:03.896Z",
+          "updated_at": "2024-02-22T13:23:03.896Z",
+          "display_at": "2024-02-22T13:23:03.896Z",
+          "affected_components": [
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2pk5hxxqkq21",
+          "name": "SBG",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:01.981Z",
+          "updated_at": "2024-02-22T13:23:03.841Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "jhlkpq0lbcpw",
       "name": "[DE][Public Cloud] - Incident notification on Public Cloud instance",
       "status": "identified",
@@ -5464,59 +5537,6 @@
         }
       ],
       "reminder_intervals": "[]"
-    },
-    {
-      "id": "ls5ys6v3bb2b",
-      "name": "[SBG][Storage] - Object storage standard incident notification",
-      "status": "investigating",
-      "created_at": "2024-02-22T13:23:03.809Z",
-      "updated_at": "2024-02-22T13:23:03.899Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/fvgg8yhmj384",
-      "started_at": "2024-02-22T13:23:03.801Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "mzmvjv3gjsb7",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 22/02/2024 13:30 UTC \n<b>Service impact :</b> Customers have had disconnections and 500/503 errors.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
-          "incident_id": "ls5ys6v3bb2b",
-          "created_at": "2024-02-22T13:23:03.896Z",
-          "updated_at": "2024-02-22T13:23:03.896Z",
-          "display_at": "2024-02-22T13:23:03.896Z",
-          "affected_components": [
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2pk5hxxqkq21",
-          "name": "SBG",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2024-02-22T13:23:03.841Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
