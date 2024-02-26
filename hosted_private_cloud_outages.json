@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-26T17:59:57.905Z"
+    "updated_at": "2024-02-26T19:00:56.206Z"
   },
   "components": [
     {
@@ -2147,11 +2147,119 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "ytdm83l40wsn",
+      "name": "[LIM1][Hosted Private Cloud] - Racks L111A17/L111A20/L111A21",
+      "status": "scheduled",
+      "created_at": "2024-02-21T00:07:56.469Z",
+      "updated_at": "2024-02-26T05:33:32.079Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cv5bhkcp1zfd",
+      "started_at": "2024-02-21T00:07:56.522Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "3yfymhyqdybx",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 03/03/2024 14:16 UTC \n<b>End time :</b> 06/03/2024 08:19 UTC \n<b>Service impact :</b> Some hosts might be down for 2 hours during the maintenance\n<b>Related incident :</b> <a href=\"https://network.status-ovhcloud.com/incidents/f08nv34vx2dr\">Maintenance link</a>\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure,  we are going to do an electrical maintenance on racks L111A17, L111A20 and L111A21.",
+          "incident_id": "ytdm83l40wsn",
+          "created_at": "2024-02-21T00:07:56.522Z",
+          "updated_at": "2024-02-26T05:32:57.017Z",
+          "display_at": "2024-02-21T00:07:56.522Z",
+          "affected_components": [
+            {
+              "code": "z03dslm46ktz",
+              "name": "VMware Private Cloud || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z03dslm46ktz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:10.951Z",
+          "updated_at": "2024-02-20T20:14:53.355Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-03T14:16:00.000Z",
+      "scheduled_until": "2024-03-06T08:19:00.000Z"
+    },
+    {
+      "id": "zxbpf59h1ws2",
+      "name": "[SBG1][Hosted Private Cloud] - Network equipement operation",
+      "status": "scheduled",
+      "created_at": "2024-02-23T16:50:17.287Z",
+      "updated_at": "2024-02-23T16:51:50.846Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w3s2pfchdnfk",
+      "started_at": "2024-02-23T16:50:17.279Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "wd1k9jkqj16y",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 04/03/2024 03:00 UTC\n<b>End time :</b> 05/03/2024 08:00 UTC\n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance. \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
+          "incident_id": "zxbpf59h1ws2",
+          "created_at": "2024-02-23T16:50:17.340Z",
+          "updated_at": "2024-02-23T16:50:17.340Z",
+          "display_at": "2024-02-23T16:50:17.340Z",
+          "affected_components": [
+            {
+              "code": "jxzhsw05tc07",
+              "name": "VMware Private Cloud || SBG - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jxzhsw05tc07",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:06.351Z",
+          "updated_at": "2024-02-07T09:08:11.322Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-04T03:00:00.000Z",
+      "scheduled_until": "2024-03-05T08:00:00.000Z"
+    },
+    {
       "id": "0ycy4tctp80f",
       "name": "[GLOBAL][VMware Private Cloud] - VMware NSX operation",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2024-02-21T22:19:16.742Z",
-      "updated_at": "2024-02-26T17:59:57.899Z",
+      "updated_at": "2024-02-26T19:00:56.181Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2159,6 +2267,19 @@
       "started_at": "2024-02-21T22:19:16.707Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "fht8s45qffvb",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "0ycy4tctp80f",
+          "created_at": "2024-02-26T19:00:56.176Z",
+          "updated_at": "2024-02-26T19:00:56.176Z",
+          "display_at": "2024-02-26T19:00:56.176Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "62wl5pn157lj",
           "status": "scheduled",
@@ -2380,114 +2501,6 @@
       ],
       "scheduled_for": "2024-02-26T19:00:00.000Z",
       "scheduled_until": "2024-03-01T16:00:00.000Z"
-    },
-    {
-      "id": "ytdm83l40wsn",
-      "name": "[LIM1][Hosted Private Cloud] - Racks L111A17/L111A20/L111A21",
-      "status": "scheduled",
-      "created_at": "2024-02-21T00:07:56.469Z",
-      "updated_at": "2024-02-26T05:33:32.079Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/cv5bhkcp1zfd",
-      "started_at": "2024-02-21T00:07:56.522Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "3yfymhyqdybx",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 03/03/2024 14:16 UTC \n<b>End time :</b> 06/03/2024 08:19 UTC \n<b>Service impact :</b> Some hosts might be down for 2 hours during the maintenance\n<b>Related incident :</b> <a href=\"https://network.status-ovhcloud.com/incidents/f08nv34vx2dr\">Maintenance link</a>\n<b>Service improvement :</b> As part of our continuous improvement policy of our infrastructure,  we are going to do an electrical maintenance on racks L111A17, L111A20 and L111A21.",
-          "incident_id": "ytdm83l40wsn",
-          "created_at": "2024-02-21T00:07:56.522Z",
-          "updated_at": "2024-02-26T05:32:57.017Z",
-          "display_at": "2024-02-21T00:07:56.522Z",
-          "affected_components": [
-            {
-              "code": "z03dslm46ktz",
-              "name": "VMware Private Cloud || LIM - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z03dslm46ktz",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:40:10.951Z",
-          "updated_at": "2024-02-20T20:14:53.355Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "n05r15rpb4gy",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-03-03T14:16:00.000Z",
-      "scheduled_until": "2024-03-06T08:19:00.000Z"
-    },
-    {
-      "id": "zxbpf59h1ws2",
-      "name": "[SBG1][Hosted Private Cloud] - Network equipement operation",
-      "status": "scheduled",
-      "created_at": "2024-02-23T16:50:17.287Z",
-      "updated_at": "2024-02-23T16:51:50.846Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/w3s2pfchdnfk",
-      "started_at": "2024-02-23T16:50:17.279Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "wd1k9jkqj16y",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 04/03/2024 03:00 UTC\n<b>End time :</b> 05/03/2024 08:00 UTC\n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance. \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing an internal maintenance on a network equipment.",
-          "incident_id": "zxbpf59h1ws2",
-          "created_at": "2024-02-23T16:50:17.340Z",
-          "updated_at": "2024-02-23T16:50:17.340Z",
-          "display_at": "2024-02-23T16:50:17.340Z",
-          "affected_components": [
-            {
-              "code": "jxzhsw05tc07",
-              "name": "VMware Private Cloud || SBG - Network",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jxzhsw05tc07",
-          "name": "Network",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:06.351Z",
-          "updated_at": "2024-02-07T09:08:11.322Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-03-04T03:00:00.000Z",
-      "scheduled_until": "2024-03-05T08:00:00.000Z"
     },
     {
       "id": "y59z1bbph9q6",
