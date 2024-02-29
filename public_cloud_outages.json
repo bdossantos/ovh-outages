@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-29T01:31:32.621Z"
+    "updated_at": "2024-02-29T08:53:25.202Z"
   },
   "components": [
     {
@@ -430,9 +430,9 @@
     {
       "id": "c71wld8bwy5k",
       "name": "BHS",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T09:42:20.105Z",
-      "updated_at": "2024-02-28T09:43:46.368Z",
+      "updated_at": "2024-02-29T08:32:22.655Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -929,9 +929,9 @@
     {
       "id": "k7rpdll3t1xr",
       "name": "DE",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:49:18.421Z",
-      "updated_at": "2024-02-28T09:43:46.385Z",
+      "updated_at": "2024-02-29T08:32:22.670Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1308,9 +1308,9 @@
     {
       "id": "5m5v67m3y5qq",
       "name": "GRA",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:49:40.734Z",
-      "updated_at": "2024-02-28T09:43:46.401Z",
+      "updated_at": "2024-02-29T08:32:22.684Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1702,9 +1702,9 @@
     {
       "id": "xtz7hwxcvxmx",
       "name": "SBG",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:49:59.846Z",
-      "updated_at": "2024-02-28T09:43:46.415Z",
+      "updated_at": "2024-02-29T08:32:22.697Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2097,9 +2097,9 @@
     {
       "id": "jx9chj9gttk4",
       "name": "UK",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:50:18.026Z",
-      "updated_at": "2024-02-28T09:43:46.430Z",
+      "updated_at": "2024-02-29T08:32:22.711Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2400,9 +2400,9 @@
     {
       "id": "1djy1p3h9t4t",
       "name": "WAW",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:50:37.217Z",
-      "updated_at": "2024-02-28T09:43:46.445Z",
+      "updated_at": "2024-02-29T08:32:22.725Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -4925,7 +4925,7 @@
     {
       "id": "q55g7jjv60lq",
       "name": "Databases || PostgreSQL",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2022-04-06T13:48:56.287Z",
       "updated_at": "2023-05-16T12:03:06.668Z",
       "position": 27,
@@ -5371,64 +5371,35 @@
       ]
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "1c8tjj8zn7mq",
-      "name": "[Global][Cloud Databases services] - PostgreSQL version 16 incident notification",
-      "status": "identified",
-      "created_at": "2024-02-28T09:43:46.322Z",
-      "updated_at": "2024-02-28T09:50:21.506Z",
+      "id": "xysry6w4vr53",
+      "name": "[GRA5][Managed Kubernetes Service] - Migrate to konnectivity",
+      "status": "scheduled",
+      "created_at": "2024-02-29T08:53:25.131Z",
+      "updated_at": "2024-02-29T08:53:25.199Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
-      "shortlink": "https://stspg.io/cn9sw5xlr6st",
-      "started_at": "2024-02-28T09:43:46.000Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/65xg7b6c3kck",
+      "started_at": "2024-02-29T08:53:25.122Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "7f33kbbsml2s",
-          "status": "identified",
-          "body": "<b>Start time :</b> 27/02/2024 14:28 UTC \n<b>Service impact :</b> We disallow creation of PostgreSQL version 16.\n<b>Root cause :</b> This is due to an ongoing investigation of a potential data integrity issue that may manifest under high load and specific circumstances. \n<b>Ongoing actions :</b> Our technical teams are working on a fix.\n<b>Workaround :</b> Access to earlier versions is still available, so you can use other versions 12, 13, 14 and 15 of PostgreSQL.",
-          "incident_id": "1c8tjj8zn7mq",
-          "created_at": "2024-02-28T09:43:46.501Z",
-          "updated_at": "2024-02-28T09:50:21.503Z",
-          "display_at": "2024-02-28T09:43:46.000Z",
+          "id": "915xdkqctzsl",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 29/02/2024 09:30 UTC \n<b>End time :</b> 29/02/2024 14:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, as we released the connectivity feature we need to migrate every cluster to use it and replace wormhole.",
+          "incident_id": "xysry6w4vr53",
+          "created_at": "2024-02-29T08:53:25.196Z",
+          "updated_at": "2024-02-29T08:53:25.196Z",
+          "display_at": "2024-02-29T08:53:25.196Z",
           "affected_components": [
             {
-              "code": "c71wld8bwy5k",
-              "name": "Databases || PostgreSQL - BHS",
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
               "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "k7rpdll3t1xr",
-              "name": "Databases || PostgreSQL - DE",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "5m5v67m3y5qq",
-              "name": "Databases || PostgreSQL - GRA",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "xtz7hwxcvxmx",
-              "name": "Databases || PostgreSQL - SBG",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "jx9chj9gttk4",
-              "name": "Databases || PostgreSQL - UK",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            },
-            {
-              "code": "1djy1p3h9t4t",
-              "name": "Databases || PostgreSQL - WAW",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -5438,100 +5409,25 @@
       ],
       "components": [
         {
-          "id": "c71wld8bwy5k",
-          "name": "BHS",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T09:42:20.105Z",
-          "updated_at": "2024-02-28T09:43:46.368Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k7rpdll3t1xr",
-          "name": "DE",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T13:49:18.421Z",
-          "updated_at": "2024-02-28T09:43:46.385Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5m5v67m3y5qq",
-          "name": "GRA",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T13:49:40.734Z",
-          "updated_at": "2024-02-28T09:43:46.401Z",
+          "id": "qrzw3vnl4d1h",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:18.324Z",
+          "updated_at": "2024-01-24T15:58:28.873Z",
           "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "xtz7hwxcvxmx",
-          "name": "SBG",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T13:49:59.846Z",
-          "updated_at": "2024-02-28T09:43:46.415Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jx9chj9gttk4",
-          "name": "UK",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T13:50:18.026Z",
-          "updated_at": "2024-02-28T09:43:46.430Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "1djy1p3h9t4t",
-          "name": "WAW",
-          "status": "degraded_performance",
-          "created_at": "2022-04-06T13:50:37.217Z",
-          "updated_at": "2024-02-28T09:43:46.445Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
+          "group_id": "wstnmn7ql79s",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": "[]"
+      "scheduled_for": "2024-02-29T09:30:00.000Z",
+      "scheduled_until": "2024-02-29T14:00:00.000Z"
     }
   ],
-  "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
     "description": "Partially Degraded Service"
