@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-02-29T05:59:57.385Z"
+    "updated_at": "2024-02-29T06:12:21.381Z"
   },
   "components": [
     {
@@ -837,9 +837,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-02-27T13:38:34.652Z",
+      "updated_at": "2024-02-29T06:01:56.578Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -852,7 +852,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1335,7 +1335,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2036,9 +2036,9 @@
     {
       "id": "7fq8tsvh76tn",
       "name": "WAW",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:55.369Z",
-      "updated_at": "2024-02-29T04:00:56.324Z",
+      "updated_at": "2024-02-29T06:07:19.497Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -2462,7 +2462,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0ztt8pw7pvh1",
+      "name": "[GRA1][Dedicated Servers] - G132B17 - G132B18",
+      "status": "identified",
+      "created_at": "2024-02-29T06:01:56.542Z",
+      "updated_at": "2024-02-29T06:12:21.379Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/y1my8b460yjt",
+      "started_at": "2024-02-29T06:01:56.534Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "zpsgr4wc2sc1",
+          "status": "identified",
+          "body": "This rack G132B18 is also impacted by this incident. \nUpdate will be posted as significant progress is made.",
+          "incident_id": "0ztt8pw7pvh1",
+          "created_at": "2024-02-29T06:11:57.985Z",
+          "updated_at": "2024-02-29T06:11:57.985Z",
+          "display_at": "2024-02-29T06:11:57.985Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9dg298xl1c7g",
+          "status": "identified",
+          "body": "<b>Start time :</b> 29/02/2024 05:40 UTC \n<b>Service impact :</b> Some servers in this rack G132B17 are currently unreachable.\n<b>Root cause :</b> Disjunction\n<b>Ongoing actions :</b> Our technical teams are working on a fix.",
+          "incident_id": "0ztt8pw7pvh1",
+          "created_at": "2024-02-29T06:01:56.641Z",
+          "updated_at": "2024-02-29T06:01:56.641Z",
+          "display_at": "2024-02-29T06:01:56.641Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-02-29T06:01:56.578Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ldtrwjfyqq6c",
@@ -2773,9 +2847,9 @@
         {
           "id": "7fq8tsvh76tn",
           "name": "WAW",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:55.369Z",
-          "updated_at": "2024-02-29T04:00:56.324Z",
+          "updated_at": "2024-02-29T06:07:19.497Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -3344,9 +3418,9 @@
         {
           "id": "7fq8tsvh76tn",
           "name": "WAW",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:55.369Z",
-          "updated_at": "2024-02-29T04:00:56.324Z",
+          "updated_at": "2024-02-29T06:07:19.497Z",
           "position": 10,
           "description": null,
           "showcase": false,
@@ -3458,97 +3532,10 @@
       ],
       "scheduled_for": "2024-03-20T04:00:00.000Z",
       "scheduled_until": "2024-03-20T08:00:00.000Z"
-    },
-    {
-      "id": "gg0pgchr189j",
-      "name": "[WAW][Network] - background infrastructure operation",
-      "status": "in_progress",
-      "created_at": "2024-02-14T05:09:58.839Z",
-      "updated_at": "2024-02-29T04:00:56.418Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/d4g0w3v2j77b",
-      "started_at": "2024-02-14T05:09:58.831Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "vkn5ynctflv0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "gg0pgchr189j",
-          "created_at": "2024-02-29T04:00:56.413Z",
-          "updated_at": "2024-02-29T04:00:56.413Z",
-          "display_at": "2024-02-29T04:00:56.413Z",
-          "affected_components": [
-            {
-              "code": "7fq8tsvh76tn",
-              "name": "Dedicated Servers || Network - WAW",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qbkgnx25vnp6",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "gg0pgchr189j",
-          "created_at": "2024-02-29T03:01:01.162Z",
-          "updated_at": "2024-02-29T03:01:01.162Z",
-          "display_at": "2024-02-29T03:01:01.162Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "14lg100c015x",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Network offer.  \n\n<b>Start time :</b> 29/02/2024 04:00 UTC \n<b>End time :</b> 29/02/2024 08:00 UTC \n<b>Service impact :</b> Network automation will be paused for about 120 min during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade for the management of the background infrastructure.",
-          "incident_id": "gg0pgchr189j",
-          "created_at": "2024-02-14T05:09:58.897Z",
-          "updated_at": "2024-02-14T17:26:12.520Z",
-          "display_at": "2024-02-14T05:09:58.897Z",
-          "affected_components": [
-            {
-              "code": "7fq8tsvh76tn",
-              "name": "Dedicated Servers || Network - WAW",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7fq8tsvh76tn",
-          "name": "WAW",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:34:55.369Z",
-          "updated_at": "2024-02-29T04:00:56.324Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-02-29T04:00:00.000Z",
-      "scheduled_until": "2024-02-29T08:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
