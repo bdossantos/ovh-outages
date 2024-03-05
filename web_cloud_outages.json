@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-05T11:23:36.210Z"
+    "updated_at": "2024-03-05T11:47:51.280Z"
   },
   "components": [
     {
@@ -2454,9 +2454,9 @@
     {
       "id": "11z8y8f8wr9z",
       "name": "Cluster031",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-02T16:29:10.457Z",
-      "updated_at": "2024-03-04T23:20:23.248Z",
+      "updated_at": "2024-03-05T11:45:21.179Z",
       "position": 23,
       "description": null,
       "showcase": false,
@@ -2667,7 +2667,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2747,9 +2747,9 @@
     {
       "id": "msycb8s7ztqm",
       "name": "[GLOBAL][VOIP] - CTI/SMS services",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-03-05T11:23:36.110Z",
-      "updated_at": "2024-03-05T11:23:36.207Z",
+      "updated_at": "2024-03-05T11:47:51.272Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2757,6 +2757,32 @@
       "started_at": "2024-03-05T11:23:36.099Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "240w423kqpvf",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "msycb8s7ztqm",
+          "created_at": "2024-03-05T11:47:51.270Z",
+          "updated_at": "2024-03-05T11:47:51.270Z",
+          "display_at": "2024-03-05T11:47:51.270Z",
+          "affected_components": [
+            {
+              "code": "p6pj26mbsqvv",
+              "name": "VoIP || Services - IVR & Call Queues",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "kz5xy2507whq",
           "status": "investigating",
@@ -2811,6 +2837,59 @@
           "showcase": false,
           "start_date": "2021-06-29",
           "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "39zh8fv5mp55",
+      "name": "[GRA][Web Hosting] - Cluster031",
+      "status": "investigating",
+      "created_at": "2024-03-05T11:45:21.133Z",
+      "updated_at": "2024-03-05T11:45:21.275Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/2fvjxl0qxkx0",
+      "started_at": "2024-03-05T11:45:21.123Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "x2pt1xlh0jbq",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 05/03/2024 11:20 UTC\n<b>Service impact :</b> Some websites slowness on cluster031\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "39zh8fv5mp55",
+          "created_at": "2024-03-05T11:45:21.272Z",
+          "updated_at": "2024-03-05T11:45:21.272Z",
+          "display_at": "2024-03-05T11:45:21.272Z",
+          "affected_components": [
+            {
+              "code": "11z8y8f8wr9z",
+              "name": "Web Hosting || Datacenter GRA - Cluster031",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "11z8y8f8wr9z",
+          "name": "Cluster031",
+          "status": "degraded_performance",
+          "created_at": "2021-11-02T16:29:10.457Z",
+          "updated_at": "2024-03-05T11:45:21.179Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-02",
+          "group_id": "2fkfhxvh1l1w",
           "page_id": "gw3vvyn2b3bh",
           "group": false,
           "only_show_if_degraded": false
@@ -3278,9 +3357,9 @@
         {
           "id": "11z8y8f8wr9z",
           "name": "Cluster031",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2024-03-04T23:20:23.248Z",
+          "updated_at": "2024-03-05T11:45:21.179Z",
           "position": 23,
           "description": null,
           "showcase": false,
@@ -3332,9 +3411,9 @@
         {
           "id": "11z8y8f8wr9z",
           "name": "Cluster031",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2024-03-04T23:20:23.248Z",
+          "updated_at": "2024-03-05T11:45:21.179Z",
           "position": 23,
           "description": null,
           "showcase": false,
@@ -4295,9 +4374,9 @@
         {
           "id": "11z8y8f8wr9z",
           "name": "Cluster031",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2024-03-04T23:20:23.248Z",
+          "updated_at": "2024-03-05T11:45:21.179Z",
           "position": 23,
           "description": null,
           "showcase": false,
