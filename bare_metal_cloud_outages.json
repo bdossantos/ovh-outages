@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-06T14:43:13.111Z"
+    "updated_at": "2024-03-06T15:24:11.550Z"
   },
   "components": [
     {
@@ -2468,7 +2468,7 @@
       "name": "[BHS7][Dedicated Servers] B720A03/B720A02",
       "status": "identified",
       "created_at": "2024-03-06T14:37:33.724Z",
-      "updated_at": "2024-03-06T14:39:39.118Z",
+      "updated_at": "2024-03-06T15:24:11.542Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2476,6 +2476,26 @@
       "started_at": "2024-03-06T14:37:33.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "smhm5wtm24vp",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "m96npq6sptjl",
+          "created_at": "2024-03-06T15:24:11.540Z",
+          "updated_at": "2024-03-06T15:24:11.540Z",
+          "display_at": "2024-03-06T15:24:11.540Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "nxrzrvxn5pj0",
           "status": "identified",
@@ -2809,194 +2829,6 @@
       "scheduled_until": "2024-03-15T05:00:00.000Z"
     },
     {
-      "id": "srbtblw75lw3",
-      "name": "[Global][Dedicated Servers] - APIv6 BringYourOwnImage routes operation",
-      "status": "scheduled",
-      "created_at": "2024-02-14T00:54:13.201Z",
-      "updated_at": "2024-03-06T11:03:08.240Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/phr9zh6v59xs",
-      "started_at": "2024-02-14T00:54:13.287Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "v0qs5pshqmn4",
-          "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "srbtblw75lw3",
-          "created_at": "2024-03-06T10:57:15.482Z",
-          "updated_at": "2024-03-06T10:57:15.482Z",
-          "display_at": "2024-03-06T10:57:15.482Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xkt1vkfrm3x8",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 19/03/2024 09:30 UTC \n<b>End time :</b> 19/03/2024 09:45 UTC \n<b>Service impact :</b> Some API calls definitely removed.\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, this maintenance will enables customers to deploy cloudready images directly on their dedicated server.\n\nThe following API calls will be <b>definitely</b> removed:\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#get-/dedicated/server/-serviceName-/bringYourOwnImage\">GET /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/bringYourOwnImage\">POST /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#delete-/dedicated/server/-serviceName-/bringYourOwnImage\">DELETE /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\nCustomers can still use the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">Bring Your Own Image (BYOI)</a> feature from the API call <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>. More details can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">documentation page</a>.\nThis change was required in order to add the new <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061610\">Bring Your Own Linux (BYOLinux)</a> feature.\n<a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-image-versus-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061597\">Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet - OVHcloud</a>.",
-          "incident_id": "srbtblw75lw3",
-          "created_at": "2024-02-14T00:54:13.287Z",
-          "updated_at": "2024-02-14T12:01:44.240Z",
-          "display_at": "2024-02-14T00:54:13.287Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5ml6n8xk2fcs",
-              "name": "Dedicated Servers || Network - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ywcwwnktxgh0",
-              "name": "Dedicated Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "bvjnydkk0xgv",
-              "name": "Dedicated Servers || Network - YNM",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7xy5137wv97w",
-              "name": "Dedicated Servers || Network - SBG",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "qkvynnwhykk2",
-              "name": "Dedicated Servers || Network - SGP",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5psdpd7s2jnn",
-              "name": "Dedicated Servers || Network - SYD",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7fq8tsvh76tn",
-              "name": "Dedicated Servers || Network - WAW",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "29wpxcdnjt9k",
-              "name": "Dedicated Servers || Network - CCH01",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "46nzmg4ztggn",
-              "name": "Dedicated Servers || Network - IEB01",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "686cz46jcy4b",
-              "name": "Dedicated Servers || Network - MR901",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hgscwllzr4w1",
-          "name": "Zone Europe",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2023-11-20T15:04:48.996Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jds1mz2tgrx4",
-          "name": "Zone APAC",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:25.511Z",
-          "updated_at": "2023-10-06T14:28:58.793Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zjpd57tn2xqv",
-          "name": "Zone Canada",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:26.689Z",
-          "updated_at": "2024-01-18T10:00:37.627Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-03-19T09:30:00.000Z",
-      "scheduled_until": "2024-03-19T09:45:00.000Z"
-    },
-    {
       "id": "bdsn7t3q96lv",
       "name": "[RBX1][Network] - Network equipment migration",
       "status": "scheduled",
@@ -3253,6 +3085,226 @@
       ],
       "scheduled_for": "2024-04-16T08:30:00.000Z",
       "scheduled_until": "2024-04-16T08:45:00.000Z"
+    },
+    {
+      "id": "srbtblw75lw3",
+      "name": "[Global][Dedicated Servers] - APIv6 BringYourOwnImage routes operation",
+      "status": "scheduled",
+      "created_at": "2024-02-14T00:54:13.201Z",
+      "updated_at": "2024-03-06T15:20:07.585Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/phr9zh6v59xs",
+      "started_at": "2024-02-14T00:54:13.287Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "x2vbpgkmcrfk",
+          "status": "scheduled",
+          "body": "<b>New start time :</b> 23/04/2024 08:30 UTC \n<b>New end time :</b>  23/04/2024 08:45 UTC \n<b>Service impact :</b> Some API calls definitely removed.",
+          "incident_id": "srbtblw75lw3",
+          "created_at": "2024-03-06T15:16:01.959Z",
+          "updated_at": "2024-03-06T15:20:07.582Z",
+          "display_at": "2024-03-06T15:16:01.959Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v0qs5pshqmn4",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "srbtblw75lw3",
+          "created_at": "2024-03-06T10:57:15.482Z",
+          "updated_at": "2024-03-06T10:57:15.482Z",
+          "display_at": "2024-03-06T10:57:15.482Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xkt1vkfrm3x8",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 19/03/2024 09:30 UTC \n<b>End time :</b> 19/03/2024 09:45 UTC \n<b>Service impact :</b> Some API calls definitely removed.\n<b>Service improvement :</b> As part of our continuous improvement policy of our servers, this maintenance will enables customers to deploy cloudready images directly on their dedicated server.\n\nThe following API calls will be <b>definitely</b> removed:\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#get-/dedicated/server/-serviceName-/bringYourOwnImage\">GET /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/bringYourOwnImage\">POST /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\n    <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#delete-/dedicated/server/-serviceName-/bringYourOwnImage\">DELETE /dedicated/server/{serviceName}/bringYourOwnImage</a>\n\nCustomers can still use the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">Bring Your Own Image (BYOI)</a> feature from the API call <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>. More details can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bringyourownimage?id=kb_article_view&sysparm_article=KB0043281#deploy-your-image-via-the-apis\">documentation page</a>.\nThis change was required in order to add the new <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061610\">Bring Your Own Linux (BYOLinux)</a> feature.\n<a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-bring-your-own-image-versus-bring-your-own-linux?id=kb_article_view&sysparm_article=KB0061597\">Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet - OVHcloud</a>.",
+          "incident_id": "srbtblw75lw3",
+          "created_at": "2024-02-14T00:54:13.287Z",
+          "updated_at": "2024-02-14T12:01:44.240Z",
+          "display_at": "2024-02-14T00:54:13.287Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bvjnydkk0xgv",
+              "name": "Dedicated Servers || Network - YNM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "qkvynnwhykk2",
+              "name": "Dedicated Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5psdpd7s2jnn",
+              "name": "Dedicated Servers || Network - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "29wpxcdnjt9k",
+              "name": "Dedicated Servers || Network - CCH01",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "46nzmg4ztggn",
+              "name": "Dedicated Servers || Network - IEB01",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "686cz46jcy4b",
+              "name": "Dedicated Servers || Network - MR901",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2023-11-20T15:04:48.996Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2023-10-06T14:28:58.793Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2024-01-18T10:00:37.627Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-23T08:30:00.000Z",
+      "scheduled_until": "2024-04-23T08:45:00.000Z"
     },
     {
       "id": "6c1yqlmbzpt3",
