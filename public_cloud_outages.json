@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-08T09:34:50.319Z"
+    "updated_at": "2024-03-08T10:46:08.422Z"
   },
   "components": [
     {
@@ -5442,7 +5442,7 @@
       "name": "[GRA11/WAW1/UK/DE1][Containers/Orchestration] Managed Kubernetes Service/Gen3 instances",
       "status": "identified",
       "created_at": "2024-03-04T13:00:25.977Z",
-      "updated_at": "2024-03-05T09:46:45.551Z",
+      "updated_at": "2024-03-08T10:46:08.411Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -5450,6 +5450,44 @@
       "started_at": "2024-03-04T13:00:25.963Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "5gdnwdc3g347",
+          "status": "identified",
+          "body": "Issues on volume attachment/detachment are still present on gen3 machine.\nNodepool creation has been disabled for gen3 flavors until a fix is deployed on PCI regions.\nExisting nodepools are still able to add new nodes, manually or with autoscaler as usual.\nMKS autohealing is still fixing impacted instances by hard rebooting when needed.\n\nPCI will deploy a fix next week (starting on UK1 followed by other impacted regions in the following days).\nMKS nodepool creation will be reactivated on a region when fix will be deployed on it.",
+          "incident_id": "9x89089dgdy3",
+          "created_at": "2024-03-08T10:46:08.408Z",
+          "updated_at": "2024-03-08T10:46:08.408Z",
+          "display_at": "2024-03-08T10:46:08.408Z",
+          "affected_components": [
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "hxlwb8qg65zb",
           "status": "identified",
