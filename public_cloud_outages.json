@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-12T17:44:48.284Z"
+    "updated_at": "2024-03-12T18:28:50.601Z"
   },
   "components": [
     {
@@ -5636,7 +5636,7 @@
       "name": "[SGP1|BHS5|SYD1|OR1|VA1][Containers & Orchestration] - Managed Kubernetes Service update",
       "status": "scheduled",
       "created_at": "2024-03-12T17:20:15.981Z",
-      "updated_at": "2024-03-12T17:20:16.084Z",
+      "updated_at": "2024-03-12T18:15:32.586Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -5647,10 +5647,10 @@
         {
           "id": "z9rf5xhw4r93",
           "status": "scheduled",
-          "body": "<b>Start time :</b> 13/03/2024 08:00 UTC \n<b>End time :</b> 13/03/2024 17:00 UTC \n<b>Service impact :</b> Loss of connection to APIserver from customer pods for ~30s per node (nodes are processed sequentially)\n<b>Service improvement :</b> : This maintenance is scheduled to upgrade all concerned MKS services to the latest patch version provided by our team.",
+          "body": "<b>Start time :</b> 13/03/2024 08:00 UTC \n<b>End time :</b> 13/03/2024 17:00 UTC \n<b>Service impact :</b> Interrupted connection up to 30 seconds between cluster controle plane and managed nodes workload when component names \"ovhcloud-apiserver-proxy\" restart (nodes processed sequentially).\n<b>Service improvement :</b> : Update of \"ovhcloud-apiserver-proxy\" managed pods running in customers' Public Cloud instances to improve network connection between nodes and control planes. This patch is already delivered since one week ago, this maintenance only target existing managed clusters. Intervention will be done during non-working office hours.",
           "incident_id": "827btjws3hc2",
           "created_at": "2024-03-12T17:20:16.080Z",
-          "updated_at": "2024-03-12T17:20:16.080Z",
+          "updated_at": "2024-03-12T18:15:32.581Z",
           "display_at": "2024-03-12T17:20:16.080Z",
           "affected_components": [
             {
@@ -5768,6 +5768,207 @@
       ],
       "scheduled_for": "2024-03-13T08:00:00.000Z",
       "scheduled_until": "2024-03-13T17:00:00.000Z"
+    },
+    {
+      "id": "bqqqgqx1m23f",
+      "name": "[GRA5|GRA7|GRA9|GRA11|SBG5|WAW1|DE1|UK1][Public Cloud][Managed Kubernetes Service] - Maintenance on all nodes running in managed Kubernetes clusters",
+      "status": "scheduled",
+      "created_at": "2024-03-12T18:24:42.526Z",
+      "updated_at": "2024-03-12T18:28:50.594Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/w4mdjjx6bfyw",
+      "started_at": "2024-03-12T18:24:42.509Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "93wzz6f6j8zt",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 14/03/2024 17:00 PM UTC\n<b>End time :</b> 14/03/2024 23:00 PM UTC\n<b>Service impact :</b> Interrupted connection up to 30 seconds between cluster controle plane and managed nodes workload when component names \"ovhcloud-apiserver-proxy\" restart (nodes processed sequentially).\n<b>Root cause :</b> Update of \"ovhcloud-apiserver-proxy\" managed pods running in customers' Public Cloud instances to improve network connection between nodes and control planes. This patch is already delivered since one week ago, this maintenance only target existing managed clusters. Intervention will be done during non-working office hours.",
+          "incident_id": "bqqqgqx1m23f",
+          "created_at": "2024-03-12T18:24:42.593Z",
+          "updated_at": "2024-03-12T18:28:50.590Z",
+          "display_at": "2024-03-12T18:24:42.593Z",
+          "affected_components": [
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2hqnlvj9ygcf",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qt0sj8kf6bpn",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - WAW1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4pjxf199vzgd",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:23.071Z",
+          "updated_at": "2024-03-07T14:35:45.512Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qrzw3vnl4d1h",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:18.324Z",
+          "updated_at": "2024-01-24T15:58:28.873Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y9679xqf81gv",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:19.672Z",
+          "updated_at": "2024-03-06T16:15:09.210Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "j6gs8vsmjycc",
+          "name": "GRA9",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:20.667Z",
+          "updated_at": "2024-03-07T15:35:19.726Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2024-03-07T14:36:13.460Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2hqnlvj9ygcf",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:34:17.048Z",
+          "updated_at": "2024-03-08T03:42:04.929Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qt0sj8kf6bpn",
+          "name": "WAW1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:21.679Z",
+          "updated_at": "2024-03-07T14:36:07.735Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pj4hrqx6f6km",
+          "name": "UK1",
+          "status": "partial_outage",
+          "created_at": "2022-05-04T10:30:35.072Z",
+          "updated_at": "2024-03-07T14:35:56.675Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-03-14T17:00:00.000Z",
+      "scheduled_until": "2024-03-14T23:00:00.000Z"
     }
   ],
   "status": {
