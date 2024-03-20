@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-19T18:59:42.816Z"
+    "updated_at": "2024-03-20T17:47:43.032Z"
   },
   "components": [
     {
@@ -5086,9 +5086,9 @@
     {
       "id": "v8sl79gythyy",
       "name": "Management || Horizon",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:23.928Z",
-      "updated_at": "2024-03-07T11:17:30.936Z",
+      "updated_at": "2024-03-20T17:46:20.410Z",
       "position": 32,
       "description": null,
       "showcase": false,
@@ -5452,10 +5452,64 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rsrmqv9fcx2q",
+      "name": "[EU][Public Cloud] - Management incident notification",
+      "status": "identified",
+      "created_at": "2024-03-20T17:46:20.383Z",
+      "updated_at": "2024-03-20T17:47:43.022Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/tbm421t4c4xn",
+      "started_at": "2024-03-20T17:46:20.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "72wy0gpdh65b",
+          "status": "identified",
+          "body": "<b>Start time :</b> 20//2024 16:18 UTC \n<b>Service impact :</b> Adding a new region or local zone through the manager for the Public Cloud offer may fail \n<b>Related incident :</b> <a href=\"https://customer-service.status-ovhcloud.com/incidents/zysggckls8sp\">Incident link</a>\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "rsrmqv9fcx2q",
+          "created_at": "2024-03-20T17:46:20.456Z",
+          "updated_at": "2024-03-20T17:47:43.013Z",
+          "display_at": "2024-03-20T17:46:20.000Z",
+          "affected_components": [
+            {
+              "code": "v8sl79gythyy",
+              "name": "Management || Horizon",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v8sl79gythyy",
+          "name": "Management || Horizon",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:42:23.928Z",
+          "updated_at": "2024-03-20T17:46:20.410Z",
+          "position": 32,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
