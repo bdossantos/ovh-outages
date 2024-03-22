@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-03-22T09:58:06.966Z"
+    "updated_at": "2024-03-22T10:43:07.153Z"
   },
   "components": [
     {
@@ -2511,6 +2511,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "y6rjhjzq51qr",
+      "name": "[GRA2][Dedicated Servers] - Multiple Rack",
+      "status": "identified",
+      "created_at": "2024-03-22T10:36:47.502Z",
+      "updated_at": "2024-03-22T10:42:11.918Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/83qxfmpdk3wf",
+      "started_at": "2024-03-22T10:36:47.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "phd8s9ywrlhh",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "y6rjhjzq51qr",
+          "created_at": "2024-03-22T10:39:29.632Z",
+          "updated_at": "2024-03-22T10:39:29.632Z",
+          "display_at": "2024-03-22T10:39:29.632Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q2l5w1jpgzdq",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 22/03/2024 10:31 UTC\n<b>Service impact :</b> A significant number of servers in the rack G210A04 - G210A08 - G220A02 - G220A07 - G220B03 - G222B05 - G222B06 - G222B07 - G224A13 - G233A17 - G211B03 - G224A15 and G211B04 are no longer responding.\n<b>Root cause :</b> https://network.status-ovhcloud.com/incidents/z05llyh8qt58\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be posted as significant progress is made.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "y6rjhjzq51qr",
+          "created_at": "2024-03-22T10:36:47.557Z",
+          "updated_at": "2024-03-22T10:42:11.913Z",
+          "display_at": "2024-03-22T10:36:47.000Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-03-22T09:54:07.200Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "bp5s8c18793m",
       "name": "[GRA1][Dedicated Servers] - Multiple Rack",
