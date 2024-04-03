@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-03T02:43:11.627Z"
+    "updated_at": "2024-04-03T03:18:42.963Z"
   },
   "components": [
     {
@@ -2202,9 +2202,9 @@
     {
       "id": "jnrg6smtv9yw",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.994Z",
-      "updated_at": "2024-02-13T17:13:19.781Z",
+      "updated_at": "2024-04-03T03:18:42.832Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2565,7 +2565,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -5454,6 +5454,59 @@
   ],
   "incidents": [
     {
+      "id": "hshtcth04mn8",
+      "name": "[GRA11][Public Cloud] - API Unstable",
+      "status": "identified",
+      "created_at": "2024-04-03T03:18:42.794Z",
+      "updated_at": "2024-04-03T03:18:42.960Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/lpkp1xpnnppz",
+      "started_at": "2024-04-03T03:18:42.779Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6dlwcy8dgpvq",
+          "status": "identified",
+          "body": "<b>Start time :</b> 03/04/2024 00:06 UTC \n<b>Service impact :</b> The APIs for configuring the GRA11 network are unstable.\n<b>Root cause :</b> https://public-cloud.status-ovhcloud.com/incidents/897ngd9y00sq\n<b>Ongoing actions :</b> our technical teams are working on a fix.",
+          "incident_id": "hshtcth04mn8",
+          "created_at": "2024-04-03T03:18:42.958Z",
+          "updated_at": "2024-04-03T03:18:42.958Z",
+          "display_at": "2024-04-03T03:18:42.958Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2024-04-03T03:18:42.832Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "897ngd9y00sq",
       "name": "[GRA][Public Cloud] - Multiple Public Cloud hosts unreachable",
       "status": "monitoring",
@@ -5923,6 +5976,6 @@
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
