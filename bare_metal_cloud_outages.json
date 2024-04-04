@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-04T09:00:02.378Z"
+    "updated_at": "2024-04-04T09:43:30.959Z"
   },
   "components": [
     {
@@ -838,9 +838,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-03-22T16:27:44.392Z",
+      "updated_at": "2024-04-04T09:34:24.180Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2510,7 +2510,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qc08klsk7pb2",
+      "name": "[GRA1][Dedicated Servers] - Rack G113B15",
+      "status": "identified",
+      "created_at": "2024-04-04T09:34:24.145Z",
+      "updated_at": "2024-04-04T09:38:48.711Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/glxyxh2ft16l",
+      "started_at": "2024-04-04T09:34:24.137Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rlsmqtbp4hhq",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "qc08klsk7pb2",
+          "created_at": "2024-04-04T09:38:48.708Z",
+          "updated_at": "2024-04-04T09:38:48.708Z",
+          "display_at": "2024-04-04T09:38:48.708Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "c95ppw1n41bv",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 04/04/2024 09:10 UTC\n<b>Service impact :</b> Some of servers in the rack G113B15 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "qc08klsk7pb2",
+          "created_at": "2024-04-04T09:34:24.240Z",
+          "updated_at": "2024-04-04T09:34:24.240Z",
+          "display_at": "2024-04-04T09:34:24.240Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-04-04T09:34:24.180Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "z4xl0flwylqs",
@@ -3558,7 +3632,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
