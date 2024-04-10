@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-10T12:36:07.394Z"
+    "updated_at": "2024-04-10T15:22:48.744Z"
   },
   "components": [
     {
@@ -2745,11 +2745,124 @@
   ],
   "incidents": [
     {
+      "id": "whrl5tzrgbt1",
+      "name": "[GRA/RBX/SBG/BHS][Collaborative solutions] - Exchange Hosted and Private search feature",
+      "status": "identified",
+      "created_at": "2024-03-14T14:14:11.368Z",
+      "updated_at": "2024-04-10T15:22:48.736Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/h2j6vt9m6rs9",
+      "started_at": "2024-03-14T14:14:11.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "gbm9gs9vmbpn",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "whrl5tzrgbt1",
+          "created_at": "2024-04-10T15:22:48.734Z",
+          "updated_at": "2024-04-10T15:22:48.734Z",
+          "display_at": "2024-04-10T15:22:48.734Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0z5rl5qk7klv",
+          "status": "identified",
+          "body": "Our technical teams are working with our partner to solve the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "whrl5tzrgbt1",
+          "created_at": "2024-03-19T14:41:04.068Z",
+          "updated_at": "2024-03-19T14:41:04.068Z",
+          "display_at": "2024-03-19T14:41:04.068Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7w8xg803wn79",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "whrl5tzrgbt1",
+          "created_at": "2024-03-15T09:11:06.790Z",
+          "updated_at": "2024-03-15T09:11:06.790Z",
+          "display_at": "2024-03-15T09:11:06.790Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vq4mmt52d22x",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 14/03/2024 14:00 UTC \n<b>Service impact :</b> Microsoft Outlook product is facing an issue that prevent clients to perform a search. Application like OWA, ActiveSync are working without impact. We are investingating with Microsoft to identify the root cause of this issue.\n<b>Ongoing actions :</b> Investigating\n<b>Workaround :</b> Temporary you can disable the ServerAssistedSearch by creating registry key base on the schema bellow.\n\n• Key: HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\16.0\\Outlook\\Search\n• Value name: DisableServerAssistedSearch\n• Value type: REG_DWORD\n• Value: 1\n\nPlease remember that altering registry key require creation of backup and done incorrectly can damage your computer.\n\nThank you for your trust. Security and protection of your data remain our highest priority, and it is in this frame of mind that we have been operating for years.",
+          "incident_id": "whrl5tzrgbt1",
+          "created_at": "2024-03-14T14:14:11.438Z",
+          "updated_at": "2024-03-14T14:48:20.373Z",
+          "display_at": "2024-03-14T14:14:11.000Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qhkmp4s3jghc",
+          "name": "Mailbox Access",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:31.586Z",
+          "updated_at": "2024-03-14T14:14:11.393Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "k04vzm9j7ytt",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "ldkxsspd5xt7",
       "name": "[GLOBAL][Collaborative solutions] - Outlook Web (OWA)",
       "status": "identified",
       "created_at": "2024-03-25T09:56:03.394Z",
-      "updated_at": "2024-03-25T11:04:56.583Z",
+      "updated_at": "2024-04-10T15:03:18.027Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2757,6 +2870,44 @@
       "started_at": "2024-03-25T09:56:03.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "xwhdprgk6n0r",
+          "status": "identified",
+          "body": "To work around this issue, download the document, and then use the Microsoft Office desktop applications to view or edit it. \nWe are continuing to work on a fix for this issue.",
+          "incident_id": "ldkxsspd5xt7",
+          "created_at": "2024-04-10T15:03:18.022Z",
+          "updated_at": "2024-04-10T15:03:18.022Z",
+          "display_at": "2024-04-10T15:03:18.022Z",
+          "affected_components": [
+            {
+              "code": "bt78b19qf30s",
+              "name": "Collaborative solutions || Hosted Exchange - Webmail",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "421xgl2hrz8r",
+              "name": "Collaborative solutions || Private Exchange - Webmail",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jhv3lpyvv374",
+              "name": "Collaborative solutions || EmailPro - Webmail",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "fj261sm926yg",
+              "name": "Collaborative solutions || MX Plan - Webmail",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qwf4n0s2jv8g",
           "status": "identified",
@@ -2873,99 +3024,6 @@
           "showcase": false,
           "start_date": "2021-06-29",
           "group_id": "3m6hgf41071w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "whrl5tzrgbt1",
-      "name": "[GRA/RBX/SBG/BHS][Collaborative solutions] - Exchange Hosted and Private search feature",
-      "status": "identified",
-      "created_at": "2024-03-14T14:14:11.368Z",
-      "updated_at": "2024-03-19T14:41:04.071Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/h2j6vt9m6rs9",
-      "started_at": "2024-03-14T14:14:11.000Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "0z5rl5qk7klv",
-          "status": "identified",
-          "body": "Our technical teams are working with our partner to solve the issue.\nUpdate will be posted as significant progress is made.",
-          "incident_id": "whrl5tzrgbt1",
-          "created_at": "2024-03-19T14:41:04.068Z",
-          "updated_at": "2024-03-19T14:41:04.068Z",
-          "display_at": "2024-03-19T14:41:04.068Z",
-          "affected_components": [
-            {
-              "code": "qhkmp4s3jghc",
-              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7w8xg803wn79",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "whrl5tzrgbt1",
-          "created_at": "2024-03-15T09:11:06.790Z",
-          "updated_at": "2024-03-15T09:11:06.790Z",
-          "display_at": "2024-03-15T09:11:06.790Z",
-          "affected_components": [
-            {
-              "code": "qhkmp4s3jghc",
-              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vq4mmt52d22x",
-          "status": "investigating",
-          "body": "<b>Start time :</b> 14/03/2024 14:00 UTC \n<b>Service impact :</b> Microsoft Outlook product is facing an issue that prevent clients to perform a search. Application like OWA, ActiveSync are working without impact. We are investingating with Microsoft to identify the root cause of this issue.\n<b>Ongoing actions :</b> Investigating\n<b>Workaround :</b> Temporary you can disable the ServerAssistedSearch by creating registry key base on the schema bellow.\n\n• Key: HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\16.0\\Outlook\\Search\n• Value name: DisableServerAssistedSearch\n• Value type: REG_DWORD\n• Value: 1\n\nPlease remember that altering registry key require creation of backup and done incorrectly can damage your computer.\n\nThank you for your trust. Security and protection of your data remain our highest priority, and it is in this frame of mind that we have been operating for years.",
-          "incident_id": "whrl5tzrgbt1",
-          "created_at": "2024-03-14T14:14:11.438Z",
-          "updated_at": "2024-03-14T14:48:20.373Z",
-          "display_at": "2024-03-14T14:14:11.000Z",
-          "affected_components": [
-            {
-              "code": "qhkmp4s3jghc",
-              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qhkmp4s3jghc",
-          "name": "Mailbox Access",
-          "status": "partial_outage",
-          "created_at": "2021-06-30T12:19:31.586Z",
-          "updated_at": "2024-03-14T14:14:11.393Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "k04vzm9j7ytt",
           "page_id": "gw3vvyn2b3bh",
           "group": false,
           "only_show_if_degraded": false
