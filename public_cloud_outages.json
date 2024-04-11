@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-10T21:43:16.850Z"
+    "updated_at": "2024-04-11T00:43:07.958Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "y7fg5g64zq46",
       "name": "BHS5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:24.031Z",
-      "updated_at": "2024-03-25T15:12:09.715Z",
+      "updated_at": "2024-04-11T00:07:07.311Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -4065,7 +4065,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2024-03-07T11:17:30.812Z",
       "position": 16,
@@ -5469,6 +5469,59 @@
   ],
   "incidents": [
     {
+      "id": "bjjz2h3f93q9",
+      "name": "[BHS5][Containers & Orchestration] - Managed Kubernetes Service",
+      "status": "identified",
+      "created_at": "2024-04-11T00:07:07.272Z",
+      "updated_at": "2024-04-11T00:07:07.386Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/n98y4ykn3hs1",
+      "started_at": "2024-04-11T00:07:07.264Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "d4q3bbng7wfz",
+          "status": "identified",
+          "body": "<b>Start time :</b> 10/04/2024 19:33 UTC \n<b>Service impact :</b> Slowness and timeout might be faced by customers trying to create, modify and delete a volume.\n<b>Root cause :</b> <a href=\"https://public-cloud.status-ovhcloud.com/incidents/y56xmf2dqq38\"> Incident link</a>\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "bjjz2h3f93q9",
+          "created_at": "2024-04-11T00:07:07.383Z",
+          "updated_at": "2024-04-11T00:07:07.383Z",
+          "display_at": "2024-04-11T00:07:07.383Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y7fg5g64zq46",
+          "name": "BHS5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:24.031Z",
+          "updated_at": "2024-04-11T00:07:07.311Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "y56xmf2dqq38",
       "name": "[BHS5][Block storage] - Volume creation incident notification",
       "status": "investigating",
@@ -5746,9 +5799,9 @@
         {
           "id": "y7fg5g64zq46",
           "name": "BHS5",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2022-04-06T09:34:24.031Z",
-          "updated_at": "2024-03-25T15:12:09.715Z",
+          "updated_at": "2024-04-11T00:07:07.311Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -5945,6 +5998,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
