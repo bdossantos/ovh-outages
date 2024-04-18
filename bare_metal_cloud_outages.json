@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-18T13:49:51.083Z"
+    "updated_at": "2024-04-18T16:12:09.028Z"
   },
   "components": [
     {
@@ -3240,10 +3240,10 @@
     },
     {
       "id": "5tjtydnq4xy9",
-      "name": "[GLOBAL][Dedicated Servers] - Windows OS language & useSpla API change",
+      "name": "[GLOBAL][Dedicated Servers] - Windows OS language API change",
       "status": "scheduled",
       "created_at": "2024-04-12T12:43:57.703Z",
-      "updated_at": "2024-04-12T13:19:38.078Z",
+      "updated_at": "2024-04-18T16:12:09.020Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3254,10 +3254,10 @@
         {
           "id": "09zrtqmk8b5s",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 24/04/2024 13:00 UTC \n<b>End time :</b> 24/04/2024 13:15 UTC \n<b>Service impact :</b> No impact expected.\nCustomers not installing any Windows OSes from API and/or installing Windows OSes from OVHcloud control panel are not affected by this change.\nCustomers using that API call for installing <b>any windows OSes</b> in a <b>display language other English and/or with useSpla flag set to true</b> are affected by this change and need to update their scripts and applications accordingly.\n<b>Service improvement :</b> The following API call with <code>details/useSpla</code>and/or <code>details/language</code> attributes within the payload will definitely stop working: <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>\n\nBelow you can find an example of payload that will stop working for a win2022-dc OS installation:\n<code>```json\n{\n  \"details\": {\n    \"language\": \"fr\",\n    \"useSpla\": true,\n  },\n  \"templateName\": \"win2022-dc_64\"\n}\n```</code>\n\nWith the previous example, here is the target payload that customer can already use and that will continue to work:\n<code>```json\n{\n  \"userMetadata\": [\n    {\n      \"key\": \"language\",\n      \"value\": \"fr-fr\"\n    },\n    {\n      \"key\": \"useSpla\",\n      \"value\": \"true\"\n    }\n  ],\n  \"templateName\": \"win2022-dc_64\"\n}\n```</code>\n\nMore details and examples can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951#create-an-os-installation-task\"> Documentation Page</a>\n\nThank you for your understanding.",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 24/04/2024 13:00 UTC \n<b>End time :</b> 24/04/2024 13:15 UTC \n<b>Service impact :</b> No impact expected.\nCustomers not installing any Windows OSes from API and/or installing Windows OSes from OVHcloud control panel are not affected by this change.\nCustomers using that API call for installing any windows OSes in a display language other English are affected by this change and need to update their scripts and applications accordingly.\n<b>Service improvement :</b> The following API call with <code>details/language</code> attribute within the payload will definitely stop working: <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>\n\nBelow you can find an example of payload that will stop working for a win2022-dc OS installation:\n<code>```json\n{\n  \"details\": {\n    \"language\": \"fr\",\n  },\n  \"templateName\": \"win2022-dc_64\"\n}\n```</code>\n\nWith the previous example, here is the target payload that customer can already use and that will continue to work:\n<code>```json\n{\n  \"userMetadata\": [\n    {\n      \"key\": \"language\",\n      \"value\": \"fr-fr\"\n    }\n  ],\n  \"templateName\": \"win2022-dc_64\"\n} \n```</code>\n\nMore details and examples can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951#create-an-os-installation-task\"> Documentation Page</a>\n\nThank you for your understanding.",
           "incident_id": "5tjtydnq4xy9",
           "created_at": "2024-04-12T12:43:57.766Z",
-          "updated_at": "2024-04-12T13:19:38.075Z",
+          "updated_at": "2024-04-18T16:12:09.015Z",
           "display_at": "2024-04-12T12:43:57.766Z",
           "affected_components": [
             {
