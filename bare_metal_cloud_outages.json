@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-23T14:12:17.959Z"
+    "updated_at": "2024-04-23T15:23:13.982Z"
   },
   "components": [
     {
@@ -2642,102 +2642,6 @@
       "scheduled_until": "2024-04-24T07:00:00.000Z"
     },
     {
-      "id": "5tjtydnq4xy9",
-      "name": "[GLOBAL][Dedicated Servers] - Windows OS language API change",
-      "status": "scheduled",
-      "created_at": "2024-04-12T12:43:57.703Z",
-      "updated_at": "2024-04-23T14:12:17.951Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/rdwfm01xfbr0",
-      "started_at": "2024-04-12T12:43:57.766Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "09zrtqmk8b5s",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 14/05/2024 08:30 UTC \n<b>End time :</b> 14/05/2024 08:45 UTC \n<b>Service impact :</b> No impact expected.\nCustomers not installing any Windows OSes from API and/or installing Windows OSes from OVHcloud control panel are not affected by this change.\nCustomers using that API call for installing any windows OSes in a display language other English are affected by this change and need to update their scripts and applications accordingly.\n<b>Service improvement :</b> The following API call with <code>details/language</code> attribute within the payload will definitely stop working: <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>\n\nBelow you can find an example of payload that will stop working for a win2022-dc OS installation:\n<code>```json\n{\n  \"details\": {\n    \"language\": \"fr\",\n  },\n  \"templateName\": \"win2022-dc_64\"\n}\n```</code>\n\nWith the previous example, here is the target payload that customer can already use and that will continue to work:\n<code>```json\n{\n  \"userMetadata\": [\n    {\n      \"key\": \"language\",\n      \"value\": \"fr-fr\"\n    }\n  ],\n  \"templateName\": \"win2022-dc_64\"\n} \n```</code>\n\nMore details and examples can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951#create-an-os-installation-task\"> Documentation Page</a>\n\nThank you for your understanding.",
-          "incident_id": "5tjtydnq4xy9",
-          "created_at": "2024-04-12T12:43:57.766Z",
-          "updated_at": "2024-04-23T14:12:17.947Z",
-          "display_at": "2024-05-14T08:30:57.766Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hgscwllzr4w1",
-          "name": "Zone Europe",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2023-11-20T15:04:48.996Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jds1mz2tgrx4",
-          "name": "Zone APAC",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:25.511Z",
-          "updated_at": "2023-10-06T14:28:58.793Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zjpd57tn2xqv",
-          "name": "Zone Canada",
-          "status": "operational",
-          "created_at": "2021-07-09T07:32:26.689Z",
-          "updated_at": "2024-01-18T10:00:37.627Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-24T13:00:00.000Z",
-      "scheduled_until": "2024-04-24T13:15:00.000Z"
-    },
-    {
       "id": "w251s8frbsgd",
       "name": "[GRA2][Dedicated Servers] - Rack G223A06",
       "status": "scheduled",
@@ -3207,6 +3111,102 @@
       ],
       "scheduled_for": "2024-05-13T09:00:00.000Z",
       "scheduled_until": "2024-05-13T09:30:00.000Z"
+    },
+    {
+      "id": "5tjtydnq4xy9",
+      "name": "[GLOBAL][Dedicated Servers] - Windows OS language API change",
+      "status": "scheduled",
+      "created_at": "2024-04-12T12:43:57.703Z",
+      "updated_at": "2024-04-23T15:03:23.604Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/rdwfm01xfbr0",
+      "started_at": "2024-04-12T12:43:57.766Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "09zrtqmk8b5s",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer. \n\n<b>Start time :</b> 14/05/2024 08:30 UTC \n<b>End time :</b> 14/05/2024 08:45 UTC \n<b>Service impact :</b> No impact expected.\nCustomers not installing any Windows OSes from API and/or installing Windows OSes from OVHcloud control panel are not affected by this change.\nCustomers using that API call for installing any windows OSes in a display language other English are affected by this change and need to update their scripts and applications accordingly.\n<b>Service improvement :</b> The following API call with <code>details/language</code> attribute within the payload will definitely stop working: <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>\n\nBelow you can find an example of payload that will stop working for a win2022-dc OS installation:\n<code>```json\n{\n  \"details\": {\n    \"language\": \"fr\",\n  },\n  \"templateName\": \"win2022-dc_64\"\n}\n```</code>\n\nWith the previous example, here is the target payload that customer can already use and that will continue to work:\n<code>```json\n{\n  \"userMetadata\": [\n    {\n      \"key\": \"language\",\n      \"value\": \"fr-fr\"\n    }\n  ],\n  \"templateName\": \"win2022-dc_64\"\n} \n```</code>\n\nMore details and examples can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951#create-an-os-installation-task\"> Documentation Page</a>\n\nThank you for your understanding.",
+          "incident_id": "5tjtydnq4xy9",
+          "created_at": "2024-04-12T12:43:57.766Z",
+          "updated_at": "2024-04-23T14:12:17.947Z",
+          "display_at": "2024-05-14T08:30:57.766Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2023-11-20T15:04:48.996Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2023-10-06T14:28:58.793Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2024-01-18T10:00:37.627Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-14T08:30:00.000Z",
+      "scheduled_until": "2024-05-14T08:45:00.000Z"
     }
   ],
   "status": {
