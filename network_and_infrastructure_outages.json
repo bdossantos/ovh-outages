@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-25T04:51:13.202Z"
+    "updated_at": "2024-04-25T06:00:16.931Z"
   },
   "components": [
     {
@@ -1083,6 +1083,73 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "43jbm7mk68df",
+      "name": "[BHS][Network] - background infrastructure operation",
+      "status": "scheduled",
+      "created_at": "2024-04-02T14:53:40.666Z",
+      "updated_at": "2024-04-25T06:00:16.921Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/k58lfrbt9st8",
+      "started_at": "2024-04-02T14:53:40.661Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "2y6bslpw0fs7",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "43jbm7mk68df",
+          "created_at": "2024-04-25T06:00:16.808Z",
+          "updated_at": "2024-04-25T06:00:16.808Z",
+          "display_at": "2024-04-25T06:00:16.808Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4yvqzn5j7czl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Network infrastructure.\n\n<b>Start time :</b> 25/04/2024 07:00 UTC\n<b>End time :</b> 25/04/2024 11:00 UTC\n<b>Service impact :</b> Network automation will be paused for about 120 min during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade for the management of the background infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "43jbm7mk68df",
+          "created_at": "2024-04-02T14:53:40.721Z",
+          "updated_at": "2024-04-02T14:53:40.721Z",
+          "display_at": "2024-04-02T14:53:40.721Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2024-04-19T21:32:23.588Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-25T07:00:00.000Z",
+      "scheduled_until": "2024-04-25T11:00:00.000Z"
+    },
+    {
       "id": "2djcd4l1npzc",
       "name": "[RBX4][Network] - Backbone Maintenance Notification",
       "status": "scheduled",
@@ -1135,60 +1202,6 @@
       ],
       "scheduled_for": "2024-04-25T07:00:00.000Z",
       "scheduled_until": "2024-04-25T16:00:00.000Z"
-    },
-    {
-      "id": "43jbm7mk68df",
-      "name": "[BHS][Network] - background infrastructure operation",
-      "status": "scheduled",
-      "created_at": "2024-04-02T14:53:40.666Z",
-      "updated_at": "2024-04-02T14:53:40.724Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/k58lfrbt9st8",
-      "started_at": "2024-04-02T14:53:40.661Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "4yvqzn5j7czl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Network infrastructure.\n\n<b>Start time :</b> 25/04/2024 07:00 UTC\n<b>End time :</b> 25/04/2024 11:00 UTC\n<b>Service impact :</b> Network automation will be paused for about 120 min during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we are rolling out an upgrade for the management of the background infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "43jbm7mk68df",
-          "created_at": "2024-04-02T14:53:40.721Z",
-          "updated_at": "2024-04-02T14:53:40.721Z",
-          "display_at": "2024-04-02T14:53:40.721Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "degraded_performance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2024-04-19T21:32:23.588Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-25T07:00:00.000Z",
-      "scheduled_until": "2024-04-25T11:00:00.000Z"
     },
     {
       "id": "m77zwfz2y67l",
@@ -1623,81 +1636,6 @@
       "scheduled_until": "2024-04-29T15:00:00.000Z"
     },
     {
-      "id": "vr962dytblmb",
-      "name": "[GRA1/GRA2][Infrastructure] -  Electrical background work",
-      "status": "scheduled",
-      "created_at": "2024-04-22T12:19:42.327Z",
-      "updated_at": "2024-04-22T12:19:42.376Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kj3qdqz8bxjk",
-      "started_at": "2024-04-22T12:19:42.318Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "qt4g6pgx3g26",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure. \n\n<b>Start time :</b> 29/04/2024 06:00 UTC \n<b>End time :</b> 02/05/2024 14:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nThank you for your understanding.",
-          "incident_id": "vr962dytblmb",
-          "created_at": "2024-04-22T12:19:42.374Z",
-          "updated_at": "2024-04-22T12:19:42.374Z",
-          "display_at": "2024-04-22T12:19:42.374Z",
-          "affected_components": [
-            {
-              "code": "66ctp89pwlcd",
-              "name": "Infrastructure || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "66ctp89pwlcd",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:37.816Z",
-          "updated_at": "2024-03-22T11:16:54.935Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2024-03-22T11:16:54.952Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-29T06:00:00.000Z",
-      "scheduled_until": "2024-04-29T14:30:00.000Z"
-    },
-    {
       "id": "f8yhd573wk5j",
       "name": "[GRA][Infrastructure] -  Electrical background work",
       "status": "scheduled",
@@ -1815,6 +1753,81 @@
       "scheduled_until": "2024-04-29T14:00:00.000Z"
     },
     {
+      "id": "vr962dytblmb",
+      "name": "[GRA1/GRA2][Infrastructure] -  Electrical background work",
+      "status": "scheduled",
+      "created_at": "2024-04-22T12:19:42.327Z",
+      "updated_at": "2024-04-22T12:19:42.376Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/kj3qdqz8bxjk",
+      "started_at": "2024-04-22T12:19:42.318Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "qt4g6pgx3g26",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure. \n\n<b>Start time :</b> 29/04/2024 06:00 UTC \n<b>End time :</b> 02/05/2024 14:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nThank you for your understanding.",
+          "incident_id": "vr962dytblmb",
+          "created_at": "2024-04-22T12:19:42.374Z",
+          "updated_at": "2024-04-22T12:19:42.374Z",
+          "display_at": "2024-04-22T12:19:42.374Z",
+          "affected_components": [
+            {
+              "code": "66ctp89pwlcd",
+              "name": "Infrastructure || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "66ctp89pwlcd",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:37.816Z",
+          "updated_at": "2024-03-22T11:16:54.935Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2024-03-22T11:16:54.952Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-29T06:00:00.000Z",
+      "scheduled_until": "2024-04-29T14:30:00.000Z"
+    },
+    {
       "id": "njf5rvlrzmw7",
       "name": "[GRA2][Infrastructure] - Electrical background work",
       "status": "scheduled",
@@ -1923,6 +1936,135 @@
       "scheduled_until": "2024-04-30T15:40:00.000Z"
     },
     {
+      "id": "b6gs5p8bnwrq",
+      "name": "[BHS1/BHS2][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2024-04-24T19:37:44.780Z",
+      "updated_at": "2024-04-24T19:39:59.781Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/c27t5rdnbhhj",
+      "started_at": "2024-04-24T19:37:44.771Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "1d5z7b5hgf7v",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure service. \n\n<b>Start time :</b> 29/04/2024 11:00 UTC \n<b>End time :</b> 02/05/2024 19:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nMaintenance operations will be carried out as follows (one at a time):\n    \nMonday 29 April :\n    UPS1A maintenance\n    UPS1B maintenance + battery changes\n    \nTuesday 30 April :\n    UPS2A maintenance + battery change\n    UPS2B maintenance\n    \nThursday 2 May :\n    UPS1C maintenance\n    UPS2C maintenance\n\n\nThank you for your understanding.",
+          "incident_id": "b6gs5p8bnwrq",
+          "created_at": "2024-04-24T19:37:44.837Z",
+          "updated_at": "2024-04-24T19:39:59.777Z",
+          "display_at": "2024-04-24T19:37:44.837Z",
+          "affected_components": [
+            {
+              "code": "yn247hwpljdf",
+              "name": "Infrastructure || BHS - BHS1",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "snrc66fccrvf",
+              "name": "Infrastructure || BHS - BHS2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yn247hwpljdf",
+          "name": "BHS1",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:26.643Z",
+          "updated_at": "2023-09-12T22:19:57.152Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "snrc66fccrvf",
+          "name": "BHS2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:27.348Z",
+          "updated_at": "2024-03-28T15:46:38.212Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-29T11:00:00.000Z",
+      "scheduled_until": "2024-05-02T19:30:00.000Z"
+    },
+    {
+      "id": "0k4k5rfznt75",
+      "name": "[BHS7][Cooling System] - B716B13",
+      "status": "scheduled",
+      "created_at": "2024-04-24T19:13:22.266Z",
+      "updated_at": "2024-04-25T04:13:11.170Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zclb79jlpz19",
+      "started_at": "2024-04-24T19:13:22.261Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "yrbf3fg612yl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Cooling Sytem. \n\n<b>Start time :</b> 29/04/2024 11:00 UTC \n<b>End time :</b> 29/04/2024 19:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement\n\nThank you for your understanding.",
+          "incident_id": "0k4k5rfznt75",
+          "created_at": "2024-04-24T19:13:22.304Z",
+          "updated_at": "2024-04-25T04:13:11.165Z",
+          "display_at": "2024-04-24T19:13:22.304Z",
+          "affected_components": [
+            {
+              "code": "v0kyk7zsjqvd",
+              "name": "Infrastructure || BHS - BHS7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v0kyk7zsjqvd",
+          "name": "BHS7",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:31.279Z",
+          "updated_at": "2023-09-12T12:05:01.535Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-04-29T11:00:00.000Z",
+      "scheduled_until": "2024-04-29T19:30:00.000Z"
+    },
+    {
       "id": "f31bb07wqx32",
       "name": "[BHS5][Infrastructure] - Electrical background work",
       "status": "scheduled",
@@ -2029,135 +2171,6 @@
       ],
       "scheduled_for": "2024-04-29T11:00:00.000Z",
       "scheduled_until": "2024-04-29T20:00:00.000Z"
-    },
-    {
-      "id": "0k4k5rfznt75",
-      "name": "[BHS7][Cooling System] - B716B13",
-      "status": "scheduled",
-      "created_at": "2024-04-24T19:13:22.266Z",
-      "updated_at": "2024-04-25T04:13:11.170Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/zclb79jlpz19",
-      "started_at": "2024-04-24T19:13:22.261Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "yrbf3fg612yl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Cooling Sytem. \n\n<b>Start time :</b> 29/04/2024 11:00 UTC \n<b>End time :</b> 29/04/2024 19:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Water manifold replacement\n\nThank you for your understanding.",
-          "incident_id": "0k4k5rfznt75",
-          "created_at": "2024-04-24T19:13:22.304Z",
-          "updated_at": "2024-04-25T04:13:11.165Z",
-          "display_at": "2024-04-24T19:13:22.304Z",
-          "affected_components": [
-            {
-              "code": "v0kyk7zsjqvd",
-              "name": "Infrastructure || BHS - BHS7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "v0kyk7zsjqvd",
-          "name": "BHS7",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:31.279Z",
-          "updated_at": "2023-09-12T12:05:01.535Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-29T11:00:00.000Z",
-      "scheduled_until": "2024-04-29T19:30:00.000Z"
-    },
-    {
-      "id": "b6gs5p8bnwrq",
-      "name": "[BHS1/BHS2][Infrastructure] - Electrical background work",
-      "status": "scheduled",
-      "created_at": "2024-04-24T19:37:44.780Z",
-      "updated_at": "2024-04-24T19:39:59.781Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/c27t5rdnbhhj",
-      "started_at": "2024-04-24T19:37:44.771Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "1d5z7b5hgf7v",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure service. \n\n<b>Start time :</b> 29/04/2024 11:00 UTC \n<b>End time :</b> 02/05/2024 19:30 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nMaintenance operations will be carried out as follows (one at a time):\n    \nMonday 29 April :\n    UPS1A maintenance\n    UPS1B maintenance + battery changes\n    \nTuesday 30 April :\n    UPS2A maintenance + battery change\n    UPS2B maintenance\n    \nThursday 2 May :\n    UPS1C maintenance\n    UPS2C maintenance\n\n\nThank you for your understanding.",
-          "incident_id": "b6gs5p8bnwrq",
-          "created_at": "2024-04-24T19:37:44.837Z",
-          "updated_at": "2024-04-24T19:39:59.777Z",
-          "display_at": "2024-04-24T19:37:44.837Z",
-          "affected_components": [
-            {
-              "code": "yn247hwpljdf",
-              "name": "Infrastructure || BHS - BHS1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "snrc66fccrvf",
-              "name": "Infrastructure || BHS - BHS2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yn247hwpljdf",
-          "name": "BHS1",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:26.643Z",
-          "updated_at": "2023-09-12T22:19:57.152Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "snrc66fccrvf",
-          "name": "BHS2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:27.348Z",
-          "updated_at": "2024-03-28T15:46:38.212Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-04-29T11:00:00.000Z",
-      "scheduled_until": "2024-05-02T19:30:00.000Z"
     },
     {
       "id": "v9r0yqfk1crp",
@@ -2472,6 +2485,60 @@
       "scheduled_until": "2024-05-07T19:30:00.000Z"
     },
     {
+      "id": "dmmq2jk1h3f7",
+      "name": "[SBG3][Infrastructure] - Electrical background work 11T3",
+      "status": "scheduled",
+      "created_at": "2024-04-23T16:51:04.705Z",
+      "updated_at": "2024-04-23T16:51:04.759Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3q7k13457znt",
+      "started_at": "2024-04-23T16:51:04.698Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "p43y092g934z",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure offer.\n\n<b>Start time :</b> 02/05/2024 06:00 UTC\n<b>End time :</b> 02/05/2024 15:00 UTC\n<b>Service impact :</b> Up to and including static bypass and battery discharge test.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nThank you for your understanding.",
+          "incident_id": "dmmq2jk1h3f7",
+          "created_at": "2024-04-23T16:51:04.757Z",
+          "updated_at": "2024-04-23T16:51:04.757Z",
+          "display_at": "2024-04-23T16:51:04.757Z",
+          "affected_components": [
+            {
+              "code": "n3pn0f28b99n",
+              "name": "Infrastructure || SBG - SBG3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3pn0f28b99n",
+          "name": "SBG3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:01.143Z",
+          "updated_at": "2024-04-16T09:03:46.372Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-02T06:00:00.000Z",
+      "scheduled_until": "2024-05-02T15:00:00.000Z"
+    },
+    {
       "id": "172569g1l20w",
       "name": "[GRA][Infrastructure] -  Electrical background work",
       "status": "scheduled",
@@ -2587,60 +2654,6 @@
       ],
       "scheduled_for": "2024-05-02T06:00:00.000Z",
       "scheduled_until": "2024-05-02T14:00:00.000Z"
-    },
-    {
-      "id": "dmmq2jk1h3f7",
-      "name": "[SBG3][Infrastructure] - Electrical background work 11T3",
-      "status": "scheduled",
-      "created_at": "2024-04-23T16:51:04.705Z",
-      "updated_at": "2024-04-23T16:51:04.759Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3q7k13457znt",
-      "started_at": "2024-04-23T16:51:04.698Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "p43y092g934z",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure offer.\n\n<b>Start time :</b> 02/05/2024 06:00 UTC\n<b>End time :</b> 02/05/2024 15:00 UTC\n<b>Service impact :</b> Up to and including static bypass and battery discharge test.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.\n\nThank you for your understanding.",
-          "incident_id": "dmmq2jk1h3f7",
-          "created_at": "2024-04-23T16:51:04.757Z",
-          "updated_at": "2024-04-23T16:51:04.757Z",
-          "display_at": "2024-04-23T16:51:04.757Z",
-          "affected_components": [
-            {
-              "code": "n3pn0f28b99n",
-              "name": "Infrastructure || SBG - SBG3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "n3pn0f28b99n",
-          "name": "SBG3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:01.143Z",
-          "updated_at": "2024-04-16T09:03:46.372Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "vhfy3slw3nj2",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-05-02T06:00:00.000Z",
-      "scheduled_until": "2024-05-02T15:00:00.000Z"
     },
     {
       "id": "bdyfm4z2zp1m",
