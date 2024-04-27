@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-04-27T02:32:12.658Z"
+    "updated_at": "2024-04-27T04:43:00.498Z"
   },
   "components": [
     {
@@ -869,9 +869,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2024-01-22T16:31:11.386Z",
+      "updated_at": "2024-04-27T04:32:41.803Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -5416,7 +5416,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2024-04-12T16:07:46.677Z",
       "position": 43,
@@ -5533,6 +5533,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "5mycp0tpc1rn",
+      "name": "[GRA][Storage] - Object Storage S3 Standard/High Perf",
+      "status": "investigating",
+      "created_at": "2024-04-27T04:32:41.775Z",
+      "updated_at": "2024-04-27T04:32:41.855Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/5xg12jk9tgv7",
+      "started_at": "2024-04-27T04:32:41.768Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "xntcg1zv2f5c",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 27/04/2024 04:00 UTC\n<b>Service impact :</b> Customers might get 500/503 errors\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "5mycp0tpc1rn",
+          "created_at": "2024-04-27T04:32:41.852Z",
+          "updated_at": "2024-04-27T04:32:41.852Z",
+          "display_at": "2024-04-27T04:32:41.852Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2024-04-27T04:32:41.803Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "rsrmqv9fcx2q",
       "name": "[EU][Public Cloud] - Management incident notification",
@@ -6069,6 +6122,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
