@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-02T10:27:03.145Z"
+    "updated_at": "2024-05-02T15:44:53.973Z"
   },
   "components": [
     {
@@ -2973,6 +2973,102 @@
       ],
       "scheduled_for": "2024-05-26T22:00:00.000Z",
       "scheduled_until": "2024-05-30T05:00:00.000Z"
+    },
+    {
+      "id": "9237zxznz30c",
+      "name": "[Global][Dedicated Servers] - API call removal",
+      "status": "scheduled",
+      "created_at": "2024-05-02T15:37:29.340Z",
+      "updated_at": "2024-05-02T15:37:29.408Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1yf8fj11krqd",
+      "started_at": "2024-05-02T15:37:29.329Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rfkxp61lyhbv",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our API. \n\nThe 30th of May 2024, the following API call will be definitely removed:\n <a href=\"https://eu.api.ovh.com/console-preview/?section=%2Fdedicated%2Fserver&branch=v1#get-/dedicated/server/-serviceName-/install/templateCapabilities\">GET /dedicated/server/{serviceName}/install/templateCapabilities</a>\n \n<b>Start time :</b> 30/05/2024 08:30 UTC \n<b>End time :</b> 30/05/2024 08:45 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> This API call was previously useful for old Windows OS installers that were not compatible with installation on another diskgroup on servers with multiple diskgroups. Since then all OSes can be installed on any diskgroup. \n\nThank you for your understanding.",
+          "incident_id": "9237zxznz30c",
+          "created_at": "2024-05-02T15:37:29.405Z",
+          "updated_at": "2024-05-02T15:37:29.405Z",
+          "display_at": "2024-05-02T15:37:29.405Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zjpd57tn2xqv",
+              "name": "Dedicated Servers || Operating System - Zone Canada",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2023-11-20T15:04:48.996Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2023-10-06T14:28:58.793Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "zjpd57tn2xqv",
+          "name": "Zone Canada",
+          "status": "operational",
+          "created_at": "2021-07-09T07:32:26.689Z",
+          "updated_at": "2024-01-18T10:00:37.627Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-05-30T08:30:00.000Z",
+      "scheduled_until": "2024-05-30T08:45:00.000Z"
     },
     {
       "id": "wxkn32l7ch89",
