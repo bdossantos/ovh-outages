@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-13T18:51:43.461Z"
+    "updated_at": "2024-05-13T19:11:43.029Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2024-05-13T18:07:57.310Z",
+      "updated_at": "2024-05-13T19:08:19.596Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2510,7 +2510,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cq12hh7mh4p0",
+      "name": "[BHS8][Dedicated Servers] - BHS0809A02B",
+      "status": "investigating",
+      "created_at": "2024-05-13T19:08:19.553Z",
+      "updated_at": "2024-05-13T19:11:43.026Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/dmf5hsmrlc4h",
+      "started_at": "2024-05-13T19:08:19.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2ty4n6mr24tp",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 13/05/2024 19:04 UTC\n<b>Service impact :</b> A significant number of servers in BHS0809A02B are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "cq12hh7mh4p0",
+          "created_at": "2024-05-13T19:08:19.705Z",
+          "updated_at": "2024-05-13T19:11:42.984Z",
+          "display_at": "2024-05-13T19:08:19.000Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2024-05-13T19:08:19.596Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "gpfbrzykkyn4",
@@ -3389,7 +3443,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
