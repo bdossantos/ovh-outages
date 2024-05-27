@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-27T17:52:24.126Z"
+    "updated_at": "2024-05-27T19:26:57.875Z"
   },
   "components": [
     {
@@ -590,9 +590,9 @@
     {
       "id": "wctbybd9fpts",
       "name": "Cluster002",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-11-02T16:28:41.282Z",
-      "updated_at": "2024-05-02T06:58:01.922Z",
+      "updated_at": "2024-05-27T19:26:28.122Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2696,7 +2696,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2775,7 +2775,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8m6twzmrpxwd",
+      "name": "[GRA][Web Hosting] - Cluster002 - Filerz475",
+      "status": "investigating",
+      "created_at": "2024-05-27T19:26:28.095Z",
+      "updated_at": "2024-05-27T19:26:57.872Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/785q2rscb9t0",
+      "started_at": "2024-05-27T19:26:28.088Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "cw6gvlg97xg3",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 27/05/2024 19:14 UTC\n<b>Service impact :</b> Websites are unreachable on filerz475\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "8m6twzmrpxwd",
+          "created_at": "2024-05-27T19:26:28.694Z",
+          "updated_at": "2024-05-27T19:26:28.694Z",
+          "display_at": "2024-05-27T19:26:28.694Z",
+          "affected_components": [
+            {
+              "code": "wctbybd9fpts",
+              "name": "Web Hosting || Datacenter GRA - Cluster002",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wctbybd9fpts",
+          "name": "Cluster002",
+          "status": "partial_outage",
+          "created_at": "2021-11-02T16:28:41.282Z",
+          "updated_at": "2024-05-27T19:26:28.122Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-02",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vqvn0vyfqspp",
@@ -3394,9 +3448,9 @@
         {
           "id": "wctbybd9fpts",
           "name": "Cluster002",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-11-02T16:28:41.282Z",
-          "updated_at": "2024-05-02T06:58:01.922Z",
+          "updated_at": "2024-05-27T19:26:28.122Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3894,7 +3948,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
