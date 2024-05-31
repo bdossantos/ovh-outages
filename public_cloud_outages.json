@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-05-31T09:43:24.722Z"
+    "updated_at": "2024-05-31T13:43:13.249Z"
   },
   "components": [
     {
@@ -1563,9 +1563,9 @@
     {
       "id": "r1j48fr4q34n",
       "name": "DAL",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-11T07:17:38.588Z",
-      "updated_at": "2024-04-11T08:01:24.324Z",
+      "updated_at": "2024-05-31T13:41:29.621Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -5722,7 +5722,7 @@
     {
       "id": "wnfnp24bv4x6",
       "name": "LocalZones || Global Services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-11T07:07:18.136Z",
       "updated_at": "2024-04-11T07:56:32.092Z",
       "position": 46,
@@ -5740,7 +5740,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zmx498pjdsjn",
+      "name": "[Localzone Dallas][Public Cloud] - Boot new instances incident notification",
+      "status": "investigating",
+      "created_at": "2024-05-31T13:41:29.585Z",
+      "updated_at": "2024-05-31T13:41:29.681Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/y7lsd4tp5f3m",
+      "started_at": "2024-05-31T13:41:29.577Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "93fq2fgjcw05",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 30/05/2024 21:20 UTC \n<b>Service impact :</b> Booting new instances in the Dallas region is currently unavailable.\nExisting instances are not impacted by this incident.\n<b>Ongoing actions :</b> We are currently investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "zmx498pjdsjn",
+          "created_at": "2024-05-31T13:41:29.678Z",
+          "updated_at": "2024-05-31T13:41:29.678Z",
+          "display_at": "2024-05-31T13:41:29.678Z",
+          "affected_components": [
+            {
+              "code": "r1j48fr4q34n",
+              "name": "LocalZones || Global Services - DAL",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r1j48fr4q34n",
+          "name": "DAL",
+          "status": "partial_outage",
+          "created_at": "2024-04-11T07:17:38.588Z",
+          "updated_at": "2024-05-31T13:41:29.621Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-11",
+          "group_id": "wnfnp24bv4x6",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "sh3w6fjtp90g",
@@ -6840,7 +6894,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
