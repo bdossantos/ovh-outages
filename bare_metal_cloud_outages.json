@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-04T08:43:33.106Z"
+    "updated_at": "2024-06-04T09:30:31.375Z"
   },
   "components": [
     {
@@ -838,9 +838,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-05-16T23:23:40.113Z",
+      "updated_at": "2024-06-04T09:21:15.595Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2592,6 +2592,79 @@
   ],
   "incidents": [
     {
+      "id": "lc101g7r476w",
+      "name": "[GRA2][Dedicated Servers] - Racks G209B18 - G209B17 - G209B16",
+      "status": "identified",
+      "created_at": "2024-06-04T09:21:15.557Z",
+      "updated_at": "2024-06-04T09:30:31.366Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mc20z73kkd75",
+      "started_at": "2024-06-04T09:21:15.549Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "xkhw7qlk10mh",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "lc101g7r476w",
+          "created_at": "2024-06-04T09:30:31.363Z",
+          "updated_at": "2024-06-04T09:30:31.363Z",
+          "display_at": "2024-06-04T09:30:31.363Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jwxcwg1xpv4m",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 04/06/2024 08:48 UTC\n<b>Service impact :</b> Some of servers in racks G209B18 - G209B17 - G209B16 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "lc101g7r476w",
+          "created_at": "2024-06-04T09:21:15.654Z",
+          "updated_at": "2024-06-04T09:21:15.654Z",
+          "display_at": "2024-06-04T09:21:15.654Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-06-04T09:21:15.595Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "hlt0rv9d7z9f",
       "name": "[Global][Dedicated Servers] - OS Installation",
       "status": "identified",
@@ -3723,6 +3796,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
