@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-16T02:42:58.890Z"
+    "updated_at": "2024-06-16T20:19:32.672Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2024-05-13T22:23:03.784Z",
+      "updated_at": "2024-06-16T20:19:32.344Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2590,7 +2590,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "4lcn1xvqmqmb",
+      "name": "[BHS5][Dedicated Servers] - Rack T05F33",
+      "status": "investigating",
+      "created_at": "2024-06-16T20:19:32.305Z",
+      "updated_at": "2024-06-16T20:19:32.669Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/y3mh9l95mrcy",
+      "started_at": "2024-06-16T20:19:32.297Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8xndrqzrt48q",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 16/06/2024 20:12 UTC\n<b>Service impact :</b> All servers in the rack T05F33 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "4lcn1xvqmqmb",
+          "created_at": "2024-06-16T20:19:32.666Z",
+          "updated_at": "2024-06-16T20:19:32.666Z",
+          "display_at": "2024-06-16T20:19:32.666Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2024-06-16T20:19:32.344Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5hs034jj07y0",
@@ -2846,9 +2900,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2024-05-13T22:23:03.784Z",
+          "updated_at": "2024-06-16T20:19:32.344Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3008,9 +3062,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2024-05-13T22:23:03.784Z",
+          "updated_at": "2024-06-16T20:19:32.344Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3224,9 +3278,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2024-05-13T22:23:03.784Z",
+          "updated_at": "2024-06-16T20:19:32.344Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3530,7 +3584,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
