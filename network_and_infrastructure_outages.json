@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-18T06:30:02.584Z"
+    "updated_at": "2024-06-18T07:00:04.227Z"
   },
   "components": [
     {
@@ -1009,9 +1009,9 @@
     {
       "id": "pgf35fxt4ywk",
       "name": "Network Services || vRack Private Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-20T08:36:07.479Z",
-      "updated_at": "2024-06-18T06:29:37.625Z",
+      "updated_at": "2024-06-18T06:45:17.015Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -1023,59 +1023,6 @@
     }
   ],
   "incidents": [
-    {
-      "id": "bjcpthztkxv4",
-      "name": "[RBX4][Infrastructure] - Vrack network incident notification",
-      "status": "identified",
-      "created_at": "2024-06-18T06:29:37.588Z",
-      "updated_at": "2024-06-18T06:29:37.680Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/9719bljyq3kz",
-      "started_at": "2024-06-18T06:29:37.582Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "f7qy8bg08p3w",
-          "status": "identified",
-          "body": "<b>Start time :</b> 18/06/2024 05:00 UTC \n<b>Service impact :</b> Some servers on these racks 53C18, 53C19, 53C20, 53C17, 53C21, 53C22, 53C23, 53C24, 52C07, 51D22, 52C08, 52C09, 53C05, 53C06, 53C07, 51C01 are currently unreachable.\n<b>Root cause :</b> Hardware issue.\n<b>Ongoing actions :</b> Our technical teams are working on a fix.",
-          "incident_id": "bjcpthztkxv4",
-          "created_at": "2024-06-18T06:29:37.677Z",
-          "updated_at": "2024-06-18T06:29:37.677Z",
-          "display_at": "2024-06-18T06:29:37.677Z",
-          "affected_components": [
-            {
-              "code": "pgf35fxt4ywk",
-              "name": "Network Services || vRack Private Network",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "pgf35fxt4ywk",
-          "name": "Network Services || vRack Private Network",
-          "status": "partial_outage",
-          "created_at": "2022-05-20T08:36:07.479Z",
-          "updated_at": "2024-06-18T06:29:37.625Z",
-          "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    },
     {
       "id": "z5nb37hdwty9",
       "name": "[EU/APAC][Network] - Backbone Incident Notification",
@@ -1191,73 +1138,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "b9q7dmr33fsl",
-      "name": "[SBG3][Network] - LoadBalancer Update",
-      "status": "scheduled",
-      "created_at": "2024-06-14T21:23:44.006Z",
-      "updated_at": "2024-06-18T06:00:09.618Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4yg3b5xj6k19",
-      "started_at": "2024-06-14T21:23:44.001Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "yq1df81dcsm1",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "b9q7dmr33fsl",
-          "created_at": "2024-06-18T06:00:09.530Z",
-          "updated_at": "2024-06-18T06:00:09.530Z",
-          "display_at": "2024-06-18T06:00:09.530Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lbcf192crn4k",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our load balancer.\n\n<b>Start time :</b> 18/06/2024 07:00 UTC \n<b>End time :</b> 18/06/2024 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade our load balancer software.\n\nThank you for your understanding.",
-          "incident_id": "b9q7dmr33fsl",
-          "created_at": "2024-06-14T21:23:44.060Z",
-          "updated_at": "2024-06-14T21:23:44.060Z",
-          "display_at": "2024-06-14T21:23:44.060Z",
-          "affected_components": [
-            {
-              "code": "09f41qrzqycc",
-              "name": "Network Services || OVHcloud Load Balancer",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "09f41qrzqycc",
-          "name": "Network Services || OVHcloud Load Balancer",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:50.064Z",
-          "updated_at": "2024-03-13T09:30:28.913Z",
-          "position": 18,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-06-18T07:00:00.000Z",
-      "scheduled_until": "2024-06-18T16:00:00.000Z"
-    },
     {
       "id": "k84m4gzc0kcm",
       "name": "[YNM][Network] - Backbone Maintenance Notification",
@@ -4371,6 +4251,161 @@
       "scheduled_until": "2024-09-11T14:00:00.000Z"
     },
     {
+      "id": "6rn8c8kwpwvk",
+      "name": "[RBX5/RBX6][Infrastructure] - Electrical background work",
+      "status": "scheduled",
+      "created_at": "2024-01-15T13:00:15.139Z",
+      "updated_at": "2024-01-15T13:00:15.208Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m4fcfpmjbm89",
+      "started_at": "2024-01-15T13:00:15.128Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "dgtyfpb828k8",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 11/09/2024 06:30 UTC \n<b>End time :</b> 11/09/2024 11:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive electrical background work.",
+          "incident_id": "6rn8c8kwpwvk",
+          "created_at": "2024-01-15T13:00:15.204Z",
+          "updated_at": "2024-01-15T13:00:15.204Z",
+          "display_at": "2024-01-15T13:00:15.204Z",
+          "affected_components": [
+            {
+              "code": "n3bn7csv5k3k",
+              "name": "Infrastructure || RBX - RBX5",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5rlwxw2f24qh",
+              "name": "Infrastructure || RBX - RBX6",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3bn7csv5k3k",
+          "name": "RBX5",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:18.529Z",
+          "updated_at": "2024-06-10T12:01:45.147Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5rlwxw2f24qh",
+          "name": "RBX6",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:19.265Z",
+          "updated_at": "2024-04-09T20:58:14.219Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-11T06:30:00.000Z",
+      "scheduled_until": "2024-09-11T11:00:00.000Z"
+    },
+    {
+      "id": "b9q7dmr33fsl",
+      "name": "[SBG3][Network] - LoadBalancer Update",
+      "status": "in_progress",
+      "created_at": "2024-06-14T21:23:44.006Z",
+      "updated_at": "2024-06-18T07:00:03.849Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4yg3b5xj6k19",
+      "started_at": "2024-06-14T21:23:44.001Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "j77b99b3z2tk",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "b9q7dmr33fsl",
+          "created_at": "2024-06-18T07:00:03.833Z",
+          "updated_at": "2024-06-18T07:00:03.833Z",
+          "display_at": "2024-06-18T07:00:03.833Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yq1df81dcsm1",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "b9q7dmr33fsl",
+          "created_at": "2024-06-18T06:00:09.530Z",
+          "updated_at": "2024-06-18T06:00:09.530Z",
+          "display_at": "2024-06-18T06:00:09.530Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lbcf192crn4k",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our load balancer.\n\n<b>Start time :</b> 18/06/2024 07:00 UTC \n<b>End time :</b> 18/06/2024 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade our load balancer software.\n\nThank you for your understanding.",
+          "incident_id": "b9q7dmr33fsl",
+          "created_at": "2024-06-14T21:23:44.060Z",
+          "updated_at": "2024-06-14T21:23:44.060Z",
+          "display_at": "2024-06-14T21:23:44.060Z",
+          "affected_components": [
+            {
+              "code": "09f41qrzqycc",
+              "name": "Network Services || OVHcloud Load Balancer",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "09f41qrzqycc",
+          "name": "Network Services || OVHcloud Load Balancer",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:50.064Z",
+          "updated_at": "2024-03-13T09:30:28.913Z",
+          "position": 18,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-06-18T07:00:00.000Z",
+      "scheduled_until": "2024-06-18T16:00:00.000Z"
+    },
+    {
       "id": "dfcwbckkmjmt",
       "name": "[RBX8][Infrastructure] - Electrical background work",
       "status": "in_progress",
@@ -6263,7 +6298,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
