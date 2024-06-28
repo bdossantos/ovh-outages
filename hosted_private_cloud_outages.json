@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-28T12:37:16.523Z"
+    "updated_at": "2024-06-28T12:46:13.133Z"
   },
   "components": [
     {
@@ -901,9 +901,9 @@
     {
       "id": "h49h85c2xwcr",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.224Z",
-      "updated_at": "2024-06-20T14:08:15.615Z",
+      "updated_at": "2024-06-28T12:45:28.863Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2310,9 +2310,9 @@
     {
       "id": "88nnqdnqcw05",
       "name": "[RBX][Hosted Private Cloud] -  Hosts incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-06-28T12:30:41.408Z",
-      "updated_at": "2024-06-28T12:37:16.519Z",
+      "updated_at": "2024-06-28T12:46:13.126Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2320,6 +2320,26 @@
       "started_at": "2024-06-28T12:30:41.400Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "cdqfp7xdn6f8",
+          "status": "identified",
+          "body": "<b>Start time:</b>  28/06/2024 11:52 UTC\n<b>User impact :</b> The following hosts: host1487187 - host1487255 - host1487260 - host1487245 - \nhost1487253 - host1487247 - host1487254 - host1487188 are currently unreachable\n<b>Technical impact (DC/geographical area) :</b> RBX8\n<b>Root cause :</b> Incident due to disjunction.\n<b>Ongoing actions :</b> Our technical teams are working on a fix.",
+          "incident_id": "88nnqdnqcw05",
+          "created_at": "2024-06-28T12:45:28.904Z",
+          "updated_at": "2024-06-28T12:46:13.123Z",
+          "display_at": "2024-06-28T12:45:28.000Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "7qmng3fjfgpm",
           "status": "investigating",
@@ -2343,12 +2363,12 @@
       ],
       "components": [
         {
-          "id": "nr0vltd8cnk0",
-          "name": "Network",
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
           "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2024-06-28T12:30:41.446Z",
-          "position": 1,
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2024-06-28T12:45:28.863Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
