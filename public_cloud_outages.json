@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-06-29T03:18:54.401Z"
+    "updated_at": "2024-06-29T23:25:53.881Z"
   },
   "components": [
     {
@@ -749,9 +749,9 @@
     {
       "id": "2k4xnh0pwlqx",
       "name": "GRA3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:50.709Z",
-      "updated_at": "2024-06-10T20:29:21.572Z",
+      "updated_at": "2024-06-29T23:08:20.721Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2775,7 +2775,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -5820,7 +5820,101 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "d8rnrnx96fnp",
+      "name": "[GRA2][Compute] - VPS instances incident notification",
+      "status": "identified",
+      "created_at": "2024-06-29T23:08:20.687Z",
+      "updated_at": "2024-06-29T23:25:53.871Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/yq4dggx3gr4f",
+      "started_at": "2024-06-29T23:08:20.679Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kf5s794yzwyz",
+          "status": "identified",
+          "body": "Updated list of impacted instances:\n\n031dfb72-13be-48ff-b080-e3dd736afc0b\n0df66011-577b-414f-9784-9a0f1ec71cfa\n13d6344c-bd8e-4e45-bdf0-693e5118b9c4\n1a99c686-1655-434c-9693-ff6d7c4f3313\n1ecbdd74-4249-49c2-a479-d446e75f602c\n21c02ca8-e567-426e-95e1-b8759355ef74\n2f01e0bd-7d5f-44ca-9d7b-f8707aaf5f3c\n2f5f0cfc-c25b-4db8-879c-b0dbdb235cb8\n35c9857e-a275-45ae-ac5b-b19fab80a9a6\n38320a45-456b-4c8d-b04c-fa6872f9e6af\n3a4cfd46-0fbe-49f0-9d9f-00f08b56fea1\n4849aafa-d7d5-4d59-94c2-152490534fe8\n5328dc0f-e2a2-45e6-9e99-ebdead7dd924\n534b7974-66aa-47e2-bc57-5adcfd3406c4\n571e775c-17ce-475f-9df4-51c4709e2f33\n5df1e284-4359-4896-bf70-7ac6d832b097\n62fcfb0b-a8e9-4eff-b546-4b2810190a0b\n6ea16e49-36f0-49ce-b93b-1b703967dcd0\n766735d8-eab4-44cf-a061-b7171bd4e0e6\n8ce742a5-a22f-452e-891d-b282bc75cf4f\n97c62d4b-aa48-4db4-ade0-2028efa3b2ef\n9850a7ca-db1b-4ef1-89d8-21bf5c72dbdc\na041b78b-1623-4ec7-aa68-64628b0301a2\na0a07c7c-d411-4b16-b8ea-7c5827cac14f\na164c553-09ca-4797-9dc0-4b57ec4d30e9\na38f20cb-1116-4d3b-bbc2-753a7789eacc\nba11af68-418d-45f6-b779-ff8d916543f8\nc2563bdb-9e98-45d5-b915-51923a48873a\nccf1ed01-07cf-461a-a84d-b7662574ea28\ncdae807d-b4f2-43e8-9bfb-5103fccd48f8\nce0fa275-2730-4b7d-adae-4251a87912af\ne5c1bcd4-3fb1-4715-94a3-b4277ee45206\nf53f7a5b-9531-49d4-b8a6-452b3a47ba49\n\n<b>Ongoing actions :</b> Our technical teams are still working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "d8rnrnx96fnp",
+          "created_at": "2024-06-29T23:25:53.868Z",
+          "updated_at": "2024-06-29T23:25:53.868Z",
+          "display_at": "2024-06-29T23:25:53.868Z",
+          "affected_components": [
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tmb24rz65c22",
+          "status": "identified",
+          "body": "<b>Start time :</b> 29/06/2024 21:50 UTC \n<b>Service impact :</b> Some instances might be temporarily unreachable and some of them might experience data loss:\n    \nList of impacted instances:\n        \n031dfb72-13be-48ff-b080-e3dd736afc0b\n0df66011-577b-414f-9784-9a0f1ec71cfa\n2f5f0cfc-c25b-4db8-879c-b0dbdb235cb8\n35c9857e-a275-45ae-ac5b-b19fab80a9a6\n3a4cfd46-0fbe-49f0-9d9f-00f08b56fea1\n5df1e284-4359-4896-bf70-7ac6d832b097\n62fcfb0b-a8e9-4eff-b546-4b2810190a0b\n6ea16e49-36f0-49ce-b93b-1b703967dcd0\n8ce742a5-a22f-452e-891d-b282bc75cf4f\n97c62d4b-aa48-4db4-ade0-2028efa3b2ef\n9850a7ca-db1b-4ef1-89d8-21bf5c72dbdc\na041b78b-1623-4ec7-aa68-64628b0301a2\na164c553-09ca-4797-9dc0-4b57ec4d30e9\na38f20cb-1116-4d3b-bbc2-753a7789eacc\nccf1ed01-07cf-461a-a84d-b7662574ea28\ncdae807d-b4f2-43e8-9bfb-5103fccd48f8\nce0fa275-2730-4b7d-adae-4251a87912af\n\n<b>Root cause :</b> Hardware issue\n<b>Ongoing actions :</b> Our technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "d8rnrnx96fnp",
+          "created_at": "2024-06-29T23:11:33.860Z",
+          "updated_at": "2024-06-29T23:11:33.860Z",
+          "display_at": "2024-06-29T23:11:33.860Z",
+          "affected_components": [
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zs3y56j48ngk",
+          "status": "investigating",
+          "body": "We have detected an issue on our infrastructure.\n\nSome VPS instances might be temporarily unreachable and some of them might experience data loss:\n    \nList of impacted instances:\n        \n031dfb72-13be-48ff-b080-e3dd736afc0b\n0df66011-577b-414f-9784-9a0f1ec71cfa\n2f5f0cfc-c25b-4db8-879c-b0dbdb235cb8\n35c9857e-a275-45ae-ac5b-b19fab80a9a6\n3a4cfd46-0fbe-49f0-9d9f-00f08b56fea1\n5df1e284-4359-4896-bf70-7ac6d832b097\n62fcfb0b-a8e9-4eff-b546-4b2810190a0b\n6ea16e49-36f0-49ce-b93b-1b703967dcd0\n8ce742a5-a22f-452e-891d-b282bc75cf4f\n97c62d4b-aa48-4db4-ade0-2028efa3b2ef\n9850a7ca-db1b-4ef1-89d8-21bf5c72dbdc\na041b78b-1623-4ec7-aa68-64628b0301a2\na164c553-09ca-4797-9dc0-4b57ec4d30e9\na38f20cb-1116-4d3b-bbc2-753a7789eacc\nccf1ed01-07cf-461a-a84d-b7662574ea28\ncdae807d-b4f2-43e8-9bfb-5103fccd48f8\nce0fa275-2730-4b7d-adae-4251a87912af\n\n We will update informations when we will have more détails",
+          "incident_id": "d8rnrnx96fnp",
+          "created_at": "2024-06-29T23:08:20.777Z",
+          "updated_at": "2024-06-29T23:08:20.777Z",
+          "display_at": "2024-06-29T23:08:20.777Z",
+          "affected_components": [
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2k4xnh0pwlqx",
+          "name": "GRA3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:50.709Z",
+          "updated_at": "2024-06-29T23:08:20.721Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "64zbqfvwvz74",
@@ -5884,9 +5978,9 @@
         {
           "id": "2k4xnh0pwlqx",
           "name": "GRA3",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2022-04-06T09:35:50.709Z",
-          "updated_at": "2024-06-10T20:29:21.572Z",
+          "updated_at": "2024-06-29T23:08:20.721Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -6037,7 +6131,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
