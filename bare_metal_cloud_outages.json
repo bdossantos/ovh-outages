@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-01T18:15:10.560Z"
+    "updated_at": "2024-07-02T04:28:09.343Z"
   },
   "components": [
     {
@@ -1186,9 +1186,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2024-06-24T19:49:29.298Z",
+      "updated_at": "2024-07-02T04:28:09.297Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1366,7 +1366,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2590,7 +2590,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "x2fwvz1t88mn",
+      "name": "[GRA2][Dedicated Servers] - Rack G215B11",
+      "status": "identified",
+      "created_at": "2024-07-02T04:28:09.272Z",
+      "updated_at": "2024-07-02T04:28:09.341Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/qyj3q3nypk28",
+      "started_at": "2024-07-02T04:28:09.266Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vk811460l7qz",
+          "status": "identified",
+          "body": "<b>Start time :</b> 02/07/2024 04:30 UTC\n<b>Service impact :</b> Public switch unstable\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it. \nUpdate will be posted as significant progress is made.",
+          "incident_id": "x2fwvz1t88mn",
+          "created_at": "2024-07-02T04:28:09.339Z",
+          "updated_at": "2024-07-02T04:28:09.339Z",
+          "display_at": "2024-07-02T04:28:09.339Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2024-07-02T04:28:09.297Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "x4gt7h4yjd5j",
@@ -3056,7 +3110,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
