@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-03T01:00:02.243Z"
+    "updated_at": "2024-07-03T03:11:03.239Z"
   },
   "components": [
     {
@@ -553,9 +553,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2024-02-28T06:15:53.917Z",
+      "updated_at": "2024-07-03T03:05:42.819Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2590,7 +2590,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ryk8yhdw4gy7",
+      "name": "[ERI][Dedicated Servers] - E101F15 - E102E02",
+      "status": "investigating",
+      "created_at": "2024-07-03T03:05:42.781Z",
+      "updated_at": "2024-07-03T03:05:42.884Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/gx4qknw490f4",
+      "started_at": "2024-07-03T03:05:42.773Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "t7ddcffkn6tz",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 03/07/2024 02:52 UTC\n<b>Service impact :</b> Some servers in rack E101F15 are currently unreachable, those in rack E102E02 are back up and running.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "ryk8yhdw4gy7",
+          "created_at": "2024-07-03T03:05:42.881Z",
+          "updated_at": "2024-07-03T03:05:42.881Z",
+          "display_at": "2024-07-03T03:05:42.881Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2024-07-03T03:05:42.819Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wtrfp26kfgyf",
@@ -2945,90 +2999,10 @@
       ],
       "scheduled_for": "2024-09-10T08:30:00.000Z",
       "scheduled_until": "2024-09-10T08:45:00.000Z"
-    },
-    {
-      "id": "c3p6544j4lch",
-      "name": "[RBX8][Network] - Network equipment maintenance notification",
-      "status": "in_progress",
-      "created_at": "2024-06-27T18:24:14.785Z",
-      "updated_at": "2024-07-03T01:00:02.230Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hg68b8wx5l7j",
-      "started_at": "2024-06-27T18:24:14.778Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "jmm548nyw025",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "c3p6544j4lch",
-          "created_at": "2024-07-03T01:00:02.227Z",
-          "updated_at": "2024-07-03T01:00:02.227Z",
-          "display_at": "2024-07-03T01:00:02.227Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "53zv9dchc9s3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "c3p6544j4lch",
-          "created_at": "2024-07-03T00:00:02.601Z",
-          "updated_at": "2024-07-03T00:00:02.601Z",
-          "display_at": "2024-07-03T00:00:02.601Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "smpjgfpyv8kn",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 03/07/2024 01:00 UTC\n<b>End time :</b> 03/07/2024 04:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to do a maintenance on multiple network equipment.\n\nThank you for your understanding.",
-          "incident_id": "c3p6544j4lch",
-          "created_at": "2024-06-27T18:24:14.833Z",
-          "updated_at": "2024-06-27T18:24:14.833Z",
-          "display_at": "2024-06-27T18:24:14.833Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-07-01T10:15:17.424Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-07-03T01:00:00.000Z",
-      "scheduled_until": "2024-07-03T04:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
