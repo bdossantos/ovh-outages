@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-04T06:00:07.530Z"
+    "updated_at": "2024-07-04T07:00:02.357Z"
   },
   "components": [
     {
@@ -1087,9 +1087,9 @@
     {
       "id": "rhyk4h7wh3dc",
       "name": "Cluster005",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2023-07-18T08:35:33.492Z",
-      "updated_at": "2024-06-18T05:48:13.665Z",
+      "updated_at": "2024-07-04T07:00:02.188Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2277,9 +2277,9 @@
     {
       "id": "nmwn56xx25yd",
       "name": "Cluster026",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:15.465Z",
-      "updated_at": "2024-06-18T05:48:13.844Z",
+      "updated_at": "2024-07-04T07:00:02.239Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2727,7 +2727,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2023-05-16T12:04:59.797Z",
       "position": 29,
@@ -2842,11 +2842,65 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "f2qfnm2fzq1j",
+      "name": "[FR][VoIP] - SBC interconnection update",
+      "status": "scheduled",
+      "created_at": "2024-07-03T20:22:51.093Z",
+      "updated_at": "2024-07-03T20:22:51.154Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qp7jh7mqtrr6",
+      "started_at": "2024-07-03T20:22:51.086Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "z2sws12vkfv6",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our VoIP offer. \n\n<b>Start time :</b> 10/07/2024 19:00 UTC \n<b>End time :</b> 10/07/2024 21:00 UTC  \n<b>Service impact :</b> None\n<b>Service improvement :</b> Our teams will update our SBC interconnection servers to introduce new features following the evolution of French regulations.\n\nThank you for your understanding.",
+          "incident_id": "f2qfnm2fzq1j",
+          "created_at": "2024-07-03T20:22:51.152Z",
+          "updated_at": "2024-07-03T20:22:51.152Z",
+          "display_at": "2024-07-03T20:22:51.152Z",
+          "affected_components": [
+            {
+              "code": "9wqkcnmxzstb",
+              "name": "VoIP || Interconnect - France",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9wqkcnmxzstb",
+          "name": "France",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:44.296Z",
+          "updated_at": "2024-04-02T11:14:20.664Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-07-10T19:00:00.000Z",
+      "scheduled_until": "2024-07-10T21:00:00.000Z"
+    },
+    {
       "id": "d8xjfbvnslml",
       "name": "[GRA][Web Hosting] - Cluster005 server2127 - cluster026 server1992",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2024-06-27T08:24:35.967Z",
-      "updated_at": "2024-07-04T06:00:07.522Z",
+      "updated_at": "2024-07-04T07:00:02.346Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2854,6 +2908,32 @@
       "started_at": "2024-06-27T08:24:35.960Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "cjxfshy9wh95",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "d8xjfbvnslml",
+          "created_at": "2024-07-04T07:00:02.343Z",
+          "updated_at": "2024-07-04T07:00:02.343Z",
+          "display_at": "2024-07-04T07:00:02.343Z",
+          "affected_components": [
+            {
+              "code": "rhyk4h7wh3dc",
+              "name": "Web Hosting || Datacenter GRA - Cluster005",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "nmwn56xx25yd",
+              "name": "Web Hosting || Datacenter GRA - Cluster026",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "kmx7f5699v85",
           "status": "scheduled",
@@ -2924,9 +3004,9 @@
         {
           "id": "rhyk4h7wh3dc",
           "name": "Cluster005",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2023-07-18T08:35:33.492Z",
-          "updated_at": "2024-06-18T05:48:13.665Z",
+          "updated_at": "2024-07-04T07:00:02.188Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2939,9 +3019,9 @@
         {
           "id": "nmwn56xx25yd",
           "name": "Cluster026",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-06-30T12:19:15.465Z",
-          "updated_at": "2024-06-18T05:48:13.844Z",
+          "updated_at": "2024-07-04T07:00:02.239Z",
           "position": 20,
           "description": null,
           "showcase": false,
@@ -2954,60 +3034,6 @@
       ],
       "scheduled_for": "2024-07-04T07:00:00.000Z",
       "scheduled_until": "2024-07-04T08:30:00.000Z"
-    },
-    {
-      "id": "f2qfnm2fzq1j",
-      "name": "[FR][VoIP] - SBC interconnection update",
-      "status": "scheduled",
-      "created_at": "2024-07-03T20:22:51.093Z",
-      "updated_at": "2024-07-03T20:22:51.154Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qp7jh7mqtrr6",
-      "started_at": "2024-07-03T20:22:51.086Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "z2sws12vkfv6",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our VoIP offer. \n\n<b>Start time :</b> 10/07/2024 19:00 UTC \n<b>End time :</b> 10/07/2024 21:00 UTC  \n<b>Service impact :</b> None\n<b>Service improvement :</b> Our teams will update our SBC interconnection servers to introduce new features following the evolution of French regulations.\n\nThank you for your understanding.",
-          "incident_id": "f2qfnm2fzq1j",
-          "created_at": "2024-07-03T20:22:51.152Z",
-          "updated_at": "2024-07-03T20:22:51.152Z",
-          "display_at": "2024-07-03T20:22:51.152Z",
-          "affected_components": [
-            {
-              "code": "9wqkcnmxzstb",
-              "name": "VoIP || Interconnect - France",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "9wqkcnmxzstb",
-          "name": "France",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:44.296Z",
-          "updated_at": "2024-04-02T11:14:20.664Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "xzvp84m353hd",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-07-10T19:00:00.000Z",
-      "scheduled_until": "2024-07-10T21:00:00.000Z"
     },
     {
       "id": "ccwhhnrbnbtr",
@@ -3118,7 +3144,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
