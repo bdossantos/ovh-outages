@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-04T22:43:03.532Z"
+    "updated_at": "2024-07-04T23:50:40.974Z"
   },
   "components": [
     {
@@ -25,9 +25,9 @@
     {
       "id": "nr0vltd8cnk0",
       "name": "Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:45.110Z",
-      "updated_at": "2024-07-04T21:09:38.712Z",
+      "updated_at": "2024-07-04T23:50:40.927Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1336,9 +1336,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2024-07-04T21:09:38.726Z",
+      "updated_at": "2024-07-04T23:50:40.937Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2224,7 +2224,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2024-03-13T08:37:11.284Z",
       "position": 27,
@@ -2306,7 +2306,82 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "7xd9bph7ts4b",
+      "name": "[RBX8][Vmware] - R821L17",
+      "status": "investigating",
+      "created_at": "2024-07-04T23:50:40.905Z",
+      "updated_at": "2024-07-04T23:50:40.972Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/f3qhjmbnl15p",
+      "started_at": "2024-07-04T23:50:40.898Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "r3335ksxh30t",
+          "status": "investigating",
+          "body": "<b>Start time:</b>  04/07/2024  23:45 UTC\n<b>User impact :</b>Some users are unable to reach their storage units and hosts are disconnected.\n<b>Ongoing Actions:</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "7xd9bph7ts4b",
+          "created_at": "2024-07-04T23:50:40.970Z",
+          "updated_at": "2024-07-04T23:50:40.970Z",
+          "display_at": "2024-07-04T23:50:40.970Z",
+          "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "VMware Private Cloud || RBX - Network",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2024-07-04T23:50:40.927Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wmdgjs35n52m",
@@ -2988,9 +3063,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3057,9 +3132,9 @@
         {
           "id": "nr0vltd8cnk0",
           "name": "Network",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:45.110Z",
-          "updated_at": "2024-07-04T21:09:38.712Z",
+          "updated_at": "2024-07-04T23:50:40.927Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3131,9 +3206,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3239,9 +3314,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3293,9 +3368,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3347,9 +3422,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3401,9 +3476,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3455,9 +3530,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3575,9 +3650,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3659,9 +3734,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-07-04T21:09:38.726Z",
+          "updated_at": "2024-07-04T23:50:40.937Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -4578,7 +4653,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
