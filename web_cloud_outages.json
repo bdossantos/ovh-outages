@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-18T13:28:33.049Z"
+    "updated_at": "2024-07-18T13:43:11.184Z"
   },
   "components": [
     {
@@ -3024,11 +3024,140 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "dbk1trwrjwcj",
+      "name": "[GRA7][WebPaaS] - Routine accounts maintenance",
+      "status": "scheduled",
+      "created_at": "2024-07-18T13:28:32.981Z",
+      "updated_at": "2024-07-18T13:28:33.047Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tqf32wc7bylx",
+      "started_at": "2024-07-18T13:28:32.974Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "4s8jrc2ghqsv",
+          "status": "scheduled",
+          "body": "<b>Start time :</b> 22/07/2024 03:00 UTC \n<b>End time :</b> 22/07/2024 04:00 UTC \n<b>Service impact :</b> All projects and environments will continue to function during the upgrade. Our partner will be performing a routine maintenance to release the latest features, bug fixes and performance updates.This will impact at one point, a short downtime of no more than 10 minutes. Integrations and webhooks may fail during the maintenance, and you may notice increased deployment times. \n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on account service.",
+          "incident_id": "dbk1trwrjwcj",
+          "created_at": "2024-07-18T13:28:33.044Z",
+          "updated_at": "2024-07-18T13:28:33.044Z",
+          "display_at": "2024-07-18T13:28:33.044Z",
+          "affected_components": [
+            {
+              "code": "cljxz1bqnkyx",
+              "name": "Web PaaS || GRA - GRA7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cljxz1bqnkyx",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2021-11-23T11:02:45.256Z",
+          "updated_at": "2024-07-17T23:06:25.919Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-23",
+          "group_id": "dc34f7wx9y5b",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-07-22T03:00:00.000Z",
+      "scheduled_until": "2024-07-22T04:00:00.000Z"
+    },
+    {
+      "id": "fy4yqsjryrx3",
+      "name": "[GRA2][Web Hosting] - logs Cluster010 - Cluster028",
+      "status": "scheduled",
+      "created_at": "2024-07-10T20:38:47.651Z",
+      "updated_at": "2024-07-10T20:38:47.698Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vnkqsgrz17h4",
+      "started_at": "2024-07-10T20:38:47.640Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "yggn2h539pyf",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Web Hosting offer. \n\n<b>Start time :</b> 22/07/2024 07:00 UTC \n<b>End time :</b> 22/07/2024 11:00 UTC \n<b>Service impact :</b> Access to logs won't be possible for 60 minutes during this maintenance.\n<b>Service improvement  :</b> We are going to update the log servers (web hosting servers) to a newer and more stable version.\nThe goal of this maintenance is to improve the performance and enhance the security of our infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "fy4yqsjryrx3",
+          "created_at": "2024-07-10T20:38:47.696Z",
+          "updated_at": "2024-07-10T20:38:47.696Z",
+          "display_at": "2024-07-10T20:38:47.696Z",
+          "affected_components": [
+            {
+              "code": "dcncwng7gqrg",
+              "name": "Web Hosting || Datacenter GRA - Cluster010",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ldk30y5ms379",
+              "name": "Web Hosting || Datacenter GRA - Cluster028",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dcncwng7gqrg",
+          "name": "Cluster010",
+          "status": "operational",
+          "created_at": "2022-09-17T11:27:18.138Z",
+          "updated_at": "2024-07-16T23:23:02.856Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-09-17",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ldk30y5ms379",
+          "name": "Cluster028",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:16.700Z",
+          "updated_at": "2024-07-18T13:14:25.741Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-07-22T07:00:00.000Z",
+      "scheduled_until": "2024-07-22T11:00:00.000Z"
+    },
+    {
       "id": "0qt7xbkk4fs5",
       "name": "[GRA][Web Hosting] - Network equipment maintenance",
       "status": "scheduled",
       "created_at": "2024-07-17T15:36:22.859Z",
-      "updated_at": "2024-07-17T15:36:22.958Z",
+      "updated_at": "2024-07-18T13:36:54.443Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3036,6 +3165,200 @@
       "started_at": "2024-07-17T15:36:22.809Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "94cr3gvm1fmy",
+          "status": "scheduled",
+          "body": "The current maintenance has been re-scheduled.\nBelow you can find the new schedule of the operation.\n\n<b>Start time :</b> 22/07/2024 20:00 UTC \n<b>End time :</b> 23/07/2024 00:00 UTC",
+          "incident_id": "0qt7xbkk4fs5",
+          "created_at": "2024-07-18T13:36:44.550Z",
+          "updated_at": "2024-07-18T13:36:44.550Z",
+          "display_at": "2024-07-18T13:36:44.550Z",
+          "affected_components": [
+            {
+              "code": "7v4fv1n8kbtk",
+              "name": "Web Hosting || Datacenter GRA - Cluster001",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "wctbybd9fpts",
+              "name": "Web Hosting || Datacenter GRA - Cluster002",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "gl3xpsrcq36n",
+              "name": "Web Hosting || Datacenter GRA - Cluster003",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rhyk4h7wh3dc",
+              "name": "Web Hosting || Datacenter GRA - Cluster005",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "m635cyjtprmy",
+              "name": "Web Hosting || Datacenter GRA - Cluster006",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "dcncwng7gqrg",
+              "name": "Web Hosting || Datacenter GRA - Cluster010",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hfl47zm4cfwg",
+              "name": "Web Hosting || Datacenter GRA - Cluster011",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "zdn0dn7v9wls",
+              "name": "Web Hosting || Datacenter GRA - Cluster012",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3k7dn6gxvsnm",
+              "name": "Web Hosting || Datacenter GRA - Cluster013",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jcsss8yjjdmg",
+              "name": "Web Hosting || Datacenter GRA - Cluster014",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bdckwb2s8vy4",
+              "name": "Web Hosting || Datacenter GRA - Cluster015",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7z8djkv5f45j",
+              "name": "Web Hosting || Datacenter GRA - Cluster017",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g8pxlmsr607d",
+              "name": "Web Hosting || Datacenter GRA - Cluster020",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "2nj4zgpbrc8q",
+              "name": "Web Hosting || Datacenter GRA - Cluster021",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5k9vgkd5jjht",
+              "name": "Web Hosting || Datacenter GRA - Cluster022",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nfpr6w6674vw",
+              "name": "Web Hosting || Datacenter GRA - Cluster023",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3v97r17r3wpj",
+              "name": "Web Hosting || Datacenter GRA - Cluster024",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kz5znl7lm10r",
+              "name": "Web Hosting || Datacenter GRA - Cluster025",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nmwn56xx25yd",
+              "name": "Web Hosting || Datacenter GRA - Cluster026",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "mcpg574l0k6w",
+              "name": "Web Hosting || Datacenter GRA - Cluster027",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ldk30y5ms379",
+              "name": "Web Hosting || Datacenter GRA - Cluster028",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r2sxl24hfy9w",
+              "name": "Web Hosting || Datacenter GRA - Cluster029",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "kd99p0p9dcnc",
+              "name": "Web Hosting || Datacenter GRA - Cluster030",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "11z8y8f8wr9z",
+              "name": "Web Hosting || Datacenter GRA - Cluster031",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bt8h2ny4r22v",
+              "name": "Web Hosting || Datacenter GRA - Cluster033",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "v9jy2n4mfc4q",
+              "name": "Web Hosting || Datacenter GRA - Cluster060",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "z18p3rdlt2gx",
+              "name": "Web Hosting || Datacenter GRA - Cluster090",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "9nmddb02w9nq",
+              "name": "Web Hosting || Datacenter GRA - Cluster100",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "c824v623bcwc",
+              "name": "Web Hosting || Datacenter GRA - Redirect",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5rnlg0q0x6cw",
           "status": "scheduled",
@@ -3683,137 +4006,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-07-18T20:00:00.000Z",
-      "scheduled_until": "2024-07-19T00:00:00.000Z"
-    },
-    {
-      "id": "dbk1trwrjwcj",
-      "name": "[GRA7][WebPaaS] - Routine accounts maintenance",
-      "status": "scheduled",
-      "created_at": "2024-07-18T13:28:32.981Z",
-      "updated_at": "2024-07-18T13:28:33.047Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/tqf32wc7bylx",
-      "started_at": "2024-07-18T13:28:32.974Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "4s8jrc2ghqsv",
-          "status": "scheduled",
-          "body": "<b>Start time :</b> 22/07/2024 03:00 UTC \n<b>End time :</b> 22/07/2024 04:00 UTC \n<b>Service impact :</b> All projects and environments will continue to function during the upgrade. Our partner will be performing a routine maintenance to release the latest features, bug fixes and performance updates.This will impact at one point, a short downtime of no more than 10 minutes. Integrations and webhooks may fail during the maintenance, and you may notice increased deployment times. \n<b>Service improvement :</b> Our partner communicated to OVHCloud that they will be doing a routine maintenance on account service.",
-          "incident_id": "dbk1trwrjwcj",
-          "created_at": "2024-07-18T13:28:33.044Z",
-          "updated_at": "2024-07-18T13:28:33.044Z",
-          "display_at": "2024-07-18T13:28:33.044Z",
-          "affected_components": [
-            {
-              "code": "cljxz1bqnkyx",
-              "name": "Web PaaS || GRA - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cljxz1bqnkyx",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2021-11-23T11:02:45.256Z",
-          "updated_at": "2024-07-17T23:06:25.919Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-23",
-          "group_id": "dc34f7wx9y5b",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-07-22T03:00:00.000Z",
-      "scheduled_until": "2024-07-22T04:00:00.000Z"
-    },
-    {
-      "id": "fy4yqsjryrx3",
-      "name": "[GRA2][Web Hosting] - logs Cluster010 - Cluster028",
-      "status": "scheduled",
-      "created_at": "2024-07-10T20:38:47.651Z",
-      "updated_at": "2024-07-10T20:38:47.698Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vnkqsgrz17h4",
-      "started_at": "2024-07-10T20:38:47.640Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "yggn2h539pyf",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Web Hosting offer. \n\n<b>Start time :</b> 22/07/2024 07:00 UTC \n<b>End time :</b> 22/07/2024 11:00 UTC \n<b>Service impact :</b> Access to logs won't be possible for 60 minutes during this maintenance.\n<b>Service improvement  :</b> We are going to update the log servers (web hosting servers) to a newer and more stable version.\nThe goal of this maintenance is to improve the performance and enhance the security of our infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "fy4yqsjryrx3",
-          "created_at": "2024-07-10T20:38:47.696Z",
-          "updated_at": "2024-07-10T20:38:47.696Z",
-          "display_at": "2024-07-10T20:38:47.696Z",
-          "affected_components": [
-            {
-              "code": "dcncwng7gqrg",
-              "name": "Web Hosting || Datacenter GRA - Cluster010",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ldk30y5ms379",
-              "name": "Web Hosting || Datacenter GRA - Cluster028",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "dcncwng7gqrg",
-          "name": "Cluster010",
-          "status": "operational",
-          "created_at": "2022-09-17T11:27:18.138Z",
-          "updated_at": "2024-07-16T23:23:02.856Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-09-17",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ldk30y5ms379",
-          "name": "Cluster028",
-          "status": "operational",
-          "created_at": "2021-06-30T12:19:16.700Z",
-          "updated_at": "2024-07-18T13:14:25.741Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-07-22T07:00:00.000Z",
-      "scheduled_until": "2024-07-22T11:00:00.000Z"
+      "scheduled_for": "2024-07-22T20:00:00.000Z",
+      "scheduled_until": "2024-07-23T00:00:00.000Z"
     },
     {
       "id": "c03ttszk291m",
