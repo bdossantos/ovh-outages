@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-21T13:31:54.927Z"
+    "updated_at": "2024-07-21T14:27:51.034Z"
   },
   "components": [
     {
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1186,9 +1186,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2024-07-21T11:49:24.002Z",
+      "updated_at": "2024-07-21T14:17:26.975Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1321,9 +1321,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-07-20T01:23:47.370Z",
+      "updated_at": "2024-07-21T14:27:50.648Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1366,7 +1366,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2592,90 +2592,30 @@
   ],
   "incidents": [
     {
-      "id": "lv6xgpwgxlny",
-      "name": "[GRA2][Dedicated Servers/Public Network] - Rack G243B09",
-      "status": "identified",
-      "created_at": "2024-07-21T11:49:23.966Z",
-      "updated_at": "2024-07-21T13:31:54.918Z",
-      "monitoring_at": "2024-07-21T12:17:56.138Z",
+      "id": "cjkxfr4zh0v4",
+      "name": "[RBX2][Dedicated Servers] - 22C10",
+      "status": "investigating",
+      "created_at": "2024-07-21T14:27:50.619Z",
+      "updated_at": "2024-07-21T14:27:51.032Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/pk9z5hk4ynbq",
-      "started_at": "2024-07-21T11:49:23.958Z",
+      "shortlink": "https://stspg.io/k920dwb3kxkg",
+      "started_at": "2024-07-21T14:27:50.612Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "g4bfhlbhw533",
-          "status": "identified",
-          "body": "Our team needs to reload a network device, the servers will be unreachable during the reload.",
-          "incident_id": "lv6xgpwgxlny",
-          "created_at": "2024-07-21T13:31:54.915Z",
-          "updated_at": "2024-07-21T13:31:54.915Z",
-          "display_at": "2024-07-21T13:31:54.915Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "78p4yspthp14",
-          "status": "monitoring",
-          "body": "A fix has been implemented and we are monitoring the results.",
-          "incident_id": "lv6xgpwgxlny",
-          "created_at": "2024-07-21T12:17:56.138Z",
-          "updated_at": "2024-07-21T12:17:56.138Z",
-          "display_at": "2024-07-21T12:17:56.138Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vg50m7jqzxbs",
-          "status": "identified",
-          "body": "The issue has been identified and a fix is being implemented.",
-          "incident_id": "lv6xgpwgxlny",
-          "created_at": "2024-07-21T12:10:17.894Z",
-          "updated_at": "2024-07-21T12:10:17.894Z",
-          "display_at": "2024-07-21T12:10:17.894Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f8zknh1zmdqc",
+          "id": "fzkk9sx4mhx5",
           "status": "investigating",
-          "body": "<b>Start time :</b> 21/07/2024 11:29 UTC\n<b>Service impact :</b> Public network is unreachable in the rack G243B09\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
-          "incident_id": "lv6xgpwgxlny",
-          "created_at": "2024-07-21T11:49:24.058Z",
-          "updated_at": "2024-07-21T11:52:15.347Z",
-          "display_at": "2024-07-21T11:49:24.000Z",
+          "body": "<b>Start time :</b> 21/07/2024 14:20 UTC \n<b>Service impact :</b> A significant number of servers in the rack 22C10 are no longer responding.\n<b>Root cause :</b> Electrical Disjunction\n<b>Ongoing actions :</b> Our team is working to fix the issue.",
+          "incident_id": "cjkxfr4zh0v4",
+          "created_at": "2024-07-21T14:27:51.030Z",
+          "updated_at": "2024-07-21T14:27:51.030Z",
+          "display_at": "2024-07-21T14:27:51.030Z",
           "affected_components": [
             {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2687,22 +2627,22 @@
       ],
       "components": [
         {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2024-07-21T11:49:24.002Z",
-          "position": 4,
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-07-21T14:27:50.648Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": "[]"
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -2798,9 +2738,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2024-07-21T11:49:24.002Z",
+          "updated_at": "2024-07-21T14:17:26.975Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2852,9 +2792,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2024-07-21T11:49:24.002Z",
+          "updated_at": "2024-07-21T14:17:26.975Z",
           "position": 4,
           "description": null,
           "showcase": false,
