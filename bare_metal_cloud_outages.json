@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-07-28T21:37:57.392Z"
+    "updated_at": "2024-07-28T23:49:17.543Z"
   },
   "components": [
     {
@@ -1366,7 +1366,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1880,9 +1880,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2024-07-27T11:37:22.817Z",
+      "updated_at": "2024-07-28T23:45:50.176Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2590,7 +2590,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "n7gvwjqspmy6",
+      "name": "[RBX8][Dedicated Servers] - Rack R809R08",
+      "status": "identified",
+      "created_at": "2024-07-28T23:45:50.149Z",
+      "updated_at": "2024-07-28T23:49:17.528Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/tm4z8xggyp5v",
+      "started_at": "2024-07-28T23:45:50.143Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "kp4pgvbcg90k",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "n7gvwjqspmy6",
+          "created_at": "2024-07-28T23:49:17.525Z",
+          "updated_at": "2024-07-28T23:49:17.525Z",
+          "display_at": "2024-07-28T23:49:17.525Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w37nb7zbnwjg",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 28/07/2024 23:38 UTC\n<b>Service impact :</b> vRack network are temporarily unavailable on servers in rack R809R08\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "n7gvwjqspmy6",
+          "created_at": "2024-07-28T23:45:50.222Z",
+          "updated_at": "2024-07-28T23:45:50.222Z",
+          "display_at": "2024-07-28T23:45:50.222Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2024-07-28T23:45:50.176Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "j13zsff8x3yf",
@@ -3259,7 +3333,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
