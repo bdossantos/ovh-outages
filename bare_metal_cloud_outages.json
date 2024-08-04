@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-04T09:43:01.237Z"
+    "updated_at": "2024-08-04T16:22:01.199Z"
   },
   "components": [
     {
@@ -838,9 +838,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-08-04T09:13:09.333Z",
+      "updated_at": "2024-08-04T16:19:11.897Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2590,7 +2590,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0d72nyrrywqw",
+      "name": "[GRA3][Dedicated Servers] - Rack GRA0321A05B",
+      "status": "identified",
+      "created_at": "2024-08-04T16:19:11.857Z",
+      "updated_at": "2024-08-04T16:22:01.191Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/5pn579b9cgs1",
+      "started_at": "2024-08-04T16:19:11.848Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "phv0qm1h1015",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "0d72nyrrywqw",
+          "created_at": "2024-08-04T16:22:01.189Z",
+          "updated_at": "2024-08-04T16:22:01.189Z",
+          "display_at": "2024-08-04T16:22:01.189Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gm6rzn7lkm1f",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 04/08/2024 13:30 UTC\n<b>Service impact :</b> Some of servers in the rack GRA0321A05B are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "0d72nyrrywqw",
+          "created_at": "2024-08-04T16:19:12.020Z",
+          "updated_at": "2024-08-04T16:20:38.780Z",
+          "display_at": "2024-08-04T16:19:12.000Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-08-04T16:19:11.897Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "nw5vccxmj2y5",
@@ -2845,9 +2919,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2024-08-04T09:13:09.333Z",
+          "updated_at": "2024-08-04T16:19:11.897Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3663,7 +3737,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
