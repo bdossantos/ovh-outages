@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-09T00:33:38.736Z"
+    "updated_at": "2024-08-09T02:11:52.339Z"
   },
   "components": [
     {
@@ -1186,9 +1186,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2024-08-08T23:23:46.667Z",
+      "updated_at": "2024-08-09T02:11:52.276Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1366,7 +1366,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2591,6 +2591,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "rt79840nkbfn",
+      "name": "[GRA1][Dedicated Servers] - Rack G116A11",
+      "status": "identified",
+      "created_at": "2024-08-09T02:11:52.238Z",
+      "updated_at": "2024-08-09T02:11:52.335Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/qdx2cxphcvfj",
+      "started_at": "2024-08-09T02:11:52.229Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "lmpymjfffndg",
+          "status": "identified",
+          "body": "<b>Start time :</b> 09/08/2024 02:00 UTC \n<b>Service impact :</b> Public network is temporarily unavailable for servers in rack G116A11\n<b>Root cause :</b> A network equipment caused the incident\n<b>Ongoing actions :</b> Our technical teams are currently working to solve the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "rt79840nkbfn",
+          "created_at": "2024-08-09T02:11:52.332Z",
+          "updated_at": "2024-08-09T02:11:52.332Z",
+          "display_at": "2024-08-09T02:11:52.332Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2024-08-09T02:11:52.276Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "hvn31qks30qk",
       "name": "[BHS6][Baremetal] - Baremetal servers incident notification",
@@ -4156,7 +4209,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
