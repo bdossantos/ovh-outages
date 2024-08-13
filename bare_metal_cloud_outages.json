@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-13T07:35:30.039Z"
+    "updated_at": "2024-08-13T10:54:03.453Z"
   },
   "components": [
     {
@@ -493,9 +493,9 @@
     {
       "id": "zmsctzv6l4w7",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:33.951Z",
-      "updated_at": "2024-07-30T18:16:33.394Z",
+      "updated_at": "2024-08-13T10:45:43.328Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -838,9 +838,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-08-13T05:44:15.810Z",
+      "updated_at": "2024-08-13T10:53:47.673Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2511,7 +2511,7 @@
     {
       "id": "3ygk7lc032zm",
       "name": "Virtual Private Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:40.895Z",
       "updated_at": "2023-08-01T15:50:47.411Z",
       "position": 20,
@@ -2596,7 +2596,7 @@
       "name": "[GRA1][Dedicated Servers] - G132B02",
       "status": "identified",
       "created_at": "2024-08-12T15:46:47.742Z",
-      "updated_at": "2024-08-13T05:31:26.440Z",
+      "updated_at": "2024-08-13T10:54:03.444Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2604,6 +2604,46 @@
       "started_at": "2024-08-12T15:46:47.733Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "hqbg30yg1w24",
+          "status": "identified",
+          "body": "A significant number of servers in the rack G132B02 are available.\nWe are continuing to work on a fix for this issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "j7t63pml1512",
+          "created_at": "2024-08-13T10:54:03.441Z",
+          "updated_at": "2024-08-13T10:54:03.441Z",
+          "display_at": "2024-08-13T10:54:03.441Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9trpf9r1mqkg",
+          "status": "investigating",
+          "body": "A significant number of servers in the rack G132B02 are available.\nWe are continuing to work on a fix for this issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "j7t63pml1512",
+          "created_at": "2024-08-13T10:53:47.723Z",
+          "updated_at": "2024-08-13T10:53:47.723Z",
+          "display_at": "2024-08-13T10:53:47.723Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "9ss02pk8czvv",
           "status": "identified",
@@ -2709,9 +2749,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2024-08-13T05:44:15.810Z",
+          "updated_at": "2024-08-13T10:53:47.673Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2723,6 +2763,59 @@
         }
       ],
       "reminder_intervals": "[]"
+    },
+    {
+      "id": "wtzzqf03hxc7",
+      "name": "[GRA2/GRA4][Virtual Private Servers] - Racks G122A15 - G122A14",
+      "status": "identified",
+      "created_at": "2024-08-13T10:45:43.296Z",
+      "updated_at": "2024-08-13T10:45:43.412Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/j59fvhqkjbff",
+      "started_at": "2024-08-13T10:45:43.289Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "0wdx48jvh00p",
+          "status": "identified",
+          "body": "<b>Start time :</b> 13/08/2024 09:15 UTC \n<b>Service impact :</b> Some VPS instances in racks G134A02 and G134A03 are temporarily unreachable.\n<b>Ongoing actions :</b> This incident was due to this maintenance : https://network.status-ovhcloud.com/incidents/fr6z3k6sjsxx\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "wtzzqf03hxc7",
+          "created_at": "2024-08-13T10:45:43.409Z",
+          "updated_at": "2024-08-13T10:45:43.409Z",
+          "display_at": "2024-08-13T10:45:43.409Z",
+          "affected_components": [
+            {
+              "code": "zmsctzv6l4w7",
+              "name": "Virtual Private Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zmsctzv6l4w7",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:33.951Z",
+          "updated_at": "2024-08-13T10:45:43.328Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "3ygk7lc032zm",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -3606,9 +3699,9 @@
         {
           "id": "zmsctzv6l4w7",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:32:33.951Z",
-          "updated_at": "2024-07-30T18:16:33.394Z",
+          "updated_at": "2024-08-13T10:45:43.328Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3744,7 +3837,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
