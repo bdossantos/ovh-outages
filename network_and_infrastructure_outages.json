@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-14T01:01:15.041Z"
+    "updated_at": "2024-08-14T05:00:06.827Z"
   },
   "components": [
     {
@@ -1024,6 +1024,59 @@
   ],
   "incidents": [
     {
+      "id": "80d6z7pdsdh5",
+      "name": "[DALLAS][Backbone] - Backbone incident notification",
+      "status": "investigating",
+      "created_at": "2024-08-14T04:51:57.707Z",
+      "updated_at": "2024-08-14T04:51:57.749Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4xxdvylqnq9p",
+      "started_at": "2024-08-14T04:51:57.702Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "84cb48z6x8yg",
+          "status": "investigating",
+          "body": "An incident is in progress on our Backbone infrastructure. It has temporarily affected the latency.\n\n\nWe are actively working to resolve this problem.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\n\nWe apologize for the inconvenience and thank you for your understanding.\n\n\nHere is detail for this incident :\n\n<b>Start time :</b> 14/08/2024 04:05 UTC \n<b>Service impact :</b> Some latencies might be observed \n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "80d6z7pdsdh5",
+          "created_at": "2024-08-14T04:51:57.747Z",
+          "updated_at": "2024-08-14T04:51:57.747Z",
+          "display_at": "2024-08-14T04:51:57.747Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2024-08-13T15:37:03.038Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "vdgt8t3tb0lt",
       "name": "[CHI/PDX][Network] - Backbone Incident Notification",
       "status": "monitoring",
@@ -1199,65 +1252,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "br1f0s393tt2",
-      "name": "[RBX8][Cooling System] - Cooling system background work - Racks R826A01 - R826A02 - R826A05",
-      "status": "scheduled",
-      "created_at": "2024-08-13T06:44:09.202Z",
-      "updated_at": "2024-08-13T06:44:09.245Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/mkbmggccq8m6",
-      "started_at": "2024-08-13T06:44:09.196Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "s8p5rqj2mxyl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 14/08/2024 06:00 UTC\n<b>End time :</b> 14/08/2024 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive cooling system work in racks R826A01 - R826A02 - R826A05.\n\nThank you for your understanding.",
-          "incident_id": "br1f0s393tt2",
-          "created_at": "2024-08-13T06:44:09.243Z",
-          "updated_at": "2024-08-13T06:44:09.243Z",
-          "display_at": "2024-08-13T06:44:09.243Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2024-07-23T18:24:38.434Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-14T06:00:00.000Z",
-      "scheduled_until": "2024-08-14T15:00:00.000Z"
-    },
-    {
       "id": "1l1rm4jqnhw0",
       "name": "[GRA2][Infrastructure] - Electrical background work G217/UPS 11T1",
       "status": "scheduled",
       "created_at": "2024-08-13T13:46:12.540Z",
-      "updated_at": "2024-08-13T13:46:12.601Z",
+      "updated_at": "2024-08-14T05:00:06.252Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1265,6 +1264,19 @@
       "started_at": "2024-08-13T13:46:12.532Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "lzdxy91w4k58",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "1l1rm4jqnhw0",
+          "created_at": "2024-08-14T05:00:06.149Z",
+          "updated_at": "2024-08-14T05:00:06.149Z",
+          "display_at": "2024-08-14T05:00:06.149Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qb1j7vpwnrqr",
           "status": "scheduled",
@@ -1305,6 +1317,73 @@
       ],
       "scheduled_for": "2024-08-14T06:00:00.000Z",
       "scheduled_until": "2024-08-14T14:00:00.000Z"
+    },
+    {
+      "id": "br1f0s393tt2",
+      "name": "[RBX8][Cooling System] - Cooling system background work - Racks R826A01 - R826A02 - R826A05",
+      "status": "scheduled",
+      "created_at": "2024-08-13T06:44:09.202Z",
+      "updated_at": "2024-08-14T05:00:06.818Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mkbmggccq8m6",
+      "started_at": "2024-08-13T06:44:09.196Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "6lk4gh89yg63",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "br1f0s393tt2",
+          "created_at": "2024-08-14T05:00:06.714Z",
+          "updated_at": "2024-08-14T05:00:06.714Z",
+          "display_at": "2024-08-14T05:00:06.714Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "s8p5rqj2mxyl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 14/08/2024 06:00 UTC\n<b>End time :</b> 14/08/2024 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing some preventive cooling system work in racks R826A01 - R826A02 - R826A05.\n\nThank you for your understanding.",
+          "incident_id": "br1f0s393tt2",
+          "created_at": "2024-08-13T06:44:09.243Z",
+          "updated_at": "2024-08-13T06:44:09.243Z",
+          "display_at": "2024-08-13T06:44:09.243Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2024-07-23T18:24:38.434Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-08-14T06:00:00.000Z",
+      "scheduled_until": "2024-08-14T15:00:00.000Z"
     },
     {
       "id": "8kpt3gxglwvs",
