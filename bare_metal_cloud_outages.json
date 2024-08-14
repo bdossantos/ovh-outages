@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-14T07:08:01.473Z"
+    "updated_at": "2024-08-14T10:13:50.885Z"
   },
   "components": [
     {
@@ -598,9 +598,9 @@
     {
       "id": "g869v1xfdrjy",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:08.810Z",
-      "updated_at": "2023-04-20T09:19:04.217Z",
+      "updated_at": "2024-08-14T10:13:50.839Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2280,7 +2280,7 @@
     {
       "id": "7nxs1wy28gc7",
       "name": "Storage and Backups || Backup Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:11.420Z",
       "updated_at": "2023-08-01T15:34:55.588Z",
       "position": 13,
@@ -2591,6 +2591,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "992c1hk79x03",
+      "name": "[BHS][Storage and Backups] - FTP Backup",
+      "status": "investigating",
+      "created_at": "2024-08-14T10:13:50.811Z",
+      "updated_at": "2024-08-14T10:13:50.882Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/j86j0f0dgp03",
+      "started_at": "2024-08-14T10:13:50.805Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "6ywsf0zgr37k",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 14/08/2024 00:00 UTC \n<b>Service impact :</b> Customers aren't able to subscribe to FTP Backup\n<b>Ongoing actions :</b>  Our technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "992c1hk79x03",
+          "created_at": "2024-08-14T10:13:50.880Z",
+          "updated_at": "2024-08-14T10:13:50.880Z",
+          "display_at": "2024-08-14T10:13:50.880Z",
+          "affected_components": [
+            {
+              "code": "g869v1xfdrjy",
+              "name": "Storage and Backups || Backup Storage - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g869v1xfdrjy",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:08.810Z",
+          "updated_at": "2024-08-14T10:13:50.839Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "wtzzqf03hxc7",
       "name": "[GRA2/GRA4][Virtual Private Servers] - Racks G122A15 - G122A14",
