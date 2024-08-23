@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-22T22:43:07.308Z"
+    "updated_at": "2024-08-23T09:54:42.786Z"
   },
   "components": [
     {
@@ -3530,9 +3530,9 @@
     {
       "id": "l80nf4jq3gx4",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-15T08:41:12.282Z",
-      "updated_at": "2024-05-17T07:54:52.631Z",
+      "updated_at": "2024-08-23T09:54:42.725Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -5528,7 +5528,7 @@
     {
       "id": "xxf4tr946kpr",
       "name": "Network || Gateway",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-15T08:33:50.711Z",
       "updated_at": "2024-07-16T13:52:21.808Z",
       "position": 36,
@@ -5564,9 +5564,9 @@
     {
       "id": "187xrz0r612q",
       "name": "Network || Load Balancer",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-05-30T20:23:29.363Z",
-      "updated_at": "2024-07-16T13:52:21.815Z",
+      "updated_at": "2024-08-23T09:54:42.735Z",
       "position": 37,
       "description": null,
       "showcase": false,
@@ -5901,6 +5901,80 @@
   ],
   "incidents": [
     {
+      "id": "h26vjq973p31",
+      "name": "[GRA11][Network] - Neutron L3 service incident notification",
+      "status": "investigating",
+      "created_at": "2024-08-23T09:54:42.698Z",
+      "updated_at": "2024-08-23T09:54:42.783Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/ct05zdb5kyfb",
+      "started_at": "2024-08-23T09:54:42.691Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "q2j0npsdq3sr",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 23/08/2024 09:12 UTC\n<b>Service impact :</b> Customers who wish to modify the Neutron L3 service may experience network connection loss.\n<b>Ongoing actions :</b> Investigating\nOur technical teams are working on the issue. Update will be posted as significant progress is made.",
+          "incident_id": "h26vjq973p31",
+          "created_at": "2024-08-23T09:54:42.781Z",
+          "updated_at": "2024-08-23T09:54:42.781Z",
+          "display_at": "2024-08-23T09:54:42.781Z",
+          "affected_components": [
+            {
+              "code": "l80nf4jq3gx4",
+              "name": "Network || Gateway - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "187xrz0r612q",
+              "name": "Network || Load Balancer",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "l80nf4jq3gx4",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2023-04-15T08:41:12.282Z",
+          "updated_at": "2024-08-23T09:54:42.725Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "xxf4tr946kpr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "187xrz0r612q",
+          "name": "Network || Load Balancer",
+          "status": "partial_outage",
+          "created_at": "2023-05-30T20:23:29.363Z",
+          "updated_at": "2024-08-23T09:54:42.735Z",
+          "position": 37,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-05-30",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "zs9yy1s44fp4",
       "name": "[SBG5/EU-West][Public Cloud] - Degraded Administrative Operations",
       "status": "investigating",
@@ -6033,6 +6107,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
