@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-26T04:52:37.761Z"
+    "updated_at": "2024-08-26T09:43:03.454Z"
   },
   "components": [
     {
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1321,9 +1321,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-08-19T16:53:50.914Z",
+      "updated_at": "2024-08-26T09:41:45.826Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2590,7 +2590,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lzw3vg9ypm8k",
+      "name": "[RBX8][Dedicated Servers] - R808L09 - R808L08 - R808L07",
+      "status": "identified",
+      "created_at": "2024-08-26T09:41:45.785Z",
+      "updated_at": "2024-08-26T09:41:45.911Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/02dkbswncqdl",
+      "started_at": "2024-08-26T09:41:45.776Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "xpzbvcvnhtfr",
+          "status": "identified",
+          "body": "We would like to inform you that we have an ongoing incident and we are doing our utmost to resolve this situation as quickly as possible.\n\n<b>Start time :</b> 26/08/2024 09:15 UTC \n<b>Service impact :</b> Some servers in the following racks R808L09 , R808L08 and R808L07 are no longer responding. \n\nAs soon as the situation evolves or the incident is resolved, we will keep you informed.\n\nThank you for your understanding",
+          "incident_id": "lzw3vg9ypm8k",
+          "created_at": "2024-08-26T09:41:45.907Z",
+          "updated_at": "2024-08-26T09:41:45.907Z",
+          "display_at": "2024-08-26T09:41:45.907Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-08-26T09:41:45.826Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "m3b6bzynj4h1",
@@ -3266,7 +3320,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
