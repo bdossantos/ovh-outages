@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-27T21:26:20.902Z"
+    "updated_at": "2024-08-27T21:47:30.005Z"
   },
   "components": [
     {
@@ -2701,6 +2701,60 @@
       "scheduled_until": "2024-09-10T01:30:00.000Z"
     },
     {
+      "id": "mzkgvdsbktcc",
+      "name": "[GRA3][Dedicated Servers] - Rack GRA0320A02A",
+      "status": "scheduled",
+      "created_at": "2024-08-27T21:35:58.782Z",
+      "updated_at": "2024-08-27T21:35:58.851Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/z1qf8nnlcqcq",
+      "started_at": "2024-08-27T21:35:58.772Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rft7v83mplt4",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 10/09/2024 02:00 UTC\n<b>End time :</b> 10/09/2024 03:00 UTC\n<b>Service impact :</b> Public network will be unavailable during the maintenance for servers if the LACP service is not enabled in rack GRA0320A02A.\n<b>Service improvement :</b> Following our continuous improvement policy, we will be doing a maintenance on a network equipment.\n\nThank you for your understanding.",
+          "incident_id": "mzkgvdsbktcc",
+          "created_at": "2024-08-27T21:35:58.848Z",
+          "updated_at": "2024-08-27T21:35:58.848Z",
+          "display_at": "2024-08-27T21:35:58.848Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2024-08-09T02:52:44.677Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-10T02:00:00.000Z",
+      "scheduled_until": "2024-09-10T03:00:00.000Z"
+    },
+    {
       "id": "w8l0x9b11qcm",
       "name": "[Global][Dedicated Servers] - API change for OS reinstallation",
       "status": "scheduled",
@@ -2849,6 +2903,60 @@
       ],
       "scheduled_for": "2024-09-11T00:00:00.000Z",
       "scheduled_until": "2024-09-11T03:00:00.000Z"
+    },
+    {
+      "id": "157kkgjx6wzz",
+      "name": "[RBX6][Dedicated Servers] - vRack maintenance notification",
+      "status": "scheduled",
+      "created_at": "2024-08-27T21:47:29.936Z",
+      "updated_at": "2024-08-27T21:47:30.002Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gw64h83bsdyc",
+      "started_at": "2024-08-27T21:47:29.927Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "wk01gr5n7d07",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our vRack offer. \n\n<b>Start time :</b> 11/09/2024 01:00 UTC\n<b>End time :</b> 11/09/2024 04:00 UTC\n<b>Service impact :</b> vRack will be temporarily unavailable for 2 hours during the maintenance for racks 46G30,46G31,46G26, 46D09, 46G27, 46G28, 46G23, 46G24, 46G25, 46D10, 46G20, 46G21, 46G22, 46G17, 46G18, 46G19, 46H29, 46H30 and 46H31.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade a network equipment.\n\nThank you for your understanding.",
+          "incident_id": "157kkgjx6wzz",
+          "created_at": "2024-08-27T21:47:29.999Z",
+          "updated_at": "2024-08-27T21:47:29.999Z",
+          "display_at": "2024-08-27T21:47:29.999Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2024-08-27T05:54:10.142Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-11T01:00:00.000Z",
+      "scheduled_until": "2024-09-11T04:00:00.000Z"
     },
     {
       "id": "52x60qfdmk8q",
