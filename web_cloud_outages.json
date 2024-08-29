@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-08-29T21:20:02.124Z"
+    "updated_at": "2024-08-29T22:01:34.660Z"
   },
   "components": [
     {
@@ -778,9 +778,9 @@
     {
       "id": "qpx6g1kd74vy",
       "name": "Mailbox Access",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-06-30T12:22:04.946Z",
-      "updated_at": "2024-08-29T21:20:02.084Z",
+      "updated_at": "2024-08-29T22:01:05.903Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1192,7 +1192,7 @@
     {
       "id": "7935ckb29tc8",
       "name": "Collaborative solutions || MX Plan",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-06-30T12:22:06.827Z",
       "updated_at": "2023-05-16T12:09:06.686Z",
       "position": 5,
@@ -2842,11 +2842,78 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
+      "id": "yhzm6cxm5fd3",
+      "name": "[GRA3][WebHosting] - Cluster001 - Filerz1798",
+      "status": "scheduled",
+      "created_at": "2024-08-23T20:32:36.081Z",
+      "updated_at": "2024-08-29T22:00:03.819Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qjgcc68hwr50",
+      "started_at": "2024-08-23T20:32:36.076Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "gzyrc0srxpgy",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "yhzm6cxm5fd3",
+          "created_at": "2024-08-29T22:00:03.542Z",
+          "updated_at": "2024-08-29T22:00:03.542Z",
+          "display_at": "2024-08-29T22:00:03.542Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "x18skx3h74vw",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our web hosting offer\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 29/08/2024 23:00 UTC\n<b>End time :</b> 30/08/2024 00:30 UTC\n<b>Service impact :</b> The filerz will have a downtime of 60 minutes during the migration.\n<b>Service improvement  :</b> We are going to update the filerz below (Mail-hosting server) to a newer and more stable version.\nThe goal of this maintenance is to improve the performance and enhance the security of our infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "yhzm6cxm5fd3",
+          "created_at": "2024-08-23T20:32:36.122Z",
+          "updated_at": "2024-08-23T20:32:36.122Z",
+          "display_at": "2024-08-23T20:32:36.122Z",
+          "affected_components": [
+            {
+              "code": "7v4fv1n8kbtk",
+              "name": "Web Hosting || Datacenter GRA - Cluster001",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7v4fv1n8kbtk",
+          "name": "Cluster001",
+          "status": "under_maintenance",
+          "created_at": "2024-05-02T06:54:39.622Z",
+          "updated_at": "2024-08-29T21:00:02.233Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-05-02",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-08-29T23:00:00.000Z",
+      "scheduled_until": "2024-08-30T00:30:00.000Z"
+    },
+    {
       "id": "1b2wnml0h6wp",
       "name": "[GRA3][WebHosting] - Cluster001 - Filerz1820",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2024-08-23T21:03:57.667Z",
-      "updated_at": "2024-08-29T21:00:02.490Z",
+      "updated_at": "2024-08-29T22:00:03.064Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2854,6 +2921,19 @@
       "started_at": "2024-08-23T21:03:57.661Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "3cdcb26g2h2w",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "1b2wnml0h6wp",
+          "created_at": "2024-08-29T22:00:03.061Z",
+          "updated_at": "2024-08-29T22:00:03.061Z",
+          "display_at": "2024-08-29T22:00:03.061Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "zgd97g117jpx",
           "status": "scheduled",
@@ -2907,221 +2987,6 @@
       ],
       "scheduled_for": "2024-08-29T22:00:00.000Z",
       "scheduled_until": "2024-08-29T23:30:00.000Z"
-    },
-    {
-      "id": "yhzm6cxm5fd3",
-      "name": "[GRA3][WebHosting] - Cluster001 - Filerz1798",
-      "status": "scheduled",
-      "created_at": "2024-08-23T20:32:36.081Z",
-      "updated_at": "2024-08-23T20:32:36.124Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qjgcc68hwr50",
-      "started_at": "2024-08-23T20:32:36.076Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "x18skx3h74vw",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our web hosting offer\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 29/08/2024 23:00 UTC\n<b>End time :</b> 30/08/2024 00:30 UTC\n<b>Service impact :</b> The filerz will have a downtime of 60 minutes during the migration.\n<b>Service improvement  :</b> We are going to update the filerz below (Mail-hosting server) to a newer and more stable version.\nThe goal of this maintenance is to improve the performance and enhance the security of our infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "yhzm6cxm5fd3",
-          "created_at": "2024-08-23T20:32:36.122Z",
-          "updated_at": "2024-08-23T20:32:36.122Z",
-          "display_at": "2024-08-23T20:32:36.122Z",
-          "affected_components": [
-            {
-              "code": "7v4fv1n8kbtk",
-              "name": "Web Hosting || Datacenter GRA - Cluster001",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7v4fv1n8kbtk",
-          "name": "Cluster001",
-          "status": "under_maintenance",
-          "created_at": "2024-05-02T06:54:39.622Z",
-          "updated_at": "2024-08-29T21:00:02.233Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-05-02",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-29T23:00:00.000Z",
-      "scheduled_until": "2024-08-30T00:30:00.000Z"
-    },
-    {
-      "id": "3sgvv8tr0l59",
-      "name": "[RBX/GRA][Collaborative solutions] - MX Plan maintenance notification",
-      "status": "in_progress",
-      "created_at": "2024-08-29T21:15:05.985Z",
-      "updated_at": "2024-08-29T21:20:02.117Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dz7ytxlz0rfh",
-      "started_at": "2024-08-29T21:15:05.977Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "5kxg01fs55pt",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "3sgvv8tr0l59",
-          "created_at": "2024-08-29T21:20:02.115Z",
-          "updated_at": "2024-08-29T21:20:02.115Z",
-          "display_at": "2024-08-29T21:20:02.115Z",
-          "affected_components": [
-            {
-              "code": "qpx6g1kd74vy",
-              "name": "Collaborative solutions || MX Plan - Mailbox Access",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l9dx9ckflmbk",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our MX Plan offer. \n\n<b>Start time :</b> 29/08/2024 18:00 UTC \n<b>End time :</b> 29/08/2024 22:00 UTC \n<b>Service impact :</b> During this maintenance operation, emails will not be accessible for around 10 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy of our MX Plan product, we will be doing a maintenance on multiple network equipment.\n\nThank you for your understanding.",
-          "incident_id": "3sgvv8tr0l59",
-          "created_at": "2024-08-29T21:15:06.039Z",
-          "updated_at": "2024-08-29T21:15:06.039Z",
-          "display_at": "2024-08-29T21:15:06.039Z",
-          "affected_components": [
-            {
-              "code": "qpx6g1kd74vy",
-              "name": "Collaborative solutions || MX Plan - Mailbox Access",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qpx6g1kd74vy",
-          "name": "Mailbox Access",
-          "status": "under_maintenance",
-          "created_at": "2021-06-30T12:22:04.946Z",
-          "updated_at": "2024-08-29T21:20:02.084Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-29T21:20:00.000Z",
-      "scheduled_until": "2024-08-29T22:00:00.000Z"
-    },
-    {
-      "id": "dmrv323rx6z2",
-      "name": "[GRA3][WebHosting] - Cluster001 - Filerz1821",
-      "status": "in_progress",
-      "created_at": "2024-08-23T21:00:23.875Z",
-      "updated_at": "2024-08-29T21:00:02.300Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/kjfzyd0hpynx",
-      "started_at": "2024-08-23T21:00:23.866Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "x8bfvd6ng3nb",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "dmrv323rx6z2",
-          "created_at": "2024-08-29T21:00:02.295Z",
-          "updated_at": "2024-08-29T21:00:02.295Z",
-          "display_at": "2024-08-29T21:00:02.295Z",
-          "affected_components": [
-            {
-              "code": "7v4fv1n8kbtk",
-              "name": "Web Hosting || Datacenter GRA - Cluster001",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "53nrd0yftyls",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dmrv323rx6z2",
-          "created_at": "2024-08-29T20:00:05.220Z",
-          "updated_at": "2024-08-29T20:00:05.220Z",
-          "display_at": "2024-08-29T20:00:05.220Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "561hgzqh5tcn",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our web hosting offer\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 29/08/2024 21:00 UTC\n<b>End time :</b> 29/08/2024 22:30 UTC\n<b>Service impact :</b> The filerz will have a downtime of 60 minutes during the migration.\n<b>Service improvement  :</b> We are going to update the filerz below (Mail-hosting server) to a newer and more stable version.\nThe goal of this maintenance is to improve the performance and enhance the security of our infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "dmrv323rx6z2",
-          "created_at": "2024-08-23T21:00:23.938Z",
-          "updated_at": "2024-08-23T21:00:23.938Z",
-          "display_at": "2024-08-23T21:00:23.938Z",
-          "affected_components": [
-            {
-              "code": "7v4fv1n8kbtk",
-              "name": "Web Hosting || Datacenter GRA - Cluster001",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7v4fv1n8kbtk",
-          "name": "Cluster001",
-          "status": "under_maintenance",
-          "created_at": "2024-05-02T06:54:39.622Z",
-          "updated_at": "2024-08-29T21:00:02.233Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-05-02",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-08-29T21:00:00.000Z",
-      "scheduled_until": "2024-08-29T22:30:00.000Z"
     },
     {
       "id": "pr3bc25zmydn",
@@ -3194,9 +3059,9 @@
         {
           "id": "qpx6g1kd74vy",
           "name": "Mailbox Access",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-06-30T12:22:04.946Z",
-          "updated_at": "2024-08-29T21:20:02.084Z",
+          "updated_at": "2024-08-29T22:01:05.903Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -4223,9 +4088,9 @@
         {
           "id": "qpx6g1kd74vy",
           "name": "Mailbox Access",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-06-30T12:22:04.946Z",
-          "updated_at": "2024-08-29T21:20:02.084Z",
+          "updated_at": "2024-08-29T22:01:05.903Z",
           "position": 3,
           "description": null,
           "showcase": false,
