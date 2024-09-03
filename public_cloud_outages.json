@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-03T13:05:02.992Z"
+    "updated_at": "2024-09-03T14:15:11.298Z"
   },
   "components": [
     {
@@ -2880,7 +2880,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -3100,9 +3100,9 @@
     {
       "id": "jnrg6smtv9yw",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.994Z",
-      "updated_at": "2024-09-02T14:23:55.612Z",
+      "updated_at": "2024-09-03T14:15:11.240Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -6044,6 +6044,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "fbfq5z4lkhq6",
+      "name": "[GRA11][Compute] - Instances incident notification",
+      "status": "investigating",
+      "created_at": "2024-09-03T14:15:11.207Z",
+      "updated_at": "2024-09-03T14:15:11.296Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/wf9q9hb5m386",
+      "started_at": "2024-09-03T14:15:11.200Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "17kfv1src2cj",
+          "status": "investigating",
+          "body": "An incident is in progress on our public cloud offer.\n\nPlease be aware that this is currently affecting the availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 03/09/2024 10:00 UTC \n<b>Service impact :</b> Some instances are temporarily unreachable.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "fbfq5z4lkhq6",
+          "created_at": "2024-09-03T14:15:11.293Z",
+          "updated_at": "2024-09-03T14:15:11.293Z",
+          "display_at": "2024-09-03T14:15:11.293Z",
+          "affected_components": [
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2024-09-03T14:15:11.240Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "wd1nky323m8t",
       "name": "[Global][Public Cloud] - Databases API instabilities",
@@ -10085,7 +10138,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
