@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-04T01:28:06.516Z"
+    "updated_at": "2024-09-04T02:20:34.560Z"
   },
   "components": [
     {
@@ -670,9 +670,9 @@
     {
       "id": "cm239js599qy",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:33:31.551Z",
-      "updated_at": "2024-09-04T01:28:06.397Z",
+      "updated_at": "2024-09-04T02:12:34.272Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -854,9 +854,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2024-09-04T01:28:06.415Z",
+      "updated_at": "2024-09-04T02:12:34.287Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1914,7 +1914,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2023-03-07T14:29:12.630Z",
-      "updated_at": "2024-09-04T01:28:06.433Z",
+      "updated_at": "2024-09-04T02:20:34.476Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3180,7 +3180,7 @@
       "name": "UK",
       "status": "operational",
       "created_at": "2022-04-06T09:41:43.824Z",
-      "updated_at": "2024-09-04T01:28:06.451Z",
+      "updated_at": "2024-09-04T02:20:34.492Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -5822,7 +5822,7 @@
     {
       "id": "sr7bknstjqrs",
       "name": "Storage || Cloud Archive",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:33:50.779Z",
       "updated_at": "2024-09-02T12:52:41.932Z",
       "position": 42,
@@ -5902,7 +5902,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2024-09-02T12:52:41.970Z",
       "position": 45,
@@ -6047,9 +6047,9 @@
     {
       "id": "3t1kst6f9l0k",
       "name": "[RBX/GRA[Storage] - Object Storage S3 Standard/High Perf/Swift",
-      "status": "monitoring",
+      "status": "identified",
       "created_at": "2024-09-04T00:36:28.000Z",
-      "updated_at": "2024-09-04T01:28:06.505Z",
+      "updated_at": "2024-09-04T02:20:34.552Z",
       "monitoring_at": "2024-09-04T01:19:22.925Z",
       "resolved_at": null,
       "impact": "major",
@@ -6057,6 +6057,82 @@
       "started_at": "2024-09-04T00:36:28.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "j6gn7b0xm03s",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "3t1kst6f9l0k",
+          "created_at": "2024-09-04T02:20:34.549Z",
+          "updated_at": "2024-09-04T02:20:34.549Z",
+          "display_at": "2024-09-04T02:20:34.549Z",
+          "affected_components": [
+            {
+              "code": "cm239js599qy",
+              "name": "Storage || Cloud Archive - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5hyszkw8tjqg",
+          "status": "identified",
+          "body": "<b>Service impact :</b> Some customers may face 503 errors in GRA regions .",
+          "incident_id": "3t1kst6f9l0k",
+          "created_at": "2024-09-04T02:12:34.361Z",
+          "updated_at": "2024-09-04T02:12:34.361Z",
+          "display_at": "2024-09-04T02:12:34.361Z",
+          "affected_components": [
+            {
+              "code": "cm239js599qy",
+              "name": "Storage || Cloud Archive - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qghmvzdx0pq8",
           "status": "monitoring",
@@ -6336,9 +6412,9 @@
         {
           "id": "cm239js599qy",
           "name": "GRA",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:33:31.551Z",
-          "updated_at": "2024-09-04T01:28:06.397Z",
+          "updated_at": "2024-09-04T02:12:34.272Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -6351,9 +6427,9 @@
         {
           "id": "k86vmhcsnjtj",
           "name": "GRA",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2024-09-04T01:28:06.415Z",
+          "updated_at": "2024-09-04T02:12:34.287Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -6368,7 +6444,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2023-03-07T14:29:12.630Z",
-          "updated_at": "2024-09-04T01:28:06.433Z",
+          "updated_at": "2024-09-04T02:20:34.476Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -6383,7 +6459,7 @@
           "name": "UK",
           "status": "operational",
           "created_at": "2022-04-06T09:41:43.824Z",
-          "updated_at": "2024-09-04T01:28:06.451Z",
+          "updated_at": "2024-09-04T02:20:34.492Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -10437,7 +10513,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
