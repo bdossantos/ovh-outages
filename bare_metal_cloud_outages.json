@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-04T14:51:54.868Z"
+    "updated_at": "2024-09-04T17:14:24.055Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2024-08-13T13:37:29.772Z",
+      "updated_at": "2024-09-04T17:11:40.062Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2591,6 +2591,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "80tg6bh0rsvb",
+      "name": "[BHS1][Dedicated Servers] - Rack T02F40",
+      "status": "identified",
+      "created_at": "2024-09-04T17:11:40.023Z",
+      "updated_at": "2024-09-04T17:14:24.048Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/2whn6mn6696f",
+      "started_at": "2024-09-04T17:11:40.015Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "v1094z235d7p",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "80tg6bh0rsvb",
+          "created_at": "2024-09-04T17:14:24.046Z",
+          "updated_at": "2024-09-04T17:14:24.046Z",
+          "display_at": "2024-09-04T17:14:24.046Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n5cwlzvn8kwf",
+          "status": "investigating",
+          "body": "An incident is in progress on our Bare Metal offer. It has temporarily affected the availability.\n\n\nWe are actively working to resolve this problem.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\n\nWe apologize for the inconvenience and thank you for your understanding.\n\n\nHere is detail for this incident :\n\n<b>Start time :</b> 04/09/2024 16:56 UTC\n<b>Service impact :</b> Some of servers in the rack T02F40 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "80tg6bh0rsvb",
+          "created_at": "2024-09-04T17:11:40.535Z",
+          "updated_at": "2024-09-04T17:11:40.535Z",
+          "display_at": "2024-09-04T17:11:40.535Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2024-09-04T17:11:40.062Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "rxw74jcb93ps",
       "name": "[RBX7][Dedicated Servers] - Racks R719A16/R719A17/R719A18",
