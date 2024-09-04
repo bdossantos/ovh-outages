@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-04T20:00:42.821Z"
+    "updated_at": "2024-09-04T20:29:46.490Z"
   },
   "components": [
     {
@@ -6047,9 +6047,9 @@
     {
       "id": "fryt8cx8skvq",
       "name": "[Global][Compute] - KVM service incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-09-04T20:00:10.420Z",
-      "updated_at": "2024-09-04T20:00:42.816Z",
+      "updated_at": "2024-09-04T20:29:46.479Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -6057,6 +6057,158 @@
       "started_at": "2024-09-04T20:00:10.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "2y898c2zqg8l",
+          "status": "identified",
+          "body": "We will rollback the novnc package on all region except for UK2(VPS) which was upgrad to a newer OS already. KVM will only work on firefor for UK2",
+          "incident_id": "fryt8cx8skvq",
+          "created_at": "2024-09-04T20:29:46.475Z",
+          "updated_at": "2024-09-04T20:29:46.475Z",
+          "display_at": "2024-09-04T20:29:46.475Z",
+          "affected_components": [
+            {
+              "code": "jlj7vhqxdcsv",
+              "name": "Compute - Instance || SGP - SGP1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "r4k0pr9lm9mg",
+              "name": "Compute - Instance || SGP - SGP2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "yfhs5qjtqy5f",
+              "name": "Compute - Instance || WAW - WAW1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1hclp9sj91r4",
+              "name": "Compute - Instance || GRA - GRA2",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "00c202kmy3sr",
+              "name": "Compute - Instance || GRA - GRA4",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2f7vd120ygt3",
+              "name": "Compute - Instance || GRA - GRA5",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "gyxq55djvgqg",
+              "name": "Compute - Instance || GRA - GRA9",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "67wfh3wzl2rx",
+              "name": "Compute - Instance || SYD - SYD1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0mn6gfc4vqqs",
+              "name": "Compute - Instance || SYD - SYD3",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "f48mzw7bpn0d",
+              "name": "Compute - Instance || BHS - BHS1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0hpxc65n3j2y",
+              "name": "Compute - Instance || SBG - SBG5",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "p5srmsq3fmp8",
+              "name": "Compute - Instance || SBG - SBG7",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "5y3lfn7ctsvg",
+              "name": "Compute - Instance || USA - US-EAST-VA-1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1jxw3tjnvw22",
+              "name": "Compute - Instance || USA - US-WEST-OR-1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "d54lmz6skqwr",
+              "name": "Compute - Instance || RBX - RBX-A",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "gb582919rf09",
           "status": "investigating",
