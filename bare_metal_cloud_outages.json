@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-09T22:09:50.216Z"
+    "updated_at": "2024-09-09T23:00:04.045Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2024-09-09T22:09:50.143Z",
+      "updated_at": "2024-09-09T22:56:30.443Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -853,7 +853,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2594,16 +2594,36 @@
     {
       "id": "xqb711dy95pr",
       "name": "[BHS5][Dedicated Servers] - T05A35",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2024-09-09T22:09:50.104Z",
-      "updated_at": "2024-09-09T22:09:50.212Z",
-      "monitoring_at": null,
+      "updated_at": "2024-09-09T22:56:30.525Z",
+      "monitoring_at": "2024-09-09T22:56:30.506Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/2tvwgdjmjs4r",
       "started_at": "2024-09-09T22:09:50.095Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "rs3bhz1lscdf",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "xqb711dy95pr",
+          "created_at": "2024-09-09T22:56:30.506Z",
+          "updated_at": "2024-09-09T22:56:30.506Z",
+          "display_at": "2024-09-09T22:56:30.506Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "595t7nshhspd",
           "status": "investigating",
@@ -2629,9 +2649,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2024-09-09T22:09:50.143Z",
+          "updated_at": "2024-09-09T22:56:30.443Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2651,7 +2671,7 @@
       "name": "[SGP][Dedicated Servers] - Rack 040921A",
       "status": "scheduled",
       "created_at": "2024-08-27T21:10:40.139Z",
-      "updated_at": "2024-08-27T21:10:40.203Z",
+      "updated_at": "2024-09-09T23:00:04.038Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2659,6 +2679,19 @@
       "started_at": "2024-08-27T21:10:40.130Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "c0pyds8f1vgq",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "4bwq95qc0xk0",
+          "created_at": "2024-09-09T23:00:03.635Z",
+          "updated_at": "2024-09-09T23:00:03.635Z",
+          "display_at": "2024-09-09T23:00:03.635Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5rgnzc82r8hs",
           "status": "scheduled",
@@ -3317,7 +3350,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
