@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-10T15:30:02.790Z"
+    "updated_at": "2024-09-10T16:12:07.384Z"
   },
   "components": [
     {
@@ -1396,7 +1396,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1911,9 +1911,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2024-09-09T02:03:47.734Z",
+      "updated_at": "2024-09-10T16:06:28.096Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2641,6 +2641,59 @@
   ],
   "incidents": [
     {
+      "id": "7697bmc33pzy",
+      "name": "[RBX1][Dedicated Servers] - Rack 14C05",
+      "status": "investigating",
+      "created_at": "2024-09-10T16:06:28.066Z",
+      "updated_at": "2024-09-10T16:06:28.152Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0pb569z25hv6",
+      "started_at": "2024-09-10T16:06:28.059Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8tqm2pfnd5w1",
+          "status": "investigating",
+          "body": "An incident is in progress on our Bare Metal offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 10/09/2024 16:00 UTC \n<b>Service impact :</b> A significant number of servers in rack 14C05 are unreachable\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "7697bmc33pzy",
+          "created_at": "2024-09-10T16:06:28.149Z",
+          "updated_at": "2024-09-10T16:06:28.149Z",
+          "display_at": "2024-09-10T16:06:28.149Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2024-09-10T16:06:28.096Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "whbjwt94qh81",
       "name": "[RBX8][Dedicated Servers] - Room R823",
       "status": "identified",
@@ -2715,73 +2768,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "jtmnxwf8gxvb",
-      "name": "[RBX5][Dedicated Servers] - Racks 45D02",
-      "status": "scheduled",
-      "created_at": "2024-08-29T22:18:34.018Z",
-      "updated_at": "2024-09-10T15:30:02.781Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lddmkqs96dtf",
-      "started_at": "2024-08-29T22:18:34.009Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "ldrh4f9pr31c",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jtmnxwf8gxvb",
-          "created_at": "2024-09-10T15:30:02.670Z",
-          "updated_at": "2024-09-10T15:30:02.670Z",
-          "display_at": "2024-09-10T15:30:02.670Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dr5chybfymjs",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer. \n\n<b>Start time :</b> 10/09/2024 16:30 UTC \n<b>End time :</b> 10/09/2024 17:30 UTC \n<b>Service impact :</b> Public network will be unavailable for servers in rack 45D02.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment\n\nThank you for your understanding.",
-          "incident_id": "jtmnxwf8gxvb",
-          "created_at": "2024-08-29T22:18:34.084Z",
-          "updated_at": "2024-08-29T22:18:34.084Z",
-          "display_at": "2024-08-29T22:18:34.084Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-09-09T02:03:47.734Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-09-10T16:30:00.000Z",
-      "scheduled_until": "2024-09-10T17:30:00.000Z"
-    },
     {
       "id": "s8cc33bgw784",
       "name": "[RBX4][Dedicated Servers] - Racks 50C11/50C12",
@@ -3090,9 +3076,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-09-09T02:03:47.734Z",
+          "updated_at": "2024-09-10T16:06:28.096Z",
           "position": 8,
           "description": null,
           "showcase": false,
