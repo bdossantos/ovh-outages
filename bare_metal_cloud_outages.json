@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-10T12:01:35.079Z"
+    "updated_at": "2024-09-10T12:38:37.375Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "hgscwllzr4w1",
       "name": "Zone Europe",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:24.629Z",
-      "updated_at": "2024-09-10T08:30:03.458Z",
+      "updated_at": "2024-09-10T12:38:37.267Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -493,9 +493,9 @@
     {
       "id": "jds1mz2tgrx4",
       "name": "Zone APAC",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:25.511Z",
-      "updated_at": "2024-09-10T08:30:04.353Z",
+      "updated_at": "2024-09-10T12:38:37.287Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -808,9 +808,9 @@
     {
       "id": "zjpd57tn2xqv",
       "name": "Zone Canada",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:26.689Z",
-      "updated_at": "2024-09-10T08:30:04.671Z",
+      "updated_at": "2024-09-10T12:38:37.305Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1091,7 +1091,7 @@
     {
       "id": "7xz24f8j9l94",
       "name": "Dedicated Servers || Operating System",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:32:27.959Z",
       "updated_at": "2023-05-16T11:45:36.944Z",
       "position": 4,
@@ -2643,9 +2643,9 @@
     {
       "id": "whbjwt94qh81",
       "name": "[RBX8][Dedicated Servers] - Room R823",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-09-10T12:01:34.962Z",
-      "updated_at": "2024-09-10T12:01:35.076Z",
+      "updated_at": "2024-09-10T12:19:10.000Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2654,13 +2654,33 @@
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
+          "id": "4msknmh6gyp1",
+          "status": "identified",
+          "body": "Incident linked to this incident https://network.status-ovhcloud.com/incidents/8mq79l7wcx8p",
+          "incident_id": "whbjwt94qh81",
+          "created_at": "2024-09-10T12:19:09.997Z",
+          "updated_at": "2024-09-10T12:19:09.997Z",
+          "display_at": "2024-09-10T12:19:09.997Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "l2xntz3t4qsq",
           "status": "investigating",
-          "body": "An incident is in progress on our Dedicated Server offer.\n\nPlease be aware that this is currently affecting the \"Availability/Functionality/Latency\".\n\nHere is detail for this incident :\n\n<b>Start time :</b> 10/09/2024 11:24 UTC \n<b>Service impact :</b> Some servers on room R823 is unavailable.\n<b>Root cause :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "body": "An incident is in progress on our Dedicated Server offer.\n\nPlease be aware that this is currently affecting the Availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 10/09/2024 11:24 UTC \n<b>Service impact :</b> Some servers on room R823 is unavailable.\n<b>Root cause :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
           "incident_id": "whbjwt94qh81",
           "created_at": "2024-09-10T12:01:35.073Z",
-          "updated_at": "2024-09-10T12:01:35.073Z",
-          "display_at": "2024-09-10T12:01:35.073Z",
+          "updated_at": "2024-09-10T12:15:15.097Z",
+          "display_at": "2024-09-10T12:01:35.000Z",
           "affected_components": [
             {
               "code": "ndg1yh0x4lpd",
@@ -3072,179 +3092,6 @@
       ],
       "scheduled_for": "2024-09-25T01:00:00.000Z",
       "scheduled_until": "2024-09-25T04:00:00.000Z"
-    },
-    {
-      "id": "w8l0x9b11qcm",
-      "name": "[Global][Dedicated Servers] - API change for OS reinstallation",
-      "status": "in_progress",
-      "created_at": "2024-05-22T22:51:44.876Z",
-      "updated_at": "2024-09-10T10:49:35.648Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yh6sf55l2hjn",
-      "started_at": "2024-05-22T22:51:44.919Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "79n985g61064",
-          "status": "in_progress",
-          "body": "Please note the new end time for this maintenance :\n<b>End time:</b> 10/09/2024 12:30 UTC",
-          "incident_id": "w8l0x9b11qcm",
-          "created_at": "2024-09-10T10:49:35.645Z",
-          "updated_at": "2024-09-10T10:49:35.645Z",
-          "display_at": "2024-09-10T10:49:35.645Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kv6rtsppb96y",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "w8l0x9b11qcm",
-          "created_at": "2024-09-10T08:30:05.575Z",
-          "updated_at": "2024-09-10T08:30:05.575Z",
-          "display_at": "2024-09-10T08:30:05.575Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "shbgg61yw4y7",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "w8l0x9b11qcm",
-          "created_at": "2024-09-10T07:30:02.382Z",
-          "updated_at": "2024-09-10T07:30:02.382Z",
-          "display_at": "2024-09-10T07:30:02.382Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "r9mp4ycsp0qy",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, change is scheduled on our API.\nStarting from the 10th of September 2024, the following API call will stop to accept SSH public key name for OS reinstallation:\n<a href=\"https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a>\n\nYou are not affected by this change in one of the following situations:\n- You are using <a href=\"https://www.ovh.com/auth/?action=gotomanager\">OVHcloud Control Panel</a> rather than <a href=\"https://api.ovh.com/\">OVHcloud API</a> to perform OS reinstallation on your dedicated server,\n- You are performing a Windows OS reinstallation on your dedicated server,\n- You are performing OS reinstallation with password-based authentication rather than SSH key-based authentication on your dedicated server.\n\nIf you are affected by this API change, there are two cases:\n\n<a name=\"case1\"></a>\n\n<b>Case 1: you are passing sshKeyName parameter to the <a href=\"https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a> API call</b>\n\nYou need to update the payload as follow (templateName and sshKeyName values to be replaced):\n\n- Example of payload that will stop working after the 10th of September 2024:\n<code>\n{\n  \"templateName\": \"debian12_64\",\n  \"details\": {\n    \"sshKeyName\": \"my-amazing-ssh-key-name\"\n  }\n}\n</code>\n\n- Modified payload that currently works and will continue working after the 10th of September 2024:\n<code>\n{\n  \"templateName\": \"debian12_64\",\n  \"userMetadata\": [\n    {\n      \"key\": \"sshKey\",\n      \"value\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-amazing-ssh-key\"\n    }\n  ]\n}\n</code>\n\nIf your don't remember the content of your SSH public key, you can use the following API call to retrieve it (keyName to be replaced):\n<a href=\"https://eu.api.ovh.com/console/?section=%2Fme&branch=v1#get-/me/sshKey/-keyName-\">GET /me/sshKey/{keyName}</a>\n\n<a name=\"case2\"></a>\n\n<b>Case 2: the personal template you are referring to in the <a href=\"https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a> API call contains a sshKeyName</b>\n\nYou need to remove the sshKeyName from your personal template by manually using the following API call (is a one time action, you can do that directly in the <a href=\"https://eu.api.ovh.com/console/?section=%2Fme&branch=v1#put-/me/installationTemplate/-templateName-\">OVHcloud API Console</a>): <a href=\"https://eu.api.ovh.com/console/?section=%2Fme&branch=v1#put-/me/installationTemplate/-templateName-t\">PUT /me/installationTemplate/{templateName}</a> (templateName to be replaced by your personal template name):\n<code>\n{\n  \"templateName\": \"my-amazing-template\",\n  \"customization\": {\n    \"sshKeyName\": \"\"\n  },\n}\n</code>\nThen you can use the modified payload as explained above in <a href=\"#case1\">case 1</a> while performing <a href=\"https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start\">POST /dedicated/server/{serviceName}/install/start</a> API call (replace templateName by your personal template name and your SSH key).\n\nMore details can be found in the <a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-api-os-installation?id=kb_article_view&sysparm_article=KB0061951#create-an-os-installation-task\">documentation</a>.\n\n<b>Start time:</b> 10/09/2024 08:30 UTC\n<b>End time:</b> 10/09/2024 08:45 UTC\n<b>Service impact:</b> None",
-          "incident_id": "w8l0x9b11qcm",
-          "created_at": "2024-05-22T22:51:44.919Z",
-          "updated_at": "2024-08-19T09:03:37.881Z",
-          "display_at": "2024-05-22T22:51:44.919Z",
-          "affected_components": [
-            {
-              "code": "hgscwllzr4w1",
-              "name": "Dedicated Servers || Operating System - Zone Europe",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "jds1mz2tgrx4",
-              "name": "Dedicated Servers || Operating System - Zone APAC",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zjpd57tn2xqv",
-              "name": "Dedicated Servers || Operating System - Zone Canada",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hgscwllzr4w1",
-          "name": "Zone Europe",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2024-09-10T08:30:03.458Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jds1mz2tgrx4",
-          "name": "Zone APAC",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:25.511Z",
-          "updated_at": "2024-09-10T08:30:04.353Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zjpd57tn2xqv",
-          "name": "Zone Canada",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:32:26.689Z",
-          "updated_at": "2024-09-10T08:30:04.671Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7xz24f8j9l94",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-09-10T08:30:00.000Z",
-      "scheduled_until": "2024-09-10T08:45:00.000Z"
     }
   ],
   "status": {
