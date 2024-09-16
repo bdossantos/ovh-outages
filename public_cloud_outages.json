@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-16T09:25:40.767Z"
+    "updated_at": "2024-09-16T13:45:43.166Z"
   },
   "components": [
     {
@@ -6079,6 +6079,36 @@
   ],
   "incidents": [
     {
+      "id": "j96zs61z9cbd",
+      "name": "[ERI][Public Cloud] - Incident notification",
+      "status": "identified",
+      "created_at": "2024-09-16T13:41:19.389Z",
+      "updated_at": "2024-09-16T13:43:15.305Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/32gm2ytdhdj7",
+      "started_at": "2024-09-16T13:41:19.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "wx8g73mj97nl",
+          "status": "identified",
+          "body": "Our ERI Datacenter have been evacuated based on suspicions of explosive risks related to the nearby plant oil refinery.\nThere is no direct impact to services delivered to our clients. However scheduled maintenance are being delayed.\nMore information is present by clicking on this <a href=\"https://network.status-ovhcloud.com/incidents/6xs9xdf3gv1l\">link</a>.",
+          "incident_id": "j96zs61z9cbd",
+          "created_at": "2024-09-16T13:41:19.445Z",
+          "updated_at": "2024-09-16T13:43:15.255Z",
+          "display_at": "2024-09-16T13:41:19.000Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    },
+    {
       "id": "wd1nky323m8t",
       "name": "[Global][Public Cloud] - Databases API instabilities",
       "status": "identified",
@@ -11513,251 +11543,7 @@
       "reminder_intervals": null
     }
   ],
-  "scheduled_maintenances": [
-    {
-      "id": "bz81yh3ncb3j",
-      "name": "[GRA3/5/7/9/11][Public Cloud] - Network maintenance notification",
-      "status": "scheduled",
-      "created_at": "2024-08-30T13:57:20.018Z",
-      "updated_at": "2024-08-30T14:12:24.004Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0mrnpvy4884k",
-      "started_at": "2024-08-30T13:57:19.993Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "hw26913sfs28",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\nThis may temporarily affect Latency.\n\n<b>Start time :</b> 16/09/2024 20:00 UTC \n<b>End time :</b> 17/09/2024 04:00 UTC \n<b>Service impact :</b> None. Except in rare case latencies may be noted to reach PCI instances running \n<b>Service improvement :</b> Following our continuous improvement policy of our products and services, we will carry out a network hardware upgrade in our Graveline Datacenters\n\nThe operation is carried out in several steps: \n<i>\n- Step 1: Preparation of the operation (about 3 hours)\n- Step 2: New hardware implementation (about 2 hours) \n- Step 3: Test and activation of the new hardware (about 2 hours)\n</i> \nThe critical phase of this upgrade is tentatively scheduled between 10:30 PM UTC and 12:00 AM UTC. We are not expecting any impact. However in case of an issue the rollback can be managed in less than 30 minutes.",
-          "incident_id": "bz81yh3ncb3j",
-          "created_at": "2024-08-30T13:57:20.112Z",
-          "updated_at": "2024-08-30T14:12:24.000Z",
-          "display_at": "2024-08-30T13:57:20.112Z",
-          "affected_components": [
-            {
-              "code": "ykbxwt7jnfyr",
-              "name": "Network || Private network (vRack) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ytx179rt0543",
-              "name": "Network || Private network (vRack) - GRA5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "sbtq6rbb71sj",
-              "name": "Network || Private network (vRack) - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zdd0nqbc4l83",
-              "name": "Network || Private network (vRack) - GRA9",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "rtcd9r5f2b73",
-              "name": "Network || Private network (vRack) - GRA11",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qb4ppzbtcl0c",
-              "name": "Network || Public network - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "glbx0m4jjrxv",
-              "name": "Network || Public network - GRA5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hs1hyl2fxvyv",
-              "name": "Network || Public network - GRA7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "wm069jly18tz",
-              "name": "Network || Public network - GRA9",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "q10zg1z8ymkz",
-              "name": "Network || Public network - GRA11",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ykbxwt7jnfyr",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:25.282Z",
-          "updated_at": "2024-05-17T08:38:11.793Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qb4ppzbtcl0c",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:15.019Z",
-          "updated_at": "2024-05-17T08:59:05.031Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ytx179rt0543",
-          "name": "GRA5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:26.401Z",
-          "updated_at": "2024-05-17T08:38:11.800Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "glbx0m4jjrxv",
-          "name": "GRA5",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:16.078Z",
-          "updated_at": "2024-05-17T08:59:05.036Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "sbtq6rbb71sj",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:27.629Z",
-          "updated_at": "2024-05-17T08:38:11.807Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hs1hyl2fxvyv",
-          "name": "GRA7",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:17.106Z",
-          "updated_at": "2024-05-17T08:59:05.041Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zdd0nqbc4l83",
-          "name": "GRA9",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:28.551Z",
-          "updated_at": "2024-05-17T08:38:11.814Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "wm069jly18tz",
-          "name": "GRA9",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:18.008Z",
-          "updated_at": "2024-05-17T08:59:05.045Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "rtcd9r5f2b73",
-          "name": "GRA11",
-          "status": "operational",
-          "created_at": "2022-05-04T10:36:27.522Z",
-          "updated_at": "2024-06-17T19:49:48.662Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "q10zg1z8ymkz",
-          "name": "GRA11",
-          "status": "operational",
-          "created_at": "2023-08-18T10:29:46.549Z",
-          "updated_at": "2024-05-17T08:59:05.050Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-08-18",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-09-16T20:00:00.000Z",
-      "scheduled_until": "2024-09-17T04:00:00.000Z"
-    }
-  ],
+  "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
     "description": "Partially Degraded Service"
