@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-17T07:00:35.495Z"
+    "updated_at": "2024-09-17T08:00:02.372Z"
   },
   "components": [
     {
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2024-08-12T11:00:38.357Z",
+      "updated_at": "2024-09-17T08:00:02.249Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2024-09-15T12:11:32.234Z",
+      "updated_at": "2024-09-17T07:48:05.705Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1396,7 +1396,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2639,48 +2639,34 @@
       ]
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "y4x7h8rk30rw",
-      "name": "[BHS8][Dedicated Servers] - BHS0809A05C",
-      "status": "scheduled",
-      "created_at": "2024-09-11T00:45:27.873Z",
-      "updated_at": "2024-09-17T07:00:35.483Z",
+      "id": "p437y3ggkr7x",
+      "name": "[GRA1][Dedicated Servers] - Rack G122A17",
+      "status": "identified",
+      "created_at": "2024-09-17T07:48:05.673Z",
+      "updated_at": "2024-09-17T07:48:05.761Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/j2kbc4zncd90",
-      "started_at": "2024-09-11T00:45:27.863Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/vh35zkgl67sz",
+      "started_at": "2024-09-17T07:48:05.667Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "yjpkbmnh8h8y",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "y4x7h8rk30rw",
-          "created_at": "2024-09-17T07:00:35.348Z",
-          "updated_at": "2024-09-17T07:00:35.348Z",
-          "display_at": "2024-09-17T07:00:35.348Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8vx8v2hp7r4m",
-          "status": "scheduled",
-          "body": "This may temporarily affect availability.\n\n<b>Start time :</b> 17/09/2024 08:00 UTC \n<b>End time :</b> 17/09/2024 10:00 UTC \n<b>Service impact :</b> The Vrack network will be interrupted during the reloading process. \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on a network equipment.\n\nThank you for your understanding.",
-          "incident_id": "y4x7h8rk30rw",
-          "created_at": "2024-09-11T00:45:27.945Z",
-          "updated_at": "2024-09-11T00:45:27.945Z",
-          "display_at": "2024-09-11T00:45:27.945Z",
+          "id": "7v58hxxy986q",
+          "status": "identified",
+          "body": "An incident is in progress on our Bare Metal offer. \n\n\nWe are actively working to resolve this problem.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\n\nWe apologize for the inconvenience and thank you for your understanding.\n\n\nHere is detail for this incident :\n\n<b>Start time :</b> 17/09/2024 07:30 UTC\n<b>Service impact :</b> A significant number of servers in the rack G122A17 are no longer responding.\n<b>Root Cause :</b> Electrical disjunction\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "p437y3ggkr7x",
+          "created_at": "2024-09-17T07:48:05.759Z",
+          "updated_at": "2024-09-17T07:48:05.759Z",
+          "display_at": "2024-09-17T07:48:05.759Z",
           "affected_components": [
             {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -2690,24 +2676,25 @@
       ],
       "components": [
         {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-08-12T11:00:38.357Z",
-          "position": 1,
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2024-09-17T07:48:05.705Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-09-17T08:00:00.000Z",
-      "scheduled_until": "2024-09-17T10:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "xzsgrg2ckgly",
       "name": "[RBX7][Dedicated Servers] - Racks R709B04",
@@ -2815,10 +2802,97 @@
       ],
       "scheduled_for": "2024-09-25T01:00:00.000Z",
       "scheduled_until": "2024-09-25T04:00:00.000Z"
+    },
+    {
+      "id": "y4x7h8rk30rw",
+      "name": "[BHS8][Dedicated Servers] - BHS0809A05C",
+      "status": "in_progress",
+      "created_at": "2024-09-11T00:45:27.873Z",
+      "updated_at": "2024-09-17T08:00:02.357Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j2kbc4zncd90",
+      "started_at": "2024-09-11T00:45:27.863Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "tsxy9pkrvn6d",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "y4x7h8rk30rw",
+          "created_at": "2024-09-17T08:00:02.348Z",
+          "updated_at": "2024-09-17T08:00:02.348Z",
+          "display_at": "2024-09-17T08:00:02.348Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yjpkbmnh8h8y",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "y4x7h8rk30rw",
+          "created_at": "2024-09-17T07:00:35.348Z",
+          "updated_at": "2024-09-17T07:00:35.348Z",
+          "display_at": "2024-09-17T07:00:35.348Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8vx8v2hp7r4m",
+          "status": "scheduled",
+          "body": "This may temporarily affect availability.\n\n<b>Start time :</b> 17/09/2024 08:00 UTC \n<b>End time :</b> 17/09/2024 10:00 UTC \n<b>Service impact :</b> The Vrack network will be interrupted during the reloading process. \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on a network equipment.\n\nThank you for your understanding.",
+          "incident_id": "y4x7h8rk30rw",
+          "created_at": "2024-09-11T00:45:27.945Z",
+          "updated_at": "2024-09-11T00:45:27.945Z",
+          "display_at": "2024-09-11T00:45:27.945Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2024-09-17T08:00:02.249Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-09-17T08:00:00.000Z",
+      "scheduled_until": "2024-09-17T10:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
