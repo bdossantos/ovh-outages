@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-18T14:53:49.406Z"
+    "updated_at": "2024-09-18T17:12:57.209Z"
   },
   "components": [
     {
@@ -1353,9 +1353,9 @@
     {
       "id": "9m4wdr70k60d",
       "name": "DE",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:47.972Z",
-      "updated_at": "2024-09-08T22:49:53.842Z",
+      "updated_at": "2024-09-18T17:12:57.143Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -5978,7 +5978,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2024-09-10T06:50:09.739Z",
       "position": 47,
@@ -6078,6 +6078,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "bqp22gdvcd31",
+      "name": "[DE][Public Cloud] - Object storage S3 incident notification",
+      "status": "identified",
+      "created_at": "2024-09-18T17:12:57.106Z",
+      "updated_at": "2024-09-18T17:12:57.206Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/t13j4jjt9jm2",
+      "started_at": "2024-09-18T17:12:57.098Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1vx21w3j384p",
+          "status": "identified",
+          "body": "We would like to inform you that we are having an ongoing incident.\nOur teams are working tirelessly to resolve this incident once and for all.\n\n<b>Start time :</b> 11/09/2024 08:25 UTC\n<b>Service impact :</b> Due to this <a href=\"https://bare-metal-servers.status-ovhcloud.com/incidents/01flfrd5s4r0\">incident</a> some customers may encounter accessibility problems with some of their objects.\n<b>Ongoing actions :</b> Our technical teams will conduct a series of checks to guarantee the functionality of all the hardware.\nDuring the intervention, customers may experience difficulties in accessing some of their services. \nFurther information will be provided in the near future.\n\nAs soon as the situation evolves or the incident is resolved, we will keep you informed.",
+          "incident_id": "bqp22gdvcd31",
+          "created_at": "2024-09-18T17:12:57.203Z",
+          "updated_at": "2024-09-18T17:12:57.203Z",
+          "display_at": "2024-09-18T17:12:57.203Z",
+          "affected_components": [
+            {
+              "code": "9m4wdr70k60d",
+              "name": "Storage || Object storage - DE",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9m4wdr70k60d",
+          "name": "DE",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:47.972Z",
+          "updated_at": "2024-09-18T17:12:57.143Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "wd1nky323m8t",
       "name": "[Global][Public Cloud] - Databases API instabilities",
@@ -11793,6 +11846,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
