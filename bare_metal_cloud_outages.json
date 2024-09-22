@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-22T00:27:40.046Z"
+    "updated_at": "2024-09-22T22:16:37.716Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1351,9 +1351,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-09-19T03:31:04.848Z",
+      "updated_at": "2024-09-22T22:10:12.067Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2639,7 +2639,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "hy8v15fp26mz",
+      "name": "[RBX8][Dedicated Servers] - Rack R831B26",
+      "status": "identified",
+      "created_at": "2024-09-22T22:10:12.026Z",
+      "updated_at": "2024-09-22T22:16:37.712Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/tngh5n8n4phy",
+      "started_at": "2024-09-22T22:10:12.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qnqtlv5pgy6x",
+          "status": "identified",
+          "body": "An incident is in progress on our Bare Metal offer. \n\nWe are actively working to resolve this problem.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 22/09/2024 21:56 UTC\n<b>Service impact :</b> A significant number of host in the rack R831B26 are no longer responding.\n<b>Root cause :</b> Electrical equipment malfunction\n<b>Ongoing actions :</b> The circuit breakers are raised, a large part of the servers will be restored\nUpdate will be posted as significant progress is made.",
+          "incident_id": "hy8v15fp26mz",
+          "created_at": "2024-09-22T22:10:12.450Z",
+          "updated_at": "2024-09-22T22:16:37.658Z",
+          "display_at": "2024-09-22T22:10:12.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-09-22T22:10:12.067Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "xzsgrg2ckgly",
@@ -2679,9 +2733,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2024-09-19T03:31:04.848Z",
+          "updated_at": "2024-09-22T22:10:12.067Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2967,7 +3021,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
