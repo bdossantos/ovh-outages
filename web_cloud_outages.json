@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-24T22:16:41.155Z"
+    "updated_at": "2024-09-25T09:43:07.231Z"
   },
   "components": [
     {
@@ -115,9 +115,9 @@
     {
       "id": "g0pjvfdbyqyh",
       "name": "Reception",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:03.785Z",
-      "updated_at": "2024-09-14T05:25:12.068Z",
+      "updated_at": "2024-09-25T09:38:38.585Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1222,7 +1222,7 @@
     {
       "id": "7935ckb29tc8",
       "name": "Collaborative solutions || MX Plan",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:06.827Z",
       "updated_at": "2023-05-16T12:09:06.686Z",
       "position": 5,
@@ -2813,7 +2813,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "yxnvs2l4yn09",
+      "name": "[Global][Collaborative solutions] - MX Plan Reception incident notification",
+      "status": "investigating",
+      "created_at": "2024-09-25T09:38:38.539Z",
+      "updated_at": "2024-09-25T09:38:38.647Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/fzqrc5d2zzpx",
+      "started_at": "2024-09-25T09:38:38.529Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "bhgfh6px8dv0",
+          "status": "investigating",
+          "body": "An incident is in progress on our collaborative solutions offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 01/09/2024 17:00 UTC\n<b>Service impact :</b> With Zimbra migration, storage of emails is migrated too and usage calculation can be differente after migration. It may generate increase of usage of mailbox.\nSince Monday 23/09/24, if source mailbox was not over quota, we increase quota of mailbox over 5Go to don't generate impact for you after migration.\n<b>Ongoing actions :</b> For customer migrated before, fix is currently in progress to increase quota.\nIf you want to check your quota, we advice to make it on webmail to see your real quota applied.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "yxnvs2l4yn09",
+          "created_at": "2024-09-25T09:38:38.644Z",
+          "updated_at": "2024-09-25T09:38:38.644Z",
+          "display_at": "2024-09-25T09:38:38.644Z",
+          "affected_components": [
+            {
+              "code": "g0pjvfdbyqyh",
+              "name": "Collaborative solutions || MX Plan - Reception",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g0pjvfdbyqyh",
+          "name": "Reception",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:22:03.785Z",
+          "updated_at": "2024-09-25T09:38:38.585Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "7935ckb29tc8",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tyhg41ndyb83",
@@ -4946,7 +5000,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
