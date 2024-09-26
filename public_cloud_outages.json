@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-09-25T15:12:08.497Z"
+    "updated_at": "2024-09-26T11:43:06.091Z"
   },
   "components": [
     {
@@ -2167,9 +2167,9 @@
     {
       "id": "f99hq5wwk7cq",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:37:07.357Z",
-      "updated_at": "2024-09-23T07:02:53.135Z",
+      "updated_at": "2024-09-26T11:36:56.835Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -5862,7 +5862,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2024-09-10T06:50:09.689Z",
       "position": 43,
@@ -6078,6 +6078,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "nkryyk43znl6",
+      "name": "[GRA1][Storage] - Block Storage incident notification",
+      "status": "investigating",
+      "created_at": "2024-09-26T11:36:56.795Z",
+      "updated_at": "2024-09-26T11:41:48.500Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/xmg175mt2fvg",
+      "started_at": "2024-09-26T11:36:56.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kffwp1bpdf1c",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 26/09/2024 10:46 UTC \n<b>Service impact :</b> Some customers are facing latencies and sometimes errors while trying to access their block storage's volumes\n<b>Ongoing actions :</b> Investigating\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "nkryyk43znl6",
+          "created_at": "2024-09-26T11:36:56.905Z",
+          "updated_at": "2024-09-26T11:41:48.443Z",
+          "display_at": "2024-09-26T11:36:56.000Z",
+          "affected_components": [
+            {
+              "code": "f99hq5wwk7cq",
+              "name": "Storage || Block storage - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f99hq5wwk7cq",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:37:07.357Z",
+          "updated_at": "2024-09-26T11:36:56.835Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "wd1nky323m8t",
       "name": "[Global][Public Cloud] - Databases API instabilities",
