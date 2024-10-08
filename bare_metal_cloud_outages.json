@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-08T12:43:07.589Z"
+    "updated_at": "2024-10-08T13:46:30.318Z"
   },
   "components": [
     {
@@ -1490,9 +1490,9 @@
     {
       "id": "7fb9d18j4s12",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:31:36.480Z",
-      "updated_at": "2024-09-19T12:59:58.061Z",
+      "updated_at": "2024-10-08T13:46:30.276Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2587,7 +2587,7 @@
     {
       "id": "40xgq25nqllh",
       "name": "Virtual Private Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:31:39.112Z",
       "updated_at": "2024-09-10T06:16:11.319Z",
       "position": 22,
@@ -2640,6 +2640,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ttc9db6jlp9r",
+      "name": "[BHS][Virtual Private Servers] - Hosts unreachable",
+      "status": "identified",
+      "created_at": "2024-10-08T13:46:30.252Z",
+      "updated_at": "2024-10-08T13:46:30.315Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/vpzwx5dhf1tq",
+      "started_at": "2024-10-08T13:46:30.246Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vmh6dfvgs3r4",
+          "status": "identified",
+          "body": "An incident is in progress on our Virtual Private Servers offer. It has temporarily affected the availability.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 08/10/2024 11:54 UTC  \n<b>Service impact :</b> Some hosts are unavailable.\n<b>Root cause :</b> Issue caused by this incident https://bare-metal-servers.status-ovhcloud.com/incidents/0b8phs355pfs\n\nAs soon as the situation evolves or the incident is resolved, we will keep you informed.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "ttc9db6jlp9r",
+          "created_at": "2024-10-08T13:46:30.314Z",
+          "updated_at": "2024-10-08T13:46:30.314Z",
+          "display_at": "2024-10-08T13:46:30.314Z",
+          "affected_components": [
+            {
+              "code": "7fb9d18j4s12",
+              "name": "Virtual Private Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7fb9d18j4s12",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:31:36.480Z",
+          "updated_at": "2024-10-08T13:46:30.276Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "0b8phs355pfs",
       "name": "[BHS4][Network] - Rack T04C10",
