@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-04T16:43:13.007Z"
+    "updated_at": "2024-10-08T13:21:01.026Z"
   },
   "components": [
     {
@@ -250,9 +250,9 @@
     {
       "id": "f48mzw7bpn0d",
       "name": "BHS1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:34.420Z",
-      "updated_at": "2024-09-04T20:53:32.142Z",
+      "updated_at": "2024-10-08T13:19:27.706Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -809,9 +809,9 @@
     {
       "id": "my3dbz55pzrq",
       "name": "BHS3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:35.569Z",
-      "updated_at": "2024-09-04T20:53:32.166Z",
+      "updated_at": "2024-10-08T13:19:27.721Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1308,9 +1308,9 @@
     {
       "id": "d6db30j7nx4r",
       "name": "BHS5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:37.373Z",
-      "updated_at": "2024-09-04T20:53:32.231Z",
+      "updated_at": "2024-10-08T13:19:27.734Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2212,7 +2212,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2023-05-16T12:01:33.078Z",
       "position": 5,
@@ -6094,6 +6094,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "1zz3pv87cwfp",
+      "name": "[CA][Public Cloud] - Instances unreachable",
+      "status": "identified",
+      "created_at": "2024-10-08T13:19:27.669Z",
+      "updated_at": "2024-10-08T13:21:01.018Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hb6hmzqwmqjk",
+      "started_at": "2024-10-08T13:19:27.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "pzs0cskdqn6j",
+          "status": "identified",
+          "body": "An incident is in progress on our compute offer. It has temporarily affected the availability.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 08/10/2024 11:54 UTC  \n<b>Service impact :</b> Some instances are unavailable.\n<b>Root cause :</b> Issue caused by this incident https://bare-metal-servers.status-ovhcloud.com/incidents/0b8phs355pfs\n\nAs soon as the situation evolves or the incident is resolved, we will keep you informed.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "1zz3pv87cwfp",
+          "created_at": "2024-10-08T13:19:27.786Z",
+          "updated_at": "2024-10-08T13:21:01.014Z",
+          "display_at": "2024-10-08T13:19:27.000Z",
+          "affected_components": [
+            {
+              "code": "f48mzw7bpn0d",
+              "name": "Compute - Instance || BHS - BHS1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f48mzw7bpn0d",
+          "name": "BHS1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:34.420Z",
+          "updated_at": "2024-10-08T13:19:27.706Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "my3dbz55pzrq",
+          "name": "BHS3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:35.569Z",
+          "updated_at": "2024-10-08T13:19:27.721Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "d6db30j7nx4r",
+          "name": "BHS5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:37.373Z",
+          "updated_at": "2024-10-08T13:19:27.734Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "bqp22gdvcd31",
       "name": "[DE][Public Cloud] - Object storage S3 incident notification",
