@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-08T18:59:27.392Z"
+    "updated_at": "2024-10-10T06:01:44.944Z"
   },
   "components": [
     {
@@ -2595,9 +2595,9 @@
     {
       "id": "42rlkfllkbpy",
       "name": "SGP",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:59.157Z",
-      "updated_at": "2024-04-29T00:23:02.627Z",
+      "updated_at": "2024-10-10T05:43:23.787Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2980,9 +2980,9 @@
     {
       "id": "lh1hb31mp6kh",
       "name": "SYD",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:56.096Z",
-      "updated_at": "2024-04-29T18:11:06.379Z",
+      "updated_at": "2024-10-10T05:43:23.807Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -3418,9 +3418,9 @@
     {
       "id": "nxnwll3tp1yy",
       "name": "US-EAST-VA-1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-14T12:27:55.039Z",
-      "updated_at": "2024-06-30T09:37:12.621Z",
+      "updated_at": "2024-10-10T06:01:04.018Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -3620,9 +3620,9 @@
     {
       "id": "cfmtlxczhb10",
       "name": "US-WEST-OR-1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-04-14T12:28:28.524Z",
-      "updated_at": "2024-03-13T08:34:17.409Z",
+      "updated_at": "2024-10-10T05:43:23.830Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -6094,6 +6094,154 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hw2km8wb6689",
+      "name": "[All US region][Storage] - Object Storage S3 Standard/High Perf/Swift.",
+      "status": "investigating",
+      "created_at": "2024-10-10T05:43:23.743Z",
+      "updated_at": "2024-10-10T06:01:44.940Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x9m0p4tl6qgt",
+      "started_at": "2024-10-10T05:43:23.730Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6q6x5lhtcjql",
+          "status": "investigating",
+          "body": "An incident is in progress on our Block Storage offer.\n\nPlease be aware that this is currently affecting the Latency.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 10/10/2024 05:12 UTC \n<b>Service impact :</b> Customers may experience storage connection problems, 503 errors and high response times.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "hw2km8wb6689",
+          "created_at": "2024-10-10T06:01:04.066Z",
+          "updated_at": "2024-10-10T06:01:04.066Z",
+          "display_at": "2024-10-10T06:01:04.066Z",
+          "affected_components": [
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "nxnwll3tp1yy",
+              "name": "Storage || Object storage - US-EAST-VA-1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "cfmtlxczhb10",
+              "name": "Storage || Object storage - US-WEST-OR-1",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ttzvlk6l81l0",
+          "status": "investigating",
+          "body": "We have detected an issue on one of our services. We will update informations when we will have more details.",
+          "incident_id": "hw2km8wb6689",
+          "created_at": "2024-10-10T05:43:23.892Z",
+          "updated_at": "2024-10-10T05:43:23.892Z",
+          "display_at": "2024-10-10T05:43:23.892Z",
+          "affected_components": [
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "lh1hb31mp6kh",
+              "name": "Storage || Object storage - SYD",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "cfmtlxczhb10",
+              "name": "Storage || Object storage - US-WEST-OR-1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "42rlkfllkbpy",
+          "name": "SGP",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:59.157Z",
+          "updated_at": "2024-10-10T05:43:23.787Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lh1hb31mp6kh",
+          "name": "SYD",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:56.096Z",
+          "updated_at": "2024-10-10T05:43:23.807Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "nxnwll3tp1yy",
+          "name": "US-EAST-VA-1",
+          "status": "degraded_performance",
+          "created_at": "2023-04-14T12:27:55.039Z",
+          "updated_at": "2024-10-10T06:01:04.018Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-14",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cfmtlxczhb10",
+          "name": "US-WEST-OR-1",
+          "status": "degraded_performance",
+          "created_at": "2023-04-14T12:28:28.524Z",
+          "updated_at": "2024-10-10T05:43:23.830Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-14",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "bqp22gdvcd31",
       "name": "[DE][Public Cloud] - Object storage S3 incident notification",
