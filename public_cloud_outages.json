@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-14T18:26:10.104Z"
+    "updated_at": "2024-10-15T04:33:05.950Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "8x32jhcpqq1m",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:48.039Z",
-      "updated_at": "2024-09-18T01:09:57.275Z",
+      "updated_at": "2024-10-15T04:02:19.619Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2910,7 +2910,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -6094,6 +6094,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "bch3s165b6mg",
+      "name": "[GRA1][Compute] Instances unreachable",
+      "status": "identified",
+      "created_at": "2024-10-15T04:02:19.592Z",
+      "updated_at": "2024-10-15T04:33:05.940Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/c31xn5f09gkv",
+      "started_at": "2024-10-15T04:02:19.586Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "33d1bz076t6v",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "bch3s165b6mg",
+          "created_at": "2024-10-15T04:33:05.936Z",
+          "updated_at": "2024-10-15T04:33:05.936Z",
+          "display_at": "2024-10-15T04:33:05.936Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hqm1yj1j0p5z",
+          "status": "investigating",
+          "body": "An incident is in progress on our Compute-Instance offer.\n\nPlease be aware that this is currently affecting the Functionality.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 15/10/2024 03:19 UTC \n<b>Service impact :</b> Some instances in the GRA1 region are unreachable. \n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "bch3s165b6mg",
+          "created_at": "2024-10-15T04:02:19.670Z",
+          "updated_at": "2024-10-15T04:02:19.670Z",
+          "display_at": "2024-10-15T04:02:19.670Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2024-10-15T04:02:19.619Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "bqp22gdvcd31",
       "name": "[DE][Public Cloud] - Object storage S3 incident notification",
