@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-17T03:55:43.307Z"
+    "updated_at": "2024-10-17T11:43:04.282Z"
   },
   "components": [
     {
@@ -1366,9 +1366,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2024-10-16T00:26:53.820Z",
+      "updated_at": "2024-10-17T11:40:05.512Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2273,7 +2273,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2024-09-10T06:45:37.274Z",
       "position": 28,
@@ -2355,7 +2355,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lytvztkx56f2",
+      "name": "[RBX2][VMware Private Cloud] - Storage incident notification - Cluster10072",
+      "status": "investigating",
+      "created_at": "2024-10-17T11:40:05.472Z",
+      "updated_at": "2024-10-17T11:40:05.583Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/kg52mfz5wxvg",
+      "started_at": "2024-10-17T11:40:05.463Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "4plt9cxvl8fy",
+          "status": "investigating",
+          "body": "An incident is in progress on our VMware Private Cloud offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 17/10/2024 11:04 UTC\n<b>Service impact :</b> ssd-003553 - ssd-001348 - ssd-001537 - ssd-001351 - ssd-001350 - ssd-001345\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "lytvztkx56f2",
+          "created_at": "2024-10-17T11:40:05.580Z",
+          "updated_at": "2024-10-17T11:40:05.580Z",
+          "display_at": "2024-10-17T11:40:05.580Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2024-10-17T11:40:05.512Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "rsz7xmlcsbqy",
@@ -3998,7 +4052,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
