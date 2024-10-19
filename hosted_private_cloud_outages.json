@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-18T17:43:07.347Z"
+    "updated_at": "2024-10-19T04:26:39.740Z"
   },
   "components": [
     {
@@ -1366,9 +1366,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2024-10-18T17:22:01.911Z",
+      "updated_at": "2024-10-19T04:24:15.203Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2273,7 +2273,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2024-09-10T06:45:37.274Z",
       "position": 28,
@@ -2358,17 +2358,37 @@
   "incidents": [
     {
       "id": "4d893hmj3hxc",
-      "name": "[RBX2][VMware Private Cloud] - Storage incident notification - Cluster10072",
-      "status": "monitoring",
+      "name": "[RBX2D][VMware Private Cloud] - Storage incident notification - Cluster10072",
+      "status": "identified",
       "created_at": "2024-10-18T17:08:19.986Z",
-      "updated_at": "2024-10-18T17:22:01.964Z",
+      "updated_at": "2024-10-19T04:26:39.736Z",
       "monitoring_at": "2024-10-18T17:22:01.947Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/tm16v10tdx46",
-      "started_at": "2024-10-18T17:08:19.979Z",
+      "started_at": "2024-10-19T04:24:15.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "ywzbzy63l3bk",
+          "status": "identified",
+          "body": "<b>Service impact :</b> Since 19/10/2024 03:45 UTC, customers aren't able to access the current datastores: \nssd-001351; ssd-001350; ssd-001345.\n<b>Ongoing actions :</b> Our technical teams are currently working to solve the issue",
+          "incident_id": "4d893hmj3hxc",
+          "created_at": "2024-10-19T04:24:15.243Z",
+          "updated_at": "2024-10-19T04:24:31.793Z",
+          "display_at": "2024-10-19T04:24:15.000Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "VMware Private Cloud || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "p10ntvymq3nh",
           "status": "monitoring",
@@ -2392,11 +2412,11 @@
         {
           "id": "5r2lcp35343n",
           "status": "investigating",
-          "body": "An incident is in progress on our VMware Private Cloud offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 18/10/2024 17:03 UTC\n<b>Service impact :</b> ssd-003553 - ssd-001348 - ssd-001537 - ssd-001351 - ssd-001350 - ssd-001345\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.",
+          "body": "An incident is in progress on our VMware Private Cloud offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 18/10/2024 17:03 UTC\n<b>Service impact :</b>Customers aren't able to access the current datastores: ssd-003553 - ssd-001348 - ssd-001537 - ssd-001351 - ssd-001350 - ssd-001345\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.",
           "incident_id": "4d893hmj3hxc",
           "created_at": "2024-10-18T17:08:20.066Z",
-          "updated_at": "2024-10-18T17:08:20.066Z",
-          "display_at": "2024-10-18T17:08:20.066Z",
+          "updated_at": "2024-10-19T04:26:39.683Z",
+          "display_at": "2024-10-18T17:08:20.000Z",
           "affected_components": [
             {
               "code": "qg0qytmyzzr7",
@@ -2414,9 +2434,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2024-10-18T17:22:01.911Z",
+          "updated_at": "2024-10-19T04:24:15.203Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3789,7 +3809,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
