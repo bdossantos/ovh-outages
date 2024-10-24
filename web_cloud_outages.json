@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-24T06:51:21.321Z"
+    "updated_at": "2024-10-24T08:30:23.577Z"
   },
   "components": [
     {
@@ -2611,7 +2611,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2024-09-10T08:22:09.103Z",
       "position": 26,
@@ -2785,9 +2785,9 @@
     {
       "id": "9nmddb02w9nq",
       "name": "Cluster100",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-06-19T09:26:50.690Z",
-      "updated_at": "2024-09-09T12:04:26.263Z",
+      "updated_at": "2024-10-24T08:30:23.488Z",
       "position": 29,
       "description": null,
       "showcase": false,
@@ -2813,7 +2813,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rqrf8d7cktkq",
+      "name": "[GRA][Web Hosting] - Cluster100 - Filerz2122",
+      "status": "investigating",
+      "created_at": "2024-10-24T08:30:23.431Z",
+      "updated_at": "2024-10-24T08:30:23.572Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/7kxf03y2b9ms",
+      "started_at": "2024-10-24T08:30:23.420Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "s5jq6rql2g48",
+          "status": "investigating",
+          "body": "<b>Start time :</b> 24/10/2024 08:15 UTC\n<b>Service impact :</b> Websites slowness on Filerz2122\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "rqrf8d7cktkq",
+          "created_at": "2024-10-24T08:30:23.568Z",
+          "updated_at": "2024-10-24T08:30:23.568Z",
+          "display_at": "2024-10-24T08:30:23.568Z",
+          "affected_components": [
+            {
+              "code": "9nmddb02w9nq",
+              "name": "Web Hosting || Datacenter GRA - Cluster100",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9nmddb02w9nq",
+          "name": "Cluster100",
+          "status": "degraded_performance",
+          "created_at": "2024-06-19T09:26:50.690Z",
+          "updated_at": "2024-10-24T08:30:23.488Z",
+          "position": 29,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-06-19",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7h6m3y44lg0q",
@@ -2913,7 +2967,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
