@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-25T16:15:33.201Z"
+    "updated_at": "2024-10-25T22:31:29.306Z"
   },
   "components": [
     {
@@ -1488,6 +1488,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "y3dtxmcbzybk",
+      "name": "GRA",
+      "status": "partial_outage",
+      "created_at": "2024-10-25T22:28:26.544Z",
+      "updated_at": "2024-10-25T22:31:29.235Z",
+      "position": 5,
+      "description": null,
+      "showcase": false,
+      "start_date": "2024-10-25",
+      "group_id": "fmhmd6m8hs98",
+      "page_id": "1qzzx4z9jvmv",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "7fb9d18j4s12",
       "name": "BHS",
       "status": "operational",
@@ -2378,7 +2393,7 @@
     {
       "id": "fmhmd6m8hs98",
       "name": "Storage and Backups || Block Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-08-01T15:50:23.899Z",
       "updated_at": "2024-09-10T06:16:11.263Z",
       "position": 15,
@@ -2393,7 +2408,8 @@
         "nlxj253bjpkz",
         "2ccznfnjjls2",
         "zf3h16ggwps5",
-        "lxhzsdmz1r5f"
+        "lxhzsdmz1r5f",
+        "y3dtxmcbzybk"
       ]
     },
     {
@@ -2640,6 +2656,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hbffv3f90lmy",
+      "name": "[GRA][Storage] - Block Storage Notification Incident",
+      "status": "investigating",
+      "created_at": "2024-10-25T22:31:29.196Z",
+      "updated_at": "2024-10-25T22:31:29.302Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/rmr5fj8qt2sv",
+      "started_at": "2024-10-25T22:31:29.187Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "4tqcxxgwb35n",
+          "status": "investigating",
+          "body": "An incident is in progress on our Block Storage offer.\n\nPlease be aware that this is currently affecting the Availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 25/10/2024 21:25 UTC \n<b>Service impact :</b> Some customers cannot access the Block Storage service.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "hbffv3f90lmy",
+          "created_at": "2024-10-25T22:31:29.299Z",
+          "updated_at": "2024-10-25T22:31:29.299Z",
+          "display_at": "2024-10-25T22:31:29.299Z",
+          "affected_components": [
+            {
+              "code": "y3dtxmcbzybk",
+              "name": "Storage and Backups || Block Storage - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y3dtxmcbzybk",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2024-10-25T22:28:26.544Z",
+          "updated_at": "2024-10-25T22:31:29.235Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-10-25",
+          "group_id": "fmhmd6m8hs98",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "t0bbmfgc8744",
       "name": "[LIM3][Dedicated Servers] - Racks LIM0303A05B",
