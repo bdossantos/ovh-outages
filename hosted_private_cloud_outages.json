@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-10-26T18:43:01.632Z"
+    "updated_at": "2024-10-26T21:21:54.128Z"
   },
   "components": [
     {
@@ -931,9 +931,9 @@
     {
       "id": "h49h85c2xwcr",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.224Z",
-      "updated_at": "2024-10-08T23:15:22.800Z",
+      "updated_at": "2024-10-26T21:16:51.120Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2273,7 +2273,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2024-09-10T06:45:37.274Z",
       "position": 28,
@@ -2356,6 +2356,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "tcl7sl4m7n6f",
+      "name": "[RBX2C][Hosted Private Cloud] - Host incident notification",
+      "status": "identified",
+      "created_at": "2024-10-26T21:16:51.072Z",
+      "updated_at": "2024-10-26T21:21:54.124Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/6llzp1zp004c",
+      "started_at": "2024-10-26T21:16:51.063Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "q895tx6cnnq9",
+          "status": "identified",
+          "body": "<b>Update :</b> The cooling problem has been solved, our teams are working on the last hosts still unavailable.",
+          "incident_id": "tcl7sl4m7n6f",
+          "created_at": "2024-10-26T21:19:01.500Z",
+          "updated_at": "2024-10-26T21:19:01.500Z",
+          "display_at": "2024-10-26T21:19:01.500Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f5dv19sznrbw",
+          "status": "identified",
+          "body": "An incident is in progress on our Hosted Private Cloud offer.\n\nPlease be aware that this is currently affecting the Availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 26/10/2024 20:30 UTC \n<b>Service impact :</b> Some hosts are unavailable.\n<b>Root cause</b> Incident due to a cooling issue\nOur teams will do their utmost to provide you with service as quickly as possible.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "tcl7sl4m7n6f",
+          "created_at": "2024-10-26T21:16:51.177Z",
+          "updated_at": "2024-10-26T21:16:51.177Z",
+          "display_at": "2024-10-26T21:16:51.177Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "VMware Private Cloud || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2024-10-26T21:16:51.120Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "qzwq9m4n15j6",
       "name": "[LIM1C][Hosted Private Cloud] - Storage Cluster6259 incident notification",
