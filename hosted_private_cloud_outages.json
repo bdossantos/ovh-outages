@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-02T19:52:17.046Z"
+    "updated_at": "2024-11-02T20:57:27.867Z"
   },
   "components": [
     {
@@ -1411,9 +1411,9 @@
     {
       "id": "z03dslm46ktz",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:40:10.951Z",
-      "updated_at": "2024-10-26T21:38:40.921Z",
+      "updated_at": "2024-11-02T20:56:45.189Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2231,7 +2231,7 @@
     {
       "id": "n05r15rpb4gy",
       "name": "VMware Private Cloud || LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:40:11.547Z",
       "updated_at": "2024-09-10T06:45:37.252Z",
       "position": 26,
@@ -2355,7 +2355,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rm0w1r2bwjk4",
+      "name": "[LIM1C][Hosted Private Cloud] - Storage Cluster6284 incident notification",
+      "status": "investigating",
+      "created_at": "2024-11-02T20:56:45.160Z",
+      "updated_at": "2024-11-02T20:57:27.864Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/zvcx7l3d54wz",
+      "started_at": "2024-11-02T20:56:45.000Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "77g4wft0f6gn",
+          "status": "investigating",
+          "body": "An incident is in progress on our Hosted Private Cloud offer.\n\nPlease be aware that this is currently affecting the Availability.\n\nHere is detail for this incident :\n<b>Start time :</b> 02/11/2024 20:04 UTC\n<b>Service impact :</b> Cluster6284 is temporarily unavailable.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "rm0w1r2bwjk4",
+          "created_at": "2024-11-02T20:56:45.240Z",
+          "updated_at": "2024-11-02T20:57:27.820Z",
+          "display_at": "2024-11-02T20:56:45.000Z",
+          "affected_components": [
+            {
+              "code": "z03dslm46ktz",
+              "name": "VMware Private Cloud || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z03dslm46ktz",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:40:10.951Z",
+          "updated_at": "2024-11-02T20:56:45.189Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "1thstk2pyrch",
@@ -3222,7 +3276,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
