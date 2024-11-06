@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-06T09:43:13.598Z"
+    "updated_at": "2024-11-06T10:34:27.773Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "8x32jhcpqq1m",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:48.039Z",
-      "updated_at": "2024-10-16T19:40:52.711Z",
+      "updated_at": "2024-11-06T10:28:50.037Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1169,9 +1169,9 @@
     {
       "id": "1hclp9sj91r4",
       "name": "GRA2",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-08-08T12:50:01.422Z",
-      "updated_at": "2024-09-18T01:09:57.290Z",
+      "updated_at": "2024-11-06T10:31:46.158Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2047,9 +2047,9 @@
     {
       "id": "00c202kmy3sr",
       "name": "GRA4",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-08-08T12:50:27.322Z",
-      "updated_at": "2024-10-14T18:26:03.061Z",
+      "updated_at": "2024-11-06T10:31:46.176Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2910,7 +2910,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2023-05-16T12:02:03.521Z",
       "position": 7,
@@ -6111,6 +6111,121 @@
   ],
   "incidents": [
     {
+      "id": "wz5c8pjls8gs",
+      "name": "[GRA1][Public cloud] - Instances unreachable - G122A11",
+      "status": "investigating",
+      "created_at": "2024-11-06T10:28:50.008Z",
+      "updated_at": "2024-11-06T10:31:46.227Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0376bsn5qf3h",
+      "started_at": "2024-11-06T10:28:49.996Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "0bglxtg2jq0m",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "wz5c8pjls8gs",
+          "created_at": "2024-11-06T10:31:46.224Z",
+          "updated_at": "2024-11-06T10:31:46.224Z",
+          "display_at": "2024-11-06T10:31:46.224Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "1hclp9sj91r4",
+              "name": "Compute - Instance || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "00c202kmy3sr",
+              "name": "Compute - Instance || GRA - GRA4",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vd26d2tx8r3w",
+          "status": "investigating",
+          "body": "An incident is in progress on our Public Cloud offer.\n\nPlease be aware that this is currently affecting the availability of some services.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 06/11/2024 10:06 UTC \n<b>Service impact :</b> Some instances are unavailable.\n<b>Root cause :</b> https://bare-metal-servers.status-ovhcloud.com/incidents/6z5d7mg6r7q3\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "wz5c8pjls8gs",
+          "created_at": "2024-11-06T10:28:50.085Z",
+          "updated_at": "2024-11-06T10:29:48.619Z",
+          "display_at": "2024-11-06T10:28:50.000Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2024-11-06T10:28:50.037Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "1hclp9sj91r4",
+          "name": "GRA2",
+          "status": "partial_outage",
+          "created_at": "2024-08-08T12:50:01.422Z",
+          "updated_at": "2024-11-06T10:31:46.158Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-08-08",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "00c202kmy3sr",
+          "name": "GRA4",
+          "status": "partial_outage",
+          "created_at": "2024-08-08T12:50:27.322Z",
+          "updated_at": "2024-11-06T10:31:46.176Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-08-08",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "bqp22gdvcd31",
       "name": "[DE][Public Cloud] - Object storage S3 incident notification",
       "status": "identified",
@@ -6672,86 +6787,6 @@
       ],
       "scheduled_for": "2024-12-04T09:00:00.000Z",
       "scheduled_until": "2024-12-04T17:00:00.000Z"
-    },
-    {
-      "id": "yrhjw5tnz159",
-      "name": "[MRS][Containers & Orchestration] - Managed Rancher Service Maintenance",
-      "status": "in_progress",
-      "created_at": "2024-11-04T08:55:12.356Z",
-      "updated_at": "2024-11-06T09:30:02.187Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/38z2s4smr5rn",
-      "started_at": "2024-11-04T08:55:12.351Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "yn602yqbfbgx",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "yrhjw5tnz159",
-          "created_at": "2024-11-06T09:30:02.184Z",
-          "updated_at": "2024-11-06T09:30:02.184Z",
-          "display_at": "2024-11-06T09:30:02.184Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n8k8b6p1t2t0",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "yrhjw5tnz159",
-          "created_at": "2024-11-06T08:30:02.812Z",
-          "updated_at": "2024-11-06T08:30:02.812Z",
-          "display_at": "2024-11-06T08:30:02.812Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "tzlhm4v6531n",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Web Hosting offer. \n\n<b>Start time :</b> 06/11/2024 09:30 UTC \n<b>End time :</b> 06/11/2024 17:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a network maintenance.\n\nThank you for your understanding.",
-          "incident_id": "yrhjw5tnz159",
-          "created_at": "2024-11-04T08:55:12.419Z",
-          "updated_at": "2024-11-04T08:55:12.419Z",
-          "display_at": "2024-11-04T08:55:12.419Z",
-          "affected_components": [
-            {
-              "code": "qwqj3m81wkhq",
-              "name": "Containers & Orchestration || Managed Rancher Service",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qwqj3m81wkhq",
-          "name": "Containers & Orchestration || Managed Rancher Service",
-          "status": "operational",
-          "created_at": "2024-07-16T13:52:00.560Z",
-          "updated_at": "2024-11-04T12:11:43.819Z",
-          "position": 18,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-07-16",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-06T09:30:00.000Z",
-      "scheduled_until": "2024-11-06T17:00:00.000Z"
     },
     {
       "id": "yqhqqjht5jjt",
