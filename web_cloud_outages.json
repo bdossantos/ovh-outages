@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-07T13:13:44.021Z"
+    "updated_at": "2024-11-07T15:18:32.701Z"
   },
   "components": [
     {
@@ -2993,7 +2993,62 @@
       "reminder_intervals": null
     }
   ],
-  "scheduled_maintenances": [],
+  "scheduled_maintenances": [
+    {
+      "id": "8t093zjtwhx3",
+      "name": "[Global][VoIP] - Maintenance of SMS services",
+      "status": "scheduled",
+      "created_at": "2024-11-07T15:18:32.631Z",
+      "updated_at": "2024-11-07T15:18:32.698Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/j5qsqppxr79w",
+      "started_at": "2024-11-07T15:18:32.621Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "9xp4wpfxh539",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our SMS offer.  \n\n<b>Start time :</b> 07/11/2024 20:00 UTC \n<b>End time :</b> 07/11/2024 21:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> Our teams need to implement a new configuration to improve the user experience.  \n\nThank you for your understanding.",
+          "incident_id": "8t093zjtwhx3",
+          "created_at": "2024-11-07T15:18:32.695Z",
+          "updated_at": "2024-11-07T15:18:32.695Z",
+          "display_at": "2024-11-07T15:18:32.695Z",
+          "affected_components": [
+            {
+              "code": "d167jln8tkv5",
+              "name": "VoIP || Services - SMS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d167jln8tkv5",
+          "name": "SMS",
+          "status": "operational",
+          "created_at": "2021-06-30T12:22:21.411Z",
+          "updated_at": "2024-06-17T20:38:15.693Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-07T20:00:00.000Z",
+      "scheduled_until": "2024-11-07T21:00:00.000Z"
+    }
+  ],
   "status": {
     "indicator": "minor",
     "description": "Minor Service Outage"
