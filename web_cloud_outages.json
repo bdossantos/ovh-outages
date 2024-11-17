@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-16T12:39:36.448Z"
+    "updated_at": "2024-11-17T18:34:59.900Z"
   },
   "components": [
     {
@@ -1320,9 +1320,9 @@
     {
       "id": "rlqyny7qzlfq",
       "name": "Cluster007",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:04.885Z",
-      "updated_at": "2024-11-14T19:32:38.643Z",
+      "updated_at": "2024-11-17T18:26:06.285Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2611,7 +2611,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2024-09-10T08:22:09.103Z",
       "position": 26,
@@ -2813,7 +2813,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "2p4kmgnsdsk2",
+      "name": "[GRA2/GRA3][Web Hosting] - Cluster007 - Cluster1599 filerz31",
+      "status": "identified",
+      "created_at": "2024-11-17T18:26:06.245Z",
+      "updated_at": "2024-11-17T18:34:59.896Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/krjrf2dz2ktx",
+      "started_at": "2024-11-17T18:26:06.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "q6vfhz75y645",
+          "status": "identified",
+          "body": "You may also experience some slowdowns on some hosted sites on cluster1599 filerz31.\nOur team is still working on this issue.",
+          "incident_id": "2p4kmgnsdsk2",
+          "created_at": "2024-11-17T18:33:35.606Z",
+          "updated_at": "2024-11-17T18:33:35.606Z",
+          "display_at": "2024-11-17T18:33:35.606Z",
+          "affected_components": [
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k0zc6bsxlty1",
+          "status": "identified",
+          "body": "An incident is in progress on our web hosting offer.\n\nPlease be aware that this is currently affecting the Functionality.\n\nHere is details for this incident :\n\n<b>Start time :</b> 17/11/2024 18:07 UTC \n<b>Service impact :</b> Some websites are unreachable on cluster007.\n<b>Root cause :</b> Incident caused by this ongoing issue https://bare-metal-servers.status-ovhcloud.com/incidents/l83wlpmxp519\n<b>Ongoing actions :</b> A fix is in progress.\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe sincerely apologize for the inconvenience and remain fully committed in providing a quality service.",
+          "incident_id": "2p4kmgnsdsk2",
+          "created_at": "2024-11-17T18:26:06.838Z",
+          "updated_at": "2024-11-17T18:26:32.062Z",
+          "display_at": "2024-11-17T18:26:06.000Z",
+          "affected_components": [
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rlqyny7qzlfq",
+          "name": "Cluster007",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:04.885Z",
+          "updated_at": "2024-11-17T18:26:06.285Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yw3ypx06k2zy",
@@ -2871,7 +2945,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
