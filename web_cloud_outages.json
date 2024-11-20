@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-20T04:46:37.562Z"
+    "updated_at": "2024-11-20T08:26:55.747Z"
   },
   "components": [
     {
@@ -2037,9 +2037,9 @@
     {
       "id": "g8pxlmsr607d",
       "name": "Cluster020",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:09.668Z",
-      "updated_at": "2024-11-14T19:32:38.778Z",
+      "updated_at": "2024-11-20T08:26:55.673Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -2611,7 +2611,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2024-09-10T08:22:09.103Z",
       "position": 26,
@@ -2814,6 +2814,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "7nzn8bbplw1k",
+      "name": "[GRA1][Web Hosting] - Cluster020 - Multiple Filerz",
+      "status": "investigating",
+      "created_at": "2024-11-20T08:26:55.641Z",
+      "updated_at": "2024-11-20T08:26:55.744Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3pylwphk4fg1",
+      "started_at": "2024-11-20T08:26:55.629Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "gcqp30khcmym",
+          "status": "investigating",
+          "body": "An incident is in progress on our WebHosting offer.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 20/11/2024 08:16 UTC\n<b>Service impact :</b> Websites slowness on filerz12/filerz14/filerz27/filerz30/filerz37/filerz4\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "7nzn8bbplw1k",
+          "created_at": "2024-11-20T08:26:55.742Z",
+          "updated_at": "2024-11-20T08:26:55.742Z",
+          "display_at": "2024-11-20T08:26:55.742Z",
+          "affected_components": [
+            {
+              "code": "g8pxlmsr607d",
+              "name": "Web Hosting || Datacenter GRA - Cluster020",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g8pxlmsr607d",
+          "name": "Cluster020",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:09.668Z",
+          "updated_at": "2024-11-20T08:26:55.673Z",
+          "position": 14,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "gqgl1lv12381",
       "name": "[Global][Hosted Exchange] - Mailbox sorting degradation",
