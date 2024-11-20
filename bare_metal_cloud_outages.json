@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-20T10:59:56.878Z"
+    "updated_at": "2024-11-20T13:04:31.706Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1351,9 +1351,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-11-20T10:19:29.695Z",
+      "updated_at": "2024-11-20T13:03:10.584Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2657,6 +2657,79 @@
   ],
   "incidents": [
     {
+      "id": "dpmnkgf6prvd",
+      "name": "[RBX8][Dedicated Servers] - Rack R809R02",
+      "status": "identified",
+      "created_at": "2024-11-20T13:03:10.557Z",
+      "updated_at": "2024-11-20T13:04:31.698Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/d0wt9xrlssl1",
+      "started_at": "2024-11-20T13:03:10.550Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "fc3zqvjxgrbs",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "dpmnkgf6prvd",
+          "created_at": "2024-11-20T13:04:31.697Z",
+          "updated_at": "2024-11-20T13:04:31.697Z",
+          "display_at": "2024-11-20T13:04:31.697Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "sp8s314fqrk6",
+          "status": "investigating",
+          "body": "An incident is in progress on our Bare Metal offer. It has temporarily affected the availability.\n\n\nWe are actively working to resolve this problem.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\n\nWe apologize for the inconvenience and thank you for your understanding.\n\n\nHere is detail for this incident :\n\n<b>Start time :</b> 20/11/2024 12:49 UTC\n<b>Service impact :</b> All of servers in the rack R809R02 are no longer responding.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nUpdate will be posted as significant progress is made.",
+          "incident_id": "dpmnkgf6prvd",
+          "created_at": "2024-11-20T13:03:10.642Z",
+          "updated_at": "2024-11-20T13:03:10.642Z",
+          "display_at": "2024-11-20T13:03:10.642Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-11-20T13:03:10.584Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "9m2zgpz8dv6q",
       "name": "[Global][Dedicated Servers] - Degradation in the performance of order servers",
       "status": "monitoring",
@@ -3848,7 +3921,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
