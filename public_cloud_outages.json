@@ -2,9 +2,9 @@
   "page": {
     "id": "6j41kzyhcr9g",
     "name": "Public Cloud",
-    "url": "https://public-cloud.status-ovhcloud.com",
+    "url": "http://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-21T12:38:03.929Z"
+    "updated_at": "2024-11-21T13:55:57.640Z"
   },
   "components": [
     {
@@ -5006,9 +5006,9 @@
     {
       "id": "qwqj3m81wkhq",
       "name": "Containers & Orchestration || Managed Rancher Service",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-07-16T13:52:00.560Z",
-      "updated_at": "2024-11-04T12:11:43.819Z",
+      "updated_at": "2024-11-21T13:55:57.568Z",
       "position": 18,
       "description": null,
       "showcase": false,
@@ -6111,6 +6111,59 @@
   ],
   "incidents": [
     {
+      "id": "mm41syr2mvd4",
+      "name": "Incident Notification",
+      "status": "investigating",
+      "created_at": "2024-11-21T13:55:57.535Z",
+      "updated_at": "2024-11-21T13:55:57.636Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/5n5qm9zmk7vf",
+      "started_at": "2024-11-21T13:55:57.528Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "dycvdfp1r71w",
+          "status": "investigating",
+          "body": "We have detected an issue on one of our services. We will update informations when we will have more details.",
+          "incident_id": "mm41syr2mvd4",
+          "created_at": "2024-11-21T13:55:57.633Z",
+          "updated_at": "2024-11-21T13:55:57.633Z",
+          "display_at": "2024-11-21T13:55:57.633Z",
+          "affected_components": [
+            {
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwqj3m81wkhq",
+          "name": "Containers & Orchestration || Managed Rancher Service",
+          "status": "degraded_performance",
+          "created_at": "2024-07-16T13:52:00.560Z",
+          "updated_at": "2024-11-21T13:55:57.568Z",
+          "position": 18,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-07-16",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "bqp22gdvcd31",
       "name": "[DE][Public Cloud] - Object storage S3 incident notification",
       "status": "identified",
@@ -6572,6 +6625,80 @@
       ],
       "scheduled_for": "2024-12-04T09:00:00.000Z",
       "scheduled_until": "2024-12-04T17:00:00.000Z"
+    },
+    {
+      "id": "9x4vv9g1ztty",
+      "name": "[SBG/RBX][Managed Rancher Service] - Kubernetes upgrade.",
+      "status": "in_progress",
+      "created_at": "2024-11-21T13:51:27.362Z",
+      "updated_at": "2024-11-21T13:52:00.058Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/vq85fsjkxtvs",
+      "started_at": "2024-11-21T13:51:27.357Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "sf8svc54859n",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "9x4vv9g1ztty",
+          "created_at": "2024-11-21T13:52:00.055Z",
+          "updated_at": "2024-11-21T13:52:00.055Z",
+          "display_at": "2024-11-21T13:52:00.055Z",
+          "affected_components": [
+            {
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "smj5j7mxk282",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Rancher Service offer. \n\n<b>Start time :</b> 21/11/2024 13:30 UTC \n<b>End time :</b> 21/11/2024 22:59 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will do a maintenance operation on our network equipment related to Managed Rancher Service products in order to fix a CVE..\n\nThank you for your understanding.",
+          "incident_id": "9x4vv9g1ztty",
+          "created_at": "2024-11-21T13:51:27.420Z",
+          "updated_at": "2024-11-21T13:51:27.420Z",
+          "display_at": "2024-11-21T13:51:27.420Z",
+          "affected_components": [
+            {
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwqj3m81wkhq",
+          "name": "Containers & Orchestration || Managed Rancher Service",
+          "status": "degraded_performance",
+          "created_at": "2024-07-16T13:52:00.560Z",
+          "updated_at": "2024-11-21T13:55:57.568Z",
+          "position": 18,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-07-16",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-21T14:00:00.000Z",
+      "scheduled_until": "2024-11-21T23:00:00.000Z"
     }
   ],
   "status": {
