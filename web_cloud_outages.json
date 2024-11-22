@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-22T06:48:11.248Z"
+    "updated_at": "2024-11-22T10:35:04.543Z"
   },
   "components": [
     {
@@ -375,9 +375,9 @@
     {
       "id": "qkkj1xrn1blp",
       "name": "eu002",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:27.352Z",
-      "updated_at": "2024-10-28T14:26:57.133Z",
+      "updated_at": "2024-11-22T10:29:59.027Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1380,9 +1380,9 @@
     {
       "id": "m5vk2n9r9q66",
       "name": "eu007",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:29.164Z",
-      "updated_at": "2024-10-28T14:26:57.195Z",
+      "updated_at": "2024-11-22T10:29:59.048Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1458,9 +1458,9 @@
     {
       "id": "kxf6bwp3j1dy",
       "name": "eu011",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-08-08T14:22:55.783Z",
-      "updated_at": "2024-04-03T01:34:20.495Z",
+      "updated_at": "2024-11-22T10:29:59.065Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1681,9 +1681,9 @@
     {
       "id": "4tl2jxl1m13n",
       "name": "eu013",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-17T16:55:54.670Z",
-      "updated_at": "2024-04-03T01:34:20.555Z",
+      "updated_at": "2024-11-22T10:29:59.082Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1854,9 +1854,9 @@
     {
       "id": "h7z4hvv3ng7m",
       "name": "eu011",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-08-08T14:22:31.736Z",
-      "updated_at": "2024-10-28T14:26:57.259Z",
+      "updated_at": "2024-11-22T10:30:52.907Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -1951,7 +1951,7 @@
     {
       "id": "xntx4sdt2k97",
       "name": "Databases || CloudDB GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:49.945Z",
       "updated_at": "2023-05-16T12:10:06.187Z",
       "position": 12,
@@ -2521,7 +2521,7 @@
     {
       "id": "60j7qlwr1wqf",
       "name": "Web Hosting || Databases GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:30.899Z",
       "updated_at": "2024-09-10T08:22:09.079Z",
       "position": 24,
@@ -2815,6 +2815,181 @@
   ],
   "incidents": [
     {
+      "id": "bybs2fh2v1cr",
+      "name": "[GRA][Databases] - CloudDB and Webhosting databases unreachability",
+      "status": "investigating",
+      "created_at": "2024-11-22T10:29:58.984Z",
+      "updated_at": "2024-11-22T10:35:04.540Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/grv46jzyp1cx",
+      "started_at": "2024-11-22T10:29:58.969Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "20tnjw25yt98",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "bybs2fh2v1cr",
+          "created_at": "2024-11-22T10:30:52.954Z",
+          "updated_at": "2024-11-22T10:30:52.954Z",
+          "display_at": "2024-11-22T10:30:52.954Z",
+          "affected_components": [
+            {
+              "code": "qkkj1xrn1blp",
+              "name": "Web Hosting || Databases GRA - eu002",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "m5vk2n9r9q66",
+              "name": "Web Hosting || Databases GRA - eu007",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "h7z4hvv3ng7m",
+              "name": "Web Hosting || Databases GRA - eu011",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "kxf6bwp3j1dy",
+              "name": "Databases || CloudDB GRA - eu011",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4tl2jxl1m13n",
+              "name": "Databases || CloudDB GRA - eu013",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2fk354xgs3yj",
+          "status": "investigating",
+          "body": "An incident is in progress on our database offer.\n\nPlease be aware that this is currently affecting the availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 22/11/2024 10:12 UTC\n<b>Service impact :</b> Some databases are unreachable.\n<b>Ongoing actions :</b> Our technical teams are investigating the issue.\nUpdate will be posted as significant progress is made.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "bybs2fh2v1cr",
+          "created_at": "2024-11-22T10:29:59.137Z",
+          "updated_at": "2024-11-22T10:29:59.137Z",
+          "display_at": "2024-11-22T10:29:59.137Z",
+          "affected_components": [
+            {
+              "code": "qkkj1xrn1blp",
+              "name": "Web Hosting || Databases GRA - eu002",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "m5vk2n9r9q66",
+              "name": "Web Hosting || Databases GRA - eu007",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "kxf6bwp3j1dy",
+              "name": "Databases || CloudDB GRA - eu011",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4tl2jxl1m13n",
+              "name": "Databases || CloudDB GRA - eu013",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qkkj1xrn1blp",
+          "name": "eu002",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:21:27.352Z",
+          "updated_at": "2024-11-22T10:29:59.027Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "m5vk2n9r9q66",
+          "name": "eu007",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:21:29.164Z",
+          "updated_at": "2024-11-22T10:29:59.048Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "kxf6bwp3j1dy",
+          "name": "eu011",
+          "status": "partial_outage",
+          "created_at": "2022-08-08T14:22:55.783Z",
+          "updated_at": "2024-11-22T10:29:59.065Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-08",
+          "group_id": "xntx4sdt2k97",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4tl2jxl1m13n",
+          "name": "eu013",
+          "status": "partial_outage",
+          "created_at": "2023-04-17T16:55:54.670Z",
+          "updated_at": "2024-11-22T10:29:59.082Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-17",
+          "group_id": "xntx4sdt2k97",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "h7z4hvv3ng7m",
+          "name": "eu011",
+          "status": "partial_outage",
+          "created_at": "2022-08-08T14:22:31.736Z",
+          "updated_at": "2024-11-22T10:30:52.907Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-08",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "gqgl1lv12381",
       "name": "[Global][Hosted Exchange] - Mailbox sorting degradation",
       "status": "identified",
@@ -2891,6 +3066,6 @@
   "scheduled_maintenances": [],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
