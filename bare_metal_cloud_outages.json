@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-11-26T09:49:53.205Z"
+    "updated_at": "2024-11-26T10:34:46.967Z"
   },
   "components": [
     {
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2024-11-19T15:43:02.867Z",
+      "updated_at": "2024-11-26T10:30:21.106Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1396,7 +1396,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2659,9 +2659,9 @@
     {
       "id": "7fvnjt5qcg4q",
       "name": "[EU][Managed Service] - Log and Data Plateform incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2024-11-26T09:23:59.034Z",
-      "updated_at": "2024-11-26T09:49:53.202Z",
+      "updated_at": "2024-11-26T10:28:08.201Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -2669,6 +2669,26 @@
       "started_at": "2024-11-26T09:23:59.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "fwk9npp5rtxn",
+          "status": "identified",
+          "body": "The services are more stable now, and our teams are continuing to work on the complete resolution.",
+          "incident_id": "7fvnjt5qcg4q",
+          "created_at": "2024-11-26T10:28:08.199Z",
+          "updated_at": "2024-11-26T10:28:08.199Z",
+          "display_at": "2024-11-26T10:28:08.199Z",
+          "affected_components": [
+            {
+              "code": "p019p9hghp8x",
+              "name": "Managed Services || Logs Data Platform - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "0x37wqvhsmkz",
           "status": "investigating",
@@ -2785,73 +2805,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "8pfkb12gjbjw",
-      "name": "[BHS7][Dedicated Servers] - Rack B710A15",
-      "status": "scheduled",
-      "created_at": "2024-11-15T11:37:39.791Z",
-      "updated_at": "2024-11-26T09:30:22.476Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nm3nh5zkbycm",
-      "started_at": "2024-11-15T11:37:39.781Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "zsmtsb7k8g46",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "8pfkb12gjbjw",
-          "created_at": "2024-11-26T09:30:21.662Z",
-          "updated_at": "2024-11-26T09:30:21.662Z",
-          "display_at": "2024-11-26T09:30:21.662Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "53s7vksgkp6d",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.  \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 26/11/2024 10:30 UTC \n<b>End time :</b> 26/11/2024 11:30 UTC\n<b>Service impact :</b> Public network will be temporarily unavailable for 60 minutes for servers in rack B710A15.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on a network equipment\n\nThank you for your understanding.",
-          "incident_id": "8pfkb12gjbjw",
-          "created_at": "2024-11-15T11:37:39.848Z",
-          "updated_at": "2024-11-15T11:40:04.820Z",
-          "display_at": "2024-11-15T11:37:39.848Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-11-26T10:30:00.000Z",
-      "scheduled_until": "2024-11-26T11:30:00.000Z"
-    },
-    {
       "id": "xw9w0zh8r3rz",
       "name": "[BHS7/GRA1/GRA2/RBX7][Network] - Network equipment version upgrade",
       "status": "scheduled",
@@ -2901,9 +2854,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3051,9 +3004,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3147,9 +3100,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3324,9 +3277,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3405,9 +3358,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-19T15:43:02.867Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3578,6 +3531,93 @@
       ],
       "scheduled_for": "2024-12-10T01:00:00.000Z",
       "scheduled_until": "2024-12-10T03:00:00.000Z"
+    },
+    {
+      "id": "8pfkb12gjbjw",
+      "name": "[BHS7][Dedicated Servers] - Rack B710A15",
+      "status": "in_progress",
+      "created_at": "2024-11-15T11:37:39.791Z",
+      "updated_at": "2024-11-26T10:30:21.174Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nm3nh5zkbycm",
+      "started_at": "2024-11-15T11:37:39.781Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "p8xmw2406r1f",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "8pfkb12gjbjw",
+          "created_at": "2024-11-26T10:30:21.171Z",
+          "updated_at": "2024-11-26T10:30:21.171Z",
+          "display_at": "2024-11-26T10:30:21.171Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zsmtsb7k8g46",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "8pfkb12gjbjw",
+          "created_at": "2024-11-26T09:30:21.662Z",
+          "updated_at": "2024-11-26T09:30:21.662Z",
+          "display_at": "2024-11-26T09:30:21.662Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "53s7vksgkp6d",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.  \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 26/11/2024 10:30 UTC \n<b>End time :</b> 26/11/2024 11:30 UTC\n<b>Service impact :</b> Public network will be temporarily unavailable for 60 minutes for servers in rack B710A15.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on a network equipment\n\nThank you for your understanding.",
+          "incident_id": "8pfkb12gjbjw",
+          "created_at": "2024-11-15T11:37:39.848Z",
+          "updated_at": "2024-11-15T11:40:04.820Z",
+          "display_at": "2024-11-15T11:37:39.848Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2024-11-26T10:30:21.106Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2024-11-26T10:30:00.000Z",
+      "scheduled_until": "2024-11-26T11:30:00.000Z"
     }
   ],
   "status": {
