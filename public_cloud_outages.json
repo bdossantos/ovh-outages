@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-04T12:20:31.798Z"
+    "updated_at": "2024-12-04T13:00:22.549Z"
   },
   "components": [
     {
@@ -6128,43 +6128,36 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "d4wv7qy9ppdf",
-      "name": "[RBX/SBG][Managed Rancher Service] - Kubernetes upgrade.",
+      "id": "pp6n3lyq3glj",
+      "name": "[BHS][Databases] -  MySQL and PostgreSQL databases maintenance",
       "status": "scheduled",
-      "created_at": "2024-12-04T11:18:14.609Z",
-      "updated_at": "2024-12-04T12:00:23.932Z",
+      "created_at": "2024-12-04T09:44:51.838Z",
+      "updated_at": "2024-12-04T10:04:42.451Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/f5fg18b68tc6",
-      "started_at": "2024-12-04T11:18:14.604Z",
+      "shortlink": "https://stspg.io/fjpl7ds8plxl",
+      "started_at": "2024-12-04T09:44:51.828Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "yysp1gx6hqb4",
+          "id": "vcfxtjvttm32",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "d4wv7qy9ppdf",
-          "created_at": "2024-12-04T12:00:23.843Z",
-          "updated_at": "2024-12-04T12:00:23.843Z",
-          "display_at": "2024-12-04T12:00:23.843Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8jwtyymbs0d2",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our public cloud offer.  \n\n<b>Start time :</b> 04/12/2024 13:00 UTC \n<b>End time :</b> 04/12/2024 18:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will do a maintenance operation on some hosts related to Managed Rancher Service products in order to fix a CVE.\n\nThank you for your understanding.",
-          "incident_id": "d4wv7qy9ppdf",
-          "created_at": "2024-12-04T11:18:14.681Z",
-          "updated_at": "2024-12-04T11:18:14.681Z",
-          "display_at": "2024-12-04T11:18:14.681Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our MySQL and PostgreSQL databases services.\n \n<b>Start time :</b> 05/12/2024 09:00 UTC\n<b>End time :</b> 05/12/2024 11:00 UTC\n<b>Service impact :</b> Customers may experience a few seconds of downtime during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we will be doing an upgrade to our databases.\n\nThank you for your understanding.",
+          "incident_id": "pp6n3lyq3glj",
+          "created_at": "2024-12-04T09:44:51.903Z",
+          "updated_at": "2024-12-04T10:04:42.446Z",
+          "display_at": "2024-12-04T09:44:51.903Z",
           "affected_components": [
             {
-              "code": "qwqj3m81wkhq",
-              "name": "Containers & Orchestration || Managed Rancher Service",
+              "code": "gsdqf0dcl2z2",
+              "name": "Databases || MySQL - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "c71wld8bwy5k",
+              "name": "Databases || PostgreSQL - BHS",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6176,23 +6169,38 @@
       ],
       "components": [
         {
-          "id": "qwqj3m81wkhq",
-          "name": "Containers & Orchestration || Managed Rancher Service",
+          "id": "gsdqf0dcl2z2",
+          "name": "BHS",
           "status": "operational",
-          "created_at": "2024-07-16T13:52:00.560Z",
-          "updated_at": "2024-11-21T19:58:54.960Z",
-          "position": 18,
+          "created_at": "2022-04-06T09:42:18.206Z",
+          "updated_at": "2024-09-27T13:12:22.290Z",
+          "position": 1,
           "description": null,
           "showcase": false,
-          "start_date": "2024-07-16",
-          "group_id": null,
+          "start_date": "2022-04-06",
+          "group_id": "pzjtzljrfflw",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "c71wld8bwy5k",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2022-04-06T09:42:20.105Z",
+          "updated_at": "2024-09-27T13:12:22.331Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "q55g7jjv60lq",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-12-04T13:00:00.000Z",
-      "scheduled_until": "2024-12-04T18:00:00.000Z"
+      "scheduled_for": "2024-12-05T09:00:00.000Z",
+      "scheduled_until": "2024-12-05T11:00:00.000Z"
     },
     {
       "id": "726d90bt6znq",
@@ -6321,81 +6329,6 @@
       ],
       "scheduled_for": "2024-12-05T09:00:00.000Z",
       "scheduled_until": "2024-12-05T17:00:00.000Z"
-    },
-    {
-      "id": "pp6n3lyq3glj",
-      "name": "[BHS][Databases] -  MySQL and PostgreSQL databases maintenance",
-      "status": "scheduled",
-      "created_at": "2024-12-04T09:44:51.838Z",
-      "updated_at": "2024-12-04T10:04:42.451Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/fjpl7ds8plxl",
-      "started_at": "2024-12-04T09:44:51.828Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "vcfxtjvttm32",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our MySQL and PostgreSQL databases services.\n \n<b>Start time :</b> 05/12/2024 09:00 UTC\n<b>End time :</b> 05/12/2024 11:00 UTC\n<b>Service impact :</b> Customers may experience a few seconds of downtime during the maintenance.\n<b>Service improvement :</b> Following our continuous improvement policy, we will be doing an upgrade to our databases.\n\nThank you for your understanding.",
-          "incident_id": "pp6n3lyq3glj",
-          "created_at": "2024-12-04T09:44:51.903Z",
-          "updated_at": "2024-12-04T10:04:42.446Z",
-          "display_at": "2024-12-04T09:44:51.903Z",
-          "affected_components": [
-            {
-              "code": "gsdqf0dcl2z2",
-              "name": "Databases || MySQL - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "c71wld8bwy5k",
-              "name": "Databases || PostgreSQL - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gsdqf0dcl2z2",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2022-04-06T09:42:18.206Z",
-          "updated_at": "2024-09-27T13:12:22.290Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "pzjtzljrfflw",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "c71wld8bwy5k",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2022-04-06T09:42:20.105Z",
-          "updated_at": "2024-09-27T13:12:22.331Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "q55g7jjv60lq",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-12-05T09:00:00.000Z",
-      "scheduled_until": "2024-12-05T11:00:00.000Z"
     },
     {
       "id": "bhysyvfvg70t",
@@ -7163,56 +7096,56 @@
       "scheduled_until": "2025-01-16T17:00:00.000Z"
     },
     {
-      "id": "bwktwmxdkcg0",
-      "name": "[WAW][Public Cloud] - Internal databases update",
+      "id": "d4wv7qy9ppdf",
+      "name": "[RBX/SBG][Managed Rancher Service] - Kubernetes upgrade.",
       "status": "in_progress",
-      "created_at": "2024-11-28T16:25:22.541Z",
-      "updated_at": "2024-12-04T09:00:24.072Z",
+      "created_at": "2024-12-04T11:18:14.609Z",
+      "updated_at": "2024-12-04T13:00:22.526Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/g3g87vdkvd77",
-      "started_at": "2024-11-28T16:25:22.533Z",
+      "shortlink": "https://stspg.io/f5fg18b68tc6",
+      "started_at": "2024-12-04T11:18:14.604Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "mr8xpsbbn7fb",
+          "id": "zzbpp6gwdb8l",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "bwktwmxdkcg0",
-          "created_at": "2024-12-04T09:00:24.066Z",
-          "updated_at": "2024-12-04T09:00:24.066Z",
-          "display_at": "2024-12-04T09:00:24.066Z",
+          "incident_id": "d4wv7qy9ppdf",
+          "created_at": "2024-12-04T13:00:22.522Z",
+          "updated_at": "2024-12-04T13:00:22.522Z",
+          "display_at": "2024-12-04T13:00:22.522Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "9xxq202ph14r",
+          "id": "yysp1gx6hqb4",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "bwktwmxdkcg0",
-          "created_at": "2024-12-04T08:00:28.690Z",
-          "updated_at": "2024-12-04T08:00:28.690Z",
-          "display_at": "2024-12-04T08:00:28.690Z",
+          "incident_id": "d4wv7qy9ppdf",
+          "created_at": "2024-12-04T12:00:23.843Z",
+          "updated_at": "2024-12-04T12:00:23.843Z",
+          "display_at": "2024-12-04T12:00:23.843Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "zspm3kpsf72k",
+          "id": "8jwtyymbs0d2",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled for update the Internal databases on WAW.\n\n<b>Start time :</b> 04/12/2024 09:00 UTC\n<b>End time :</b> 04/12/2024 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a public cloud service maintenance.\n\nThank you for your understanding.",
-          "incident_id": "bwktwmxdkcg0",
-          "created_at": "2024-11-28T16:25:22.602Z",
-          "updated_at": "2024-11-28T16:25:22.602Z",
-          "display_at": "2024-11-28T16:25:22.602Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our public cloud offer.  \n\n<b>Start time :</b> 04/12/2024 13:00 UTC \n<b>End time :</b> 04/12/2024 18:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will do a maintenance operation on some hosts related to Managed Rancher Service products in order to fix a CVE.\n\nThank you for your understanding.",
+          "incident_id": "d4wv7qy9ppdf",
+          "created_at": "2024-12-04T11:18:14.681Z",
+          "updated_at": "2024-12-04T11:18:14.681Z",
+          "display_at": "2024-12-04T11:18:14.681Z",
           "affected_components": [
             {
-              "code": "7bjfl2phlxzj",
-              "name": "Network || Public network - WAW1",
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -7224,23 +7157,23 @@
       ],
       "components": [
         {
-          "id": "7bjfl2phlxzj",
-          "name": "WAW1",
+          "id": "qwqj3m81wkhq",
+          "name": "Containers & Orchestration || Managed Rancher Service",
           "status": "operational",
-          "created_at": "2022-04-06T10:07:21.249Z",
-          "updated_at": "2024-05-17T08:59:18.901Z",
-          "position": 21,
+          "created_at": "2024-07-16T13:52:00.560Z",
+          "updated_at": "2024-11-21T19:58:54.960Z",
+          "position": 18,
           "description": null,
           "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
+          "start_date": "2024-07-16",
+          "group_id": null,
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2024-12-04T09:00:00.000Z",
-      "scheduled_until": "2024-12-04T15:00:00.000Z"
+      "scheduled_for": "2024-12-04T13:00:00.000Z",
+      "scheduled_until": "2024-12-04T18:00:00.000Z"
     },
     {
       "id": "fv9k1vrzrldg",
