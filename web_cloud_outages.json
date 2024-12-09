@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-06T15:20:34.001Z"
+    "updated_at": "2024-12-09T15:46:09.225Z"
   },
   "components": [
     {
@@ -220,9 +220,9 @@
     {
       "id": "c1nfpzt82nqr",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-10-29T12:12:59.124Z",
-      "updated_at": "2023-05-12T08:31:49.042Z",
+      "updated_at": "2024-12-09T15:46:09.154Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -510,9 +510,9 @@
     {
       "id": "s58061gmx5k3",
       "name": "SBG",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-10-29T12:12:59.660Z",
-      "updated_at": "2023-05-12T08:31:49.063Z",
+      "updated_at": "2024-12-09T15:46:09.168Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -525,7 +525,7 @@
     {
       "id": "d5t80fk9n4lm",
       "name": "CDN || CDN Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-10-29T12:13:00.908Z",
       "updated_at": "2023-05-16T12:09:06.660Z",
       "position": 2,
@@ -853,9 +853,9 @@
     {
       "id": "x7165yr1kdwt",
       "name": "BHS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-10-29T12:13:00.203Z",
-      "updated_at": "2023-05-12T08:31:49.096Z",
+      "updated_at": "2024-12-09T15:46:09.179Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2814,6 +2814,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "3rkdbkrws1pb",
+      "name": "[Global][CDN Infrastructure] - Website latencies",
+      "status": "investigating",
+      "created_at": "2024-12-09T15:46:09.120Z",
+      "updated_at": "2024-12-09T15:46:09.222Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/b2xrwtltkrq1",
+      "started_at": "2024-12-09T15:46:09.111Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "7xfmk800m1f6",
+          "status": "investigating",
+          "body": "An incident is in progress on our CDN Infrastructure offer.\n\nPlease be aware that this is currently affecting the latency.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 09/12/2024 15:20 UTC \n<b>Service impact :</b> You may experience additional latencies\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "3rkdbkrws1pb",
+          "created_at": "2024-12-09T15:46:09.220Z",
+          "updated_at": "2024-12-09T15:46:09.220Z",
+          "display_at": "2024-12-09T15:46:09.220Z",
+          "affected_components": [
+            {
+              "code": "c1nfpzt82nqr",
+              "name": "CDN || CDN Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "s58061gmx5k3",
+              "name": "CDN || CDN Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "x7165yr1kdwt",
+              "name": "CDN || CDN Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "c1nfpzt82nqr",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2021-10-29T12:12:59.124Z",
+          "updated_at": "2024-12-09T15:46:09.154Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-10-29",
+          "group_id": "d5t80fk9n4lm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "s58061gmx5k3",
+          "name": "SBG",
+          "status": "degraded_performance",
+          "created_at": "2021-10-29T12:12:59.660Z",
+          "updated_at": "2024-12-09T15:46:09.168Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-10-29",
+          "group_id": "d5t80fk9n4lm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "x7165yr1kdwt",
+          "name": "BHS",
+          "status": "degraded_performance",
+          "created_at": "2021-10-29T12:13:00.203Z",
+          "updated_at": "2024-12-09T15:46:09.179Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-10-29",
+          "group_id": "d5t80fk9n4lm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "9n8dc6sgps42",
       "name": "[FR][VoIP] - Interconnect incident notification",
