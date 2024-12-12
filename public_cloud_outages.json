@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-12T13:20:31.635Z"
+    "updated_at": "2024-12-12T14:24:20.274Z"
   },
   "components": [
     {
@@ -190,9 +190,9 @@
     {
       "id": "g6hk916qw11v",
       "name": "DE1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:11.161Z",
-      "updated_at": "2024-11-28T19:37:28.852Z",
+      "updated_at": "2024-12-12T14:11:00.442Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1882,9 +1882,9 @@
     {
       "id": "xzv3c6xqvgdq",
       "name": "DE1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:20.341Z",
-      "updated_at": "2024-05-17T08:59:05.021Z",
+      "updated_at": "2024-12-12T14:18:54.542Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3323,7 +3323,7 @@
     {
       "id": "0b67gm8w0sqk",
       "name": "Compute - Instance || LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:12.146Z",
       "updated_at": "2023-05-16T12:02:13.095Z",
       "position": 8,
@@ -6464,7 +6464,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2024-12-12T12:23:08.882Z",
       "position": 43,
@@ -6721,7 +6721,128 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zx9x29w7ksgf",
+      "name": "[DE1][Public Cloud] - Compute incident notification",
+      "status": "identified",
+      "created_at": "2024-12-12T14:11:00.413Z",
+      "updated_at": "2024-12-12T14:24:20.266Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/52swlq50glkq",
+      "started_at": "2024-12-12T14:11:00.406Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "24khhkyt5k6c",
+          "status": "identified",
+          "body": "An incident is in progress on our Public Cloud offer.\n\nPlease be aware that this is currently affecting the availability.\nThis incident is caused by a network issue.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 12/12/2024 13:40 UTC \n<b>Service impact :</b> Customers are encountering errors when creating new compute instances and updating existing ones.\nCurrent instances are not affected and are functioning properly.\n<b>Root cause :</b> This incident is caused by a network issue.\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "zx9x29w7ksgf",
+          "created_at": "2024-12-12T14:24:20.264Z",
+          "updated_at": "2024-12-12T14:24:20.264Z",
+          "display_at": "2024-12-12T14:24:20.264Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "xzv3c6xqvgdq",
+              "name": "Network || Public network - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ph9ddk1hg0f4",
+          "status": "investigating",
+          "body": "An incident is in progress on our Public Cloud offer.\n\nPlease be aware that this is currently affecting the availability.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 12/12/2024 13:40 UTC \n<b>Service impact :</b> Customers are encountering errors when creating new compute instances and updating existing ones.\nCurrent instances are not affected and are functioning properly.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "zx9x29w7ksgf",
+          "created_at": "2024-12-12T14:18:54.580Z",
+          "updated_at": "2024-12-12T14:18:54.580Z",
+          "display_at": "2024-12-12T14:18:54.580Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "xzv3c6xqvgdq",
+              "name": "Network || Public network - DE1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gc1ftbdv58ml",
+          "status": "investigating",
+          "body": "We have detected an issue on one of our services. We will update informations when we will have more details.",
+          "incident_id": "zx9x29w7ksgf",
+          "created_at": "2024-12-12T14:11:00.492Z",
+          "updated_at": "2024-12-12T14:11:00.492Z",
+          "display_at": "2024-12-12T14:11:00.492Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2024-12-12T14:11:00.442Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "xzv3c6xqvgdq",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T10:07:20.341Z",
+          "updated_at": "2024-12-12T14:18:54.542Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "66x5xq36qst5",
@@ -7031,7 +7152,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
