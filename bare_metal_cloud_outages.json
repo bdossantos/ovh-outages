@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-12T17:37:04.237Z"
+    "updated_at": "2024-12-14T14:38:48.042Z"
   },
   "components": [
     {
@@ -1396,7 +1396,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1926,9 +1926,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2024-12-05T04:06:46.517Z",
+      "updated_at": "2024-12-14T14:38:47.987Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2735,7 +2735,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vsqpmy39kgt6",
+      "name": "[RBX2][Dedicated Servers] - Rack 24D24",
+      "status": "identified",
+      "created_at": "2024-12-14T14:38:47.955Z",
+      "updated_at": "2024-12-14T14:38:48.040Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/tdb5d2v430nc",
+      "started_at": "2024-12-14T14:38:47.947Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "hw5g109jjwz4",
+          "status": "identified",
+          "body": "An incident is in progress on our Bare Metal offer causing unavailability of public network for servers located in the specified rack.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 14/12/2024 14:08 UTC \n<b>Service impact :</b> Public network is temporarily unavailable for servers in rack 24D24.\n<b>Root cause :</b> An electrical disjunction caused the incident.\n<b>Ongoing actions :</b> Our teams are fully mobilized and actively working to resolve this problem.\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "vsqpmy39kgt6",
+          "created_at": "2024-12-14T14:38:48.038Z",
+          "updated_at": "2024-12-14T14:38:48.038Z",
+          "display_at": "2024-12-14T14:38:48.038Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2024-12-14T14:38:47.987Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "c4fy8zg070z2",
@@ -2829,9 +2883,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-12-05T04:06:46.517Z",
+          "updated_at": "2024-12-14T14:38:47.987Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -2925,9 +2979,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-12-05T04:06:46.517Z",
+          "updated_at": "2024-12-14T14:38:47.987Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3021,9 +3075,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-12-05T04:06:46.517Z",
+          "updated_at": "2024-12-14T14:38:47.987Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3279,9 +3333,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-12-05T04:06:46.517Z",
+          "updated_at": "2024-12-14T14:38:47.987Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3513,7 +3567,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
