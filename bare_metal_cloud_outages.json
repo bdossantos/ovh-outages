@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-19T17:00:14.685Z"
+    "updated_at": "2024-12-19T19:59:37.653Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1351,9 +1351,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2024-12-18T21:11:29.114Z",
+      "updated_at": "2024-12-19T19:43:43.912Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2737,6 +2737,59 @@
   ],
   "incidents": [
     {
+      "id": "pqrt150rtxf8",
+      "name": "[RBX8][Dedicated Servers] - Rack R807R01",
+      "status": "identified",
+      "created_at": "2024-12-19T19:43:43.863Z",
+      "updated_at": "2024-12-19T19:43:44.001Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/pnsmfl7ql7g3",
+      "started_at": "2024-12-19T19:43:43.852Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vf6j52nyvmgr",
+          "status": "identified",
+          "body": "An incident is in progress on our Dedicated Server in RBX8 in the rack R807R01, customers in the impacted zone may face some difficulties. Please find the details :\n\n<b>Start time :</b> 19/12/2024 19:25 UTC\n<b>Service impact :</b> A significant number of servers in the rack R807R01 are no longer responding.\n<b>Root cause :</b> Network equipment malfunction\n<b>Ongoing actions :</b> Our teams are replacing the network equipment.\nUpdate will be posted as significant progress is made.\n\nWe will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "pqrt150rtxf8",
+          "created_at": "2024-12-19T19:43:43.997Z",
+          "updated_at": "2024-12-19T19:43:43.997Z",
+          "display_at": "2024-12-19T19:43:43.997Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2024-12-19T19:43:43.912Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "3v8d6thbqgdl",
       "name": "[GRA6][Virtual Private Servers] - Virtual Private Servers incident notification",
       "status": "investigating",
@@ -2837,7 +2890,7 @@
       "name": "[RBX7/GRA1/GRA2/BHS6][Dedicated Servers] - Network equipment version  upgrade",
       "status": "scheduled",
       "created_at": "2024-12-11T17:58:39.656Z",
-      "updated_at": "2024-12-11T17:59:55.290Z",
+      "updated_at": "2024-12-19T19:59:37.371Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2845,6 +2898,19 @@
       "started_at": "2024-12-11T17:58:39.641Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "kzw0589jk66h",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "f5yd6ly4fcmb",
+          "created_at": "2024-12-19T19:59:34.885Z",
+          "updated_at": "2024-12-19T19:59:34.885Z",
+          "display_at": "2024-12-19T19:59:34.885Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "c4r98k1hm6cn",
           "status": "scheduled",
@@ -3401,128 +3467,6 @@
       ],
       "scheduled_for": "2025-02-14T01:00:00.000Z",
       "scheduled_until": "2025-02-14T03:00:00.000Z"
-    },
-    {
-      "id": "88107ctt9847",
-      "name": "[RBX7/GRA1/GRA2/BHS6][Dedicated Servers] - Network equipment version upgrade",
-      "status": "in_progress",
-      "created_at": "2024-12-10T23:02:11.416Z",
-      "updated_at": "2024-12-19T15:00:21.229Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/s59b0bp1scj2",
-      "started_at": "2024-12-10T23:02:11.405Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "k81nk0gypylw",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "88107ctt9847",
-          "created_at": "2024-12-19T15:00:21.225Z",
-          "updated_at": "2024-12-19T15:00:21.225Z",
-          "display_at": "2024-12-19T15:00:21.225Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lf8yvt3ry3yw",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "88107ctt9847",
-          "created_at": "2024-12-19T14:00:21.180Z",
-          "updated_at": "2024-12-19T14:00:21.180Z",
-          "display_at": "2024-12-19T14:00:21.180Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "08fs66jz56mb",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled to update some network devices. It will affect our Baremetal offer. \n\n<b>Start time :</b> 19/12/2024 15:00 UTC \n<b>End time :</b> 19/12/2024 19:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a software upgrade on multiple network equipments.\n\n\nThank you for your understanding.",
-          "incident_id": "88107ctt9847",
-          "created_at": "2024-12-10T23:02:11.479Z",
-          "updated_at": "2024-12-10T23:02:11.479Z",
-          "display_at": "2024-12-10T23:02:11.479Z",
-          "affected_components": [
-            {
-              "code": "hqn6pb8tdzdx",
-              "name": "Dedicated Servers || Network - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hqn6pb8tdzdx",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2024-11-26T13:39:47.534Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2024-11-19T15:43:02.903Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2024-12-14T15:57:13.068Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2024-12-19T15:00:00.000Z",
-      "scheduled_until": "2024-12-19T19:00:00.000Z"
     },
     {
       "id": "6n0sfx8tdg8t",
