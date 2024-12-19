@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-19T16:09:34.547Z"
+    "updated_at": "2024-12-19T17:00:14.685Z"
   },
   "components": [
     {
@@ -1490,9 +1490,9 @@
     {
       "id": "y3dtxmcbzybk",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-10-25T22:28:26.544Z",
-      "updated_at": "2024-10-25T22:55:14.567Z",
+      "updated_at": "2024-12-19T17:00:14.626Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2468,7 +2468,7 @@
     {
       "id": "fmhmd6m8hs98",
       "name": "Storage and Backups || Block Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-08-01T15:50:23.899Z",
       "updated_at": "2024-09-10T06:16:11.263Z",
       "position": 15,
@@ -2741,7 +2741,7 @@
       "name": "[GRA6][Virtual Private Servers] - Virtual Private Servers incident notification",
       "status": "investigating",
       "created_at": "2024-12-19T15:06:33.274Z",
-      "updated_at": "2024-12-19T16:09:34.538Z",
+      "updated_at": "2024-12-19T17:00:14.676Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2749,6 +2749,32 @@
       "started_at": "2024-12-19T15:06:33.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "r6jxgmszg290",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "3v8d6thbqgdl",
+          "created_at": "2024-12-19T17:00:14.673Z",
+          "updated_at": "2024-12-19T17:00:14.673Z",
+          "display_at": "2024-12-19T17:00:14.673Z",
+          "affected_components": [
+            {
+              "code": "zmsctzv6l4w7",
+              "name": "Virtual Private Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "y3dtxmcbzybk",
+              "name": "Storage and Backups || Block Storage - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5pywcmgfgvb1",
           "status": "investigating",
@@ -2782,6 +2808,21 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "3ygk7lc032zm",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y3dtxmcbzybk",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2024-10-25T22:28:26.544Z",
+          "updated_at": "2024-12-19T17:00:14.626Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-10-25",
+          "group_id": "fmhmd6m8hs98",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
