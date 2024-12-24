@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-21T09:36:43.870Z"
+    "updated_at": "2024-12-24T00:04:49.391Z"
   },
   "components": [
     {
@@ -481,9 +481,9 @@
     {
       "id": "r0gb2v5791yj",
       "name": "Management plane",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-07-21T08:39:45.677Z",
-      "updated_at": "2024-12-20T19:31:12.736Z",
+      "updated_at": "2024-12-23T23:55:49.336Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2288,7 +2288,7 @@
     {
       "id": "57t55jp0633h",
       "name": "VMware Private Cloud || RBX",
-      "status": "operational",
+      "status": "major_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2024-11-19T15:48:46.373Z",
       "position": 29,
@@ -2370,10 +2370,104 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8bhlq64s202y",
+      "name": "[RBX2][Datastores] - Cluster10564",
+      "status": "investigating",
+      "created_at": "2024-12-23T23:54:18.505Z",
+      "updated_at": "2024-12-24T00:04:49.384Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "critical",
+      "shortlink": "https://stspg.io/j75bzms3ywn4",
+      "started_at": "2024-12-23T23:54:18.496Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "5v5n1wyd0mfw",
+          "status": "investigating",
+          "body": "An incident is in progress on our Hosted Private Cloud offer.\n\nPlease be aware that this is currently affecting the Functionality.\n\nHere is detail for this incident :\n\n<b>Start time :</b> 23/12/2024 23:15 UTC \n<b>Service impact :</b> Our  automation has a malffuntion. However their virtual machines are still running.\n<b>Ongoing actions :</b> Investigating\n\nOur teams are fully mobilized and we will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "8bhlq64s202y",
+          "created_at": "2024-12-24T00:04:30.591Z",
+          "updated_at": "2024-12-24T00:04:30.591Z",
+          "display_at": "2024-12-24T00:04:30.591Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y3527vmc3lz6",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "8bhlq64s202y",
+          "created_at": "2024-12-23T23:55:49.380Z",
+          "updated_at": "2024-12-23T23:55:49.380Z",
+          "display_at": "2024-12-23T23:55:49.380Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "partial_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9k7lwpxpdr69",
+          "status": "investigating",
+          "body": "We have detected an issue on one of our services. We will update informations when we will have more details.",
+          "incident_id": "8bhlq64s202y",
+          "created_at": "2024-12-23T23:54:18.610Z",
+          "updated_at": "2024-12-23T23:54:18.610Z",
+          "display_at": "2024-12-23T23:54:18.610Z",
+          "affected_components": [
+            {
+              "code": "r0gb2v5791yj",
+              "name": "VMware Private Cloud || RBX - Management plane",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "major_outage",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2024-12-23T23:55:49.336Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "major",
+    "description": "Partial System Outage"
   }
 }
