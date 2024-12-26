@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2024-12-26T19:14:02.775Z"
+    "updated_at": "2024-12-26T19:45:21.480Z"
   },
   "components": [
     {
@@ -913,9 +913,9 @@
     {
       "id": "rhyk4h7wh3dc",
       "name": "Cluster005",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-07-18T08:35:33.492Z",
-      "updated_at": "2024-12-16T15:56:12.306Z",
+      "updated_at": "2024-12-26T19:42:27.283Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2611,7 +2611,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2024-09-10T08:22:09.103Z",
       "position": 26,
@@ -2765,7 +2765,74 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "k02wkbj4bw76",
+      "name": "[GRA1][Web Hosting] - Cluster005 filerz315 Incident Notification",
+      "status": "identified",
+      "created_at": "2024-12-26T19:37:44.366Z",
+      "updated_at": "2024-12-26T19:45:21.471Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/6frz975j82cz",
+      "started_at": "2024-12-26T19:37:44.360Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "c9zds96839p4",
+          "status": "identified",
+          "body": "An incident is in progress on our web cloud offer.\n\nPlease be aware that it is affecting the availability.\n\nHere is detail for this incident :\n<b>Start time :</b> 26/12/2024 19:10 UTC\n<b>Service impact :</b> Some websites are temporarily unreachable on filerz315.\n<b>Ongoing actions :</b> Our technical teams are fully mobilized and investigating the issue.\n<b>Root cause :</b> Incident is caused by an hardware issue.",
+          "incident_id": "k02wkbj4bw76",
+          "created_at": "2024-12-26T19:42:27.335Z",
+          "updated_at": "2024-12-26T19:45:21.466Z",
+          "display_at": "2024-12-26T19:42:27.000Z",
+          "affected_components": [
+            {
+              "code": "rhyk4h7wh3dc",
+              "name": "Web Hosting || Datacenter GRA - Cluster005",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1rwrt5tnx8nk",
+          "status": "investigating",
+          "body": "We have detected an issue on one of our services. We will update informations when we will have more details.",
+          "incident_id": "k02wkbj4bw76",
+          "created_at": "2024-12-26T19:37:44.408Z",
+          "updated_at": "2024-12-26T19:37:44.408Z",
+          "display_at": "2024-12-26T19:37:44.408Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rhyk4h7wh3dc",
+          "name": "Cluster005",
+          "status": "partial_outage",
+          "created_at": "2023-07-18T08:35:33.492Z",
+          "updated_at": "2024-12-26T19:42:27.283Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-18",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ls3pn0glt233",
@@ -2836,7 +2903,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
