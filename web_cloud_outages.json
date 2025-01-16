@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-16T17:20:34.263Z"
+    "updated_at": "2025-01-16T17:39:38.791Z"
   },
   "components": [
     {
@@ -1587,9 +1587,9 @@
     {
       "id": "1gtq5lb4hdbn",
       "name": "eu008",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2022-01-19T12:50:22.910Z",
-      "updated_at": "2025-01-15T11:46:21.118Z",
+      "updated_at": "2025-01-16T17:36:30.418Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2506,7 +2506,7 @@
     {
       "id": "60j7qlwr1wqf",
       "name": "Web Hosting || Databases GRA",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:30.899Z",
       "updated_at": "2024-09-10T08:22:09.079Z",
       "position": 24,
@@ -2768,17 +2768,37 @@
   "incidents": [
     {
       "id": "k929rplkhrrr",
-      "name": "Incident Notification",
+      "name": "[GRA1][Web Cloud] - databases incident notification",
       "status": "investigating",
       "created_at": "2025-01-16T17:09:27.084Z",
-      "updated_at": "2025-01-16T17:09:27.142Z",
+      "updated_at": "2025-01-16T17:39:38.787Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "none",
+      "impact": "major",
       "shortlink": "https://stspg.io/vc0zw5gx8q6g",
       "started_at": "2025-01-16T17:09:27.077Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "g402vcclwlw3",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our cloud databases offer offering, which is causing temporary availability on sharedsql016.eu008\n\nHere is detail for this incident :\n<b>Start time :</b> 16/01/2025 16:59 UTC\n<b>Impacted Service :</b> Cloud databases\n<b>Customers Impact :</b> Customers are experiencing an access issue on sharedsql016.eu008 database.\n<b>Root Cause :</b> This incident is/was caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nUpdate will be posted as significant progress is made.\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "k929rplkhrrr",
+          "created_at": "2025-01-16T17:36:30.452Z",
+          "updated_at": "2025-01-16T17:36:30.452Z",
+          "display_at": "2025-01-16T17:36:30.452Z",
+          "affected_components": [
+            {
+              "code": "1gtq5lb4hdbn",
+              "name": "Web Hosting || Databases GRA - eu008",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "6tz414zs30k8",
           "status": "investigating",
@@ -2793,7 +2813,23 @@
           "tweet_id": null
         }
       ],
-      "components": [],
+      "components": [
+        {
+          "id": "1gtq5lb4hdbn",
+          "name": "eu008",
+          "status": "partial_outage",
+          "created_at": "2022-01-19T12:50:22.910Z",
+          "updated_at": "2025-01-16T17:36:30.418Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-01-19",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
       "reminder_intervals": null
     },
     {
@@ -3474,9 +3510,9 @@
         {
           "id": "1gtq5lb4hdbn",
           "name": "eu008",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2022-01-19T12:50:22.910Z",
-          "updated_at": "2025-01-15T11:46:21.118Z",
+          "updated_at": "2025-01-16T17:36:30.418Z",
           "position": 7,
           "description": null,
           "showcase": false,
