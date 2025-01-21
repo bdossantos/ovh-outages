@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-21T17:34:01.115Z"
+    "updated_at": "2025-01-21T18:31:21.391Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2256,9 +2256,9 @@
     {
       "id": "l3klt8hd3k9g",
       "name": "YYZ",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2024-03-13T08:23:13.186Z",
-      "updated_at": "2025-01-21T15:41:26.808Z",
+      "updated_at": "2025-01-21T18:27:21.362Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -2723,9 +2723,9 @@
     {
       "id": "0w0ny535sl17",
       "name": "[LIM1][Dedicated Servers] - Rack L113B10",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-01-21T17:34:00.987Z",
-      "updated_at": "2025-01-21T17:34:01.107Z",
+      "updated_at": "2025-01-21T18:31:21.381Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2733,6 +2733,26 @@
       "started_at": "2025-01-21T17:34:00.977Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "mtcdyj65wkjp",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack L113B10.\n\nHere are some supplementary details :\n<b>Start time :</b> 21/01/2025 17:07 UTC\n<b>Impacted Service(s) :</b> availability\n<b>Customers Impact :</b> Public network for servers are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by an network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "0w0ny535sl17",
+          "created_at": "2025-01-21T18:31:21.377Z",
+          "updated_at": "2025-01-21T18:31:21.377Z",
+          "display_at": "2025-01-21T18:31:21.377Z",
+          "affected_components": [
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "g5vvwjpw45jb",
           "status": "investigating",
@@ -2766,79 +2786,6 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "ldgddh7g1rd3",
-      "name": "[YYZ][Dedicated Servers] - Rack YYZ0101A03A",
-      "status": "identified",
-      "created_at": "2025-01-21T15:41:26.775Z",
-      "updated_at": "2025-01-21T16:14:47.861Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/1hqhcctspn96",
-      "started_at": "2025-01-21T15:41:26.000Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "hht3038n3lgw",
-          "status": "identified",
-          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering, which is causing temporary Availability issues in the rack YYZ0101A03A.\n\nHere are some supplementary details :\n<b>Start time :</b>  21/01/2025 15:16 UTC\n<b>Impacted Service :</b> Availability\n<b>Customers Impact :</b> Public network for servers in rack YYZ0101A03A is temporarily unavailable\n<b>Root Cause :</b> This incident is caused by a cooling module issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "ldgddh7g1rd3",
-          "created_at": "2025-01-21T16:14:47.858Z",
-          "updated_at": "2025-01-21T16:14:47.858Z",
-          "display_at": "2025-01-21T16:14:47.858Z",
-          "affected_components": [
-            {
-              "code": "l3klt8hd3k9g",
-              "name": "Dedicated Servers || Global Infrastructure - YYZ",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kpfnmn24x90c",
-          "status": "investigating",
-          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary Availability issues in the rack YYZ0101A03A.\n\nHere is detail for this incident :\n<b>Start time :</b> 21/01/2025 15:16 UTC\n<b>Impacted Service :</b> Availability\n<b>Customers Impact :</b> Some servers in the rack YYZ0101A03A are no longer responding.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nUpdate will be posted as significant progress is made.\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "ldgddh7g1rd3",
-          "created_at": "2025-01-21T15:41:26.857Z",
-          "updated_at": "2025-01-21T15:42:49.301Z",
-          "display_at": "2025-01-21T15:41:26.000Z",
-          "affected_components": [
-            {
-              "code": "l3klt8hd3k9g",
-              "name": "Dedicated Servers || Global Infrastructure - YYZ",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "l3klt8hd3k9g",
-          "name": "YYZ",
-          "status": "partial_outage",
-          "created_at": "2024-03-13T08:23:13.186Z",
-          "updated_at": "2025-01-21T15:41:26.808Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-03-13",
-          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
