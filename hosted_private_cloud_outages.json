@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-22T00:29:50.316Z"
+    "updated_at": "2025-01-22T01:20:33.799Z"
   },
   "components": [
     {
@@ -1658,6 +1658,81 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
+    {
+      "id": "qnx85wr802gr",
+      "name": "[RBX2A][Hosted Private Cloud] - Migration PCC to VCD",
+      "status": "scheduled",
+      "created_at": "2025-01-22T00:54:12.589Z",
+      "updated_at": "2025-01-22T00:54:12.645Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/30bnszv5b42p",
+      "started_at": "2025-01-22T00:54:12.581Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "js0xbm8139v1",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\n<b>Start time :</b> 27/01/2025 14:00 UTC\n<b>End time :</b> 31/01/2025 16:00 UTC\n<b>Service impact :</b> PCC will be unavailable during the maintenance. \n<b>Service improvement :</b> Following our migration PCC to VCD plan, we are rolling out a maintenance which will transfer your current PCC platform to the new VCD platform",
+          "incident_id": "qnx85wr802gr",
+          "created_at": "2025-01-22T00:54:12.642Z",
+          "updated_at": "2025-01-22T00:54:12.642Z",
+          "display_at": "2025-01-22T00:54:12.642Z",
+          "affected_components": [
+            {
+              "code": "lcbg7967jxx1",
+              "name": "Managed VMware Cloud Director || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "b2m66lpxg514",
+              "name": "Managed VMware Cloud Director || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lcbg7967jxx1",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2025-01-15T08:50:52.354Z",
+          "updated_at": "2025-01-15T08:50:52.354Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "rfqh5dx946ly",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "b2m66lpxg514",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2025-01-15T09:00:04.712Z",
+          "updated_at": "2025-01-17T01:07:42.386Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "rfqh5dx946ly",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-01-27T00:48:00.000Z",
+      "scheduled_until": "2025-01-31T02:48:00.000Z"
+    },
     {
       "id": "0zz048hc98qp",
       "name": "[EU/CA][Hosted Private Cloud] - VMware vCenter Server maintenance notification",
