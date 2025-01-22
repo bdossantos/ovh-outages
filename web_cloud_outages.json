@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-22T01:36:32.191Z"
+    "updated_at": "2025-01-22T03:31:39.380Z"
   },
   "components": [
     {
@@ -1944,9 +1944,9 @@
     {
       "id": "g8pxlmsr607d",
       "name": "Cluster020",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-06-30T12:19:09.668Z",
-      "updated_at": "2025-01-21T22:00:21.817Z",
+      "updated_at": "2025-01-22T03:15:21.885Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -2071,9 +2071,9 @@
     {
       "id": "6w1bljcqqgwc",
       "name": "Cluster022",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2024-12-13T10:00:45.102Z",
-      "updated_at": "2025-01-21T22:00:21.841Z",
+      "updated_at": "2025-01-22T03:15:21.901Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -2131,9 +2131,9 @@
     {
       "id": "3v97r17r3wpj",
       "name": "Cluster024",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-06-30T12:19:13.993Z",
-      "updated_at": "2025-01-21T22:00:21.864Z",
+      "updated_at": "2025-01-22T03:15:21.916Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -2225,9 +2225,9 @@
     {
       "id": "nmwn56xx25yd",
       "name": "Cluster026",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:15.465Z",
-      "updated_at": "2025-01-21T22:00:21.886Z",
+      "updated_at": "2025-01-22T03:24:30.012Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -2514,9 +2514,9 @@
     {
       "id": "11z8y8f8wr9z",
       "name": "Cluster031",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-11-02T16:29:10.457Z",
-      "updated_at": "2025-01-21T22:00:21.912Z",
+      "updated_at": "2025-01-22T03:15:21.931Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -2578,7 +2578,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2024-09-10T08:22:09.103Z",
       "position": 26,
@@ -2734,6 +2734,79 @@
   ],
   "incidents": [
     {
+      "id": "nxthp741t11z",
+      "name": "[GRA2][Web Hosting] - Cluster 026 - Filerz216",
+      "status": "identified",
+      "created_at": "2025-01-22T03:24:29.971Z",
+      "updated_at": "2025-01-22T03:31:39.372Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/sgxzjtqlvlyz",
+      "started_at": "2025-01-22T03:24:29.962Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "3rrhh18r7gg1",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.\n<b>Service impact :</b> Some websites hosted on Cluster 026 - Filerz216   are unreachable",
+          "incident_id": "nxthp741t11z",
+          "created_at": "2025-01-22T03:24:38.465Z",
+          "updated_at": "2025-01-22T03:31:39.368Z",
+          "display_at": "2025-01-22T03:24:38.000Z",
+          "affected_components": [
+            {
+              "code": "nmwn56xx25yd",
+              "name": "Web Hosting || Datacenter GRA - Cluster026",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z49x4xtmk7bk",
+          "status": "investigating",
+          "body": "An incident is in progress on our Web Hosting in GRA2, customers in the impacted zone are facing some difficulties. Please find the details:\n\n<b>Start time :</b> 21/01/2025 23H20 UTC\n<b>Service impact :</b> Some websites hosted on Cluster 026 - Filerz216   are unreachable\n<b>Related incident :</b>. https://web-cloud.status-ovhcloud.com/incidents/v47p81t3jff3\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nWe will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "nxthp741t11z",
+          "created_at": "2025-01-22T03:24:30.098Z",
+          "updated_at": "2025-01-22T03:24:30.098Z",
+          "display_at": "2025-01-22T03:24:30.098Z",
+          "affected_components": [
+            {
+              "code": "nmwn56xx25yd",
+              "name": "Web Hosting || Datacenter GRA - Cluster026",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "nmwn56xx25yd",
+          "name": "Cluster026",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:15.465Z",
+          "updated_at": "2025-01-22T03:24:30.012Z",
+          "position": 19,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "y8vt35x3dz3d",
       "name": "[Global][Web Cloud] - Domains Name incident notification on .dk",
       "status": "identified",
@@ -2847,9 +2920,9 @@
         {
           "id": "11z8y8f8wr9z",
           "name": "Cluster031",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2025-01-21T22:00:21.912Z",
+          "updated_at": "2025-01-22T03:15:21.931Z",
           "position": 24,
           "description": null,
           "showcase": false,
@@ -2964,9 +3037,9 @@
         {
           "id": "11z8y8f8wr9z",
           "name": "Cluster031",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2025-01-21T22:00:21.912Z",
+          "updated_at": "2025-01-22T03:15:21.931Z",
           "position": 24,
           "description": null,
           "showcase": false,
@@ -3159,245 +3232,6 @@
       ],
       "scheduled_for": "2025-01-27T08:00:00.000Z",
       "scheduled_until": "2025-02-27T21:00:00.000Z"
-    },
-    {
-      "id": "v47p81t3jff3",
-      "name": "[GRA1/GRA3][WebHosting] - Maintenance notification for multiple Filerz",
-      "status": "in_progress",
-      "created_at": "2025-01-16T21:32:31.831Z",
-      "updated_at": "2025-01-22T01:36:32.182Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3dgrp3qzsxf9",
-      "started_at": "2025-01-16T21:32:31.818Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "nmzsb7jc0pv3",
-          "status": "in_progress",
-          "body": "<b>Service impact :</b>\nCluster026 - Filerz216 has been being unavailable  since 21/01/2025 23H20 UTC.",
-          "incident_id": "v47p81t3jff3",
-          "created_at": "2025-01-22T01:26:34.905Z",
-          "updated_at": "2025-01-22T01:36:32.178Z",
-          "display_at": "2025-01-22T01:26:34.905Z",
-          "affected_components": [
-            {
-              "code": "g8pxlmsr607d",
-              "name": "Web Hosting || Datacenter GRA - Cluster020",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "6w1bljcqqgwc",
-              "name": "Web Hosting || Datacenter GRA - Cluster022",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "3v97r17r3wpj",
-              "name": "Web Hosting || Datacenter GRA - Cluster024",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "nmwn56xx25yd",
-              "name": "Web Hosting || Datacenter GRA - Cluster026",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "11z8y8f8wr9z",
-              "name": "Web Hosting || Datacenter GRA - Cluster031",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "q6523x438qdl",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "v47p81t3jff3",
-          "created_at": "2025-01-21T22:00:22.081Z",
-          "updated_at": "2025-01-21T22:00:22.081Z",
-          "display_at": "2025-01-21T22:00:22.081Z",
-          "affected_components": [
-            {
-              "code": "g8pxlmsr607d",
-              "name": "Web Hosting || Datacenter GRA - Cluster020",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "6w1bljcqqgwc",
-              "name": "Web Hosting || Datacenter GRA - Cluster022",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "3v97r17r3wpj",
-              "name": "Web Hosting || Datacenter GRA - Cluster024",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "nmwn56xx25yd",
-              "name": "Web Hosting || Datacenter GRA - Cluster026",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "11z8y8f8wr9z",
-              "name": "Web Hosting || Datacenter GRA - Cluster031",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "5v0htzzqt8m3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "v47p81t3jff3",
-          "created_at": "2025-01-21T21:00:31.130Z",
-          "updated_at": "2025-01-21T21:00:31.130Z",
-          "display_at": "2025-01-21T21:00:31.130Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8jjp7j4bshpw",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Web Hosting Offer.\n\n<b>Start time :</b> 21/01/2025 22:00 UTC\n<b>End time :</b> 22/01/2025 03:00 UTC\n<b>Service impact :</b> Filerz below will be unavailable one by one during 20 minutes.\nCluster022- Filerz1828\nCluster026 - Filerz216\nCluster031 - Filerz1630\nCluster024 - Filerz69\nCluster020 - Filerz41\n<b>Service improvement :</b> We are going to reboot the Filerz one by one (Web Hosting server) to improve the performance and stability of the service.\n\nThank you for your understanding.",
-          "incident_id": "v47p81t3jff3",
-          "created_at": "2025-01-16T21:32:31.902Z",
-          "updated_at": "2025-01-16T21:32:31.902Z",
-          "display_at": "2025-01-16T21:32:31.902Z",
-          "affected_components": [
-            {
-              "code": "g8pxlmsr607d",
-              "name": "Web Hosting || Datacenter GRA - Cluster020",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "6w1bljcqqgwc",
-              "name": "Web Hosting || Datacenter GRA - Cluster022",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "3v97r17r3wpj",
-              "name": "Web Hosting || Datacenter GRA - Cluster024",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "nmwn56xx25yd",
-              "name": "Web Hosting || Datacenter GRA - Cluster026",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "11z8y8f8wr9z",
-              "name": "Web Hosting || Datacenter GRA - Cluster031",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "g8pxlmsr607d",
-          "name": "Cluster020",
-          "status": "under_maintenance",
-          "created_at": "2021-06-30T12:19:09.668Z",
-          "updated_at": "2025-01-21T22:00:21.817Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "6w1bljcqqgwc",
-          "name": "Cluster022",
-          "status": "under_maintenance",
-          "created_at": "2024-12-13T10:00:45.102Z",
-          "updated_at": "2025-01-21T22:00:21.841Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-13",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "3v97r17r3wpj",
-          "name": "Cluster024",
-          "status": "under_maintenance",
-          "created_at": "2021-06-30T12:19:13.993Z",
-          "updated_at": "2025-01-21T22:00:21.864Z",
-          "position": 17,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "nmwn56xx25yd",
-          "name": "Cluster026",
-          "status": "under_maintenance",
-          "created_at": "2021-06-30T12:19:15.465Z",
-          "updated_at": "2025-01-21T22:00:21.886Z",
-          "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "11z8y8f8wr9z",
-          "name": "Cluster031",
-          "status": "under_maintenance",
-          "created_at": "2021-11-02T16:29:10.457Z",
-          "updated_at": "2025-01-21T22:00:21.912Z",
-          "position": 24,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-02",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-01-21T22:00:00.000Z",
-      "scheduled_until": "2025-01-22T03:00:00.000Z"
     },
     {
       "id": "tc5zlt8bj9bb",
