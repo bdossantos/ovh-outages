@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-24T00:06:26.598Z"
+    "updated_at": "2025-01-24T00:35:43.621Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "hgscwllzr4w1",
       "name": "Zone Europe",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:24.629Z",
-      "updated_at": "2024-09-19T13:26:10.335Z",
+      "updated_at": "2025-01-24T00:33:16.958Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -568,9 +568,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2025-01-23T23:57:32.092Z",
+      "updated_at": "2025-01-24T00:31:19.813Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-01-23T23:57:32.115Z",
+      "updated_at": "2025-01-24T00:31:36.515Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1091,7 +1091,7 @@
     {
       "id": "7xz24f8j9l94",
       "name": "Dedicated Servers || Operating System",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:27.959Z",
       "updated_at": "2023-05-16T11:45:36.944Z",
       "position": 4,
@@ -1156,9 +1156,9 @@
     {
       "id": "9y37g21l733b",
       "name": "LIM",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:26.565Z",
-      "updated_at": "2025-01-23T23:57:32.141Z",
+      "updated_at": "2025-01-24T00:31:50.385Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1351,9 +1351,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-01-23T23:57:32.162Z",
+      "updated_at": "2025-01-24T00:32:05.779Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1564,9 +1564,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-01-23T23:57:32.182Z",
+      "updated_at": "2025-01-24T00:32:20.869Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1940,9 +1940,9 @@
     {
       "id": "7qwkswh276f8",
       "name": "WAW",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:29.102Z",
-      "updated_at": "2025-01-23T23:57:32.203Z",
+      "updated_at": "2025-01-24T00:32:52.804Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2722,17 +2722,77 @@
   "incidents": [
     {
       "id": "q7ybcjfbws00",
-      "name": "[EU][Dedicated Server] - Rescue mode incident notification",
-      "status": "investigating",
+      "name": "[EU][Dedicated Server] - Rescue mode or installations operating system incident notification",
+      "status": "identified",
       "created_at": "2025-01-23T23:57:32.039Z",
-      "updated_at": "2025-01-24T00:06:26.593Z",
+      "updated_at": "2025-01-24T00:35:43.609Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "minor",
+      "impact": "major",
       "shortlink": "https://stspg.io/p2lhv58nd5k6",
       "started_at": "2025-01-23T23:57:32.022Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "hbhdptsbf3qx",
+          "status": "identified",
+          "body": "The servers are still functional, only the rescue mode is affected.\nUpdate will be posted as significant progress is made.\n\nThank you for your understanding",
+          "incident_id": "q7ybcjfbws00",
+          "created_at": "2025-01-24T00:35:43.606Z",
+          "updated_at": "2025-01-24T00:35:43.606Z",
+          "display_at": "2025-01-24T00:35:43.606Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wmnnwnmtcqjh",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary functionality issues in the EU region.\n\nHere is detail for this incident :\n<b>Start time :</b> 23/01/2025 23:24 UTC\n<b>Impacted Service(s) :</b> functionality.\n<b>Customers Impact :</b> Currently it is impossible to boot servers in rescue mode or installations operating system only in EU regions.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nUpdate will be posted as significant progress is made.\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "q7ybcjfbws00",
+          "created_at": "2025-01-24T00:24:30.308Z",
+          "updated_at": "2025-01-24T00:24:30.308Z",
+          "display_at": "2025-01-24T00:24:30.308Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lfvfz1sstbcj",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "q7ybcjfbws00",
+          "created_at": "2025-01-24T00:24:08.805Z",
+          "updated_at": "2025-01-24T00:24:08.805Z",
+          "display_at": "2025-01-24T00:24:08.805Z",
+          "affected_components": [
+            {
+              "code": "hgscwllzr4w1",
+              "name": "Dedicated Servers || Operating System - Zone Europe",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "2vcg601rbhhg",
           "status": "investigating",
@@ -2786,91 +2846,16 @@
       ],
       "components": [
         {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-01-23T23:57:32.092Z",
-          "position": 2,
+          "id": "hgscwllzr4w1",
+          "name": "Zone Europe",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:24.629Z",
+          "updated_at": "2025-01-24T00:33:16.958Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2025-01-23T23:57:32.115Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "9y37g21l733b",
-          "name": "LIM",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:26.565Z",
-          "updated_at": "2025-01-23T23:57:32.141Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-01-23T23:57:32.162Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "6cv1pzgk8v1n",
-          "name": "SBG",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:25.618Z",
-          "updated_at": "2025-01-23T23:57:32.182Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7qwkswh276f8",
-          "name": "WAW",
-          "status": "degraded_performance",
-          "created_at": "2021-07-09T07:33:29.102Z",
-          "updated_at": "2025-01-23T23:57:32.203Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "7xz24f8j9l94",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -2918,9 +2903,9 @@
         {
           "id": "klylb1cv9dvj",
           "name": "ERI",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-01-23T23:57:32.092Z",
+          "updated_at": "2025-01-24T00:31:19.813Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2972,9 +2957,9 @@
         {
           "id": "klylb1cv9dvj",
           "name": "ERI",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-01-23T23:57:32.092Z",
+          "updated_at": "2025-01-24T00:31:19.813Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3026,9 +3011,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-01-23T23:57:32.162Z",
+          "updated_at": "2025-01-24T00:32:05.779Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3146,9 +3131,9 @@
         {
           "id": "hgscwllzr4w1",
           "name": "Zone Europe",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:32:24.629Z",
-          "updated_at": "2024-09-19T13:26:10.335Z",
+          "updated_at": "2025-01-24T00:33:16.958Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3542,9 +3527,9 @@
         {
           "id": "klylb1cv9dvj",
           "name": "ERI",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-01-23T23:57:32.092Z",
+          "updated_at": "2025-01-24T00:31:19.813Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3918,6 +3903,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
