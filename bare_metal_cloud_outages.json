@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-24T13:20:37.570Z"
+    "updated_at": "2025-01-24T13:42:36.607Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1564,9 +1564,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-01-24T00:32:20.869Z",
+      "updated_at": "2025-01-24T13:33:00.180Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2723,9 +2723,9 @@
     {
       "id": "88ygm0n7yxk5",
       "name": "[SBG5][Dedicated Servers] - Rack SBG0506B07B",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-01-24T13:14:22.362Z",
-      "updated_at": "2025-01-24T13:14:22.483Z",
+      "updated_at": "2025-01-24T13:42:36.598Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2733,6 +2733,26 @@
       "started_at": "2025-01-24T13:14:22.353Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "8gnwwckrsmll",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering, which is causing temporary availability of network vrack in rack SBG0506B07B.\n\nHere are some supplementary details :\n<b>Start time :</b> 24/01/2025 12:50 UTC\n<b>Impacted Service :</b> Availability\n<b>Customers Impact :</b> The Vrack network in rack SBG0506B07B is temporarily unavailable.\n<b>Root Cause :</b> Incident caused by the ongoing incident https://bare-metal-servers.status-ovhcloud.com/incidents/88ygm0n7yxk5\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "88ygm0n7yxk5",
+          "created_at": "2025-01-24T13:42:36.595Z",
+          "updated_at": "2025-01-24T13:42:36.595Z",
+          "display_at": "2025-01-24T13:42:36.595Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "k83hnmzdd79h",
           "status": "investigating",
@@ -2766,6 +2786,79 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "xlwt2p0yjdn3",
+      "name": "[SBG5][Dedicated Servers] - Rack SBG0506B07C",
+      "status": "identified",
+      "created_at": "2025-01-24T13:33:00.143Z",
+      "updated_at": "2025-01-24T13:41:51.272Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/by35mfgzk953",
+      "started_at": "2025-01-24T13:33:00.135Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qbqdvm2j8kg6",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the specified rack.\n\nHere are some supplementary details :\n<b>Start time :</b> 24/01/2025 12:50 UTC\n<b>Impacted Service :</b> Availability\n<b>Customers Impact :</b> Some servers in rack SBG0506B07C are temporarily unavailable.\n<b>Root Cause :</b> Incident caused by a cooling module issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilized to restore service as quickly as possible. \nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xlwt2p0yjdn3",
+          "created_at": "2025-01-24T13:41:51.269Z",
+          "updated_at": "2025-01-24T13:41:51.269Z",
+          "display_at": "2025-01-24T13:41:51.269Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8fwfky1zv5wz",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer.\n<b>Start time :</b> 24/01/2025 12:50 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xlwt2p0yjdn3",
+          "created_at": "2025-01-24T13:33:00.240Z",
+          "updated_at": "2025-01-24T13:33:00.240Z",
+          "display_at": "2025-01-24T13:33:00.240Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-01-24T13:33:00.180Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
