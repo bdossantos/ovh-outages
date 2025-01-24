@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-24T01:32:42.096Z"
+    "updated_at": "2025-01-24T13:20:37.570Z"
   },
   "components": [
     {
@@ -1396,7 +1396,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1988,9 +1988,9 @@
     {
       "id": "7xy5137wv97w",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:53.351Z",
-      "updated_at": "2025-01-06T08:40:19.512Z",
+      "updated_at": "2025-01-24T13:14:22.402Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2719,7 +2719,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "88ygm0n7yxk5",
+      "name": "[SBG5][Dedicated Servers] - Rack SBG0506B07B",
+      "status": "investigating",
+      "created_at": "2025-01-24T13:14:22.362Z",
+      "updated_at": "2025-01-24T13:14:22.483Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/gl6jcwpl3pmf",
+      "started_at": "2025-01-24T13:14:22.353Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "k83hnmzdd79h",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer.\n<b>Start time :</b> 24/01/2025 12:50 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "88ygm0n7yxk5",
+          "created_at": "2025-01-24T13:14:22.481Z",
+          "updated_at": "2025-01-24T13:14:22.481Z",
+          "display_at": "2025-01-24T13:14:22.481Z",
+          "affected_components": [
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2025-01-24T13:14:22.402Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "82fqccnng1pp",
@@ -3275,9 +3329,9 @@
         {
           "id": "7xy5137wv97w",
           "name": "SBG",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:53.351Z",
-          "updated_at": "2025-01-06T08:40:19.512Z",
+          "updated_at": "2025-01-24T13:14:22.402Z",
           "position": 9,
           "description": null,
           "showcase": false,
@@ -3758,7 +3812,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
