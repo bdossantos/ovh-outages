@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-30T10:46:47.814Z"
+    "updated_at": "2025-01-30T13:36:20.411Z"
   },
   "components": [
     {
@@ -340,9 +340,9 @@
     {
       "id": "r0gb2v5791yj",
       "name": "Management plane",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:45.677Z",
-      "updated_at": "2025-01-30T10:46:47.720Z",
+      "updated_at": "2025-01-30T13:36:20.336Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -655,9 +655,9 @@
     {
       "id": "h49h85c2xwcr",
       "name": "Compute",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:46.224Z",
-      "updated_at": "2025-01-30T10:46:47.744Z",
+      "updated_at": "2025-01-30T13:36:20.355Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1448,7 +1448,7 @@
     {
       "id": "57t55jp0633h",
       "name": "Managed vSphere || RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2025-01-15T10:37:04.696Z",
       "position": 15,
@@ -1656,95 +1656,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "m13qpxmtlzqq",
-      "name": "[RBX][Hosted Private Cloud] - Rack R831B26",
-      "status": "identified",
-      "created_at": "2025-01-30T09:53:14.511Z",
-      "updated_at": "2025-01-30T10:46:47.803Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/y51zlrw1bk3j",
-      "started_at": "2025-01-30T09:53:14.000Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "1vcvxzdh0ydz",
-          "status": "identified",
-          "body": "We are currently experiencing an incident affecting our Hosted Private Cloud offering, which is causing temporary availability issues in the rack R831B26.\n\nHere is detail for this incident :\n<b>Start time :</b> 30/01/2025 09:15 UTC\n<b>Impacted Service(s) :</b> Some servers are unavailable.\n<b>Customers Impact :</b> Some hosts in RBX2 region were automatically transferred to backups.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "m13qpxmtlzqq",
-          "created_at": "2025-01-30T10:46:47.800Z",
-          "updated_at": "2025-01-30T10:46:47.800Z",
-          "display_at": "2025-01-30T10:46:47.800Z",
-          "affected_components": [
-            {
-              "code": "r0gb2v5791yj",
-              "name": "Managed vSphere || RBX - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "h49h85c2xwcr",
-              "name": "Managed vSphere || RBX - Compute",
-              "old_status": "under_maintenance",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mysv4248pjhp",
-          "status": "investigating",
-          "body": "We are currently experiencing an event affecting our Hosted Private Cloud offer in the rack R831B26.\n<b>Start time :</b> 30/01/2025 09:15 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "m13qpxmtlzqq",
-          "created_at": "2025-01-30T09:53:14.553Z",
-          "updated_at": "2025-01-30T09:55:20.997Z",
-          "display_at": "2025-01-30T09:53:14.000Z",
-          "affected_components": null,
-          "deliver_notifications": false,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r0gb2v5791yj",
-          "name": "Management plane",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2025-01-30T10:46:47.720Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-01-30T10:46:47.744Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "jfzlqpk0zltj",
@@ -1826,9 +1738,9 @@
         {
           "id": "h49h85c2xwcr",
           "name": "Compute",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-01-30T10:46:47.744Z",
+          "updated_at": "2025-01-30T13:36:20.355Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2027,9 +1939,9 @@
         {
           "id": "h49h85c2xwcr",
           "name": "Compute",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-01-30T10:46:47.744Z",
+          "updated_at": "2025-01-30T13:36:20.355Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2186,9 +2098,9 @@
         {
           "id": "h49h85c2xwcr",
           "name": "Compute",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-01-30T10:46:47.744Z",
+          "updated_at": "2025-01-30T13:36:20.355Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2357,9 +2269,9 @@
         {
           "id": "h49h85c2xwcr",
           "name": "Compute",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-01-30T10:46:47.744Z",
+          "updated_at": "2025-01-30T13:36:20.355Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2645,9 +2557,9 @@
         {
           "id": "r0gb2v5791yj",
           "name": "Management plane",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:45.677Z",
-          "updated_at": "2025-01-30T10:46:47.720Z",
+          "updated_at": "2025-01-30T13:36:20.336Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2969,7 +2881,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
