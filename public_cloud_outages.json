@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-01-31T14:20:29.769Z"
+    "updated_at": "2025-02-03T14:08:06.793Z"
   },
   "components": [
     {
@@ -6883,84 +6883,11 @@
   ],
   "incidents": [
     {
-      "id": "nkgw43rdk5wy",
-      "name": "[RBX][Storage] - Storage Cold Archive incident notification",
-      "status": "identified",
-      "created_at": "2025-01-20T11:07:10.545Z",
-      "updated_at": "2025-01-30T14:23:56.493Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/hv8qw74jbtnd",
-      "started_at": "2025-01-20T11:07:10.000Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "jbxr9w31hpkz",
-          "status": "identified",
-          "body": "Some customers have recovered their operational capacity.\n\n<b>Start Time :</b> 23/12/2024 15:00 UTC\n<b>Service impact :</b> Some customers may experience a slight delay in archiving buckets.\nIt is possible that the archiving period has been extended for some customers.",
-          "incident_id": "nkgw43rdk5wy",
-          "created_at": "2025-01-30T14:23:56.490Z",
-          "updated_at": "2025-01-30T14:23:56.490Z",
-          "display_at": "2025-01-30T14:23:56.490Z",
-          "affected_components": [
-            {
-              "code": "mvv8bsrdd0mz",
-              "name": "Storage || Cold Archive - RBX-ARCHIVE",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "r9s0gv2s91k8",
-          "status": "identified",
-          "body": "An incident is in progress on our public cloud offer.\nPlease be aware that it is affecting the latency.\n\n<b>Start Time :</b> 23/12/2024 15:00 UTC\n<b>Service impact :</b> Some customers may experience a slight delay in archiving buckets.\nIt is possible that the archiving period has been extended for some customers.\n<b>Root cause :</b> This incident is caused by https://public-cloud.status-ovhcloud.com/incidents/trsftrck9n7p\n\nWe thank you for your understanding and patience throughout this incident",
-          "incident_id": "nkgw43rdk5wy",
-          "created_at": "2025-01-20T11:07:10.638Z",
-          "updated_at": "2025-01-24T21:57:47.742Z",
-          "display_at": "2025-01-20T11:07:10.000Z",
-          "affected_components": [
-            {
-              "code": "mvv8bsrdd0mz",
-              "name": "Storage || Cold Archive - RBX-ARCHIVE",
-              "old_status": "operational",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "mvv8bsrdd0mz",
-          "name": "RBX-ARCHIVE",
-          "status": "degraded_performance",
-          "created_at": "2023-10-18T08:40:29.186Z",
-          "updated_at": "2025-01-30T14:23:56.442Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-10-18",
-          "group_id": "574xkcjvskq1",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "491vx956zx6b",
       "name": "[GLOBAL][Storage] - Object Storage S3 Standard/High Perf incident notification",
       "status": "identified",
       "created_at": "2025-01-23T14:51:30.064Z",
-      "updated_at": "2025-01-23T15:54:23.608Z",
+      "updated_at": "2025-02-03T14:08:06.781Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -6971,11 +6898,11 @@
         {
           "id": "84gg48n5z8jg",
           "status": "identified",
-          "body": "We have determined the origin of the incident affecting our Object Storage S3 offer.\n\nHere are some supplementary details :\n<b>Start time :</b> 01/01/2025 00:00 UTC\n<b>Impacted Service(s) :</b> Object Storage S3\n<b>Customers Impact :</b> Requests to our Object Storage endpoint could return the error \"InvalidArgument\", on different Object operations.\n<b>Root Cause :</b> This incident is caused by an update from our provider on their SDKs.\n<b>Workaround </b> To mitigate the issue, impacted customers can downgrade the version of their SDKs, until the feature is implemented on our side.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilized to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "We have determined the origin of the incident affecting our Object Storage S3 offer.\n\nHere are some supplementary details :\n<b>Start time :</b> 01/01/2025 00:00 UTC\n<b>Impacted Service(s) :</b> Object Storage S3\n<b>Customers Impact :</b> Requests to our Object Storage endpoint could return the error \"InvalidArgument\", on different Object operations.\n<b>Root Cause :</b> Following a recent AWS SDK upgrade, this issue is  due to a new checksum enforcement in those SDKs.\nUnsupported headers are:\n  - x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER\n  - x-amz-sdk-checksum-algorithm with value CRC32\n<b>Workaround </b> A workaround is to downgrade the version, until the feature is implemented on our side.\nMax supported versions:\n  - boto3 1.35.99\n  - legacy aws cli 1.36.40\n  - aws cli 2.22.35\n  - aws-sdk-go 1.72.3\n  - aws-sdk-java 2.29.52\n  - aws-sdk-js-v3 3.726.1\n  - aws-sdk-net 3.7.962.0\n  - aws-sdk-php 3.336.15\n  - aws-sdk-ruby 1.177.0\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilized to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "491vx956zx6b",
           "created_at": "2025-01-23T15:11:08.881Z",
-          "updated_at": "2025-01-23T15:11:08.881Z",
-          "display_at": "2025-01-23T15:11:08.881Z",
+          "updated_at": "2025-02-03T14:08:06.776Z",
+          "display_at": "2025-01-23T15:11:08.000Z",
           "affected_components": [
             {
               "code": "j60wbjr53lsb",
@@ -7345,6 +7272,79 @@
           "showcase": false,
           "start_date": "2024-12-03",
           "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "nkgw43rdk5wy",
+      "name": "[RBX][Storage] - Storage Cold Archive incident notification",
+      "status": "identified",
+      "created_at": "2025-01-20T11:07:10.545Z",
+      "updated_at": "2025-01-30T14:23:56.493Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hv8qw74jbtnd",
+      "started_at": "2025-01-20T11:07:10.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "jbxr9w31hpkz",
+          "status": "identified",
+          "body": "Some customers have recovered their operational capacity.\n\n<b>Start Time :</b> 23/12/2024 15:00 UTC\n<b>Service impact :</b> Some customers may experience a slight delay in archiving buckets.\nIt is possible that the archiving period has been extended for some customers.",
+          "incident_id": "nkgw43rdk5wy",
+          "created_at": "2025-01-30T14:23:56.490Z",
+          "updated_at": "2025-01-30T14:23:56.490Z",
+          "display_at": "2025-01-30T14:23:56.490Z",
+          "affected_components": [
+            {
+              "code": "mvv8bsrdd0mz",
+              "name": "Storage || Cold Archive - RBX-ARCHIVE",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r9s0gv2s91k8",
+          "status": "identified",
+          "body": "An incident is in progress on our public cloud offer.\nPlease be aware that it is affecting the latency.\n\n<b>Start Time :</b> 23/12/2024 15:00 UTC\n<b>Service impact :</b> Some customers may experience a slight delay in archiving buckets.\nIt is possible that the archiving period has been extended for some customers.\n<b>Root cause :</b> This incident is caused by https://public-cloud.status-ovhcloud.com/incidents/trsftrck9n7p\n\nWe thank you for your understanding and patience throughout this incident",
+          "incident_id": "nkgw43rdk5wy",
+          "created_at": "2025-01-20T11:07:10.638Z",
+          "updated_at": "2025-01-24T21:57:47.742Z",
+          "display_at": "2025-01-20T11:07:10.000Z",
+          "affected_components": [
+            {
+              "code": "mvv8bsrdd0mz",
+              "name": "Storage || Cold Archive - RBX-ARCHIVE",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mvv8bsrdd0mz",
+          "name": "RBX-ARCHIVE",
+          "status": "degraded_performance",
+          "created_at": "2023-10-18T08:40:29.186Z",
+          "updated_at": "2025-01-30T14:23:56.442Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-18",
+          "group_id": "574xkcjvskq1",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
