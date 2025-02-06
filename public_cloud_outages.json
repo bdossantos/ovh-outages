@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-06T10:05:21.563Z"
+    "updated_at": "2025-02-06T11:27:23.662Z"
   },
   "components": [
     {
@@ -899,9 +899,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2025-01-23T14:51:30.173Z",
+      "updated_at": "2025-02-06T11:05:21.398Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -6883,6 +6883,79 @@
   ],
   "incidents": [
     {
+      "id": "1nk4m10mwxnq",
+      "name": "[UK][ObjectStorageSwift] Latency notification",
+      "status": "identified",
+      "created_at": "2025-02-06T11:23:02.707Z",
+      "updated_at": "2025-02-06T11:27:23.657Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/7l6v2lrz29d1",
+      "started_at": "2025-02-06T11:23:02.700Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "z48xxz95ghzw",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our  Object Storage Swift, which is causing lantency issues in UK\n\nHere is detail for this incident :\n<b>Start time :</b> 06/02/2025 10:30 UTC\n<b>Service impact :</b> Customers are facing latencies when they try to contact the Cluster\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1nk4m10mwxnq",
+          "created_at": "2025-02-06T11:26:28.505Z",
+          "updated_at": "2025-02-06T11:26:28.505Z",
+          "display_at": "2025-02-06T11:26:28.505Z",
+          "affected_components": [
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3k54llsbp95y",
+          "status": "investigating",
+          "body": "We have detected an issue on our services. We will update informations when we will have more details.",
+          "incident_id": "1nk4m10mwxnq",
+          "created_at": "2025-02-06T11:23:02.761Z",
+          "updated_at": "2025-02-06T11:23:02.761Z",
+          "display_at": "2025-02-06T11:23:02.761Z",
+          "affected_components": [
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "13lcmbp3cvg7",
+          "name": "UK",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:43.824Z",
+          "updated_at": "2025-01-23T14:51:30.284Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "491vx956zx6b",
       "name": "[GLOBAL][Storage] - Object Storage S3 Standard/High Perf incident notification",
       "status": "identified",
@@ -7099,9 +7172,9 @@
         {
           "id": "k86vmhcsnjtj",
           "name": "GRA",
-          "status": "partial_outage",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2025-01-23T14:51:30.173Z",
+          "updated_at": "2025-02-06T11:05:21.398Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -7354,73 +7427,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "z0078qj1mr9b",
-      "name": "[GRA][Object storage] - Object Storage maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-02-06T09:17:52.056Z",
-      "updated_at": "2025-02-06T10:05:21.555Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hjxx3r487dxw",
-      "started_at": "2025-02-06T09:17:52.047Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "k9s4xr5f23gf",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "z0078qj1mr9b",
-          "created_at": "2025-02-06T10:05:21.451Z",
-          "updated_at": "2025-02-06T10:05:21.451Z",
-          "display_at": "2025-02-06T10:05:21.451Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "2j7s3wt9nx8d",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Object storage offer. \n\n<b>Start time :</b>06/02/2025 11:05 UTC \n<b>End time :</b> 06/02/2025 19:05 UTC \n<b>Service impact :</b> Customers may be disconnected once during the maintenance\n<b>Service improvement :</b> Following our continuous improvement policy of our infrastructure, we will be doing a maintenance on Object Storage offer in GRA region.\n\nThank you for your understanding.",
-          "incident_id": "z0078qj1mr9b",
-          "created_at": "2025-02-06T09:17:52.133Z",
-          "updated_at": "2025-02-06T09:17:52.133Z",
-          "display_at": "2025-02-06T09:17:52.133Z",
-          "affected_components": [
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k86vmhcsnjtj",
-          "name": "GRA",
-          "status": "partial_outage",
-          "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2025-01-23T14:51:30.173Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-02-06T11:05:00.000Z",
-      "scheduled_until": "2025-02-06T19:05:00.000Z"
-    },
     {
       "id": "wcdh5m90zdf5",
       "name": "[BHS5][Public Cloud] - instances upgrade notification",
@@ -7834,6 +7840,93 @@
       ],
       "scheduled_for": "2025-03-11T08:00:00.000Z",
       "scheduled_until": "2025-03-13T17:00:00.000Z"
+    },
+    {
+      "id": "z0078qj1mr9b",
+      "name": "[GRA][Object storage] - Object Storage maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-02-06T09:17:52.056Z",
+      "updated_at": "2025-02-06T11:05:21.455Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hjxx3r487dxw",
+      "started_at": "2025-02-06T09:17:52.047Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "h1tgndtkkjxh",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "z0078qj1mr9b",
+          "created_at": "2025-02-06T11:05:21.452Z",
+          "updated_at": "2025-02-06T11:05:21.452Z",
+          "display_at": "2025-02-06T11:05:21.452Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "partial_outage",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k9s4xr5f23gf",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "z0078qj1mr9b",
+          "created_at": "2025-02-06T10:05:21.451Z",
+          "updated_at": "2025-02-06T10:05:21.451Z",
+          "display_at": "2025-02-06T10:05:21.451Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2j7s3wt9nx8d",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Object storage offer. \n\n<b>Start time :</b>06/02/2025 11:05 UTC \n<b>End time :</b> 06/02/2025 19:05 UTC \n<b>Service impact :</b> Customers may be disconnected once during the maintenance\n<b>Service improvement :</b> Following our continuous improvement policy of our infrastructure, we will be doing a maintenance on Object Storage offer in GRA region.\n\nThank you for your understanding.",
+          "incident_id": "z0078qj1mr9b",
+          "created_at": "2025-02-06T09:17:52.133Z",
+          "updated_at": "2025-02-06T09:17:52.133Z",
+          "display_at": "2025-02-06T09:17:52.133Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2025-02-06T11:05:21.398Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-06T11:05:00.000Z",
+      "scheduled_until": "2025-02-06T19:05:00.000Z"
     },
     {
       "id": "lhz2mwqf53mp",
