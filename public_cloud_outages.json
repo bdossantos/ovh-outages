@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-10T06:01:22.552Z"
+    "updated_at": "2025-02-10T07:00:21.742Z"
   },
   "components": [
     {
@@ -1353,9 +1353,9 @@
     {
       "id": "d6db30j7nx4r",
       "name": "BHS5",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:38:37.373Z",
-      "updated_at": "2024-12-04T10:47:11.519Z",
+      "updated_at": "2025-02-10T07:00:21.659Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2302,7 +2302,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2023-05-16T12:01:33.078Z",
       "position": 5,
@@ -7467,73 +7467,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "wcdh5m90zdf5",
-      "name": "[BHS5][Public Cloud] - instances upgrade notification",
-      "status": "scheduled",
-      "created_at": "2025-01-14T23:20:00.079Z",
-      "updated_at": "2025-02-10T06:01:22.543Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/gl0czzn0fzvw",
-      "started_at": "2025-01-14T23:20:00.072Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "5w2j59p91psm",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "wcdh5m90zdf5",
-          "created_at": "2025-02-10T06:01:22.439Z",
-          "updated_at": "2025-02-10T06:01:22.439Z",
-          "display_at": "2025-02-10T06:01:22.439Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v5wxhp9f29rb",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our compute offer. \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 10/02/2025 07:00 UTC \n<b>End time :</b> 13/02/2025 17:00 UTC \n<b>Service impact :</b> Please be advised that the system may be unavailable for 1 hour during the maintenance. The scope of the impact is restricted to t2 flavors.\n<b>Service improvement :</b> Following our continuous improvement policy, we will be doing a maintenance on some instances in BHS5.\n\nThank you for your understanding.",
-          "incident_id": "wcdh5m90zdf5",
-          "created_at": "2025-01-14T23:20:00.139Z",
-          "updated_at": "2025-01-14T23:20:00.139Z",
-          "display_at": "2025-01-14T23:20:00.139Z",
-          "affected_components": [
-            {
-              "code": "d6db30j7nx4r",
-              "name": "Compute - Instance || BHS - BHS5",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "d6db30j7nx4r",
-          "name": "BHS5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:38:37.373Z",
-          "updated_at": "2024-12-04T10:47:11.519Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "2tw1ry03dznj",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-02-10T07:00:00.000Z",
-      "scheduled_until": "2025-02-13T17:00:00.000Z"
-    },
-    {
       "id": "qms3xwwn3rxy",
       "name": "[EU-WEST][Public Cloud] - API maintenance notification",
       "status": "scheduled",
@@ -7946,6 +7879,93 @@
       ],
       "scheduled_for": "2025-03-11T08:00:00.000Z",
       "scheduled_until": "2025-03-13T17:00:00.000Z"
+    },
+    {
+      "id": "wcdh5m90zdf5",
+      "name": "[BHS5][Public Cloud] - instances upgrade notification",
+      "status": "in_progress",
+      "created_at": "2025-01-14T23:20:00.079Z",
+      "updated_at": "2025-02-10T07:00:21.728Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/gl0czzn0fzvw",
+      "started_at": "2025-01-14T23:20:00.072Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6fjkgrjr8n4n",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "wcdh5m90zdf5",
+          "created_at": "2025-02-10T07:00:21.724Z",
+          "updated_at": "2025-02-10T07:00:21.724Z",
+          "display_at": "2025-02-10T07:00:21.724Z",
+          "affected_components": [
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5w2j59p91psm",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "wcdh5m90zdf5",
+          "created_at": "2025-02-10T06:01:22.439Z",
+          "updated_at": "2025-02-10T06:01:22.439Z",
+          "display_at": "2025-02-10T06:01:22.439Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v5wxhp9f29rb",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our compute offer. \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 10/02/2025 07:00 UTC \n<b>End time :</b> 13/02/2025 17:00 UTC \n<b>Service impact :</b> Please be advised that the system may be unavailable for 1 hour during the maintenance. The scope of the impact is restricted to t2 flavors.\n<b>Service improvement :</b> Following our continuous improvement policy, we will be doing a maintenance on some instances in BHS5.\n\nThank you for your understanding.",
+          "incident_id": "wcdh5m90zdf5",
+          "created_at": "2025-01-14T23:20:00.139Z",
+          "updated_at": "2025-01-14T23:20:00.139Z",
+          "display_at": "2025-01-14T23:20:00.139Z",
+          "affected_components": [
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "d6db30j7nx4r",
+          "name": "BHS5",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:38:37.373Z",
+          "updated_at": "2025-02-10T07:00:21.659Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-10T07:00:00.000Z",
+      "scheduled_until": "2025-02-13T17:00:00.000Z"
     }
   ],
   "status": {
