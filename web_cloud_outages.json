@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-11T10:31:39.543Z"
+    "updated_at": "2025-02-11T10:59:53.580Z"
   },
   "components": [
     {
@@ -898,9 +898,9 @@
     {
       "id": "m635cyjtprmy",
       "name": "Cluster006",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:04.304Z",
-      "updated_at": "2025-02-10T10:57:44.099Z",
+      "updated_at": "2025-02-11T10:54:44.580Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1102,9 +1102,9 @@
     {
       "id": "rlqyny7qzlfq",
       "name": "Cluster007",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:04.885Z",
-      "updated_at": "2025-01-30T12:39:21.412Z",
+      "updated_at": "2025-02-11T10:54:44.600Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2734,6 +2734,106 @@
   ],
   "incidents": [
     {
+      "id": "bgszwx8gs1p7",
+      "name": "[GRA][Web Hosting] - Cluster006/Cluster007 incident notification",
+      "status": "investigating",
+      "created_at": "2025-02-11T10:54:44.543Z",
+      "updated_at": "2025-02-11T10:59:53.570Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ddj23w7ngmv8",
+      "started_at": "2025-02-11T10:54:44.534Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "xf50rjfc7pty",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Web Hosting offer for the specified clusters, which is causing temporary slowness issues for delivering mails.\n\nHere is detail for this incident :\n<b>Start time :</b> 09/02/2025 22:30 UTC\n<b>Impacted Service(s) :</b> Cluster006 and Cluster007 mail delivery.\n<b>Customers Impact :</b> Mail delivery is temporarily facing slowness for websites hosted on Cluster006 and Cluster007.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "bgszwx8gs1p7",
+          "created_at": "2025-02-11T10:59:53.567Z",
+          "updated_at": "2025-02-11T10:59:53.567Z",
+          "display_at": "2025-02-11T10:59:53.567Z",
+          "affected_components": [
+            {
+              "code": "m635cyjtprmy",
+              "name": "Web Hosting || Datacenter GRA - Cluster006",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tm4dczx0cbfj",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Web Hosting offer.\n<b>Start time :</b> 09/02/2025 22:30 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "bgszwx8gs1p7",
+          "created_at": "2025-02-11T10:54:44.684Z",
+          "updated_at": "2025-02-11T10:54:44.684Z",
+          "display_at": "2025-02-11T10:54:44.684Z",
+          "affected_components": [
+            {
+              "code": "m635cyjtprmy",
+              "name": "Web Hosting || Datacenter GRA - Cluster006",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rlqyny7qzlfq",
+              "name": "Web Hosting || Datacenter GRA - Cluster007",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m635cyjtprmy",
+          "name": "Cluster006",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:04.304Z",
+          "updated_at": "2025-02-11T10:54:44.580Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rlqyny7qzlfq",
+          "name": "Cluster007",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:04.885Z",
+          "updated_at": "2025-02-11T10:54:44.600Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "mfqc7m7khbgy",
       "name": "[BHS][Web Hosting] - Cluster051 incident notification",
       "status": "monitoring",
@@ -3799,9 +3899,9 @@
         {
           "id": "m635cyjtprmy",
           "name": "Cluster006",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.304Z",
-          "updated_at": "2025-02-10T10:57:44.099Z",
+          "updated_at": "2025-02-11T10:54:44.580Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3814,9 +3914,9 @@
         {
           "id": "rlqyny7qzlfq",
           "name": "Cluster007",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.885Z",
-          "updated_at": "2025-01-30T12:39:21.412Z",
+          "updated_at": "2025-02-11T10:54:44.600Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4876,9 +4976,9 @@
         {
           "id": "m635cyjtprmy",
           "name": "Cluster006",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.304Z",
-          "updated_at": "2025-02-10T10:57:44.099Z",
+          "updated_at": "2025-02-11T10:54:44.580Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -4891,9 +4991,9 @@
         {
           "id": "rlqyny7qzlfq",
           "name": "Cluster007",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.885Z",
-          "updated_at": "2025-01-30T12:39:21.412Z",
+          "updated_at": "2025-02-11T10:54:44.600Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -5494,9 +5594,9 @@
         {
           "id": "m635cyjtprmy",
           "name": "Cluster006",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.304Z",
-          "updated_at": "2025-02-10T10:57:44.099Z",
+          "updated_at": "2025-02-11T10:54:44.580Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -5509,9 +5609,9 @@
         {
           "id": "rlqyny7qzlfq",
           "name": "Cluster007",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.885Z",
-          "updated_at": "2025-01-30T12:39:21.412Z",
+          "updated_at": "2025-02-11T10:54:44.600Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -6013,9 +6113,9 @@
         {
           "id": "m635cyjtprmy",
           "name": "Cluster006",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:04.304Z",
-          "updated_at": "2025-02-10T10:57:44.099Z",
+          "updated_at": "2025-02-11T10:54:44.580Z",
           "position": 4,
           "description": null,
           "showcase": false,
