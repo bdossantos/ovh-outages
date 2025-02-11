@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-11T22:50:24.902Z"
+    "updated_at": "2025-02-11T23:20:31.189Z"
   },
   "components": [
     {
@@ -1659,32 +1659,218 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "6fkmdzbdk9r0",
-      "name": "[RBX2A][Hosted Private Cloud] - Host replacement maintenance notification",
+      "id": "hrxf00bmcv7s",
+      "name": "[EU/CA][Hosted Private Cloud] - NSX-V Upgrade",
       "status": "scheduled",
-      "created_at": "2025-01-29T02:31:44.821Z",
-      "updated_at": "2025-01-29T09:38:49.830Z",
+      "created_at": "2025-02-11T23:19:37.169Z",
+      "updated_at": "2025-02-11T23:19:37.294Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/wyw5w85f7dsj",
-      "started_at": "2025-01-29T02:31:44.810Z",
+      "shortlink": "https://stspg.io/fskxjftr5hs1",
+      "started_at": "2025-02-11T23:19:37.109Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "06ntz9b0qp84",
+          "id": "lbp7yt6z39gt",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\n<b>Start time :</b> 17/02/2025 08:00 UTC\n<b>End time :</b> 21/02/2025 16:00 UTC\n<b>Service impact :</b> Concerned hosts will be put in maintenance mode during the operation and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy of our Hosted Private Cloud offer, we will be replacing Hosted Private Cloud's hosts by new ones.\nConcerned customers will receive a notification regarding the replacement of their hosts.\n\nThank you for your understanding.",
-          "incident_id": "6fkmdzbdk9r0",
-          "created_at": "2025-01-29T02:31:44.892Z",
-          "updated_at": "2025-01-29T09:38:49.824Z",
-          "display_at": "2025-01-29T02:31:44.892Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 17/02/2025 08:00 UTC\n<b>End time :</b> 21/02/2025 16:00 UTC\n<b>Service impact :</b> vSphere will not be accesible and hosts will be put in maintenance mode during the operation and a vMotion will be performed if it has Virtual machines in it. \n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on NSX-V .\n\nThank you for your understanding.",
+          "incident_id": "hrxf00bmcv7s",
+          "created_at": "2025-02-11T23:19:37.290Z",
+          "updated_at": "2025-02-11T23:19:37.290Z",
+          "display_at": "2025-02-11T23:19:37.290Z",
           "affected_components": [
+            {
+              "code": "nr0vltd8cnk0",
+              "name": "Managed vSphere || RBX - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r0gb2v5791yj",
+              "name": "Managed vSphere || RBX - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
             {
               "code": "h49h85c2xwcr",
               "name": "Managed vSphere || RBX - Compute",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
+            },
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tdtw0wbck1st",
+              "name": "Managed vSphere || LIM - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "c4d2d6dppx6r",
+              "name": "Managed vSphere || LIM - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "yclrgd0gbxwq",
+              "name": "Managed vSphere || LIM - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "z03dslm46ktz",
+              "name": "Managed vSphere || LIM - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "jxzhsw05tc07",
+              "name": "Managed vSphere || SBG - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "nn6zpzd8g3fs",
+              "name": "Managed vSphere || SBG - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "Managed vSphere || SBG - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "Managed vSphere || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7n7016j8xzy0",
+              "name": "Managed vSphere || ERI - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rj9yc5gqxp1z",
+              "name": "Managed vSphere || ERI - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "0qcvrryd4tpb",
+              "name": "Managed vSphere || ERI - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "2m51qtksgds4",
+              "name": "Managed vSphere || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "tt601gxvxfrl",
+              "name": "Managed vSphere || BHS - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8czvt83rw74b",
+              "name": "Managed vSphere || BHS - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "39pr388ptrs9",
+              "name": "Managed vSphere || BHS - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "n1fybgrv7djj",
+              "name": "Managed vSphere || BHS - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "f670p38r7bbs",
+              "name": "Managed vSphere || WAW - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "vjqnjl5qnz5x",
+              "name": "Managed vSphere || WAW - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "0ld1hfchhyf4",
+              "name": "Managed vSphere || WAW - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "2j4z6x3p2jgz",
+              "name": "Managed vSphere || WAW - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "619x808tq3z6",
+              "name": "Managed vSphere || GRA - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qwxk78lrlxcv",
+              "name": "Managed vSphere || GRA - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "21159ypqs1nc",
+              "name": "Managed vSphere || GRA - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "rnctk115qbjl",
+              "name": "Managed vSphere || GRA - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "8bb27jvj8dgb",
+              "name": "Managed vSphere || YYZ - Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "j78px444y2zg",
+              "name": "Managed vSphere || YYZ - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "g2dbsygs7b4b",
+              "name": "Managed vSphere || YYZ - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "yx1jg2h02t1x",
+              "name": "Managed vSphere || YYZ - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -1693,6 +1879,246 @@
         }
       ],
       "components": [
+        {
+          "id": "nr0vltd8cnk0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:45.110Z",
+          "updated_at": "2024-11-25T23:12:37.832Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tdtw0wbck1st",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:08.832Z",
+          "updated_at": "2024-05-03T14:30:55.170Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jxzhsw05tc07",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:06.351Z",
+          "updated_at": "2024-05-03T14:30:55.185Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7n7016j8xzy0",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:57.537Z",
+          "updated_at": "2024-05-03T14:30:55.199Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "tt601gxvxfrl",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:36.557Z",
+          "updated_at": "2024-07-03T08:33:50.348Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "f670p38r7bbs",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:32.348Z",
+          "updated_at": "2024-09-26T11:34:22.328Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "619x808tq3z6",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2023-12-19T21:47:18.717Z",
+          "updated_at": "2024-05-03T14:30:55.240Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8bb27jvj8dgb",
+          "name": "Network",
+          "status": "operational",
+          "created_at": "2024-03-13T08:41:40.113Z",
+          "updated_at": "2024-05-03T14:30:55.254Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "4hrz1q7y9dcf",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r0gb2v5791yj",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:45.677Z",
+          "updated_at": "2025-02-10T08:01:21.842Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "c4d2d6dppx6r",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:40:09.761Z",
+          "updated_at": "2025-02-10T08:01:21.873Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "nn6zpzd8g3fs",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:07.087Z",
+          "updated_at": "2025-02-10T08:01:21.887Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rj9yc5gqxp1z",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:58.062Z",
+          "updated_at": "2025-02-10T08:01:21.902Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8czvt83rw74b",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:42:39.943Z",
+          "updated_at": "2025-02-10T08:01:21.921Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "vjqnjl5qnz5x",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:33.291Z",
+          "updated_at": "2025-02-10T08:01:21.937Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qwxk78lrlxcv",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2023-12-19T21:48:32.575Z",
+          "updated_at": "2025-02-10T08:01:21.952Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "j78px444y2zg",
+          "name": "Management plane",
+          "status": "under_maintenance",
+          "created_at": "2024-03-13T08:58:46.055Z",
+          "updated_at": "2025-02-10T08:01:21.966Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "4hrz1q7y9dcf",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "h49h85c2xwcr",
           "name": "Compute",
@@ -1704,6 +2130,231 @@
           "showcase": false,
           "start_date": "2021-07-21",
           "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yclrgd0gbxwq",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:40:10.437Z",
+          "updated_at": "2025-02-10T08:00:22.299Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2025-02-10T08:00:22.480Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0qcvrryd4tpb",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:58.594Z",
+          "updated_at": "2025-02-10T08:00:22.649Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "39pr388ptrs9",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:42:40.539Z",
+          "updated_at": "2025-02-10T08:00:22.769Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0ld1hfchhyf4",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:43:34.076Z",
+          "updated_at": "2025-02-10T08:00:22.921Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "21159ypqs1nc",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2023-12-19T21:48:48.560Z",
+          "updated_at": "2025-02-10T08:00:23.030Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g2dbsygs7b4b",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2024-03-13T08:59:03.796Z",
+          "updated_at": "2025-02-10T08:00:23.061Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "4hrz1q7y9dcf",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2025-01-04T11:04:49.387Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "z03dslm46ktz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:10.951Z",
+          "updated_at": "2024-11-02T21:37:30.813Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2024-09-12T13:30:02.108Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2m51qtksgds4",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:59.147Z",
+          "updated_at": "2024-07-18T10:13:24.136Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n1fybgrv7djj",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:41.125Z",
+          "updated_at": "2024-07-25T20:02:07.270Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2j4z6x3p2jgz",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:35.199Z",
+          "updated_at": "2024-07-04T09:55:07.004Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rnctk115qbjl",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2023-12-19T21:49:03.264Z",
+          "updated_at": "2024-02-20T20:14:53.440Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yx1jg2h02t1x",
+          "name": "Storage",
+          "status": "operational",
+          "created_at": "2024-03-13T08:59:30.186Z",
+          "updated_at": "2024-03-13T08:59:30.186Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "4hrz1q7y9dcf",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -2222,6 +2873,60 @@
           "showcase": false,
           "start_date": "2024-03-13",
           "group_id": "4hrz1q7y9dcf",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-17T08:00:00.000Z",
+      "scheduled_until": "2025-02-21T16:00:00.000Z"
+    },
+    {
+      "id": "6fkmdzbdk9r0",
+      "name": "[RBX2A][Hosted Private Cloud] - Host replacement maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-01-29T02:31:44.821Z",
+      "updated_at": "2025-01-29T09:38:49.830Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/wyw5w85f7dsj",
+      "started_at": "2025-01-29T02:31:44.810Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "06ntz9b0qp84",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\n<b>Start time :</b> 17/02/2025 08:00 UTC\n<b>End time :</b> 21/02/2025 16:00 UTC\n<b>Service impact :</b> Concerned hosts will be put in maintenance mode during the operation and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy of our Hosted Private Cloud offer, we will be replacing Hosted Private Cloud's hosts by new ones.\nConcerned customers will receive a notification regarding the replacement of their hosts.\n\nThank you for your understanding.",
+          "incident_id": "6fkmdzbdk9r0",
+          "created_at": "2025-01-29T02:31:44.892Z",
+          "updated_at": "2025-01-29T09:38:49.824Z",
+          "display_at": "2025-01-29T02:31:44.892Z",
+          "affected_components": [
+            {
+              "code": "h49h85c2xwcr",
+              "name": "Managed vSphere || RBX - Compute",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2025-02-10T08:00:21.911Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
