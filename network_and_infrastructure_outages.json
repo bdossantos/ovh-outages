@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-12T15:20:37.583Z"
+    "updated_at": "2025-02-12T15:55:57.987Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-02-12T10:54:52.289Z",
+      "updated_at": "2025-02-12T15:55:57.923Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1162,7 +1162,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qknby2lhmqs0",
+      "name": "[APAC][Network] - Backbone incident notification",
+      "status": "investigating",
+      "created_at": "2025-02-12T15:55:57.890Z",
+      "updated_at": "2025-02-12T15:55:57.985Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zmryy07mfj9c",
+      "started_at": "2025-02-12T15:55:57.884Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "jjn0k4m9cgmr",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Backbone infrastructure.\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "qknby2lhmqs0",
+          "created_at": "2025-02-12T15:55:57.982Z",
+          "updated_at": "2025-02-12T15:55:57.982Z",
+          "display_at": "2025-02-12T15:55:57.982Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-02-12T15:55:57.923Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7wdqz4bn56ln",
@@ -1202,9 +1256,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-12T10:54:52.289Z",
+          "updated_at": "2025-02-12T15:55:57.923Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1256,9 +1310,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-12T10:54:52.289Z",
+          "updated_at": "2025-02-12T15:55:57.923Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1796,9 +1850,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-12T10:54:52.289Z",
+          "updated_at": "2025-02-12T15:55:57.923Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3232,7 +3286,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
