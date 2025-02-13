@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-13T01:01:21.750Z"
+    "updated_at": "2025-02-13T01:52:59.429Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1564,9 +1564,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-01-31T16:28:46.157Z",
+      "updated_at": "2025-02-13T01:51:27.000Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2719,7 +2719,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ckvc294vg8cx",
+      "name": "[SBG5][Dedicated Servers] - Rack SBG0505B09A",
+      "status": "identified",
+      "created_at": "2025-02-13T01:51:26.951Z",
+      "updated_at": "2025-02-13T01:52:59.419Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/f57ph0brhr5t",
+      "started_at": "2025-02-13T01:51:26.941Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "w40zqsyr9lxp",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the specific rack SBG0505B09A.\n\nHere are some supplementary details :\n<b>Start time :</b> 13/02/2025 01:20 UTC\n<b>Impacted Service(s) :</b> Some server are still unavailable.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ckvc294vg8cx",
+          "created_at": "2025-02-13T01:51:27.082Z",
+          "updated_at": "2025-02-13T01:52:59.413Z",
+          "display_at": "2025-02-13T01:51:27.000Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-02-13T01:51:27.000Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "qthvlklhh8lk",
@@ -3663,90 +3717,10 @@
       ],
       "scheduled_for": "2025-02-13T01:00:00.000Z",
       "scheduled_until": "2025-02-13T03:00:00.000Z"
-    },
-    {
-      "id": "jq4y1xfd650x",
-      "name": "[RBX][Network] - Network equipment version upgrade",
-      "status": "in_progress",
-      "created_at": "2024-12-09T21:42:32.546Z",
-      "updated_at": "2025-02-13T01:00:21.765Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qspz1h2gm52m",
-      "started_at": "2024-12-09T21:42:32.538Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "6nvs8zpj4gvz",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "jq4y1xfd650x",
-          "created_at": "2025-02-13T01:00:21.756Z",
-          "updated_at": "2025-02-13T01:00:21.756Z",
-          "display_at": "2025-02-13T01:00:21.756Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fww1818qq97w",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jq4y1xfd650x",
-          "created_at": "2025-02-13T00:00:26.558Z",
-          "updated_at": "2025-02-13T00:00:26.558Z",
-          "display_at": "2025-02-13T00:00:26.558Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "x9mkc99dfvvs",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure.  \n\n<b>Start time :</b> 13/02/2025 01:00 UTC \n<b>End time :</b> 13/02/2025 03:00 UTC \n<b>Service impact :</b> None \n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on some network equipment.  \n\nThank you for your understanding.",
-          "incident_id": "jq4y1xfd650x",
-          "created_at": "2024-12-09T21:42:32.601Z",
-          "updated_at": "2024-12-09T21:42:32.601Z",
-          "display_at": "2024-12-09T21:42:32.601Z",
-          "affected_components": [
-            {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "r7966tc9cpb9",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2025-02-12T02:32:32.781Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-02-13T01:00:00.000Z",
-      "scheduled_until": "2025-02-13T03:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
