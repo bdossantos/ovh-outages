@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-13T08:00:30.387Z"
+    "updated_at": "2025-02-13T09:00:21.704Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-02-13T01:25:49.582Z",
+      "updated_at": "2025-02-13T08:42:41.096Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1162,48 +1162,54 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "jbmxjg7v1rsn",
-      "name": "[BHS1][Network] - Network equipement operation",
-      "status": "scheduled",
-      "created_at": "2025-02-08T01:22:45.446Z",
-      "updated_at": "2025-02-13T08:00:30.379Z",
+      "id": "kmhgxh15054g",
+      "name": "[MRS/SGP][Network] - Backbone incident notification",
+      "status": "identified",
+      "created_at": "2025-02-13T08:42:41.065Z",
+      "updated_at": "2025-02-13T08:55:13.760Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6x1nn2j22sxl",
-      "started_at": "2025-02-08T01:22:45.442Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/rsm8k07j7dbq",
+      "started_at": "2025-02-13T08:42:41.061Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "f40kvwvppgzv",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jbmxjg7v1rsn",
-          "created_at": "2025-02-13T08:00:30.141Z",
-          "updated_at": "2025-02-13T08:00:30.141Z",
-          "display_at": "2025-02-13T08:00:30.141Z",
-          "affected_components": null,
+          "id": "p08sgk4mxt49",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Backbone infrastructure, which is causing temporary latency increase in Europe and APAC region.\n\nHere are some supplementary details :\n<b>Start time :</b> 12/02/2025 19:42 UTC\n<b>Impacted Service :</b> Latency increase between Europe and APAC backbone infrastructure.\n<b>Customers Impact :</b> Customers are facing latency increase to access their services passing from Europe to APAC region.\n<b>Root Cause :</b> This incident is caused by an incident from our provider's side.\n<b>Ongoing Actions :</b> Our teams are currently working with our provider to resolve the issue as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kmhgxh15054g",
+          "created_at": "2025-02-13T08:55:13.757Z",
+          "updated_at": "2025-02-13T08:55:13.757Z",
+          "display_at": "2025-02-13T08:55:13.757Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "9s2qy5j7yq9p",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 13/02/2025 09:00 UTC \n<b>End time :</b> 13/02/2025 12:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment to harmonise our network infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "jbmxjg7v1rsn",
-          "created_at": "2025-02-08T01:22:45.485Z",
-          "updated_at": "2025-02-08T01:22:45.485Z",
-          "display_at": "2025-02-08T01:22:45.485Z",
+          "id": "bxznzb0b18h1",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Backbone infrastructure.\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kmhgxh15054g",
+          "created_at": "2025-02-13T08:42:41.150Z",
+          "updated_at": "2025-02-13T08:42:41.150Z",
+          "display_at": "2025-02-13T08:42:41.150Z",
           "affected_components": [
             {
-              "code": "pgf35fxt4ywk",
-              "name": "Network Services || vRack Private Network",
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -1213,12 +1219,12 @@
       ],
       "components": [
         {
-          "id": "pgf35fxt4ywk",
-          "name": "Network Services || vRack Private Network",
-          "status": "operational",
-          "created_at": "2022-05-20T08:36:07.479Z",
-          "updated_at": "2024-11-13T16:53:45.674Z",
-          "position": 23,
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-02-13T08:42:41.096Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2022-05-20",
@@ -1228,9 +1234,10 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-02-13T09:00:00.000Z",
-      "scheduled_until": "2025-02-13T12:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "y03zlt8r38lv",
       "name": "[GRA2][Infrastructure] - Electrical background work Room G201",
@@ -1323,9 +1330,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-13T01:25:49.582Z",
+          "updated_at": "2025-02-13T08:42:41.096Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1755,9 +1762,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-13T01:25:49.582Z",
+          "updated_at": "2025-02-13T08:42:41.096Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1769,6 +1776,60 @@
         }
       ],
       "scheduled_for": "2025-02-18T20:00:00.000Z",
+      "scheduled_until": "2025-02-19T00:00:00.000Z"
+    },
+    {
+      "id": "38hwyf9nbnyb",
+      "name": "[GRA2][Infrastructure] - Electrical background work Room G208",
+      "status": "scheduled",
+      "created_at": "2025-01-29T10:55:19.067Z",
+      "updated_at": "2025-01-29T13:23:05.925Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xgh5bt0363x3",
+      "started_at": "2025-01-29T10:55:19.060Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "2chvyqs7syrj",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our electrical infrastructure.\n\nThis will affect availability of your servers.\n\n<b>Start time :</b> 18/02/2025 21:00 UTC\n<b>End time :</b> 19/02/2025 00:00 UTC\n<b>Service impact :</b> Servers will be unavailable during the maintenance operation.\n<b>Service improvement :</b> Following our continuous improvement policy of our products and services, we will carry out an electrical upgrade in our Graveline Datacenters. To protect your data from any impact, we advise you to first restart your machines in rescue mode (<a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue?id=kb_article_view&sysparm_article=KB0043949\">How to activate and use rescue mode</a>) before the operation mentioned above.\n\nEvery client concerned by this maintenance will be contacted.\n\nThank you for your understanding.",
+          "incident_id": "38hwyf9nbnyb",
+          "created_at": "2025-01-29T10:55:19.114Z",
+          "updated_at": "2025-01-29T10:55:19.114Z",
+          "display_at": "2025-01-29T10:55:19.114Z",
+          "affected_components": [
+            {
+              "code": "f4vdn73g6790",
+              "name": "Infrastructure || GRA - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f4vdn73g6790",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:38.598Z",
+          "updated_at": "2024-11-22T01:30:58.176Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-18T21:00:00.000Z",
       "scheduled_until": "2025-02-19T00:00:00.000Z"
     },
     {
@@ -1824,60 +1885,6 @@
       ],
       "scheduled_for": "2025-02-18T21:00:00.000Z",
       "scheduled_until": "2025-02-19T06:00:00.000Z"
-    },
-    {
-      "id": "38hwyf9nbnyb",
-      "name": "[GRA2][Infrastructure] - Electrical background work Room G208",
-      "status": "scheduled",
-      "created_at": "2025-01-29T10:55:19.067Z",
-      "updated_at": "2025-01-29T13:23:05.925Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xgh5bt0363x3",
-      "started_at": "2025-01-29T10:55:19.060Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "2chvyqs7syrj",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our electrical infrastructure.\n\nThis will affect availability of your servers.\n\n<b>Start time :</b> 18/02/2025 21:00 UTC\n<b>End time :</b> 19/02/2025 00:00 UTC\n<b>Service impact :</b> Servers will be unavailable during the maintenance operation.\n<b>Service improvement :</b> Following our continuous improvement policy of our products and services, we will carry out an electrical upgrade in our Graveline Datacenters. To protect your data from any impact, we advise you to first restart your machines in rescue mode (<a href=\"https://help.ovhcloud.com/csm/en-dedicated-servers-ovhcloud-rescue?id=kb_article_view&sysparm_article=KB0043949\">How to activate and use rescue mode</a>) before the operation mentioned above.\n\nEvery client concerned by this maintenance will be contacted.\n\nThank you for your understanding.",
-          "incident_id": "38hwyf9nbnyb",
-          "created_at": "2025-01-29T10:55:19.114Z",
-          "updated_at": "2025-01-29T10:55:19.114Z",
-          "display_at": "2025-01-29T10:55:19.114Z",
-          "affected_components": [
-            {
-              "code": "f4vdn73g6790",
-              "name": "Infrastructure || GRA - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f4vdn73g6790",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:38.598Z",
-          "updated_at": "2024-11-22T01:30:58.176Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-02-18T21:00:00.000Z",
-      "scheduled_until": "2025-02-19T00:00:00.000Z"
     },
     {
       "id": "l0wkp4knhs19",
@@ -2462,60 +2469,6 @@
       "scheduled_until": "2025-03-04T00:00:00.000Z"
     },
     {
-      "id": "q37c3zyc1ngt",
-      "name": "[WAW][Network] - Network Core maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-01-17T23:32:45.519Z",
-      "updated_at": "2025-01-17T23:32:45.578Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/s1hwjs4dprv8",
-      "started_at": "2025-01-17T23:32:45.514Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "53rshdq4581s",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Network Core infrastructure. \n\n<b>Start time :</b> 04/03/2025 21:00 UTC \n<b>End time :</b> 05/03/2025 03:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out an intervention on a network equipment.\n\nThank you for your understanding.",
-          "incident_id": "q37c3zyc1ngt",
-          "created_at": "2025-01-17T23:32:45.574Z",
-          "updated_at": "2025-01-17T23:32:45.574Z",
-          "display_at": "2025-01-17T23:32:45.574Z",
-          "affected_components": [
-            {
-              "code": "0bhylv65q8t9",
-              "name": "Infrastructure || Network Core",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0bhylv65q8t9",
-          "name": "Infrastructure || Network Core",
-          "status": "operational",
-          "created_at": "2023-07-07T08:55:58.377Z",
-          "updated_at": "2024-10-01T15:39:45.235Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-07-07",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-03-04T21:00:00.000Z",
-      "scheduled_until": "2025-03-05T03:00:00.000Z"
-    },
-    {
       "id": "4mdv5631yzt9",
       "name": "[GRA2][Infrastructure] - Electrical background work Room G224",
       "status": "scheduled",
@@ -2568,6 +2521,60 @@
       ],
       "scheduled_for": "2025-03-04T21:00:00.000Z",
       "scheduled_until": "2025-03-05T00:00:00.000Z"
+    },
+    {
+      "id": "q37c3zyc1ngt",
+      "name": "[WAW][Network] - Network Core maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-01-17T23:32:45.519Z",
+      "updated_at": "2025-01-17T23:32:45.578Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/s1hwjs4dprv8",
+      "started_at": "2025-01-17T23:32:45.514Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "53rshdq4581s",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Network Core infrastructure. \n\n<b>Start time :</b> 04/03/2025 21:00 UTC \n<b>End time :</b> 05/03/2025 03:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out an intervention on a network equipment.\n\nThank you for your understanding.",
+          "incident_id": "q37c3zyc1ngt",
+          "created_at": "2025-01-17T23:32:45.574Z",
+          "updated_at": "2025-01-17T23:32:45.574Z",
+          "display_at": "2025-01-17T23:32:45.574Z",
+          "affected_components": [
+            {
+              "code": "0bhylv65q8t9",
+              "name": "Infrastructure || Network Core",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0bhylv65q8t9",
+          "name": "Infrastructure || Network Core",
+          "status": "operational",
+          "created_at": "2023-07-07T08:55:58.377Z",
+          "updated_at": "2024-10-01T15:39:45.235Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-07-07",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-03-04T21:00:00.000Z",
+      "scheduled_until": "2025-03-05T03:00:00.000Z"
     },
     {
       "id": "xqg41swcfpmr",
@@ -3110,6 +3117,86 @@
       "scheduled_until": "2025-03-21T00:00:00.000Z"
     },
     {
+      "id": "jbmxjg7v1rsn",
+      "name": "[BHS1][Network] - Network equipement operation",
+      "status": "in_progress",
+      "created_at": "2025-02-08T01:22:45.446Z",
+      "updated_at": "2025-02-13T09:00:21.679Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6x1nn2j22sxl",
+      "started_at": "2025-02-08T01:22:45.442Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "99d12lgclj3x",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "jbmxjg7v1rsn",
+          "created_at": "2025-02-13T09:00:21.667Z",
+          "updated_at": "2025-02-13T09:00:21.667Z",
+          "display_at": "2025-02-13T09:00:21.667Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f40kvwvppgzv",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "jbmxjg7v1rsn",
+          "created_at": "2025-02-13T08:00:30.141Z",
+          "updated_at": "2025-02-13T08:00:30.141Z",
+          "display_at": "2025-02-13T08:00:30.141Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9s2qy5j7yq9p",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 13/02/2025 09:00 UTC \n<b>End time :</b> 13/02/2025 12:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade some network equipment to harmonise our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "jbmxjg7v1rsn",
+          "created_at": "2025-02-08T01:22:45.485Z",
+          "updated_at": "2025-02-08T01:22:45.485Z",
+          "display_at": "2025-02-08T01:22:45.485Z",
+          "affected_components": [
+            {
+              "code": "pgf35fxt4ywk",
+              "name": "Network Services || vRack Private Network",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "pgf35fxt4ywk",
+          "name": "Network Services || vRack Private Network",
+          "status": "operational",
+          "created_at": "2022-05-20T08:36:07.479Z",
+          "updated_at": "2024-11-13T16:53:45.674Z",
+          "position": 23,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-02-13T09:00:00.000Z",
+      "scheduled_until": "2025-02-13T12:00:00.000Z"
+    },
+    {
       "id": "c0p2dhvj5gwc",
       "name": "[RBX10][Cooling System] - Rack RBX1003D04A",
       "status": "in_progress",
@@ -3198,7 +3285,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
