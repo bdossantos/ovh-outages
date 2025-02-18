@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-18T13:56:22.839Z"
+    "updated_at": "2025-02-18T14:46:02.717Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-02-14T03:08:12.224Z",
+      "updated_at": "2025-02-18T14:46:02.667Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1162,7 +1162,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "sv9c6m63mfzj",
+      "name": "[SYD/SGP][Network] - Backbone incident notification",
+      "status": "identified",
+      "created_at": "2025-02-18T14:46:02.643Z",
+      "updated_at": "2025-02-18T14:46:02.715Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/22w351c68k4g",
+      "started_at": "2025-02-18T14:46:02.639Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "hfr7qr2pshd7",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Backbone infrastructure, which is causing temporary latency increase between SYDNEY and SINGAPORE.\n\nHere are some supplementary details :\n<b>Start time :</b> 18/02/2025 13:40 UTC\n<b>Impacted Service :</b> Links between SYDNEY and SINGAPORE backbone infrastructure are unreachable .\n<b>Customers Impact :</b> Customers are facing latency increase to access their services passing from SYDNEY and SINGAPORE.\n<b>Ongoing Actions :</b> Our teams are currently working with our provider to resolve the issue as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sv9c6m63mfzj",
+          "created_at": "2025-02-18T14:46:02.713Z",
+          "updated_at": "2025-02-18T14:46:02.713Z",
+          "display_at": "2025-02-18T14:46:02.713Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-02-18T14:46:02.667Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "ktmtts1jgw3w",
@@ -2594,9 +2648,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-02-14T03:08:12.224Z",
+          "updated_at": "2025-02-18T14:46:02.667Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3319,7 +3373,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
