@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-02-23T10:53:46.631Z"
+    "updated_at": "2025-02-23T19:20:31.739Z"
   },
   "components": [
     {
@@ -2626,9 +2626,9 @@
     {
       "id": "9nmddb02w9nq",
       "name": "Cluster100",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-06-19T09:26:50.690Z",
-      "updated_at": "2025-01-30T12:39:21.686Z",
+      "updated_at": "2025-02-23T19:19:47.303Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -2641,7 +2641,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-02-20T16:43:24.166Z",
       "position": 27,
@@ -2765,7 +2765,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "m0yf0ky5w0b6",
+      "name": "[GRA][Web Cloud] - Cluster100 incident notification",
+      "status": "investigating",
+      "created_at": "2025-02-23T19:19:47.268Z",
+      "updated_at": "2025-02-23T19:19:47.357Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tx5v50t6fs3j",
+      "started_at": "2025-02-23T19:19:47.261Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "ngb9gq8x73rr",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Web Cloud offer.\n<b>Start time :</b> 23/02/2025 18:45 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "m0yf0ky5w0b6",
+          "created_at": "2025-02-23T19:19:47.355Z",
+          "updated_at": "2025-02-23T19:19:47.355Z",
+          "display_at": "2025-02-23T19:19:47.355Z",
+          "affected_components": [
+            {
+              "code": "9nmddb02w9nq",
+              "name": "Web Hosting || Datacenter GRA - Cluster100",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9nmddb02w9nq",
+          "name": "Cluster100",
+          "status": "degraded_performance",
+          "created_at": "2024-06-19T09:26:50.690Z",
+          "updated_at": "2025-02-23T19:19:47.303Z",
+          "position": 26,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-06-19",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "dkcnf680v2bz",
@@ -4063,9 +4117,9 @@
         {
           "id": "9nmddb02w9nq",
           "name": "Cluster100",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2024-06-19T09:26:50.690Z",
-          "updated_at": "2025-01-30T12:39:21.686Z",
+          "updated_at": "2025-02-23T19:19:47.303Z",
           "position": 26,
           "description": null,
           "showcase": false,
@@ -6132,7 +6186,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
