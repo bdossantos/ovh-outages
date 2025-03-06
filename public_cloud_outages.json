@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-06T17:48:46.784Z"
+    "updated_at": "2025-03-06T18:43:02.367Z"
   },
   "components": [
     {
@@ -3120,9 +3120,9 @@
     {
       "id": "lx3sbpqcn3q5",
       "name": "GRA11",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-01-24T14:39:11.288Z",
-      "updated_at": "2025-02-23T17:02:02.969Z",
+      "updated_at": "2025-03-06T18:42:10.343Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -5606,7 +5606,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-03-03T10:48:38.609Z",
       "position": 18,
@@ -7676,10 +7676,10 @@
   "incidents": [
     {
       "id": "2vb3myhj500f",
-      "name": "[GRA11][Public Cloud] - Network API Incident notification",
+      "name": "[GRA11][Public Cloud] - Network API/Managed Kubernetes Services Incident notification",
       "status": "identified",
       "created_at": "2025-03-06T16:58:49.659Z",
-      "updated_at": "2025-03-06T16:58:49.771Z",
+      "updated_at": "2025-03-06T18:43:02.360Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -7687,6 +7687,32 @@
       "started_at": "2025-03-06T16:58:49.650Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "yrbwhtwq69jz",
+          "status": "identified",
+          "body": "Following analysis, our teams have determined that there has been degradation of services for Managed Kubernetes Services as well.\nOur teams are currently working to restore the services.",
+          "incident_id": "2vb3myhj500f",
+          "created_at": "2025-03-06T18:42:10.394Z",
+          "updated_at": "2025-03-06T18:42:10.394Z",
+          "display_at": "2025-03-06T18:42:10.394Z",
+          "affected_components": [
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "jqdy9pphbv0f",
+              "name": "Network || Load Balancer - GRA11",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "xcpz34fw2ynx",
           "status": "identified",
@@ -7709,6 +7735,21 @@
         }
       ],
       "components": [
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "degraded_performance",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2025-03-06T18:42:10.343Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "jqdy9pphbv0f",
           "name": "GRA11",
@@ -8803,9 +8844,9 @@
         {
           "id": "lx3sbpqcn3q5",
           "name": "GRA11",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2024-01-24T14:39:11.288Z",
-          "updated_at": "2025-02-23T17:02:02.969Z",
+          "updated_at": "2025-03-06T18:42:10.343Z",
           "position": 6,
           "description": null,
           "showcase": false,
