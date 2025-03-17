@@ -2,9 +2,9 @@
   "page": {
     "id": "1qzzx4z9jvmv",
     "name": "Bare Metal Cloud",
-    "url": "https://bare-metal-servers.status-ovhcloud.com",
+    "url": "http://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-17T13:35:28.029Z"
+    "updated_at": "2025-03-17T13:56:59.465Z"
   },
   "components": [
     {
@@ -2721,6 +2721,79 @@
   ],
   "incidents": [
     {
+      "id": "9426xjkbq2j8",
+      "name": "[RBX8][Bare Metal Cloud] - Rack RBX0840B04B incident notification",
+      "status": "identified",
+      "created_at": "2025-03-17T12:59:43.231Z",
+      "updated_at": "2025-03-17T13:56:59.456Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/vdzykyljg42y",
+      "started_at": "2025-03-17T12:59:43.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8q8ms2rgmlzb",
+          "status": "identified",
+          "body": "We have identified the origin of the incident affecting our Bare Metal Cloud offer which is causing temporary availability issues in the rack RBX0840B04B.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/03/2025 12:47 UTC\n<b>Impacted Services :</b> All servers in the rack RBX0840B04B are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9426xjkbq2j8",
+          "created_at": "2025-03-17T13:56:59.453Z",
+          "updated_at": "2025-03-17T13:56:59.453Z",
+          "display_at": "2025-03-17T13:56:59.453Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q6qpkcy2gtj9",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Bare Metal Cloud offering, which is causing temporary availability issues in the rack RBX0840B04B.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/03/2025 12:47 UTC\n<b>Impacted Services :</b> All servers in the rack RBX0840B04B are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9426xjkbq2j8",
+          "created_at": "2025-03-17T12:59:43.340Z",
+          "updated_at": "2025-03-17T13:54:45.654Z",
+          "display_at": "2025-03-17T12:59:43.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-03-17T12:59:43.271Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "q80bp0wydbfk",
       "name": "[RBX3][Bare Metal Cloud] - Racks 42A 42B 42C incident notification",
       "status": "identified",
@@ -2772,59 +2845,6 @@
         }
       ],
       "reminder_intervals": "[]"
-    },
-    {
-      "id": "9426xjkbq2j8",
-      "name": "[RBX8][Bare Metal Cloud] - Rack RBX0840B04B incident notification",
-      "status": "investigating",
-      "created_at": "2025-03-17T12:59:43.231Z",
-      "updated_at": "2025-03-17T12:59:43.344Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/vdzykyljg42y",
-      "started_at": "2025-03-17T12:59:43.222Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "q6qpkcy2gtj9",
-          "status": "investigating",
-          "body": "We are currently experiencing an incident affecting our Bare Metal Cloud offering, which is causing temporary availability issues in the rack RBX0840B04B.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/03/2025 12:47 UTC\n<b>Impacted Service(s) :</b> All servers in the rack RBX0840B04B are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "9426xjkbq2j8",
-          "created_at": "2025-03-17T12:59:43.340Z",
-          "updated_at": "2025-03-17T12:59:43.340Z",
-          "display_at": "2025-03-17T12:59:43.340Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-03-17T12:59:43.271Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
