@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-19T17:17:06.873Z"
+    "updated_at": "2025-03-19T18:00:21.565Z"
   },
   "components": [
     {
@@ -4144,9 +4144,9 @@
     {
       "id": "q10zg1z8ymkz",
       "name": "GRA11",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2023-08-18T10:29:46.549Z",
-      "updated_at": "2025-01-23T05:18:16.930Z",
+      "updated_at": "2025-03-19T18:00:21.497Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -7444,7 +7444,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2025-03-05T16:29:34.485Z",
       "position": 50,
@@ -8305,73 +8305,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "c1fqgb0x0d5n",
-      "name": "[GRA11][Public Cloud] - Internal databases update",
-      "status": "scheduled",
-      "created_at": "2025-03-12T15:41:11.798Z",
-      "updated_at": "2025-03-19T17:00:27.179Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4xjcbz203r55",
-      "started_at": "2025-03-12T15:41:11.791Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "g1ypj84w1w73",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "c1fqgb0x0d5n",
-          "created_at": "2025-03-19T17:00:27.065Z",
-          "updated_at": "2025-03-19T17:00:27.065Z",
-          "display_at": "2025-03-19T17:00:27.065Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "lmb4dp959n71",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled for update the Internal databases on GRA11 region.\n\n<b>Start time :</b> 19/03/2025 18:00 UTC\n<b>End time :</b> 19/03/2025 21:00 UTC\n<b>Service impact :</b> The API service may be unavailable during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are upgrading the database behind OpenStack Neutron API on GRA11 region.\nDuring that period, the API may be slower and not answering at all.\nYour instances, routers, load balancers, networks or any other existing OpenStack components are NOT affected.\nOnly creation, update or deletion could be affected.\n\nThank you for your understanding.",
-          "incident_id": "c1fqgb0x0d5n",
-          "created_at": "2025-03-12T15:41:11.857Z",
-          "updated_at": "2025-03-12T15:41:11.857Z",
-          "display_at": "2025-03-12T15:41:11.857Z",
-          "affected_components": [
-            {
-              "code": "q10zg1z8ymkz",
-              "name": "Network || Public network - GRA11",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "q10zg1z8ymkz",
-          "name": "GRA11",
-          "status": "operational",
-          "created_at": "2023-08-18T10:29:46.549Z",
-          "updated_at": "2025-01-23T05:18:16.930Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-08-18",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-03-19T18:00:00.000Z",
-      "scheduled_until": "2025-03-19T21:00:00.000Z"
-    },
     {
       "id": "sm7g1538mk9l",
       "name": "[GLOBAL][Containers & Orchestration] - Managed Kubernetes Service maintenance notification",
@@ -9369,6 +9302,93 @@
       ],
       "scheduled_for": "2025-04-16T08:00:00.000Z",
       "scheduled_until": "2025-04-16T16:00:00.000Z"
+    },
+    {
+      "id": "c1fqgb0x0d5n",
+      "name": "[GRA11][Public Cloud] - Internal databases update",
+      "status": "in_progress",
+      "created_at": "2025-03-12T15:41:11.798Z",
+      "updated_at": "2025-03-19T18:00:21.554Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4xjcbz203r55",
+      "started_at": "2025-03-12T15:41:11.791Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "pmj6xbhd6m2l",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "c1fqgb0x0d5n",
+          "created_at": "2025-03-19T18:00:21.551Z",
+          "updated_at": "2025-03-19T18:00:21.551Z",
+          "display_at": "2025-03-19T18:00:21.551Z",
+          "affected_components": [
+            {
+              "code": "q10zg1z8ymkz",
+              "name": "Network || Public network - GRA11",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g1ypj84w1w73",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "c1fqgb0x0d5n",
+          "created_at": "2025-03-19T17:00:27.065Z",
+          "updated_at": "2025-03-19T17:00:27.065Z",
+          "display_at": "2025-03-19T17:00:27.065Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lmb4dp959n71",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled for update the Internal databases on GRA11 region.\n\n<b>Start time :</b> 19/03/2025 18:00 UTC\n<b>End time :</b> 19/03/2025 21:00 UTC\n<b>Service impact :</b> The API service may be unavailable during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are upgrading the database behind OpenStack Neutron API on GRA11 region.\nDuring that period, the API may be slower and not answering at all.\nYour instances, routers, load balancers, networks or any other existing OpenStack components are NOT affected.\nOnly creation, update or deletion could be affected.\n\nThank you for your understanding.",
+          "incident_id": "c1fqgb0x0d5n",
+          "created_at": "2025-03-12T15:41:11.857Z",
+          "updated_at": "2025-03-12T15:41:11.857Z",
+          "display_at": "2025-03-12T15:41:11.857Z",
+          "affected_components": [
+            {
+              "code": "q10zg1z8ymkz",
+              "name": "Network || Public network - GRA11",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q10zg1z8ymkz",
+          "name": "GRA11",
+          "status": "under_maintenance",
+          "created_at": "2023-08-18T10:29:46.549Z",
+          "updated_at": "2025-03-19T18:00:21.497Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-08-18",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-03-19T18:00:00.000Z",
+      "scheduled_until": "2025-03-19T21:00:00.000Z"
     }
   ],
   "status": {
