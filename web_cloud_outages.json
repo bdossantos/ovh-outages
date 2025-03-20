@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-20T09:21:02.576Z"
+    "updated_at": "2025-03-20T09:59:03.669Z"
   },
   "components": [
     {
@@ -2484,9 +2484,9 @@
     {
       "id": "wvx9nrw9v652",
       "name": "VoIP || SMS",
-      "status": "partial_outage",
+      "status": "degraded_performance",
       "created_at": "2025-01-21T15:07:25.031Z",
-      "updated_at": "2025-03-20T09:03:24.266Z",
+      "updated_at": "2025-03-20T09:59:03.598Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -2831,84 +2831,11 @@
   ],
   "incidents": [
     {
-      "id": "m50y2qcr6x74",
-      "name": "[Global][SMS] - SMS Service to Italy recipient incident Notification",
-      "status": "investigating",
-      "created_at": "2025-03-20T09:03:24.234Z",
-      "updated_at": "2025-03-20T09:11:48.905Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/66tv9zt132tv",
-      "started_at": "2025-03-20T09:03:24.229Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "3xs1qt0wz66k",
-          "status": "investigating",
-          "body": "We are currently experiencing an incident affecting our SMS offering, which is causing temporary Availability issues in Italy.\n        \nHere is detail for this incident :        \n<b>Start time :</b> 18/03/2025 21:00 UTC        \n<b>Impacted Service(s) :</b> SMS to Italy is temporarily unavailable.\n<b>Customers Impact :</b> Customers wishing to send an SMS to a recipient in Italy will find the service temporarily unavailable unless the sender is registered with an aggregator.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.",
-          "incident_id": "m50y2qcr6x74",
-          "created_at": "2025-03-20T09:11:48.902Z",
-          "updated_at": "2025-03-20T09:11:48.902Z",
-          "display_at": "2025-03-20T09:11:48.902Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "904hzg9vt45h",
-          "status": "investigating",
-          "body": "Event notification\n\nWe are currently experiencing an event affecting our SMS service.\n<b>Start time :</b> 18/03/2025 21:00 UTC       \n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "m50y2qcr6x74",
-          "created_at": "2025-03-20T09:03:24.340Z",
-          "updated_at": "2025-03-20T09:03:24.340Z",
-          "display_at": "2025-03-20T09:03:24.340Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "degraded_performance",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wvx9nrw9v652",
-          "name": "VoIP || SMS",
-          "status": "partial_outage",
-          "created_at": "2025-01-21T15:07:25.031Z",
-          "updated_at": "2025-03-20T09:03:24.266Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-21",
-          "group_id": null,
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "7pthmx5tdrrl",
       "name": "[EU][VOIP] - SMS answer",
-      "status": "monitoring",
+      "status": "identified",
       "created_at": "2025-03-19T10:08:00.000Z",
-      "updated_at": "2025-03-20T09:03:24.298Z",
+      "updated_at": "2025-03-20T09:59:03.658Z",
       "monitoring_at": "2025-03-19T11:08:35.000Z",
       "resolved_at": null,
       "impact": "major",
@@ -2916,6 +2843,26 @@
       "started_at": "2025-03-19T10:08:00.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "bwqbgknjhrjz",
+          "status": "identified",
+          "body": "<b>Update : </b> The SMS response service has been temporarily unavailable since 19/03/2025 11:32 UTC. Customers from another provider cannot respond to OVH via SMS.\n<b>Ongoing Actions :</b> Our technical team attempted to revert to a previous configuration, but the process was unsuccessful. Our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "7pthmx5tdrrl",
+          "created_at": "2025-03-20T09:59:03.655Z",
+          "updated_at": "2025-03-20T09:59:03.655Z",
+          "display_at": "2025-03-20T09:59:03.655Z",
+          "affected_components": [
+            {
+              "code": "wvx9nrw9v652",
+              "name": "VoIP || SMS",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "mcyyjz0hj99m",
           "status": "monitoring",
@@ -2981,9 +2928,9 @@
         {
           "id": "wvx9nrw9v652",
           "name": "VoIP || SMS",
-          "status": "partial_outage",
+          "status": "degraded_performance",
           "created_at": "2025-01-21T15:07:25.031Z",
-          "updated_at": "2025-03-20T09:03:24.266Z",
+          "updated_at": "2025-03-20T09:59:03.598Z",
           "position": 22,
           "description": null,
           "showcase": false,
@@ -2995,6 +2942,79 @@
         }
       ],
       "reminder_intervals": "[]"
+    },
+    {
+      "id": "m50y2qcr6x74",
+      "name": "[Global][SMS] - SMS Service to Italy recipient incident Notification",
+      "status": "investigating",
+      "created_at": "2025-03-20T09:03:24.234Z",
+      "updated_at": "2025-03-20T09:39:04.068Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/66tv9zt132tv",
+      "started_at": "2025-03-20T09:03:24.229Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "3xs1qt0wz66k",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our SMS offering, which is causing temporary Availability issues in Italy.\n        \nHere is detail for this incident :        \n<b>Start time :</b> 18/03/2025 21:00 UTC        \n<b>Impacted Service(s) :</b> SMS to Italy is temporarily degraded.\n<b>Customers Impact :</b> The customers sending an SMS to a recipient in Italy may see the sender's number incorrectly displayed unless the sender is registered with an aggregator.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.",
+          "incident_id": "m50y2qcr6x74",
+          "created_at": "2025-03-20T09:11:48.902Z",
+          "updated_at": "2025-03-20T09:39:04.063Z",
+          "display_at": "2025-03-20T09:11:48.000Z",
+          "affected_components": [
+            {
+              "code": "wvx9nrw9v652",
+              "name": "VoIP || SMS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "904hzg9vt45h",
+          "status": "investigating",
+          "body": "Event notification\n\nWe are currently experiencing an event affecting our SMS service.\n<b>Start time :</b> 18/03/2025 21:00 UTC       \n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "m50y2qcr6x74",
+          "created_at": "2025-03-20T09:03:24.340Z",
+          "updated_at": "2025-03-20T09:03:24.340Z",
+          "display_at": "2025-03-20T09:03:24.340Z",
+          "affected_components": [
+            {
+              "code": "wvx9nrw9v652",
+              "name": "VoIP || SMS",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wvx9nrw9v652",
+          "name": "VoIP || SMS",
+          "status": "degraded_performance",
+          "created_at": "2025-01-21T15:07:25.031Z",
+          "updated_at": "2025-03-20T09:59:03.598Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-21",
+          "group_id": null,
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
     },
     {
       "id": "rq4ts5v2t06n",
@@ -4089,6 +4109,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Minor Service Outage"
+    "description": "Partially Degraded Service"
   }
 }
