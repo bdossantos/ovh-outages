@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-27T15:40:44.560Z"
+    "updated_at": "2025-03-27T16:33:21.048Z"
   },
   "components": [
     {
@@ -2802,9 +2802,9 @@
     {
       "id": "72czmxt56t6p",
       "name": "US-EAST-LZ-MIA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-12-06T10:10:15.786Z",
-      "updated_at": "2025-03-25T14:50:07.658Z",
+      "updated_at": "2025-03-27T16:33:20.931Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3180,9 +3180,9 @@
     {
       "id": "q6l24r2knq2f",
       "name": "US-EAST-LZ-NYC",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-07-16T10:17:46.733Z",
-      "updated_at": "2025-03-25T14:50:07.664Z",
+      "updated_at": "2025-03-27T16:33:20.955Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -7255,7 +7255,7 @@
     {
       "id": "0j34ppfs0jx5",
       "name": "LocalZones || US-EAST",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2025-03-05T15:57:47.050Z",
       "updated_at": "2025-03-05T16:29:34.397Z",
       "position": 43,
@@ -7754,6 +7754,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "csbvlt8j5jv5",
+      "name": "[US-EAST][Public Cloud] - API",
+      "status": "identified",
+      "created_at": "2025-03-27T16:33:20.878Z",
+      "updated_at": "2025-03-27T16:33:21.044Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/y960s240z7t2",
+      "started_at": "2025-03-27T16:33:20.864Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "9q60q830lhkc",
+          "status": "identified",
+          "body": "We are experiencing an ongoing incident affecting our API services in LocalZones, offering US-EAST.\n\nHere are some supplementary details :\n<b>Start time :</b> 27/03/2025 16:17 UTC\n<b>Impacted Service(s) :</b> API are unreachable in ATL, MIA and NYC LocalZones.\n<b>Customers Impact :</b> You may experience some difficulties when accessing API services located in ATL, MIA and NYC LocalZones.\n<b>Root Cause :</b> This incident is caused by operations on this maintenance: https://public-cloud.status-ovhcloud.com/incidents/cxtpd2kyjpyk\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "csbvlt8j5jv5",
+          "created_at": "2025-03-27T16:33:21.039Z",
+          "updated_at": "2025-03-27T16:33:21.039Z",
+          "display_at": "2025-03-27T16:33:21.039Z",
+          "affected_components": [
+            {
+              "code": "2r2swl41q8wg",
+              "name": "LocalZones || US-EAST - US-EAST-LZ-ATL",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "72czmxt56t6p",
+              "name": "LocalZones || US-EAST - US-EAST-LZ-MIA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "q6l24r2knq2f",
+              "name": "LocalZones || US-EAST - US-EAST-LZ-NYC",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2r2swl41q8wg",
+          "name": "US-EAST-LZ-ATL",
+          "status": "under_maintenance",
+          "created_at": "2024-12-06T10:15:23.507Z",
+          "updated_at": "2025-03-27T15:15:21.402Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-12-06",
+          "group_id": "0j34ppfs0jx5",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "72czmxt56t6p",
+          "name": "US-EAST-LZ-MIA",
+          "status": "partial_outage",
+          "created_at": "2024-12-06T10:10:15.786Z",
+          "updated_at": "2025-03-27T16:33:20.931Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-12-06",
+          "group_id": "0j34ppfs0jx5",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q6l24r2knq2f",
+          "name": "US-EAST-LZ-NYC",
+          "status": "partial_outage",
+          "created_at": "2024-07-16T10:17:46.733Z",
+          "updated_at": "2025-03-27T16:33:20.955Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-07-16",
+          "group_id": "0j34ppfs0jx5",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "rmknk7vjwv0t",
       "name": "[Global][Databases] - MongoDB incident notification",
