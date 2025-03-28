@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-28T13:39:16.158Z"
+    "updated_at": "2025-03-28T16:20:36.228Z"
   },
   "components": [
     {
@@ -1350,9 +1350,9 @@
     {
       "id": "kxf6bwp3j1dy",
       "name": "eu011",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-08-08T14:22:55.783Z",
-      "updated_at": "2025-03-04T16:48:48.555Z",
+      "updated_at": "2025-03-28T16:15:10.301Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1647,9 +1647,9 @@
     {
       "id": "4tl2jxl1m13n",
       "name": "eu013",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-17T16:55:54.670Z",
-      "updated_at": "2025-03-04T16:48:48.568Z",
+      "updated_at": "2025-03-28T16:15:10.319Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2029,7 +2029,7 @@
     {
       "id": "xntx4sdt2k97",
       "name": "Databases || CloudDB GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:49.945Z",
       "updated_at": "2025-02-20T16:43:44.515Z",
       "position": 13,
@@ -2830,6 +2830,85 @@
     }
   ],
   "incidents": [
+    {
+      "id": "byv8mdl76hdy",
+      "name": "[GRA][Web Cloud] - Cloud DB incident notification",
+      "status": "investigating",
+      "created_at": "2025-03-28T16:15:10.265Z",
+      "updated_at": "2025-03-28T16:17:36.061Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/z9sf0r4y6209",
+      "started_at": "2025-03-28T16:15:10.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "01msm9dw73v8",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "byv8mdl76hdy",
+          "created_at": "2025-03-28T16:15:45.359Z",
+          "updated_at": "2025-03-28T16:15:45.359Z",
+          "display_at": "2025-03-28T16:15:45.359Z",
+          "affected_components": [
+            {
+              "code": "kxf6bwp3j1dy",
+              "name": "Databases || CloudDB GRA - eu011",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "33grng62fph2",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Web Cloud offering, which is causing temporary availability.\n\nPlease find the details:\n<b>Start time :</b> 28/03/2025 15:58 UTC\n<b>Service impact :</b> Customer can not accessing their database only in clouddb011 and clouddb013\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nWe will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "byv8mdl76hdy",
+          "created_at": "2025-03-28T16:15:10.371Z",
+          "updated_at": "2025-03-28T16:17:36.011Z",
+          "display_at": "2025-03-28T16:15:10.000Z",
+          "affected_components": [
+            {
+              "code": "kxf6bwp3j1dy",
+              "name": "Databases || CloudDB GRA - eu011",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4tl2jxl1m13n",
+              "name": "Databases || CloudDB GRA - eu013",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kxf6bwp3j1dy",
+          "name": "eu011",
+          "status": "partial_outage",
+          "created_at": "2022-08-08T14:22:55.783Z",
+          "updated_at": "2025-03-28T16:15:10.301Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-08-08",
+          "group_id": "xntx4sdt2k97",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "4k5gpvmhcynf",
       "name": "[Global][Domains] - Domains Name incident notification on .hr domains",
