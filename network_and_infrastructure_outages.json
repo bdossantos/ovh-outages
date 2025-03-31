@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-03-31T07:00:26.673Z"
+    "updated_at": "2025-03-31T07:24:01.779Z"
   },
   "components": [
     {
@@ -1019,9 +1019,9 @@
     {
       "id": "wltlf1qlg7jg",
       "name": "Internet Access || Delivery",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-09-09T09:07:35.883Z",
-      "updated_at": "2024-11-13T16:53:45.631Z",
+      "updated_at": "2025-03-31T07:24:01.661Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -1162,7 +1162,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1xlw0ml65321",
+      "name": "[FR][Internet Access] ADSL - FTTH incident notification",
+      "status": "investigating",
+      "created_at": "2025-03-31T07:24:01.593Z",
+      "updated_at": "2025-03-31T07:24:01.772Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/22s03gf8jb3m",
+      "started_at": "2025-03-31T07:24:01.584Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "bsmms1lkjq1v",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our internet access offering, which is causing temporary Availability issues in the FR region.\n\nHere is detail for this incident :\n<b>Start time :</b> 30/03/2025 23:00 UTC\n<b>Impacted Service(s) :</b> The eligibility service for ADSL and FTTH is temporarily degraded.\n<b>Customers Impact :</b> Customers wishing to perform an ADSL or FTTH eligibility test are currently experiencing slow loading times.\n<b>Ongoing Actions :</b> Our provider is currently working on resolving the issue to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1xlw0ml65321",
+          "created_at": "2025-03-31T07:24:01.765Z",
+          "updated_at": "2025-03-31T07:24:01.765Z",
+          "display_at": "2025-03-31T07:24:01.765Z",
+          "affected_components": [
+            {
+              "code": "wltlf1qlg7jg",
+              "name": "Internet Access || Delivery",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "wltlf1qlg7jg",
+          "name": "Internet Access || Delivery",
+          "status": "degraded_performance",
+          "created_at": "2024-09-09T09:07:35.883Z",
+          "updated_at": "2025-03-31T07:24:01.661Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-09-09",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "wqfnzczv3bzw",
@@ -3318,7 +3372,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
