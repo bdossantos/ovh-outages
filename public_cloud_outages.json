@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-04T02:31:24.648Z"
+    "updated_at": "2025-04-04T03:30:12.111Z"
   },
   "components": [
     {
@@ -145,9 +145,9 @@
     {
       "id": "yfhs5qjtqy5f",
       "name": "WAW1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:29.628Z",
-      "updated_at": "2025-03-31T17:04:56.947Z",
+      "updated_at": "2025-04-04T03:29:58.075Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -5318,7 +5318,7 @@
     {
       "id": "0wrwm0pg3p7j",
       "name": "Compute - Instance || WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:31.075Z",
       "updated_at": "2025-03-03T10:48:38.589Z",
       "position": 16,
@@ -7771,6 +7771,59 @@
   ],
   "incidents": [
     {
+      "id": "7d97fnrwjcdf",
+      "name": "[WAW1][Public Cloud] - Instances incident Notification",
+      "status": "investigating",
+      "created_at": "2025-04-04T03:29:58.023Z",
+      "updated_at": "2025-04-04T03:30:12.102Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/4937qrsnxkxl",
+      "started_at": "2025-04-04T03:29:58.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "whzv63wy4g8m",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Public Cloud offering, which is causing temporary availability issues on our instances in WAW1.\n\nPlease find the details:\n<b>Start time :</b> 04/04/2025 03:13 UTC\n<b>Impacted Service(s) :</b> Some instances located in WAW1 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their instances in WAW1 region.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nWe will keep you informed of developments and the resolution of the incident.\n\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "7d97fnrwjcdf",
+          "created_at": "2025-04-04T03:29:58.164Z",
+          "updated_at": "2025-04-04T03:30:12.030Z",
+          "display_at": "2025-04-04T03:29:58.000Z",
+          "affected_components": [
+            {
+              "code": "yfhs5qjtqy5f",
+              "name": "Compute - Instance || WAW - WAW1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yfhs5qjtqy5f",
+          "name": "WAW1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:29.628Z",
+          "updated_at": "2025-04-04T03:29:58.075Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0wrwm0pg3p7j",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "491vx956zx6b",
       "name": "[GLOBAL][Object Storage] - Amazon S3 SDK compatibility inconsistencies with Object Storage Standard/High Performance",
       "status": "identified",
@@ -8721,9 +8774,9 @@
         {
           "id": "yfhs5qjtqy5f",
           "name": "WAW1",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2022-04-06T09:35:29.628Z",
-          "updated_at": "2025-03-31T17:04:56.947Z",
+          "updated_at": "2025-04-04T03:29:58.075Z",
           "position": 1,
           "description": null,
           "showcase": false,
