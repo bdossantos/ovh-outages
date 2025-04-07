@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-07T09:52:39.722Z"
+    "updated_at": "2025-04-07T10:10:04.151Z"
   },
   "components": [
     {
@@ -850,9 +850,9 @@
     {
       "id": "4pjxf199vzgd",
       "name": "DE1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:23.071Z",
-      "updated_at": "2025-03-12T23:14:15.080Z",
+      "updated_at": "2025-04-07T10:05:50.444Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -5681,7 +5681,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-03-03T10:48:38.609Z",
       "position": 18,
@@ -7775,7 +7775,7 @@
       "name": "[DE1][Public Cloud] - Instances incident notification",
       "status": "identified",
       "created_at": "2025-04-07T09:12:33.411Z",
-      "updated_at": "2025-04-07T09:52:39.713Z",
+      "updated_at": "2025-04-07T10:05:50.512Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -7783,6 +7783,32 @@
       "started_at": "2025-04-07T09:12:33.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "l4pjcjd5f6pv",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> We are also experiencing an incident  affecting our Managed Kubernetes Service.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ns3r0t0w043f",
+          "created_at": "2025-04-07T10:05:50.508Z",
+          "updated_at": "2025-04-07T10:05:50.508Z",
+          "display_at": "2025-04-07T10:05:50.508Z",
+          "affected_components": [
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "lq8mzhwlft0r",
           "status": "identified",
@@ -7836,6 +7862,21 @@
           "showcase": false,
           "start_date": "2022-04-06",
           "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4pjxf199vzgd",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:23.071Z",
+          "updated_at": "2025-04-07T10:05:50.444Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
