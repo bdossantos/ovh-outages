@@ -2,9 +2,9 @@
   "page": {
     "id": "87zd6t8dwzd8",
     "name": "Hosted Private Cloud",
-    "url": "http://hosted-private-cloud.status-ovhcloud.com",
+    "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-10T07:00:23.298Z"
+    "updated_at": "2025-04-10T07:28:46.062Z"
   },
   "components": [
     {
@@ -925,9 +925,9 @@
     {
       "id": "lkvnx711s5gr",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:32:11.445Z",
-      "updated_at": "2025-01-15T10:32:11.445Z",
+      "updated_at": "2025-04-10T07:05:24.275Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1333,7 +1333,7 @@
     {
       "id": "3pxf191gh8t8",
       "name": "Managed VMware Cloud Director || LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:11:32.995Z",
       "updated_at": "2025-01-15T10:36:58.297Z",
       "position": 8,
@@ -1688,7 +1688,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kkyrks04chyw",
+      "name": "[LIM3][Hosted Private Cloud] - Rack LIM0303A05A",
+      "status": "investigating",
+      "created_at": "2025-04-10T07:05:24.233Z",
+      "updated_at": "2025-04-10T07:07:12.951Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/d1h2jhxvh3my",
+      "started_at": "2025-04-10T07:05:24.000Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "cklmy62qrwgh",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Hosted Private Cloud offering, which is causing temporary availability issues in the rack LIM0303A05A.\n\nHere is detail for this incident :\n<b>Start time :</b> 10/04/2025 6:36 UTC\n<b>Impacted Service(s) :</b> Some hosts are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kkyrks04chyw",
+          "created_at": "2025-04-10T07:05:24.332Z",
+          "updated_at": "2025-04-10T07:07:12.865Z",
+          "display_at": "2025-04-10T07:05:24.000Z",
+          "affected_components": [
+            {
+              "code": "lkvnx711s5gr",
+              "name": "Managed VMware Cloud Director || LIM - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lkvnx711s5gr",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T10:32:11.445Z",
+          "updated_at": "2025-04-10T07:05:24.275Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "3pxf191gh8t8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d3n1tz3s5hf7",
@@ -4808,7 +4862,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
