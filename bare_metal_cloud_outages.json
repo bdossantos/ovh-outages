@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-14T06:30:23.212Z"
+    "updated_at": "2025-04-14T07:24:43.173Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-04-14T06:30:23.134Z",
+      "updated_at": "2025-04-14T07:24:32.759Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2831,7 +2831,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8nsqsr66hh1f",
+      "name": "[GRA3][Dedicated Servers] - Rack GRA0315A04A",
+      "status": "investigating",
+      "created_at": "2025-04-14T07:24:32.722Z",
+      "updated_at": "2025-04-14T07:24:32.823Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/m7ktc0zbxy6q",
+      "started_at": "2025-04-14T07:24:32.715Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "x9ss8jzgvm2x",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offer on rack GRA0315A04A in GRA3.\n\nHere are some supplementary details :\n<b>Start time :</b> 14/04/2025 07:12 UTC\n<b>Impacted Service(s) :</b> All servers in the rack GRA0315A04A are currently unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access and use their servers located in the specified rack.\n<b>Ongoing Actions :</b> Our teams are fully committed to investigating this issue and working towards a resolution as soon as possible. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "8nsqsr66hh1f",
+          "created_at": "2025-04-14T07:24:32.820Z",
+          "updated_at": "2025-04-14T07:24:32.820Z",
+          "display_at": "2025-04-14T07:24:32.820Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2025-04-14T07:24:32.759Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "x946jpmy37tz",
@@ -3120,9 +3174,9 @@
         {
           "id": "jkwghz2dnq89",
           "name": "GRA",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2025-04-14T06:30:23.134Z",
+          "updated_at": "2025-04-14T07:24:32.759Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -3138,7 +3192,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
