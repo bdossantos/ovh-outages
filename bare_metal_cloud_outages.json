@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-15T15:20:47.972Z"
+    "updated_at": "2025-04-15T16:06:22.348Z"
   },
   "components": [
     {
@@ -2835,9 +2835,9 @@
     {
       "id": "sbwbqtskj44p",
       "name": "[ERI1][Bare Metal Cloud] - Rack ERI0114A01B",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-04-15T15:11:55.289Z",
-      "updated_at": "2025-04-15T15:11:55.420Z",
+      "updated_at": "2025-04-15T16:06:22.341Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2845,6 +2845,26 @@
       "started_at": "2025-04-15T15:11:55.279Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "5svv6vqy3xgn",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the rack ERI0114A01B in ERI1.\n\nHere are some supplementary details :\n<b>Start time :</b> 15/04/2025 14:10 UTC\n<b>Impacted Service(s) :</b> Vrack on servers is temporarily unavailable.\n<b>Customers Impact :</b> Customers are unable to access and use their Vrack network on servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sbwbqtskj44p",
+          "created_at": "2025-04-15T16:06:22.338Z",
+          "updated_at": "2025-04-15T16:06:22.338Z",
+          "display_at": "2025-04-15T16:06:22.338Z",
+          "affected_components": [
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jm03qfwb1k2y",
           "status": "investigating",
