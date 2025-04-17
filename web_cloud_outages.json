@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-17T07:40:18.414Z"
+    "updated_at": "2025-04-17T10:35:37.284Z"
   },
   "components": [
     {
@@ -1147,9 +1147,9 @@
     {
       "id": "ltpvy99179b6",
       "name": "Softcall",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-21T15:13:32.262Z",
-      "updated_at": "2025-04-16T19:34:56.520Z",
+      "updated_at": "2025-04-17T10:30:54.335Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2514,7 +2514,7 @@
     {
       "id": "0nnlxrnw4m1y",
       "name": "VoIP || Telephony",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:13.456Z",
       "updated_at": "2025-02-20T16:43:24.123Z",
       "position": 23,
@@ -2830,6 +2830,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "47js5j7mqgmn",
+      "name": "[GLOBAL][Softcall] - Incident notification",
+      "status": "identified",
+      "created_at": "2025-04-17T10:21:39.700Z",
+      "updated_at": "2025-04-17T10:35:37.279Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8z994z9rqv4h",
+      "started_at": "2025-04-17T10:30:54.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "dfp5689nt0cy",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Softcall product.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/04/2025 01:34 UTC\t\t\t\t\n<b>Impacted Service(s) :</b> A significant part of Softcall is unreachable..\n<b>Customers Impact :</b> Some customers cannot use their service.\n<b>Related incident  :</b> https://network.status-ovhcloud.com/incidents/wqq5qxpcsszn\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "47js5j7mqgmn",
+          "created_at": "2025-04-17T10:30:54.383Z",
+          "updated_at": "2025-04-17T10:35:37.227Z",
+          "display_at": "2025-04-17T10:30:54.000Z",
+          "affected_components": [
+            {
+              "code": "ltpvy99179b6",
+              "name": "VoIP || Telephony - Softcall",
+              "old_status": "degraded_performance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tbp6kym5jj7g",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Managed Services offer.\n\t\t\t\t\n<b>Start time :</b> 17/04/2025 09:45 UTC\t\t\t\t\n\t\t\t\t\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\t\t\t\t\n\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "47js5j7mqgmn",
+          "created_at": "2025-04-17T10:21:39.765Z",
+          "updated_at": "2025-04-17T10:21:39.765Z",
+          "display_at": "2025-04-17T10:21:39.765Z",
+          "affected_components": [
+            {
+              "code": "ltpvy99179b6",
+              "name": "VoIP || Telephony - Softcall",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ltpvy99179b6",
+          "name": "Softcall",
+          "status": "partial_outage",
+          "created_at": "2025-01-21T15:13:32.262Z",
+          "updated_at": "2025-04-17T10:30:54.335Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-21",
+          "group_id": "0nnlxrnw4m1y",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "4k5gpvmhcynf",
       "name": "[Global][Domains] - Domains Name incident notification on .hr domains",
