@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-17T04:01:43.156Z"
+    "updated_at": "2025-04-17T04:28:49.014Z"
   },
   "components": [
     {
@@ -1426,7 +1426,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1957,9 +1957,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2025-04-10T19:08:00.452Z",
+      "updated_at": "2025-04-17T04:20:22.495Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2831,7 +2831,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "zdtfz7fj5ghx",
+      "name": "[RBX3][Dedicated Servers] - Rack 45F17 incident notification",
+      "status": "identified",
+      "created_at": "2025-04-17T04:20:22.457Z",
+      "updated_at": "2025-04-17T04:28:49.008Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/7f5m918r0drv",
+      "started_at": "2025-04-17T04:20:22.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "p87hb1j3pvrv",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n<b>Start time :</b> 17/04/2025 04:55 UTC\n<b>Impacted Service(s) :</b> Servers in rack 45F17 are temporarily unreachable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers through public network.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilized to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "zdtfz7fj5ghx",
+          "created_at": "2025-04-17T04:20:22.551Z",
+          "updated_at": "2025-04-17T04:28:48.946Z",
+          "display_at": "2025-04-17T04:20:22.000Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2025-04-17T04:20:22.495Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "d1hy7gh8z9q8",
