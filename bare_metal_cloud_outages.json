@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-22T06:00:29.066Z"
+    "updated_at": "2025-04-22T07:00:21.607Z"
   },
   "components": [
     {
@@ -568,9 +568,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2025-04-16T01:14:57.201Z",
+      "updated_at": "2025-04-22T07:00:21.462Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2921,73 +2921,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "vz4pg42xhnqw",
-      "name": "[ERI1][Dedicated Servers] - Rack E102B",
-      "status": "scheduled",
-      "created_at": "2025-03-25T22:26:00.072Z",
-      "updated_at": "2025-04-22T06:00:29.058Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/bngc1vkhj4zd",
-      "started_at": "2025-03-25T22:26:00.065Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "0ng61ppd56tp",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "vz4pg42xhnqw",
-          "created_at": "2025-04-22T06:00:28.949Z",
-          "updated_at": "2025-04-22T06:00:28.949Z",
-          "display_at": "2025-04-22T06:00:28.949Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "yzvjpzzphnbq",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 22/04/2025 07:00 UTC\n<b>End time :</b> 22/04/2025 09:00 UTC\n<b>Service impact :</b> Each server in rack E102B will be temporarily unavailable during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be migrating servers from rack E102B to rack E101D03.\n\nThank you for your understanding.",
-          "incident_id": "vz4pg42xhnqw",
-          "created_at": "2025-03-25T22:26:00.127Z",
-          "updated_at": "2025-03-25T22:26:00.127Z",
-          "display_at": "2025-03-25T22:26:00.127Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-04-16T01:14:57.201Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-04-22T07:00:00.000Z",
-      "scheduled_until": "2025-04-22T09:00:00.000Z"
-    },
-    {
       "id": "d1hy7gh8z9q8",
       "name": "[UK2][Virtual Private Servers] - Workflow Management service maintenance notification",
       "status": "scheduled",
@@ -3475,10 +3408,97 @@
       ],
       "scheduled_for": "2025-06-23T09:00:00.000Z",
       "scheduled_until": "2025-06-23T13:00:00.000Z"
+    },
+    {
+      "id": "vz4pg42xhnqw",
+      "name": "[ERI1][Dedicated Servers] - Rack E102B",
+      "status": "in_progress",
+      "created_at": "2025-03-25T22:26:00.072Z",
+      "updated_at": "2025-04-22T07:00:21.587Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bngc1vkhj4zd",
+      "started_at": "2025-03-25T22:26:00.065Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jf67qqm0s4yg",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "vz4pg42xhnqw",
+          "created_at": "2025-04-22T07:00:21.580Z",
+          "updated_at": "2025-04-22T07:00:21.580Z",
+          "display_at": "2025-04-22T07:00:21.580Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0ng61ppd56tp",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "vz4pg42xhnqw",
+          "created_at": "2025-04-22T06:00:28.949Z",
+          "updated_at": "2025-04-22T06:00:28.949Z",
+          "display_at": "2025-04-22T06:00:28.949Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yzvjpzzphnbq",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 22/04/2025 07:00 UTC\n<b>End time :</b> 22/04/2025 09:00 UTC\n<b>Service impact :</b> Each server in rack E102B will be temporarily unavailable during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be migrating servers from rack E102B to rack E101D03.\n\nThank you for your understanding.",
+          "incident_id": "vz4pg42xhnqw",
+          "created_at": "2025-03-25T22:26:00.127Z",
+          "updated_at": "2025-03-25T22:26:00.127Z",
+          "display_at": "2025-03-25T22:26:00.127Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2025-04-22T07:00:21.462Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-04-22T07:00:00.000Z",
+      "scheduled_until": "2025-04-22T09:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
