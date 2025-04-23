@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-23T00:00:22.180Z"
+    "updated_at": "2025-04-23T01:00:23.132Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-04-20T08:34:59.981Z",
+      "updated_at": "2025-04-23T01:00:22.898Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1165,73 +1165,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "dhn5nmh9wgmq",
-      "name": "[FRA][Network] - Backbone Maintenance Notification",
-      "status": "scheduled",
-      "created_at": "2025-04-22T17:13:37.421Z",
-      "updated_at": "2025-04-23T00:00:22.173Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ch12fgk6md6c",
-      "started_at": "2025-04-22T17:13:37.416Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "cmnv8d1h06br",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dhn5nmh9wgmq",
-          "created_at": "2025-04-23T00:00:22.057Z",
-          "updated_at": "2025-04-23T00:00:22.057Z",
-          "display_at": "2025-04-23T00:00:22.057Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "4cr0blz0gl82",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our backbone infrastructure.\n\n<b>Start time :</b> 23/05/2025 01:00 UTC\n<b>End time :</b> 23/05/2025 02:30 UTC\n<b>Service impact :</b> You may experience additional latency during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on multiple network equipment to improve general performance.\n\nThank you for your understanding.",
-          "incident_id": "dhn5nmh9wgmq",
-          "created_at": "2025-04-22T17:13:37.474Z",
-          "updated_at": "2025-04-22T17:13:37.474Z",
-          "display_at": "2025-04-22T17:13:37.474Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "operational",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-04-20T08:34:59.981Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-04-23T01:00:00.000Z",
-      "scheduled_until": "2025-04-23T02:30:00.000Z"
-    },
-    {
       "id": "v7th8hy1bvll",
       "name": "[WAW1][Infrastructure ] - Rooms W14/W15 - Cooling maintenance notification",
       "status": "scheduled",
@@ -1920,10 +1853,97 @@
       ],
       "scheduled_for": "2025-05-29T11:00:00.000Z",
       "scheduled_until": "2025-05-29T20:00:00.000Z"
+    },
+    {
+      "id": "dhn5nmh9wgmq",
+      "name": "[FRA][Network] - Backbone Maintenance Notification",
+      "status": "in_progress",
+      "created_at": "2025-04-22T17:13:37.421Z",
+      "updated_at": "2025-04-23T01:00:23.096Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/ch12fgk6md6c",
+      "started_at": "2025-04-22T17:13:37.416Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "tyg7v7ll4mk3",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "dhn5nmh9wgmq",
+          "created_at": "2025-04-23T01:00:23.081Z",
+          "updated_at": "2025-04-23T01:00:23.081Z",
+          "display_at": "2025-04-23T01:00:23.081Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cmnv8d1h06br",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "dhn5nmh9wgmq",
+          "created_at": "2025-04-23T00:00:22.057Z",
+          "updated_at": "2025-04-23T00:00:22.057Z",
+          "display_at": "2025-04-23T00:00:22.057Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4cr0blz0gl82",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our backbone infrastructure.\n\n<b>Start time :</b> 23/05/2025 01:00 UTC\n<b>End time :</b> 23/05/2025 02:30 UTC\n<b>Service impact :</b> You may experience additional latency during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on multiple network equipment to improve general performance.\n\nThank you for your understanding.",
+          "incident_id": "dhn5nmh9wgmq",
+          "created_at": "2025-04-22T17:13:37.474Z",
+          "updated_at": "2025-04-22T17:13:37.474Z",
+          "display_at": "2025-04-22T17:13:37.474Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "under_maintenance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-04-23T01:00:22.898Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-04-23T01:00:00.000Z",
+      "scheduled_until": "2025-04-23T02:30:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
