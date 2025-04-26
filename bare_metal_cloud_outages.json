@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-04-26T14:11:00.033Z"
+    "updated_at": "2025-04-26T15:24:49.740Z"
   },
   "components": [
     {
@@ -1231,9 +1231,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2025-04-25T21:22:51.262Z",
+      "updated_at": "2025-04-26T15:24:49.682Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1426,7 +1426,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2831,7 +2831,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "mm80fxm6cvqz",
+      "name": "[GRA4][Dedicated Servers] - Multiple racks incident notification",
+      "status": "investigating",
+      "created_at": "2025-04-26T15:24:49.646Z",
+      "updated_at": "2025-04-26T15:24:49.738Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0v3p4gssq8w8",
+      "started_at": "2025-04-26T15:24:49.639Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "prkh2fms8jhy",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer.\n<b>Start time :</b> 26/04/2025 14:44 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "mm80fxm6cvqz",
+          "created_at": "2025-04-26T15:24:49.735Z",
+          "updated_at": "2025-04-26T15:24:49.735Z",
+          "display_at": "2025-04-26T15:24:49.735Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2025-04-26T15:24:49.682Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "qvch5cmrkh4d",
@@ -3270,7 +3324,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
