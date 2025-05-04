@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-04T19:58:11.394Z"
+    "updated_at": "2025-05-04T21:21:20.590Z"
   },
   "components": [
     {
@@ -1426,7 +1426,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1534,9 +1534,9 @@
     {
       "id": "7fb9d18j4s12",
       "name": "BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:36.480Z",
-      "updated_at": "2025-05-04T19:58:11.341Z",
+      "updated_at": "2025-05-04T20:25:42.761Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1957,9 +1957,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2025-05-02T21:43:38.624Z",
+      "updated_at": "2025-05-04T20:51:32.346Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2775,7 +2775,7 @@
     {
       "id": "40xgq25nqllh",
       "name": "Virtual Private Servers || Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:39.112Z",
       "updated_at": "2024-09-10T06:16:11.319Z",
       "position": 22,
@@ -2833,30 +2833,30 @@
   ],
   "incidents": [
     {
-      "id": "v9835cck5lp3",
-      "name": "[BHS6][Virtual Private Servers] - incident notification",
-      "status": "investigating",
-      "created_at": "2025-05-04T19:58:11.307Z",
-      "updated_at": "2025-05-04T19:58:11.392Z",
+      "id": "t0h6nyxrf1fl",
+      "name": "[RBX3][Dedicated Servers] - Rack 43R02",
+      "status": "identified",
+      "created_at": "2025-05-04T20:51:32.312Z",
+      "updated_at": "2025-05-04T20:54:28.791Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/vvw96n3fzgw8",
-      "started_at": "2025-05-04T19:58:11.300Z",
+      "shortlink": "https://stspg.io/9g69vvwnst5v",
+      "started_at": "2025-05-04T20:51:32.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "ppnpp5nphzlt",
-          "status": "investigating",
-          "body": "We are currently experiencing an event affecting our Virtual Private Servers offer in BHS6.\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "v9835cck5lp3",
-          "created_at": "2025-05-04T19:58:11.389Z",
-          "updated_at": "2025-05-04T19:58:11.389Z",
-          "display_at": "2025-05-04T19:58:11.389Z",
+          "id": "47pmnzph5937",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary Availability issues in the rack 43R02.\n\nHere is detail for this incident :\n<b>Start time :</b> 04/05/2025 20:48 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are currently unable to access their public network on servers in the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "t0h6nyxrf1fl",
+          "created_at": "2025-05-04T20:51:32.402Z",
+          "updated_at": "2025-05-04T20:54:28.725Z",
+          "display_at": "2025-05-04T20:51:32.000Z",
           "affected_components": [
             {
-              "code": "7fb9d18j4s12",
-              "name": "Virtual Private Servers || Network - BHS",
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2868,16 +2868,16 @@
       ],
       "components": [
         {
-          "id": "7fb9d18j4s12",
-          "name": "BHS",
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:31:36.480Z",
-          "updated_at": "2025-05-04T19:58:11.341Z",
-          "position": 6,
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2025-05-04T20:51:32.346Z",
+          "position": 8,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
