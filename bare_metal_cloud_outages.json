@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-05T20:04:45.387Z"
+    "updated_at": "2025-05-05T20:21:50.288Z"
   },
   "components": [
     {
@@ -2833,6 +2833,81 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
+    {
+      "id": "l02sm9cxvlhq",
+      "name": "[ERI/UK2][Virtual Private Servers] - Workflow Management service maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-05-05T20:09:59.543Z",
+      "updated_at": "2025-05-05T20:09:59.606Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pk0f6kyzyqn7",
+      "started_at": "2025-05-05T20:09:59.533Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "r40gghzz77jc",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Workflow Management service, Mistral.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 12/05/2025 08:00 UTC\n<b>End time :</b> 12/05/2025 09:00 UTC\n<b>Service impact :</b> During this maintenance window for the Workflow Management service (Mistral), you may encounter the following impacts:\n\n    -Workflows in progress at the start of the maintenance will be stopped and will be restarted automatically after the maintenance is completed. We understand that this may cause a temporary disruption in your workflow processing, and we apologize for any inconvenience this may cause.\n   \n    -Cron triggers (scheduled workflow executions) during the maintenance period will not be triggered. If you have any workflows scheduled to run during the maintenance window, we recommend rescheduling them to run outside of this timeframe to avoid any disruption.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be performing a maintenance on the Mistral service infrastructure. \nThis maintenance is necessary to ensure the continued reliability and performance of our platform.\n\nIf you have any questions or concerns, please don't hesitate to reach out to our support team.\n\nThank you for your understanding.",
+          "incident_id": "l02sm9cxvlhq",
+          "created_at": "2025-05-05T20:09:59.603Z",
+          "updated_at": "2025-05-05T20:09:59.603Z",
+          "display_at": "2025-05-05T20:09:59.603Z",
+          "affected_components": [
+            {
+              "code": "dwdh0g8v11gm",
+              "name": "Virtual Private Servers || Additional services - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rwbs31dj465g",
+              "name": "Virtual Private Servers || Additional services - UK2",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "dwdh0g8v11gm",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:22.166Z",
+          "updated_at": "2024-04-19T22:25:51.576Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rwbs31dj465g",
+          "name": "UK2",
+          "status": "operational",
+          "created_at": "2025-04-09T06:41:09.544Z",
+          "updated_at": "2025-04-22T15:01:41.453Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-04-09",
+          "group_id": "xnnr6fwn2h6v",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-05-12T08:00:00.000Z",
+      "scheduled_until": "2025-05-12T09:00:00.000Z"
+    },
     {
       "id": "wzqmhvnl06qm",
       "name": "[SYD2][Network] - Network equipment maintenance",
