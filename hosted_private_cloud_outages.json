@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-06T10:00:32.582Z"
+    "updated_at": "2025-05-06T11:00:21.574Z"
   },
   "components": [
     {
@@ -1030,9 +1030,9 @@
     {
       "id": "n50qxz88zcfk",
       "name": "Storage",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:41:08.302Z",
-      "updated_at": "2025-02-20T16:38:44.966Z",
+      "updated_at": "2025-05-06T11:00:21.443Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1692,9 +1692,9 @@
     {
       "id": "l02h0lglthcq",
       "name": "[RBX8][Hosted Private Cloud] - Host incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-05-06T09:55:46.028Z",
-      "updated_at": "2025-05-06T09:59:07.802Z",
+      "updated_at": "2025-05-06T10:40:52.624Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -1702,6 +1702,26 @@
       "started_at": "2025-05-06T09:55:46.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "35w0tkpt0x29",
+          "status": "identified",
+          "body": "The issue has been identified, and our teams are currently implementing a fix.\nWe remind you that the impact is : \n<b>Service impact :</b> Some instance are unavailable for customers.\n<b>Root Cause :</b> This incident is due to a problem with the cooling system.\n<b>Ongoing actions :</b>The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nOur teams are fully engaged and working to resolve the issue as quickly as possible. We will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "l02h0lglthcq",
+          "created_at": "2025-05-06T10:38:04.872Z",
+          "updated_at": "2025-05-06T10:40:52.620Z",
+          "display_at": "2025-05-06T10:38:04.000Z",
+          "affected_components": [
+            {
+              "code": "lcbg7967jxx1",
+              "name": "Managed VMware Cloud Director || RBX - Network",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ztn6wt1brtz0",
           "status": "investigating",
@@ -1744,114 +1764,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "635s014tyfbs",
-      "name": "[RBX2B/SBG1A][Hosted Private Cloud] - Equipment update notification",
-      "status": "scheduled",
-      "created_at": "2025-04-07T21:37:31.056Z",
-      "updated_at": "2025-05-06T10:00:32.573Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/r0s6wlhmpcdd",
-      "started_at": "2025-04-07T21:37:31.113Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "4ptxr6n4my6g",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "635s014tyfbs",
-          "created_at": "2025-05-06T10:00:32.468Z",
-          "updated_at": "2025-05-06T10:00:32.468Z",
-          "display_at": "2025-05-06T10:00:32.468Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "62p5vp7qxvw3",
-          "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "635s014tyfbs",
-          "created_at": "2025-04-07T22:53:00.120Z",
-          "updated_at": "2025-04-07T22:53:00.120Z",
-          "display_at": "2025-04-07T22:53:00.120Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "Managed vSphere || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "n50qxz88zcfk",
-              "name": "Managed vSphere || SBG - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rbrx4mgqtdxh",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.  \n\n<b>Start time :</b> 06/05/2025 11:00 UTC \n<b>End time :</b> 06/05/2025 21:00 UTC \n<b>Service impact :</b> No impact on vSphere UI, data availability, and virtual machines.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an update for multiple storage servers. \n\nThank you for your understanding.",
-          "incident_id": "635s014tyfbs",
-          "created_at": "2025-04-07T21:37:31.113Z",
-          "updated_at": "2025-05-05T09:18:11.979Z",
-          "display_at": "2025-04-07T21:37:31.113Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "Managed vSphere || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-05-06T06:30:21.540Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "n50qxz88zcfk",
-          "name": "Storage",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:08.302Z",
-          "updated_at": "2025-02-20T16:38:44.966Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-05-06T11:00:00.000Z",
-      "scheduled_until": "2025-05-06T21:00:00.000Z"
-    },
     {
       "id": "wqph6gf1p6tz",
       "name": "[RBX2D/SBG1A][Hosted Private Cloud] - Equipment update notification",
@@ -1911,9 +1823,9 @@
         {
           "id": "n50qxz88zcfk",
           "name": "Storage",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-21T08:41:08.302Z",
-          "updated_at": "2025-02-20T16:38:44.966Z",
+          "updated_at": "2025-05-06T11:00:21.443Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2976,6 +2888,134 @@
       ],
       "scheduled_for": "2025-07-07T07:00:00.000Z",
       "scheduled_until": "2025-07-11T16:00:00.000Z"
+    },
+    {
+      "id": "635s014tyfbs",
+      "name": "[RBX2B/SBG1A][Hosted Private Cloud] - Equipment update notification",
+      "status": "in_progress",
+      "created_at": "2025-04-07T21:37:31.056Z",
+      "updated_at": "2025-05-06T11:00:21.556Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/r0s6wlhmpcdd",
+      "started_at": "2025-04-07T21:37:31.113Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "17vdvvhmgjxl",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "635s014tyfbs",
+          "created_at": "2025-05-06T11:00:21.548Z",
+          "updated_at": "2025-05-06T11:00:21.548Z",
+          "display_at": "2025-05-06T11:00:21.548Z",
+          "affected_components": [
+            {
+              "code": "n50qxz88zcfk",
+              "name": "Managed vSphere || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4ptxr6n4my6g",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "635s014tyfbs",
+          "created_at": "2025-05-06T10:00:32.468Z",
+          "updated_at": "2025-05-06T10:00:32.468Z",
+          "display_at": "2025-05-06T10:00:32.468Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "62p5vp7qxvw3",
+          "status": "scheduled",
+          "body": "We will be undergoing scheduled maintenance during this time.",
+          "incident_id": "635s014tyfbs",
+          "created_at": "2025-04-07T22:53:00.120Z",
+          "updated_at": "2025-04-07T22:53:00.120Z",
+          "display_at": "2025-04-07T22:53:00.120Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "Managed vSphere || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rbrx4mgqtdxh",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.  \n\n<b>Start time :</b> 06/05/2025 11:00 UTC \n<b>End time :</b> 06/05/2025 21:00 UTC \n<b>Service impact :</b> No impact on vSphere UI, data availability, and virtual machines.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an update for multiple storage servers. \n\nThank you for your understanding.",
+          "incident_id": "635s014tyfbs",
+          "created_at": "2025-04-07T21:37:31.113Z",
+          "updated_at": "2025-05-05T09:18:11.979Z",
+          "display_at": "2025-04-07T21:37:31.113Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2025-05-06T06:30:21.540Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2025-05-06T11:00:21.443Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-05-06T11:00:00.000Z",
+      "scheduled_until": "2025-05-06T21:00:00.000Z"
     },
     {
       "id": "m5kftxs2b63f",
