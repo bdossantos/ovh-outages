@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-06T15:04:52.283Z"
+    "updated_at": "2025-05-06T15:21:24.340Z"
   },
   "components": [
     {
@@ -2835,9 +2835,9 @@
     {
       "id": "cdn8nrm1k354",
       "name": "[BHS5][Dedicated Servers] - Rack T05D22",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-05-06T15:04:52.191Z",
-      "updated_at": "2025-05-06T15:04:52.280Z",
+      "updated_at": "2025-05-06T15:15:05.699Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2845,6 +2845,26 @@
       "started_at": "2025-05-06T15:04:52.185Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "tdvzx67lvmqn",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on rack T05D22 in BHS5.\n\nHere are some supplementary details :\n<b>Start time :</b> 06/05/2025 14:56 UTC\n<b>Impacted Service(s) :</b> All servers in the specified rack are currently unavailable.\n<b>Customers Impact :</b> Customers do not currently have access to their servers in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "cdn8nrm1k354",
+          "created_at": "2025-05-06T15:15:05.697Z",
+          "updated_at": "2025-05-06T15:15:05.697Z",
+          "display_at": "2025-05-06T15:15:05.697Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "cwsyhs1l33xh",
           "status": "investigating",
