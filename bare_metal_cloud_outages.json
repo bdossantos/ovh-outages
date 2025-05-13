@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-13T12:51:27.798Z"
+    "updated_at": "2025-05-13T15:53:01.176Z"
   },
   "components": [
     {
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2025-05-13T00:28:10.030Z",
+      "updated_at": "2025-05-13T15:23:15.759Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2815,7 +2815,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vlsgysrlyr52",
+      "name": "[BHS7][Dedicated Servers] - Racks B717A07 / B717A08 / B717A09",
+      "status": "identified",
+      "created_at": "2025-05-13T15:23:15.721Z",
+      "updated_at": "2025-05-13T15:53:01.166Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/khthzvht1dhx",
+      "started_at": "2025-05-13T15:23:15.713Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "dgj17wcqckrd",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> We would like to inform you that a significant number of servers are now operational.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "vlsgysrlyr52",
+          "created_at": "2025-05-13T15:53:01.163Z",
+          "updated_at": "2025-05-13T15:53:01.163Z",
+          "display_at": "2025-05-13T15:53:01.163Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8wc6yldqxnt7",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer in the racks B717A07 / B717A08 / B717A09.\n\nHere are some supplementary details :\n<b>Start time :</b> 13/05/2025 15:05 UTC\n<b>Impacted Service(s) :</b> Some servers in the specified racks are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located in the specified racks.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "vlsgysrlyr52",
+          "created_at": "2025-05-13T15:23:15.810Z",
+          "updated_at": "2025-05-13T15:23:15.810Z",
+          "display_at": "2025-05-13T15:23:15.810Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2025-05-13T15:23:15.759Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3bq7q0ft5924",
@@ -3380,7 +3454,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
