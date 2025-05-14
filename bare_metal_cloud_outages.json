@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-14T10:01:50.631Z"
+    "updated_at": "2025-05-14T11:00:26.392Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1579,9 +1579,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-05-10T02:23:25.511Z",
+      "updated_at": "2025-05-14T10:38:06.927Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2815,14 +2815,108 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "xx330yb3mzvx",
+      "name": "[SBG5][Dedicated Servers] - Rack SBG0505B04A",
+      "status": "identified",
+      "created_at": "2025-05-14T10:38:06.890Z",
+      "updated_at": "2025-05-14T10:52:35.937Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/2ctkp9tsqjst",
+      "started_at": "2025-05-14T10:38:06.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "w0sz555h1hq0",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\t\t\t\t\t\t\t\t\t\n<b>Update : </b> Most of the affected servers are up and running.\t\t\t\t\t\t\t\t\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible\n\nWe will keep you updated on the progress and resolution.\t\t\t\t\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xx330yb3mzvx",
+          "created_at": "2025-05-14T10:43:45.318Z",
+          "updated_at": "2025-05-14T10:49:51.362Z",
+          "display_at": "2025-05-14T10:43:45.000Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "878v6bs6x8yl",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on rack SBG0505B04A in SBG5.\n\nHere are some supplementary details :\n<b>Start time :</b> 14/05/2025 09:20 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack SBG0505B04A are currently unreachable.\n<b>Customers Impact :</b> Customers are currently unable to access their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xx330yb3mzvx",
+          "created_at": "2025-05-14T10:43:25.999Z",
+          "updated_at": "2025-05-14T10:43:25.999Z",
+          "display_at": "2025-05-14T10:43:25.999Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ht1nc0wx1x40",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer on rack SBG0505B04A in SBG5\n<b>Start time :</b> 14/05/2025 09:20 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xx330yb3mzvx",
+          "created_at": "2025-05-14T10:38:06.991Z",
+          "updated_at": "2025-05-14T10:52:35.870Z",
+          "display_at": "2025-05-14T10:38:06.000Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-05-14T10:38:06.927Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "3bq7q0ft5924",
       "name": "[UK][Virtual Private Servers] - Workflow Management service maintenance notification",
       "status": "scheduled",
       "created_at": "2025-05-07T14:02:03.094Z",
-      "updated_at": "2025-05-07T14:02:03.154Z",
+      "updated_at": "2025-05-14T11:00:26.384Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2830,6 +2924,19 @@
       "started_at": "2025-05-07T14:02:03.086Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "c2qj560tnq7k",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "3bq7q0ft5924",
+          "created_at": "2025-05-14T11:00:26.281Z",
+          "updated_at": "2025-05-14T11:00:26.281Z",
+          "display_at": "2025-05-14T11:00:26.281Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "d0w2ch6sgst7",
           "status": "scheduled",
@@ -2870,60 +2977,6 @@
       ],
       "scheduled_for": "2025-05-14T12:00:00.000Z",
       "scheduled_until": "2025-05-14T14:00:00.000Z"
-    },
-    {
-      "id": "wzqmhvnl06qm",
-      "name": "[SYD2][Network] - Network equipment maintenance",
-      "status": "scheduled",
-      "created_at": "2025-04-30T14:49:14.212Z",
-      "updated_at": "2025-04-30T14:49:14.275Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/64v922kz9lwk",
-      "started_at": "2025-04-30T14:49:14.204Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "sfndt4g4n0kt",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Baremetal offer in SYD2. \n\n<b>Start time :</b> 15/05/2025 07:00 UTC \n<b>End time :</b> 15/05/2025 17:00 UTC \n<b>Service impact :</b> You may experience a loss of public connectivity and IPMI services to some servers located in this DC during the maintenance period.\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will be doing a maintenance on a network equipment.\n\nThank you for your understanding.",
-          "incident_id": "wzqmhvnl06qm",
-          "created_at": "2025-04-30T14:49:14.272Z",
-          "updated_at": "2025-04-30T14:49:14.272Z",
-          "display_at": "2025-04-30T14:49:14.272Z",
-          "affected_components": [
-            {
-              "code": "5psdpd7s2jnn",
-              "name": "Dedicated Servers || Network - SYD",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "5psdpd7s2jnn",
-          "name": "SYD",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:58.484Z",
-          "updated_at": "2025-04-10T19:08:00.501Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-05-15T07:00:00.000Z",
-      "scheduled_until": "2025-05-15T17:00:00.000Z"
     },
     {
       "id": "hcnjwr8ptml6",
@@ -3455,7 +3508,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
