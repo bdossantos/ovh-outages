@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-18T12:06:00.176Z"
+    "updated_at": "2025-05-18T13:06:55.867Z"
   },
   "components": [
     {
@@ -177,7 +177,7 @@
       "name": "BHS",
       "status": "operational",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-05-18T03:47:17.678Z",
+      "updated_at": "2025-05-18T13:06:55.788Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2025-05-13T18:48:01.789Z",
+      "updated_at": "2025-05-18T13:06:55.808Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-05-18T09:11:00.498Z",
+      "updated_at": "2025-05-18T12:57:59.182Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2817,6 +2817,153 @@
   ],
   "incidents": [
     {
+      "id": "cztsg9kjd52f",
+      "name": "[BHS7][Dedicated Servers] - Rack B716A09",
+      "status": "identified",
+      "created_at": "2025-05-18T12:41:13.302Z",
+      "updated_at": "2025-05-18T13:06:55.858Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/z2rkxpmbn8rt",
+      "started_at": "2025-05-18T12:41:13.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rkcnrv6r22cl",
+          "status": "identified",
+          "body": "The issue has been identified, and our teams are currently implementing a fix.\nWe remind you that the impact is: \n<b>Service impact :</b> Public network unavailable\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\n\nWe will continue to keep you up to date with developments and the resolution of the incident.",
+          "incident_id": "cztsg9kjd52f",
+          "created_at": "2025-05-18T13:06:55.854Z",
+          "updated_at": "2025-05-18T13:06:55.854Z",
+          "display_at": "2025-05-18T13:06:55.854Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5xg6cz12kdws",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the Rack B716A09.\nPlease find the details:\n<b>Start time :</b> 18/05/2025 12:26 UTC\n<b>Service impact :</b> Public network unavailable\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "cztsg9kjd52f",
+          "created_at": "2025-05-18T12:41:13.498Z",
+          "updated_at": "2025-05-18T13:06:10.629Z",
+          "display_at": "2025-05-18T12:41:13.000Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-05-18T13:06:55.788Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2025-05-18T13:06:55.808Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "q52bjd0dp71q",
+      "name": "[RBX3][Dedicated Servers] - Rack 46F31",
+      "status": "identified",
+      "created_at": "2025-05-18T12:57:59.147Z",
+      "updated_at": "2025-05-18T12:57:59.359Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mpt1wdgw4wbz",
+      "started_at": "2025-05-18T12:57:59.139Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8gwyp1c9jpsm",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the Rack 46F31.\nPlease find the details:\n<b>Start time :</b> 18/05/2025 12:38 UTC\n<b>Service impact :</b> A significant number of servers in the rack 46F31are no longer responding.\n<b>Root cause :</b> Network equipment malfunction\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "q52bjd0dp71q",
+          "created_at": "2025-05-18T12:57:59.357Z",
+          "updated_at": "2025-05-18T12:57:59.357Z",
+          "display_at": "2025-05-18T12:57:59.357Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-05-18T12:57:59.182Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "2z1r1jxvcch9",
       "name": "[GRA3][Dedicated Servers] - Rack GRA0313B02A incident notification",
       "status": "identified",
@@ -3205,9 +3352,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-18T09:11:00.498Z",
+          "updated_at": "2025-05-18T12:57:59.182Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3421,9 +3568,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-18T09:11:00.498Z",
+          "updated_at": "2025-05-18T12:57:59.182Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3475,9 +3622,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-18T09:11:00.498Z",
+          "updated_at": "2025-05-18T12:57:59.182Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3529,9 +3676,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-18T09:11:00.498Z",
+          "updated_at": "2025-05-18T12:57:59.182Z",
           "position": 5,
           "description": null,
           "showcase": false,
