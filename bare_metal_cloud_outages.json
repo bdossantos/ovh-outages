@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-18T03:21:23.854Z"
+    "updated_at": "2025-05-18T04:01:28.951Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-05-18T03:10:40.949Z",
+      "updated_at": "2025-05-18T03:47:17.678Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1216,9 +1216,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2025-04-30T14:28:37.873Z",
+      "updated_at": "2025-05-18T03:55:38.615Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2817,30 +2817,30 @@
   ],
   "incidents": [
     {
-      "id": "9z513snhgmhm",
-      "name": "[BHS5][Dedicated Servers] - Rack T05B22",
-      "status": "investigating",
-      "created_at": "2025-05-18T03:10:40.905Z",
-      "updated_at": "2025-05-18T03:10:41.319Z",
+      "id": "lwxmbp5t7ydm",
+      "name": "[GRA3][Dedicated Servers] - Rack GRA0316B04A incident notification",
+      "status": "identified",
+      "created_at": "2025-05-18T03:55:38.580Z",
+      "updated_at": "2025-05-18T03:55:38.669Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/6r7ylfn08hkw",
-      "started_at": "2025-05-18T03:10:40.891Z",
+      "shortlink": "https://stspg.io/vtgl33wfmd1w",
+      "started_at": "2025-05-18T03:55:38.573Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "8gjzsqnj9f71",
-          "status": "investigating",
-          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack T05B22.\n\nHere is detail for this incident :\n<b>Start time :</b> 18/05/2025 03:01 UTC\n<b>Impacted Service(s) :</b> Some servers in rack T05B22 are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "9z513snhgmhm",
-          "created_at": "2025-05-18T03:10:41.314Z",
-          "updated_at": "2025-05-18T03:10:41.314Z",
-          "display_at": "2025-05-18T03:10:41.314Z",
+          "id": "6wrfn3dt17gm",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the specific rack.\n\nHere is detail for this incident :\n<b>Start time :</b> 18/05/2025 05:42 UTC\n<b>Impacted Service(s) :</b> Public and private networks are temporarily unavailable for servers in the specified rack.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers in rack GRA0316B04A through public and private networks.\nHowever, customers who enabled LACP (Link Aggregation Control Protocol) are able to access their servers but are facing bandwidth reduction.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "lwxmbp5t7ydm",
+          "created_at": "2025-05-18T03:55:38.667Z",
+          "updated_at": "2025-05-18T03:55:38.667Z",
+          "display_at": "2025-05-18T03:55:38.667Z",
           "affected_components": [
             {
-              "code": "gbwv1h71spbm",
-              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2852,16 +2852,16 @@
       ],
       "components": [
         {
-          "id": "gbwv1h71spbm",
-          "name": "BHS",
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2025-05-18T03:10:40.949Z",
-          "position": 1,
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2025-05-18T03:55:38.615Z",
+          "position": 4,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -2987,9 +2987,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2025-04-30T14:28:37.873Z",
+          "updated_at": "2025-05-18T03:55:38.615Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3347,9 +3347,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2025-04-30T14:28:37.873Z",
+          "updated_at": "2025-05-18T03:55:38.615Z",
           "position": 4,
           "description": null,
           "showcase": false,
