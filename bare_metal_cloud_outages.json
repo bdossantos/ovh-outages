@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-24T23:41:06.465Z"
+    "updated_at": "2025-05-25T01:21:14.580Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1942,9 +1942,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2025-05-23T15:03:35.939Z",
+      "updated_at": "2025-05-25T00:34:38.752Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2817,6 +2817,79 @@
   ],
   "incidents": [
     {
+      "id": "zrwpflp893h4",
+      "name": "[RBX4][Dedicated Servers] - Rack 55A06",
+      "status": "identified",
+      "created_at": "2025-05-25T00:34:38.713Z",
+      "updated_at": "2025-05-25T00:43:12.434Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9f9lw0nbhr5c",
+      "started_at": "2025-05-25T00:34:38.705Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8cyyb6bn5114",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our  offer on the specific rack 55A06.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/05/2025 00:17 UTC\n<b>Impacted Service(s) :</b> Some servers in the specified rack are no longer able to access the public network.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "zrwpflp893h4",
+          "created_at": "2025-05-25T00:43:12.431Z",
+          "updated_at": "2025-05-25T00:43:12.431Z",
+          "display_at": "2025-05-25T00:43:12.431Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "svhmd0m0c45r",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack 55A06. \n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/05/2025 00:17 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "zrwpflp893h4",
+          "created_at": "2025-05-25T00:34:38.814Z",
+          "updated_at": "2025-05-25T00:34:38.814Z",
+          "display_at": "2025-05-25T00:34:38.814Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2025-05-25T00:34:38.752Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "1mn7sc51bnj3",
       "name": "[SBG5][Dedicated Servers] - racks SBG0505B06B/SBG0505B09A incident notification.",
       "status": "identified",
@@ -3306,7 +3379,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
