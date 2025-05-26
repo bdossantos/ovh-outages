@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-26T07:05:35.600Z"
+    "updated_at": "2025-05-26T07:54:39.284Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-05-26T06:28:17.449Z",
+      "updated_at": "2025-05-26T07:49:35.004Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-05-25T14:02:25.707Z",
+      "updated_at": "2025-05-26T07:32:09.185Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2817,30 +2817,50 @@
   ],
   "incidents": [
     {
-      "id": "8b28h7n4s54f",
-      "name": "[GRA4][Dedicated Servers] - Rack GRA0406A03A",
+      "id": "yz0thh1l01yh",
+      "name": "[RBX2][Dedicated Servers] - Rack 23A05",
       "status": "identified",
-      "created_at": "2025-05-26T06:28:17.418Z",
-      "updated_at": "2025-05-26T07:05:35.595Z",
+      "created_at": "2025-05-26T07:32:09.128Z",
+      "updated_at": "2025-05-26T07:54:39.274Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/scgc005pkk85",
-      "started_at": "2025-05-26T06:28:17.000Z",
+      "shortlink": "https://stspg.io/rtxtt21v2xw7",
+      "started_at": "2025-05-26T07:32:09.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "0tv8lcplp800",
+          "id": "gj2nnfl4rdtx",
           "status": "identified",
-          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the Rack GRA0406A03A.\nPlease find the details:\n<b>Start time :</b> 26/05/2025 06:11 UTC\n<b>Service impact :</b> A significant number of servers in the rack GRA0406A03A are no longer responding.\n<b>Root  cause  :</b> This incident was caused by an issue with the electrical equipment.\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
-          "incident_id": "8b28h7n4s54f",
-          "created_at": "2025-05-26T06:28:17.505Z",
-          "updated_at": "2025-05-26T07:05:35.530Z",
-          "display_at": "2025-05-26T06:28:17.000Z",
+          "body": "The issue has been identified, and our teams are currently implementing a fix.\nWe remind you that the impact is: \n<b>Service impact :</b> All servers in the rack 23A05 are no longer responding.\n<b>Root  cause  :</b> This incident was caused by an issue with the electrical equipment.\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\n\nWe will continue to keep you up to date with developments and the resolution of the incident.",
+          "incident_id": "yz0thh1l01yh",
+          "created_at": "2025-05-26T07:54:39.271Z",
+          "updated_at": "2025-05-26T07:54:39.271Z",
+          "display_at": "2025-05-26T07:54:39.271Z",
           "affected_components": [
             {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lfpg9j560pym",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the Rack 23A05.\nPlease find the details:\n<b>Start time :</b> 26/05/2025 06:57 UTC\n<b>Service impact :</b> All servers in the rack 23A05 are no longer responding.\n<b>Root  cause  :</b> This incident was caused by an issue with the electrical equipment.\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "yz0thh1l01yh",
+          "created_at": "2025-05-26T07:32:09.278Z",
+          "updated_at": "2025-05-26T07:35:21.792Z",
+          "display_at": "2025-05-26T07:32:09.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -2852,12 +2872,12 @@
       ],
       "components": [
         {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2025-05-26T06:28:17.449Z",
-          "position": 3,
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-05-26T07:32:09.185Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
@@ -2927,9 +2947,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-25T14:02:25.707Z",
+          "updated_at": "2025-05-26T07:32:09.185Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2982,9 +3002,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-25T14:02:25.707Z",
+          "updated_at": "2025-05-26T07:32:09.185Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3090,9 +3110,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-25T14:02:25.707Z",
+          "updated_at": "2025-05-26T07:32:09.185Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3144,9 +3164,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-05-25T14:02:25.707Z",
+          "updated_at": "2025-05-26T07:32:09.185Z",
           "position": 5,
           "description": null,
           "showcase": false,
