@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-26T02:51:02.351Z"
+    "updated_at": "2025-05-26T06:00:34.636Z"
   },
   "components": [
     {
@@ -1691,72 +1691,43 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "7rr51n3qjx1x",
-      "name": "[EU/CA][Hosted Private Cloud] - Host replacement maintenance notification",
+      "id": "sbz5n61ttm6h",
+      "name": "[RBX2A/B][Hosted Private Cloud] - Veeam Backup Managed Maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-04-29T20:43:33.829Z",
-      "updated_at": "2025-04-29T20:43:33.908Z",
+      "created_at": "2025-05-21T20:46:02.427Z",
+      "updated_at": "2025-05-26T06:00:25.028Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/kcmf5j1n9mk0",
-      "started_at": "2025-04-29T20:43:33.800Z",
+      "shortlink": "https://stspg.io/9c78jfnxy509",
+      "started_at": "2025-05-21T20:46:02.420Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "rwsc9bxq240h",
+          "id": "bg4nvxyrrf0b",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\nThis may temporarily affect the availability of vMotion. \n\n<b>Start time :</b> 26/05/2025 07:00 UTC\n<b>End time :</b> 30/05/2025 16:00 UTC\n<b>Service impact :</b> Concerned hosts will be put in maintenance mode during the operation and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy of our Hosted Private Cloud offer, we will be replacing Hosted Private Cloud's hosts by new ones.\nConcerned customers will receive a notification regarding the replacement of their hosts.\n\nThank you for your understanding.",
-          "incident_id": "7rr51n3qjx1x",
-          "created_at": "2025-04-29T20:43:33.904Z",
-          "updated_at": "2025-04-29T20:43:33.904Z",
-          "display_at": "2025-04-29T20:43:33.904Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "sbz5n61ttm6h",
+          "created_at": "2025-05-26T06:00:24.650Z",
+          "updated_at": "2025-05-26T06:00:24.650Z",
+          "display_at": "2025-05-26T06:00:24.650Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rzffcfdlvcz5",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 26/05/2025 07:00 UTC\n<b>End time :</b>  27/05/2025 15:00 UTC\n<b>Service impact :</b> Backup and restoration will be unavailable during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, our team will carry out maintenance on the Veeam Backup Managed service.",
+          "incident_id": "sbz5n61ttm6h",
+          "created_at": "2025-05-21T20:46:02.497Z",
+          "updated_at": "2025-05-21T20:46:02.497Z",
+          "display_at": "2025-05-21T20:46:02.497Z",
           "affected_components": [
             {
-              "code": "h49h85c2xwcr",
-              "name": "Managed vSphere || RBX - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "yclrgd0gbxwq",
-              "name": "Managed vSphere || LIM - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "4lw2d55nypyj",
-              "name": "Managed vSphere || SBG - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0qcvrryd4tpb",
-              "name": "Managed vSphere || ERI - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "39pr388ptrs9",
-              "name": "Managed vSphere || BHS - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0ld1hfchhyf4",
-              "name": "Managed vSphere || WAW - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "21159ypqs1nc",
-              "name": "Managed vSphere || GRA - Compute",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "g2dbsygs7b4b",
-              "name": "Managed vSphere || YYZ - Compute",
+              "code": "6wt6hm8214pj",
+              "name": "Backup as a Service || Veeam Backup Managed",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -1768,135 +1739,30 @@
       ],
       "components": [
         {
-          "id": "h49h85c2xwcr",
-          "name": "Compute",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:46.224Z",
-          "updated_at": "2025-05-24T08:12:39.675Z",
-          "position": 3,
+          "id": "6wt6hm8214pj",
+          "name": "Backup as a Service || Veeam Backup Managed",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:39.002Z",
+          "updated_at": "2025-04-17T03:23:16.758Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "yclrgd0gbxwq",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:40:10.437Z",
-          "updated_at": "2025-05-23T15:31:48.244Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "n05r15rpb4gy",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "4lw2d55nypyj",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:07.653Z",
-          "updated_at": "2025-05-23T15:31:48.264Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "0qcvrryd4tpb",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:41:58.594Z",
-          "updated_at": "2025-05-23T15:31:48.284Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "kzprfjxpy298",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "39pr388ptrs9",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:42:40.539Z",
-          "updated_at": "2025-05-23T15:31:48.304Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "qb95r65p6tlg",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "0ld1hfchhyf4",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2021-07-21T08:43:34.076Z",
-          "updated_at": "2025-05-23T15:31:48.324Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "wvfty6xbgj2q",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "21159ypqs1nc",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2023-12-19T21:48:48.560Z",
-          "updated_at": "2025-05-23T15:31:48.343Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-12-19",
-          "group_id": "ywsn9j8j34ns",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "g2dbsygs7b4b",
-          "name": "Compute",
-          "status": "operational",
-          "created_at": "2024-03-13T08:59:03.796Z",
-          "updated_at": "2025-05-23T15:31:48.362Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-03-13",
-          "group_id": "4hrz1q7y9dcf",
+          "group_id": null,
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
       "scheduled_for": "2025-05-26T07:00:00.000Z",
-      "scheduled_until": "2025-05-29T16:00:00.000Z"
+      "scheduled_until": "2025-05-27T15:00:00.000Z"
     },
     {
       "id": "98749rvn02hq",
       "name": "[EU/CA][Hosted Private Cloud] - vSphere maintenance notification",
       "status": "scheduled",
       "created_at": "2025-05-21T21:35:25.855Z",
-      "updated_at": "2025-05-22T03:02:43.694Z",
+      "updated_at": "2025-05-26T06:00:24.320Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1904,6 +1770,19 @@
       "started_at": "2025-05-21T21:35:25.819Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "f708sfjbr3zj",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "98749rvn02hq",
+          "created_at": "2025-05-26T06:00:24.085Z",
+          "updated_at": "2025-05-26T06:00:24.085Z",
+          "display_at": "2025-05-26T06:00:24.085Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ww3mv2rkpn3t",
           "status": "scheduled",
@@ -2093,30 +1972,85 @@
       "scheduled_until": "2025-05-28T16:00:00.000Z"
     },
     {
-      "id": "sbz5n61ttm6h",
-      "name": "[RBX2A/B][Hosted Private Cloud] - Veeam Backup Managed Maintenance notification",
+      "id": "7rr51n3qjx1x",
+      "name": "[EU/CA][Hosted Private Cloud] - Host replacement maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-05-21T20:46:02.427Z",
-      "updated_at": "2025-05-21T20:46:02.503Z",
+      "created_at": "2025-04-29T20:43:33.829Z",
+      "updated_at": "2025-05-26T06:00:34.628Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/9c78jfnxy509",
-      "started_at": "2025-05-21T20:46:02.420Z",
+      "shortlink": "https://stspg.io/kcmf5j1n9mk0",
+      "started_at": "2025-04-29T20:43:33.800Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "rzffcfdlvcz5",
+          "id": "cnllg49xscwt",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our infrastructure.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 26/05/2025 07:00 UTC\n<b>End time :</b>  27/05/2025 15:00 UTC\n<b>Service impact :</b> Backup and restoration will be unavailable during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, our team will carry out maintenance on the Veeam Backup Managed service.",
-          "incident_id": "sbz5n61ttm6h",
-          "created_at": "2025-05-21T20:46:02.497Z",
-          "updated_at": "2025-05-21T20:46:02.497Z",
-          "display_at": "2025-05-21T20:46:02.497Z",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7rr51n3qjx1x",
+          "created_at": "2025-05-26T06:00:34.399Z",
+          "updated_at": "2025-05-26T06:00:34.399Z",
+          "display_at": "2025-05-26T06:00:34.399Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rwsc9bxq240h",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\nThis may temporarily affect the availability of vMotion. \n\n<b>Start time :</b> 26/05/2025 07:00 UTC\n<b>End time :</b> 30/05/2025 16:00 UTC\n<b>Service impact :</b> Concerned hosts will be put in maintenance mode during the operation and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy of our Hosted Private Cloud offer, we will be replacing Hosted Private Cloud's hosts by new ones.\nConcerned customers will receive a notification regarding the replacement of their hosts.\n\nThank you for your understanding.",
+          "incident_id": "7rr51n3qjx1x",
+          "created_at": "2025-04-29T20:43:33.904Z",
+          "updated_at": "2025-04-29T20:43:33.904Z",
+          "display_at": "2025-04-29T20:43:33.904Z",
           "affected_components": [
             {
-              "code": "6wt6hm8214pj",
-              "name": "Backup as a Service || Veeam Backup Managed",
+              "code": "h49h85c2xwcr",
+              "name": "Managed vSphere || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "yclrgd0gbxwq",
+              "name": "Managed vSphere || LIM - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "4lw2d55nypyj",
+              "name": "Managed vSphere || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0qcvrryd4tpb",
+              "name": "Managed vSphere || ERI - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "39pr388ptrs9",
+              "name": "Managed vSphere || BHS - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "0ld1hfchhyf4",
+              "name": "Managed vSphere || WAW - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "21159ypqs1nc",
+              "name": "Managed vSphere || GRA - Compute",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "g2dbsygs7b4b",
+              "name": "Managed vSphere || YYZ - Compute",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -2128,30 +2062,135 @@
       ],
       "components": [
         {
-          "id": "6wt6hm8214pj",
-          "name": "Backup as a Service || Veeam Backup Managed",
-          "status": "operational",
-          "created_at": "2021-07-21T08:43:39.002Z",
-          "updated_at": "2025-04-17T03:23:16.758Z",
-          "position": 2,
+          "id": "h49h85c2xwcr",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.224Z",
+          "updated_at": "2025-05-24T08:12:39.675Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-21",
-          "group_id": null,
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "yclrgd0gbxwq",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:40:10.437Z",
+          "updated_at": "2025-05-23T15:31:48.244Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "n05r15rpb4gy",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2025-05-23T15:31:48.264Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0qcvrryd4tpb",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:41:58.594Z",
+          "updated_at": "2025-05-23T15:31:48.284Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "39pr388ptrs9",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:42:40.539Z",
+          "updated_at": "2025-05-23T15:31:48.304Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "qb95r65p6tlg",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "0ld1hfchhyf4",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:34.076Z",
+          "updated_at": "2025-05-23T15:31:48.324Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "wvfty6xbgj2q",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "21159ypqs1nc",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2023-12-19T21:48:48.560Z",
+          "updated_at": "2025-05-23T15:31:48.343Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-12-19",
+          "group_id": "ywsn9j8j34ns",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g2dbsygs7b4b",
+          "name": "Compute",
+          "status": "operational",
+          "created_at": "2024-03-13T08:59:03.796Z",
+          "updated_at": "2025-05-23T15:31:48.362Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "4hrz1q7y9dcf",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
       "scheduled_for": "2025-05-26T07:00:00.000Z",
-      "scheduled_until": "2025-05-27T15:00:00.000Z"
+      "scheduled_until": "2025-05-29T16:00:00.000Z"
     },
     {
       "id": "qqpqvqxcfjv6",
       "name": "[EU/CA][Hosted Private Cloud] - Zerto maintenance notification",
       "status": "scheduled",
       "created_at": "2025-05-21T04:30:52.353Z",
-      "updated_at": "2025-05-21T04:30:52.414Z",
+      "updated_at": "2025-05-26T06:00:29.609Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2159,6 +2198,19 @@
       "started_at": "2025-05-21T04:30:52.348Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "467tj924tq1m",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "qqpqvqxcfjv6",
+          "created_at": "2025-05-26T06:00:29.449Z",
+          "updated_at": "2025-05-26T06:00:29.449Z",
+          "display_at": "2025-05-26T06:00:29.449Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "dbdhfk5r0trp",
           "status": "scheduled",
