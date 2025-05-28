@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-28T15:20:39.113Z"
+    "updated_at": "2025-05-28T17:03:05.126Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-05-28T08:08:28.621Z",
+      "updated_at": "2025-05-28T17:03:05.061Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1162,7 +1162,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j292y56ckyfq",
+      "name": "[LIM/FRA][Network] - Backbone incident notification",
+      "status": "investigating",
+      "created_at": "2025-05-28T17:03:05.028Z",
+      "updated_at": "2025-05-28T17:03:05.123Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0hx0ql9ywgzt",
+      "started_at": "2025-05-28T17:03:05.022Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "95j0jff9ywzf",
+          "status": "investigating",
+          "body": "An incident is in progress on our Network in LIM/FRA, customers in the impacted zone may face some difficulties. Please find the details:\n<b>Start time :</b> 28/07/2025 16:50 UTC\n<b>Service impact :</b> Somes latency and loss is being observed on the Backbone of Limburg and Frankfurt.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "j292y56ckyfq",
+          "created_at": "2025-05-28T17:03:05.120Z",
+          "updated_at": "2025-05-28T17:03:05.120Z",
+          "display_at": "2025-05-28T17:03:05.120Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-05-28T17:03:05.061Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "4lfld96l05vd",
@@ -3176,7 +3230,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
