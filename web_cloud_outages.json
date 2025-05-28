@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-28T11:51:06.036Z"
+    "updated_at": "2025-05-28T12:56:18.756Z"
   },
   "components": [
     {
@@ -725,9 +725,9 @@
     {
       "id": "qhkmp4s3jghc",
       "name": "Mailbox Access",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:31.586Z",
-      "updated_at": "2025-05-28T11:06:25.920Z",
+      "updated_at": "2025-05-28T12:44:54.924Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1018,7 +1018,7 @@
     {
       "id": "k04vzm9j7ytt",
       "name": "Collaborative solutions || Hosted Exchange",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:33.947Z",
       "updated_at": "2023-05-16T12:09:06.678Z",
       "position": 4,
@@ -1410,9 +1410,9 @@
     {
       "id": "bt78b19qf30s",
       "name": "Webmail",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:33.386Z",
-      "updated_at": "2025-05-28T11:06:25.970Z",
+      "updated_at": "2025-05-28T12:44:54.942Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2880,17 +2880,69 @@
   "incidents": [
     {
       "id": "9sf6m98ybk9t",
-      "name": "[RBX/GRA/SBG][Collaborative Solution] - Mailbox access incident notification ex4.mail.ovh.net.",
-      "status": "monitoring",
+      "name": "[RBX/GRA/SBG][Collaborative Solution] -Incident ex4.mail.ovh.net reception.",
+      "status": "identified",
       "created_at": "2025-05-28T10:55:27.599Z",
-      "updated_at": "2025-05-28T11:06:26.028Z",
+      "updated_at": "2025-05-28T12:56:18.745Z",
       "monitoring_at": "2025-05-28T11:06:26.009Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/7l80kv4phd1l",
-      "started_at": "2025-05-28T10:55:27.591Z",
+      "started_at": "2025-05-28T10:55:27.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "vjjczz04scgh",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "9sf6m98ybk9t",
+          "created_at": "2025-05-28T12:44:54.988Z",
+          "updated_at": "2025-05-28T12:44:54.988Z",
+          "display_at": "2025-05-28T12:44:54.988Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "bt78b19qf30s",
+              "name": "Collaborative solutions || Hosted Exchange - Webmail",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "l99mxsp6crzx",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "9sf6m98ybk9t",
+          "created_at": "2025-05-28T12:44:36.036Z",
+          "updated_at": "2025-05-28T12:44:36.036Z",
+          "display_at": "2025-05-28T12:44:36.036Z",
+          "affected_components": [
+            {
+              "code": "qhkmp4s3jghc",
+              "name": "Collaborative solutions || Hosted Exchange - Mailbox Access",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bt78b19qf30s",
+              "name": "Collaborative solutions || Hosted Exchange - Webmail",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "fgr2rqykw3mw",
           "status": "monitoring",
@@ -2920,11 +2972,11 @@
         {
           "id": "80gth5bv05hh",
           "status": "identified",
-          "body": "We have determined the origin of the incident affecting our  Collaborative solution offer, in the ex4.mail.ovh.net on receive part.    \n\nHere are some supplementary details :\n<b>Start time :</b> 28/05/2025 10:12 UTC\t\t\t\t\n<b>Impacted Service(s) :</b> Mailbox access authentication are temporarily unreachable.\n<b>Customers Impact :</b> Customers cannot access mailbox login credentials\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "We have determined the origin of the incident affecting our  Collaborative solution offer, in the ex4.mail.ovh.net on receive part.    \n\nHere are some supplementary details :\n<b>Start time :</b> 27/05/2025 18:00 UTC\t\t\t\t\n<b>Impacted Service(s) :</b> Mailbox reception is temporarily unreachable.\n<b>Customers Impact :</b> Customers cannot receive mails from outside.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "9sf6m98ybk9t",
           "created_at": "2025-05-28T10:58:55.454Z",
-          "updated_at": "2025-05-28T10:58:55.454Z",
-          "display_at": "2025-05-28T10:58:55.454Z",
+          "updated_at": "2025-05-28T12:56:18.741Z",
+          "display_at": "2025-05-28T10:58:55.000Z",
           "affected_components": [
             {
               "code": "qhkmp4s3jghc",
@@ -2946,11 +2998,11 @@
         {
           "id": "v63310m5lj2k",
           "status": "investigating",
-          "body": "We are currently experiencing an event affecting our Collaborative solution offer, in the ex4.mail.ovh.net on receive part.\t\t\t\n\t\n<b>Start time :</b> 28/05/2025 10:12 UTC\t\t\t\t\n\t\t\t\t\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\t\t\t\t\n\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "We are currently experiencing an event affecting our Collaborative solution offer, in the ex4.mail.ovh.net on receive part.\t\t\t\n\t\n<b>Start time :</b> 27/05/2025 18:00 UTC\t\t\t\t\n\t\t\t\t\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\t\t\t\t\n\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "9sf6m98ybk9t",
           "created_at": "2025-05-28T10:55:27.883Z",
-          "updated_at": "2025-05-28T10:55:27.883Z",
-          "display_at": "2025-05-28T10:55:27.883Z",
+          "updated_at": "2025-05-28T12:54:30.475Z",
+          "display_at": "2025-05-28T10:55:27.000Z",
           "affected_components": [
             {
               "code": "qhkmp4s3jghc",
@@ -2974,9 +3026,9 @@
         {
           "id": "qhkmp4s3jghc",
           "name": "Mailbox Access",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-06-30T12:19:31.586Z",
-          "updated_at": "2025-05-28T11:06:25.920Z",
+          "updated_at": "2025-05-28T12:44:54.924Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2989,9 +3041,9 @@
         {
           "id": "bt78b19qf30s",
           "name": "Webmail",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-06-30T12:19:33.386Z",
-          "updated_at": "2025-05-28T11:06:25.970Z",
+          "updated_at": "2025-05-28T12:44:54.942Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -3325,7 +3377,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
