@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-29T07:00:38.074Z"
+    "updated_at": "2025-05-29T08:00:21.525Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-05-28T18:36:50.962Z",
+      "updated_at": "2025-05-29T08:00:21.449Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2912,73 +2912,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "crt0t98glqsy",
-      "name": "[BHS1][Dedicated Servers] - Rack T01B52 Maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-05-22T22:14:14.906Z",
-      "updated_at": "2025-05-29T07:00:38.068Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/6lg0cdsv11cs",
-      "started_at": "2025-05-22T22:14:14.898Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "g82b1fsx4f6z",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "crt0t98glqsy",
-          "created_at": "2025-05-29T07:00:37.847Z",
-          "updated_at": "2025-05-29T07:00:37.847Z",
-          "display_at": "2025-05-29T07:00:37.847Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3m62b80cth4l",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Dedicated Servers offering in the specific rack T01B52.\n\n<b>Start time :</b> 29/05/2025 08:00 UTC\n<b>End time :</b> 29/05/2025 09:00 UTC\n<b>Service impact :</b> Public network will be unreachable on rack T01B52\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on multiple network equipment to improve general performance.\n\nThank you for your understanding.",
-          "incident_id": "crt0t98glqsy",
-          "created_at": "2025-05-22T22:14:14.969Z",
-          "updated_at": "2025-05-22T22:14:14.969Z",
-          "display_at": "2025-05-22T22:14:14.969Z",
-          "affected_components": [
-            {
-              "code": "gbwv1h71spbm",
-              "name": "Dedicated Servers || Global Infrastructure - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gbwv1h71spbm",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2025-05-28T18:36:50.962Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-05-29T08:00:00.000Z",
-      "scheduled_until": "2025-05-29T09:00:00.000Z"
-    },
-    {
       "id": "6zkvpx4vs1sl",
       "name": "[RBX8][Cooling System] - Rack R807R19",
       "status": "scheduled",
@@ -3588,6 +3521,93 @@
       ],
       "scheduled_for": "2025-06-23T09:00:00.000Z",
       "scheduled_until": "2025-06-23T13:00:00.000Z"
+    },
+    {
+      "id": "crt0t98glqsy",
+      "name": "[BHS1][Dedicated Servers] - Rack T01B52 Maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-05-22T22:14:14.906Z",
+      "updated_at": "2025-05-29T08:00:21.516Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/6lg0cdsv11cs",
+      "started_at": "2025-05-22T22:14:14.898Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "7dfgy59krgsn",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "crt0t98glqsy",
+          "created_at": "2025-05-29T08:00:21.513Z",
+          "updated_at": "2025-05-29T08:00:21.513Z",
+          "display_at": "2025-05-29T08:00:21.513Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "g82b1fsx4f6z",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "crt0t98glqsy",
+          "created_at": "2025-05-29T07:00:37.847Z",
+          "updated_at": "2025-05-29T07:00:37.847Z",
+          "display_at": "2025-05-29T07:00:37.847Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3m62b80cth4l",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Dedicated Servers offering in the specific rack T01B52.\n\n<b>Start time :</b> 29/05/2025 08:00 UTC\n<b>End time :</b> 29/05/2025 09:00 UTC\n<b>Service impact :</b> Public network will be unreachable on rack T01B52\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on multiple network equipment to improve general performance.\n\nThank you for your understanding.",
+          "incident_id": "crt0t98glqsy",
+          "created_at": "2025-05-22T22:14:14.969Z",
+          "updated_at": "2025-05-22T22:14:14.969Z",
+          "display_at": "2025-05-22T22:14:14.969Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-05-29T08:00:21.449Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-05-29T08:00:00.000Z",
+      "scheduled_until": "2025-05-29T09:00:00.000Z"
     },
     {
       "id": "4r4xz5hx5n1s",
