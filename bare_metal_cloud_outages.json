@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-05-30T13:05:21.525Z"
+    "updated_at": "2025-05-30T13:57:22.740Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-05-27T04:18:53.891Z",
+      "updated_at": "2025-05-30T13:48:41.337Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2816,6 +2816,92 @@
     }
   ],
   "incidents": [
+    {
+      "id": "tl4pn1khv034",
+      "name": "[GRA][Dedicated Servers] - Racks G266A17/G266A18 incident notification.",
+      "status": "identified",
+      "created_at": "2025-05-30T13:46:35.864Z",
+      "updated_at": "2025-05-30T13:57:22.736Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/6936006q1627",
+      "started_at": "2025-05-30T13:46:35.857Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "5yphd83bkjqc",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicted Servers offer in the specific racks G266A17 and G266A18.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/05/2025 12:14 UTC\t\t\t\t\n<b>Impacted Service(s) :</b> All the servers in the rack G266A17  are unreachable.\nIn the rack G266A18, most of servers are operational again.\n<b>Customers impact :</b> All the customers in the rack G266A17 cannot access their servers.\nMost of customers can access now their servers in the rack G266A18.\n<b>Root Cause :</b> It is due to a malfunction on a hardware.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tl4pn1khv034",
+          "created_at": "2025-05-30T13:56:11.004Z",
+          "updated_at": "2025-05-30T13:56:29.004Z",
+          "display_at": "2025-05-30T13:56:11.000Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xbf1j5qkk2pg",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "tl4pn1khv034",
+          "created_at": "2025-05-30T13:48:41.399Z",
+          "updated_at": "2025-05-30T13:48:41.399Z",
+          "display_at": "2025-05-30T13:48:41.399Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "dpnw6r15k3pz",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicted Servers offer in the specific racks G266A17 and G266A18\n<b>Start time :</b> 30/05/2025 12:14 UTC\t\t\t\t\n\t\t\t\t\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\t\t\t\t\n\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tl4pn1khv034",
+          "created_at": "2025-05-30T13:46:35.910Z",
+          "updated_at": "2025-05-30T13:46:35.910Z",
+          "display_at": "2025-05-30T13:46:35.910Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2025-05-30T13:48:41.337Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "1nncg8wkn0xt",
       "name": "[GRA6/8][Virtual Private Servers] - rack G266A17 incident nofication.",
