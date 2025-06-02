@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-02T06:00:21.843Z"
+    "updated_at": "2025-06-02T07:00:21.631Z"
   },
   "components": [
     {
@@ -5021,9 +5021,9 @@
     {
       "id": "0bqncc3zh3c6",
       "name": "SBG7",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-05-04T10:43:15.178Z",
-      "updated_at": "2024-10-01T13:33:02.644Z",
+      "updated_at": "2025-06-02T07:00:21.417Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -7775,7 +7775,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2025-04-18T13:47:32.983Z",
       "position": 52,
@@ -8869,73 +8869,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "bbszw2d1vwtc",
-      "name": "[SBG7][Storage] - Block storage maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-04-30T18:56:39.570Z",
-      "updated_at": "2025-06-02T06:00:21.826Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/g45h42cnk5gp",
-      "started_at": "2025-04-30T18:56:39.562Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "zgxr3nmrv31r",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "bbszw2d1vwtc",
-          "created_at": "2025-06-02T06:00:21.296Z",
-          "updated_at": "2025-06-02T06:00:21.296Z",
-          "display_at": "2025-06-02T06:00:21.296Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qqc49yrx7fwt",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Storage offer. \n\n<b>Start time :</b> 02/06/2025 07:00 UTC \n<b>End time :</b> 03/06/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance\n<b>Service improvement  :</b> As part of our continuous improvement policy, we will upgrade major version of Ceph software to next stable release.\n\nThank you for your understanding.",
-          "incident_id": "bbszw2d1vwtc",
-          "created_at": "2025-04-30T18:56:39.653Z",
-          "updated_at": "2025-04-30T18:56:39.653Z",
-          "display_at": "2025-04-30T18:56:39.653Z",
-          "affected_components": [
-            {
-              "code": "0bqncc3zh3c6",
-              "name": "Storage || Block storage - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "0bqncc3zh3c6",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-05-04T10:43:15.178Z",
-          "updated_at": "2024-10-01T13:33:02.644Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-02T07:00:00.000Z",
-      "scheduled_until": "2025-06-03T16:00:00.000Z"
-    },
-    {
       "id": "gcx540l42yj3",
       "name": "[US][Public Cloud] - OpenStack Keystone maintenance notification",
       "status": "scheduled",
@@ -9966,6 +9899,93 @@
       ],
       "scheduled_for": "2025-06-30T07:00:00.000Z",
       "scheduled_until": "2025-07-01T16:00:00.000Z"
+    },
+    {
+      "id": "bbszw2d1vwtc",
+      "name": "[SBG7][Storage] - Block storage maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-04-30T18:56:39.570Z",
+      "updated_at": "2025-06-02T07:00:21.615Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g45h42cnk5gp",
+      "started_at": "2025-04-30T18:56:39.562Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "8t6kylhx0t1q",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "bbszw2d1vwtc",
+          "created_at": "2025-06-02T07:00:21.611Z",
+          "updated_at": "2025-06-02T07:00:21.611Z",
+          "display_at": "2025-06-02T07:00:21.611Z",
+          "affected_components": [
+            {
+              "code": "0bqncc3zh3c6",
+              "name": "Storage || Block storage - SBG7",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zgxr3nmrv31r",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "bbszw2d1vwtc",
+          "created_at": "2025-06-02T06:00:21.296Z",
+          "updated_at": "2025-06-02T06:00:21.296Z",
+          "display_at": "2025-06-02T06:00:21.296Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qqc49yrx7fwt",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Storage offer. \n\n<b>Start time :</b> 02/06/2025 07:00 UTC \n<b>End time :</b> 03/06/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance\n<b>Service improvement  :</b> As part of our continuous improvement policy, we will upgrade major version of Ceph software to next stable release.\n\nThank you for your understanding.",
+          "incident_id": "bbszw2d1vwtc",
+          "created_at": "2025-04-30T18:56:39.653Z",
+          "updated_at": "2025-04-30T18:56:39.653Z",
+          "display_at": "2025-04-30T18:56:39.653Z",
+          "affected_components": [
+            {
+              "code": "0bqncc3zh3c6",
+              "name": "Storage || Block storage - SBG7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0bqncc3zh3c6",
+          "name": "SBG7",
+          "status": "under_maintenance",
+          "created_at": "2022-05-04T10:43:15.178Z",
+          "updated_at": "2025-06-02T07:00:21.417Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-02T07:00:00.000Z",
+      "scheduled_until": "2025-06-03T16:00:00.000Z"
     }
   ],
   "status": {
