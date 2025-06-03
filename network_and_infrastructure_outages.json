@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-03T11:57:11.294Z"
+    "updated_at": "2025-06-03T13:10:31.791Z"
   },
   "components": [
     {
@@ -759,9 +759,9 @@
     {
       "id": "02w2qqv00ll9",
       "name": "RBX7",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:20.034Z",
-      "updated_at": "2024-11-22T01:30:58.200Z",
+      "updated_at": "2025-06-03T13:10:31.736Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -819,7 +819,7 @@
     {
       "id": "zllgrccdn4nk",
       "name": "Infrastructure || RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-11-10T14:20:21.603Z",
       "updated_at": "2024-11-13T16:53:55.726Z",
       "position": 8,
@@ -1162,7 +1162,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "h705fk6ggvq5",
+      "name": "[RBX7][Infrastructure] - Rooms R709 / R710",
+      "status": "identified",
+      "created_at": "2025-06-03T13:10:31.695Z",
+      "updated_at": "2025-06-03T13:10:31.788Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/lghd59wrs6l9",
+      "started_at": "2025-06-03T13:10:31.688Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "qdh4f47gtxxm",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our cooling infrastructure in the rooms R709 and R710.\n\nHere are some supplementary details :\n<b>Start time :</b> 03/06/2025 12:16 UTC\n<b>Impacted Service(s) :</b> Our cooling system is in a degraded state for rooms R709 / R710.\n<b>Customers Impact :</b> Some servers might experience a temporary drop in performance due to a potential issue with the cooling system in the specified rooms.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "h705fk6ggvq5",
+          "created_at": "2025-06-03T13:10:31.786Z",
+          "updated_at": "2025-06-03T13:10:31.786Z",
+          "display_at": "2025-06-03T13:10:31.786Z",
+          "affected_components": [
+            {
+              "code": "02w2qqv00ll9",
+              "name": "Infrastructure || RBX - RBX7",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "02w2qqv00ll9",
+          "name": "RBX7",
+          "status": "degraded_performance",
+          "created_at": "2021-11-10T14:20:20.034Z",
+          "updated_at": "2025-06-03T13:10:31.736Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "fsdm57wv8c0n",
@@ -1230,6 +1284,60 @@
       ],
       "scheduled_for": "2025-06-03T06:00:00.000Z",
       "scheduled_until": "2025-06-03T15:00:00.000Z"
+    },
+    {
+      "id": "w83n2n3d4mn8",
+      "name": "[AMS][Backbone] - Equipment maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-06-03T12:38:33.559Z",
+      "updated_at": "2025-06-03T12:38:33.629Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/sw1t12x63y4x",
+      "started_at": "2025-06-03T12:38:33.554Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "8nzpnp5xr2mg",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backbone offer in Amsterdam.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 03/06/2025 20:00 UTC\n<b>End time :</b> 04/06/2025 03:30 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on a network equipment.\n\nThank you for your understanding.",
+          "incident_id": "w83n2n3d4mn8",
+          "created_at": "2025-06-03T12:38:33.626Z",
+          "updated_at": "2025-06-03T12:38:33.626Z",
+          "display_at": "2025-06-03T12:38:33.626Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "operational",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-06-03T11:00:24.972Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-03T20:00:00.000Z",
+      "scheduled_until": "2025-06-04T03:30:00.000Z"
     },
     {
       "id": "6hdtkp4wdqlv",
@@ -3286,7 +3394,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
