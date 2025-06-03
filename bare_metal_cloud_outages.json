@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-03T12:54:37.591Z"
+    "updated_at": "2025-06-03T13:43:49.813Z"
   },
   "components": [
     {
@@ -248,9 +248,9 @@
     {
       "id": "qcwk8kn06rpl",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:07.646Z",
-      "updated_at": "2023-09-12T12:16:20.444Z",
+      "updated_at": "2025-06-03T13:43:49.756Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2524,7 +2524,7 @@
     {
       "id": "7nxs1wy28gc7",
       "name": "Storage and Backups || Backup Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:11.420Z",
       "updated_at": "2024-09-10T06:16:11.255Z",
       "position": 14,
@@ -2817,6 +2817,59 @@
   ],
   "incidents": [
     {
+      "id": "8mdh84xcgzxy",
+      "name": "[RBX][Storage and Backups] - Backup Storage incident notification",
+      "status": "identified",
+      "created_at": "2025-06-03T13:43:49.710Z",
+      "updated_at": "2025-06-03T13:43:49.810Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8lssh7m3wns8",
+      "started_at": "2025-06-03T13:43:49.702Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "52kvy3nfvwfh",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Storage and Backups offer on RBX.\n\nHere are some supplementary details :\n<b>Start time :</b> 03/06/2025 12:16 UTC\n<b>Impacted Service(s) :</b> Some Backup Storage on RBX are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their data located in the specified zone.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "8mdh84xcgzxy",
+          "created_at": "2025-06-03T13:43:49.807Z",
+          "updated_at": "2025-06-03T13:43:49.807Z",
+          "display_at": "2025-06-03T13:43:49.807Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2025-06-03T13:43:49.756Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "wnkvs20y94wp",
       "name": "[GRA3][Dedicated Servers] - Racks GRA0316A04A / GRA0316A04B",
       "status": "identified",
@@ -2911,79 +2964,6 @@
           "created_at": "2021-07-09T07:33:24.688Z",
           "updated_at": "2025-06-03T12:54:37.508Z",
           "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "j0r010jkgb9y",
-      "name": "[SBG5][Dedicated Servers] - Rack SBG0502B02B",
-      "status": "identified",
-      "created_at": "2025-06-03T09:46:27.842Z",
-      "updated_at": "2025-06-03T10:24:15.278Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/vlm04h6hwktb",
-      "started_at": "2025-06-03T09:46:27.835Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "vk56fl3ygks8",
-          "status": "identified",
-          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on rack SBG0502B02B in SBG5.\n\nHere are some supplementary details :\n<b>Start time :</b> 03/06/2025 07:54 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are currently unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by the ongoing maintenance https://network.status-ovhcloud.com/incidents/fsdm57wv8c0n.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "j0r010jkgb9y",
-          "created_at": "2025-06-03T10:24:15.275Z",
-          "updated_at": "2025-06-03T10:24:15.275Z",
-          "display_at": "2025-06-03T10:24:15.275Z",
-          "affected_components": [
-            {
-              "code": "6cv1pzgk8v1n",
-              "name": "Dedicated Servers || Global Infrastructure - SBG",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7p90zvtmr97d",
-          "status": "investigating",
-          "body": "We are currently experiencing an event affecting our Dedicated Servers offer on rack SBG0502B02B in SBG5\n<b>Start time :</b> 03/06/2025 07:54 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "j0r010jkgb9y",
-          "created_at": "2025-06-03T09:46:27.900Z",
-          "updated_at": "2025-06-03T09:46:27.900Z",
-          "display_at": "2025-06-03T09:46:27.900Z",
-          "affected_components": [
-            {
-              "code": "6cv1pzgk8v1n",
-              "name": "Dedicated Servers || Global Infrastructure - SBG",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "6cv1pzgk8v1n",
-          "name": "SBG",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:25.618Z",
-          "updated_at": "2025-05-26T16:12:21.459Z",
-          "position": 6,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
