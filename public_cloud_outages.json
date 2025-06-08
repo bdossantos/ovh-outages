@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-08T18:01:16.716Z"
+    "updated_at": "2025-06-08T23:00:59.131Z"
   },
   "components": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "y7fg5g64zq46",
       "name": "BHS5",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:24.031Z",
-      "updated_at": "2025-03-12T23:14:14.833Z",
+      "updated_at": "2025-06-08T22:57:33.944Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1994,9 +1994,9 @@
     {
       "id": "y9679xqf81gv",
       "name": "GRA7",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:19.672Z",
-      "updated_at": "2025-05-30T16:44:45.005Z",
+      "updated_at": "2025-06-08T22:57:33.967Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3237,9 +3237,9 @@
     {
       "id": "lx3sbpqcn3q5",
       "name": "GRA11",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-01-24T14:39:11.288Z",
-      "updated_at": "2025-05-30T16:44:45.071Z",
+      "updated_at": "2025-06-08T22:57:33.985Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -4564,9 +4564,9 @@
     {
       "id": "pj4hrqx6f6km",
       "name": "UK1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-04T10:30:35.072Z",
-      "updated_at": "2025-04-14T14:34:47.200Z",
+      "updated_at": "2025-06-08T22:57:34.003Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -6101,7 +6101,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-04-18T13:47:32.627Z",
       "position": 19,
@@ -8024,7 +8024,154 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "81hdgy823r6l",
+      "name": "[GRA/BHS/UK][Containers & Orchestration] - Managed Kubernetes incident notification",
+      "status": "investigating",
+      "created_at": "2025-06-08T22:57:33.897Z",
+      "updated_at": "2025-06-08T23:00:59.123Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/zn76nfmllq6p",
+      "started_at": "2025-06-08T22:57:33.884Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "gz2rv21587lb",
+          "status": "investigating",
+          "body": "An incident is in progress on our Containers & Orchestration in GRA, BHS and UK, customers in the impacted zone may face some difficulties. Please find the details:\n\n<b>Start time :</b> 09/06/2025 22:23 UTC \n<b>Service impact :</b> On Managed kubernetes service, new nodes will not be created and deleted.\nNo impact for Public Cloud Loadbalancers.\n<b>Ongoing actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "incident_id": "81hdgy823r6l",
+          "created_at": "2025-06-08T22:57:34.069Z",
+          "updated_at": "2025-06-08T23:00:59.119Z",
+          "display_at": "2025-06-08T22:57:34.000Z",
+          "affected_components": [
+            {
+              "code": "y7fg5g64zq46",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - BHS5",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "y7fg5g64zq46",
+          "name": "BHS5",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:34:24.031Z",
+          "updated_at": "2025-06-08T22:57:33.944Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y9679xqf81gv",
+          "name": "GRA7",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:34:19.672Z",
+          "updated_at": "2025-06-08T22:57:33.967Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "degraded_performance",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2025-06-08T22:57:33.985Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "pj4hrqx6f6km",
+          "name": "UK1",
+          "status": "degraded_performance",
+          "created_at": "2022-05-04T10:30:35.072Z",
+          "updated_at": "2025-06-08T22:57:34.003Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "ls5kh8rlnym8",
+      "name": "[Global][Public Cloud] - SSL Incident notification",
+      "status": "investigating",
+      "created_at": "2025-06-08T22:51:56.282Z",
+      "updated_at": "2025-06-08T22:51:56.345Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/jc4sp9wkw82s",
+      "started_at": "2025-06-08T22:51:56.275Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1cym823ql4yj",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Public Cloud offering.\n\nHere is detail for this incident :\n<b>Start time :</b> 09/06/2025 22:23 UTC\n<b>Impacted Service(s) :</b> Customers may have SSL error 500.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ls5kh8rlnym8",
+          "created_at": "2025-06-08T22:51:56.342Z",
+          "updated_at": "2025-06-08T22:51:56.342Z",
+          "display_at": "2025-06-08T22:51:56.342Z",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "9jr3cvmxv9xh",
@@ -9989,9 +10136,9 @@
         {
           "id": "y7fg5g64zq46",
           "name": "BHS5",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:34:24.031Z",
-          "updated_at": "2025-03-12T23:14:14.833Z",
+          "updated_at": "2025-06-08T22:57:33.944Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -10034,9 +10181,9 @@
         {
           "id": "y9679xqf81gv",
           "name": "GRA7",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:34:19.672Z",
-          "updated_at": "2025-05-30T16:44:45.005Z",
+          "updated_at": "2025-06-08T22:57:33.967Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -10064,9 +10211,9 @@
         {
           "id": "lx3sbpqcn3q5",
           "name": "GRA11",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2024-01-24T14:39:11.288Z",
-          "updated_at": "2025-05-30T16:44:45.071Z",
+          "updated_at": "2025-06-08T22:57:33.985Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -10139,9 +10286,9 @@
         {
           "id": "pj4hrqx6f6km",
           "name": "UK1",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-04T10:30:35.072Z",
-          "updated_at": "2025-04-14T14:34:47.200Z",
+          "updated_at": "2025-06-08T22:57:34.003Z",
           "position": 11,
           "description": null,
           "showcase": false,
@@ -10241,7 +10388,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
