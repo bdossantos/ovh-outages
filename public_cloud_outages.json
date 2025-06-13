@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-13T04:06:10.080Z"
+    "updated_at": "2025-06-13T10:20:34.247Z"
   },
   "components": [
     {
@@ -310,9 +310,9 @@
     {
       "id": "j60wbjr53lsb",
       "name": "BHS",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:28.528Z",
-      "updated_at": "2025-06-03T15:42:12.775Z",
+      "updated_at": "2025-06-13T10:17:26.163Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1019,9 +1019,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2025-06-03T15:42:12.797Z",
+      "updated_at": "2025-06-13T10:17:26.188Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2647,9 +2647,9 @@
     {
       "id": "2pk5hxxqkq21",
       "name": "SBG",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:01.981Z",
-      "updated_at": "2025-06-03T15:42:12.851Z",
+      "updated_at": "2025-06-13T10:17:26.209Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -5524,9 +5524,9 @@
     {
       "id": "rtf74dt95spd",
       "name": "EU-WEST-PAR-A",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-03-03T10:40:54.721Z",
-      "updated_at": "2025-06-08T10:04:11.642Z",
+      "updated_at": "2025-06-13T10:17:26.232Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -5708,9 +5708,9 @@
     {
       "id": "7pn0z4rqrxvc",
       "name": "EU-WEST-PAR-B",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-03-03T10:42:10.401Z",
-      "updated_at": "2025-06-08T10:04:11.664Z",
+      "updated_at": "2025-06-13T10:17:26.254Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -5891,9 +5891,9 @@
     {
       "id": "cf0zfm36rq3b",
       "name": "EU-WEST-PAR-C",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-03-03T10:43:51.614Z",
-      "updated_at": "2025-06-08T10:04:11.682Z",
+      "updated_at": "2025-06-13T10:17:26.274Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -7916,7 +7916,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2025-04-18T13:47:33.027Z",
       "position": 56,
@@ -8024,7 +8024,166 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "d6bbntp2x68q",
+      "name": "[GLOBAL][Storage] - Object storage incident notification",
+      "status": "identified",
+      "created_at": "2025-06-13T10:17:26.099Z",
+      "updated_at": "2025-06-13T10:17:26.358Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/02nj6hpf55wr",
+      "started_at": "2025-06-13T10:17:26.083Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "h0qkh7qw6vk0",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Object Storage offer. \n\nHere are some supplementary details :\n<b>Start time :</b> 25/03/2025 09:00 UTC\n<b>Impacted Service(s) :</b> Object storage offer degradation.\n<b>Customers Impact :</b> Between 25/03/2025 09:00 UTC and 18/04/2025 16:00 UTC, when customers deleting an object with MPU (only objects with more than 100 parts), only the first 100 parts were deleted.\nSince 18/04/2025 16:00 UTC, the bug is fixed and all parts are now correctly deleted.\nBecause of this bug, customers will have a discrepancy between the actual bucket size and the size displayed in the Manager because of parts that not have been deleted but should have been.\nIn the meantime, our technical teams are working on the storage size of the impacted customers between those 2 dates.\n<b>Root Cause :</b> This incident is caused by a software issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "d6bbntp2x68q",
+          "created_at": "2025-06-13T10:17:26.353Z",
+          "updated_at": "2025-06-13T10:17:26.353Z",
+          "display_at": "2025-06-13T10:17:26.353Z",
+          "affected_components": [
+            {
+              "code": "j60wbjr53lsb",
+              "name": "Storage || Object storage - BHS",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "rtf74dt95spd",
+              "name": "Storage || Object storage - EU-WEST-PAR-A",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "7pn0z4rqrxvc",
+              "name": "Storage || Object storage - EU-WEST-PAR-B",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "cf0zfm36rq3b",
+              "name": "Storage || Object storage - EU-WEST-PAR-C",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "j60wbjr53lsb",
+          "name": "BHS",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:28.528Z",
+          "updated_at": "2025-06-13T10:17:26.163Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "k86vmhcsnjtj",
+          "name": "GRA",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:14.640Z",
+          "updated_at": "2025-06-13T10:17:26.188Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2pk5hxxqkq21",
+          "name": "SBG",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:41:01.981Z",
+          "updated_at": "2025-06-13T10:17:26.209Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rtf74dt95spd",
+          "name": "EU-WEST-PAR-A",
+          "status": "degraded_performance",
+          "created_at": "2025-03-03T10:40:54.721Z",
+          "updated_at": "2025-06-13T10:17:26.232Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7pn0z4rqrxvc",
+          "name": "EU-WEST-PAR-B",
+          "status": "degraded_performance",
+          "created_at": "2025-03-03T10:42:10.401Z",
+          "updated_at": "2025-06-13T10:17:26.254Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cf0zfm36rq3b",
+          "name": "EU-WEST-PAR-C",
+          "status": "degraded_performance",
+          "created_at": "2025-03-03T10:43:51.614Z",
+          "updated_at": "2025-06-13T10:17:26.274Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "v5bn33jc34jc",
@@ -9432,7 +9591,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
