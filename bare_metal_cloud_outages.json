@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-14T17:25:21.776Z"
+    "updated_at": "2025-06-14T18:27:21.097Z"
   },
   "components": [
     {
@@ -2819,9 +2819,9 @@
     {
       "id": "mr1s2x6c5zvm",
       "name": "[GRA1][Dedicated Servers] - Rack G104A03",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-06-14T17:25:21.648Z",
-      "updated_at": "2025-06-14T17:25:21.772Z",
+      "updated_at": "2025-06-14T18:27:21.087Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2829,6 +2829,26 @@
       "started_at": "2025-06-14T17:25:21.638Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "q7p61k9ycp52",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering, which is causing temporary availability issues on the rack G104A03 in GRA1.\n\nHere is detail for this incident :\n<b>Start time :</b> 14/06/2025 17:14 UTC\n<b>Impacted Service(s) :</b> Public network in the rack G104A03 is temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their public network on servers located on the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "mr1s2x6c5zvm",
+          "created_at": "2025-06-14T18:27:21.084Z",
+          "updated_at": "2025-06-14T18:27:21.084Z",
+          "display_at": "2025-06-14T18:27:21.084Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "3bl9sggk9rky",
           "status": "investigating",
