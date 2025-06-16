@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-16T20:45:43.430Z"
+    "updated_at": "2025-06-16T22:01:22.103Z"
   },
   "components": [
     {
@@ -2819,9 +2819,9 @@
     {
       "id": "r5rvg541sr8g",
       "name": "[LIM3][Dedicated Servers] - Rack LIM0304A03B",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2025-06-16T20:37:32.786Z",
-      "updated_at": "2025-06-16T20:45:43.422Z",
+      "updated_at": "2025-06-16T21:31:28.537Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2829,6 +2829,26 @@
       "started_at": "2025-06-16T20:37:32.777Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "5v4yjxfnnr9x",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on rack LIM0304A03B in LIM3.\n\nHere are some supplementary details :\n<b>Start time :</b> 16/06/2025 19:49 UTC\n<b>Impacted Service(s) :</b> Private network on servers with no LACP protocol located in the specified rack is unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access the private network on servers with no LACP protocol configured, which are located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "r5rvg541sr8g",
+          "created_at": "2025-06-16T21:31:28.534Z",
+          "updated_at": "2025-06-16T21:31:28.534Z",
+          "display_at": "2025-06-16T21:31:28.534Z",
+          "affected_components": [
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "qlbj12xpvgpp",
           "status": "investigating",
