@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-17T11:21:07.359Z"
+    "updated_at": "2025-06-17T14:55:21.790Z"
   },
   "components": [
     {
@@ -3003,6 +3003,136 @@
       ],
       "scheduled_for": "2025-08-01T09:00:00.000Z",
       "scheduled_until": "2025-08-01T11:00:00.000Z"
+    },
+    {
+      "id": "z8yvtppqvxyl",
+      "name": "[Global][Backup as a Service] - KB4743",
+      "status": "in_progress",
+      "created_at": "2025-06-17T14:51:23.234Z",
+      "updated_at": "2025-06-17T14:55:21.774Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q4hj20bhfs18",
+      "started_at": "2025-06-17T14:51:23.227Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "jxqvg4n81cyh",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "z8yvtppqvxyl",
+          "created_at": "2025-06-17T14:55:21.770Z",
+          "updated_at": "2025-06-17T14:55:21.770Z",
+          "display_at": "2025-06-17T14:55:21.770Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nqd62q0yv585",
+          "status": "scheduled",
+          "body": "Please note that Veeam has released a new KB with CVEs published and impacting Veeam products: https://www.veeam.com/kb4743. We are aware of this new KB at OVHcloud and are working on an action plan:\n\n<b>First action:</b> Upgrade our Veeam Enterprise Manager to 12.3.2, in order to continue to provide you the last licensing for your Veeam products. We are on it and we will provide the upgrade by the end of the week.\nThis is not blocking you from upgrading your Veeam to 12.3.2, you will have a warning about disconnection with our server, but it will be reconnected automatically when we will upgrade our Veeam Enterprise Manager.\n\n<b>Second action:</b> Upgrade our Managed Veeam for Public VCFaaS. The vulnerable scope is limited to your backup only, still we will upgrade our Veeam infrastructure to 12.3.2 within the next days. This isn't going to impact your backups.\n\n<b>Third action:</b> Upgrade our Veeam Managed Backup for Managed vSphere, we are not vulnerable to any of the CVE listed on this product, so it will be done within the next weeks.\n\n<b>Given the score, we strongly advise you to upgrade your Veeam infrastructure as soon as you can.</b>\n\nWe remain at your disposal in case of questions.",
+          "incident_id": "z8yvtppqvxyl",
+          "created_at": "2025-06-17T14:51:23.298Z",
+          "updated_at": "2025-06-17T14:54:49.051Z",
+          "display_at": "2025-06-17T14:51:23.298Z",
+          "affected_components": [
+            {
+              "code": "6wt6hm8214pj",
+              "name": "Backup as a Service || Veeam Backup Managed",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ghbyr8kk5dw0",
+              "name": "Backup as a Service || Veeam Enterprise",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "mccsf1ws732d",
+              "name": "Backup as a Service || Managed Veeam for VMware Cloud Director",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rzzftwq0tvbv",
+              "name": "Backup as a Service || Zerto",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mccsf1ws732d",
+          "name": "Backup as a Service || Managed Veeam for VMware Cloud Director",
+          "status": "operational",
+          "created_at": "2024-11-19T15:48:27.405Z",
+          "updated_at": "2025-04-17T03:23:16.746Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-11-19",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "6wt6hm8214pj",
+          "name": "Backup as a Service || Veeam Backup Managed",
+          "status": "operational",
+          "created_at": "2021-07-21T08:43:39.002Z",
+          "updated_at": "2025-06-13T15:01:33.316Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ghbyr8kk5dw0",
+          "name": "Backup as a Service || Veeam Enterprise",
+          "status": "operational",
+          "created_at": "2023-10-24T14:59:18.054Z",
+          "updated_at": "2025-04-17T03:23:16.785Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-24",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rzzftwq0tvbv",
+          "name": "Backup as a Service || Zerto",
+          "status": "operational",
+          "created_at": "2025-01-15T08:25:21.987Z",
+          "updated_at": "2025-06-06T15:59:36.270Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-06-17T14:55:00.000Z",
+      "scheduled_until": "2025-06-20T16:30:00.000Z"
     },
     {
       "id": "ty2kxhzcmyl3",
