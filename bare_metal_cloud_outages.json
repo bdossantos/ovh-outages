@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-19T05:00:22.086Z"
+    "updated_at": "2025-06-19T06:06:53.300Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-06-19T05:00:21.612Z",
+      "updated_at": "2025-06-19T06:03:10.397Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1942,9 +1942,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2025-06-19T00:39:40.331Z",
+      "updated_at": "2025-06-19T06:03:10.420Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2818,10 +2818,10 @@
   "incidents": [
     {
       "id": "hcgp1qcvk78g",
-      "name": "[RBX8][Dedicated servers] -Rack- R822R10",
+      "name": "[RBX8][Dedicated servers] - Rack R822R10 - R822R11 - R822R12 incident notification",
       "status": "identified",
       "created_at": "2025-06-19T00:39:40.295Z",
-      "updated_at": "2025-06-19T04:08:57.046Z",
+      "updated_at": "2025-06-19T06:04:35.955Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2830,12 +2830,38 @@
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
+          "id": "7h8rbj8xfr18",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> The public network equipment has been operational again since 19/06/2025 04:00 UTC in rack R822R10. The Vrack network equipment and public network equipment has been operational again since 19/06/2025 04:00 UTC in rack R822R11.\nSome servers in racks R822R10 - R822R11 - R822R12 are still temporarily unavailable.\n\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hcgp1qcvk78g",
+          "created_at": "2025-06-19T06:03:10.477Z",
+          "updated_at": "2025-06-19T06:04:35.950Z",
+          "display_at": "2025-06-19T06:03:10.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "jh5txz10rhsy",
           "status": "identified",
-          "body": "An incident is in progress on our Dedicated servers in RBX8 , customers in the specific rack R822R10 may face some difficulties. Please find the details:\n\n<b>Start time :</b> 19/06/2025 00:28 UTC\t\t\t\t\n<b>Service impact :</b> Public network down in R822R10.\n<b>Root Cause :</b> This incident was caused by a cooling system issue.\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\n\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
+          "body": "An incident is in progress on our Dedicated servers in RBX8 , customers in the specific rack R822R10 may face some difficulties.\n\nPlease find the details:\n<b>Start time :</b> 19/06/2025 00:28 UTC\t\t\t\t\n<b>Service impact :</b> Public network down in R822R10.\n<b>Root Cause :</b> This incident was caused by a cooling system issue.\n<b>Ongoing actions :</b> Our teams are actively working to resolve the incident and restore services as quickly as possible\n\nWe will keep you informed of developments and the resolution of the incident.\nWe apologize for the inconvenience and thank you for your understanding.",
           "incident_id": "hcgp1qcvk78g",
           "created_at": "2025-06-19T00:39:40.389Z",
-          "updated_at": "2025-06-19T04:08:56.993Z",
+          "updated_at": "2025-06-19T05:54:23.604Z",
           "display_at": "2025-06-19T00:39:40.000Z",
           "affected_components": [
             {
@@ -2852,11 +2878,26 @@
       ],
       "components": [
         {
-          "id": "r7966tc9cpb9",
+          "id": "ndg1yh0x4lpd",
           "name": "RBX",
           "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-06-19T06:03:10.397Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2025-06-19T00:39:40.331Z",
+          "updated_at": "2025-06-19T06:03:10.420Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3005,9 +3046,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-06-19T05:00:21.612Z",
+          "updated_at": "2025-06-19T06:03:10.397Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3344,93 +3385,6 @@
       ],
       "scheduled_for": "2025-07-23T00:00:00.000Z",
       "scheduled_until": "2025-07-23T02:00:00.000Z"
-    },
-    {
-      "id": "v7ndgz2dfy2p",
-      "name": "[RBX3][Dedicated Servers] - Rack 41H01",
-      "status": "in_progress",
-      "created_at": "2025-06-10T13:39:39.036Z",
-      "updated_at": "2025-06-19T05:00:22.066Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/bk0lbvww8d1x",
-      "started_at": "2025-06-10T13:39:39.028Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "0p1pshtybm3j",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "v7ndgz2dfy2p",
-          "created_at": "2025-06-19T05:00:22.060Z",
-          "updated_at": "2025-06-19T05:00:22.060Z",
-          "display_at": "2025-06-19T05:00:22.060Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "jxfm4h9nqpjm",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "v7ndgz2dfy2p",
-          "created_at": "2025-06-19T04:00:26.243Z",
-          "updated_at": "2025-06-19T04:00:26.243Z",
-          "display_at": "2025-06-19T04:00:26.243Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zt5d1prlfft6",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 19/06/2025 05:00 UTC\n<b>End time :</b> 19/06/2025 06:00 UTC\n<b>Service impact :</b> Each server in rack 41H01 will be temporarily unavailable during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance for servers in rack 41H01.\n\nThank you for your understanding.",
-          "incident_id": "v7ndgz2dfy2p",
-          "created_at": "2025-06-10T13:39:39.108Z",
-          "updated_at": "2025-06-10T13:39:39.108Z",
-          "display_at": "2025-06-10T13:39:39.108Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-06-19T05:00:21.612Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-06-19T05:00:00.000Z",
-      "scheduled_until": "2025-06-19T06:00:00.000Z"
     }
   ],
   "status": {
