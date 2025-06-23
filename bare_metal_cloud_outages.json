@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-06-23T14:22:15.626Z"
+    "updated_at": "2025-06-23T16:56:17.688Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-06-03T05:28:00.955Z",
+      "updated_at": "2025-06-23T16:43:54.680Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2831,7 +2831,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "mq69r4n110jb",
+      "name": "[BHS4][Dedicated Servers] - Rack T04C31 incident notification",
+      "status": "investigating",
+      "created_at": "2025-06-23T16:43:54.645Z",
+      "updated_at": "2025-06-23T16:43:54.741Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/j7msw76nwwh9",
+      "started_at": "2025-06-23T16:43:54.638Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "lczlc9zm4gby",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack T04C31.\n\nHere are some supplementary details :\n<b>Start time :</b> 23/06/2025 16:28 UTC\n<b>Impacted Service(s) :</b> Some servers are temporarily unavailable in rack T04C31.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers in the specified rack. \n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "mq69r4n110jb",
+          "created_at": "2025-06-23T16:43:54.738Z",
+          "updated_at": "2025-06-23T16:43:54.738Z",
+          "display_at": "2025-06-23T16:43:54.738Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-06-23T16:43:54.680Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vvtr9vl6sk0x",
@@ -3617,7 +3671,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
