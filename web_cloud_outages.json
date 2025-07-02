@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-02T08:43:38.563Z"
+    "updated_at": "2025-07-02T10:02:35.371Z"
   },
   "components": [
     {
@@ -1707,9 +1707,9 @@
     {
       "id": "zdn0dn7v9wls",
       "name": "Cluster012",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:06.734Z",
-      "updated_at": "2025-07-02T08:43:38.510Z",
+      "updated_at": "2025-07-02T10:01:29.102Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2546,9 +2546,9 @@
     {
       "id": "wvx9nrw9v652",
       "name": "VoIP || SMS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2025-01-21T15:07:25.031Z",
-      "updated_at": "2025-07-01T09:31:13.244Z",
+      "updated_at": "2025-07-02T09:08:56.508Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -2754,7 +2754,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-02-20T16:43:24.166Z",
       "position": 27,
@@ -2954,62 +2954,32 @@
   ],
   "incidents": [
     {
-      "id": "d4ymsxdk508p",
-      "name": "[GRA][Collaborative solutions] - Mx plan incident notification",
-      "status": "monitoring",
-      "created_at": "2025-07-01T09:58:21.730Z",
-      "updated_at": "2025-07-01T12:49:03.409Z",
-      "monitoring_at": "2025-07-01T12:48:29.000Z",
+      "id": "3wnjrrj7wq90",
+      "name": "[GRA][Web Hosting] - Cluster012 / filerZ232 incident notification",
+      "status": "identified",
+      "created_at": "2025-07-02T10:01:29.065Z",
+      "updated_at": "2025-07-02T10:02:35.362Z",
+      "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/k2kwdsyp9rzq",
-      "started_at": "2025-07-01T09:58:21.715Z",
+      "shortlink": "https://stspg.io/ftfp60s7n22q",
+      "started_at": "2025-07-02T10:01:29.056Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
         {
-          "id": "wd3yh24xjj9r",
-          "status": "monitoring",
-          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Since 10:20 UTC, access to mailboxes is available again.\n<b>Ongoing Actions :</b> Our teams are currently monitoring the situation.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "d4ymsxdk508p",
-          "created_at": "2025-07-01T12:48:29.190Z",
-          "updated_at": "2025-07-01T12:49:03.392Z",
-          "display_at": "2025-07-01T12:48:29.000Z",
+          "id": "xbr7fqg6hf88",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our  offer on the specific Cluster012 / filerZ 232.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 02/07/2025 08:01 UTC\n<b>Impacted Service(s) :</b> File server 232 is unreachable on Web Hosting cluster012.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "3wnjrrj7wq90",
+          "created_at": "2025-07-02T10:02:35.360Z",
+          "updated_at": "2025-07-02T10:02:35.360Z",
+          "display_at": "2025-07-02T10:02:35.360Z",
           "affected_components": [
             {
-              "code": "g0pjvfdbyqyh",
-              "name": "Collaborative solutions || MX Plan - Reception",
+              "code": "zdn0dn7v9wls",
+              "name": "Web Hosting || Datacenter GRA - Cluster012",
               "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "k69grzf4y2tm",
-              "name": "Collaborative solutions || MX Plan - Delivery email",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "qpx6g1kd74vy",
-              "name": "Collaborative solutions || MX Plan - Mailbox Access",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "d8kwjwzgtk26",
-              "name": "Collaborative solutions || MX Plan - Redirection",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "fj261sm926yg",
-              "name": "Collaborative solutions || MX Plan - Webmail",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "1lkpr13cqg9b",
-              "name": "Collaborative solutions || MX Plan - Delivery",
-              "old_status": "partial_outage",
-              "new_status": "operational"
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -3017,47 +2987,17 @@
           "tweet_id": null
         },
         {
-          "id": "10vqklwf52vf",
+          "id": "hjyz7p7clsvx",
           "status": "investigating",
-          "body": "We are currently experiencing an incident affecting our Collaborative solutions offering, which is causing temporary availability issues on the Mx plan.\n\nHere is detail for this incident :\n<b>Start time :</b> 01/07/2025 09:35 UTC\n<b>Impacted Service(s) :</b> Access to mailboxes is temporarily unavailable.\n<b>Customers Impact :</b> Some customers may not be able to have access to their mailboxes.\nEmails received during the incident will be stored and delivered after the incident is resolved.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "d4ymsxdk508p",
-          "created_at": "2025-07-01T09:58:21.938Z",
-          "updated_at": "2025-07-01T09:58:21.938Z",
-          "display_at": "2025-07-01T09:58:21.938Z",
+          "body": "We are currently investigating an incident affecting our Web Hosting offering, which is causing temporary availability issue in the Cluster012 / filerZ 232.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 02/07/2025 08:40 UTC\n<b>Impacted Service(s) :</b> File server 232 is unreachable on Web Hosting cluster012.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "3wnjrrj7wq90",
+          "created_at": "2025-07-02T10:01:29.171Z",
+          "updated_at": "2025-07-02T10:01:29.171Z",
+          "display_at": "2025-07-02T10:01:29.171Z",
           "affected_components": [
             {
-              "code": "g0pjvfdbyqyh",
-              "name": "Collaborative solutions || MX Plan - Reception",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "k69grzf4y2tm",
-              "name": "Collaborative solutions || MX Plan - Delivery email",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "qpx6g1kd74vy",
-              "name": "Collaborative solutions || MX Plan - Mailbox Access",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "d8kwjwzgtk26",
-              "name": "Collaborative solutions || MX Plan - Redirection",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "fj261sm926yg",
-              "name": "Collaborative solutions || MX Plan - Webmail",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "1lkpr13cqg9b",
-              "name": "Collaborative solutions || MX Plan - Delivery",
+              "code": "zdn0dn7v9wls",
+              "name": "Web Hosting || Datacenter GRA - Cluster012",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -3069,170 +3009,22 @@
       ],
       "components": [
         {
-          "id": "g0pjvfdbyqyh",
-          "name": "Reception",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:03.785Z",
-          "updated_at": "2025-07-01T12:48:29.049Z",
-          "position": 1,
+          "id": "zdn0dn7v9wls",
+          "name": "Cluster012",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:06.734Z",
+          "updated_at": "2025-07-02T10:01:29.102Z",
+          "position": 8,
           "description": null,
           "showcase": false,
           "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k69grzf4y2tm",
-          "name": "Delivery email",
-          "status": "operational",
-          "created_at": "2021-10-27T09:26:55.071Z",
-          "updated_at": "2025-07-01T12:48:29.070Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-10-27",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qpx6g1kd74vy",
-          "name": "Mailbox Access",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:04.946Z",
-          "updated_at": "2025-07-01T12:48:29.091Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "d8kwjwzgtk26",
-          "name": "Redirection",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:05.523Z",
-          "updated_at": "2025-07-01T12:48:29.108Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "fj261sm926yg",
-          "name": "Webmail",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:06.132Z",
-          "updated_at": "2025-07-01T12:48:29.125Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "1lkpr13cqg9b",
-          "name": "Delivery",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:04.433Z",
-          "updated_at": "2025-07-01T12:48:29.144Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "7935ckb29tc8",
+          "group_id": "2fkfhxvh1l1w",
           "page_id": "gw3vvyn2b3bh",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
       "reminder_intervals": null
-    },
-    {
-      "id": "65qydqvzb9ys",
-      "name": "[POLAND][SMS] - incident notification",
-      "status": "identified",
-      "created_at": "2025-07-01T09:31:13.213Z",
-      "updated_at": "2025-07-01T09:50:50.118Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/1sx6nddshnsf",
-      "started_at": "2025-07-01T09:31:13.000Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "2srt5srp78s8",
-          "status": "identified",
-          "body": "We have determined the origin of the incident affecting our SMS offer on the specific region.\n\nHere are some supplementary details :\n<b>Start time :</b> 01/07/2025 00:00 UTC\n<b>Impacted Service(s) :</b> SMS reception is temporarily unavailable in Poland.\n<b>Customers Impact :</b> Customers in Poland are temporarily unable to receive SMS.\nHowever, if customers try to send an SMS, the recipient won't receive it.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "65qydqvzb9ys",
-          "created_at": "2025-07-01T09:50:50.115Z",
-          "updated_at": "2025-07-01T09:50:50.115Z",
-          "display_at": "2025-07-01T09:50:50.115Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qjg4mbn89xw0",
-          "status": "investigating",
-          "body": "We are currently experiencing an event affecting our SMS Delivery in Poland\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "65qydqvzb9ys",
-          "created_at": "2025-07-01T09:31:13.295Z",
-          "updated_at": "2025-07-01T09:50:19.740Z",
-          "display_at": "2025-07-01T09:31:13.000Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wvx9nrw9v652",
-          "name": "VoIP || SMS",
-          "status": "partial_outage",
-          "created_at": "2025-01-21T15:07:25.031Z",
-          "updated_at": "2025-07-01T09:31:13.244Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-21",
-          "group_id": null,
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
     }
   ],
   "scheduled_maintenances": [
