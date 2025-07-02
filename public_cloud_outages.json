@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-02T16:02:20.216Z"
+    "updated_at": "2025-07-02T16:48:40.582Z"
   },
   "components": [
     {
@@ -1259,9 +1259,9 @@
     {
       "id": "glnlr8wvr4cx",
       "name": "DE",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2023-05-30T13:36:25.382Z",
-      "updated_at": "2025-07-02T16:02:20.136Z",
+      "updated_at": "2025-07-02T16:33:45.439Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -6296,7 +6296,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2025-04-18T13:47:32.638Z",
       "position": 20,
@@ -8027,17 +8027,57 @@
   "incidents": [
     {
       "id": "15c70zm0chvw",
-      "name": "[DE1][Containers & Orchestration] -  Managed Kubernetes Service/Private Registry incident notification",
-      "status": "investigating",
+      "name": "[DE1][Containers & Orchestration] -  Managed Kubernetes Service incident notification",
+      "status": "monitoring",
       "created_at": "2025-07-02T16:02:20.071Z",
-      "updated_at": "2025-07-02T16:02:20.212Z",
-      "monitoring_at": null,
+      "updated_at": "2025-07-02T16:48:40.579Z",
+      "monitoring_at": "2025-07-02T16:48:40.562Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/z7z8h7g64hmn",
       "started_at": "2025-07-02T16:02:20.059Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "wfws66bmqffc",
+          "status": "monitoring",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Since 16:45 UTC, Management operations is available again.\n<b>Ongoing Actions :</b> Our teams are currently monitoring the situation.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "15c70zm0chvw",
+          "created_at": "2025-07-02T16:48:40.562Z",
+          "updated_at": "2025-07-02T16:48:40.562Z",
+          "display_at": "2025-07-02T16:48:40.562Z",
+          "affected_components": [
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rlysvbl3kdjy",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Containers & Orchestration offering, which is causing temporary functionality issues in the specified region.\n\n\nHere is detail for this incident :\n<b>Start time :</b> 25/07/2025 15:25 UTC\n<b>Impacted Service(s) :</b> Management operations are temporarily unavailable for nodes in DE1.\n<b>Customers Impact :</b> Customers are temporarily unable to do management operations on their nodes in the specified region.\nHowever, nodes are still accessible and their workloads also.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "15c70zm0chvw",
+          "created_at": "2025-07-02T16:32:57.353Z",
+          "updated_at": "2025-07-02T16:32:57.353Z",
+          "display_at": "2025-07-02T16:32:57.353Z",
+          "affected_components": [
+            {
+              "code": "4pjxf199vzgd",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "16378dvn60yj",
           "status": "investigating",
@@ -8077,21 +8117,6 @@
           "showcase": false,
           "start_date": "2022-04-06",
           "group_id": "wstnmn7ql79s",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "glnlr8wvr4cx",
-          "name": "DE",
-          "status": "partial_outage",
-          "created_at": "2023-05-30T13:36:25.382Z",
-          "updated_at": "2025-07-02T16:02:20.136Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-05-30",
-          "group_id": "dbhdvj49c2xr",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -8672,6 +8697,60 @@
       ],
       "scheduled_for": "2025-07-10T23:00:00.000Z",
       "scheduled_until": "2025-07-11T03:00:00.000Z"
+    },
+    {
+      "id": "myr140jh7cn6",
+      "name": "[EU-WEST-PAR-B][Storage] - Object storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-02T16:24:51.413Z",
+      "updated_at": "2025-07-02T16:24:51.486Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dvptq78fhpcc",
+      "started_at": "2025-07-02T16:24:51.405Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "w6650jlqwq5j",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our object storage offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 15/07/2025 11:00 UTC\n<b>End time :</b> 15/07/2025 15:00 UTC\n<b>Service impact :</b> You may experience latency during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our object storage offer.\n\nThank you for your understanding.",
+          "incident_id": "myr140jh7cn6",
+          "created_at": "2025-07-02T16:24:51.483Z",
+          "updated_at": "2025-07-02T16:24:51.483Z",
+          "display_at": "2025-07-02T16:24:51.483Z",
+          "affected_components": [
+            {
+              "code": "7pn0z4rqrxvc",
+              "name": "Storage || Object storage - EU-WEST-PAR-B",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7pn0z4rqrxvc",
+          "name": "EU-WEST-PAR-B",
+          "status": "degraded_performance",
+          "created_at": "2025-03-03T10:42:10.401Z",
+          "updated_at": "2025-06-30T11:46:05.011Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-15T11:00:00.000Z",
+      "scheduled_until": "2025-07-15T15:00:00.000Z"
     },
     {
       "id": "v579f8yw4hfx",
