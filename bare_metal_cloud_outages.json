@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-02T11:00:31.392Z"
+    "updated_at": "2025-07-02T14:01:04.002Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-07-02T08:03:50.333Z",
+      "updated_at": "2025-07-02T14:01:03.940Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2831,74 +2831,35 @@
       ]
     }
   ],
-  "incidents": [
+  "incidents": [],
+  "scheduled_maintenances": [
     {
-      "id": "37fcc5fm4nmh",
-      "name": "[GRA1][Dedicated Servers] - Rack G115B02",
-      "status": "identified",
-      "created_at": "2025-07-02T08:03:50.286Z",
-      "updated_at": "2025-07-02T11:00:31.384Z",
+      "id": "8gs22x763ns2",
+      "name": "[GRA8][Virtual Private Servers] - Workflow Management service maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-02T13:17:32.902Z",
+      "updated_at": "2025-07-02T13:17:32.965Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/lwfy12b4kwzf",
-      "started_at": "2025-07-02T08:03:50.000Z",
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/g80px2mr2t0z",
+      "started_at": "2025-07-02T13:17:32.895Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "hmhcj2h232sz",
-          "status": "identified",
-          "body": "We have new information regarding the incident that affected your service.\n\nPlease find below an update on the situation:\n<b>Update : </b> There is still one server that is having problems. Our teams are doing everything they can to fix the server.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "37fcc5fm4nmh",
-          "created_at": "2025-07-02T10:59:20.650Z",
-          "updated_at": "2025-07-02T11:00:31.380Z",
-          "display_at": "2025-07-02T10:59:20.000Z",
+          "id": "9993gpjwlsvt",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Workflow Management service, Mistral.\n\nHere are the details of the maintenance:\n<b>Start time :</b> 02/07/2025 18:00 UTC\n<b>End time :</b> 02/07/2025 19:00 UTC\n<b>Service impact :</b> During this maintenance window for the Workflow Management service (Mistral), you may encounter the following impacts :\n\n    Workflows in progress at the start of the maintenance will be stopped and will be restarted automatically after the maintenance is completed. We understand that this may cause a temporary disruption in your workflow processing, and we apologize for any inconvenience this may cause.\n    Cron triggers (scheduled workflow executions) during the maintenance period will not be triggered. If you have any workflows scheduled to run during the maintenance window, we recommend rescheduling them to run outside of this timeframe to avoid any disruption.\n\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be performing a maintenance on the Mistral service infrastructure. This maintenance is necessary to ensure the continued reliability and performance of our platform.\n\nIf you have any questions or concerns, please don't hesitate to reach out to our support team.",
+          "incident_id": "8gs22x763ns2",
+          "created_at": "2025-07-02T13:17:32.963Z",
+          "updated_at": "2025-07-02T13:17:32.963Z",
+          "display_at": "2025-07-02T13:17:32.963Z",
           "affected_components": [
             {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n8fyg7kqlt6h",
-          "status": "identified",
-          "body": "We have determined the origin of the incident affecting our  offer on the specific G115B02.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 02/07/2025 06:47 UTC\n<b>Impacted Service(s) :</b> I am pleased to inform you that the majority of servers are now available.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "37fcc5fm4nmh",
-          "created_at": "2025-07-02T08:53:11.231Z",
-          "updated_at": "2025-07-02T08:53:11.231Z",
-          "display_at": "2025-07-02T08:53:11.231Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1wnh8f1twvr6",
-          "status": "investigating",
-          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack G115B02.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 02/07/2025 07:55 UTC\n<b>Impacted Service(s) :</b> All servers in the rack G115B02 are temporarily unavailable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "37fcc5fm4nmh",
-          "created_at": "2025-07-02T08:03:50.637Z",
-          "updated_at": "2025-07-02T08:06:34.166Z",
-          "display_at": "2025-07-02T08:03:50.000Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "code": "wz4qnkmxqr5m",
+              "name": "Virtual Private Servers || Additional services - GRA",
               "old_status": "operational",
-              "new_status": "partial_outage"
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -2908,25 +2869,24 @@
       ],
       "components": [
         {
-          "id": "jkwghz2dnq89",
+          "id": "wz4qnkmxqr5m",
           "name": "GRA",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2025-07-02T08:03:50.333Z",
-          "position": 3,
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:23.983Z",
+          "updated_at": "2025-05-05T12:44:55.087Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "xnnr6fwn2h6v",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": null
-    }
-  ],
-  "scheduled_maintenances": [
+      "scheduled_for": "2025-07-02T18:00:00.000Z",
+      "scheduled_until": "2025-07-02T19:00:00.000Z"
+    },
     {
       "id": "frc19gfcp0z1",
       "name": "[BHS][Storage and Backups] - NAS HA maintenance notification",
@@ -4310,7 +4270,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
