@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-03T10:39:15.719Z"
+    "updated_at": "2025-07-03T11:58:10.833Z"
   },
   "components": [
     {
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-07-03T05:00:21.315Z",
+      "updated_at": "2025-07-03T11:58:10.766Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2833,6 +2833,79 @@
   ],
   "incidents": [
     {
+      "id": "z078132bq7ns",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0311A01B incident notification",
+      "status": "identified",
+      "created_at": "2025-07-03T01:49:34.666Z",
+      "updated_at": "2025-07-03T11:08:59.534Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/d1sdcbl83pkt",
+      "started_at": "2025-07-03T01:49:34.659Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "n9fj2gzkprgk",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Some servers are still affected, but our teams are doing their utmost to restore services as soon as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "z078132bq7ns",
+          "created_at": "2025-07-03T11:08:59.531Z",
+          "updated_at": "2025-07-03T11:08:59.531Z",
+          "display_at": "2025-07-03T11:08:59.531Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y4s7h6cwcdxx",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack LIM0311A01B.\n\nHere is detail for this incident :\n<b>Start time :</b> 03/07/2025 00:30 UTC\n<b>Impacted Service(s) :</b> Some servers in rack LIM0311A01B are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "z078132bq7ns",
+          "created_at": "2025-07-03T01:49:34.956Z",
+          "updated_at": "2025-07-03T01:49:34.956Z",
+          "display_at": "2025-07-03T01:49:34.956Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9y37g21l733b",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:26.565Z",
+          "updated_at": "2025-07-03T01:49:34.702Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "0psp57x2jpqz",
       "name": "[GRA1][Dedicated Servers] - Racks G133A11/G133A12",
       "status": "investigating",
@@ -2904,59 +2977,6 @@
         }
       ],
       "reminder_intervals": "[]"
-    },
-    {
-      "id": "z078132bq7ns",
-      "name": "[LIM3][Dedicated Servers] - Rack LIM0311A01B incident notification",
-      "status": "identified",
-      "created_at": "2025-07-03T01:49:34.666Z",
-      "updated_at": "2025-07-03T01:49:34.959Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/d1sdcbl83pkt",
-      "started_at": "2025-07-03T01:49:34.659Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "y4s7h6cwcdxx",
-          "status": "identified",
-          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack LIM0311A01B.\n\nHere is detail for this incident :\n<b>Start time :</b> 03/07/2025 00:30 UTC\n<b>Impacted Service(s) :</b> Some servers in rack LIM0311A01B are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "z078132bq7ns",
-          "created_at": "2025-07-03T01:49:34.956Z",
-          "updated_at": "2025-07-03T01:49:34.956Z",
-          "display_at": "2025-07-03T01:49:34.956Z",
-          "affected_components": [
-            {
-              "code": "9y37g21l733b",
-              "name": "Dedicated Servers || Global Infrastructure - LIM",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "9y37g21l733b",
-          "name": "LIM",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:26.565Z",
-          "updated_at": "2025-07-03T01:49:34.702Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -4394,93 +4414,6 @@
       ],
       "scheduled_for": "2025-07-23T00:00:00.000Z",
       "scheduled_until": "2025-07-23T02:00:00.000Z"
-    },
-    {
-      "id": "swlyh1dlp2bv",
-      "name": "[RBX4][Dedicated Servers] - Rack 50C11",
-      "status": "in_progress",
-      "created_at": "2025-06-27T22:15:45.114Z",
-      "updated_at": "2025-07-03T05:00:21.827Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/9gl5qmjfkxzg",
-      "started_at": "2025-06-27T22:15:45.106Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "9lvbwl2bmw5d",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "swlyh1dlp2bv",
-          "created_at": "2025-07-03T05:00:21.819Z",
-          "updated_at": "2025-07-03T05:00:21.819Z",
-          "display_at": "2025-07-03T05:00:21.819Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "f900pz7ns8bs",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "swlyh1dlp2bv",
-          "created_at": "2025-07-03T04:00:25.381Z",
-          "updated_at": "2025-07-03T04:00:25.381Z",
-          "display_at": "2025-07-03T04:00:25.381Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "p4805xvnmy91",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 03/07/2025 05:00 UTC\n<b>End time :</b> 03/07/2025 07:00 UTC\n<b>Service impact :</b> Each server in rack 50C11 will be temporarily unavailable during the operation.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance for servers in rack 50C11.\n\nThank you for your understanding.",
-          "incident_id": "swlyh1dlp2bv",
-          "created_at": "2025-06-27T22:15:45.174Z",
-          "updated_at": "2025-06-27T22:15:45.174Z",
-          "display_at": "2025-06-27T22:15:45.174Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-07-03T05:00:21.315Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-03T05:00:00.000Z",
-      "scheduled_until": "2025-07-03T07:00:00.000Z"
     }
   ],
   "status": {
