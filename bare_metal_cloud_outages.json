@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-03T00:36:06.205Z"
+    "updated_at": "2025-07-03T02:20:51.343Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1156,9 +1156,9 @@
     {
       "id": "9y37g21l733b",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:26.565Z",
-      "updated_at": "2025-06-21T14:48:42.021Z",
+      "updated_at": "2025-07-03T01:49:34.702Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2831,7 +2831,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "z078132bq7ns",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0311A01B incident notification",
+      "status": "identified",
+      "created_at": "2025-07-03T01:49:34.666Z",
+      "updated_at": "2025-07-03T01:49:34.959Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/d1sdcbl83pkt",
+      "started_at": "2025-07-03T01:49:34.659Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "y4s7h6cwcdxx",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues in the rack LIM0311A01B.\n\nHere is detail for this incident :\n<b>Start time :</b> 03/07/2025 00:30 UTC\n<b>Impacted Service(s) :</b> Some servers in rack LIM0311A01B are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "z078132bq7ns",
+          "created_at": "2025-07-03T01:49:34.956Z",
+          "updated_at": "2025-07-03T01:49:34.956Z",
+          "display_at": "2025-07-03T01:49:34.956Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9y37g21l733b",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:26.565Z",
+          "updated_at": "2025-07-03T01:49:34.702Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "frc19gfcp0z1",
@@ -4378,7 +4432,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
