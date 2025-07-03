@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-03T15:55:15.657Z"
+    "updated_at": "2025-07-03T16:34:19.947Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "8x32jhcpqq1m",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:48.039Z",
-      "updated_at": "2025-06-16T15:53:37.426Z",
+      "updated_at": "2025-07-03T16:34:19.872Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1484,9 +1484,9 @@
     {
       "id": "2k4xnh0pwlqx",
       "name": "GRA3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:50.709Z",
-      "updated_at": "2025-06-18T02:14:09.392Z",
+      "updated_at": "2025-07-03T16:34:19.887Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4070,7 +4070,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2025-04-18T13:47:32.516Z",
       "position": 9,
@@ -8026,6 +8026,80 @@
   ],
   "incidents": [
     {
+      "id": "wm3110bn7rsx",
+      "name": "[GRA1/3][Compute - Instance] - Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-07-03T16:34:19.842Z",
+      "updated_at": "2025-07-03T16:34:19.944Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9vzk4v5dddfj",
+      "started_at": "2025-07-03T16:34:19.834Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "7vvwxtd1tyvq",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Compute - Instance offer on the specific regions.\n\nHere are some supplementary details :\n<b>Start time :</b> 03/07/2025 09:53 UTC\n<b>Impacted Service(s) :</b> Some instances in the specified regions are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their instances.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "wm3110bn7rsx",
+          "created_at": "2025-07-03T16:34:19.941Z",
+          "updated_at": "2025-07-03T16:34:19.941Z",
+          "display_at": "2025-07-03T16:34:19.941Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2025-07-03T16:34:19.872Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2k4xnh0pwlqx",
+          "name": "GRA3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:50.709Z",
+          "updated_at": "2025-07-03T16:34:19.887Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "d6bbntp2x68q",
       "name": "[GLOBAL][Storage] - Object storage incident notification",
       "status": "identified",
@@ -9293,6 +9367,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
