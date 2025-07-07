@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-07T06:11:04.751Z"
+    "updated_at": "2025-07-07T07:58:31.939Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-07-06T15:03:52.365Z",
+      "updated_at": "2025-07-07T07:55:42.771Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2831,7 +2831,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j3xcv287w1wn",
+      "name": "[RBX3][Dedicated Servers] - Racks 46E26/46E27/46E28 incident notification.",
+      "status": "identified",
+      "created_at": "2025-07-07T07:55:42.726Z",
+      "updated_at": "2025-07-07T07:58:31.935Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0g20ky51yslb",
+      "started_at": "2025-07-07T07:55:42.719Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "pdhwqdmrly7j",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offering, which is causing temporary availability issues the specific racks 46E26/46E27/46E28 .\n\nHere is detail for this incident :\n<b>Start time :</b> 07/07/2025 07:40 UTC\t\t\t\t\n<b>Impacted Service(s) :</b> All the servers in the racks 46E26/46E27/46E28 are temporarily unavailable.\n<b>Customers Impact :</b> All the customers are temporarily unable to access their servers located on the specified racks.\n<b>Root Cause :</b> This incident is caused by a Network system malfunction.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "j3xcv287w1wn",
+          "created_at": "2025-07-07T07:57:28.902Z",
+          "updated_at": "2025-07-07T07:57:28.902Z",
+          "display_at": "2025-07-07T07:57:28.902Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9qmcph3hdgxg",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer in the specific racks  46E26/46E27/46E28 .\t\t\t\n<b>Start time :</b> 07/07/2025 07:40 UTC\t\t\t\t\n\t\t\t\t\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\t\t\t\t\n\t\t\t\t\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "j3xcv287w1wn",
+          "created_at": "2025-07-07T07:55:42.851Z",
+          "updated_at": "2025-07-07T07:55:42.851Z",
+          "display_at": "2025-07-07T07:55:42.851Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-07-07T07:55:42.771Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "82vkbztypctw",
@@ -4475,7 +4549,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
