@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-08T18:01:09.273Z"
+    "updated_at": "2025-07-08T19:13:48.402Z"
   },
   "components": [
     {
@@ -2413,9 +2413,9 @@
     {
       "id": "mcpg574l0k6w",
       "name": "Cluster027",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:16.093Z",
-      "updated_at": "2025-07-08T08:50:36.034Z",
+      "updated_at": "2025-07-08T19:11:40.398Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -2754,7 +2754,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-02-20T16:43:24.166Z",
       "position": 27,
@@ -2956,9 +2956,9 @@
     {
       "id": "ql42p78tl06r",
       "name": "[GRA][Web Hosting] - Cluster027",
-      "status": "monitoring",
+      "status": "identified",
       "created_at": "2025-07-07T18:51:48.000Z",
-      "updated_at": "2025-07-08T08:50:36.083Z",
+      "updated_at": "2025-07-08T19:13:48.389Z",
       "monitoring_at": "2025-07-08T08:50:36.069Z",
       "resolved_at": null,
       "impact": "minor",
@@ -2966,6 +2966,66 @@
       "started_at": "2025-07-07T18:51:48.000Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "mjvdp3l0459v",
+          "status": "identified",
+          "body": "<b>Impacted Service(s) :</b> Some customers may experience slowness on cluster027.",
+          "incident_id": "ql42p78tl06r",
+          "created_at": "2025-07-08T19:13:48.386Z",
+          "updated_at": "2025-07-08T19:13:48.386Z",
+          "display_at": "2025-07-08T19:13:48.386Z",
+          "affected_components": [
+            {
+              "code": "mcpg574l0k6w",
+              "name": "Web Hosting || Datacenter GRA - Cluster027",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "5hs9q680grgk",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "ql42p78tl06r",
+          "created_at": "2025-07-08T19:11:51.239Z",
+          "updated_at": "2025-07-08T19:11:51.239Z",
+          "display_at": "2025-07-08T19:11:51.239Z",
+          "affected_components": [
+            {
+              "code": "mcpg574l0k6w",
+              "name": "Web Hosting || Datacenter GRA - Cluster027",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tlc6vykgsxf0",
+          "status": "monitoring",
+          "body": "We are continuing to monitor for any further issues.",
+          "incident_id": "ql42p78tl06r",
+          "created_at": "2025-07-08T19:11:40.472Z",
+          "updated_at": "2025-07-08T19:11:40.472Z",
+          "display_at": "2025-07-08T19:11:40.472Z",
+          "affected_components": [
+            {
+              "code": "mcpg574l0k6w",
+              "name": "Web Hosting || Datacenter GRA - Cluster027",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ckp606x48jkm",
           "status": "monitoring",
@@ -3011,9 +3071,9 @@
         {
           "id": "mcpg574l0k6w",
           "name": "Cluster027",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2021-06-30T12:19:16.093Z",
-          "updated_at": "2025-07-08T08:50:36.034Z",
+          "updated_at": "2025-07-08T19:11:40.398Z",
           "position": 20,
           "description": null,
           "showcase": false,
@@ -3293,7 +3353,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
