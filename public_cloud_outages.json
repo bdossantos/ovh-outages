@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-10T22:00:25.412Z"
+    "updated_at": "2025-07-10T23:00:21.698Z"
   },
   "components": [
     {
@@ -670,9 +670,9 @@
     {
       "id": "21wqcvp7mn64",
       "name": "US-WEST-LZ-DEN",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-12-06T10:10:58.620Z",
-      "updated_at": "2025-03-11T15:36:33.749Z",
+      "updated_at": "2025-07-10T23:00:21.515Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -7547,7 +7547,7 @@
     {
       "id": "v30yv8zspjnp",
       "name": "LocalZones || US-WEST",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2025-03-05T16:03:01.866Z",
       "updated_at": "2025-04-18T13:47:32.908Z",
       "position": 45,
@@ -8027,73 +8027,6 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "m8znbd1zmz01",
-      "name": "[DEN][LocalZones] - Backbone Maintenance Notification",
-      "status": "scheduled",
-      "created_at": "2025-06-17T16:58:05.525Z",
-      "updated_at": "2025-07-10T22:00:25.402Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1bn488zjbg1t",
-      "started_at": "2025-06-17T16:58:05.594Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "zg90h2x0pnks",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "m8znbd1zmz01",
-          "created_at": "2025-07-10T22:00:25.292Z",
-          "updated_at": "2025-07-10T22:00:25.292Z",
-          "display_at": "2025-07-10T22:00:25.292Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v860j0y2jhjt",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our backbone infrastructure.\n\n<b>New start time :</b> 10/07/2025 23:00 UTC\n<b>New end time :</b> 11/07/2025 03:00 UTC\n<b>Service impact :</b> The Denver localzone will be unreachable for 1 hour during the isolation of the Denver POP.\n<b>Linked maintenance :</b> https://network.status-ovhcloud.com/incidents/82v8k6lt2kcn\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on network equipment in Denver POP to improve general performance.\n\nThank you for your understanding.",
-          "incident_id": "m8znbd1zmz01",
-          "created_at": "2025-06-17T16:58:05.594Z",
-          "updated_at": "2025-06-19T17:10:12.313Z",
-          "display_at": "2025-06-17T16:58:05.594Z",
-          "affected_components": [
-            {
-              "code": "21wqcvp7mn64",
-              "name": "LocalZones || US-WEST - US-WEST-LZ-DEN",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "21wqcvp7mn64",
-          "name": "US-WEST-LZ-DEN",
-          "status": "operational",
-          "created_at": "2024-12-06T10:10:58.620Z",
-          "updated_at": "2025-03-11T15:36:33.749Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-06",
-          "group_id": "v30yv8zspjnp",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-10T23:00:00.000Z",
-      "scheduled_until": "2025-07-11T03:00:00.000Z"
-    },
-    {
       "id": "myr140jh7cn6",
       "name": "[EU-WEST-PAR-B][Storage] - Object storage maintenance notification",
       "status": "scheduled",
@@ -8200,6 +8133,60 @@
       ],
       "scheduled_for": "2025-07-15T12:00:00.000Z",
       "scheduled_until": "2025-07-15T15:00:00.000Z"
+    },
+    {
+      "id": "jd9k13wyq92d",
+      "name": "[EU/CA][Containers & Orchestration] -  Managed Rancher Service upgrade notification",
+      "status": "scheduled",
+      "created_at": "2025-07-10T22:10:28.806Z",
+      "updated_at": "2025-07-10T22:10:28.879Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/m3qjpz5zhg64",
+      "started_at": "2025-07-10T22:10:28.801Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "dzqplt6f94mc",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Containers & Orchestration offer.\n\n<b>Start time :</b> 16/07/2025 12:00 UTC\n<b>End time :</b> 16/07/2025 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b>  In order to use Kubernatine v2 as default registry for Rancher, we need to change the reverse proxy from Traefik to Nginx (add rewrite url capabilities).\n\nThank you for your understanding.",
+          "incident_id": "jd9k13wyq92d",
+          "created_at": "2025-07-10T22:10:28.875Z",
+          "updated_at": "2025-07-10T22:10:28.875Z",
+          "display_at": "2025-07-10T22:10:28.875Z",
+          "affected_components": [
+            {
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwqj3m81wkhq",
+          "name": "Containers & Orchestration || Managed Rancher Service",
+          "status": "operational",
+          "created_at": "2024-07-16T13:52:00.560Z",
+          "updated_at": "2025-07-03T11:43:03.284Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-07-16",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-16T12:00:00.000Z",
+      "scheduled_until": "2025-07-16T16:00:00.000Z"
     },
     {
       "id": "342s62qjcfmq",
@@ -8994,6 +8981,93 @@
       "scheduled_until": "2025-08-19T19:00:00.000Z"
     },
     {
+      "id": "m8znbd1zmz01",
+      "name": "[DEN][LocalZones] - Backbone Maintenance Notification",
+      "status": "in_progress",
+      "created_at": "2025-06-17T16:58:05.525Z",
+      "updated_at": "2025-07-10T23:00:21.678Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/1bn488zjbg1t",
+      "started_at": "2025-06-17T16:58:05.594Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "c9s83ws2tvgp",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "m8znbd1zmz01",
+          "created_at": "2025-07-10T23:00:21.673Z",
+          "updated_at": "2025-07-10T23:00:21.673Z",
+          "display_at": "2025-07-10T23:00:21.673Z",
+          "affected_components": [
+            {
+              "code": "21wqcvp7mn64",
+              "name": "LocalZones || US-WEST - US-WEST-LZ-DEN",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zg90h2x0pnks",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "m8znbd1zmz01",
+          "created_at": "2025-07-10T22:00:25.292Z",
+          "updated_at": "2025-07-10T22:00:25.292Z",
+          "display_at": "2025-07-10T22:00:25.292Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "v860j0y2jhjt",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our backbone infrastructure.\n\n<b>New start time :</b> 10/07/2025 23:00 UTC\n<b>New end time :</b> 11/07/2025 03:00 UTC\n<b>Service impact :</b> The Denver localzone will be unreachable for 1 hour during the isolation of the Denver POP.\n<b>Linked maintenance :</b> https://network.status-ovhcloud.com/incidents/82v8k6lt2kcn\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams will be doing a maintenance on network equipment in Denver POP to improve general performance.\n\nThank you for your understanding.",
+          "incident_id": "m8znbd1zmz01",
+          "created_at": "2025-06-17T16:58:05.594Z",
+          "updated_at": "2025-06-19T17:10:12.313Z",
+          "display_at": "2025-06-17T16:58:05.594Z",
+          "affected_components": [
+            {
+              "code": "21wqcvp7mn64",
+              "name": "LocalZones || US-WEST - US-WEST-LZ-DEN",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "21wqcvp7mn64",
+          "name": "US-WEST-LZ-DEN",
+          "status": "under_maintenance",
+          "created_at": "2024-12-06T10:10:58.620Z",
+          "updated_at": "2025-07-10T23:00:21.515Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-12-06",
+          "group_id": "v30yv8zspjnp",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-10T23:00:00.000Z",
+      "scheduled_until": "2025-07-11T03:00:00.000Z"
+    },
+    {
       "id": "jgzz2mg55lxd",
       "name": "[Global][Compute - Instance] - Images EoL notification",
       "status": "in_progress",
@@ -9039,7 +9113,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
