@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-11T04:04:57.486Z"
+    "updated_at": "2025-07-11T06:41:18.097Z"
   },
   "components": [
     {
@@ -970,9 +970,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2025-07-08T10:18:28.205Z",
+      "updated_at": "2025-07-11T06:41:18.027Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1180,9 +1180,9 @@
     {
       "id": "4vmp7215pd05",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T09:02:19.873Z",
-      "updated_at": "2025-07-07T10:13:50.091Z",
+      "updated_at": "2025-07-11T06:41:18.043Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1354,7 +1354,7 @@
     {
       "id": "rfqh5dx946ly",
       "name": "Managed VMware Cloud Director || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T08:50:52.331Z",
       "updated_at": "2025-01-15T10:36:58.307Z",
       "position": 9,
@@ -1480,7 +1480,7 @@
     {
       "id": "57t55jp0633h",
       "name": "Managed vSphere || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2025-01-15T10:37:04.696Z",
       "position": 15,
@@ -1688,7 +1688,82 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "kj63nrmxw7nw",
+      "name": "[RBX2D][Hosted Private Cloud] - Storage incident notification",
+      "status": "investigating",
+      "created_at": "2025-07-11T06:41:17.998Z",
+      "updated_at": "2025-07-11T06:41:18.095Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/x9swdx8cht1z",
+      "started_at": "2025-07-11T06:41:17.989Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "md71kpc8ljtj",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our storage on Hosted Private Cloud offer\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kj63nrmxw7nw",
+          "created_at": "2025-07-11T06:41:18.093Z",
+          "updated_at": "2025-07-11T06:41:18.093Z",
+          "display_at": "2025-07-11T06:41:18.093Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "4vmp7215pd05",
+              "name": "Managed VMware Cloud Director || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2025-07-11T06:41:18.027Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "4vmp7215pd05",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T09:02:19.873Z",
+          "updated_at": "2025-07-11T06:41:18.043Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "rfqh5dx946ly",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "qbnd1dzs57sc",
@@ -1734,9 +1809,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-07-08T10:18:28.205Z",
+          "updated_at": "2025-07-11T06:41:18.027Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -1803,9 +1878,9 @@
         {
           "id": "4vmp7215pd05",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2025-01-15T09:02:19.873Z",
-          "updated_at": "2025-07-07T10:13:50.091Z",
+          "updated_at": "2025-07-11T06:41:18.043Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -4458,7 +4533,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
