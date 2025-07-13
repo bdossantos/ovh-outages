@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-12T22:46:04.093Z"
+    "updated_at": "2025-07-13T02:43:41.675Z"
   },
   "components": [
     {
@@ -1133,6 +1133,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "1jyt0d7zhcl4",
+      "name": "[CHI/BHS][Backbone] - Backbone incident notification",
+      "status": "identified",
+      "created_at": "2025-07-13T02:02:12.124Z",
+      "updated_at": "2025-07-13T02:43:41.666Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/cqbp0fz0rz3b",
+      "started_at": "2025-07-13T02:02:12.000Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "08t69d052gzc",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident affecting our Backbone offering, which is causing temporary latency issue in US regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 12/07/2025 17:49 UTC\n<b>Impacted Service(s) :</b> Latency on our backbone network between CHI and BHS may affect transit through this region.\n<b>Customers Impact :</b> Customers may experience latency in US Region.\n<b>Root cause :</b> This incident is caused by a fiber cut.\n<b>Ongoing Actions :</b> The incident has been identified and our provider are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1jyt0d7zhcl4",
+          "created_at": "2025-07-13T02:02:12.186Z",
+          "updated_at": "2025-07-13T02:43:41.659Z",
+          "display_at": "2025-07-13T02:02:12.000Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-07-11T16:31:41.477Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1kb6v74ymh8f",
       "name": "[GRA/AMS][DNS] - DNS service incident notification",
