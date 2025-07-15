@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-15T13:25:57.420Z"
+    "updated_at": "2025-07-15T14:51:00.662Z"
   },
   "components": [
     {
@@ -115,9 +115,9 @@
     {
       "id": "gdvlmsm0bmqt",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:40.659Z",
-      "updated_at": "2025-03-12T23:14:14.853Z",
+      "updated_at": "2025-07-15T14:29:00.802Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -865,9 +865,9 @@
     {
       "id": "mvhys3nh67s1",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:36.767Z",
-      "updated_at": "2025-03-12T23:14:15.095Z",
+      "updated_at": "2025-07-15T14:29:00.819Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2009,7 +2009,7 @@
     {
       "id": "j1jp0gdpgqlz",
       "name": "AI & Machine Learning || AI Notebooks",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:45.256Z",
       "updated_at": "2025-04-18T13:47:32.455Z",
       "position": 4,
@@ -5708,9 +5708,9 @@
     {
       "id": "7pn0z4rqrxvc",
       "name": "EU-WEST-PAR-B",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2025-03-03T10:42:10.401Z",
-      "updated_at": "2025-07-15T11:00:21.098Z",
+      "updated_at": "2025-07-15T14:51:00.579Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -7916,7 +7916,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2025-04-18T13:47:33.027Z",
       "position": 56,
@@ -8024,7 +8024,82 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "5xtm3hx20779",
+      "name": "[GLOBAL][AI & Machine Learning] - AI notebooks issue notification",
+      "status": "investigating",
+      "created_at": "2025-07-15T14:29:00.766Z",
+      "updated_at": "2025-07-15T14:29:00.884Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/88128mrm5yz1",
+      "started_at": "2025-07-15T14:29:00.756Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "y8bkjndx4q99",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our AI & Machine Learning offering, which is causing temporary functionality issue on AI notebooks service.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 15/07/2025 14:10 UTC\n<b>Customers Impact :</b> Customers are unable to create C12 Quantum emulator notebooks.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "5xtm3hx20779",
+          "created_at": "2025-07-15T14:29:00.880Z",
+          "updated_at": "2025-07-15T14:29:00.880Z",
+          "display_at": "2025-07-15T14:29:00.880Z",
+          "affected_components": [
+            {
+              "code": "gdvlmsm0bmqt",
+              "name": "AI & Machine Learning || AI Notebooks - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "mvhys3nh67s1",
+              "name": "AI & Machine Learning || AI Notebooks - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gdvlmsm0bmqt",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:40.659Z",
+          "updated_at": "2025-07-15T14:29:00.802Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "j1jp0gdpgqlz",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "mvhys3nh67s1",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:36.767Z",
+          "updated_at": "2025-07-15T14:29:00.819Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "j1jp0gdpgqlz",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "jd9k13wyq92d",
@@ -9023,173 +9098,6 @@
       "scheduled_until": "2025-08-19T19:00:00.000Z"
     },
     {
-      "id": "v579f8yw4hfx",
-      "name": "[GLOBAL][Data & Analytics] - Data Platform maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-07-02T15:48:53.549Z",
-      "updated_at": "2025-07-15T12:00:26.535Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/79q7ykjbp4g2",
-      "started_at": "2025-07-02T15:48:53.544Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "f01msr4qbnp3",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "v579f8yw4hfx",
-          "created_at": "2025-07-15T12:00:26.528Z",
-          "updated_at": "2025-07-15T12:00:26.528Z",
-          "display_at": "2025-07-15T12:00:26.528Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rfxyxn1df4c6",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "v579f8yw4hfx",
-          "created_at": "2025-07-15T11:00:27.308Z",
-          "updated_at": "2025-07-15T11:00:27.308Z",
-          "display_at": "2025-07-15T11:00:27.308Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mk9fwvm321xk",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Data Platform offering.\n\n<b>Start time :</b> 15/07/2025 12:00 UTC\n<b>End time :</b> 15/07/2025 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on Data Platform offering.\n\nThank you for your understanding.",
-          "incident_id": "v579f8yw4hfx",
-          "created_at": "2025-07-02T15:48:53.623Z",
-          "updated_at": "2025-07-02T15:48:53.623Z",
-          "display_at": "2025-07-02T15:48:53.623Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "operational",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-07-07T12:40:37.540Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-15T12:00:00.000Z",
-      "scheduled_until": "2025-07-15T15:00:00.000Z"
-    },
-    {
-      "id": "myr140jh7cn6",
-      "name": "[EU-WEST-PAR-B][Storage] - Object storage maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-07-02T16:24:51.413Z",
-      "updated_at": "2025-07-15T11:00:21.204Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dvptq78fhpcc",
-      "started_at": "2025-07-02T16:24:51.405Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "srnknljyg6nh",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "myr140jh7cn6",
-          "created_at": "2025-07-15T11:00:21.192Z",
-          "updated_at": "2025-07-15T11:00:21.192Z",
-          "display_at": "2025-07-15T11:00:21.192Z",
-          "affected_components": [
-            {
-              "code": "7pn0z4rqrxvc",
-              "name": "Storage || Object storage - EU-WEST-PAR-B",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "6ly2bnrcjjvb",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "myr140jh7cn6",
-          "created_at": "2025-07-15T10:00:24.501Z",
-          "updated_at": "2025-07-15T10:00:24.501Z",
-          "display_at": "2025-07-15T10:00:24.501Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w6650jlqwq5j",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our object storage offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 15/07/2025 11:00 UTC\n<b>End time :</b> 15/07/2025 15:00 UTC\n<b>Service impact :</b> You may experience latency during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our object storage offer.\n\nThank you for your understanding.",
-          "incident_id": "myr140jh7cn6",
-          "created_at": "2025-07-02T16:24:51.483Z",
-          "updated_at": "2025-07-02T16:24:51.483Z",
-          "display_at": "2025-07-02T16:24:51.483Z",
-          "affected_components": [
-            {
-              "code": "7pn0z4rqrxvc",
-              "name": "Storage || Object storage - EU-WEST-PAR-B",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7pn0z4rqrxvc",
-          "name": "EU-WEST-PAR-B",
-          "status": "under_maintenance",
-          "created_at": "2025-03-03T10:42:10.401Z",
-          "updated_at": "2025-07-15T11:00:21.098Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-03-03",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-15T11:00:00.000Z",
-      "scheduled_until": "2025-07-15T15:00:00.000Z"
-    },
-    {
       "id": "jgzz2mg55lxd",
       "name": "[Global][Compute - Instance] - Images EoL notification",
       "status": "in_progress",
@@ -9235,7 +9143,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
