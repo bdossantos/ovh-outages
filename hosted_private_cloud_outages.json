@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-17T10:30:22.644Z"
+    "updated_at": "2025-07-17T12:10:44.062Z"
   },
   "components": [
     {
@@ -880,9 +880,9 @@
     {
       "id": "b2m66lpxg514",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T09:00:04.712Z",
-      "updated_at": "2025-07-13T22:40:20.680Z",
+      "updated_at": "2025-07-17T12:07:53.569Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -970,9 +970,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2025-07-15T22:11:00.341Z",
+      "updated_at": "2025-07-17T11:43:19.340Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1354,7 +1354,7 @@
     {
       "id": "rfqh5dx946ly",
       "name": "Managed VMware Cloud Director || RBX",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2025-01-15T08:50:52.331Z",
       "updated_at": "2025-01-15T10:36:58.307Z",
       "position": 9,
@@ -1480,7 +1480,7 @@
     {
       "id": "57t55jp0633h",
       "name": "Managed vSphere || RBX",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2025-01-15T10:37:04.696Z",
       "position": 15,
@@ -1688,48 +1688,34 @@
       ]
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "lmgwhrm9sbv9",
-      "name": "[SBG2A][Managed vSphere] - Equipment update notification",
-      "status": "scheduled",
-      "created_at": "2025-06-24T19:53:27.952Z",
-      "updated_at": "2025-07-17T10:30:22.633Z",
+      "id": "5j1d6z4mx453",
+      "name": "[RBX8][VMware Private Cloud] - Multiple racks",
+      "status": "identified",
+      "created_at": "2025-07-17T12:07:53.536Z",
+      "updated_at": "2025-07-17T12:10:44.055Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q6drdwvns4k7",
-      "started_at": "2025-06-24T19:53:27.943Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/sqz92j2dysml",
+      "started_at": "2025-07-17T12:07:53.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "hg16k7pbclmv",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "lmgwhrm9sbv9",
-          "created_at": "2025-07-17T10:30:22.496Z",
-          "updated_at": "2025-07-17T10:30:22.496Z",
-          "display_at": "2025-07-17T10:30:22.496Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "y55c10gcwjlk",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed vSphere offer.\n\n<b>Start time :</b> 17/07/2025 11:30 UTC\n<b>End time :</b> 17/07/2025 21:00 UTC\n<b>Service impact :</b> During the operation, customers may experience a few seconds of slowness when reading from or writing to their datastore.\nHowever, there will be no impact on the vSphere UI, data availability or virtual machines.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an update for multiple storage servers.\n\nThank you for your understanding.",
-          "incident_id": "lmgwhrm9sbv9",
-          "created_at": "2025-06-24T19:53:28.020Z",
-          "updated_at": "2025-06-24T20:30:47.930Z",
-          "display_at": "2025-06-24T19:53:28.020Z",
+          "id": "g6vf1stqdpxs",
+          "status": "identified",
+          "body": "We are currently experiencing an incident affecting our our our Managed VMware Cloud Director ,which is causing temporary availability issues in the racks R802R16, R802R17 and R802R18.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/07/2025 11:50 UTC\n<b>Impacted Service(s) :</b>  Racks R802R16, R802R17 and R802R18 are unavailable\n<b>Customers Impact :</b> Customers are experiencing malfunctions when they want to access their storage in the specific rack R802R16, R802R17 and R802R18.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> Our teams are working to resolve this incident and restore the service.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "5j1d6z4mx453",
+          "created_at": "2025-07-17T12:07:53.615Z",
+          "updated_at": "2025-07-17T12:10:43.983Z",
+          "display_at": "2025-07-17T12:07:53.000Z",
           "affected_components": [
             {
-              "code": "n50qxz88zcfk",
-              "name": "Managed vSphere || SBG - Storage",
+              "code": "b2m66lpxg514",
+              "name": "Managed VMware Cloud Director || RBX - Compute",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -1739,24 +1725,98 @@
       ],
       "components": [
         {
-          "id": "n50qxz88zcfk",
-          "name": "Storage",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:41:08.302Z",
-          "updated_at": "2025-07-17T06:30:21.110Z",
-          "position": 4,
+          "id": "b2m66lpxg514",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T09:00:04.712Z",
+          "updated_at": "2025-07-17T12:07:53.569Z",
+          "position": 3,
           "description": null,
           "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "ffzs9mslnm1g",
+          "start_date": "2025-01-15",
+          "group_id": "rfqh5dx946ly",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-07-17T11:30:00.000Z",
-      "scheduled_until": "2025-07-17T21:00:00.000Z"
+      "reminder_intervals": null
     },
+    {
+      "id": "g461yd449dn7",
+      "name": "[RBX8][VMware Private Cloud] - cluster9062",
+      "status": "identified",
+      "created_at": "2025-07-17T11:43:19.306Z",
+      "updated_at": "2025-07-17T11:56:24.910Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/27f5xyz4hdz4",
+      "started_at": "2025-07-17T11:43:19.299Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "w8k3snjnvcv5",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our  offer on the specific Cluster9062.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 17/07/2025 10:52 UTC\n<b>Impacted Service(s) :</b>We are currently facing an issue with Cluster9062, which is temporarily inaccessible. The datastores hosted on this cluster are also unavailable.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "g461yd449dn7",
+          "created_at": "2025-07-17T11:56:24.908Z",
+          "updated_at": "2025-07-17T11:56:24.908Z",
+          "display_at": "2025-07-17T11:56:24.908Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "k5zqw1n4ctt7",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our our Managed vSphere offer., which is causing temporary availability issues in Cluster9062.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 17/07/2025 10:52 UTC\n<b>Impacted Service(s) :</b> We are currently facing an issue with Cluster9062, which is temporarily inaccessible. The datastores hosted on this cluster are also unavailable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "g461yd449dn7",
+          "created_at": "2025-07-17T11:43:19.389Z",
+          "updated_at": "2025-07-17T11:43:19.389Z",
+          "display_at": "2025-07-17T11:43:19.389Z",
+          "affected_components": [
+            {
+              "code": "qg0qytmyzzr7",
+              "name": "Managed vSphere || RBX - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qg0qytmyzzr7",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:39:46.776Z",
+          "updated_at": "2025-07-17T11:43:19.340Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "57t55jp0633h",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "n2y8htyvldt9",
       "name": "[SBG2A][Managed vSphere] - Equipment update notification",
@@ -1866,74 +1926,74 @@
       "scheduled_until": "2025-07-24T16:00:00.000Z"
     },
     {
-      "id": "14frgflfswv9",
+      "id": "rsdw9ctl0wzh",
       "name": "[EU/CA][Hosted Private Cloud] - vSphere maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-06-25T20:25:00.857Z",
-      "updated_at": "2025-06-25T20:25:00.934Z",
+      "created_at": "2025-07-09T22:56:26.516Z",
+      "updated_at": "2025-07-09T22:57:00.104Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/wkzl0t70jzt7",
-      "started_at": "2025-06-25T20:25:00.826Z",
+      "shortlink": "https://stspg.io/16jx7yclf7x0",
+      "started_at": "2025-07-09T22:56:26.487Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "gz787y99nllr",
+          "id": "yktg7h63yznn",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.\nThis may temporarily affect availability.\n\n<b>Start time :</b> 21/07/2025 07:00 UTC\n<b>End time :</b> 24/07/2025 16:00 UTC\n<b>Service impact :</b> vSphere not accesible for 1h and hosts will be put in maintenance mode during the maintenance and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an upgrade for vSphere offer.\nAn individual communication will be done to inform customers and you can reschedule through the manager.\n\nThank you for your understanding.",
-          "incident_id": "14frgflfswv9",
-          "created_at": "2025-06-25T20:25:00.931Z",
-          "updated_at": "2025-06-25T20:25:00.931Z",
-          "display_at": "2025-06-25T20:25:00.931Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 21/07/2025 07:00 UTC\n<b>End time :</b> 24/07/2025 16:00 UTC\n<b>Service impact :</b> During the maintenance, vSphere won't be accessible and hosts will be put in maintenance mode for 1 hour.\nvMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our vSphere offer.\nAn individual communication will be done to inform customers.\nCustomers can reschedule the operation through the manager.\n\nThank you for your understanding",
+          "incident_id": "rsdw9ctl0wzh",
+          "created_at": "2025-07-09T22:56:26.588Z",
+          "updated_at": "2025-07-09T22:56:26.588Z",
+          "display_at": "2025-07-09T22:56:26.588Z",
           "affected_components": [
             {
               "code": "r0gb2v5791yj",
               "name": "Managed vSphere || RBX - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "c4d2d6dppx6r",
               "name": "Managed vSphere || LIM - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "nn6zpzd8g3fs",
               "name": "Managed vSphere || SBG - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "rj9yc5gqxp1z",
               "name": "Managed vSphere || ERI - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "8czvt83rw74b",
               "name": "Managed vSphere || BHS - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "vjqnjl5qnz5x",
               "name": "Managed vSphere || WAW - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "qwxk78lrlxcv",
               "name": "Managed vSphere || GRA - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             },
             {
               "code": "j78px444y2zg",
               "name": "Managed vSphere || YYZ - Management plane",
-              "old_status": "operational",
-              "new_status": "operational"
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
             }
           ],
           "deliver_notifications": true,
@@ -2067,74 +2127,74 @@
       "scheduled_until": "2025-07-24T16:00:00.000Z"
     },
     {
-      "id": "rsdw9ctl0wzh",
+      "id": "14frgflfswv9",
       "name": "[EU/CA][Hosted Private Cloud] - vSphere maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-07-09T22:56:26.516Z",
-      "updated_at": "2025-07-09T22:57:00.104Z",
+      "created_at": "2025-06-25T20:25:00.857Z",
+      "updated_at": "2025-06-25T20:25:00.934Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/16jx7yclf7x0",
-      "started_at": "2025-07-09T22:56:26.487Z",
+      "shortlink": "https://stspg.io/wkzl0t70jzt7",
+      "started_at": "2025-06-25T20:25:00.826Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
         {
-          "id": "yktg7h63yznn",
+          "id": "gz787y99nllr",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 21/07/2025 07:00 UTC\n<b>End time :</b> 24/07/2025 16:00 UTC\n<b>Service impact :</b> During the maintenance, vSphere won't be accessible and hosts will be put in maintenance mode for 1 hour.\nvMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our vSphere offer.\nAn individual communication will be done to inform customers.\nCustomers can reschedule the operation through the manager.\n\nThank you for your understanding",
-          "incident_id": "rsdw9ctl0wzh",
-          "created_at": "2025-07-09T22:56:26.588Z",
-          "updated_at": "2025-07-09T22:56:26.588Z",
-          "display_at": "2025-07-09T22:56:26.588Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer.\nThis may temporarily affect availability.\n\n<b>Start time :</b> 21/07/2025 07:00 UTC\n<b>End time :</b> 24/07/2025 16:00 UTC\n<b>Service impact :</b> vSphere not accesible for 1h and hosts will be put in maintenance mode during the maintenance and a vMotion will be performed if it has Virtual machines in it.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an upgrade for vSphere offer.\nAn individual communication will be done to inform customers and you can reschedule through the manager.\n\nThank you for your understanding.",
+          "incident_id": "14frgflfswv9",
+          "created_at": "2025-06-25T20:25:00.931Z",
+          "updated_at": "2025-06-25T20:25:00.931Z",
+          "display_at": "2025-06-25T20:25:00.931Z",
           "affected_components": [
             {
               "code": "r0gb2v5791yj",
               "name": "Managed vSphere || RBX - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "c4d2d6dppx6r",
               "name": "Managed vSphere || LIM - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "nn6zpzd8g3fs",
               "name": "Managed vSphere || SBG - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "rj9yc5gqxp1z",
               "name": "Managed vSphere || ERI - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "8czvt83rw74b",
               "name": "Managed vSphere || BHS - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "vjqnjl5qnz5x",
               "name": "Managed vSphere || WAW - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "qwxk78lrlxcv",
               "name": "Managed vSphere || GRA - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             },
             {
               "code": "j78px444y2zg",
               "name": "Managed vSphere || YYZ - Management plane",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
+              "old_status": "operational",
+              "new_status": "operational"
             }
           ],
           "deliver_notifications": true,
@@ -2724,6 +2784,60 @@
       "scheduled_until": "2025-07-31T16:00:00.000Z"
     },
     {
+      "id": "56g32l7bm02v",
+      "name": "[ERI1C][VMware Private Cloud] - Datastore maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-06-25T20:50:31.883Z",
+      "updated_at": "2025-06-25T20:50:31.943Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/h8m42pyvlmgg",
+      "started_at": "2025-06-25T20:50:31.875Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "r33pc2h6zchv",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 28/07/2025 07:00 UTC\n<b>End time :</b> 31/07/2025 16:00 UTC\n<b>Service impact :</b> You may experience a micro cut if the customer is writing a lot on their datastore.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on multiple storage servers.\n\nThank you for your understanding.",
+          "incident_id": "56g32l7bm02v",
+          "created_at": "2025-06-25T20:50:31.940Z",
+          "updated_at": "2025-06-25T20:50:31.940Z",
+          "display_at": "2025-06-25T20:50:31.940Z",
+          "affected_components": [
+            {
+              "code": "9xhfrcyjnr6b",
+              "name": "Managed VMware Cloud Director || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9xhfrcyjnr6b",
+          "name": "Storage",
+          "status": "under_maintenance",
+          "created_at": "2025-01-15T10:35:38.271Z",
+          "updated_at": "2025-07-15T07:01:22.500Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "j1tqz4prnpm4",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-28T07:00:00.000Z",
+      "scheduled_until": "2025-07-31T16:00:00.000Z"
+    },
+    {
       "id": "rfy727s1v798",
       "name": "[EU/CA][Hosted Private Cloud] - vSphere maintenance notification",
       "status": "scheduled",
@@ -2916,60 +3030,6 @@
           "showcase": false,
           "start_date": "2024-03-13",
           "group_id": "4hrz1q7y9dcf",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-28T07:00:00.000Z",
-      "scheduled_until": "2025-07-31T16:00:00.000Z"
-    },
-    {
-      "id": "56g32l7bm02v",
-      "name": "[ERI1C][VMware Private Cloud] - Datastore maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-06-25T20:50:31.883Z",
-      "updated_at": "2025-06-25T20:50:31.943Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h8m42pyvlmgg",
-      "started_at": "2025-06-25T20:50:31.875Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "r33pc2h6zchv",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Hosted Private Cloud offer. \n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 28/07/2025 07:00 UTC\n<b>End time :</b> 31/07/2025 16:00 UTC\n<b>Service impact :</b> You may experience a micro cut if the customer is writing a lot on their datastore.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on multiple storage servers.\n\nThank you for your understanding.",
-          "incident_id": "56g32l7bm02v",
-          "created_at": "2025-06-25T20:50:31.940Z",
-          "updated_at": "2025-06-25T20:50:31.940Z",
-          "display_at": "2025-06-25T20:50:31.940Z",
-          "affected_components": [
-            {
-              "code": "9xhfrcyjnr6b",
-              "name": "Managed VMware Cloud Director || ERI - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "9xhfrcyjnr6b",
-          "name": "Storage",
-          "status": "under_maintenance",
-          "created_at": "2025-01-15T10:35:38.271Z",
-          "updated_at": "2025-07-15T07:01:22.500Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-15",
-          "group_id": "j1tqz4prnpm4",
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -3453,6 +3513,86 @@
       ],
       "scheduled_for": "2025-08-11T07:00:00.000Z",
       "scheduled_until": "2025-08-21T16:00:00.000Z"
+    },
+    {
+      "id": "lmgwhrm9sbv9",
+      "name": "[SBG2A][Managed vSphere] - Equipment update notification",
+      "status": "in_progress",
+      "created_at": "2025-06-24T19:53:27.952Z",
+      "updated_at": "2025-07-17T11:30:21.161Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/q6drdwvns4k7",
+      "started_at": "2025-06-24T19:53:27.943Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "2gynvt5rhh41",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "lmgwhrm9sbv9",
+          "created_at": "2025-07-17T11:30:21.158Z",
+          "updated_at": "2025-07-17T11:30:21.158Z",
+          "display_at": "2025-07-17T11:30:21.158Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hg16k7pbclmv",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "lmgwhrm9sbv9",
+          "created_at": "2025-07-17T10:30:22.496Z",
+          "updated_at": "2025-07-17T10:30:22.496Z",
+          "display_at": "2025-07-17T10:30:22.496Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y55c10gcwjlk",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed vSphere offer.\n\n<b>Start time :</b> 17/07/2025 11:30 UTC\n<b>End time :</b> 17/07/2025 21:00 UTC\n<b>Service impact :</b> During the operation, customers may experience a few seconds of slowness when reading from or writing to their datastore.\nHowever, there will be no impact on the vSphere UI, data availability or virtual machines.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an update for multiple storage servers.\n\nThank you for your understanding.",
+          "incident_id": "lmgwhrm9sbv9",
+          "created_at": "2025-06-24T19:53:28.020Z",
+          "updated_at": "2025-06-24T20:30:47.930Z",
+          "display_at": "2025-06-24T19:53:28.020Z",
+          "affected_components": [
+            {
+              "code": "n50qxz88zcfk",
+              "name": "Managed vSphere || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "under_maintenance",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2025-07-17T06:30:21.110Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-07-17T11:30:00.000Z",
+      "scheduled_until": "2025-07-17T21:00:00.000Z"
     },
     {
       "id": "2479f8nkmdkp",
@@ -4434,7 +4574,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
