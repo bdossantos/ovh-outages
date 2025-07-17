@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-17T13:49:43.541Z"
+    "updated_at": "2025-07-17T14:21:33.288Z"
   },
   "components": [
     {
@@ -145,9 +145,9 @@
     {
       "id": "vmx5hg0l40m2",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-20T10:13:17.647Z",
-      "updated_at": "2023-01-20T10:13:17.647Z",
+      "updated_at": "2025-07-17T14:18:30.251Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -445,9 +445,9 @@
     {
       "id": "fzm0qgjphsjh",
       "name": "LIM",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-20T10:14:09.105Z",
-      "updated_at": "2023-01-20T10:14:09.105Z",
+      "updated_at": "2025-07-17T14:18:30.268Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1034,7 +1034,7 @@
     {
       "id": "51s043c1t89y",
       "name": "Network Services || DNS Resolver",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2023-01-20T10:13:17.625Z",
       "updated_at": "2025-06-24T14:20:35.172Z",
       "position": 17,
@@ -1132,7 +1132,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9bpzrlvvlrp1",
+      "name": "[RBX/LIM/GRA][Network] - DNS resolver",
+      "status": "identified",
+      "created_at": "2025-07-17T14:18:30.210Z",
+      "updated_at": "2025-07-17T14:18:30.312Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/snmpfmhvtd1s",
+      "started_at": "2025-07-17T14:18:30.199Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "r2p21dsw8xcn",
+          "status": "identified",
+          "body": "We are currently investigating an incident affecting our DNS resolution service, which is causing temporary issue in the RBX/GRA/LIM regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 17/07/2025 14:03 UTC\n<b>Impacted Service(s) :</b> Error on DNS Resolver on .com domains\n<b>Customers Impact :</b> Customers may experience DNS resolution errors for .com domains.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "9bpzrlvvlrp1",
+          "created_at": "2025-07-17T14:18:30.310Z",
+          "updated_at": "2025-07-17T14:18:30.310Z",
+          "display_at": "2025-07-17T14:18:30.310Z",
+          "affected_components": [
+            {
+              "code": "vmx5hg0l40m2",
+              "name": "Network Services || DNS Resolver - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "fzm0qgjphsjh",
+              "name": "Network Services || DNS Resolver - LIM",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "vmx5hg0l40m2",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2023-01-20T10:13:17.647Z",
+          "updated_at": "2025-07-17T14:18:30.251Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-20",
+          "group_id": "51s043c1t89y",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "fzm0qgjphsjh",
+          "name": "LIM",
+          "status": "degraded_performance",
+          "created_at": "2023-01-20T10:14:09.105Z",
+          "updated_at": "2025-07-17T14:18:30.268Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-01-20",
+          "group_id": "51s043c1t89y",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "dtd70wbrtnd7",
@@ -4010,7 +4085,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
