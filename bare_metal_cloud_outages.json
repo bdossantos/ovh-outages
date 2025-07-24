@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-24T09:43:44.758Z"
+    "updated_at": "2025-07-24T10:21:17.863Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-07-20T20:30:48.474Z",
+      "updated_at": "2025-07-24T10:15:23.486Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2864,6 +2864,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "4bknhx4trbwv",
+      "name": "[GRA1][Dedicated Servers] - Rack G106A06",
+      "status": "identified",
+      "created_at": "2025-07-24T10:15:23.450Z",
+      "updated_at": "2025-07-24T10:15:23.576Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/5hqyq45f51mh",
+      "started_at": "2025-07-24T10:15:23.443Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vkqdb5gxgtmq",
+          "status": "identified",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack G106A06.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/07/2025 09:39 UTC\n<b>Impacted Service(s) :</b>   Some servers in the rack G106A06 are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "4bknhx4trbwv",
+          "created_at": "2025-07-24T10:15:23.573Z",
+          "updated_at": "2025-07-24T10:15:23.573Z",
+          "display_at": "2025-07-24T10:15:23.573Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2025-07-24T10:15:23.486Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "drrzsvbd3qhr",
       "name": "[WAW1][Dedicated Servers] - Rack W17A20",
