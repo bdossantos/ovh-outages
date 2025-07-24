@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-24T04:56:06.580Z"
+    "updated_at": "2025-07-24T09:43:44.758Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2004,9 +2004,9 @@
     {
       "id": "7qwkswh276f8",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:29.102Z",
-      "updated_at": "2025-06-27T23:40:59.775Z",
+      "updated_at": "2025-07-24T09:43:44.529Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -2863,7 +2863,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "drrzsvbd3qhr",
+      "name": "[WAW1][Dedicated Servers] - Rack W17A20",
+      "status": "identified",
+      "created_at": "2025-07-24T09:43:44.495Z",
+      "updated_at": "2025-07-24T09:43:44.755Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/t6y9ybtlp5t2",
+      "started_at": "2025-07-24T09:43:44.488Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "n5phypppt5s2",
+          "status": "identified",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack W17A20.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/07/2025 09:34 UTC\n<b>Impacted Service(s) :</b>   Some servers in the rack W17A20 are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "drrzsvbd3qhr",
+          "created_at": "2025-07-24T09:43:44.752Z",
+          "updated_at": "2025-07-24T09:43:44.752Z",
+          "display_at": "2025-07-24T09:43:44.752Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7qwkswh276f8",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:29.102Z",
+          "updated_at": "2025-07-24T09:43:44.529Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "fnwmxz5rlhcl",
@@ -3742,7 +3796,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
