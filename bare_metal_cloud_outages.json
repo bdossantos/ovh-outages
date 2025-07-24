@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-24T11:35:38.832Z"
+    "updated_at": "2025-07-24T13:59:59.373Z"
   },
   "components": [
     {
@@ -1609,9 +1609,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-07-15T07:37:26.237Z",
+      "updated_at": "2025-07-24T13:39:01.294Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2864,6 +2864,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "hzdk8897t9p1",
+      "name": "[SBG5][Dedicated Servers] - Rack SBG0506A06A/B/C/D",
+      "status": "identified",
+      "created_at": "2025-07-24T13:39:01.262Z",
+      "updated_at": "2025-07-24T13:59:59.364Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/1bkt8rm7syhv",
+      "started_at": "2025-07-24T13:39:01.255Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "750q25g88qsz",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on racks SBG0506A06A/B/C/D in SBG5.\n\nHere are some supplementary details :\n<b>Start time :</b> 24/07/2025 13:20 UTC\n<b>Impacted Service(s) :</b> Servers in the specified racks are currently unreachable.\n<b>Customers Impact :</b> Customers are currently unable to access their servers located in the specified racks.\n<b>Root Cause :</b> This incident is caused by this ongoing maintenance https://network.status-ovhcloud.com/incidents/z3pllyx60m1y.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hzdk8897t9p1",
+          "created_at": "2025-07-24T13:59:59.361Z",
+          "updated_at": "2025-07-24T13:59:59.361Z",
+          "display_at": "2025-07-24T13:59:59.361Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vv0qvtvjb9zd",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Dedicated Servers offer on racks SBG0506A06A/B/C/D in SBG5.\n<b>Start time :</b> 24/07/2025 13:20 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hzdk8897t9p1",
+          "created_at": "2025-07-24T13:39:01.405Z",
+          "updated_at": "2025-07-24T13:39:01.405Z",
+          "display_at": "2025-07-24T13:39:01.405Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-07-24T13:39:01.294Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "drrzsvbd3qhr",
       "name": "[WAW1][Dedicated Servers] - Rack W17A20",
