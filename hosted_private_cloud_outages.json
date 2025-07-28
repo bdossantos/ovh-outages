@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-28T11:41:09.685Z"
+    "updated_at": "2025-07-28T13:56:06.216Z"
   },
   "components": [
     {
@@ -910,9 +910,9 @@
     {
       "id": "z6xj7q70t2ld",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:21:30.710Z",
-      "updated_at": "2025-06-27T04:02:03.878Z",
+      "updated_at": "2025-07-28T13:56:06.163Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1407,7 +1407,7 @@
     {
       "id": "jww2fxllfll5",
       "name": "Managed VMware Cloud Director || SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:10:51.097Z",
       "updated_at": "2025-01-15T10:37:04.638Z",
       "position": 10,
@@ -1720,7 +1720,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "y02wy7bmmszx",
+      "name": "[SBG3][Managed VMware Cloud Director] - Hosts unreachable incident notification",
+      "status": "investigating",
+      "created_at": "2025-07-28T13:56:06.126Z",
+      "updated_at": "2025-07-28T13:56:06.213Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/2rhy2yzpqz7c",
+      "started_at": "2025-07-28T13:56:06.117Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "xz49pylbpc4s",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Managed VMware Cloud Director offering, which is causing temporary availability issue in the rack S344B05.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 28/07/2025 13:15 UTC\n<b>Impacted Service(s) :</b> Some hosts are temporarily unavailable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "y02wy7bmmszx",
+          "created_at": "2025-07-28T13:56:06.211Z",
+          "updated_at": "2025-07-28T13:56:06.211Z",
+          "display_at": "2025-07-28T13:56:06.211Z",
+          "affected_components": [
+            {
+              "code": "z6xj7q70t2ld",
+              "name": "Managed VMware Cloud Director || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "z6xj7q70t2ld",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T10:21:30.710Z",
+          "updated_at": "2025-07-28T13:56:06.163Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "jww2fxllfll5",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yh8vvz7xc7kj",
@@ -3218,7 +3272,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
