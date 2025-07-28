@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-28T07:00:22.297Z"
+    "updated_at": "2025-07-28T08:58:53.609Z"
   },
   "components": [
     {
@@ -1564,9 +1564,9 @@
     {
       "id": "cbcpmqr4myg3",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:38.114Z",
-      "updated_at": "2025-03-13T09:17:29.232Z",
+      "updated_at": "2025-07-28T08:26:05.019Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2504,9 +2504,9 @@
     {
       "id": "hty2001km2jk",
       "name": "YNM",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2024-12-12T13:19:39.686Z",
-      "updated_at": "2025-07-28T07:00:22.169Z",
+      "updated_at": "2025-07-28T08:58:53.544Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2778,7 +2778,7 @@
     {
       "id": "3ygk7lc032zm",
       "name": "Virtual Private Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:40.895Z",
       "updated_at": "2024-09-10T06:16:11.311Z",
       "position": 21,
@@ -2807,7 +2807,7 @@
     {
       "id": "40xgq25nqllh",
       "name": "Virtual Private Servers || Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:39.112Z",
       "updated_at": "2024-09-10T06:16:11.319Z",
       "position": 22,
@@ -2863,7 +2863,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "w1m007w4pn4m",
+      "name": "[BHS2][Virtual Private Servers] - VPS instances incident notification",
+      "status": "identified",
+      "created_at": "2025-07-28T08:26:04.969Z",
+      "updated_at": "2025-07-28T08:28:38.357Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/1d37jm8k82kk",
+      "started_at": "2025-07-28T08:26:04.959Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "6rsz2fsskvvm",
+          "status": "identified",
+          "body": "We are currently investigating an incident affecting our Virtual Private Servers offering, which is causing temporary issue in the BHS2 region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 28/07/2025 07:30 UTC\n<b>Impacted Service(s) :</b> Some VPS instances in the BHS2 region are temporarily unreachable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their VPS instances.\n<b>Root Cause :</b> A service disruption occured due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "w1m007w4pn4m",
+          "created_at": "2025-07-28T08:26:05.485Z",
+          "updated_at": "2025-07-28T08:26:05.485Z",
+          "display_at": "2025-07-28T08:26:05.485Z",
+          "affected_components": [
+            {
+              "code": "cbcpmqr4myg3",
+              "name": "Virtual Private Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cbcpmqr4myg3",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:38.114Z",
+          "updated_at": "2025-07-28T08:26:05.019Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "3ygk7lc032zm",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "0s27qd8d3cmm",
@@ -3643,93 +3697,6 @@
       "scheduled_until": "2025-09-17T16:00:00.000Z"
     },
     {
-      "id": "php6wr2wqwb0",
-      "name": "[MUM][Virtual Private Servers] - Network equipment maintenance notification - AP - VPS-1",
-      "status": "in_progress",
-      "created_at": "2025-07-10T23:33:35.787Z",
-      "updated_at": "2025-07-28T07:00:22.286Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qrjnccz6x0f8",
-      "started_at": "2025-07-10T23:33:35.779Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "jdhb9lbvny18",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "php6wr2wqwb0",
-          "created_at": "2025-07-28T07:00:22.281Z",
-          "updated_at": "2025-07-28T07:00:22.281Z",
-          "display_at": "2025-07-28T07:00:22.281Z",
-          "affected_components": [
-            {
-              "code": "hty2001km2jk",
-              "name": "Virtual Private Servers || Network - YNM",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0qpb5xzsyhd1",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "php6wr2wqwb0",
-          "created_at": "2025-07-28T06:00:26.013Z",
-          "updated_at": "2025-07-28T06:00:26.013Z",
-          "display_at": "2025-07-28T06:00:26.013Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xy4b24kf4xwc",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 28/07/2025 07:00 UTC \n<b>End time :</b> 28/07/2025 09:00 UTC \n<b>Service impact :</b> The network of all VPS located in the region AP-SOUTH-MUM-VPS-1 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "php6wr2wqwb0",
-          "created_at": "2025-07-10T23:33:35.847Z",
-          "updated_at": "2025-07-10T23:33:35.847Z",
-          "display_at": "2025-07-10T23:33:35.847Z",
-          "affected_components": [
-            {
-              "code": "hty2001km2jk",
-              "name": "Virtual Private Servers || Network - YNM",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "hty2001km2jk",
-          "name": "YNM",
-          "status": "under_maintenance",
-          "created_at": "2024-12-12T13:19:39.686Z",
-          "updated_at": "2025-07-28T07:00:22.169Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-07-28T07:00:00.000Z",
-      "scheduled_until": "2025-07-28T09:00:00.000Z"
-    },
-    {
       "id": "xqtd80knqcmj",
       "name": "[Global][Virtual Private Servers] - Images EoL notification",
       "status": "in_progress",
@@ -3775,7 +3742,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
