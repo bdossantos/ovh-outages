@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-30T14:07:36.561Z"
+    "updated_at": "2025-07-30T17:47:21.498Z"
   },
   "components": [
     {
@@ -3522,9 +3522,9 @@
     {
       "id": "gyxq55djvgqg",
       "name": "GRA9",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.088Z",
-      "updated_at": "2025-07-01T20:59:32.326Z",
+      "updated_at": "2025-07-30T17:47:21.404Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -3945,9 +3945,9 @@
     {
       "id": "jnrg6smtv9yw",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:01.994Z",
-      "updated_at": "2025-07-02T18:28:11.393Z",
+      "updated_at": "2025-07-30T17:47:21.428Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -8282,6 +8282,106 @@
     }
   ],
   "incidents": [
+    {
+      "id": "13ktcm4mkp66",
+      "name": "[GRA9/GRA11][Compute - Instance] - Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-07-30T17:41:57.994Z",
+      "updated_at": "2025-07-30T17:47:21.489Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/j5pcngc936wt",
+      "started_at": "2025-07-30T17:41:58.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "dd22p4b7v6j8",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Compute - Instance offering, which is causing temporary availability issue in the GRA9/GRA11 regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/07/2025 17:24 UTC\n<b>Impacted Service(s) :</b> Some instances in the regions GRA9/GRA11 are temporarily unavailable via public network.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their instances via public network.\n<b>Root Cause :</b> A service disruption occured due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "13ktcm4mkp66",
+          "created_at": "2025-07-30T17:47:21.485Z",
+          "updated_at": "2025-07-30T17:47:21.485Z",
+          "display_at": "2025-07-30T17:47:21.485Z",
+          "affected_components": [
+            {
+              "code": "gyxq55djvgqg",
+              "name": "Compute - Instance || GRA - GRA9",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "gm7x8j7jqk9k",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Compute - Instance offering, which is causing temporary availability issue in the GRA9/GRA11 regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/07/2025 17:24 UTC\n<b>Impacted Service(s) :</b> Some instances in the regions GRA9/GRA11 are temporarily unavailable via public network.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their instances via public network.\n<b>Root Cause :</b> A service disruption occured due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "13ktcm4mkp66",
+          "created_at": "2025-07-30T17:41:58.059Z",
+          "updated_at": "2025-07-30T17:46:08.514Z",
+          "display_at": "2025-07-30T17:41:58.000Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gyxq55djvgqg",
+          "name": "GRA9",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.088Z",
+          "updated_at": "2025-07-30T17:47:21.404Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2025-07-30T17:47:21.428Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "5ckstbjn7n6p",
       "name": "[GRA1/GRA3][Compute - Instance] - Instances incident notification",
