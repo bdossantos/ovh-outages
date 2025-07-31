@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-07-31T15:06:52.041Z"
+    "updated_at": "2025-07-31T15:23:11.973Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-07-25T17:38:04.344Z",
+      "updated_at": "2025-07-31T15:23:11.900Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2863,7 +2863,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "j2m17m5k7hlz",
+      "name": "[BHS4][Dedicated Servers] - Rack T04B25",
+      "status": "identified",
+      "created_at": "2025-07-31T15:23:11.865Z",
+      "updated_at": "2025-07-31T15:23:11.970Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9865zf79vwk5",
+      "started_at": "2025-07-31T15:23:11.857Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "9h61wsdkpl17",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on the specific rack T04B2.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 31/07/2025 15:00 UTC\n<b>Impacted Service(s) :</b> All servers in the rack T04B25 are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "j2m17m5k7hlz",
+          "created_at": "2025-07-31T15:23:11.967Z",
+          "updated_at": "2025-07-31T15:23:11.967Z",
+          "display_at": "2025-07-31T15:23:11.967Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-07-31T15:23:11.900Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "2ksgytrjfwdg",
@@ -2974,6 +3028,114 @@
       "scheduled_until": "2025-08-04T10:00:00.000Z"
     },
     {
+      "id": "d2mxhsdbcgrj",
+      "name": "[BHS2][Virtual Private Servers] - Network equipment maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-31T15:09:27.733Z",
+      "updated_at": "2025-07-31T15:09:27.790Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mjfr85b8xgbj",
+      "started_at": "2025-07-31T15:09:27.726Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "hxwyhlysxxrl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the VPS region BHS2.\n\n<b>Start time :</b> 04/08/2025 10:00 UTC\n<b>End time :</b> 04/08/2025 11:30 UTC\n<b>Service impact :</b> The network of all VPS located in the region BHS2 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "d2mxhsdbcgrj",
+          "created_at": "2025-07-31T15:09:27.787Z",
+          "updated_at": "2025-07-31T15:09:27.787Z",
+          "display_at": "2025-07-31T15:09:27.787Z",
+          "affected_components": [
+            {
+              "code": "7fb9d18j4s12",
+              "name": "Virtual Private Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7fb9d18j4s12",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:31:36.480Z",
+          "updated_at": "2025-07-01T21:17:50.597Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-04T10:00:00.000Z",
+      "scheduled_until": "2025-08-04T11:30:00.000Z"
+    },
+    {
+      "id": "y9rkzvb762gy",
+      "name": "[GRA4][Virtual Private Servers] - Network equipment maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-31T15:11:49.092Z",
+      "updated_at": "2025-07-31T15:11:49.158Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/4fg6qxcmt6tm",
+      "started_at": "2025-07-31T15:11:49.084Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "vhmb7h3m56sf",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the VPS region GRA4.\n\n<b>Start time :</b> 04/08/2025 12:00 UTC\n<b>End time :</b> 04/08/2025 13:30 UTC\n<b>Service impact :</b> The network of all VPS located in the region GRA4 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "y9rkzvb762gy",
+          "created_at": "2025-07-31T15:11:49.153Z",
+          "updated_at": "2025-07-31T15:11:49.153Z",
+          "display_at": "2025-07-31T15:11:49.153Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b8jvtsrcrclp",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:31:33.023Z",
+          "updated_at": "2025-07-30T19:20:28.644Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-04T12:00:00.000Z",
+      "scheduled_until": "2025-08-04T13:30:00.000Z"
+    },
+    {
       "id": "tpsrr5l170mk",
       "name": "[GRA1][Network] - Network equipment maintenance notification - Rooms G127 - G128 - G134",
       "status": "scheduled",
@@ -3080,6 +3242,114 @@
       ],
       "scheduled_for": "2025-08-05T04:30:00.000Z",
       "scheduled_until": "2025-08-05T05:00:00.000Z"
+    },
+    {
+      "id": "z9lz97zpbd8b",
+      "name": "[GRA6][Virtual Private Servers] - Network equipment maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-31T15:11:29.994Z",
+      "updated_at": "2025-07-31T15:11:30.046Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/49zdxkvyyscr",
+      "started_at": "2025-07-31T15:11:29.987Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "w20vhmqlk89r",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the VPS region GRA6.\n\n<b>Start time :</b> 05/08/2025 07:00 UTC\n<b>End time :</b> 05/08/2025 08:30 UTC \n<b>Service impact :</b> The network of all VPS located in the region GRA6 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "z9lz97zpbd8b",
+          "created_at": "2025-07-31T15:11:30.043Z",
+          "updated_at": "2025-07-31T15:11:30.043Z",
+          "display_at": "2025-07-31T15:11:30.043Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b8jvtsrcrclp",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:31:33.023Z",
+          "updated_at": "2025-07-30T19:20:28.644Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-05T07:00:00.000Z",
+      "scheduled_until": "2025-08-05T08:30:00.000Z"
+    },
+    {
+      "id": "tt9zbvbkz0lc",
+      "name": "[GRA8][Virtual Private Servers] - Network equipment maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-31T15:09:12.096Z",
+      "updated_at": "2025-07-31T15:09:12.152Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/b12wnhljxhst",
+      "started_at": "2025-07-31T15:09:12.089Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "8260tf4j871f",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the VPS region GRA8.\n\n<b>Start time :</b>05/08/2025 08:30 UTC \n<b>End time :</b> 05/08/2025 10:00 UTC \n<b>Service impact :</b> The network of all VPS located in the region GRA8 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "tt9zbvbkz0lc",
+          "created_at": "2025-07-31T15:09:12.149Z",
+          "updated_at": "2025-07-31T15:09:12.149Z",
+          "display_at": "2025-07-31T15:09:12.149Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b8jvtsrcrclp",
+          "name": "GRA",
+          "status": "operational",
+          "created_at": "2021-07-09T07:31:33.023Z",
+          "updated_at": "2025-07-30T19:20:28.644Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-05T08:30:00.000Z",
+      "scheduled_until": "2025-08-05T10:00:00.000Z"
     },
     {
       "id": "3gdmh4xhpp5t",
@@ -3775,7 +4045,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
