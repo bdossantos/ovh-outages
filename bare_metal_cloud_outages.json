@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-01T12:44:01.707Z"
+    "updated_at": "2025-08-01T14:32:32.667Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1654,9 +1654,9 @@
     {
       "id": "ywcwwnktxgh0",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:54.272Z",
-      "updated_at": "2025-07-15T05:48:25.334Z",
+      "updated_at": "2025-08-01T14:32:32.600Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2864,6 +2864,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "nnsqzzypk5qm",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0303A04B incident notification",
+      "status": "identified",
+      "created_at": "2025-08-01T14:32:32.557Z",
+      "updated_at": "2025-08-01T14:32:32.663Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/31wsyg1cyq32",
+      "started_at": "2025-08-01T14:32:32.548Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "wx2f674bj8dd",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/08/2025 13:53 UTC\n<b>Impacted Service(s) :</b> Public network is temporarily unavailable for servers in rack LIM0303A04B.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers located in the specified rack through public network.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "nnsqzzypk5qm",
+          "created_at": "2025-08-01T14:32:32.660Z",
+          "updated_at": "2025-08-01T14:32:32.660Z",
+          "display_at": "2025-08-01T14:32:32.660Z",
+          "affected_components": [
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2025-08-01T14:32:32.600Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "nt1wc8mhqzn0",
       "name": "[GRA1][Dedicated Servers] - Room G131",
