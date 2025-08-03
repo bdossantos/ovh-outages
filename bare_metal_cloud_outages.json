@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-03T09:06:03.879Z"
+    "updated_at": "2025-08-03T11:54:25.583Z"
   },
   "components": [
     {
@@ -568,9 +568,9 @@
     {
       "id": "klylb1cv9dvj",
       "name": "ERI",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:22.787Z",
-      "updated_at": "2025-07-25T11:12:14.414Z",
+      "updated_at": "2025-08-03T11:51:04.450Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2863,7 +2863,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "4jldprtxfm5y",
+      "name": "[ERI1][Dedicated Servers] - Rack ERI0112D05C",
+      "status": "identified",
+      "created_at": "2025-08-03T11:51:04.403Z",
+      "updated_at": "2025-08-03T11:54:25.579Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/826v4tbcfydt",
+      "started_at": "2025-08-03T11:51:04.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "jsg44vw1xddw",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific  rack ERI0112D05C.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/08/2025 10:52 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack ERI0112D05C are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "4jldprtxfm5y",
+          "created_at": "2025-08-03T11:51:04.685Z",
+          "updated_at": "2025-08-03T11:54:25.527Z",
+          "display_at": "2025-08-03T11:51:04.000Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2025-08-03T11:51:04.450Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "2ksgytrjfwdg",
@@ -4066,7 +4120,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
