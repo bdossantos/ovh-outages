@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-05T07:06:02.607Z"
+    "updated_at": "2025-08-05T07:43:33.740Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-08-01T17:51:09.790Z",
+      "updated_at": "2025-08-05T07:38:45.353Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2863,14 +2863,88 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "rssz47dkr41d",
+      "name": "[GRA3][Dedicated Servers] - Rack GRA0322A04B incident notification",
+      "status": "identified",
+      "created_at": "2025-08-05T07:38:45.320Z",
+      "updated_at": "2025-08-05T07:43:33.737Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/gschfqcwdppc",
+      "started_at": "2025-08-05T07:38:45.313Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "bkv95q6bcf7l",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offer on in the specific rack GRA0322A04B.\n\nHere is detail for this incident :\n<b>Start time :</b> 05/08/2025 06:48 UTC\n<b>Impacted Service(s) :</b> Some servers in rack GRA0322A04B are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in the specified rack.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "rssz47dkr41d",
+          "created_at": "2025-08-05T07:42:23.400Z",
+          "updated_at": "2025-08-05T07:42:23.400Z",
+          "display_at": "2025-08-05T07:42:23.400Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "59rldcl1nkqc",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer in the specific rack GRA0322A04B.\n\n<b>Start time :</b> 05/08/2025 06:48 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "rssz47dkr41d",
+          "created_at": "2025-08-05T07:38:45.411Z",
+          "updated_at": "2025-08-05T07:38:45.411Z",
+          "display_at": "2025-08-05T07:38:45.411Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2025-08-05T07:38:45.353Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tt9zbvbkz0lc",
       "name": "[GRA8][Virtual Private Servers] - Network equipment maintenance notification",
       "status": "scheduled",
       "created_at": "2025-07-31T15:09:12.096Z",
-      "updated_at": "2025-07-31T15:09:12.152Z",
+      "updated_at": "2025-08-05T07:30:22.005Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2878,6 +2952,19 @@
       "started_at": "2025-07-31T15:09:12.089Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "vycsl7frtjln",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "tt9zbvbkz0lc",
+          "created_at": "2025-08-05T07:30:21.774Z",
+          "updated_at": "2025-08-05T07:30:21.774Z",
+          "display_at": "2025-08-05T07:30:21.774Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8260tf4j871f",
           "status": "scheduled",
@@ -3515,7 +3602,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
