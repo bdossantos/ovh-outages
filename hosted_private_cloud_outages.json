@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-05T16:41:11.972Z"
+    "updated_at": "2025-08-05T20:51:40.516Z"
   },
   "components": [
     {
@@ -925,9 +925,9 @@
     {
       "id": "lkvnx711s5gr",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:32:11.445Z",
-      "updated_at": "2025-04-10T12:40:51.437Z",
+      "updated_at": "2025-08-05T20:48:22.697Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1365,7 +1365,7 @@
     {
       "id": "3pxf191gh8t8",
       "name": "Managed VMware Cloud Director || LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T10:11:32.995Z",
       "updated_at": "2025-01-15T10:36:58.297Z",
       "position": 8,
@@ -1720,7 +1720,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "323yjcpqns6m",
+      "name": "[LIM3][Managed VMware Cloud Director] - Racks LIM0303A05A LIM0303A05C incident notification",
+      "status": "investigating",
+      "created_at": "2025-08-05T20:48:22.659Z",
+      "updated_at": "2025-08-05T20:51:40.513Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/10fxkf1sv89w",
+      "started_at": "2025-08-05T20:48:22.000Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "k3vjq131l4p6",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Managed VMware Cloud Director offer in LIM3, racks LIM0303A05A\nLIM0303A05C.\n\n<b>Start time :</b> 05/08/2025 20:25 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "323yjcpqns6m",
+          "created_at": "2025-08-05T20:48:22.749Z",
+          "updated_at": "2025-08-05T20:51:40.467Z",
+          "display_at": "2025-08-05T20:48:22.000Z",
+          "affected_components": [
+            {
+              "code": "lkvnx711s5gr",
+              "name": "Managed VMware Cloud Director || LIM - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lkvnx711s5gr",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T10:32:11.445Z",
+          "updated_at": "2025-08-05T20:48:22.697Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "3pxf191gh8t8",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "r75kfx114gnt",
