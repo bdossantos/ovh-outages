@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-07T16:56:04.186Z"
+    "updated_at": "2025-08-07T17:21:44.970Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-08-05T00:11:32.360Z",
+      "updated_at": "2025-08-07T17:16:15.018Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2863,7 +2863,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "r1qnm0rm53c3",
+      "name": "[BHS8][Dedicated Servers] - BHS0817A04A rack incident notification.",
+      "status": "identified",
+      "created_at": "2025-08-07T17:16:14.973Z",
+      "updated_at": "2025-08-07T17:21:31.774Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/jtv4llj1cy54",
+      "started_at": "2025-08-07T17:16:14.963Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "s4hynlpvkk7t",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific Rack BHS0817A04A.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 07/08/2025 16:45 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack BHS0817A04A are temporarily unavailable.\n<b>Customers Impact :</b> Some customers cannot access their services in this specific rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "r1qnm0rm53c3",
+          "created_at": "2025-08-07T17:21:31.771Z",
+          "updated_at": "2025-08-07T17:21:31.771Z",
+          "display_at": "2025-08-07T17:21:31.771Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r71148b820v3",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer in the specific rack BHS0817A04A .\n\n<b>Start time :</b> 07/08/2025 16:45 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "r1qnm0rm53c3",
+          "created_at": "2025-08-07T17:16:15.098Z",
+          "updated_at": "2025-08-07T17:18:47.922Z",
+          "display_at": "2025-08-07T17:16:15.000Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-08-07T17:16:15.018Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "jd06py33sv3v",
