@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-11T06:00:27.986Z"
+    "updated_at": "2025-08-11T07:00:21.555Z"
   },
   "components": [
     {
@@ -4423,9 +4423,9 @@
     {
       "id": "n7xbhskvq51x",
       "name": "GRA9",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:37:29.181Z",
-      "updated_at": "2024-12-18T06:26:02.528Z",
+      "updated_at": "2025-08-11T07:00:21.452Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -8007,7 +8007,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2025-07-23T11:33:56.852Z",
       "position": 53,
@@ -8250,73 +8250,6 @@
   ],
   "incidents": [],
   "scheduled_maintenances": [
-    {
-      "id": "d8dmk6009mr7",
-      "name": "[GRA9][Storage] - Block storage maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-06-20T14:56:10.122Z",
-      "updated_at": "2025-08-11T06:00:27.976Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nxj5vpqhyrh5",
-      "started_at": "2025-06-20T14:56:10.113Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "mx69f060jht7",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "d8dmk6009mr7",
-          "created_at": "2025-08-11T06:00:27.696Z",
-          "updated_at": "2025-08-11T06:00:27.696Z",
-          "display_at": "2025-08-11T06:00:27.696Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "11d76l9srg1l",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Storage offer.\n\n<b>Start time :</b> 11/08/2025 07:00 UTC\n<b>End time :</b> 12/08/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement  :</b> As part of our continuous improvement policy, we will upgrade major version of Ceph software to next stable release.\n\nThank you for your understanding.",
-          "incident_id": "d8dmk6009mr7",
-          "created_at": "2025-06-20T14:56:10.202Z",
-          "updated_at": "2025-06-20T14:56:10.202Z",
-          "display_at": "2025-06-20T14:56:10.202Z",
-          "affected_components": [
-            {
-              "code": "n7xbhskvq51x",
-              "name": "Storage || Block storage - GRA9",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "n7xbhskvq51x",
-          "name": "GRA9",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:29.181Z",
-          "updated_at": "2024-12-18T06:26:02.528Z",
-          "position": 10,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-11T07:00:00.000Z",
-      "scheduled_until": "2025-08-12T16:00:00.000Z"
-    },
     {
       "id": "prstnwls9pw6",
       "name": "[GLOBAL][Data & Analytics] - Data Platform maintenance notification",
@@ -9996,10 +9929,97 @@
       ],
       "scheduled_for": "2025-09-17T12:00:00.000Z",
       "scheduled_until": "2025-09-17T16:00:00.000Z"
+    },
+    {
+      "id": "d8dmk6009mr7",
+      "name": "[GRA9][Storage] - Block storage maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-06-20T14:56:10.122Z",
+      "updated_at": "2025-08-11T07:00:21.541Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nxj5vpqhyrh5",
+      "started_at": "2025-06-20T14:56:10.113Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "b36mmj8nhht0",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "d8dmk6009mr7",
+          "created_at": "2025-08-11T07:00:21.533Z",
+          "updated_at": "2025-08-11T07:00:21.533Z",
+          "display_at": "2025-08-11T07:00:21.533Z",
+          "affected_components": [
+            {
+              "code": "n7xbhskvq51x",
+              "name": "Storage || Block storage - GRA9",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mx69f060jht7",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "d8dmk6009mr7",
+          "created_at": "2025-08-11T06:00:27.696Z",
+          "updated_at": "2025-08-11T06:00:27.696Z",
+          "display_at": "2025-08-11T06:00:27.696Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "11d76l9srg1l",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Storage offer.\n\n<b>Start time :</b> 11/08/2025 07:00 UTC\n<b>End time :</b> 12/08/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement  :</b> As part of our continuous improvement policy, we will upgrade major version of Ceph software to next stable release.\n\nThank you for your understanding.",
+          "incident_id": "d8dmk6009mr7",
+          "created_at": "2025-06-20T14:56:10.202Z",
+          "updated_at": "2025-06-20T14:56:10.202Z",
+          "display_at": "2025-06-20T14:56:10.202Z",
+          "affected_components": [
+            {
+              "code": "n7xbhskvq51x",
+              "name": "Storage || Block storage - GRA9",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n7xbhskvq51x",
+          "name": "GRA9",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:37:29.181Z",
+          "updated_at": "2025-08-11T07:00:21.452Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-11T07:00:00.000Z",
+      "scheduled_until": "2025-08-12T16:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
