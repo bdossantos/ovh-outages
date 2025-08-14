@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-14T14:06:27.082Z"
+    "updated_at": "2025-08-14T14:59:50.042Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-08-13T05:54:30.596Z",
+      "updated_at": "2025-08-14T14:59:49.965Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1133,6 +1133,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "d40jr93lb82m",
+      "name": "[APAC][Backbone] - Network instabilities between SGP and SYD",
+      "status": "identified",
+      "created_at": "2025-08-14T14:59:49.930Z",
+      "updated_at": "2025-08-14T14:59:50.039Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/c9p24k6l8m7r",
+      "started_at": "2025-08-14T14:59:49.924Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "vld376q6g2pq",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Backbone offer in SGP and SYD regions.\n\nHere are some supplementary details :\n<b>Start time :</b> 14/08/2025 03:32 UTC\n<b>Impacted Service(s) :</b> There is a latency increase between SGP and SYD backbone infrastructure.\n<b>Customers Impact :</b> Some customers in the SGP and SYD regions may experience latency issues.\n<b>Root Cause :</b> This incident is caused by an issue on our provider side.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "d40jr93lb82m",
+          "created_at": "2025-08-14T14:59:50.036Z",
+          "updated_at": "2025-08-14T14:59:50.036Z",
+          "display_at": "2025-08-14T14:59:50.036Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "degraded_performance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-08-14T14:59:49.965Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-20",
+          "group_id": null,
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "44rmjwx6xymr",
       "name": "[RBX3][Infrastructure] - Room R41- R43 - R46 Incident Notification",
@@ -4619,9 +4672,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-08-13T05:54:30.596Z",
+          "updated_at": "2025-08-14T14:59:49.965Z",
           "position": 1,
           "description": null,
           "showcase": false,
