@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-18T03:30:21.907Z"
+    "updated_at": "2025-08-18T04:56:29.111Z"
   },
   "components": [
     {
@@ -40,9 +40,9 @@
     {
       "id": "0pcq2d0yy7wz",
       "name": "RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:31:52.860Z",
-      "updated_at": "2025-08-05T10:04:46.723Z",
+      "updated_at": "2025-08-18T04:30:21.492Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -413,9 +413,9 @@
     {
       "id": "j0hn31fh46h5",
       "name": "SBG",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:31:53.649Z",
-      "updated_at": "2025-07-16T08:20:07.317Z",
+      "updated_at": "2025-08-18T04:30:21.515Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1276,9 +1276,9 @@
     {
       "id": "cc4nd1bj2cnp",
       "name": "LIM",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-01-10T05:12:15.297Z",
-      "updated_at": "2025-07-15T04:34:06.571Z",
+      "updated_at": "2025-08-18T04:30:21.534Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-08-16T23:16:46.927Z",
+      "updated_at": "2025-08-18T04:56:29.017Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2699,7 +2699,7 @@
     {
       "id": "0zd81w13qcgg",
       "name": "Storage and Backups || NAS HA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:31:54.584Z",
       "updated_at": "2024-09-10T06:16:11.287Z",
       "position": 18,
@@ -2863,60 +2863,34 @@
       ]
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "985djymywtzr",
-      "name": "[RBX/SBG/LIM][Storage and Backups] - NAS HA maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-08-05T18:08:11.525Z",
-      "updated_at": "2025-08-18T03:30:21.901Z",
+      "id": "q0twjc5mtt6h",
+      "name": "[RBX8][Dedicated Servers] - Rack R831A14 incident notification",
+      "status": "investigating",
+      "created_at": "2025-08-18T04:56:28.983Z",
+      "updated_at": "2025-08-18T04:56:29.108Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/343bgqkhdwbn",
-      "started_at": "2025-08-05T18:08:11.514Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/9pncdr6jl8bw",
+      "started_at": "2025-08-18T04:56:28.975Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "qm2ynf0ksfqz",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "985djymywtzr",
-          "created_at": "2025-08-18T03:30:21.815Z",
-          "updated_at": "2025-08-18T03:30:21.815Z",
-          "display_at": "2025-08-18T03:30:21.815Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xvyjdx8rlfnp",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Bare Metal Cloud offer.\n\n<b>Start time :</b> 18/08/2025 04:30 UTC\n<b>End time :</b> 18/08/2025 21:00 UTC\n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will perform an update on the storage servers hosting your data.\nThis version will improve certain security mechanisms, as well as some performance enhancements.\nDuring the maintenance period, your data will remain available.\n\nThank you for your understanding.",
-          "incident_id": "985djymywtzr",
-          "created_at": "2025-08-05T18:08:11.588Z",
-          "updated_at": "2025-08-05T18:08:11.588Z",
-          "display_at": "2025-08-05T18:08:11.588Z",
+          "id": "py7jgn7jqhmy",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack R831A14.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 18/08/2025 04:49 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack R831A14 are temporarily unavailable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "q0twjc5mtt6h",
+          "created_at": "2025-08-18T04:56:29.105Z",
+          "updated_at": "2025-08-18T04:56:29.105Z",
+          "display_at": "2025-08-18T04:56:29.105Z",
           "affected_components": [
             {
-              "code": "0pcq2d0yy7wz",
-              "name": "Storage and Backups || NAS HA - RBX",
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
               "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "j0hn31fh46h5",
-              "name": "Storage and Backups || NAS HA - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "cc4nd1bj2cnp",
-              "name": "Storage and Backups || NAS HA - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -2926,54 +2900,25 @@
       ],
       "components": [
         {
-          "id": "0pcq2d0yy7wz",
+          "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
-          "position": 1,
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-08-18T04:56:29.017Z",
+          "position": 5,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "j0hn31fh46h5",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "0zd81w13qcgg",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "cc4nd1bj2cnp",
-          "name": "LIM",
-          "status": "operational",
-          "created_at": "2024-01-10T05:12:15.297Z",
-          "updated_at": "2025-07-15T04:34:06.571Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-01-10",
-          "group_id": "0zd81w13qcgg",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-08-18T04:30:00.000Z",
-      "scheduled_until": "2025-08-18T21:00:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "8hxv4g5zmdmv",
       "name": "[RBX/SBG][Storage and Backups] - NAS HA maintenance notification",
@@ -3018,9 +2963,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3033,9 +2978,9 @@
         {
           "id": "j0hn31fh46h5",
           "name": "SBG",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3147,9 +3092,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3162,9 +3107,9 @@
         {
           "id": "j0hn31fh46h5",
           "name": "SBG",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3330,9 +3275,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3345,9 +3290,9 @@
         {
           "id": "j0hn31fh46h5",
           "name": "SBG",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3459,9 +3404,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3474,9 +3419,9 @@
         {
           "id": "cc4nd1bj2cnp",
           "name": "LIM",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-01-10T05:12:15.297Z",
-          "updated_at": "2025-07-15T04:34:06.571Z",
+          "updated_at": "2025-08-18T04:30:21.534Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3588,9 +3533,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3603,9 +3548,9 @@
         {
           "id": "j0hn31fh46h5",
           "name": "SBG",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3663,9 +3608,9 @@
         {
           "id": "0pcq2d0yy7wz",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:52.860Z",
-          "updated_at": "2025-08-05T10:04:46.723Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3678,9 +3623,9 @@
         {
           "id": "j0hn31fh46h5",
           "name": "SBG",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:31:53.649Z",
-          "updated_at": "2025-07-16T08:20:07.317Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3822,10 +3767,151 @@
       ],
       "scheduled_for": "2025-09-17T12:00:00.000Z",
       "scheduled_until": "2025-09-17T16:00:00.000Z"
+    },
+    {
+      "id": "985djymywtzr",
+      "name": "[RBX/SBG/LIM][Storage and Backups] - NAS HA maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-08-05T18:08:11.525Z",
+      "updated_at": "2025-08-18T04:30:21.594Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/343bgqkhdwbn",
+      "started_at": "2025-08-05T18:08:11.514Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rgmrlb0hqxxp",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "985djymywtzr",
+          "created_at": "2025-08-18T04:30:21.591Z",
+          "updated_at": "2025-08-18T04:30:21.591Z",
+          "display_at": "2025-08-18T04:30:21.591Z",
+          "affected_components": [
+            {
+              "code": "0pcq2d0yy7wz",
+              "name": "Storage and Backups || NAS HA - RBX",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "j0hn31fh46h5",
+              "name": "Storage and Backups || NAS HA - SBG",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "cc4nd1bj2cnp",
+              "name": "Storage and Backups || NAS HA - LIM",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "qm2ynf0ksfqz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "985djymywtzr",
+          "created_at": "2025-08-18T03:30:21.815Z",
+          "updated_at": "2025-08-18T03:30:21.815Z",
+          "display_at": "2025-08-18T03:30:21.815Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xvyjdx8rlfnp",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Bare Metal Cloud offer.\n\n<b>Start time :</b> 18/08/2025 04:30 UTC\n<b>End time :</b> 18/08/2025 21:00 UTC\n<b>Service impact :</b> Impacted services might experience some input/output freezes for storage equipment during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will perform an update on the storage servers hosting your data.\nThis version will improve certain security mechanisms, as well as some performance enhancements.\nDuring the maintenance period, your data will remain available.\n\nThank you for your understanding.",
+          "incident_id": "985djymywtzr",
+          "created_at": "2025-08-05T18:08:11.588Z",
+          "updated_at": "2025-08-05T18:08:11.588Z",
+          "display_at": "2025-08-05T18:08:11.588Z",
+          "affected_components": [
+            {
+              "code": "0pcq2d0yy7wz",
+              "name": "Storage and Backups || NAS HA - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "j0hn31fh46h5",
+              "name": "Storage and Backups || NAS HA - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "cc4nd1bj2cnp",
+              "name": "Storage and Backups || NAS HA - LIM",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0pcq2d0yy7wz",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:31:52.860Z",
+          "updated_at": "2025-08-18T04:30:21.492Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "0zd81w13qcgg",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "j0hn31fh46h5",
+          "name": "SBG",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:31:53.649Z",
+          "updated_at": "2025-08-18T04:30:21.515Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "0zd81w13qcgg",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cc4nd1bj2cnp",
+          "name": "LIM",
+          "status": "under_maintenance",
+          "created_at": "2024-01-10T05:12:15.297Z",
+          "updated_at": "2025-08-18T04:30:21.534Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-10",
+          "group_id": "0zd81w13qcgg",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-18T04:30:00.000Z",
+      "scheduled_until": "2025-08-18T21:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
