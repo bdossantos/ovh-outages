@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-19T11:30:21.752Z"
+    "updated_at": "2025-08-19T13:10:38.375Z"
   },
   "components": [
     {
@@ -3027,9 +3027,9 @@
     {
       "id": "k1bfwspgws6s",
       "name": "GRA3",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-15T08:36:33.125Z",
-      "updated_at": "2025-08-19T11:30:21.533Z",
+      "updated_at": "2025-08-19T13:10:38.312Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -7306,9 +7306,9 @@
     {
       "id": "1m0dyvn10ht4",
       "name": "Data & Analytics || Data Platform",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2024-04-12T16:07:29.893Z",
-      "updated_at": "2025-08-19T09:00:26.994Z",
+      "updated_at": "2025-08-19T12:17:40.807Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -7711,7 +7711,7 @@
     {
       "id": "xxf4tr946kpr",
       "name": "Network || Gateway",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-15T08:33:50.711Z",
       "updated_at": "2025-07-23T11:33:56.804Z",
       "position": 49,
@@ -8759,7 +8759,7 @@
       "name": "[BHS5][Network] - Network maintenance notification",
       "status": "scheduled",
       "created_at": "2025-08-06T04:01:40.040Z",
-      "updated_at": "2025-08-06T04:01:40.109Z",
+      "updated_at": "2025-08-19T13:00:24.032Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8767,6 +8767,19 @@
       "started_at": "2025-08-06T04:01:40.033Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "j4lxwmxzkj2f",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "85wny157q9rl",
+          "created_at": "2025-08-19T13:00:23.928Z",
+          "updated_at": "2025-08-19T13:00:23.928Z",
+          "display_at": "2025-08-19T13:00:23.928Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "vd2s0rx977s3",
           "status": "scheduled",
@@ -9295,6 +9308,60 @@
       "scheduled_until": "2025-08-20T17:00:00.000Z"
     },
     {
+      "id": "595w2krs75d4",
+      "name": "[GRA9/GRA11][Data & Analytics] - Data Platform maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-08-01T01:58:31.395Z",
+      "updated_at": "2025-08-01T02:57:11.665Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8nzygn3q1dq6",
+      "started_at": "2025-08-01T01:58:31.390Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "1d1kcmv4jp8v",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Data Platform offer.\n\n<b>Start time :</b> 21/08/2025 09:00 UTC\n<b>End time :</b> 21/08/2025 14:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a upgrade on our Data Platform offer.",
+          "incident_id": "595w2krs75d4",
+          "created_at": "2025-08-01T01:58:31.466Z",
+          "updated_at": "2025-08-01T02:57:00.511Z",
+          "display_at": "2025-08-01T01:58:31.466Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
+          "status": "operational",
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-08-19T12:17:40.807Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-12",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-21T09:00:00.000Z",
+      "scheduled_until": "2025-08-21T14:30:00.000Z"
+    },
+    {
       "id": "qh4wqmjmzjkz",
       "name": "[EU-WEST-PAR][Network] - Network maintenance notification",
       "status": "scheduled",
@@ -9421,60 +9488,6 @@
       ],
       "scheduled_for": "2025-08-21T09:00:00.000Z",
       "scheduled_until": "2025-08-21T12:30:00.000Z"
-    },
-    {
-      "id": "595w2krs75d4",
-      "name": "[GRA9/GRA11][Data & Analytics] - Data Platform maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-08-01T01:58:31.395Z",
-      "updated_at": "2025-08-01T02:57:11.665Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8nzygn3q1dq6",
-      "started_at": "2025-08-01T01:58:31.390Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "1d1kcmv4jp8v",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Data Platform offer.\n\n<b>Start time :</b> 21/08/2025 09:00 UTC\n<b>End time :</b> 21/08/2025 14:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a upgrade on our Data Platform offer.",
-          "incident_id": "595w2krs75d4",
-          "created_at": "2025-08-01T01:58:31.466Z",
-          "updated_at": "2025-08-01T02:57:00.511Z",
-          "display_at": "2025-08-01T01:58:31.466Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-19T09:00:26.994Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-21T09:00:00.000Z",
-      "scheduled_until": "2025-08-21T14:30:00.000Z"
     },
     {
       "id": "jsbsbpmlh6v5",
@@ -9644,7 +9657,7 @@
       "name": "[GLOBAL][Containers & Orchestration] - Managed Kubernetes Service maintenance notification",
       "status": "scheduled",
       "created_at": "2025-08-19T09:16:13.622Z",
-      "updated_at": "2025-08-19T09:16:13.745Z",
+      "updated_at": "2025-08-19T12:41:37.186Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -9655,10 +9668,10 @@
         {
           "id": "hy6ydp1z87h4",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Containers & Orchestration offer.\n\n<b>Start time :</b> 26/08/2025 08:00 UTC\n<b>End time :</b> 28/08/2025 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be performing maintenance on the Managed Kubernetes Service, during which the containerd version will be upgraded from v1.7 to v2.1.\n\nThank you for your understanding.",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Containers & Orchestration offer.\n\n<b>Start time :</b> 26/08/2025 08:00 UTC\n<b>End time :</b> 28/08/2025 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be performing maintenance on the Managed Kubernetes Service, during which the containerd version will be upgraded from v1.7 to v2.1. Only clusters in ALWAYS_UPDATE are affected by the maintenance.\n\nThank you for your understanding.",
           "incident_id": "d51ltq1d654b",
           "created_at": "2025-08-19T09:16:13.740Z",
-          "updated_at": "2025-08-19T09:16:13.740Z",
+          "updated_at": "2025-08-19T12:41:37.181Z",
           "display_at": "2025-08-19T09:16:13.740Z",
           "affected_components": [
             {
@@ -9983,9 +9996,9 @@
         {
           "id": "1m0dyvn10ht4",
           "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-19T09:00:26.994Z",
+          "updated_at": "2025-08-19T12:17:40.807Z",
           "position": 31,
           "description": null,
           "showcase": false,
@@ -10331,180 +10344,6 @@
       ],
       "scheduled_for": "2025-09-17T12:00:00.000Z",
       "scheduled_until": "2025-09-17T16:00:00.000Z"
-    },
-    {
-      "id": "s6lq5ky7jf95",
-      "name": "[GRA3][Network] - Network maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-08-06T03:49:55.021Z",
-      "updated_at": "2025-08-19T11:30:21.730Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/c2340nc2cjcb",
-      "started_at": "2025-08-06T03:49:55.012Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "d20n1znxry84",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "s6lq5ky7jf95",
-          "created_at": "2025-08-19T11:30:21.721Z",
-          "updated_at": "2025-08-19T11:30:21.721Z",
-          "display_at": "2025-08-19T11:30:21.721Z",
-          "affected_components": [
-            {
-              "code": "k1bfwspgws6s",
-              "name": "Network || Gateway - GRA3",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "m0rmfhxps19g",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "s6lq5ky7jf95",
-          "created_at": "2025-08-19T10:30:21.599Z",
-          "updated_at": "2025-08-19T10:30:21.599Z",
-          "display_at": "2025-08-19T10:30:21.599Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "mfmxw802ppn9",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the public cloud region GRA3.\n\n<b>Start time :</b> 19/08/2025 11:30 UTC \n<b>End time :</b> 19/08/2025 13:00 UTC \n<b>Service impact :</b> The network of all public cloud compute, loadbalancer and routers located in the region GRA3 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure. \n\nThank you for your understanding.",
-          "incident_id": "s6lq5ky7jf95",
-          "created_at": "2025-08-06T03:49:55.145Z",
-          "updated_at": "2025-08-06T03:49:55.145Z",
-          "display_at": "2025-08-06T03:49:55.145Z",
-          "affected_components": [
-            {
-              "code": "k1bfwspgws6s",
-              "name": "Network || Gateway - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "k1bfwspgws6s",
-          "name": "GRA3",
-          "status": "under_maintenance",
-          "created_at": "2023-04-15T08:36:33.125Z",
-          "updated_at": "2025-08-19T11:30:21.533Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-19T11:30:00.000Z",
-      "scheduled_until": "2025-08-19T13:00:00.000Z"
-    },
-    {
-      "id": "f4rcpgwcq5zb",
-      "name": "[GLOBAL][Data & Analytics] - Data Platform maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-08-01T01:36:08.601Z",
-      "updated_at": "2025-08-19T09:00:30.506Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2c73pp9vwytt",
-      "started_at": "2025-08-01T01:36:08.596Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "21dsp7zx8kd3",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "f4rcpgwcq5zb",
-          "created_at": "2025-08-19T09:00:30.260Z",
-          "updated_at": "2025-08-19T09:00:30.260Z",
-          "display_at": "2025-08-19T09:00:30.260Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "vgndm05mqzpn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "f4rcpgwcq5zb",
-          "created_at": "2025-08-19T08:00:26.160Z",
-          "updated_at": "2025-08-19T08:00:26.160Z",
-          "display_at": "2025-08-19T08:00:26.160Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n0224j083n7k",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Data Platform offer.\n\n<b>Start time :</b> 19/08/2025 09:00 UTC\n<b>End time :</b> 19/08/2025 12:00 UTC\n<b>Service impact :</b> Some tasks running during maintenance will encounter errors.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a upgrade on our Data Platform offer.",
-          "incident_id": "f4rcpgwcq5zb",
-          "created_at": "2025-08-01T01:36:08.669Z",
-          "updated_at": "2025-08-01T01:36:08.669Z",
-          "display_at": "2025-08-01T01:36:08.669Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-19T09:00:26.994Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-19T09:00:00.000Z",
-      "scheduled_until": "2025-08-19T12:00:00.000Z"
     },
     {
       "id": "jz685y4942wp",
