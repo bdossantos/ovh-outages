@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-21T12:03:28.367Z"
+    "updated_at": "2025-08-21T13:02:12.478Z"
   },
   "components": [
     {
@@ -7337,9 +7337,9 @@
     {
       "id": "1m0dyvn10ht4",
       "name": "Data & Analytics || Data Platform",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2024-04-12T16:07:29.893Z",
-      "updated_at": "2025-08-21T09:00:21.471Z",
+      "updated_at": "2025-08-21T12:17:51.196Z",
       "position": 31,
       "description": null,
       "showcase": false,
@@ -8360,14 +8360,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "01wy9ygwhtmt",
+      "name": "[GRA9/GRA11][Data & Analytics] - Data Platform incident notification",
+      "status": "identified",
+      "created_at": "2025-08-21T12:17:51.157Z",
+      "updated_at": "2025-08-21T12:27:59.045Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/s934w8tx7mzx",
+      "started_at": "2025-08-21T12:17:51.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "ypwpq79ydky2",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Data Platform offer in the GRA9/GRA11 regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 21/08/2025 11:31 UTC\n<b>Impacted Service(s) :</b> User interface platform outage.\n<b>Customers Impact :</b> All services linked to our backend RabbitMQ are currently down. As a result, scheduled jobs are not running and the platform is unavailable.\n<b>Root Cause :</b> This incident is caused by operation on this maintenance: https://public-cloud.status-ovhcloud.com/incidents/595w2krs75d4\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "01wy9ygwhtmt",
+          "created_at": "2025-08-21T12:17:51.270Z",
+          "updated_at": "2025-08-21T12:27:59.041Z",
+          "display_at": "2025-08-21T12:17:51.000Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
+          "status": "partial_outage",
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-08-21T12:17:51.196Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-12",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "rypcd6v59tvn",
       "name": "[GRA5][Network] - Network maintenance notification",
       "status": "scheduled",
       "created_at": "2025-08-20T09:08:15.589Z",
-      "updated_at": "2025-08-20T09:08:15.666Z",
+      "updated_at": "2025-08-21T12:30:21.436Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -8375,6 +8429,19 @@
       "started_at": "2025-08-20T09:08:15.582Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "0zgl1jnk29rt",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rypcd6v59tvn",
+          "created_at": "2025-08-21T12:30:21.356Z",
+          "updated_at": "2025-08-21T12:30:21.356Z",
+          "display_at": "2025-08-21T12:30:21.356Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "3zc66n79jhc6",
           "status": "scheduled",
@@ -8484,6 +8551,60 @@
       "scheduled_until": "2025-08-21T20:30:00.000Z"
     },
     {
+      "id": "5w55jc1kwgn4",
+      "name": "[DE1][Network] - Network maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-08-20T09:19:20.723Z",
+      "updated_at": "2025-08-20T09:19:20.801Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7svth0dg2p4d",
+      "started_at": "2025-08-20T09:19:20.715Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kc7bx4gwbp6n",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the public cloud region DE1.\n\n<b>Start time :</b> 25/08/2025 7:00 UTC\n<b>End time :</b> 25/08/2025 19:00 UTC\n<b>Service impact :</b> The network of all public cloud compute, loadbalancer and routers located in the region DE1 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "5w55jc1kwgn4",
+          "created_at": "2025-08-20T09:19:20.798Z",
+          "updated_at": "2025-08-20T09:19:20.798Z",
+          "display_at": "2025-08-20T09:19:20.798Z",
+          "affected_components": [
+            {
+              "code": "s7y9gs9htpsv",
+              "name": "Network || Gateway - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "s7y9gs9htpsv",
+          "name": "DE1",
+          "status": "operational",
+          "created_at": "2023-04-15T08:33:50.726Z",
+          "updated_at": "2024-05-17T07:54:52.586Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "xxf4tr946kpr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-25T07:00:00.000Z",
+      "scheduled_until": "2025-08-25T19:00:00.000Z"
+    },
+    {
       "id": "3xk3hb6p6q2y",
       "name": "[RBX-A/WAW1/WAW2][Storage] - Volume Snapshot Ceph maintenance notification",
       "status": "scheduled",
@@ -8580,60 +8701,6 @@
       "scheduled_until": "2025-08-26T16:00:00.000Z"
     },
     {
-      "id": "5w55jc1kwgn4",
-      "name": "[DE1][Network] - Network maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-08-20T09:19:20.723Z",
-      "updated_at": "2025-08-20T09:19:20.801Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7svth0dg2p4d",
-      "started_at": "2025-08-20T09:19:20.715Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "kc7bx4gwbp6n",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the public cloud region DE1.\n\n<b>Start time :</b> 25/08/2025 7:00 UTC\n<b>End time :</b> 25/08/2025 19:00 UTC\n<b>Service impact :</b> The network of all public cloud compute, loadbalancer and routers located in the region DE1 will observe up to 2 seconds of packet loss. The packet loss will happen once per service during the maintenance window.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "5w55jc1kwgn4",
-          "created_at": "2025-08-20T09:19:20.798Z",
-          "updated_at": "2025-08-20T09:19:20.798Z",
-          "display_at": "2025-08-20T09:19:20.798Z",
-          "affected_components": [
-            {
-              "code": "s7y9gs9htpsv",
-              "name": "Network || Gateway - DE1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "s7y9gs9htpsv",
-          "name": "DE1",
-          "status": "operational",
-          "created_at": "2023-04-15T08:33:50.726Z",
-          "updated_at": "2024-05-17T07:54:52.586Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-25T07:00:00.000Z",
-      "scheduled_until": "2025-08-25T19:00:00.000Z"
-    },
-    {
       "id": "ly7dd4c4wvn2",
       "name": "[GLOBAL][Data & Analytics] - Data Platform maintenance notification",
       "status": "scheduled",
@@ -8671,9 +8738,9 @@
         {
           "id": "1m0dyvn10ht4",
           "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-21T09:00:21.471Z",
+          "updated_at": "2025-08-21T12:17:51.196Z",
           "position": 31,
           "description": null,
           "showcase": false,
@@ -9139,9 +9206,9 @@
         {
           "id": "1m0dyvn10ht4",
           "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-21T09:00:21.471Z",
+          "updated_at": "2025-08-21T12:17:51.196Z",
           "position": 31,
           "description": null,
           "showcase": false,
@@ -9264,102 +9331,6 @@
       "scheduled_until": "2025-09-01T15:00:00.000Z"
     },
     {
-      "id": "7pw8cs1fdz46",
-      "name": "[GRA2/6/8][Storage] - Volume Snapshot (Ceph) maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-07-22T16:23:33.151Z",
-      "updated_at": "2025-07-22T16:23:33.236Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/jb010r3ng3mb",
-      "started_at": "2025-07-22T16:23:33.139Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "dsldsch610k7",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Ceph offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 03/09/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Volume Snapshot (Ceph) offer.\n\nThank you for your understanding.",
-          "incident_id": "7pw8cs1fdz46",
-          "created_at": "2025-07-22T16:23:33.232Z",
-          "updated_at": "2025-07-22T16:23:33.232Z",
-          "display_at": "2025-07-22T16:23:33.232Z",
-          "affected_components": [
-            {
-              "code": "lng3n45dgl5g",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "dqqd2cr7s3yl",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA6",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hyrjpn3d2x1f",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lng3n45dgl5g",
-          "name": "GRA2",
-          "status": "operational",
-          "created_at": "2023-10-04T21:40:58.642Z",
-          "updated_at": "2023-10-30T13:12:37.381Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-10-04",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "dqqd2cr7s3yl",
-          "name": "GRA6",
-          "status": "operational",
-          "created_at": "2023-10-04T21:37:52.942Z",
-          "updated_at": "2023-10-17T08:31:19.002Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-10-04",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hyrjpn3d2x1f",
-          "name": "GRA8",
-          "status": "operational",
-          "created_at": "2025-07-22T16:01:51.256Z",
-          "updated_at": "2025-07-22T16:04:24.524Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-07-22",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-09-01T07:00:00.000Z",
-      "scheduled_until": "2025-09-03T16:00:00.000Z"
-    },
-    {
       "id": "whw77msydz0d",
       "name": "[GRA11][Storage] - Block storage maintenance notification",
       "status": "scheduled",
@@ -9468,6 +9439,102 @@
       "scheduled_until": "2025-09-01T15:00:00.000Z"
     },
     {
+      "id": "7pw8cs1fdz46",
+      "name": "[GRA2/6/8][Storage] - Volume Snapshot (Ceph) maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-22T16:23:33.151Z",
+      "updated_at": "2025-07-22T16:23:33.236Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jb010r3ng3mb",
+      "started_at": "2025-07-22T16:23:33.139Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "dsldsch610k7",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Ceph offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 03/09/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Volume Snapshot (Ceph) offer.\n\nThank you for your understanding.",
+          "incident_id": "7pw8cs1fdz46",
+          "created_at": "2025-07-22T16:23:33.232Z",
+          "updated_at": "2025-07-22T16:23:33.232Z",
+          "display_at": "2025-07-22T16:23:33.232Z",
+          "affected_components": [
+            {
+              "code": "lng3n45dgl5g",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "dqqd2cr7s3yl",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA6",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hyrjpn3d2x1f",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lng3n45dgl5g",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2023-10-04T21:40:58.642Z",
+          "updated_at": "2023-10-30T13:12:37.381Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-04",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "dqqd2cr7s3yl",
+          "name": "GRA6",
+          "status": "operational",
+          "created_at": "2023-10-04T21:37:52.942Z",
+          "updated_at": "2023-10-17T08:31:19.002Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-04",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hyrjpn3d2x1f",
+          "name": "GRA8",
+          "status": "operational",
+          "created_at": "2025-07-22T16:01:51.256Z",
+          "updated_at": "2025-07-22T16:04:24.524Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-07-22",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-09-01T07:00:00.000Z",
+      "scheduled_until": "2025-09-03T16:00:00.000Z"
+    },
+    {
       "id": "91qtr0rpjmcw",
       "name": "[BHS/GRA][Data & Analytics] - Logs Data Platform maintenance notification",
       "status": "scheduled",
@@ -9543,30 +9610,42 @@
       "scheduled_until": "2025-09-17T16:00:00.000Z"
     },
     {
-      "id": "595w2krs75d4",
-      "name": "[GRA9/GRA11][Data & Analytics] - Data Platform maintenance notification",
+      "id": "qh4wqmjmzjkz",
+      "name": "[EU-WEST-PAR][Network] - Network maintenance notification",
       "status": "in_progress",
-      "created_at": "2025-08-01T01:58:31.395Z",
-      "updated_at": "2025-08-21T12:03:28.353Z",
+      "created_at": "2025-08-05T18:36:02.604Z",
+      "updated_at": "2025-08-21T13:02:12.464Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/8nzygn3q1dq6",
-      "started_at": "2025-08-01T01:58:31.390Z",
+      "shortlink": "https://stspg.io/h2ck9ghktywm",
+      "started_at": "2025-08-05T18:36:02.686Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "bw9wcpfd6fl4",
+          "id": "dbg0sjp5z5tc",
           "status": "in_progress",
-          "body": "Operations on this maintenance will take longer than expected. \nWe will keep you informed.\nThe new end time is below:\n\n<b>End time :</b> 21/08/2025 20:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.",
-          "incident_id": "595w2krs75d4",
-          "created_at": "2025-08-21T12:03:28.348Z",
-          "updated_at": "2025-08-21T12:03:28.348Z",
-          "display_at": "2025-08-21T12:03:28.348Z",
+          "body": "The current maintenance will take more time than expected.",
+          "incident_id": "qh4wqmjmzjkz",
+          "created_at": "2025-08-21T13:02:12.460Z",
+          "updated_at": "2025-08-21T13:02:12.460Z",
+          "display_at": "2025-08-21T13:02:12.460Z",
           "affected_components": [
             {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
+              "code": "jrvv3ddkjj43",
+              "name": "Network || Gateway - EU-WEST-PAR-A",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "cnp9x4h7m2k7",
+              "name": "Network || Gateway - EU-WEST-PAR-B",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "4bmdpf4l9js4",
+              "name": "Network || Gateway - EU-WEST-PAR-C",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             }
@@ -9575,93 +9654,6 @@
           "custom_tweet": null,
           "tweet_id": null
         },
-        {
-          "id": "rll1q50tn34l",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "595w2krs75d4",
-          "created_at": "2025-08-21T09:00:21.688Z",
-          "updated_at": "2025-08-21T09:00:21.688Z",
-          "display_at": "2025-08-21T09:00:21.688Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xvsg57wjcvsc",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "595w2krs75d4",
-          "created_at": "2025-08-21T08:00:32.879Z",
-          "updated_at": "2025-08-21T08:00:32.879Z",
-          "display_at": "2025-08-21T08:00:32.879Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1d1kcmv4jp8v",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Data Platform offer.\n\n<b>Start time :</b> 21/08/2025 09:00 UTC\n<b>End time :</b> 21/08/2025 14:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a upgrade on our Data Platform offer.",
-          "incident_id": "595w2krs75d4",
-          "created_at": "2025-08-01T01:58:31.466Z",
-          "updated_at": "2025-08-01T02:57:00.511Z",
-          "display_at": "2025-08-01T01:58:31.466Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "under_maintenance",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-21T09:00:21.471Z",
-          "position": 31,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-08-21T09:00:00.000Z",
-      "scheduled_until": "2025-08-21T14:30:00.000Z"
-    },
-    {
-      "id": "qh4wqmjmzjkz",
-      "name": "[EU-WEST-PAR][Network] - Network maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-08-05T18:36:02.604Z",
-      "updated_at": "2025-08-21T09:01:21.490Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/h2ck9ghktywm",
-      "started_at": "2025-08-05T18:36:02.686Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
         {
           "id": "qvy50my8v51b",
           "status": "in_progress",
@@ -9821,10 +9813,117 @@
       ],
       "scheduled_for": "2025-08-21T09:00:00.000Z",
       "scheduled_until": "2025-08-21T12:30:00.000Z"
+    },
+    {
+      "id": "595w2krs75d4",
+      "name": "[GRA9/GRA11][Data & Analytics] - Data Platform maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-08-01T01:58:31.395Z",
+      "updated_at": "2025-08-21T12:03:28.353Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8nzygn3q1dq6",
+      "started_at": "2025-08-01T01:58:31.390Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "bw9wcpfd6fl4",
+          "status": "in_progress",
+          "body": "Operations on this maintenance will take longer than expected. \nWe will keep you informed.\nThe new end time is below:\n\n<b>End time :</b> 21/08/2025 20:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.",
+          "incident_id": "595w2krs75d4",
+          "created_at": "2025-08-21T12:03:28.348Z",
+          "updated_at": "2025-08-21T12:03:28.348Z",
+          "display_at": "2025-08-21T12:03:28.348Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rll1q50tn34l",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "595w2krs75d4",
+          "created_at": "2025-08-21T09:00:21.688Z",
+          "updated_at": "2025-08-21T09:00:21.688Z",
+          "display_at": "2025-08-21T09:00:21.688Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xvsg57wjcvsc",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "595w2krs75d4",
+          "created_at": "2025-08-21T08:00:32.879Z",
+          "updated_at": "2025-08-21T08:00:32.879Z",
+          "display_at": "2025-08-21T08:00:32.879Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1d1kcmv4jp8v",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Data Platform offer.\n\n<b>Start time :</b> 21/08/2025 09:00 UTC\n<b>End time :</b> 21/08/2025 14:30 UTC\n<b>Service impact :</b> You may experience delays in your Control plane tasks during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a upgrade on our Data Platform offer.",
+          "incident_id": "595w2krs75d4",
+          "created_at": "2025-08-01T01:58:31.466Z",
+          "updated_at": "2025-08-01T02:57:00.511Z",
+          "display_at": "2025-08-01T01:58:31.466Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
+          "status": "partial_outage",
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-08-21T12:17:51.196Z",
+          "position": 31,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-12",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-21T09:00:00.000Z",
+      "scheduled_until": "2025-08-21T14:30:00.000Z"
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
