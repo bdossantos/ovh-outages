@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-24T09:36:02.489Z"
+    "updated_at": "2025-08-24T12:30:28.219Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2005,9 +2005,9 @@
     {
       "id": "r7966tc9cpb9",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:52.401Z",
-      "updated_at": "2025-08-21T00:57:46.681Z",
+      "updated_at": "2025-08-24T12:22:20.778Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -2879,7 +2879,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "jg1ncdk0l1wb",
+      "name": "[RBX4][Dedicated Servers] - Rack 55D16 incident notification",
+      "status": "identified",
+      "created_at": "2025-08-24T12:22:20.745Z",
+      "updated_at": "2025-08-24T12:30:28.207Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8hvcts0q0ys2",
+      "started_at": "2025-08-24T12:22:20.737Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "rpnpnvzz3v55",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer in the rack 55D16 in RBX4.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/08/2025 11:48 UTC\n<b>Impacted Service(s) :</b> Some servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Some customers are currently unable to access their servers via the public network in the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "jg1ncdk0l1wb",
+          "created_at": "2025-08-24T12:30:28.203Z",
+          "updated_at": "2025-08-24T12:30:28.203Z",
+          "display_at": "2025-08-24T12:30:28.203Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kncnx434d2rg",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack 55D16 in RBX4.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/08/2025 11:48 UTC\n<b>Impacted Service(s) :</b> Some servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Some customers are currently unable to access their servers via the public network in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "jg1ncdk0l1wb",
+          "created_at": "2025-08-24T12:22:20.833Z",
+          "updated_at": "2025-08-24T12:22:20.833Z",
+          "display_at": "2025-08-24T12:22:20.833Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2025-08-24T12:22:20.778Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "crt6j64q7sds",
@@ -2919,9 +2993,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2025-08-21T00:57:46.681Z",
+          "updated_at": "2025-08-24T12:22:20.778Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3306,9 +3380,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2025-08-21T00:57:46.681Z",
+          "updated_at": "2025-08-24T12:22:20.778Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3360,9 +3434,9 @@
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:52.401Z",
-          "updated_at": "2025-08-21T00:57:46.681Z",
+          "updated_at": "2025-08-24T12:22:20.778Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -3549,7 +3623,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
