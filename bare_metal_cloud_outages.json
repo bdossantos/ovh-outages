@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-25T22:06:26.338Z"
+    "updated_at": "2025-08-25T23:05:15.182Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2445,9 +2445,9 @@
     {
       "id": "7fq8tsvh76tn",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:55.369Z",
-      "updated_at": "2025-06-13T03:17:17.283Z",
+      "updated_at": "2025-08-25T22:26:52.574Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -2879,7 +2879,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "19bkwgrwsy6j",
+      "name": "[WAW1][Dedicated Servers] - Rack WAW0107A02B incident notification",
+      "status": "identified",
+      "created_at": "2025-08-25T22:26:52.538Z",
+      "updated_at": "2025-08-25T23:05:15.175Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/y9sbctg3z3bx",
+      "started_at": "2025-08-25T22:26:52.530Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "q4q1h8tqxc1k",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our  Dedicated Servers offering, which is causing temporary availability issue in the rack WAW0107A02B in WAW1.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/08/2025 22:14 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are currently unable to access their servers via the public network in the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "19bkwgrwsy6j",
+          "created_at": "2025-08-25T23:05:15.172Z",
+          "updated_at": "2025-08-25T23:05:15.172Z",
+          "display_at": "2025-08-25T23:05:15.172Z",
+          "affected_components": [
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jgb93d6k48s0",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack WAW0107A02B in WAW1.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/08/2025 22:14 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are currently unable to access their servers via the public network in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "19bkwgrwsy6j",
+          "created_at": "2025-08-25T22:26:52.625Z",
+          "updated_at": "2025-08-25T22:26:52.625Z",
+          "display_at": "2025-08-25T22:26:52.625Z",
+          "affected_components": [
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2025-08-25T22:26:52.574Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5vw3dr57ycww",
@@ -3495,7 +3569,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
