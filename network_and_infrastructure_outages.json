@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-27T07:58:42.968Z"
+    "updated_at": "2025-08-27T09:05:59.704Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "xxvy97qsff1g",
       "name": "Infrastructure || Backbone",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-20T08:38:13.277Z",
-      "updated_at": "2025-08-27T07:50:55.739Z",
+      "updated_at": "2025-08-27T08:29:50.863Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1136,16 +1136,56 @@
     {
       "id": "hs6m5p6c81kk",
       "name": "[VIN/HIL][Backbone] - Backbone incident notification",
-      "status": "identified",
-      "created_at": "2025-08-27T07:50:55.706Z",
-      "updated_at": "2025-08-27T07:58:42.963Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2025-08-27T07:50:55.000Z",
+      "updated_at": "2025-08-27T08:29:50.912Z",
+      "monitoring_at": "2025-08-27T08:29:50.896Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/l931ck9fhhzq",
       "started_at": "2025-08-27T07:50:55.000Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "zwnw64t533nf",
+          "status": "monitoring",
+          "body": "Situation is back to normal, no more latency should be observed to reach HIL Datacenter since 27/08/2025 08:01 UTC.\n\nWe are still monitoring the situation and working closely with our telco partner. \n\nHere are some supplementary details :\n<b>Start time :</b> 27/08/2025 07:05 UTC\n<b>Impacted Service(s) :</b> There is a latency increase between VIN and HIL backbone infrastructure.\n<b>Customers Impact :</b> Customers may experience latency via the VIN/HIL datacentre.\n<b>Root Cause :</b> This incident is caused by a fiber cut located near Hillsboro.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hs6m5p6c81kk",
+          "created_at": "2025-08-27T08:29:50.896Z",
+          "updated_at": "2025-08-27T08:29:50.896Z",
+          "display_at": "2025-08-27T08:29:50.896Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "b4jggw0nlxln",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Impacted Service(s) :</b> US BACKBONE - Latency increase from and to HIL Datacenter due to multiple fiber cuts.\n<b>Customers Impact :</b> Customers may experience latency reaching HIL datacenter from EST north America.\n<b>Root Cause :</b> This incident is caused by a multiple fibers cuts near Hillsboro.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible. \n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hs6m5p6c81kk",
+          "created_at": "2025-08-27T08:12:58.684Z",
+          "updated_at": "2025-08-27T08:12:58.684Z",
+          "display_at": "2025-08-27T08:12:58.684Z",
+          "affected_components": [
+            {
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "partial_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "x7g1pc8298gs",
           "status": "identified",
@@ -1171,9 +1211,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-08-27T07:50:55.739Z",
+          "updated_at": "2025-08-27T08:29:50.863Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1280,9 +1320,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-08-27T07:50:55.739Z",
+          "updated_at": "2025-08-27T08:29:50.863Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3889,6 +3929,73 @@
       "scheduled_until": "2025-09-09T12:30:00.000Z"
     },
     {
+      "id": "xvr64sq05n25",
+      "name": "[RBX8][Cooling System] - Rack R804L20 maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-08-27T08:58:13.860Z",
+      "updated_at": "2025-08-27T08:59:22.381Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/c4q1fzsfcmwm",
+      "started_at": "2025-08-27T08:58:13.851Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "y0p9vv9n9qyz",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "xvr64sq05n25",
+          "created_at": "2025-08-27T08:59:22.374Z",
+          "updated_at": "2025-08-27T08:59:22.374Z",
+          "display_at": "2025-08-27T08:59:22.374Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "s6yw7djz9kbk",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 27/08/2025 08:46 UTC\n<b>End time :</b> 29/08/2025 15:00 UTC\n<b>Service impact :</b> The cooling system's efficiency could be temporarily impacted for some servers, which could cause a decreased performance during this maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "xvr64sq05n25",
+          "created_at": "2025-08-27T08:58:13.911Z",
+          "updated_at": "2025-08-27T08:58:13.911Z",
+          "display_at": "2025-08-27T08:58:13.911Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-08-26T12:04:56.320Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-08-27T08:59:00.000Z",
+      "scheduled_until": "2025-08-29T15:00:00.000Z"
+    },
+    {
       "id": "nljf49l3t1kj",
       "name": "[ERI1][Cooling System] - Rack ERI0112B05B",
       "status": "in_progress",
@@ -4126,9 +4233,9 @@
         {
           "id": "xxvy97qsff1g",
           "name": "Infrastructure || Backbone",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-08-27T07:50:55.739Z",
+          "updated_at": "2025-08-27T08:29:50.863Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4706,7 +4813,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
