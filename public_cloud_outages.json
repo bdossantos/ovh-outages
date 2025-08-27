@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-27T14:11:12.777Z"
+    "updated_at": "2025-08-27T17:43:14.389Z"
   },
   "components": [
     {
@@ -8780,42 +8780,30 @@
       "scheduled_until": "2025-08-28T15:00:00.000Z"
     },
     {
-      "id": "7pw8cs1fdz46",
-      "name": "[GRA2/6/8][Storage] - Volume Snapshot (Ceph) maintenance notification",
+      "id": "8kd299txj7y1",
+      "name": "[SBG7][Network] - Network maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-07-22T16:23:33.151Z",
-      "updated_at": "2025-07-22T16:23:33.236Z",
+      "created_at": "2025-08-27T17:43:14.313Z",
+      "updated_at": "2025-08-27T17:43:14.386Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/jb010r3ng3mb",
-      "started_at": "2025-07-22T16:23:33.139Z",
+      "shortlink": "https://stspg.io/vdyv44z92j4d",
+      "started_at": "2025-08-27T17:43:14.305Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "dsldsch610k7",
+          "id": "cf1c7sdq97fl",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Ceph offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 03/09/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Volume Snapshot (Ceph) offer.\n\nThank you for your understanding.",
-          "incident_id": "7pw8cs1fdz46",
-          "created_at": "2025-07-22T16:23:33.232Z",
-          "updated_at": "2025-07-22T16:23:33.232Z",
-          "display_at": "2025-07-22T16:23:33.232Z",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the public cloud region SBG7. \n\n<b>Start time :</b> 01/09/2025 07:00 UTC \n<b>End time :</b> 01/09/2025 15:00 UTC \n<b>Service impact :</b>The network of all public cloud compute, loadbalancer and routers located in the region SBG7 will observe up to 2 seconds of packet loss.\n\nPacket loss for compute instances and loadbalancers will be only observed once per service anytime between 07:00 UTC and 08:15 UTC.\n\nPacket loss for routers will can be observed once per router anytime between 07:00 UTC and 15:00 UTC.\n<b>Service improvement :</b>As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure. \n\nThank you for your understanding.",
+          "incident_id": "8kd299txj7y1",
+          "created_at": "2025-08-27T17:43:14.383Z",
+          "updated_at": "2025-08-27T17:43:14.383Z",
+          "display_at": "2025-08-27T17:43:14.383Z",
           "affected_components": [
             {
-              "code": "lng3n45dgl5g",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "dqqd2cr7s3yl",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA6",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "hyrjpn3d2x1f",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA8",
+              "code": "zbf7j83bgbss",
+              "name": "Network || Gateway - SBG7",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -8827,100 +8815,16 @@
       ],
       "components": [
         {
-          "id": "lng3n45dgl5g",
-          "name": "GRA2",
+          "id": "zbf7j83bgbss",
+          "name": "SBG7",
           "status": "operational",
-          "created_at": "2023-10-04T21:40:58.642Z",
-          "updated_at": "2023-10-30T13:12:37.381Z",
-          "position": 3,
+          "created_at": "2023-04-15T08:43:10.347Z",
+          "updated_at": "2025-08-20T10:09:50.418Z",
+          "position": 12,
           "description": null,
           "showcase": false,
-          "start_date": "2023-10-04",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "dqqd2cr7s3yl",
-          "name": "GRA6",
-          "status": "operational",
-          "created_at": "2023-10-04T21:37:52.942Z",
-          "updated_at": "2023-10-17T08:31:19.002Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-10-04",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "hyrjpn3d2x1f",
-          "name": "GRA8",
-          "status": "operational",
-          "created_at": "2025-07-22T16:01:51.256Z",
-          "updated_at": "2025-07-22T16:04:24.524Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-07-22",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-09-01T07:00:00.000Z",
-      "scheduled_until": "2025-09-03T16:00:00.000Z"
-    },
-    {
-      "id": "bmld56jxmf8h",
-      "name": "[RBX-A][Storage] - Block storage maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-08-13T20:59:04.708Z",
-      "updated_at": "2025-08-13T20:59:04.798Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/80wmfq6p63d2",
-      "started_at": "2025-08-13T20:59:04.698Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "9f18wbv38my6",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in RBX-A region.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 01/09/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
-          "incident_id": "bmld56jxmf8h",
-          "created_at": "2025-08-13T20:59:04.794Z",
-          "updated_at": "2025-08-13T20:59:04.794Z",
-          "display_at": "2025-08-13T20:59:04.794Z",
-          "affected_components": [
-            {
-              "code": "kgpnxn6rz6qm",
-              "name": "Storage || Block storage - GRA11",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "kgpnxn6rz6qm",
-          "name": "GRA11",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:30.045Z",
-          "updated_at": "2025-07-28T16:33:39.086Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
+          "start_date": "2023-04-15",
+          "group_id": "xxf4tr946kpr",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -9036,6 +8940,156 @@
       ],
       "scheduled_for": "2025-09-01T07:00:00.000Z",
       "scheduled_until": "2025-09-01T15:00:00.000Z"
+    },
+    {
+      "id": "bmld56jxmf8h",
+      "name": "[RBX-A][Storage] - Block storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-08-13T20:59:04.708Z",
+      "updated_at": "2025-08-13T20:59:04.798Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/80wmfq6p63d2",
+      "started_at": "2025-08-13T20:59:04.698Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "9f18wbv38my6",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in RBX-A region.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 01/09/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
+          "incident_id": "bmld56jxmf8h",
+          "created_at": "2025-08-13T20:59:04.794Z",
+          "updated_at": "2025-08-13T20:59:04.794Z",
+          "display_at": "2025-08-13T20:59:04.794Z",
+          "affected_components": [
+            {
+              "code": "kgpnxn6rz6qm",
+              "name": "Storage || Block storage - GRA11",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kgpnxn6rz6qm",
+          "name": "GRA11",
+          "status": "operational",
+          "created_at": "2022-04-06T09:37:30.045Z",
+          "updated_at": "2025-07-28T16:33:39.086Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-09-01T07:00:00.000Z",
+      "scheduled_until": "2025-09-01T15:00:00.000Z"
+    },
+    {
+      "id": "7pw8cs1fdz46",
+      "name": "[GRA2/6/8][Storage] - Volume Snapshot (Ceph) maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-07-22T16:23:33.151Z",
+      "updated_at": "2025-07-22T16:23:33.236Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jb010r3ng3mb",
+      "started_at": "2025-07-22T16:23:33.139Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "dsldsch610k7",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Ceph offer.\n\nThis may temporarily affect latency.\n\n<b>Start time :</b> 01/09/2025 07:00 UTC\n<b>End time :</b> 03/09/2025 16:00 UTC\n<b>Service impact :</b> Lowered performance during maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Volume Snapshot (Ceph) offer.\n\nThank you for your understanding.",
+          "incident_id": "7pw8cs1fdz46",
+          "created_at": "2025-07-22T16:23:33.232Z",
+          "updated_at": "2025-07-22T16:23:33.232Z",
+          "display_at": "2025-07-22T16:23:33.232Z",
+          "affected_components": [
+            {
+              "code": "lng3n45dgl5g",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "dqqd2cr7s3yl",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA6",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "hyrjpn3d2x1f",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lng3n45dgl5g",
+          "name": "GRA2",
+          "status": "operational",
+          "created_at": "2023-10-04T21:40:58.642Z",
+          "updated_at": "2023-10-30T13:12:37.381Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-04",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "dqqd2cr7s3yl",
+          "name": "GRA6",
+          "status": "operational",
+          "created_at": "2023-10-04T21:37:52.942Z",
+          "updated_at": "2023-10-17T08:31:19.002Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-04",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hyrjpn3d2x1f",
+          "name": "GRA8",
+          "status": "operational",
+          "created_at": "2025-07-22T16:01:51.256Z",
+          "updated_at": "2025-07-22T16:04:24.524Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-07-22",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-09-01T07:00:00.000Z",
+      "scheduled_until": "2025-09-03T16:00:00.000Z"
     },
     {
       "id": "3t8p70k42crs",
