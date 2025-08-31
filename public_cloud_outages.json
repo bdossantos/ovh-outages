@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-08-31T10:04:04.670Z"
+    "updated_at": "2025-08-31T11:53:54.293Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "g6hk916qw11v",
       "name": "DE1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:11.161Z",
-      "updated_at": "2025-08-14T20:54:11.838Z",
+      "updated_at": "2025-08-31T11:33:53.773Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -4711,7 +4711,7 @@
     {
       "id": "0b67gm8w0sqk",
       "name": "Compute - Instance || LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:12.146Z",
       "updated_at": "2025-04-18T13:47:32.541Z",
       "position": 11,
@@ -8585,7 +8585,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "0dk4pz4bc6b9",
+      "name": "[LIM3][Compute Instance]- Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-08-31T11:33:53.722Z",
+      "updated_at": "2025-08-31T11:53:54.290Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/nlv6ctws8ynr",
+      "started_at": "2025-08-31T11:33:53.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "d8ypdw7sw906",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our   compute - Instance in LIM3 region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 31/08/2025 11:17 UTC\n<b>Impacted Service(s) :</b> Some instances are temporarily unavailable in the specified region.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their instances located in the specified region.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure failure\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "0dk4pz4bc6b9",
+          "created_at": "2025-08-31T11:45:44.670Z",
+          "updated_at": "2025-08-31T11:53:44.214Z",
+          "display_at": "2025-08-31T11:45:44.000Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nq86bvjsw2sv",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Compute - Instance offer in LIM3 region.\n\n<b>Start time :</b> 31/08/2025 11:17 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "0dk4pz4bc6b9",
+          "created_at": "2025-08-31T11:33:53.839Z",
+          "updated_at": "2025-08-31T11:53:54.238Z",
+          "display_at": "2025-08-31T11:33:53.000Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2025-08-31T11:33:53.773Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vvppd45fv46l",
@@ -9276,7 +9350,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
