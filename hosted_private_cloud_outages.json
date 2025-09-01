@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-01T08:31:17.115Z"
+    "updated_at": "2025-09-01T12:20:27.047Z"
   },
   "components": [
     {
@@ -880,9 +880,9 @@
     {
       "id": "b2m66lpxg514",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T09:00:04.712Z",
-      "updated_at": "2025-08-25T10:04:06.446Z",
+      "updated_at": "2025-09-01T12:17:56.601Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1386,7 +1386,7 @@
     {
       "id": "rfqh5dx946ly",
       "name": "Managed VMware Cloud Director || RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-01-15T08:50:52.331Z",
       "updated_at": "2025-01-15T10:36:58.307Z",
       "position": 9,
@@ -1720,7 +1720,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "25mv0bp6yf4q",
+      "name": "[RBX2c][Managed VMware Cloud Director] - Rack R806L25 incident notification.",
+      "status": "identified",
+      "created_at": "2025-09-01T12:17:56.566Z",
+      "updated_at": "2025-09-01T12:17:56.656Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/z3mlryf8d9g1",
+      "started_at": "2025-09-01T12:17:56.559Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "qvl0w146v557",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Managed VMware Cloud Director offer in the specific rack R806L25.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/09/2025 11:57 UTC\n<b>Impacted Service(s) :</b> Some hosts are temporarily unavailable in this specific rack.\n<b>Customers Impact :</b> Customers cannot acces their hosts in this specific rack.\n<b>Root Cause :</b> This incident is caused by the ongoing maintenance : https://network.status-ovhcloud.com/incidents/6g0fg6njp479\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "25mv0bp6yf4q",
+          "created_at": "2025-09-01T12:17:56.653Z",
+          "updated_at": "2025-09-01T12:17:56.653Z",
+          "display_at": "2025-09-01T12:17:56.653Z",
+          "affected_components": [
+            {
+              "code": "b2m66lpxg514",
+              "name": "Managed VMware Cloud Director || RBX - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b2m66lpxg514",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2025-01-15T09:00:04.712Z",
+          "updated_at": "2025-09-01T12:17:56.601Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": "rfqh5dx946ly",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "6c1klpgy17fh",
@@ -2851,7 +2905,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }

@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-01T11:55:46.476Z"
+    "updated_at": "2025-09-01T12:51:49.983Z"
   },
   "components": [
     {
@@ -5044,9 +5044,9 @@
     {
       "id": "zbf7j83bgbss",
       "name": "SBG7",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-15T08:43:10.347Z",
-      "updated_at": "2025-09-01T07:02:21.917Z",
+      "updated_at": "2025-09-01T12:46:08.572Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -7968,7 +7968,7 @@
     {
       "id": "xxf4tr946kpr",
       "name": "Network || Gateway",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-04-15T08:33:50.711Z",
       "updated_at": "2025-08-21T14:44:14.484Z",
       "position": 47,
@@ -8591,7 +8591,7 @@
       "name": "[3AZ-PAR][Public Cloud] - s3 object standard incident notification",
       "status": "investigating",
       "created_at": "2025-09-01T10:53:01.842Z",
-      "updated_at": "2025-09-01T11:55:46.472Z",
+      "updated_at": "2025-09-01T12:51:49.972Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -8599,6 +8599,38 @@
       "started_at": "2025-09-01T10:53:01.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "mhvx5tmpjxly",
+          "status": "investigating",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> The rate of errors is decreasing steadily.\n<b>Ongoing Actions :</b> The incident is under investigation and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "0mtxmtppc0dp",
+          "created_at": "2025-09-01T12:51:49.969Z",
+          "updated_at": "2025-09-01T12:51:49.969Z",
+          "display_at": "2025-09-01T12:51:49.969Z",
+          "affected_components": [
+            {
+              "code": "rtf74dt95spd",
+              "name": "Storage || Object storage - EU-WEST-PAR-A",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "7pn0z4rqrxvc",
+              "name": "Storage || Object storage - EU-WEST-PAR-B",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "cf0zfm36rq3b",
+              "name": "Storage || Object storage - EU-WEST-PAR-C",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "5x34g96pwl6t",
           "status": "investigating",
@@ -9057,93 +9089,6 @@
       ],
       "scheduled_for": "2025-09-17T12:00:00.000Z",
       "scheduled_until": "2025-09-17T16:00:00.000Z"
-    },
-    {
-      "id": "8kd299txj7y1",
-      "name": "[SBG7][Network] - Network maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-08-27T17:43:14.313Z",
-      "updated_at": "2025-09-01T07:02:21.973Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/vdyv44z92j4d",
-      "started_at": "2025-08-27T17:43:14.305Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "f16yskbwfsjv",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "8kd299txj7y1",
-          "created_at": "2025-09-01T07:02:21.970Z",
-          "updated_at": "2025-09-01T07:02:21.970Z",
-          "display_at": "2025-09-01T07:02:21.970Z",
-          "affected_components": [
-            {
-              "code": "zbf7j83bgbss",
-              "name": "Network || Gateway - SBG7",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xjmk0w33fb9z",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "8kd299txj7y1",
-          "created_at": "2025-09-01T06:00:22.851Z",
-          "updated_at": "2025-09-01T06:00:22.851Z",
-          "display_at": "2025-09-01T06:00:22.851Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "cf1c7sdq97fl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our network infrastructure in the public cloud region SBG7. \n\n<b>Start time :</b> 01/09/2025 07:00 UTC \n<b>End time :</b> 01/09/2025 15:00 UTC \n<b>Service impact :</b>The network of all public cloud compute, loadbalancer and routers located in the region SBG7 will observe up to 2 seconds of packet loss.\n\nPacket loss for compute instances and loadbalancers will be only observed once per service anytime between 07:00 UTC and 08:15 UTC.\n\nPacket loss for routers will can be observed once per router anytime between 07:00 UTC and 15:00 UTC.\n<b>Service improvement :</b>As part of our continuous improvement policy, we will be doing a maintenance on our network infrastructure. \n\nThank you for your understanding.",
-          "incident_id": "8kd299txj7y1",
-          "created_at": "2025-08-27T17:43:14.383Z",
-          "updated_at": "2025-08-27T17:43:14.383Z",
-          "display_at": "2025-08-27T17:43:14.383Z",
-          "affected_components": [
-            {
-              "code": "zbf7j83bgbss",
-              "name": "Network || Gateway - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "zbf7j83bgbss",
-          "name": "SBG7",
-          "status": "under_maintenance",
-          "created_at": "2023-04-15T08:43:10.347Z",
-          "updated_at": "2025-09-01T07:02:21.917Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-09-01T07:00:00.000Z",
-      "scheduled_until": "2025-09-01T15:00:00.000Z"
     },
     {
       "id": "7pw8cs1fdz46",
