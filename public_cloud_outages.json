@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-02T14:13:05.843Z"
+    "updated_at": "2025-09-02T16:04:01.306Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "fmy1mbtr2jvd",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:33:58.595Z",
-      "updated_at": "2025-08-29T11:47:16.689Z",
+      "updated_at": "2025-09-02T16:04:01.122Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1469,9 +1469,9 @@
     {
       "id": "qrzw3vnl4d1h",
       "name": "GRA5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:18.324Z",
-      "updated_at": "2025-08-29T11:47:16.720Z",
+      "updated_at": "2025-09-02T16:04:01.144Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2009,9 +2009,9 @@
     {
       "id": "y9679xqf81gv",
       "name": "GRA7",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:19.672Z",
-      "updated_at": "2025-08-29T11:47:16.749Z",
+      "updated_at": "2025-09-02T16:04:01.165Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2508,9 +2508,9 @@
     {
       "id": "j6gs8vsmjycc",
       "name": "GRA9",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:20.667Z",
-      "updated_at": "2025-08-29T11:47:16.764Z",
+      "updated_at": "2025-09-02T16:04:01.185Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3147,9 +3147,9 @@
     {
       "id": "lx3sbpqcn3q5",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-01-24T14:39:11.288Z",
-      "updated_at": "2025-08-29T11:47:16.803Z",
+      "updated_at": "2025-09-02T16:04:01.215Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -6357,7 +6357,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-04-18T13:47:32.627Z",
       "position": 19,
@@ -6552,7 +6552,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2025-04-18T13:47:32.638Z",
       "position": 20,
@@ -8375,7 +8375,166 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "8cgynthz83pk",
+      "name": "[GRA][Public Cloud] - Keystone API incident notification",
+      "status": "investigating",
+      "created_at": "2025-09-02T16:04:01.066Z",
+      "updated_at": "2025-09-02T16:04:01.303Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0bcqhr8yx02y",
+      "started_at": "2025-09-02T16:04:01.047Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "5ckn5wz5mf6w",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Public cloud offering, which is causing temporary functionality issues on validation token in GRA region.\n\nHere is detail for this incident :\n<b>Start time :</b> 02/09/2025 15:50 UTC\n<b>Impacted Service(s) :</b> The validation token function is not working.\n<b>Customers Impact :</b> Customers using the Keystone API (authentication) are temporarily experiencing an issue with validation token function.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "8cgynthz83pk",
+          "created_at": "2025-09-02T16:04:01.299Z",
+          "updated_at": "2025-09-02T16:04:01.299Z",
+          "display_at": "2025-09-02T16:04:01.299Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qrzw3vnl4d1h",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "y9679xqf81gv",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA7",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "j6gs8vsmjycc",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA9",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "ppsynzt0l6vs",
+              "name": "Containers & Orchestration || Workflow Management - GRA1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fmy1mbtr2jvd",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:33:58.595Z",
+          "updated_at": "2025-09-02T16:04:01.122Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "dbhdvj49c2xr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qrzw3vnl4d1h",
+          "name": "GRA5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:18.324Z",
+          "updated_at": "2025-09-02T16:04:01.144Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "y9679xqf81gv",
+          "name": "GRA7",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:19.672Z",
+          "updated_at": "2025-09-02T16:04:01.165Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "j6gs8vsmjycc",
+          "name": "GRA9",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:34:20.667Z",
+          "updated_at": "2025-09-02T16:04:01.185Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ppsynzt0l6vs",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:37:49.393Z",
+          "updated_at": "2025-04-17T04:42:31.794Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "hyh6798xq542",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2025-09-02T16:04:01.215Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "rwngm580v1by",
@@ -8700,7 +8859,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
