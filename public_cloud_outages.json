@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-02T18:46:22.990Z"
+    "updated_at": "2025-09-02T20:04:23.774Z"
   },
   "components": [
     {
@@ -1754,9 +1754,9 @@
     {
       "id": "svssmg3hrw40",
       "name": "DE1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-15T06:16:46.929Z",
-      "updated_at": "2025-08-21T09:05:58.826Z",
+      "updated_at": "2025-09-02T19:55:09.298Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4065,9 +4065,9 @@
     {
       "id": "fp4k2npcncfx",
       "name": "SBG5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-04-15T06:19:04.358Z",
-      "updated_at": "2025-08-21T09:05:58.872Z",
+      "updated_at": "2025-09-02T19:55:09.313Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -8377,6 +8377,80 @@
   ],
   "incidents": [
     {
+      "id": "5t489zfkk7xg",
+      "name": "[SBG5/DE1][Load Balancer] - Performance incident notification",
+      "status": "investigating",
+      "created_at": "2025-09-02T19:55:09.267Z",
+      "updated_at": "2025-09-02T20:01:55.710Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8qd1p81nqpl3",
+      "started_at": "2025-09-02T19:55:09.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "m6bvljnghcqh",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Public cloud offering, which is causing temporary functionality issues on APIs OpenStack in SBG5 and DE1 regions.\n\n<b>Start time :</b> 02/09/2025 18:25 UTC\n<b>Impacted Service(s) :</b> API responses are unstable in the specified regions.\n<b>Customers Impact :</b> Customers may experience latency or errors on APIs OpenStack services.\n<b>Ongoing Actions :</b> Our teams are investigating and mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "5t489zfkk7xg",
+          "created_at": "2025-09-02T19:55:09.366Z",
+          "updated_at": "2025-09-02T20:01:55.706Z",
+          "display_at": "2025-09-02T19:55:09.000Z",
+          "affected_components": [
+            {
+              "code": "svssmg3hrw40",
+              "name": "Containers & Orchestration || Load Balancer - DE1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "fp4k2npcncfx",
+              "name": "Containers & Orchestration || Load Balancer - SBG5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "svssmg3hrw40",
+          "name": "DE1",
+          "status": "partial_outage",
+          "created_at": "2023-04-15T06:16:46.929Z",
+          "updated_at": "2025-09-02T19:55:09.298Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "3kprrxt18g15",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "fp4k2npcncfx",
+          "name": "SBG5",
+          "status": "partial_outage",
+          "created_at": "2023-04-15T06:19:04.358Z",
+          "updated_at": "2025-09-02T19:55:09.313Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-04-15",
+          "group_id": "3kprrxt18g15",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "8cgynthz83pk",
       "name": "[GRA][Public Cloud] - Keystone API incident notification",
       "status": "identified",
@@ -9413,6 +9487,114 @@
       ],
       "scheduled_for": "2025-09-03T12:00:00.000Z",
       "scheduled_until": "2025-09-03T15:00:00.000Z"
+    },
+    {
+      "id": "rc299xp72929",
+      "name": "[RBX-A][Storage] - Block storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-09-02T20:04:23.705Z",
+      "updated_at": "2025-09-02T20:04:23.771Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/zw584ftpvtzr",
+      "started_at": "2025-09-02T20:04:23.698Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "ylr6gqyr503y",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in RBX-A region.\n\n<b>Start time :</b> 08/09/2025 07:00 UTC\n<b>End time :</b> 08/09/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
+          "incident_id": "rc299xp72929",
+          "created_at": "2025-09-02T20:04:23.769Z",
+          "updated_at": "2025-09-02T20:04:23.769Z",
+          "display_at": "2025-09-02T20:04:23.769Z",
+          "affected_components": [
+            {
+              "code": "rk41j13qvbpc",
+              "name": "Storage || Block storage - RBX-A",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rk41j13qvbpc",
+          "name": "RBX-A",
+          "status": "operational",
+          "created_at": "2025-06-02T15:48:06.811Z",
+          "updated_at": "2025-07-28T16:35:13.869Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-06-02",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-09-08T07:00:00.000Z",
+      "scheduled_until": "2025-09-08T15:00:00.000Z"
+    },
+    {
+      "id": "j2rvd8r0p3lj",
+      "name": "[SBG5][Storage] - Block storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-09-02T20:00:42.216Z",
+      "updated_at": "2025-09-02T20:00:42.290Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xx29920gtx8z",
+      "started_at": "2025-09-02T20:00:42.208Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "095m1762x2tj",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in SBG5 region.\n\n<b>Start time :</b> 08/09/2025 07:00 UTC\n<b>End time :</b> 08/09/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
+          "incident_id": "j2rvd8r0p3lj",
+          "created_at": "2025-09-02T20:00:42.287Z",
+          "updated_at": "2025-09-02T20:00:42.287Z",
+          "display_at": "2025-09-02T20:00:42.287Z",
+          "affected_components": [
+            {
+              "code": "w520v751hcrn",
+              "name": "Storage || Block storage - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "w520v751hcrn",
+          "name": "SBG5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:37:04.775Z",
+          "updated_at": "2025-09-01T07:31:42.670Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-09-08T07:00:00.000Z",
+      "scheduled_until": "2025-09-08T15:00:00.000Z"
     },
     {
       "id": "3t8p70k42crs",
