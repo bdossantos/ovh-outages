@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-05T01:21:08.059Z"
+    "updated_at": "2025-09-05T02:23:15.465Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "b6lqlttyhq1p",
       "name": "eu001",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:24.329Z",
-      "updated_at": "2025-04-23T23:33:46.522Z",
+      "updated_at": "2025-09-05T02:14:35.189Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1110,9 +1110,9 @@
     {
       "id": "18bvftck29mf",
       "name": "eu005",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-04-18T14:19:05.371Z",
-      "updated_at": "2025-04-18T14:19:38.569Z",
+      "updated_at": "2025-09-05T02:14:35.207Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1541,9 +1541,9 @@
     {
       "id": "ybc85qwhs78q",
       "name": "eu012",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-03-04T16:48:03.222Z",
-      "updated_at": "2025-08-26T09:55:10.173Z",
+      "updated_at": "2025-09-05T02:14:35.223Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -2019,7 +2019,7 @@
     {
       "id": "xntx4sdt2k97",
       "name": "Databases || CloudDB GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:49.945Z",
       "updated_at": "2025-08-13T12:55:51.647Z",
       "position": 15,
@@ -2504,7 +2504,7 @@
     {
       "id": "60j7qlwr1wqf",
       "name": "Web Hosting || Databases GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:21:30.899Z",
       "updated_at": "2025-08-13T12:55:51.755Z",
       "position": 25,
@@ -2839,7 +2839,135 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "pzl4dydk3vp1",
+      "name": "[GRA][Web-Databases] - Web Hosting/Databases incident notification",
+      "status": "investigating",
+      "created_at": "2025-09-05T02:14:35.154Z",
+      "updated_at": "2025-09-05T02:23:15.457Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/dgb39kw2nkp5",
+      "started_at": "2025-09-05T02:14:35.144Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "cvtb05g5035r",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our PCI-Databases offering, which is causing temporary  issue in the GRA region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 05/09/2025 01:43 UTC\n<b>Impacted Service(s) :</b> Web Hosting eu001, eu005 and Database eu012 are unreachable.\n<b>Customers Impact :</b> Customers are currently facing issue while accessing their data located in the specified Web databases.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "pzl4dydk3vp1",
+          "created_at": "2025-09-05T02:23:15.454Z",
+          "updated_at": "2025-09-05T02:23:15.454Z",
+          "display_at": "2025-09-05T02:23:15.454Z",
+          "affected_components": [
+            {
+              "code": "b6lqlttyhq1p",
+              "name": "Web Hosting || Databases GRA - eu001",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "18bvftck29mf",
+              "name": "Web Hosting || Databases GRA - eu005",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "ybc85qwhs78q",
+              "name": "Databases || CloudDB GRA - eu012",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9lyblzvh650k",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Web Hosting eu001, eu005 and Databases eu012 offer in GRA region.\n\n<b>Start time :</b> 05/09/2025 01:43 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "pzl4dydk3vp1",
+          "created_at": "2025-09-05T02:14:35.268Z",
+          "updated_at": "2025-09-05T02:14:35.268Z",
+          "display_at": "2025-09-05T02:14:35.268Z",
+          "affected_components": [
+            {
+              "code": "b6lqlttyhq1p",
+              "name": "Web Hosting || Databases GRA - eu001",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "18bvftck29mf",
+              "name": "Web Hosting || Databases GRA - eu005",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "ybc85qwhs78q",
+              "name": "Databases || CloudDB GRA - eu012",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b6lqlttyhq1p",
+          "name": "eu001",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:21:24.329Z",
+          "updated_at": "2025-09-05T02:14:35.189Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "18bvftck29mf",
+          "name": "eu005",
+          "status": "partial_outage",
+          "created_at": "2025-04-18T14:19:05.371Z",
+          "updated_at": "2025-09-05T02:14:35.207Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-04-18",
+          "group_id": "60j7qlwr1wqf",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ybc85qwhs78q",
+          "name": "eu012",
+          "status": "partial_outage",
+          "created_at": "2025-03-04T16:48:03.222Z",
+          "updated_at": "2025-09-05T02:14:35.223Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-04",
+          "group_id": "xntx4sdt2k97",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "y8vdfjsmcnjx",
@@ -5432,7 +5560,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
