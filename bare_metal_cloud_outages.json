@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-09T01:02:15.903Z"
+    "updated_at": "2025-09-09T02:22:05.749Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2025-09-02T15:42:08.123Z",
+      "updated_at": "2025-09-09T01:50:45.165Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2879,7 +2879,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "c54006dlddhr",
+      "name": "[GRA1][Dedicated Servers] - Racks G132A23/24/25 incident notification",
+      "status": "identified",
+      "created_at": "2025-09-09T01:50:45.122Z",
+      "updated_at": "2025-09-09T01:56:01.621Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0zzntj3rw35r",
+      "started_at": "2025-09-09T01:50:45.113Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "0xdjg6204swr",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific racks G132A23/24/25.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 09/09/2025 01:19 UTC\n<b>Impacted Service(s) :</b> Some servers in the racks G132A23/24/25 are temporarily unavailable.\n<b>Customers Impact :</b> Some customers cannot access their servers in these racks.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "c54006dlddhr",
+          "created_at": "2025-09-09T01:54:29.297Z",
+          "updated_at": "2025-09-09T01:54:29.297Z",
+          "display_at": "2025-09-09T01:54:29.297Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xkyyvzlphpcg",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Dedicated Servers offer in the specific racks G132A23/24/25.\n\n<b>Start time :</b> 09/09/2025 01:19 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "c54006dlddhr",
+          "created_at": "2025-09-09T01:50:45.238Z",
+          "updated_at": "2025-09-09T01:50:45.238Z",
+          "display_at": "2025-09-09T01:50:45.238Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2025-09-09T01:50:45.165Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vq0yt0mklvb1",
@@ -3270,7 +3344,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
