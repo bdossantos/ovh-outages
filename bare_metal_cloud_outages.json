@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-16T01:01:16.442Z"
+    "updated_at": "2025-09-16T03:56:04.278Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1156,9 +1156,9 @@
     {
       "id": "9y37g21l733b",
       "name": "LIM",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-07-09T07:33:26.565Z",
-      "updated_at": "2025-09-06T12:08:23.135Z",
+      "updated_at": "2025-09-16T03:42:17.993Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2879,7 +2879,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "l1wvg4r4rb75",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0306B03B incident notification",
+      "status": "identified",
+      "created_at": "2025-09-16T03:42:17.962Z",
+      "updated_at": "2025-09-16T03:56:04.269Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/4r81mm66d087",
+      "started_at": "2025-09-16T03:42:17.956Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "22429r80vccx",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific LIM0306B03B in LIM3.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 16/09/2025 03:20 UTC\n<b>Impacted Service(s) :</b> Servers with the LACP service enabled may experience a reduction in network bandwidth in the specified rack.\n<b>Customers Impact :</b> Customers with LACP service enabled may experience network latency in the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "l1wvg4r4rb75",
+          "created_at": "2025-09-16T03:52:11.606Z",
+          "updated_at": "2025-09-16T03:56:04.264Z",
+          "display_at": "2025-09-16T03:52:11.000Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ys92ws0kjtdb",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary latency issue in the LIM0306B03B in LIM3.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 16/09/2025 03:20 UTC\n<b>Impacted Service(s) :</b> Servers with the LACP service enabled may experience a reduction in network bandwidth in the specified rack.\n<b>Customers Impact :</b> Customers with LACP service enabled may experience latency in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "l1wvg4r4rb75",
+          "created_at": "2025-09-16T03:42:18.048Z",
+          "updated_at": "2025-09-16T03:42:18.048Z",
+          "display_at": "2025-09-16T03:42:18.048Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9y37g21l733b",
+          "name": "LIM",
+          "status": "degraded_performance",
+          "created_at": "2021-07-09T07:33:26.565Z",
+          "updated_at": "2025-09-16T03:42:17.993Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "vq0yt0mklvb1",
@@ -3594,7 +3668,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
