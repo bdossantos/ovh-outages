@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-22T07:00:21.185Z"
+    "updated_at": "2025-09-22T07:37:13.930Z"
   },
   "components": [
     {
@@ -1484,9 +1484,9 @@
     {
       "id": "2k4xnh0pwlqx",
       "name": "GRA3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:50.709Z",
-      "updated_at": "2025-09-14T00:56:23.270Z",
+      "updated_at": "2025-09-22T07:37:13.861Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4220,7 +4220,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2025-04-18T13:47:32.516Z",
       "position": 9,
@@ -8585,6 +8585,59 @@
   ],
   "incidents": [
     {
+      "id": "7lkk1nsl1j8f",
+      "name": "[GRA3][Compute - Instance] - Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-09-22T07:37:13.830Z",
+      "updated_at": "2025-09-22T07:37:13.927Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/wk58g2v2zmvf",
+      "started_at": "2025-09-22T07:37:13.823Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "60811zlhs75w",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Compute - Instance offer on the specific GRA3 region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 22/09/2025 07:20 UTC\n<b>Impacted Service(s) :</b> Some instances in the GRA3 region are unreachable.\n<b>Customers Impact :</b>  Some customers are temporarily unable to access and use their instances in the specified region.\n<b>Root Cause :</b> A service disruption occured due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "7lkk1nsl1j8f",
+          "created_at": "2025-09-22T07:37:13.925Z",
+          "updated_at": "2025-09-22T07:37:13.925Z",
+          "display_at": "2025-09-22T07:37:13.925Z",
+          "affected_components": [
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2k4xnh0pwlqx",
+          "name": "GRA3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:50.709Z",
+          "updated_at": "2025-09-22T07:37:13.861Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "p4xzsxkz50s6",
       "name": "[GLOBAL][AI & Machine Learning] - Llama incident notification",
       "status": "identified",
@@ -10782,9 +10835,9 @@
         {
           "id": "2k4xnh0pwlqx",
           "name": "GRA3",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2022-04-06T09:35:50.709Z",
-          "updated_at": "2025-09-14T00:56:23.270Z",
+          "updated_at": "2025-09-22T07:37:13.861Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -11371,6 +11424,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
