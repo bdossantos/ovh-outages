@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-22T11:00:28.995Z"
+    "updated_at": "2025-09-22T12:10:45.850Z"
   },
   "components": [
     {
@@ -1486,7 +1486,7 @@
       "name": "GRA3",
       "status": "partial_outage",
       "created_at": "2022-04-06T09:35:50.709Z",
-      "updated_at": "2025-09-22T07:37:13.861Z",
+      "updated_at": "2025-09-22T11:49:07.218Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -7623,9 +7623,9 @@
     {
       "id": "1m0dyvn10ht4",
       "name": "Data & Analytics || Data Platform",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-04-12T16:07:29.893Z",
-      "updated_at": "2025-08-21T15:36:04.450Z",
+      "updated_at": "2025-09-22T12:10:45.773Z",
       "position": 28,
       "description": null,
       "showcase": false,
@@ -8585,11 +8585,64 @@
   ],
   "incidents": [
     {
+      "id": "2164j0sk0b16",
+      "name": "[GRA9][Data & Analytics] - Dataplatform incident notification",
+      "status": "investigating",
+      "created_at": "2025-09-22T12:10:45.733Z",
+      "updated_at": "2025-09-22T12:10:45.846Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/t8ltvphqfzxg",
+      "started_at": "2025-09-22T12:10:45.727Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kjc63qqhwfmj",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Data & Analytics offer.\n<b>Start time :</b> 22/09/2025 11:20 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "2164j0sk0b16",
+          "created_at": "2025-09-22T12:10:45.842Z",
+          "updated_at": "2025-09-22T12:10:45.842Z",
+          "display_at": "2025-09-22T12:10:45.842Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
+          "status": "partial_outage",
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-09-22T12:10:45.773Z",
+          "position": 28,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-12",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "7lkk1nsl1j8f",
       "name": "[GRA3][Compute - Instance] - Instances incident notification",
       "status": "identified",
       "created_at": "2025-09-22T07:37:13.830Z",
-      "updated_at": "2025-09-22T07:37:13.927Z",
+      "updated_at": "2025-09-22T11:49:07.271Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -8597,6 +8650,26 @@
       "started_at": "2025-09-22T07:37:13.823Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "y0ktwp7vrsqt",
+          "status": "identified",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "7lkk1nsl1j8f",
+          "created_at": "2025-09-22T11:49:07.268Z",
+          "updated_at": "2025-09-22T11:49:07.268Z",
+          "display_at": "2025-09-22T11:49:07.268Z",
+          "affected_components": [
+            {
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "60811zlhs75w",
           "status": "identified",
@@ -8624,7 +8697,7 @@
           "name": "GRA3",
           "status": "partial_outage",
           "created_at": "2022-04-06T09:35:50.709Z",
-          "updated_at": "2025-09-22T07:37:13.861Z",
+          "updated_at": "2025-09-22T11:49:07.218Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -8732,73 +8805,6 @@
     }
   ],
   "scheduled_maintenances": [
-    {
-      "id": "d63t081zk2d4",
-      "name": "[Global][Data & Analytics ] - Data Platform maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-09-10T22:37:15.562Z",
-      "updated_at": "2025-09-22T11:00:28.986Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1w2cmgcz0s13",
-      "started_at": "2025-09-10T22:37:15.556Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "x2r1zvrhsgcd",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "d63t081zk2d4",
-          "created_at": "2025-09-22T11:00:28.877Z",
-          "updated_at": "2025-09-22T11:00:28.877Z",
-          "display_at": "2025-09-22T11:00:28.877Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1z7ly7bfh3wq",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Data Platform offer. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 22/09/2025 12:00 UTC \n<b>End time :</b> 22/09/2025 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Data Platform infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "d63t081zk2d4",
-          "created_at": "2025-09-10T22:37:15.643Z",
-          "updated_at": "2025-09-10T22:37:15.643Z",
-          "display_at": "2025-09-10T22:37:15.643Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "operational",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-08-21T15:36:04.450Z",
-          "position": 28,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-09-22T12:00:00.000Z",
-      "scheduled_until": "2025-09-22T15:00:00.000Z"
-    },
     {
       "id": "v56xf1h9yg3r",
       "name": "[GRA5][Public Cloud] - Infrastructure maintenance notification",
@@ -10228,568 +10234,56 @@
       "scheduled_until": "2025-09-30T14:00:00.000Z"
     },
     {
-      "id": "6hl4sn79jfnw",
-      "name": "[GRA1/GRA3/SBG5/SBG7][Public Cloud] - Infrastructure maintenance notification",
+      "id": "d63t081zk2d4",
+      "name": "[Global][Data & Analytics ] - Data Platform maintenance notification",
       "status": "in_progress",
-      "created_at": "2025-09-16T12:24:56.438Z",
-      "updated_at": "2025-09-22T07:00:21.173Z",
+      "created_at": "2025-09-10T22:37:15.562Z",
+      "updated_at": "2025-09-22T12:00:21.196Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/kzv91gfbd518",
-      "started_at": "2025-09-16T12:24:56.355Z",
+      "shortlink": "https://stspg.io/1w2cmgcz0s13",
+      "started_at": "2025-09-10T22:37:15.556Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "pntkrh1mhtst",
+          "id": "2jfhx3crqtsp",
           "status": "in_progress",
           "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "6hl4sn79jfnw",
-          "created_at": "2025-09-22T07:00:21.170Z",
-          "updated_at": "2025-09-22T07:00:21.170Z",
-          "display_at": "2025-09-22T07:00:21.170Z",
+          "incident_id": "d63t081zk2d4",
+          "created_at": "2025-09-22T12:00:21.192Z",
+          "updated_at": "2025-09-22T12:00:21.192Z",
+          "display_at": "2025-09-22T12:00:21.192Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "l8ztntynwl74",
+          "id": "x2r1zvrhsgcd",
           "status": "scheduled",
           "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "6hl4sn79jfnw",
-          "created_at": "2025-09-22T06:00:27.008Z",
-          "updated_at": "2025-09-22T06:00:27.008Z",
-          "display_at": "2025-09-22T06:00:27.008Z",
+          "incident_id": "d63t081zk2d4",
+          "created_at": "2025-09-22T11:00:28.877Z",
+          "updated_at": "2025-09-22T11:00:28.877Z",
+          "display_at": "2025-09-22T11:00:28.877Z",
           "affected_components": null,
           "deliver_notifications": true,
           "custom_tweet": null,
           "tweet_id": null
         },
         {
-          "id": "99p6w469lsjx",
+          "id": "1z7ly7bfh3wq",
           "status": "scheduled",
-          "body": "The current maintenance has been re-scheduled.\nBelow you can find the new information regarding the operation.\n\nAs part of our continuous improvement plan, a maintenance is scheduled on our public cloud infrastructure.\n\n<b>Start time :</b> 22/09/2025 07:00 UTC\n<b>End time :</b> 22/09/2025 10:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Network infrastructure in the specified regions.\n\nThank you for your understanding.",
-          "incident_id": "6hl4sn79jfnw",
-          "created_at": "2025-09-18T09:42:31.479Z",
-          "updated_at": "2025-09-18T09:42:31.479Z",
-          "display_at": "2025-09-18T09:42:31.479Z",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Data Platform offer. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 22/09/2025 12:00 UTC \n<b>End time :</b> 22/09/2025 15:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Data Platform infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "d63t081zk2d4",
+          "created_at": "2025-09-10T22:37:15.643Z",
+          "updated_at": "2025-09-10T22:37:15.643Z",
+          "display_at": "2025-09-10T22:37:15.643Z",
           "affected_components": [
             {
-              "code": "pb7wfnt40ljw",
-              "name": "Storage || Instance Backup - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "804dkxh575zy",
-              "name": "Storage || Instance Backup - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "x8wxtvy9nx2m",
-              "name": "Storage || Instance Backup - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "z39b8z3bqsd9",
-              "name": "Storage || Instance Backup - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "cfp9bz2qvyqt",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k6bzjch86wfn",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "81837rvr04tb",
-              "name": "Storage || Volume Snapshot (Ceph) - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "tsn9y6kd3wcm",
-              "name": "Storage || Volume Snapshot (Ceph) - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "8x32jhcpqq1m",
-              "name": "Compute - Instance || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "9vjdx62wmjgv",
-              "name": "Network || Private network (vRack) - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ykbxwt7jnfyr",
-              "name": "Network || Private network (vRack) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "63r5fb3w4rqt",
-              "name": "Network || Private network (vRack) - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "06vzjrdsgydj",
-              "name": "Network || Private network (vRack) - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "f99hq5wwk7cq",
-              "name": "Storage || Block storage - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "q199fjgrj77z",
-              "name": "Storage || Block storage - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "w520v751hcrn",
-              "name": "Storage || Block storage - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0bqncc3zh3c6",
-              "name": "Storage || Block storage - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0hpxc65n3j2y",
-              "name": "Compute - Instance || SBG - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "p5srmsq3fmp8",
-              "name": "Compute - Instance || SBG - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zpcr3vwgcnlf",
-              "name": "Network || Public network - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qb4ppzbtcl0c",
-              "name": "Network || Public network - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2x1r7q8sb98m",
-              "name": "Network || Public network - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "z7fh2xx0lkct",
-              "name": "Network || Public network - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zg46wzxqlwc5",
-              "name": "Storage || Volume Backup - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "y10n3y26sqd5",
-              "name": "Storage || Volume Backup - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7j5zch84rtz6",
-              "name": "Storage || Volume Backup - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qcd1yy26zbbt",
-              "name": "Storage || Volume Backup - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "gr5zgcqt29y7",
-              "name": "Network || Gateway - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k1bfwspgws6s",
-              "name": "Network || Gateway - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "nsm4f9ftfgf9",
-              "name": "Network || Gateway - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zbf7j83bgbss",
-              "name": "Network || Gateway - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ndp7lk3d96s8",
-              "name": "Network || Floating IP - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qkmxvvvn6zvg",
-              "name": "Network || Floating IP - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zy6khs2x199h",
-              "name": "Network || Floating IP - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7tzt00kxw5c6",
-              "name": "Network || Floating IP - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5tbzbrty8xxq",
-              "name": "Network || Load Balancer - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "whmmpxw9452l",
-              "name": "Network || Load Balancer - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "05ypylr14m8c",
-              "name": "Network || Load Balancer - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "yy5p0kq0nfdz",
-              "name": "Network || Load Balancer - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "dbd5g4vj5c3f",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our public cloud infrastructure.\n\n<b>Start time :</b> 21/09/2025 08:00 UTC\n<b>End time :</b> 21/09/2025 10:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Network infrastructure in the specified regions.\n\nThank you for your understanding.",
-          "incident_id": "6hl4sn79jfnw",
-          "created_at": "2025-09-16T12:24:56.593Z",
-          "updated_at": "2025-09-16T12:24:56.593Z",
-          "display_at": "2025-09-16T12:24:56.593Z",
-          "affected_components": [
-            {
-              "code": "pb7wfnt40ljw",
-              "name": "Storage || Instance Backup - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "804dkxh575zy",
-              "name": "Storage || Instance Backup - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "x8wxtvy9nx2m",
-              "name": "Storage || Instance Backup - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "z39b8z3bqsd9",
-              "name": "Storage || Instance Backup - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "cfp9bz2qvyqt",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k6bzjch86wfn",
-              "name": "Storage || Volume Snapshot (Ceph) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "81837rvr04tb",
-              "name": "Storage || Volume Snapshot (Ceph) - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "tsn9y6kd3wcm",
-              "name": "Storage || Volume Snapshot (Ceph) - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "8x32jhcpqq1m",
-              "name": "Compute - Instance || GRA - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "9vjdx62wmjgv",
-              "name": "Network || Private network (vRack) - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ykbxwt7jnfyr",
-              "name": "Network || Private network (vRack) - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "63r5fb3w4rqt",
-              "name": "Network || Private network (vRack) - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "06vzjrdsgydj",
-              "name": "Network || Private network (vRack) - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "f99hq5wwk7cq",
-              "name": "Storage || Block storage - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "q199fjgrj77z",
-              "name": "Storage || Block storage - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "w520v751hcrn",
-              "name": "Storage || Block storage - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0bqncc3zh3c6",
-              "name": "Storage || Block storage - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "0hpxc65n3j2y",
-              "name": "Compute - Instance || SBG - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "p5srmsq3fmp8",
-              "name": "Compute - Instance || SBG - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k86vmhcsnjtj",
-              "name": "Storage || Object storage - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2pk5hxxqkq21",
-              "name": "Storage || Object storage - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zpcr3vwgcnlf",
-              "name": "Network || Public network - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qb4ppzbtcl0c",
-              "name": "Network || Public network - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "2x1r7q8sb98m",
-              "name": "Network || Public network - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "z7fh2xx0lkct",
-              "name": "Network || Public network - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zg46wzxqlwc5",
-              "name": "Storage || Volume Backup - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "y10n3y26sqd5",
-              "name": "Storage || Volume Backup - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7j5zch84rtz6",
-              "name": "Storage || Volume Backup - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qcd1yy26zbbt",
-              "name": "Storage || Volume Backup - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "gr5zgcqt29y7",
-              "name": "Network || Gateway - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "k1bfwspgws6s",
-              "name": "Network || Gateway - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "nsm4f9ftfgf9",
-              "name": "Network || Gateway - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zbf7j83bgbss",
-              "name": "Network || Gateway - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "ndp7lk3d96s8",
-              "name": "Network || Floating IP - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "qkmxvvvn6zvg",
-              "name": "Network || Floating IP - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "zy6khs2x199h",
-              "name": "Network || Floating IP - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "7tzt00kxw5c6",
-              "name": "Network || Floating IP - SBG7",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "5tbzbrty8xxq",
-              "name": "Network || Load Balancer - GRA1",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "whmmpxw9452l",
-              "name": "Network || Load Balancer - GRA3",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "05ypylr14m8c",
-              "name": "Network || Load Balancer - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "yy5p0kq0nfdz",
-              "name": "Network || Load Balancer - SBG7",
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -10801,638 +10295,23 @@
       ],
       "components": [
         {
-          "id": "8x32jhcpqq1m",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:35:48.039Z",
-          "updated_at": "2025-09-11T14:08:02.468Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xfnf56jsxk5y",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "cfp9bz2qvyqt",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:35:06.918Z",
-          "updated_at": "2023-12-05T07:59:41.612Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k86vmhcsnjtj",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2025-09-02T20:58:40.162Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2k4xnh0pwlqx",
-          "name": "GRA3",
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
           "status": "partial_outage",
-          "created_at": "2022-04-06T09:35:50.709Z",
-          "updated_at": "2025-09-22T07:37:13.861Z",
-          "position": 3,
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-09-22T12:10:45.773Z",
+          "position": 28,
           "description": null,
           "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xfnf56jsxk5y",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "0hpxc65n3j2y",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:38:49.027Z",
-          "updated_at": "2025-09-02T20:59:33.373Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yx0ggmlz8k7d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k6bzjch86wfn",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T09:35:07.956Z",
-          "updated_at": "2025-08-29T11:47:35.971Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "p5srmsq3fmp8",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-04-06T09:38:49.885Z",
-          "updated_at": "2025-06-16T15:53:37.590Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yx0ggmlz8k7d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "9vjdx62wmjgv",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:24.318Z",
-          "updated_at": "2025-06-24T15:43:38.064Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "f99hq5wwk7cq",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:07.357Z",
-          "updated_at": "2025-07-30T12:23:22.237Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2pk5hxxqkq21",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2025-07-31T16:52:54.772Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "yr9swqk9s0j8",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zpcr3vwgcnlf",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:14.168Z",
-          "updated_at": "2025-01-23T05:18:16.760Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "pb7wfnt40ljw",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2022-05-04T14:09:39.193Z",
-          "updated_at": "2024-05-17T09:20:55.085Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "pxr3n253gjmz",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zg46wzxqlwc5",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2023-04-15T07:58:47.257Z",
-          "updated_at": "2024-05-17T09:43:42.586Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "j51vxz9sxrnw",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "gr5zgcqt29y7",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2023-04-15T08:36:05.117Z",
-          "updated_at": "2025-08-19T10:01:07.990Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ndp7lk3d96s8",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2024-12-12T11:49:42.592Z",
-          "updated_at": "2024-12-12T11:49:42.592Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "c3np090g8968",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "5tbzbrty8xxq",
-          "name": "GRA1",
-          "status": "operational",
-          "created_at": "2024-12-12T12:18:53.420Z",
-          "updated_at": "2025-06-19T09:25:43.609Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "ydhs6hsr8s0s",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "ykbxwt7jnfyr",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:25.282Z",
-          "updated_at": "2025-06-24T15:43:38.078Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "q199fjgrj77z",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:16.362Z",
-          "updated_at": "2025-08-29T07:06:32.251Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qb4ppzbtcl0c",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:15.019Z",
-          "updated_at": "2025-01-23T05:18:16.794Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "804dkxh575zy",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2022-05-04T14:10:25.445Z",
-          "updated_at": "2024-05-17T09:20:55.089Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "pxr3n253gjmz",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "y10n3y26sqd5",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2023-04-15T07:59:17.018Z",
-          "updated_at": "2024-05-17T09:43:42.592Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "j51vxz9sxrnw",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "k1bfwspgws6s",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2023-04-15T08:36:33.125Z",
-          "updated_at": "2025-08-19T13:10:38.312Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qkmxvvvn6zvg",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2024-12-12T11:50:13.512Z",
-          "updated_at": "2024-12-12T11:50:13.512Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "c3np090g8968",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "whmmpxw9452l",
-          "name": "GRA3",
-          "status": "operational",
-          "created_at": "2024-12-12T12:19:21.742Z",
-          "updated_at": "2025-06-19T09:25:43.625Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "ydhs6hsr8s0s",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "x8wxtvy9nx2m",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-05-04T14:08:47.508Z",
-          "updated_at": "2024-05-17T09:21:04.316Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "pxr3n253gjmz",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7j5zch84rtz6",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2023-04-15T07:55:44.180Z",
-          "updated_at": "2024-05-17T09:44:06.093Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "j51vxz9sxrnw",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "nsm4f9ftfgf9",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2023-04-15T08:42:29.901Z",
-          "updated_at": "2025-08-27T14:11:12.697Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "05ypylr14m8c",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2024-12-12T12:22:18.003Z",
-          "updated_at": "2025-06-19T09:25:43.708Z",
-          "position": 11,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "ydhs6hsr8s0s",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "63r5fb3w4rqt",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:22.659Z",
-          "updated_at": "2025-06-24T15:43:38.157Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "z39b8z3bqsd9",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-05-04T14:09:09.692Z",
-          "updated_at": "2024-05-17T09:21:04.321Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "pxr3n253gjmz",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "qcd1yy26zbbt",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2023-04-15T07:57:24.733Z",
-          "updated_at": "2024-05-17T09:44:06.100Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "j51vxz9sxrnw",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zbf7j83bgbss",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2023-04-15T08:43:10.347Z",
-          "updated_at": "2025-09-01T12:46:08.572Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-15",
-          "group_id": "xxf4tr946kpr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "yy5p0kq0nfdz",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2024-12-12T12:22:40.868Z",
-          "updated_at": "2025-06-19T09:25:43.724Z",
-          "position": 12,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "ydhs6hsr8s0s",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "81837rvr04tb",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:35:05.709Z",
-          "updated_at": "2025-07-22T16:04:20.286Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "99vzp9gbvfqg",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "06vzjrdsgydj",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-04-06T09:36:23.480Z",
-          "updated_at": "2025-06-24T15:43:38.171Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xjbj3776977d",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "w520v751hcrn",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:04.775Z",
-          "updated_at": "2025-09-08T14:33:14.020Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "zy6khs2x199h",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2024-12-12T11:52:57.759Z",
-          "updated_at": "2025-09-16T07:56:44.219Z",
-          "position": 13,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "c3np090g8968",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "2x1r7q8sb98m",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:08.165Z",
-          "updated_at": "2024-03-06T08:58:22.395Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "0bqncc3zh3c6",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-05-04T10:43:15.178Z",
-          "updated_at": "2025-06-02T15:49:16.307Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "7tzt00kxw5c6",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2024-12-12T11:53:25.709Z",
-          "updated_at": "2025-09-16T07:56:44.225Z",
-          "position": 14,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-12-12",
-          "group_id": "c3np090g8968",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "z7fh2xx0lkct",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:13.334Z",
-          "updated_at": "2024-03-06T08:58:22.399Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "tsn9y6kd3wcm",
-          "name": "SBG7",
-          "status": "operational",
-          "created_at": "2022-05-04T14:00:47.799Z",
-          "updated_at": "2025-07-22T16:04:20.299Z",
-          "position": 15,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-04",
-          "group_id": "99vzp9gbvfqg",
+          "start_date": "2024-04-12",
+          "group_id": null,
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-09-22T07:00:00.000Z",
-      "scheduled_until": "2025-09-22T10:00:00.000Z"
+      "scheduled_for": "2025-09-22T12:00:00.000Z",
+      "scheduled_until": "2025-09-22T15:00:00.000Z"
     }
   ],
   "status": {
