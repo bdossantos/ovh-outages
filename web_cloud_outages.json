@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-24T10:21:57.474Z"
+    "updated_at": "2025-09-24T13:37:57.353Z"
   },
   "components": [
     {
@@ -2643,9 +2643,9 @@
     {
       "id": "b2t1l4bz1hdp",
       "name": "Cluster115",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-09-22T12:39:44.291Z",
-      "updated_at": "2025-09-22T12:39:58.716Z",
+      "updated_at": "2025-09-24T13:30:07.101Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -2658,7 +2658,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -2889,312 +2889,32 @@
   ],
   "incidents": [
     {
-      "id": "sxvvg8pl22dm",
-      "name": "[GLOBAL][SMS] - Sending SMS",
-      "status": "monitoring",
-      "created_at": "2025-09-24T06:52:55.795Z",
-      "updated_at": "2025-09-24T10:09:29.575Z",
-      "monitoring_at": "2025-09-24T09:07:39.174Z",
+      "id": "gz1r9gvyxrzz",
+      "name": "[GRA][Web Hosting] - Cluster 105/115/128.",
+      "status": "identified",
+      "created_at": "2025-09-24T13:30:07.065Z",
+      "updated_at": "2025-09-24T13:30:07.157Z",
+      "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/y5zh2j6wmk74",
-      "started_at": "2025-09-24T06:52:55.790Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/yfkc6p45gbyg",
+      "started_at": "2025-09-24T13:30:07.057Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
         {
-          "id": "whcyv2yfmltf",
-          "status": "monitoring",
-          "body": "Service has been fully restored since 24/09/2025 09:10 UTC. Monitoring remains active to ensure long-term stability.\nWe are pleased to inform you that our Two-Factor Authentication (2FA) service and SMS are now operational again. Additionally, configuration requests are also being processed normally.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/09/2025 00:01 UTC\n<b>Impacted Service(s) :</b> Sending SMS has a malfunction.\n<b>Customers Impact :</b> Customers cannot send SMS with 2FA.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T09:24:27.961Z",
-          "updated_at": "2025-09-24T09:24:27.961Z",
-          "display_at": "2025-09-24T09:24:27.961Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "p6pj26mbsqvv",
-              "name": "VoIP || Services - CCS, IVR & Call Queues",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "d8pdkwqbmz06",
-              "name": "VoIP || Services - VXML",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "nyhhlvk1sj03",
-              "name": "VoIP || Services - Provisioning",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7clv5dlw3gmp",
-          "status": "monitoring",
-          "body": "<b>Impacted Service(s) :</b> 2FA and the other SMS are operational again. The same goes for the Todo.\n<b>Customers Impact :</b> Customers can send SMS again.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T09:07:39.174Z",
-          "updated_at": "2025-09-24T09:07:39.174Z",
-          "display_at": "2025-09-24T09:07:39.174Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "p6pj26mbsqvv",
-              "name": "VoIP || Services - CCS, IVR & Call Queues",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "d8pdkwqbmz06",
-              "name": "VoIP || Services - VXML",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "nyhhlvk1sj03",
-              "name": "VoIP || Services - Provisioning",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            },
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "62t02mc9r0n7",
+          "id": "pw0mks539yd6",
           "status": "identified",
-          "body": "<b>Update :</b>\nThe fix is still in progress.\nService performance is being restored.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T08:31:48.573Z",
-          "updated_at": "2025-09-24T10:09:29.570Z",
-          "display_at": "2025-09-24T08:31:48.000Z",
+          "body": "We are currently experiencing an event affecting our Web Hosting offer on the specific Cluster 105/115/128.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/09/2025 13:11 UTC                \n<b>Impacted Service(s) :</b> Customers in clusters 105, 115 and 128 may experience issues sending emails.\n<b>Root Cause :</b> This incident is caused by a software issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "gz1r9gvyxrzz",
+          "created_at": "2025-09-24T13:30:07.154Z",
+          "updated_at": "2025-09-24T13:30:07.154Z",
+          "display_at": "2025-09-24T13:30:07.154Z",
           "affected_components": [
             {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "p6pj26mbsqvv",
-              "name": "VoIP || Services - CCS, IVR & Call Queues",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "d8pdkwqbmz06",
-              "name": "VoIP || Services - VXML",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "nyhhlvk1sj03",
-              "name": "VoIP || Services - Provisioning",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0hsj5bgb4nkk",
-          "status": "identified",
-          "body": "<b>Impacted Service(s) :</b> Configuration requests are currently on hold",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T08:06:11.572Z",
-          "updated_at": "2025-09-24T08:06:11.572Z",
-          "display_at": "2025-09-24T08:06:11.572Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "p6pj26mbsqvv",
-              "name": "VoIP || Services - CCS, IVR & Call Queues",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "d8pdkwqbmz06",
-              "name": "VoIP || Services - VXML",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "nyhhlvk1sj03",
-              "name": "VoIP || Services - Provisioning",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "1mc1gdqrql9m",
-          "status": "identified",
-          "body": "We are continuing to work on a fix for this issue.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T07:59:13.868Z",
-          "updated_at": "2025-09-24T07:59:13.868Z",
-          "display_at": "2025-09-24T07:59:13.868Z",
-          "affected_components": [
-            {
-              "code": "3mxgdcpk20wg",
-              "name": "VoIP || Services - Conferences",
+              "code": "b2t1l4bz1hdp",
+              "name": "Web Hosting || Datacenter GRA - Cluster115",
               "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "p6pj26mbsqvv",
-              "name": "VoIP || Services - CCS, IVR & Call Queues",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "d8pdkwqbmz06",
-              "name": "VoIP || Services - VXML",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "nyhhlvk1sj03",
-              "name": "VoIP || Services - Provisioning",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            },
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "43qdzyqvj4nm",
-          "status": "identified",
-          "body": "<b>Impacted Service(s) :</b> Sending/receiving SMS has a malfunction.\n<b>Customers Impact :</b> Customers cannot send and receive SMS .",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T07:40:33.763Z",
-          "updated_at": "2025-09-24T07:40:33.763Z",
-          "display_at": "2025-09-24T07:40:33.763Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hpdkmhd0gq9q",
-          "status": "identified",
-          "body": "<b>Impacted Service(s) :</b> Sending SMS has a malfunction.\n<b>Customers Impact :</b> Customers cannot send SMS .",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T07:26:13.113Z",
-          "updated_at": "2025-09-24T07:26:13.113Z",
-          "display_at": "2025-09-24T07:26:13.113Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xp2k267r8cjp",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our SMS offer .\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/09/2025 00:01 UTC\n<b>Impacted Service(s) :</b> Sending SMS with 2FA has a malfunction.\n<b>Customers Impact :</b> Customers cannot send SMS with 2FA.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T07:02:30.317Z",
-          "updated_at": "2025-09-24T07:02:30.317Z",
-          "display_at": "2025-09-24T07:02:30.317Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ybh3ythh4464",
-          "status": "investigating",
-          "body": "We are currently experiencing an event affecting our SMS offer.\n\n<b>Start time :</b> 24/09/2025 00:01 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "sxvvg8pl22dm",
-          "created_at": "2025-09-24T06:52:55.892Z",
-          "updated_at": "2025-09-24T06:52:55.892Z",
-          "display_at": "2025-09-24T06:52:55.892Z",
-          "affected_components": [
-            {
-              "code": "wvx9nrw9v652",
-              "name": "VoIP || SMS",
-              "old_status": "operational",
-              "new_status": "partial_outage"
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -3204,76 +2924,16 @@
       ],
       "components": [
         {
-          "id": "3mxgdcpk20wg",
-          "name": "Conferences",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:18.231Z",
-          "updated_at": "2025-09-24T09:07:39.060Z",
-          "position": 1,
+          "id": "b2t1l4bz1hdp",
+          "name": "Cluster115",
+          "status": "degraded_performance",
+          "created_at": "2025-09-22T12:39:44.291Z",
+          "updated_at": "2025-09-24T13:30:07.101Z",
+          "position": 26,
           "description": null,
           "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "sch37jd056nk",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "p6pj26mbsqvv",
-          "name": "CCS, IVR & Call Queues",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:19.744Z",
-          "updated_at": "2025-09-24T09:07:39.079Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "sch37jd056nk",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "d8pdkwqbmz06",
-          "name": "VXML",
-          "status": "operational",
-          "created_at": "2021-06-30T12:22:20.297Z",
-          "updated_at": "2025-09-24T09:07:39.098Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "sch37jd056nk",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "nyhhlvk1sj03",
-          "name": "Provisioning",
-          "status": "operational",
-          "created_at": "2023-07-19T12:57:30.719Z",
-          "updated_at": "2025-09-24T09:07:39.116Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-07-19",
-          "group_id": "sch37jd056nk",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "wvx9nrw9v652",
-          "name": "VoIP || SMS",
-          "status": "operational",
-          "created_at": "2025-01-21T15:07:25.031Z",
-          "updated_at": "2025-09-24T09:07:39.134Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-21",
-          "group_id": null,
+          "start_date": "2025-09-22",
+          "group_id": "2fkfhxvh1l1w",
           "page_id": "gw3vvyn2b3bh",
           "group": false,
           "only_show_if_degraded": false
@@ -3605,9 +3265,9 @@
         {
           "id": "b2t1l4bz1hdp",
           "name": "Cluster115",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2025-09-22T12:39:44.291Z",
-          "updated_at": "2025-09-22T12:39:58.716Z",
+          "updated_at": "2025-09-24T13:30:07.101Z",
           "position": 26,
           "description": null,
           "showcase": false,
@@ -7275,7 +6935,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
