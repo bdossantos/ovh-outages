@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-25T17:56:11.974Z"
+    "updated_at": "2025-09-26T02:20:30.493Z"
   },
   "components": [
     {
@@ -715,9 +715,9 @@
     {
       "id": "4lw2d55nypyj",
       "name": "Compute",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:07.653Z",
-      "updated_at": "2025-09-18T13:32:52.366Z",
+      "updated_at": "2025-09-26T02:19:20.613Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1030,9 +1030,9 @@
     {
       "id": "n50qxz88zcfk",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:08.302Z",
-      "updated_at": "2025-09-04T23:09:22.316Z",
+      "updated_at": "2025-09-26T02:19:20.637Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1565,7 +1565,7 @@
     {
       "id": "ffzs9mslnm1g",
       "name": "Managed vSphere || SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:08.920Z",
       "updated_at": "2025-01-15T10:37:04.708Z",
       "position": 16,
@@ -1752,7 +1752,82 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "vvkt9yq87t92",
+      "name": "[SBG3/SBG5][Managed vSphere] - Hosts incident notification",
+      "status": "investigating",
+      "created_at": "2025-09-26T02:19:20.569Z",
+      "updated_at": "2025-09-26T02:19:20.693Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8dpnps607bn3",
+      "started_at": "2025-09-26T02:19:20.560Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "nnnrpv3q3chc",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Managed vSphere offer.\n\n<b>Start time :</b> 26/09/2025 01:40 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "vvkt9yq87t92",
+          "created_at": "2025-09-26T02:19:20.690Z",
+          "updated_at": "2025-09-26T02:19:20.690Z",
+          "display_at": "2025-09-26T02:19:20.690Z",
+          "affected_components": [
+            {
+              "code": "4lw2d55nypyj",
+              "name": "Managed vSphere || SBG - Compute",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "n50qxz88zcfk",
+              "name": "Managed vSphere || SBG - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4lw2d55nypyj",
+          "name": "Compute",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:41:07.653Z",
+          "updated_at": "2025-09-26T02:19:20.613Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n50qxz88zcfk",
+          "name": "Storage",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:41:08.302Z",
+          "updated_at": "2025-09-26T02:19:20.637Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "ffzs9mslnm1g",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "t4hqv6n4v7gf",
@@ -1957,7 +2032,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
