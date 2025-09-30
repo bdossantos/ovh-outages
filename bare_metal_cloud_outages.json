@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-09-30T03:23:32.803Z"
+    "updated_at": "2025-09-30T06:57:34.604Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -1654,9 +1654,9 @@
     {
       "id": "ywcwwnktxgh0",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:54.272Z",
-      "updated_at": "2025-09-29T03:21:54.455Z",
+      "updated_at": "2025-09-30T06:57:34.546Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2911,7 +2911,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "6fbfpmqxxffd",
+      "name": "[LIM1][Dedicated Servers] - Rack L112A05 incident notification",
+      "status": "identified",
+      "created_at": "2025-09-30T06:57:34.504Z",
+      "updated_at": "2025-09-30T06:57:34.599Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/2sjzmb7hmj2k",
+      "started_at": "2025-09-30T06:57:34.497Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qtnrwtx53f2m",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack L112A05.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/09/2025 05:49 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are unable to access their servers in the specified racks through the public network. \n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "6fbfpmqxxffd",
+          "created_at": "2025-09-30T06:57:34.596Z",
+          "updated_at": "2025-09-30T06:57:34.596Z",
+          "display_at": "2025-09-30T06:57:34.596Z",
+          "affected_components": [
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2025-09-30T06:57:34.546Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "49bdms67m6ng",
@@ -5657,7 +5711,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
