@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-01T09:01:26.074Z"
+    "updated_at": "2025-10-01T09:22:05.684Z"
   },
   "components": [
     {
@@ -775,9 +775,9 @@
     {
       "id": "p6pj26mbsqvv",
       "name": "CCS, IVR & Call Queues",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:19.744Z",
-      "updated_at": "2025-09-26T12:44:37.400Z",
+      "updated_at": "2025-10-01T09:08:44.100Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2353,7 +2353,7 @@
     {
       "id": "sch37jd056nk",
       "name": "VoIP || Services",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:22:22.187Z",
       "updated_at": "2025-08-13T12:55:51.711Z",
       "position": 21,
@@ -2936,6 +2936,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "h9p645lv1qy5",
+      "name": "[GLOBAL][Web Cloud] -VoIP Services incident notification",
+      "status": "identified",
+      "created_at": "2025-10-01T09:08:44.056Z",
+      "updated_at": "2025-10-01T09:08:44.168Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8ltg929slx0z",
+      "started_at": "2025-10-01T09:08:44.047Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "mgb156jwf33p",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our VoIP offering offer on on the domain sbc6.fr.sip.ovh.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/10/2025 07:48 UTC\n<b>Impacted Service(s) :</b> VoIP Call losses.\n<b>Customers Impact :</b> Customers may not be able to make or receive calls.\n<b>Root Cause :</b> This incident is caused by a software issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "h9p645lv1qy5",
+          "created_at": "2025-10-01T09:08:44.164Z",
+          "updated_at": "2025-10-01T09:08:44.164Z",
+          "display_at": "2025-10-01T09:08:44.164Z",
+          "affected_components": [
+            {
+              "code": "p6pj26mbsqvv",
+              "name": "VoIP || Services - CCS, IVR & Call Queues",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "p6pj26mbsqvv",
+          "name": "CCS, IVR & Call Queues",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:22:19.744Z",
+          "updated_at": "2025-10-01T09:08:44.100Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "sch37jd056nk",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "kgsk55vnh95t",
       "name": "[Global][Domains] - Domains Name incident notification on .HT",
