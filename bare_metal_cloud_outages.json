@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-03T16:01:06.259Z"
+    "updated_at": "2025-10-03T18:06:10.464Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-09-24T18:27:45.935Z",
+      "updated_at": "2025-10-03T17:45:30.098Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2911,7 +2911,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qdj9sy0yxhqj",
+      "name": "[RBX8][Dedicated Servers] - Rack R832A08 incident notification",
+      "status": "identified",
+      "created_at": "2025-10-03T17:45:30.050Z",
+      "updated_at": "2025-10-03T18:06:10.455Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/4c175v90kgbr",
+      "started_at": "2025-10-03T17:45:30.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qq2r3724fpkg",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the rack R832A08.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/10/2025 17:30 UTC\n<b>Impacted Service(s) :</b> All servers in the rack R832A08 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access and use their servers in the specified rack.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "qdj9sy0yxhqj",
+          "created_at": "2025-10-03T18:06:10.451Z",
+          "updated_at": "2025-10-03T18:06:10.451Z",
+          "display_at": "2025-10-03T18:06:10.451Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4tpwvz3qvjm7",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary issue in the rack R832A08.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/10/2025 17:30 UTC\n<b>Impacted Service(s) :</b> All servers in the rack R832A08 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access and use their servers in the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "qdj9sy0yxhqj",
+          "created_at": "2025-10-03T17:45:30.170Z",
+          "updated_at": "2025-10-03T17:50:40.192Z",
+          "display_at": "2025-10-03T17:45:30.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-10-03T17:45:30.098Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "z85s9f773yvd",
@@ -2951,9 +3025,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-09-24T18:27:45.935Z",
+          "updated_at": "2025-10-03T17:45:30.098Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -5657,7 +5731,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
