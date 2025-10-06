@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-06T03:00:23.850Z"
+    "updated_at": "2025-10-06T04:00:22.017Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-10-04T01:50:10.148Z",
+      "updated_at": "2025-10-06T04:00:21.838Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2911,48 +2911,34 @@
       ]
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "z85s9f773yvd",
-      "name": "[RBX8][Dedicated Servers] - Rack R802R20 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-09-22T09:53:56.165Z",
-      "updated_at": "2025-10-06T03:00:23.840Z",
+      "id": "gf7vhb46q2sk",
+      "name": "[RBX8][Dedicated Servers] - Rack R820L22 incident notification",
+      "status": "identified",
+      "created_at": "2025-10-06T03:38:55.844Z",
+      "updated_at": "2025-10-06T03:42:21.408Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/qb1dzzv16v4r",
-      "started_at": "2025-09-22T09:53:56.156Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/z504j5bqn5ns",
+      "started_at": "2025-10-06T03:38:55.835Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "48c48vrhy8sn",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "z85s9f773yvd",
-          "created_at": "2025-10-06T03:00:23.716Z",
-          "updated_at": "2025-10-06T03:00:23.716Z",
-          "display_at": "2025-10-06T03:00:23.716Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "xp2dc50tb0zg",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on the Rack R802R20.\n\nThis may temporarily affect availability.\n<b>Start time: </b> 06/10/2025 04:00 UTC\n<b>End time: </b> 06/10/2025 15:00 UTC\n<b>Service impact: </b> The servers in the rack will be unavailable while maintenance is being carried out. Please note that the maintenance may take less time than expected.\n<b>Service improvement: </b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "z85s9f773yvd",
-          "created_at": "2025-09-22T09:53:56.233Z",
-          "updated_at": "2025-09-22T09:53:56.233Z",
-          "display_at": "2025-09-22T09:53:56.233Z",
+          "id": "r18tdr6xlz61",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on IPMI interface in the rack 820L22.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 06/10/2025 01:36 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access via the IPMI interface.\n<b>Customers Impact :</b> Customers whose servers are located in a specified rack may be unable to access the IPMI interface in order to manage their services.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "gf7vhb46q2sk",
+          "created_at": "2025-10-06T03:38:56.290Z",
+          "updated_at": "2025-10-06T03:42:21.403Z",
+          "display_at": "2025-10-06T03:38:56.000Z",
           "affected_components": [
             {
               "code": "ndg1yh0x4lpd",
               "name": "Dedicated Servers || Global Infrastructure - RBX",
               "old_status": "operational",
-              "new_status": "operational"
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -2964,9 +2950,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2025-10-04T01:50:10.148Z",
+          "updated_at": "2025-10-06T04:00:21.838Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -2977,9 +2963,10 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-10-06T04:00:00.000Z",
-      "scheduled_until": "2025-10-06T15:00:00.000Z"
-    },
+      "reminder_intervals": "[]"
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "k92qdmlq03qq",
       "name": "[RBX7][Dedicated Servers] - Rack R713A15 network equipment maintenance notification",
@@ -5667,10 +5654,151 @@
       ],
       "scheduled_for": "2025-11-04T07:00:00.000Z",
       "scheduled_until": "2025-11-04T08:30:00.000Z"
+    },
+    {
+      "id": "y8lyrr55xvlz",
+      "name": "[ERI1][Dedicated Servers] - Rack E102H06 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-09-17T23:18:28.474Z",
+      "updated_at": "2025-09-17T23:18:28.523Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7xpw5kdz733r",
+      "started_at": "2025-09-17T23:18:28.467Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "4kt1h1h2qpwt",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer on rack E102H06.\n\nThis may temporarily affect availability.\n<b>Start time: </b> 04/11/2025 08:00 UTC\n<b>End time: </b> 04/11/2025 09:30 UTC\n<b>Service impact: </b> During the operation, servers in rack E102H06 will be temporarily unavailable.\n<b>Service improvement: </b> As part of our continuous improvement policy, we will migrate servers in rack E102H06 to rack ERI0102C04A.\n\nThank you for your understanding.",
+          "incident_id": "y8lyrr55xvlz",
+          "created_at": "2025-09-17T23:18:28.521Z",
+          "updated_at": "2025-09-17T23:18:28.521Z",
+          "display_at": "2025-09-17T23:18:28.521Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2025-09-23T02:53:50.714Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-04T08:00:00.000Z",
+      "scheduled_until": "2025-11-04T09:30:00.000Z"
+    },
+    {
+      "id": "z85s9f773yvd",
+      "name": "[RBX8][Dedicated Servers] - Rack R802R20 maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-09-22T09:53:56.165Z",
+      "updated_at": "2025-10-06T04:00:21.992Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/qb1dzzv16v4r",
+      "started_at": "2025-09-22T09:53:56.156Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "l57ww353l54w",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "z85s9f773yvd",
+          "created_at": "2025-10-06T04:00:21.981Z",
+          "updated_at": "2025-10-06T04:00:21.981Z",
+          "display_at": "2025-10-06T04:00:21.981Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "48c48vrhy8sn",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "z85s9f773yvd",
+          "created_at": "2025-10-06T03:00:23.716Z",
+          "updated_at": "2025-10-06T03:00:23.716Z",
+          "display_at": "2025-10-06T03:00:23.716Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xp2dc50tb0zg",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on the Rack R802R20.\n\nThis may temporarily affect availability.\n<b>Start time: </b> 06/10/2025 04:00 UTC\n<b>End time: </b> 06/10/2025 15:00 UTC\n<b>Service impact: </b> The servers in the rack will be unavailable while maintenance is being carried out. Please note that the maintenance may take less time than expected.\n<b>Service improvement: </b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "z85s9f773yvd",
+          "created_at": "2025-09-22T09:53:56.233Z",
+          "updated_at": "2025-09-22T09:53:56.233Z",
+          "display_at": "2025-09-22T09:53:56.233Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-10-06T04:00:21.838Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-06T04:00:00.000Z",
+      "scheduled_until": "2025-10-06T15:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
