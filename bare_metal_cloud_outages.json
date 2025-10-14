@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-14T17:20:48.395Z"
+    "updated_at": "2025-10-14T19:00:26.986Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2025-10-14T17:10:16.374Z",
+      "updated_at": "2025-10-14T18:43:31.968Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2911,14 +2911,68 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "tmcp2nmh6f8q",
+      "name": "[BHS5][Dedicated Servers] - Rack T05G28 incident notification",
+      "status": "identified",
+      "created_at": "2025-10-14T18:43:31.929Z",
+      "updated_at": "2025-10-14T18:43:32.035Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/xr30hbx62fhl",
+      "started_at": "2025-10-14T18:43:31.920Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qks7vy8f2p11",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer in the specific rack T05G28.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 14/10/2025 18:08 UTC\n<b>Impacted Service(s) :</b> All servers in the rack T05G28 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access and use their servers located in the specified rack.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tmcp2nmh6f8q",
+          "created_at": "2025-10-14T18:43:32.032Z",
+          "updated_at": "2025-10-14T18:43:32.032Z",
+          "display_at": "2025-10-14T18:43:32.032Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2025-10-14T18:43:31.968Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "mxj0kmbmlsp3",
       "name": "[ERI1][Dedicated Servers] - Room E102 maintenance notification",
       "status": "scheduled",
       "created_at": "2025-10-08T08:10:28.989Z",
-      "updated_at": "2025-10-08T08:10:29.045Z",
+      "updated_at": "2025-10-14T19:00:26.977Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -2926,6 +2980,19 @@
       "started_at": "2025-10-08T08:10:28.981Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "l1m7y7cq23kg",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "mxj0kmbmlsp3",
+          "created_at": "2025-10-14T19:00:26.847Z",
+          "updated_at": "2025-10-14T19:00:26.847Z",
+          "display_at": "2025-10-14T19:00:26.847Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "sksgqy0hjn25",
           "status": "scheduled",
@@ -5615,7 +5682,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
