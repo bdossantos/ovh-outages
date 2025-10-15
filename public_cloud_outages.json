@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-15T04:01:23.974Z"
+    "updated_at": "2025-10-15T08:45:27.018Z"
   },
   "components": [
     {
@@ -4694,6 +4694,21 @@
       "only_show_if_degraded": false
     },
     {
+      "id": "brwn3l32kmrg",
+      "name": "EU-SOUTH-MIL",
+      "status": "operational",
+      "created_at": "2025-10-15T08:44:19.043Z",
+      "updated_at": "2025-10-15T08:44:19.043Z",
+      "position": 10,
+      "description": null,
+      "showcase": false,
+      "start_date": "2025-10-15",
+      "group_id": "5592b01ndnjq",
+      "page_id": "6j41kzyhcr9g",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
       "id": "3k7wc6zymxt3",
       "name": "UK",
       "status": "operational",
@@ -4932,6 +4947,21 @@
       "showcase": false,
       "start_date": "2025-09-16",
       "group_id": "hyh6798xq542",
+      "page_id": "6j41kzyhcr9g",
+      "group": false,
+      "only_show_if_degraded": false
+    },
+    {
+      "id": "2z8xpq384vg7",
+      "name": "EU-WEST-PAR",
+      "status": "operational",
+      "created_at": "2025-10-15T08:45:27.015Z",
+      "updated_at": "2025-10-15T08:45:27.015Z",
+      "position": 11,
+      "description": null,
+      "showcase": false,
+      "start_date": "2025-10-15",
+      "group_id": "5592b01ndnjq",
       "page_id": "6j41kzyhcr9g",
       "group": false,
       "only_show_if_degraded": false
@@ -7936,7 +7966,9 @@
         "05v1xmt0kh23",
         "r27c2v6pb7kt",
         "pkvx6741rd88",
-        "94qwbwjc7gh7"
+        "94qwbwjc7gh7",
+        "brwn3l32kmrg",
+        "2z8xpq384vg7"
       ]
     },
     {
@@ -9056,11 +9088,65 @@
       "scheduled_until": "2025-10-22T19:00:00.000Z"
     },
     {
+      "id": "qs7xc0stfg7j",
+      "name": "[RBX/SBG][Containers & Orchestration] -  Managed Rancher Service maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-09-24T21:37:22.726Z",
+      "updated_at": "2025-09-25T07:53:38.923Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/2d8n9lv2c79m",
+      "started_at": "2025-09-24T21:37:22.720Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "j1w0585dchk3",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Containers & Orchestration offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 13/11/2025 09:00 UTC\n<b>End time :</b> 13/11/2025 17:00 UTC\n<b>Service impact :</b> None.\n<b>Service improvement :</b> Rancher version 2.9.4 end of support is reached since August 2025.\nAs part of our continuous improvement policy, we need to force upgrade Ranchers to version 2.10.\nThe Rancher compatibility matrix with downstream clusters will be changed, as K8S version 1.27 will no longer be officially supported.\nFor more information regarding Managed Rancher Service supported versions and lifecycle policy, you can visit this page: <a href=\"https://help.ovhcloud.com/csm/fr-public-cloud-managed-rancher-service-lifecycle-policy?id=kb_article_view&sysparm_article=KB0064608\">KB0064608</a>\n\nThank you for your understanding.",
+          "incident_id": "qs7xc0stfg7j",
+          "created_at": "2025-09-24T21:37:22.809Z",
+          "updated_at": "2025-09-25T07:53:38.918Z",
+          "display_at": "2025-09-24T21:37:22.809Z",
+          "affected_components": [
+            {
+              "code": "qwqj3m81wkhq",
+              "name": "Containers & Orchestration || Managed Rancher Service",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qwqj3m81wkhq",
+          "name": "Containers & Orchestration || Managed Rancher Service",
+          "status": "operational",
+          "created_at": "2024-07-16T13:52:00.560Z",
+          "updated_at": "2025-10-02T14:15:15.949Z",
+          "position": 21,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-07-16",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-13T09:00:00.000Z",
+      "scheduled_until": "2025-11-13T17:00:00.000Z"
+    },
+    {
       "id": "mpy961v3wgcd",
       "name": "[GLOBAL][Containers & Orchestration] - End of life Kubernetes 1.29 notification",
       "status": "scheduled",
       "created_at": "2025-10-14T14:16:11.729Z",
-      "updated_at": "2025-10-14T14:16:11.830Z",
+      "updated_at": "2025-10-15T08:25:08.711Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -9071,10 +9157,10 @@
         {
           "id": "zq11lrznrz66",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Kubernetes Service.\n\n<b>Start time :</b> 24/07/2025 08:00 UTC\n<b>End time :</b> 26/07/2025 17:00 UTC\n<b>Service impact :</b> Customers have to anticipate this maintenance in order to adapt to the new Kubernetes version.\n<b>Service improvement :</b> As part of our continuous improvement policy, customers using Kubernetes version 1.29 will be migrated to version 1.30.\n\nThank you for your understanding.",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Kubernetes Service.\n\n<b>Start time :</b> 24/11/2025 08:00 UTC\n<b>End time :</b> 26/11/2025 17:00 UTC\n<b>Service impact :</b> Customers have to anticipate this maintenance in order to adapt to the new Kubernetes version.\n<b>Service improvement :</b> As part of our continuous improvement policy, customers using Kubernetes version 1.29 will be migrated to version 1.30.\n\nThank you for your understanding.",
           "incident_id": "mpy961v3wgcd",
           "created_at": "2025-10-14T14:16:11.826Z",
-          "updated_at": "2025-10-14T14:16:11.826Z",
+          "updated_at": "2025-10-15T08:24:56.383Z",
           "display_at": "2025-10-14T14:16:11.826Z",
           "affected_components": [
             {
@@ -9358,62 +9444,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-10-24T08:00:00.000Z",
-      "scheduled_until": "2025-10-26T17:00:00.000Z"
-    },
-    {
-      "id": "qs7xc0stfg7j",
-      "name": "[RBX/SBG][Containers & Orchestration] -  Managed Rancher Service maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-09-24T21:37:22.726Z",
-      "updated_at": "2025-09-25T07:53:38.923Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2d8n9lv2c79m",
-      "started_at": "2025-09-24T21:37:22.720Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "j1w0585dchk3",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Containers & Orchestration offer.\n\nThis may temporarily affect availability.\n\n<b>Start time :</b> 13/11/2025 09:00 UTC\n<b>End time :</b> 13/11/2025 17:00 UTC\n<b>Service impact :</b> None.\n<b>Service improvement :</b> Rancher version 2.9.4 end of support is reached since August 2025.\nAs part of our continuous improvement policy, we need to force upgrade Ranchers to version 2.10.\nThe Rancher compatibility matrix with downstream clusters will be changed, as K8S version 1.27 will no longer be officially supported.\nFor more information regarding Managed Rancher Service supported versions and lifecycle policy, you can visit this page: <a href=\"https://help.ovhcloud.com/csm/fr-public-cloud-managed-rancher-service-lifecycle-policy?id=kb_article_view&sysparm_article=KB0064608\">KB0064608</a>\n\nThank you for your understanding.",
-          "incident_id": "qs7xc0stfg7j",
-          "created_at": "2025-09-24T21:37:22.809Z",
-          "updated_at": "2025-09-25T07:53:38.918Z",
-          "display_at": "2025-09-24T21:37:22.809Z",
-          "affected_components": [
-            {
-              "code": "qwqj3m81wkhq",
-              "name": "Containers & Orchestration || Managed Rancher Service",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qwqj3m81wkhq",
-          "name": "Containers & Orchestration || Managed Rancher Service",
-          "status": "operational",
-          "created_at": "2024-07-16T13:52:00.560Z",
-          "updated_at": "2025-10-02T14:15:15.949Z",
-          "position": 21,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-07-16",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-13T09:00:00.000Z",
-      "scheduled_until": "2025-11-13T17:00:00.000Z"
+      "scheduled_for": "2025-11-24T08:00:00.000Z",
+      "scheduled_until": "2025-11-26T17:00:00.000Z"
     }
   ],
   "status": {
