@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-18T15:42:14.199Z"
+    "updated_at": "2025-10-18T18:43:41.921Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2025-10-15T08:05:09.354Z",
+      "updated_at": "2025-10-18T18:16:26.405Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2943,7 +2943,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "q9ggb1g7sp34",
+      "name": "[RBX4][Dedicated Servers] - Rack 53B23 incident notification",
+      "status": "identified",
+      "created_at": "2025-10-18T18:16:26.365Z",
+      "updated_at": "2025-10-18T18:16:55.706Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hcrqn47vn0m4",
+      "started_at": "2025-10-18T18:16:26.357Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "k2grrhbrzsxp",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "q9ggb1g7sp34",
+          "created_at": "2025-10-18T18:16:55.702Z",
+          "updated_at": "2025-10-18T18:16:55.702Z",
+          "display_at": "2025-10-18T18:16:55.702Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q3hdjwhlt6fk",
+          "status": "investigating",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Server offer on the specific rack 53B23.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 18/10/2025 17:44 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers via public network located on the specified racks.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b>The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "q9ggb1g7sp34",
+          "created_at": "2025-10-18T18:16:26.655Z",
+          "updated_at": "2025-10-18T18:16:26.655Z",
+          "display_at": "2025-10-18T18:16:26.655Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2025-10-18T18:16:26.405Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "y7km1tkpczdq",
@@ -5647,7 +5721,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
