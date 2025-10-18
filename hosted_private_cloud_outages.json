@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-18T18:20:27.139Z"
+    "updated_at": "2025-10-18T20:50:22.453Z"
   },
   "components": [
     {
@@ -865,9 +865,9 @@
     {
       "id": "b2m66lpxg514",
       "name": "Compute",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2025-01-15T09:00:04.712Z",
-      "updated_at": "2025-10-18T17:57:19.260Z",
+      "updated_at": "2025-10-18T20:41:14.492Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1420,7 +1420,7 @@
     {
       "id": "rfqh5dx946ly",
       "name": "Managed VMware Cloud Director || RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2025-01-15T08:50:52.331Z",
       "updated_at": "2025-01-15T10:36:58.307Z",
       "position": 9,
@@ -1788,16 +1788,36 @@
     {
       "id": "q3l154zp4052",
       "name": "[RBX8][Managed vSphere] - Rack R805L19/R805L20/R805L21 incident Notification",
-      "status": "identified",
-      "created_at": "2025-10-18T17:57:07.429Z",
-      "updated_at": "2025-10-18T17:58:08.934Z",
-      "monitoring_at": null,
+      "status": "monitoring",
+      "created_at": "2025-10-18T17:57:07.000Z",
+      "updated_at": "2025-10-18T20:50:22.451Z",
+      "monitoring_at": "2025-10-18T20:41:14.000Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/bqx091gjrknw",
       "started_at": "2025-10-18T17:57:07.000Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "v9pbm9v0ftsk",
+          "status": "monitoring",
+          "body": "Service has been fully restored since 18/10/2025 20:33 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 18/10/2025 20:13 UTC\n<b>Impacted Service(s) :</b> Some hosts were temporarily unavailable.\n<b>Customers Impact :</b> Some customers were temporarily unable to access their hosts in the specified racks.\n<b>Root Cause :</b> This incident was caused by a cooling system issue.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "q3l154zp4052",
+          "created_at": "2025-10-18T20:41:14.525Z",
+          "updated_at": "2025-10-18T20:50:22.435Z",
+          "display_at": "2025-10-18T20:41:14.000Z",
+          "affected_components": [
+            {
+              "code": "b2m66lpxg514",
+              "name": "Managed VMware Cloud Director || RBX - Compute",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "hjvwg3xnz6mz",
           "status": "identified",
@@ -1843,9 +1863,9 @@
         {
           "id": "b2m66lpxg514",
           "name": "Compute",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2025-01-15T09:00:04.712Z",
-          "updated_at": "2025-10-18T17:57:19.260Z",
+          "updated_at": "2025-10-18T20:41:14.492Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -2884,7 +2904,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "none",
+    "description": "All Systems Operational"
   }
 }
