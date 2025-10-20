@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-20T18:21:27.323Z"
+    "updated_at": "2025-10-20T20:00:33.869Z"
   },
   "components": [
     {
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2025-10-08T09:57:05.198Z",
+      "updated_at": "2025-10-20T19:17:10.677Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2949,7 +2949,7 @@
       "name": "[BHS4][Dedicated Servers] - Racks T04A01/T04A02/T04A04/T04A05",
       "status": "identified",
       "created_at": "2025-10-20T15:15:34.612Z",
-      "updated_at": "2025-10-20T17:59:10.210Z",
+      "updated_at": "2025-10-20T19:40:00.773Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -2957,6 +2957,26 @@
       "started_at": "2025-10-20T15:15:34.603Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "ntgw4sl4rxsl",
+          "status": "identified",
+          "body": "Please find below an update on the situation:\n<b>Update : </b> We would like to inform you that a significant number of servers are now operational.\n<b>Ongoing Actions :</b> Our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "hr2fth5857x2",
+          "created_at": "2025-10-20T19:40:00.770Z",
+          "updated_at": "2025-10-20T19:40:00.770Z",
+          "display_at": "2025-10-20T19:40:00.770Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "m7vzjw08b7ff",
           "status": "identified",
@@ -3056,6 +3076,59 @@
         }
       ],
       "reminder_intervals": null
+    },
+    {
+      "id": "mv4ftp8f1b0l",
+      "name": "[BHS7][Dedicated Servers] - Rack B720A07",
+      "status": "identified",
+      "created_at": "2025-10-20T19:17:10.637Z",
+      "updated_at": "2025-10-20T19:17:10.746Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9rxb0f9q05jv",
+      "started_at": "2025-10-20T19:17:10.627Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "122vqqklr4j5",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering on the specified rack.\n\nHere is detail for this incident :\n<b>Start time :</b> 20/10/2025 18:57 UTC\n<b>Impacted Service(s) :</b> The vRack private network is temporarily unavailable for some servers located in the rack B720A07.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the specified rack through vRack private network.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "mv4ftp8f1b0l",
+          "created_at": "2025-10-20T19:17:10.743Z",
+          "updated_at": "2025-10-20T19:17:10.743Z",
+          "display_at": "2025-10-20T19:17:10.743Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2025-10-20T19:17:10.677Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -3064,7 +3137,7 @@
       "name": "[ERI1][Dedicated Servers] - Rack E102F12 maintenance notification",
       "status": "scheduled",
       "created_at": "2025-09-16T21:49:05.027Z",
-      "updated_at": "2025-09-16T21:49:05.092Z",
+      "updated_at": "2025-10-20T20:00:33.853Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3072,6 +3145,19 @@
       "started_at": "2025-09-16T21:49:05.020Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "rmr1txt4flmc",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "4pdqql90bhm4",
+          "created_at": "2025-10-20T20:00:32.714Z",
+          "updated_at": "2025-10-20T20:00:32.714Z",
+          "display_at": "2025-10-20T20:00:32.714Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "s89m95hjk6gl",
           "status": "scheduled",
@@ -3529,9 +3615,9 @@
         {
           "id": "hqn6pb8tdzdx",
           "name": "BHS",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:56.304Z",
-          "updated_at": "2025-10-08T09:57:05.198Z",
+          "updated_at": "2025-10-20T19:17:10.677Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4248,26 +4334,26 @@
       "scheduled_until": "2025-10-28T08:30:00.000Z"
     },
     {
-      "id": "33mwzhckntw6",
-      "name": "[ERI1][Cooling System] - Rack E103A02 maintenance notification",
+      "id": "lzt6082k13j7",
+      "name": "[ERI1][Cooling System] - Rack ERI0112F01B maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-15T13:29:45.988Z",
-      "updated_at": "2025-10-15T13:29:46.050Z",
+      "created_at": "2025-10-15T13:27:05.240Z",
+      "updated_at": "2025-10-15T13:27:05.294Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/kg7xlvt63gj6",
-      "started_at": "2025-10-15T13:29:45.979Z",
+      "shortlink": "https://stspg.io/8j3fq8syjxzm",
+      "started_at": "2025-10-15T13:27:05.233Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "d55kfr2z0r0m",
+          "id": "ftrjysgkjfxq",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 28/10/2025 07:00 UTC\n<b>End time :</b> 28/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "33mwzhckntw6",
-          "created_at": "2025-10-15T13:29:46.047Z",
-          "updated_at": "2025-10-15T13:29:46.047Z",
-          "display_at": "2025-10-15T13:29:46.047Z",
+          "incident_id": "lzt6082k13j7",
+          "created_at": "2025-10-15T13:27:05.291Z",
+          "updated_at": "2025-10-15T13:27:05.291Z",
+          "display_at": "2025-10-15T13:27:05.291Z",
           "affected_components": [
             {
               "code": "klylb1cv9dvj",
@@ -4302,26 +4388,26 @@
       "scheduled_until": "2025-10-28T14:00:00.000Z"
     },
     {
-      "id": "lzt6082k13j7",
-      "name": "[ERI1][Cooling System] - Rack ERI0112F01B maintenance notification",
+      "id": "33mwzhckntw6",
+      "name": "[ERI1][Cooling System] - Rack E103A02 maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-15T13:27:05.240Z",
-      "updated_at": "2025-10-15T13:27:05.294Z",
+      "created_at": "2025-10-15T13:29:45.988Z",
+      "updated_at": "2025-10-15T13:29:46.050Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/8j3fq8syjxzm",
-      "started_at": "2025-10-15T13:27:05.233Z",
+      "shortlink": "https://stspg.io/kg7xlvt63gj6",
+      "started_at": "2025-10-15T13:29:45.979Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "ftrjysgkjfxq",
+          "id": "d55kfr2z0r0m",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 28/10/2025 07:00 UTC\n<b>End time :</b> 28/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "lzt6082k13j7",
-          "created_at": "2025-10-15T13:27:05.291Z",
-          "updated_at": "2025-10-15T13:27:05.291Z",
-          "display_at": "2025-10-15T13:27:05.291Z",
+          "incident_id": "33mwzhckntw6",
+          "created_at": "2025-10-15T13:29:46.047Z",
+          "updated_at": "2025-10-15T13:29:46.047Z",
+          "display_at": "2025-10-15T13:29:46.047Z",
           "affected_components": [
             {
               "code": "klylb1cv9dvj",
@@ -5166,26 +5252,26 @@
       "scheduled_until": "2025-10-30T03:00:00.000Z"
     },
     {
-      "id": "y3dzdy6bff02",
-      "name": "[ERI1][Cooling System] - Rack ERI0112F03A maintenance notification",
+      "id": "gwy3xxqcpx7t",
+      "name": "[ERI1][Cooling System] - Rack E103A04 maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-15T13:44:09.292Z",
-      "updated_at": "2025-10-15T13:44:09.351Z",
+      "created_at": "2025-10-15T13:45:56.292Z",
+      "updated_at": "2025-10-15T13:45:56.365Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/n23gfmdsf4hb",
-      "started_at": "2025-10-15T13:44:09.285Z",
+      "shortlink": "https://stspg.io/v03b3bsb78fp",
+      "started_at": "2025-10-15T13:45:56.282Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "0b26nbbbq7lg",
+          "id": "b9b53gb0rb4h",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 30/10/2025 07:00 UTC\n<b>End time :</b> 30/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "y3dzdy6bff02",
-          "created_at": "2025-10-15T13:44:09.348Z",
-          "updated_at": "2025-10-15T13:44:09.348Z",
-          "display_at": "2025-10-15T13:44:09.348Z",
+          "incident_id": "gwy3xxqcpx7t",
+          "created_at": "2025-10-15T13:45:56.361Z",
+          "updated_at": "2025-10-15T13:45:56.361Z",
+          "display_at": "2025-10-15T13:45:56.361Z",
           "affected_components": [
             {
               "code": "klylb1cv9dvj",
@@ -5274,26 +5360,26 @@
       "scheduled_until": "2025-10-30T08:30:00.000Z"
     },
     {
-      "id": "gwy3xxqcpx7t",
-      "name": "[ERI1][Cooling System] - Rack E103A04 maintenance notification",
+      "id": "y3dzdy6bff02",
+      "name": "[ERI1][Cooling System] - Rack ERI0112F03A maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-15T13:45:56.292Z",
-      "updated_at": "2025-10-15T13:45:56.365Z",
+      "created_at": "2025-10-15T13:44:09.292Z",
+      "updated_at": "2025-10-15T13:44:09.351Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/v03b3bsb78fp",
-      "started_at": "2025-10-15T13:45:56.282Z",
+      "shortlink": "https://stspg.io/n23gfmdsf4hb",
+      "started_at": "2025-10-15T13:44:09.285Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "b9b53gb0rb4h",
+          "id": "0b26nbbbq7lg",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 30/10/2025 07:00 UTC\n<b>End time :</b> 30/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "gwy3xxqcpx7t",
-          "created_at": "2025-10-15T13:45:56.361Z",
-          "updated_at": "2025-10-15T13:45:56.361Z",
-          "display_at": "2025-10-15T13:45:56.361Z",
+          "incident_id": "y3dzdy6bff02",
+          "created_at": "2025-10-15T13:44:09.348Z",
+          "updated_at": "2025-10-15T13:44:09.348Z",
+          "display_at": "2025-10-15T13:44:09.348Z",
           "affected_components": [
             {
               "code": "klylb1cv9dvj",
