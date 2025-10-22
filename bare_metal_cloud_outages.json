@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-22T14:03:29.082Z"
+    "updated_at": "2025-10-22T14:59:41.547Z"
   },
   "components": [
     {
@@ -1551,7 +1551,7 @@
       "name": "BHS",
       "status": "operational",
       "created_at": "2021-07-09T07:31:36.480Z",
-      "updated_at": "2025-08-08T16:24:09.445Z",
+      "updated_at": "2025-10-22T14:59:41.485Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2943,7 +2943,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "xyfq2lflnhtw",
+      "name": "[BHS2/6][Virtual Private Servers] - Some instances incident notifcation",
+      "status": "monitoring",
+      "created_at": "2025-10-22T14:45:20.000Z",
+      "updated_at": "2025-10-22T14:59:41.545Z",
+      "monitoring_at": "2025-10-22T14:59:41.527Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/9pzzr14tgz8r",
+      "started_at": "2025-10-22T14:45:20.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "snhwy98r93z4",
+          "status": "monitoring",
+          "body": "Service has been fully restored since 22/10/2025 14:50 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 22/10/2025 14:27 UTC\n<b>Impacted Service(s) :</b> Some instances in BHS2 and BHS6 regions were unreachable.\n<b>Customers Impact :</b> Some customers were temporarily unable to access and use their Virtual Private Servers instances in the specified regions\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure malfunction.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xyfq2lflnhtw",
+          "created_at": "2025-10-22T14:59:41.527Z",
+          "updated_at": "2025-10-22T14:59:41.527Z",
+          "display_at": "2025-10-22T14:59:41.527Z",
+          "affected_components": [
+            {
+              "code": "7fb9d18j4s12",
+              "name": "Virtual Private Servers || Network - BHS",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "117hk5b8jd93",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Virtual Private Servers offer on the specific regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 22/10/2025 14:27 UTC\n<b>Impacted Service(s) :</b> Some instances in BHS2 and BHS6 regions are unreachable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their Virtual Private Servers instances in the specified regions\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "xyfq2lflnhtw",
+          "created_at": "2025-10-22T14:45:20.596Z",
+          "updated_at": "2025-10-22T14:59:24.749Z",
+          "display_at": "2025-10-22T14:45:20.000Z",
+          "affected_components": [
+            {
+              "code": "7fb9d18j4s12",
+              "name": "Virtual Private Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7fb9d18j4s12",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:31:36.480Z",
+          "updated_at": "2025-10-22T14:59:41.485Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "7grn02n8ngv0",
