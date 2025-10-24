@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-24T06:06:12.379Z"
+    "updated_at": "2025-10-24T13:59:34.079Z"
   },
   "components": [
     {
@@ -2947,9 +2947,9 @@
     {
       "id": "yy6tvb42fryv",
       "name": "US-WEST-LZ-SEA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-03-28T15:45:39.636Z",
-      "updated_at": "2025-08-18T17:41:03.668Z",
+      "updated_at": "2025-10-24T13:59:34.014Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -8241,7 +8241,7 @@
     {
       "id": "v30yv8zspjnp",
       "name": "LocalZones || US-WEST",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-03-05T16:03:01.866Z",
       "updated_at": "2025-08-21T14:44:14.447Z",
       "position": 44,
@@ -8777,7 +8777,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "g21tp8t95jc8",
+      "name": "[US-WEST-LZ-SEA][Management] - API Incident Notifications",
+      "status": "investigating",
+      "created_at": "2025-10-24T13:59:33.981Z",
+      "updated_at": "2025-10-24T13:59:34.076Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/0r6zpgk2p693",
+      "started_at": "2025-10-24T13:59:33.974Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "6k210jt8ltvk",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Management offering, which is causing temporary latency issue in the US-WEST-LZ-SEA.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/10/2025 13:49 UTC\n<b>Impacted Service(s) :</b> The API in the US-WEST-LZ-SEA region is temporarily degraded.\n<b>Customers Impact :</b> Customers may have error on the API\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "g21tp8t95jc8",
+          "created_at": "2025-10-24T13:59:34.074Z",
+          "updated_at": "2025-10-24T13:59:34.074Z",
+          "display_at": "2025-10-24T13:59:34.074Z",
+          "affected_components": [
+            {
+              "code": "yy6tvb42fryv",
+              "name": "LocalZones || US-WEST - US-WEST-LZ-SEA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yy6tvb42fryv",
+          "name": "US-WEST-LZ-SEA",
+          "status": "degraded_performance",
+          "created_at": "2025-03-28T15:45:39.636Z",
+          "updated_at": "2025-10-24T13:59:34.014Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-28",
+          "group_id": "v30yv8zspjnp",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "t8lrzscs4q86",
@@ -9357,7 +9411,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
