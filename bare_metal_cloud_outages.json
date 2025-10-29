@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-29T02:00:34.278Z"
+    "updated_at": "2025-10-29T03:00:21.930Z"
   },
   "components": [
     {
@@ -1216,9 +1216,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2025-10-08T00:40:49.435Z",
+      "updated_at": "2025-10-29T03:00:21.755Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2978,43 +2978,30 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "7jwqjng9wnrh",
-      "name": "[GRA3][Dedicated Servers] - Multiple racks maintenance notification",
+      "id": "40bn3q95hzsg",
+      "name": "[ERI1][Cooling System] - Rack ERI0112F02C maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-20T12:44:14.468Z",
-      "updated_at": "2025-10-29T02:00:34.272Z",
+      "created_at": "2025-10-15T13:32:30.542Z",
+      "updated_at": "2025-10-15T13:32:30.598Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/tb088sqbyjhs",
-      "started_at": "2025-10-20T12:44:14.459Z",
+      "shortlink": "https://stspg.io/c33qgtcs1t94",
+      "started_at": "2025-10-15T13:32:30.535Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "bdvmm5djbjcb",
+          "id": "038cztym84wd",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "7jwqjng9wnrh",
-          "created_at": "2025-10-29T02:00:34.191Z",
-          "updated_at": "2025-10-29T02:00:34.191Z",
-          "display_at": "2025-10-29T02:00:34.191Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "hfc2l4czwmpc",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer, affecting servers in racks L101A11, L101A12, L101B11, L101B12 and L112B03.\n\n<b>Start time :</b> 29/10/2025 03:00 UTC \n<b>End time :</b> 29/10/2025 10:00 UTC \n<b>Service impact :</b> During this maintenance, public network will be temporarily unavailable for servers located in the specified racks.\n<b>Service improvement :</b> Following our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment.\n\nThank you for your understanding.",
-          "incident_id": "7jwqjng9wnrh",
-          "created_at": "2025-10-20T12:44:14.541Z",
-          "updated_at": "2025-10-20T12:44:14.541Z",
-          "display_at": "2025-10-20T12:44:14.541Z",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 29/10/2025 07:00 UTC\n<b>End time :</b> 29/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "40bn3q95hzsg",
+          "created_at": "2025-10-15T13:32:30.595Z",
+          "updated_at": "2025-10-15T13:32:30.595Z",
+          "display_at": "2025-10-15T13:32:30.595Z",
           "affected_components": [
             {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -3026,23 +3013,23 @@
       ],
       "components": [
         {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2025-10-08T00:40:49.435Z",
-          "position": 4,
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2025-10-28T21:00:21.454Z",
+          "position": 2,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-10-29T03:00:00.000Z",
-      "scheduled_until": "2025-10-29T10:00:00.000Z"
+      "scheduled_for": "2025-10-29T07:00:00.000Z",
+      "scheduled_until": "2025-10-29T14:00:00.000Z"
     },
     {
       "id": "cqzhd646qttd",
@@ -3097,60 +3084,6 @@
       ],
       "scheduled_for": "2025-10-29T07:00:00.000Z",
       "scheduled_until": "2025-10-29T08:30:00.000Z"
-    },
-    {
-      "id": "40bn3q95hzsg",
-      "name": "[ERI1][Cooling System] - Rack ERI0112F02C maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-10-15T13:32:30.542Z",
-      "updated_at": "2025-10-15T13:32:30.598Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/c33qgtcs1t94",
-      "started_at": "2025-10-15T13:32:30.535Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "038cztym84wd",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 29/10/2025 07:00 UTC\n<b>End time :</b> 29/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "40bn3q95hzsg",
-          "created_at": "2025-10-15T13:32:30.595Z",
-          "updated_at": "2025-10-15T13:32:30.595Z",
-          "display_at": "2025-10-15T13:32:30.595Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-10-28T21:00:21.454Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-29T07:00:00.000Z",
-      "scheduled_until": "2025-10-29T14:00:00.000Z"
     },
     {
       "id": "yw19562l5ph5",
@@ -3423,60 +3356,6 @@
       "scheduled_until": "2025-10-30T03:00:00.000Z"
     },
     {
-      "id": "y3dzdy6bff02",
-      "name": "[ERI1][Cooling System] - Rack ERI0112F03A maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-10-15T13:44:09.292Z",
-      "updated_at": "2025-10-15T13:44:09.351Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/n23gfmdsf4hb",
-      "started_at": "2025-10-15T13:44:09.285Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "0b26nbbbq7lg",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 30/10/2025 07:00 UTC\n<b>End time :</b> 30/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "y3dzdy6bff02",
-          "created_at": "2025-10-15T13:44:09.348Z",
-          "updated_at": "2025-10-15T13:44:09.348Z",
-          "display_at": "2025-10-15T13:44:09.348Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2025-10-28T21:00:21.454Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-10-30T07:00:00.000Z",
-      "scheduled_until": "2025-10-30T14:00:00.000Z"
-    },
-    {
       "id": "s89y55vd32pp",
       "name": "[ERI1][Dedicated Servers] - Rack E102H07 maintenance notification",
       "status": "scheduled",
@@ -3529,6 +3408,60 @@
       ],
       "scheduled_for": "2025-10-30T07:00:00.000Z",
       "scheduled_until": "2025-10-30T08:30:00.000Z"
+    },
+    {
+      "id": "y3dzdy6bff02",
+      "name": "[ERI1][Cooling System] - Rack ERI0112F03A maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-10-15T13:44:09.292Z",
+      "updated_at": "2025-10-15T13:44:09.351Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/n23gfmdsf4hb",
+      "started_at": "2025-10-15T13:44:09.285Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "0b26nbbbq7lg",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 30/10/2025 07:00 UTC\n<b>End time :</b> 30/10/2025 14:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "y3dzdy6bff02",
+          "created_at": "2025-10-15T13:44:09.348Z",
+          "updated_at": "2025-10-15T13:44:09.348Z",
+          "display_at": "2025-10-15T13:44:09.348Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2025-10-28T21:00:21.454Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-30T07:00:00.000Z",
+      "scheduled_until": "2025-10-30T14:00:00.000Z"
     },
     {
       "id": "qm5bsv2v82xj",
@@ -5731,6 +5664,483 @@
       ],
       "scheduled_for": "2025-11-12T10:00:00.000Z",
       "scheduled_until": "2025-11-12T13:00:00.000Z"
+    },
+    {
+      "id": "z08d3lymy78t",
+      "name": "[GLOBAL][Network] - LACP aggregation maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-10-28T23:43:21.074Z",
+      "updated_at": "2025-10-28T23:44:52.385Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cpptz2w0rwrv",
+      "started_at": "2025-10-28T23:43:21.044Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "0h0r4jf01nn7",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our network infrastructure. \n\n<b>Start time :</b> 25/11/2025 13:00 UTC \n<b>End time :</b> 26/11/2025 16:00 UTC \n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy of our network infrastructure, we will have to carry out interventions on multiple network equipment.\n\nThank you for your understanding.",
+          "incident_id": "z08d3lymy78t",
+          "created_at": "2025-10-28T23:43:21.183Z",
+          "updated_at": "2025-10-28T23:44:52.381Z",
+          "display_at": "2025-10-28T23:43:21.183Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "29wpxcdnjt9k",
+              "name": "Dedicated Servers || Network - CCH",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5ml6n8xk2fcs",
+              "name": "Dedicated Servers || Network - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "46nzmg4ztggn",
+              "name": "Dedicated Servers || Network - IEB",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "ywcwwnktxgh0",
+              "name": "Dedicated Servers || Network - LIM",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "686cz46jcy4b",
+              "name": "Dedicated Servers || Network - MR9",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7xy5137wv97w",
+              "name": "Dedicated Servers || Network - SBG",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "qkvynnwhykk2",
+              "name": "Dedicated Servers || Network - SGP",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5psdpd7s2jnn",
+              "name": "Dedicated Servers || Network - SYD",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "bvjnydkk0xgv",
+              "name": "Dedicated Servers || Network - YNM",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "7j5668qvxkc8",
+              "name": "Dedicated Servers || Network - YYZ",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "3yk869qsdnxc",
+              "name": "Dedicated Servers || Network - US-EAST-VA",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "5dyq2qycknj3",
+              "name": "Dedicated Servers || Network - US-WEST-OR",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "rq5jppz0ppmr",
+              "name": "Dedicated Servers || Network - US-WEST-LZ-SEA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2025-10-22T15:29:45.055Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "29wpxcdnjt9k",
+          "name": "CCH",
+          "status": "operational",
+          "created_at": "2024-02-02T08:57:08.939Z",
+          "updated_at": "2025-06-02T09:51:51.084Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-02",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5ml6n8xk2fcs",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:50.476Z",
+          "updated_at": "2025-10-29T01:32:01.764Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2025-10-29T03:00:21.755Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "46nzmg4ztggn",
+          "name": "IEB",
+          "status": "operational",
+          "created_at": "2024-02-02T09:28:56.755Z",
+          "updated_at": "2025-06-02T09:51:51.142Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-02",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "ywcwwnktxgh0",
+          "name": "LIM",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:54.272Z",
+          "updated_at": "2025-10-27T04:00:21.554Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "686cz46jcy4b",
+          "name": "MR9",
+          "status": "operational",
+          "created_at": "2024-02-02T09:29:15.801Z",
+          "updated_at": "2025-06-02T09:51:51.181Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-02-02",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "r7966tc9cpb9",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:52.401Z",
+          "updated_at": "2025-10-15T07:59:17.451Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7xy5137wv97w",
+          "name": "SBG",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:53.351Z",
+          "updated_at": "2025-07-09T13:50:35.648Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qkvynnwhykk2",
+          "name": "SGP",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:57.567Z",
+          "updated_at": "2025-09-14T16:08:33.430Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5psdpd7s2jnn",
+          "name": "SYD",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:58.484Z",
+          "updated_at": "2025-04-10T19:08:00.501Z",
+          "position": 11,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2025-08-26T03:53:54.073Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "bvjnydkk0xgv",
+          "name": "YNM",
+          "status": "operational",
+          "created_at": "2023-08-03T07:59:11.044Z",
+          "updated_at": "2025-04-10T19:08:00.533Z",
+          "position": 13,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-08-03",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7j5668qvxkc8",
+          "name": "YYZ",
+          "status": "operational",
+          "created_at": "2024-03-13T08:28:28.126Z",
+          "updated_at": "2025-06-02T09:51:51.254Z",
+          "position": 14,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3yk869qsdnxc",
+          "name": "US-EAST-VA",
+          "status": "operational",
+          "created_at": "2024-05-24T14:55:47.977Z",
+          "updated_at": "2025-06-02T09:51:51.273Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-05-24",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "5dyq2qycknj3",
+          "name": "US-WEST-OR",
+          "status": "operational",
+          "created_at": "2024-05-24T14:56:10.341Z",
+          "updated_at": "2025-06-02T09:51:51.292Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-05-24",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "rq5jppz0ppmr",
+          "name": "US-WEST-LZ-SEA",
+          "status": "operational",
+          "created_at": "2025-10-24T14:31:59.344Z",
+          "updated_at": "2025-10-24T14:31:59.344Z",
+          "position": 18,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-10-24",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-25T13:00:00.000Z",
+      "scheduled_until": "2025-11-26T16:00:00.000Z"
+    },
+    {
+      "id": "7jwqjng9wnrh",
+      "name": "[GRA3][Dedicated Servers] - Multiple racks maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-10-20T12:44:14.468Z",
+      "updated_at": "2025-10-29T03:00:21.906Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tb088sqbyjhs",
+      "started_at": "2025-10-20T12:44:14.459Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "y7d4r7pvgt6p",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "7jwqjng9wnrh",
+          "created_at": "2025-10-29T03:00:21.899Z",
+          "updated_at": "2025-10-29T03:00:21.899Z",
+          "display_at": "2025-10-29T03:00:21.899Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bdvmm5djbjcb",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7jwqjng9wnrh",
+          "created_at": "2025-10-29T02:00:34.191Z",
+          "updated_at": "2025-10-29T02:00:34.191Z",
+          "display_at": "2025-10-29T02:00:34.191Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hfc2l4czwmpc",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer, affecting servers in racks L101A11, L101A12, L101B11, L101B12 and L112B03.\n\n<b>Start time :</b> 29/10/2025 03:00 UTC \n<b>End time :</b> 29/10/2025 10:00 UTC \n<b>Service impact :</b> During this maintenance, public network will be temporarily unavailable for servers located in the specified racks.\n<b>Service improvement :</b> Following our continuous improvement policy of our network infrastructure, we will be doing a maintenance on multiple network equipment.\n\nThank you for your understanding.",
+          "incident_id": "7jwqjng9wnrh",
+          "created_at": "2025-10-20T12:44:14.541Z",
+          "updated_at": "2025-10-20T12:44:14.541Z",
+          "display_at": "2025-10-20T12:44:14.541Z",
+          "affected_components": [
+            {
+              "code": "rs6z6pyb307t",
+              "name": "Dedicated Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rs6z6pyb307t",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:51.388Z",
+          "updated_at": "2025-10-29T03:00:21.755Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-10-29T03:00:00.000Z",
+      "scheduled_until": "2025-10-29T10:00:00.000Z"
     },
     {
       "id": "z1pl1k1zjdqc",
