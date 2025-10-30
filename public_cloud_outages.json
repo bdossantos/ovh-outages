@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-30T10:20:36.372Z"
+    "updated_at": "2025-10-30T15:06:08.131Z"
   },
   "components": [
     {
@@ -2223,9 +2223,9 @@
     {
       "id": "q98h9rl6tk0w",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-03-07T14:29:12.630Z",
-      "updated_at": "2025-10-06T15:31:08.668Z",
+      "updated_at": "2025-10-30T15:06:08.071Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -8656,7 +8656,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2025-10-20T14:40:25.361Z",
       "position": 57,
@@ -8778,6 +8778,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "xh6pxhcxfxvv",
+      "name": "[RBX][Storage] - Object Storage S3 Standard incident notification",
+      "status": "identified",
+      "created_at": "2025-10-30T15:06:08.040Z",
+      "updated_at": "2025-10-30T15:06:08.129Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mjnwyrj6b7pb",
+      "started_at": "2025-10-30T15:06:08.030Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "vyl2y2c7v2cl",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Object Storage S3 Standard offer in the region RBX.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/10/2025 14:06 UTC\n<b>Impacted Service(s) :</b> Customers are experiencing 503 errors and slowdowns on their S3 requests.\n<b>Customers Impact :</b> Some customers may have an error 503.\n<b>Root Cause :</b> A service disruption occured due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xh6pxhcxfxvv",
+          "created_at": "2025-10-30T15:06:08.126Z",
+          "updated_at": "2025-10-30T15:06:08.126Z",
+          "display_at": "2025-10-30T15:06:08.126Z",
+          "affected_components": [
+            {
+              "code": "q98h9rl6tk0w",
+              "name": "Storage || Object storage - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "q98h9rl6tk0w",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2023-03-07T14:29:12.630Z",
+          "updated_at": "2025-10-30T15:06:08.071Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-03-07",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "jpkjpt5hl4qd",
       "name": "[BHS5][Compute - Instance] - Some instances incident notification",
