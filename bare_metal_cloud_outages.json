@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-10-31T21:53:19.438Z"
+    "updated_at": "2025-11-01T00:20:26.952Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -2040,9 +2040,9 @@
     {
       "id": "7qwkswh276f8",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:29.102Z",
-      "updated_at": "2025-10-14T09:20:52.519Z",
+      "updated_at": "2025-10-31T23:57:16.444Z",
       "position": 9,
       "description": null,
       "showcase": false,
@@ -3295,7 +3295,81 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ns7h6nzdm8rh",
+      "name": "[WAW1][Dedicated Servers] - Racks W17A13/W17A14/W17A15 incident notification",
+      "status": "identified",
+      "created_at": "2025-10-31T23:57:16.410Z",
+      "updated_at": "2025-11-01T00:14:15.955Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/x1k2z9hzwz13",
+      "started_at": "2025-10-31T23:57:16.403Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "d297t54dthd5",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> All servers in racks W17A13 and W17A14 are now available.\n<b>Ongoing Actions :</b> Our technical team is working on a solution for the remaining servers in rack W17A15. \n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ns7h6nzdm8rh",
+          "created_at": "2025-11-01T00:12:26.377Z",
+          "updated_at": "2025-11-01T00:14:15.951Z",
+          "display_at": "2025-11-01T00:12:26.000Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7h480bk2djsh",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific racks W17A13/W17A14/W17A15.\nHere are some supplementary details :\n<b>Start time :</b> 31/10/2025 23:46 UTC\n<b>Impacted Service(s) :</b> All servers in the rack W17A13, W17A14 and W17A15 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ns7h6nzdm8rh",
+          "created_at": "2025-10-31T23:57:16.508Z",
+          "updated_at": "2025-10-31T23:57:16.508Z",
+          "display_at": "2025-10-31T23:57:16.508Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7qwkswh276f8",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:29.102Z",
+          "updated_at": "2025-10-31T23:57:16.444Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "cl0hcgnv6vnk",
@@ -5999,7 +6073,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
