@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-01T02:21:46.624Z"
+    "updated_at": "2025-11-01T03:25:27.579Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2510,9 +2510,9 @@
     {
       "id": "7fq8tsvh76tn",
       "name": "WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:55.369Z",
-      "updated_at": "2025-08-26T03:53:54.073Z",
+      "updated_at": "2025-11-01T03:25:27.522Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -3301,22 +3301,48 @@
       "name": "[WAW1][Dedicated Servers] - Racks W17A13/W17A14 incident notification",
       "status": "identified",
       "created_at": "2025-11-01T01:44:31.524Z",
-      "updated_at": "2025-11-01T01:44:31.614Z",
+      "updated_at": "2025-11-01T03:25:27.570Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/tb3ygk5trhb4",
-      "started_at": "2025-11-01T01:44:31.518Z",
+      "started_at": "2025-11-01T01:44:31.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
+          "id": "d29dkxhd8spf",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> A significant number of servers in rack W17A14 are now operational. All of servers in rack W17A13 are now operational.\nCustomers are temporarily unable to access their servers via public network located in rack W17A13 due to a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "xh20vwpd5rtq",
+          "created_at": "2025-11-01T03:25:27.567Z",
+          "updated_at": "2025-11-01T03:25:27.567Z",
+          "display_at": "2025-11-01T03:25:27.567Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "ww7rq2xw32ds",
           "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific racks W17A13 and W17A14.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/11/2025 01:30 UTC\n<b>Impacted Service(s) :</b> All servers in the racks W17A13 and  W17A14 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific racks W17A13 and W17A14.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/11/2025 01:30 UTC\n<b>Impacted Service(s) :</b> All servers in the racks W17A13 and W17A14 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "xh20vwpd5rtq",
           "created_at": "2025-11-01T01:44:31.611Z",
-          "updated_at": "2025-11-01T01:44:31.611Z",
-          "display_at": "2025-11-01T01:44:31.611Z",
+          "updated_at": "2025-11-01T03:10:35.863Z",
+          "display_at": "2025-11-01T01:44:31.000Z",
           "affected_components": [
             {
               "code": "7qwkswh276f8",
@@ -3342,6 +3368,21 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2025-11-01T03:25:27.522Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -5798,9 +5839,9 @@
         {
           "id": "7fq8tsvh76tn",
           "name": "WAW",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:34:55.369Z",
-          "updated_at": "2025-08-26T03:53:54.073Z",
+          "updated_at": "2025-11-01T03:25:27.522Z",
           "position": 12,
           "description": null,
           "showcase": false,
