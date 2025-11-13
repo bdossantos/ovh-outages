@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-13T13:05:17.507Z"
+    "updated_at": "2025-11-13T14:29:19.023Z"
   },
   "components": [
     {
@@ -733,9 +733,9 @@
     {
       "id": "yfn107yrmgz4",
       "name": "SBG",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:33.912Z",
-      "updated_at": "2025-11-13T13:00:21.564Z",
+      "updated_at": "2025-11-13T14:08:14.291Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1156,9 +1156,9 @@
     {
       "id": "9y37g21l733b",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:26.565Z",
-      "updated_at": "2025-11-06T04:02:11.589Z",
+      "updated_at": "2025-11-13T14:29:18.951Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3505,6 +3505,59 @@
   ],
   "incidents": [
     {
+      "id": "5l6fjqtw3fc1",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0311B01A incident notification",
+      "status": "investigating",
+      "created_at": "2025-11-13T14:29:18.894Z",
+      "updated_at": "2025-11-13T14:29:19.018Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/fs6wn2drqgzp",
+      "started_at": "2025-11-13T14:29:18.885Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "0crqvqsx86fx",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack LIM0311B01A.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 13/11/2025 13:52 UTC\n<b>Impacted Service(s) :</b> All servers in the rack LIM0311B01A are temporarily unavailable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "5l6fjqtw3fc1",
+          "created_at": "2025-11-13T14:29:19.015Z",
+          "updated_at": "2025-11-13T14:29:19.015Z",
+          "display_at": "2025-11-13T14:29:19.015Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9y37g21l733b",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:26.565Z",
+          "updated_at": "2025-11-13T14:29:18.951Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "c6j61mw4vqcf",
       "name": "[US-WEST-LZ-PAO][Virtual Private Servers] - Some actions temporarily unavailable",
       "status": "identified",
@@ -3698,9 +3751,9 @@
         {
           "id": "yfn107yrmgz4",
           "name": "SBG",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-09T07:31:33.912Z",
-          "updated_at": "2025-11-13T13:00:21.564Z",
+          "updated_at": "2025-11-13T14:08:14.291Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -5269,93 +5322,6 @@
       ],
       "scheduled_for": "2025-12-16T21:00:00.000Z",
       "scheduled_until": "2025-12-17T06:00:00.000Z"
-    },
-    {
-      "id": "ycw5dq0gkw1t",
-      "name": "[SBG][Virtual Private Servers] Infrastructure maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-11-07T19:04:26.338Z",
-      "updated_at": "2025-11-13T13:00:21.673Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/wk8rx575jdn2",
-      "started_at": "2025-11-07T19:04:26.329Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "h5gdmlnwnbp0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "ycw5dq0gkw1t",
-          "created_at": "2025-11-13T13:00:21.663Z",
-          "updated_at": "2025-11-13T13:00:21.663Z",
-          "display_at": "2025-11-13T13:00:21.663Z",
-          "affected_components": [
-            {
-              "code": "yfn107yrmgz4",
-              "name": "Virtual Private Servers || Network - SBG",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w47rd89v2l0l",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "ycw5dq0gkw1t",
-          "created_at": "2025-11-13T12:00:26.403Z",
-          "updated_at": "2025-11-13T12:00:26.403Z",
-          "display_at": "2025-11-13T12:00:26.403Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "ln9kcjwk9w98",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Virtual Private Servers offer.\n\n<b>Start time :</b> 13/11/2025 13:00 UTC\n<b>End time :</b> 13/11/2025 14:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Virtual Private Servers infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "ycw5dq0gkw1t",
-          "created_at": "2025-11-07T19:04:26.414Z",
-          "updated_at": "2025-11-07T19:04:26.414Z",
-          "display_at": "2025-11-07T19:04:26.414Z",
-          "affected_components": [
-            {
-              "code": "yfn107yrmgz4",
-              "name": "Virtual Private Servers || Network - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "yfn107yrmgz4",
-          "name": "SBG",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:33.912Z",
-          "updated_at": "2025-11-13T13:00:21.564Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-13T13:00:00.000Z",
-      "scheduled_until": "2025-11-13T14:30:00.000Z"
     },
     {
       "id": "54tn1w3mfw70",
