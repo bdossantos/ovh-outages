@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-13T01:11:50.732Z"
+    "updated_at": "2025-11-13T02:20:29.903Z"
   },
   "components": [
     {
@@ -130,9 +130,9 @@
     {
       "id": "yfhs5qjtqy5f",
       "name": "WAW1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:29.628Z",
-      "updated_at": "2025-06-16T15:53:37.414Z",
+      "updated_at": "2025-11-13T01:44:21.778Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -220,9 +220,9 @@
     {
       "id": "zvrfgrvrp8kc",
       "name": "UK1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:16.391Z",
-      "updated_at": "2025-10-23T19:56:55.505Z",
+      "updated_at": "2025-11-13T02:11:07.390Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -3552,7 +3552,7 @@
     {
       "id": "5bttkdz4t240",
       "name": "Compute - Instance || ERI",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:17.232Z",
       "updated_at": "2025-04-18T13:47:32.492Z",
       "position": 7,
@@ -6113,7 +6113,7 @@
     {
       "id": "0wrwm0pg3p7j",
       "name": "Compute - Instance || WAW",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:31.075Z",
       "updated_at": "2025-04-18T13:47:32.606Z",
       "position": 17,
@@ -8826,6 +8826,112 @@
   ],
   "incidents": [
     {
+      "id": "nrtt85nnqz28",
+      "name": "[UK1][Compute - Instance] - Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-11-13T02:11:07.352Z",
+      "updated_at": "2025-11-13T02:11:07.465Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/f7p5z3rnk123",
+      "started_at": "2025-11-13T02:11:07.344Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "x4yr2frcxbzn",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Compute - Instance offering in the region UK1.\n\nHere is detail for this incident :\n<b>Start time :</b> 13/11/2025 01:46 UTC\n<b>Impacted Service(s) :</b> Some instances in the UK1 region are unreachable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their instances located in the specified region.\n<b>Root Cause :</b> This incident is due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "nrtt85nnqz28",
+          "created_at": "2025-11-13T02:11:07.462Z",
+          "updated_at": "2025-11-13T02:11:07.462Z",
+          "display_at": "2025-11-13T02:11:07.462Z",
+          "affected_components": [
+            {
+              "code": "zvrfgrvrp8kc",
+              "name": "Compute - Instance || ERI - UK1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zvrfgrvrp8kc",
+          "name": "UK1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:16.391Z",
+          "updated_at": "2025-11-13T02:11:07.390Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "5bttkdz4t240",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "sr2s2pbt8trl",
+      "name": "[WAW1][Compute - Instance] - Instances incident notification",
+      "status": "identified",
+      "created_at": "2025-11-13T01:44:21.737Z",
+      "updated_at": "2025-11-13T01:44:21.851Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/jq4n9p25rjcf",
+      "started_at": "2025-11-13T01:44:21.728Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "kypt8z1lv3kt",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Compute - Instance offering in the region WAW1.\n\nHere is detail for this incident :\n<b>Start time :</b> 13/11/2025 01:20 UTC\n<b>Impacted Service(s) :</b> Some instances in the WAW1 region are unreachable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their instances located in the specified region.\n<b>Root Cause :</b> This incident is due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sr2s2pbt8trl",
+          "created_at": "2025-11-13T01:44:21.848Z",
+          "updated_at": "2025-11-13T01:44:21.848Z",
+          "display_at": "2025-11-13T01:44:21.848Z",
+          "affected_components": [
+            {
+              "code": "yfhs5qjtqy5f",
+              "name": "Compute - Instance || WAW - WAW1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "yfhs5qjtqy5f",
+          "name": "WAW1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:29.628Z",
+          "updated_at": "2025-11-13T01:44:21.778Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0wrwm0pg3p7j",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "q9qwj3bh7419",
       "name": "[GLOBAL][LocalZones] - Private Image incident notification",
       "status": "identified",
@@ -10907,7 +11013,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
