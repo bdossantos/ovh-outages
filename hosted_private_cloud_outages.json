@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-13T02:37:11.572Z"
+    "updated_at": "2025-11-13T03:20:43.400Z"
   },
   "components": [
     {
@@ -445,9 +445,9 @@
     {
       "id": "rj9yc5gqxp1z",
       "name": "Management plane",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:58.062Z",
-      "updated_at": "2025-11-12T08:00:22.137Z",
+      "updated_at": "2025-11-13T02:52:45.403Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1075,9 +1075,9 @@
     {
       "id": "2m51qtksgds4",
       "name": "Storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:59.147Z",
-      "updated_at": "2025-07-11T17:08:27.481Z",
+      "updated_at": "2025-11-13T02:52:45.424Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1530,7 +1530,7 @@
     {
       "id": "kzprfjxpy298",
       "name": "Managed vSphere || ERI",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-21T08:41:59.825Z",
       "updated_at": "2025-01-15T10:37:04.660Z",
       "position": 12,
@@ -1822,14 +1822,40 @@
       "name": "[ERI][Managed vSphere] - Rack ERI0111C03B incident notification",
       "status": "identified",
       "created_at": "2025-11-13T02:37:11.492Z",
-      "updated_at": "2025-11-13T02:37:11.569Z",
+      "updated_at": "2025-11-13T02:52:45.480Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "none",
+      "impact": "major",
       "shortlink": "https://stspg.io/0b2tvykngdnq",
       "started_at": "2025-11-13T02:37:11.483Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "46t34qj0r8kb",
+          "status": "identified",
+          "body": "Please find below an update on the situation:\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their VMs located in the specific rack.\n<b>Ongoing Actions :</b> Our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "28s3nht52z3z",
+          "created_at": "2025-11-13T02:52:45.477Z",
+          "updated_at": "2025-11-13T02:52:45.477Z",
+          "display_at": "2025-11-13T02:52:45.477Z",
+          "affected_components": [
+            {
+              "code": "rj9yc5gqxp1z",
+              "name": "Managed vSphere || ERI - Management plane",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2m51qtksgds4",
+              "name": "Managed vSphere || ERI - Storage",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "fwzf1bk96zlp",
           "status": "identified",
@@ -1853,11 +1879,26 @@
       ],
       "components": [
         {
+          "id": "rj9yc5gqxp1z",
+          "name": "Management plane",
+          "status": "partial_outage",
+          "created_at": "2021-07-21T08:41:58.062Z",
+          "updated_at": "2025-11-13T02:52:45.403Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-21",
+          "group_id": "kzprfjxpy298",
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
           "id": "2m51qtksgds4",
           "name": "Storage",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:41:59.147Z",
-          "updated_at": "2025-07-11T17:08:27.481Z",
+          "updated_at": "2025-11-13T02:52:45.424Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -3109,9 +3150,9 @@
         {
           "id": "rj9yc5gqxp1z",
           "name": "Management plane",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2021-07-21T08:41:58.062Z",
-          "updated_at": "2025-11-12T08:00:22.137Z",
+          "updated_at": "2025-11-13T02:52:45.403Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3187,7 +3228,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
