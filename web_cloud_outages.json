@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-14T05:11:04.510Z"
+    "updated_at": "2025-11-14T08:54:12.920Z"
   },
   "components": [
     {
@@ -375,9 +375,9 @@
     {
       "id": "xx19185dn0z3",
       "name": "Belgium",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:44.960Z",
-      "updated_at": "2025-10-27T15:05:27.812Z",
+      "updated_at": "2025-11-14T08:46:16.331Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -2319,7 +2319,7 @@
     {
       "id": "xzvp84m353hd",
       "name": "VoIP || Interconnect",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:47.435Z",
       "updated_at": "2025-08-13T12:55:51.700Z",
       "position": 20,
@@ -3191,7 +3191,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "29kl9rd56wgz",
+      "name": "[BELGIUM][VoIP] - Interconnect Incident Notification",
+      "status": "identified",
+      "created_at": "2025-11-14T08:46:16.297Z",
+      "updated_at": "2025-11-14T08:54:12.915Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/612542tv04h6",
+      "started_at": "2025-11-14T08:46:16.289Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "r5l29bc90d8f",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Interconnect service on the specific Belgium region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 14/11/2025 03:30 UTC\n<b>Impacted Service(s) :</b> Following a malfunction in Belgium, call limits have been reached.\n<b>Customers Impact :</b> Incoming and outcalling Belgium calls are impacted\n<b>Ongoing Actions :</b> The incident has been identified and our teams are working with the equipment manufacturer to restore the service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "29kl9rd56wgz",
+          "created_at": "2025-11-14T08:53:42.129Z",
+          "updated_at": "2025-11-14T08:53:42.129Z",
+          "display_at": "2025-11-14T08:53:42.129Z",
+          "affected_components": [
+            {
+              "code": "xx19185dn0z3",
+              "name": "VoIP || Interconnect - Belgium",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1g149tgdxq8m",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our VoIP/Interconnect service in Belgium region.\n\n<b>Start time :</b> 14/11/2025 03:30 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "29kl9rd56wgz",
+          "created_at": "2025-11-14T08:46:16.381Z",
+          "updated_at": "2025-11-14T08:46:16.381Z",
+          "display_at": "2025-11-14T08:46:16.381Z",
+          "affected_components": [
+            {
+              "code": "xx19185dn0z3",
+              "name": "VoIP || Interconnect - Belgium",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xx19185dn0z3",
+          "name": "Belgium",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:44.960Z",
+          "updated_at": "2025-11-14T08:46:16.331Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "xzvp84m353hd",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "gjpg9n9flgm4",
@@ -3465,7 +3539,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
