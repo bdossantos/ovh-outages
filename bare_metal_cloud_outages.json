@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-17T12:00:27.072Z"
+    "updated_at": "2025-11-17T13:15:37.445Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1061,9 +1061,9 @@
     {
       "id": "cftyjf1knpfk",
       "name": "LIM",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:31:34.779Z",
-      "updated_at": "2025-11-17T11:00:21.740Z",
+      "updated_at": "2025-11-17T12:47:59.571Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1610,9 +1610,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-11-17T07:50:21.465Z",
+      "updated_at": "2025-11-17T13:15:37.368Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3503,48 +3503,34 @@
       ]
     }
   ],
-  "incidents": [],
-  "scheduled_maintenances": [
+  "incidents": [
     {
-      "id": "0xmfyb4523cw",
-      "name": "[GRA6][Virtual Private Servers] - Network equipment maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-12T21:36:58.871Z",
-      "updated_at": "2025-11-17T12:00:27.060Z",
+      "id": "t54srwzr0yk2",
+      "name": "[SBG3][Dedicated Servers] - Rack S333B04 incident notification",
+      "status": "identified",
+      "created_at": "2025-11-17T13:15:37.326Z",
+      "updated_at": "2025-11-17T13:15:37.441Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/d8kdb9b8yhfb",
-      "started_at": "2025-11-12T21:36:58.863Z",
+      "impact": "major",
+      "shortlink": "https://stspg.io/ssnglbmfq4kh",
+      "started_at": "2025-11-17T13:15:37.317Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "84jp9d0w8fkc",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0xmfyb4523cw",
-          "created_at": "2025-11-17T12:00:26.870Z",
-          "updated_at": "2025-11-17T12:00:26.870Z",
-          "display_at": "2025-11-17T12:00:26.870Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n27t5h9p02bp",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Virtual Private Servers offer.\n\n<b>Start time :</b> 17/11/2025 13:00 UTC\n<b>End time :</b> 17/11/2025 14:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network equipment.\n\nThank you for your understanding.",
-          "incident_id": "0xmfyb4523cw",
-          "created_at": "2025-11-12T21:36:58.930Z",
-          "updated_at": "2025-11-12T21:36:58.930Z",
-          "display_at": "2025-11-12T21:36:58.930Z",
+          "id": "5vl98kl0r1kj",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our Dedicated Servers offering in the rack S333B04.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/11/2025 12:25 UTC\n<b>Impacted Service(s) :</b> All servers in the rack S333B04 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified rack.\n<b>Root Cause :</b> This incident is caused by this maintenance : https://bare-metal-servers.status-ovhcloud.com/incidents/smgp1vdq6bql\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "t54srwzr0yk2",
+          "created_at": "2025-11-17T13:15:37.437Z",
+          "updated_at": "2025-11-17T13:15:37.437Z",
+          "display_at": "2025-11-17T13:15:37.437Z",
           "affected_components": [
             {
-              "code": "b8jvtsrcrclp",
-              "name": "Virtual Private Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "under_maintenance",
+              "new_status": "partial_outage"
             }
           ],
           "deliver_notifications": true,
@@ -3554,24 +3540,25 @@
       ],
       "components": [
         {
-          "id": "b8jvtsrcrclp",
-          "name": "GRA",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:33.023Z",
-          "updated_at": "2025-11-17T12:00:21.212Z",
-          "position": 2,
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-11-17T13:15:37.368Z",
+          "position": 6,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
+          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-11-17T13:00:00.000Z",
-      "scheduled_until": "2025-11-17T14:30:00.000Z"
-    },
+      "reminder_intervals": null
+    }
+  ],
+  "scheduled_maintenances": [
     {
       "id": "84mny66qqj5x",
       "name": "[RBX2][Dedicated Servers] - Row 31A & 34A Maintenance notification",
@@ -5021,6 +5008,86 @@
       "scheduled_until": "2025-12-17T06:00:00.000Z"
     },
     {
+      "id": "0xmfyb4523cw",
+      "name": "[GRA6][Virtual Private Servers] - Network equipment maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-11-12T21:36:58.871Z",
+      "updated_at": "2025-11-17T13:00:21.473Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/d8kdb9b8yhfb",
+      "started_at": "2025-11-12T21:36:58.863Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "mskpn8hf8ljh",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "0xmfyb4523cw",
+          "created_at": "2025-11-17T13:00:21.465Z",
+          "updated_at": "2025-11-17T13:00:21.465Z",
+          "display_at": "2025-11-17T13:00:21.465Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "84jp9d0w8fkc",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "0xmfyb4523cw",
+          "created_at": "2025-11-17T12:00:26.870Z",
+          "updated_at": "2025-11-17T12:00:26.870Z",
+          "display_at": "2025-11-17T12:00:26.870Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n27t5h9p02bp",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Virtual Private Servers offer.\n\n<b>Start time :</b> 17/11/2025 13:00 UTC\n<b>End time :</b> 17/11/2025 14:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network equipment.\n\nThank you for your understanding.",
+          "incident_id": "0xmfyb4523cw",
+          "created_at": "2025-11-12T21:36:58.930Z",
+          "updated_at": "2025-11-12T21:36:58.930Z",
+          "display_at": "2025-11-12T21:36:58.930Z",
+          "affected_components": [
+            {
+              "code": "b8jvtsrcrclp",
+              "name": "Virtual Private Servers || Network - GRA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "b8jvtsrcrclp",
+          "name": "GRA",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:31:33.023Z",
+          "updated_at": "2025-11-17T12:00:21.212Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "40xgq25nqllh",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-17T13:00:00.000Z",
+      "scheduled_until": "2025-11-17T14:30:00.000Z"
+    },
+    {
       "id": "brmrhp31269q",
       "name": "[GRA8][Virtual Private Servers] - Network equipment maintenance notification",
       "status": "in_progress",
@@ -5108,93 +5175,6 @@
       "scheduled_until": "2025-11-17T13:30:00.000Z"
     },
     {
-      "id": "1m9w90smktjq",
-      "name": "[DE2][Virtual Private Servers] - Network equipment maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-11-12T21:32:03.084Z",
-      "updated_at": "2025-11-17T11:00:21.957Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/04g40z74vdpl",
-      "started_at": "2025-11-12T21:32:03.074Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "kljw6lzjkty5",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "1m9w90smktjq",
-          "created_at": "2025-11-17T11:00:21.934Z",
-          "updated_at": "2025-11-17T11:00:21.934Z",
-          "display_at": "2025-11-17T11:00:21.934Z",
-          "affected_components": [
-            {
-              "code": "cftyjf1knpfk",
-              "name": "Virtual Private Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0ld89hx46hyw",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "1m9w90smktjq",
-          "created_at": "2025-11-17T10:00:24.521Z",
-          "updated_at": "2025-11-17T10:00:24.521Z",
-          "display_at": "2025-11-17T10:00:24.521Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "c6x2470b5fnf",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Virtual Private Servers offer.\n\n<b>Start time :</b> 17/11/2025 11:00 UTC\n<b>End time :</b> 17/11/2025 12:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our network equipment.\n\nThank you for your understanding.",
-          "incident_id": "1m9w90smktjq",
-          "created_at": "2025-11-12T21:32:03.154Z",
-          "updated_at": "2025-11-12T21:32:03.154Z",
-          "display_at": "2025-11-12T21:32:03.154Z",
-          "affected_components": [
-            {
-              "code": "cftyjf1knpfk",
-              "name": "Virtual Private Servers || Network - LIM",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "cftyjf1knpfk",
-          "name": "LIM",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:31:34.779Z",
-          "updated_at": "2025-11-17T11:00:21.740Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "40xgq25nqllh",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-17T11:00:00.000Z",
-      "scheduled_until": "2025-11-17T12:30:00.000Z"
-    },
-    {
       "id": "smgp1vdq6bql",
       "name": "[SBG3][Cooling System] - Rack S333B04 maintenance notification",
       "status": "in_progress",
@@ -5252,9 +5232,9 @@
         {
           "id": "6cv1pzgk8v1n",
           "name": "SBG",
-          "status": "under_maintenance",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:25.618Z",
-          "updated_at": "2025-11-17T07:50:21.465Z",
+          "updated_at": "2025-11-17T13:15:37.368Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -5270,7 +5250,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
