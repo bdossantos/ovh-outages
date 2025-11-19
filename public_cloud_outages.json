@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-19T04:02:49.703Z"
+    "updated_at": "2025-11-19T04:38:55.768Z"
   },
   "components": [
     {
@@ -1034,9 +1034,9 @@
     {
       "id": "k86vmhcsnjtj",
       "name": "GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:14.640Z",
-      "updated_at": "2025-11-19T04:01:28.770Z",
+      "updated_at": "2025-11-19T04:38:18.138Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1649,9 +1649,9 @@
     {
       "id": "9m4wdr70k60d",
       "name": "DE",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:47.972Z",
-      "updated_at": "2025-11-19T04:01:28.789Z",
+      "updated_at": "2025-11-19T04:38:18.165Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -2737,9 +2737,9 @@
     {
       "id": "2pk5hxxqkq21",
       "name": "SBG",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:01.981Z",
-      "updated_at": "2025-11-19T04:01:28.806Z",
+      "updated_at": "2025-11-19T04:38:18.180Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -4020,9 +4020,9 @@
     {
       "id": "13lcmbp3cvg7",
       "name": "UK",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:43.824Z",
-      "updated_at": "2025-11-19T04:01:28.822Z",
+      "updated_at": "2025-11-19T04:38:18.195Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -4863,9 +4863,9 @@
     {
       "id": "pkcg4178zmpr",
       "name": "WAW",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:41:51.088Z",
-      "updated_at": "2025-11-19T04:01:28.838Z",
+      "updated_at": "2025-11-19T04:38:18.210Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -9101,7 +9101,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2025-11-18T10:37:50.436Z",
       "position": 59,
@@ -9229,24 +9229,68 @@
     {
       "id": "dypqb2jl7dvq",
       "name": "[DE/GRA/SBG/UK/WAW][Storage] - Object Storage Incident Notification",
-      "status": "monitoring",
+      "status": "identified",
       "created_at": "2025-11-19T03:55:59.894Z",
-      "updated_at": "2025-11-19T04:02:49.699Z",
-      "monitoring_at": "2025-11-19T04:01:28.888Z",
+      "updated_at": "2025-11-19T04:38:55.762Z",
+      "monitoring_at": "2025-11-19T04:01:28.000Z",
       "resolved_at": null,
       "impact": "minor",
       "shortlink": "https://stspg.io/hdvg283m9j7x",
-      "started_at": "2025-11-19T03:55:59.879Z",
+      "started_at": "2025-11-19T03:56:00.000Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
+          "id": "9n877mm81hlh",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Obect Storage offer in the specific regions : Gra, Sbg, Uk, De, Waw .\n\nHere are some supplementary details :\n\n<b>Start time :</b> 19/11/2025 02:00 UTC\n<b>Impacted Service(s) :</b> We are observing a slight increase of error rate or response time on some object storage endpoint\n<b>Customers Impact :</b> Customers are facing Http500 errors  and low latencies. \n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "dypqb2jl7dvq",
+          "created_at": "2025-11-19T04:38:18.259Z",
+          "updated_at": "2025-11-19T04:38:38.337Z",
+          "display_at": "2025-11-19T04:38:18.000Z",
+          "affected_components": [
+            {
+              "code": "k86vmhcsnjtj",
+              "name": "Storage || Object storage - GRA",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "9m4wdr70k60d",
+              "name": "Storage || Object storage - DE",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "2pk5hxxqkq21",
+              "name": "Storage || Object storage - SBG",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "13lcmbp3cvg7",
+              "name": "Storage || Object storage - UK",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "pkcg4178zmpr",
+              "name": "Storage || Object storage - WAW",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
           "id": "ywyxr6mdfldx",
           "status": "monitoring",
-          "body": "Service has been fully restored since 19/11/2025 03:45 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 19/11/2025 02:00 UTC\n<b>Impacted Service(s) :</b> We are observing a slight increase of error rate or response time on some object storage endpoint\n<b>Customers Impact :</b> Customers were facing Http500 errors  and low latencies.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "Service has been fully restored since 19/11/2025 03:45 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 19/11/2025 02:00 UTC\n<b>Impacted Service(s) :</b> We were observing a slight increase of error rate or response time on some object storage endpoint\n<b>Customers Impact :</b> Customers were facing Http500 errors  and low latencies.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "dypqb2jl7dvq",
           "created_at": "2025-11-19T04:01:28.888Z",
-          "updated_at": "2025-11-19T04:01:28.888Z",
-          "display_at": "2025-11-19T04:01:28.888Z",
+          "updated_at": "2025-11-19T04:12:47.205Z",
+          "display_at": "2025-11-19T04:01:28.000Z",
           "affected_components": [
             {
               "code": "k86vmhcsnjtj",
@@ -9286,11 +9330,11 @@
         {
           "id": "5t0t3syq8gh8",
           "status": "investigating",
-          "body": "We are currently experiencing an event affecting our Storage offer in the specific regions : Gra, Sbg, Uk, De, Waw .\n\n<b>Start time :</b> 19/11/2025 02:00 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "body": "We are currently experiencing an event affecting our Object Storage offer in the specific regions : Gra, Sbg, Uk, De, Waw .\n\n<b>Start time :</b> 19/11/2025 02:00 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
           "incident_id": "dypqb2jl7dvq",
           "created_at": "2025-11-19T03:56:00.090Z",
-          "updated_at": "2025-11-19T03:56:00.090Z",
-          "display_at": "2025-11-19T03:56:00.090Z",
+          "updated_at": "2025-11-19T04:38:55.692Z",
+          "display_at": "2025-11-19T03:56:00.000Z",
           "affected_components": [
             {
               "code": "k86vmhcsnjtj",
@@ -9332,9 +9376,9 @@
         {
           "id": "k86vmhcsnjtj",
           "name": "GRA",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:14.640Z",
-          "updated_at": "2025-11-19T04:01:28.770Z",
+          "updated_at": "2025-11-19T04:38:18.138Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -9347,9 +9391,9 @@
         {
           "id": "9m4wdr70k60d",
           "name": "DE",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:47.972Z",
-          "updated_at": "2025-11-19T04:01:28.789Z",
+          "updated_at": "2025-11-19T04:38:18.165Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -9362,9 +9406,9 @@
         {
           "id": "2pk5hxxqkq21",
           "name": "SBG",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:01.981Z",
-          "updated_at": "2025-11-19T04:01:28.806Z",
+          "updated_at": "2025-11-19T04:38:18.180Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -9377,9 +9421,9 @@
         {
           "id": "13lcmbp3cvg7",
           "name": "UK",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:43.824Z",
-          "updated_at": "2025-11-19T04:01:28.822Z",
+          "updated_at": "2025-11-19T04:38:18.195Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -9392,9 +9436,9 @@
         {
           "id": "pkcg4178zmpr",
           "name": "WAW",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:41:51.088Z",
-          "updated_at": "2025-11-19T04:01:28.838Z",
+          "updated_at": "2025-11-19T04:38:18.210Z",
           "position": 11,
           "description": null,
           "showcase": false,
@@ -11868,7 +11912,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
