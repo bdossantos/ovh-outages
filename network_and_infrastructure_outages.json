@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-20T22:06:10.732Z"
+    "updated_at": "2025-11-21T05:02:44.586Z"
   },
   "components": [
     {
@@ -340,9 +340,9 @@
     {
       "id": "gmbszmyqws8s",
       "name": "SGP2",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-01-10T14:17:37.748Z",
-      "updated_at": "2025-11-12T12:16:26.436Z",
+      "updated_at": "2025-11-21T05:02:44.517Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -911,7 +911,7 @@
     {
       "id": "rb5zzqd6yb05",
       "name": "Infrastructure || SGP",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-01-10T14:17:08.762Z",
       "updated_at": "2024-11-13T16:53:55.747Z",
       "position": 10,
@@ -1132,230 +1132,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1fc12wx666rs",
+      "name": "[SGP2][Network] - Event Notification",
+      "status": "investigating",
+      "created_at": "2025-11-21T05:02:44.469Z",
+      "updated_at": "2025-11-21T05:02:44.582Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/pwnl54wf3nk0",
+      "started_at": "2025-11-21T05:02:44.459Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "pshx7kf0n8nk",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Network infrastructure.\n\n<b>Start time :</b> 21/11/2025 03:28 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1fc12wx666rs",
+          "created_at": "2025-11-21T05:02:44.578Z",
+          "updated_at": "2025-11-21T05:02:44.578Z",
+          "display_at": "2025-11-21T05:02:44.578Z",
+          "affected_components": [
+            {
+              "code": "gmbszmyqws8s",
+              "name": "Infrastructure || SGP - SGP2",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gmbszmyqws8s",
+          "name": "SGP2",
+          "status": "partial_outage",
+          "created_at": "2024-01-10T14:17:37.748Z",
+          "updated_at": "2025-11-21T05:02:44.517Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-10",
+          "group_id": "rb5zzqd6yb05",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
-    {
-      "id": "fblp68t0pvrt",
-      "name": "[RBX8][Infrastructure] - Rack R801D09 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-17T15:14:37.160Z",
-      "updated_at": "2025-11-17T15:14:37.225Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/68scpvjq3dkj",
-      "started_at": "2025-11-17T15:14:37.152Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "pt2xqd0bf0g9",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801D09.\n\nThank you for your understanding.",
-          "incident_id": "fblp68t0pvrt",
-          "created_at": "2025-11-17T15:14:37.221Z",
-          "updated_at": "2025-11-17T15:14:37.221Z",
-          "display_at": "2025-11-17T15:14:37.221Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2025-11-18T16:01:37.532Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-21T06:00:00.000Z",
-      "scheduled_until": "2025-11-21T11:00:00.000Z"
-    },
-    {
-      "id": "nkdnxyxk6trl",
-      "name": "[RBX8][Infrastructure] - Rack R801C07 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-17T15:13:01.366Z",
-      "updated_at": "2025-11-17T15:13:01.433Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pmt25q9z6pvm",
-      "started_at": "2025-11-17T15:13:01.355Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "078l912g37mx",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801C07.\n\nThank you for your understanding.",
-          "incident_id": "nkdnxyxk6trl",
-          "created_at": "2025-11-17T15:13:01.429Z",
-          "updated_at": "2025-11-17T15:13:01.429Z",
-          "display_at": "2025-11-17T15:13:01.429Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2025-11-18T16:01:37.532Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-21T06:00:00.000Z",
-      "scheduled_until": "2025-11-21T11:00:00.000Z"
-    },
-    {
-      "id": "7klqh9xr4dcj",
-      "name": "[RBX8][Infrastructure] - Rack R801C06 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-17T15:17:05.748Z",
-      "updated_at": "2025-11-17T15:17:05.820Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/8f1px0rfzzwq",
-      "started_at": "2025-11-17T15:17:05.737Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "f5bbcwrsq9ym",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801C06.\n\nThank you for your understanding.",
-          "incident_id": "7klqh9xr4dcj",
-          "created_at": "2025-11-17T15:17:05.816Z",
-          "updated_at": "2025-11-17T15:17:05.816Z",
-          "display_at": "2025-11-17T15:17:05.816Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2025-11-18T16:01:37.532Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-21T06:00:00.000Z",
-      "scheduled_until": "2025-11-21T11:00:00.000Z"
-    },
-    {
-      "id": "48w2pdl6ncxz",
-      "name": "[RBX8][Infrastructure] - Rack R801A05 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-17T15:15:38.661Z",
-      "updated_at": "2025-11-17T21:09:07.155Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/pykgw5wlvkbk",
-      "started_at": "2025-11-17T15:15:38.653Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "6cyw08ty5ydl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801A05.\n\nThank you for your understanding.",
-          "incident_id": "48w2pdl6ncxz",
-          "created_at": "2025-11-17T15:15:38.713Z",
-          "updated_at": "2025-11-17T15:15:38.713Z",
-          "display_at": "2025-11-17T15:15:38.713Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2025-11-18T16:01:37.532Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-21T06:00:00.000Z",
-      "scheduled_until": "2025-11-21T11:00:00.000Z"
-    },
     {
       "id": "t80t7qym8djx",
       "name": "[RBX8][Infrastructure] - Rack R801D08 maintenance notification",
       "status": "scheduled",
       "created_at": "2025-11-17T15:18:23.819Z",
-      "updated_at": "2025-11-17T15:18:23.917Z",
+      "updated_at": "2025-11-21T05:00:26.935Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1363,6 +1201,19 @@
       "started_at": "2025-11-17T15:18:23.810Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "1trz3zx11w1q",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "t80t7qym8djx",
+          "created_at": "2025-11-21T05:00:26.348Z",
+          "updated_at": "2025-11-21T05:00:26.348Z",
+          "display_at": "2025-11-21T05:00:26.348Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "swzph463h48g",
           "status": "scheduled",
@@ -1405,11 +1256,279 @@
       "scheduled_until": "2025-11-21T11:00:00.000Z"
     },
     {
+      "id": "48w2pdl6ncxz",
+      "name": "[RBX8][Infrastructure] - Rack R801A05 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-17T15:15:38.661Z",
+      "updated_at": "2025-11-21T05:00:26.181Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pykgw5wlvkbk",
+      "started_at": "2025-11-17T15:15:38.653Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "zn6lk959dyvt",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "48w2pdl6ncxz",
+          "created_at": "2025-11-21T05:00:26.000Z",
+          "updated_at": "2025-11-21T05:00:26.000Z",
+          "display_at": "2025-11-21T05:00:26.000Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6cyw08ty5ydl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801A05.\n\nThank you for your understanding.",
+          "incident_id": "48w2pdl6ncxz",
+          "created_at": "2025-11-17T15:15:38.713Z",
+          "updated_at": "2025-11-17T15:15:38.713Z",
+          "display_at": "2025-11-17T15:15:38.713Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-11-18T16:01:37.532Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-21T06:00:00.000Z",
+      "scheduled_until": "2025-11-21T11:00:00.000Z"
+    },
+    {
+      "id": "7klqh9xr4dcj",
+      "name": "[RBX8][Infrastructure] - Rack R801C06 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-17T15:17:05.748Z",
+      "updated_at": "2025-11-21T05:00:31.077Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/8f1px0rfzzwq",
+      "started_at": "2025-11-17T15:17:05.737Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "48rf70frbns9",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "7klqh9xr4dcj",
+          "created_at": "2025-11-21T05:00:30.949Z",
+          "updated_at": "2025-11-21T05:00:30.949Z",
+          "display_at": "2025-11-21T05:00:30.949Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f5bbcwrsq9ym",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801C06.\n\nThank you for your understanding.",
+          "incident_id": "7klqh9xr4dcj",
+          "created_at": "2025-11-17T15:17:05.816Z",
+          "updated_at": "2025-11-17T15:17:05.816Z",
+          "display_at": "2025-11-17T15:17:05.816Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-11-18T16:01:37.532Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-21T06:00:00.000Z",
+      "scheduled_until": "2025-11-21T11:00:00.000Z"
+    },
+    {
+      "id": "nkdnxyxk6trl",
+      "name": "[RBX8][Infrastructure] - Rack R801C07 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-17T15:13:01.366Z",
+      "updated_at": "2025-11-21T05:00:30.017Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/pmt25q9z6pvm",
+      "started_at": "2025-11-17T15:13:01.355Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "8tbslhm2jw78",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "nkdnxyxk6trl",
+          "created_at": "2025-11-21T05:00:29.889Z",
+          "updated_at": "2025-11-21T05:00:29.889Z",
+          "display_at": "2025-11-21T05:00:29.889Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "078l912g37mx",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801C07.\n\nThank you for your understanding.",
+          "incident_id": "nkdnxyxk6trl",
+          "created_at": "2025-11-17T15:13:01.429Z",
+          "updated_at": "2025-11-17T15:13:01.429Z",
+          "display_at": "2025-11-17T15:13:01.429Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-11-18T16:01:37.532Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-21T06:00:00.000Z",
+      "scheduled_until": "2025-11-21T11:00:00.000Z"
+    },
+    {
+      "id": "fblp68t0pvrt",
+      "name": "[RBX8][Infrastructure] - Rack R801D09 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-17T15:14:37.160Z",
+      "updated_at": "2025-11-21T05:00:29.411Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/68scpvjq3dkj",
+      "started_at": "2025-11-17T15:14:37.152Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "x7hcyvxt6z1g",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "fblp68t0pvrt",
+          "created_at": "2025-11-21T05:00:29.251Z",
+          "updated_at": "2025-11-21T05:00:29.251Z",
+          "display_at": "2025-11-21T05:00:29.251Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pt2xqd0bf0g9",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Infrastructure offer.\n\n<b>Start time :</b> 21/11/2025 06:00 UTC\n<b>End time :</b> 21/11/2025 11:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing an electrical maintenance on rack R801D09.\n\nThank you for your understanding.",
+          "incident_id": "fblp68t0pvrt",
+          "created_at": "2025-11-17T15:14:37.221Z",
+          "updated_at": "2025-11-17T15:14:37.221Z",
+          "display_at": "2025-11-17T15:14:37.221Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-11-18T16:01:37.532Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-11-21T06:00:00.000Z",
+      "scheduled_until": "2025-11-21T11:00:00.000Z"
+    },
+    {
       "id": "bbys0qms6r2t",
       "name": "[RBX8][Infrastructure] - Rack R801C08 maintenance notification",
       "status": "scheduled",
       "created_at": "2025-11-17T15:19:23.976Z",
-      "updated_at": "2025-11-17T15:19:24.042Z",
+      "updated_at": "2025-11-21T05:00:23.938Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1417,6 +1536,19 @@
       "started_at": "2025-11-17T15:19:23.967Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
+        {
+          "id": "79tpv9gwgwsw",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "bbys0qms6r2t",
+          "created_at": "2025-11-21T05:00:23.784Z",
+          "updated_at": "2025-11-21T05:00:23.784Z",
+          "display_at": "2025-11-21T05:00:23.784Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "vft58wkhx4y8",
           "status": "scheduled",
@@ -1459,26 +1591,26 @@
       "scheduled_until": "2025-11-21T11:00:00.000Z"
     },
     {
-      "id": "18fp50hg6t59",
-      "name": "[SBG3][Cooling System] - Rack S323A02 maintenance notification",
+      "id": "rfyl8tfxz3x6",
+      "name": "[SBG3][Cooling System] - Rack S323A03 maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-29T09:30:16.716Z",
-      "updated_at": "2025-10-29T09:30:16.786Z",
+      "created_at": "2025-10-29T09:31:51.915Z",
+      "updated_at": "2025-10-29T09:31:51.964Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/vxt42cz2s6nm",
-      "started_at": "2025-10-29T09:30:16.708Z",
+      "shortlink": "https://stspg.io/xgj6bc3t1k1c",
+      "started_at": "2025-10-29T09:31:51.908Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "tyglz2jyz0sl",
+          "id": "t7hnmh8215y3",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 21/11/2025 07:00 UTC\n<b>End time :</b> 21/11/2025 16:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "18fp50hg6t59",
-          "created_at": "2025-10-29T09:30:16.783Z",
-          "updated_at": "2025-10-29T09:30:16.783Z",
-          "display_at": "2025-10-29T09:30:16.783Z",
+          "incident_id": "rfyl8tfxz3x6",
+          "created_at": "2025-10-29T09:31:51.961Z",
+          "updated_at": "2025-10-29T09:31:51.961Z",
+          "display_at": "2025-10-29T09:31:51.961Z",
           "affected_components": [
             {
               "code": "n3pn0f28b99n",
@@ -1513,26 +1645,26 @@
       "scheduled_until": "2025-11-21T16:00:00.000Z"
     },
     {
-      "id": "rfyl8tfxz3x6",
-      "name": "[SBG3][Cooling System] - Rack S323A03 maintenance notification",
+      "id": "18fp50hg6t59",
+      "name": "[SBG3][Cooling System] - Rack S323A02 maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-10-29T09:31:51.915Z",
-      "updated_at": "2025-10-29T09:31:51.964Z",
+      "created_at": "2025-10-29T09:30:16.716Z",
+      "updated_at": "2025-10-29T09:30:16.786Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/xgj6bc3t1k1c",
-      "started_at": "2025-10-29T09:31:51.908Z",
+      "shortlink": "https://stspg.io/vxt42cz2s6nm",
+      "started_at": "2025-10-29T09:30:16.708Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "t7hnmh8215y3",
+          "id": "tyglz2jyz0sl",
           "status": "scheduled",
           "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 21/11/2025 07:00 UTC\n<b>End time :</b> 21/11/2025 16:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "rfyl8tfxz3x6",
-          "created_at": "2025-10-29T09:31:51.961Z",
-          "updated_at": "2025-10-29T09:31:51.961Z",
-          "display_at": "2025-10-29T09:31:51.961Z",
+          "incident_id": "18fp50hg6t59",
+          "created_at": "2025-10-29T09:30:16.783Z",
+          "updated_at": "2025-10-29T09:30:16.783Z",
+          "display_at": "2025-10-29T09:30:16.783Z",
           "affected_components": [
             {
               "code": "n3pn0f28b99n",
@@ -1604,9 +1736,9 @@
         {
           "id": "gmbszmyqws8s",
           "name": "SGP2",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2024-01-10T14:17:37.748Z",
-          "updated_at": "2025-11-12T12:16:26.436Z",
+          "updated_at": "2025-11-21T05:02:44.517Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -3836,7 +3968,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
