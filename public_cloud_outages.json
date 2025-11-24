@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-24T13:11:52.371Z"
+    "updated_at": "2025-11-24T14:06:50.580Z"
   },
   "components": [
     {
@@ -235,9 +235,9 @@
     {
       "id": "f48mzw7bpn0d",
       "name": "BHS1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:34.420Z",
-      "updated_at": "2025-11-15T10:42:46.420Z",
+      "updated_at": "2025-11-24T14:06:50.483Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -974,9 +974,9 @@
     {
       "id": "my3dbz55pzrq",
       "name": "BHS3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:35.569Z",
-      "updated_at": "2025-10-22T14:58:22.422Z",
+      "updated_at": "2025-11-24T14:06:50.501Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1604,9 +1604,9 @@
     {
       "id": "d6db30j7nx4r",
       "name": "BHS5",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:37.373Z",
-      "updated_at": "2025-10-30T16:44:56.623Z",
+      "updated_at": "2025-11-24T14:06:50.516Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -3142,7 +3142,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2025-04-18T13:47:32.479Z",
       "position": 6,
@@ -9226,6 +9226,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "27py4sb8pdxs",
+      "name": "[BHS8][Compute - Instance] - instance incident notification",
+      "status": "identified",
+      "created_at": "2025-11-24T14:06:50.443Z",
+      "updated_at": "2025-11-24T14:06:50.577Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/997yylv9pxwp",
+      "started_at": "2025-11-24T14:06:50.433Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "pmwmy2rh9274",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Compute - Instance offer on the specific BHS region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/11/2025 14:02 UTC\n<b>Impacted Service(s) :</b> Some instances in the BHS region are unreachable.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure failure\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "27py4sb8pdxs",
+          "created_at": "2025-11-24T14:06:50.574Z",
+          "updated_at": "2025-11-24T14:06:50.574Z",
+          "display_at": "2025-11-24T14:06:50.574Z",
+          "affected_components": [
+            {
+              "code": "f48mzw7bpn0d",
+              "name": "Compute - Instance || BHS - BHS1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "d6db30j7nx4r",
+              "name": "Compute - Instance || BHS - BHS5",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f48mzw7bpn0d",
+          "name": "BHS1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:34.420Z",
+          "updated_at": "2025-11-24T14:06:50.483Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "my3dbz55pzrq",
+          "name": "BHS3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:35.569Z",
+          "updated_at": "2025-11-24T14:06:50.501Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "d6db30j7nx4r",
+          "name": "BHS5",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:37.373Z",
+          "updated_at": "2025-11-24T14:06:50.516Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "x4d66hn5p4f3",
       "name": "[UK1][Containers & Orchestration] - Management API incidant notification",
