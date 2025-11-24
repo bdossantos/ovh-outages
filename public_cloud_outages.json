@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-24T12:00:24.590Z"
+    "updated_at": "2025-11-24T13:11:52.371Z"
   },
   "components": [
     {
@@ -4878,9 +4878,9 @@
     {
       "id": "pj4hrqx6f6km",
       "name": "UK1",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-05-04T10:30:35.072Z",
-      "updated_at": "2025-11-24T10:07:11.033Z",
+      "updated_at": "2025-11-24T12:19:06.801Z",
       "position": 11,
       "description": null,
       "showcase": false,
@@ -6752,7 +6752,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-11-18T10:37:50.037Z",
       "position": 20,
@@ -9229,16 +9229,36 @@
     {
       "id": "x4d66hn5p4f3",
       "name": "[UK1][Containers & Orchestration] - Management API incidant notification",
-      "status": "identified",
+      "status": "monitoring",
       "created_at": "2025-11-24T10:07:10.986Z",
-      "updated_at": "2025-11-24T11:48:00.681Z",
-      "monitoring_at": null,
+      "updated_at": "2025-11-24T12:19:06.873Z",
+      "monitoring_at": "2025-11-24T12:19:06.855Z",
       "resolved_at": null,
       "impact": "major",
       "shortlink": "https://stspg.io/sht0lzwlx3fm",
       "started_at": "2025-11-24T10:07:10.976Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "445chh7ztm5d",
+          "status": "monitoring",
+          "body": "Service has been fully restored since 24/11/2025 12:12 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/11/2025 08:36 UTC\n<b>Impacted Service(s) :</b> Customers were temporarily unable to access and use their instances in the \"Location\" region.\n<b>Customers Impact :</b> MKS clusters were fine but customers could not manage it (cluster creation/deletion/update, cannot add/remove a node)\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "x4d66hn5p4f3",
+          "created_at": "2025-11-24T12:19:06.855Z",
+          "updated_at": "2025-11-24T12:19:06.855Z",
+          "display_at": "2025-11-24T12:19:06.855Z",
+          "affected_components": [
+            {
+              "code": "pj4hrqx6f6km",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - UK1",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "97ccv3rjdc6f",
           "status": "identified",
@@ -9284,9 +9304,9 @@
         {
           "id": "pj4hrqx6f6km",
           "name": "UK1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2022-05-04T10:30:35.072Z",
-          "updated_at": "2025-11-24T10:07:11.033Z",
+          "updated_at": "2025-11-24T12:19:06.801Z",
           "position": 11,
           "description": null,
           "showcase": false,
@@ -11103,73 +11123,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "stvdfnmbygg3",
-      "name": "[UK1][Public Cloud] Infrastructure maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-17T09:52:43.215Z",
-      "updated_at": "2025-11-24T12:00:24.580Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/4dzn29cpx69v",
-      "started_at": "2025-11-17T09:52:43.208Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "8jvvxwtnkn0c",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "stvdfnmbygg3",
-          "created_at": "2025-11-24T12:00:24.413Z",
-          "updated_at": "2025-11-24T12:00:24.413Z",
-          "display_at": "2025-11-24T12:00:24.413Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "byldg7tsdh8b",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Public Cloud infrastructure. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 24/11/2025 13:00 UTC \n<b>End time :</b> 24/11/2025 14:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Public Cloud infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "stvdfnmbygg3",
-          "created_at": "2025-11-17T09:52:43.290Z",
-          "updated_at": "2025-11-17T09:52:43.290Z",
-          "display_at": "2025-11-17T09:52:43.290Z",
-          "affected_components": [
-            {
-              "code": "wvk5xmsm6m63",
-              "name": "Network || Public network - UK1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "wvk5xmsm6m63",
-          "name": "UK1",
-          "status": "operational",
-          "created_at": "2022-04-06T10:07:18.823Z",
-          "updated_at": "2024-05-17T08:59:18.894Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-24T13:00:00.000Z",
-      "scheduled_until": "2025-11-24T14:30:00.000Z"
-    },
-    {
       "id": "fl4dyvqw43nq",
       "name": "[GRA5/GRA7/GRA9][Storage] - Block storage maintenance notification",
       "status": "scheduled",
@@ -11634,93 +11587,6 @@
       ],
       "scheduled_for": "2025-12-17T09:30:00.000Z",
       "scheduled_until": "2025-12-17T17:30:00.000Z"
-    },
-    {
-      "id": "86whmfwvlznl",
-      "name": "[BHS1][Public Cloud] Infrastructure maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-11-17T20:59:48.420Z",
-      "updated_at": "2025-11-24T10:00:21.370Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ds16n3cbs22l",
-      "started_at": "2025-11-17T20:59:48.412Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "c964ntgwhqp4",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "86whmfwvlznl",
-          "created_at": "2025-11-24T10:00:21.367Z",
-          "updated_at": "2025-11-24T10:00:21.367Z",
-          "display_at": "2025-11-24T10:00:21.367Z",
-          "affected_components": [
-            {
-              "code": "441b271hgxht",
-              "name": "Network || Public network - BHS1",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3cjdb703gwmt",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "86whmfwvlznl",
-          "created_at": "2025-11-24T09:00:22.083Z",
-          "updated_at": "2025-11-24T09:00:22.083Z",
-          "display_at": "2025-11-24T09:00:22.083Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fw4c3lk5pcdy",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Public Cloud infrastructure. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 24/11/2025 10:00 UTC \n<b>End time :</b> 24/11/2025 11:30 UTC\n<b>Service impact :</b> Some services may experience increased latency or packet loss for up to 1 second during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Public Cloud infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "86whmfwvlznl",
-          "created_at": "2025-11-17T20:59:48.492Z",
-          "updated_at": "2025-11-17T20:59:48.492Z",
-          "display_at": "2025-11-17T20:59:48.492Z",
-          "affected_components": [
-            {
-              "code": "441b271hgxht",
-              "name": "Network || Public network - BHS1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "441b271hgxht",
-          "name": "BHS1",
-          "status": "under_maintenance",
-          "created_at": "2023-04-06T19:36:52.618Z",
-          "updated_at": "2025-11-24T10:00:21.271Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-04-06",
-          "group_id": "txmh9qs0c937",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-24T10:00:00.000Z",
-      "scheduled_until": "2025-11-24T11:30:00.000Z"
     },
     {
       "id": "1bkrwqr3rkc3",
@@ -12201,9 +12067,9 @@
         {
           "id": "pj4hrqx6f6km",
           "name": "UK1",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2022-05-04T10:30:35.072Z",
-          "updated_at": "2025-11-24T10:07:11.033Z",
+          "updated_at": "2025-11-24T12:19:06.801Z",
           "position": 11,
           "description": null,
           "showcase": false,
