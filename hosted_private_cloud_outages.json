@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-25T03:20:27.659Z"
+    "updated_at": "2025-11-25T05:05:34.045Z"
   },
   "components": [
     {
@@ -970,9 +970,9 @@
     {
       "id": "qg0qytmyzzr7",
       "name": "Storage",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-21T08:39:46.776Z",
-      "updated_at": "2025-11-25T02:24:25.083Z",
+      "updated_at": "2025-11-25T05:05:33.974Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -985,9 +985,9 @@
     {
       "id": "z03dslm46ktz",
       "name": "Storage",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-21T08:40:10.951Z",
-      "updated_at": "2025-11-24T07:30:21.119Z",
+      "updated_at": "2025-11-25T04:37:37.183Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1587,7 +1587,7 @@
     {
       "id": "n05r15rpb4gy",
       "name": "Managed vSphere || LIM",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-21T08:40:11.547Z",
       "updated_at": "2025-01-15T10:37:04.684Z",
       "position": 14,
@@ -1608,7 +1608,7 @@
     {
       "id": "57t55jp0633h",
       "name": "Managed vSphere || RBX",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2021-07-21T08:39:47.367Z",
       "updated_at": "2025-01-15T10:37:04.696Z",
       "position": 15,
@@ -1816,81 +1816,7 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "tr6sqhhv7z7l",
-      "name": "[RBX2b][Managed vSphere] - Cluster8345 incident notification",
-      "status": "identified",
-      "created_at": "2025-11-25T02:24:25.048Z",
-      "updated_at": "2025-11-25T03:15:16.186Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/ls1lxs3w8mwt",
-      "started_at": "2025-11-25T02:24:25.000Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "nvgn0l8pgjl3",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Managed vSphere offer on the specific cluster.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/11/2025 01:55 UTC\n<b>Impacted Service(s) :</b> Datastores located in Cluster8346 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to use their datastores of the specified cluster. \n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "tr6sqhhv7z7l",
-          "created_at": "2025-11-25T03:15:16.182Z",
-          "updated_at": "2025-11-25T03:15:16.182Z",
-          "display_at": "2025-11-25T03:15:16.182Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "Managed vSphere || RBX - Storage",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "kvfgxlj46vcj",
-          "status": "investigating",
-          "body": "We are currently investigating an incident affecting our Managed vSphere offering, which is causing temporary availability issue in the Cluster8346 .\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/11/2025 01:55 UTC\n<b>Impacted Service(s) :</b> Datastores located in Cluster8345 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to use their datastores of the specified cluster.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "tr6sqhhv7z7l",
-          "created_at": "2025-11-25T02:24:25.131Z",
-          "updated_at": "2025-11-25T02:37:31.861Z",
-          "display_at": "2025-11-25T02:24:25.000Z",
-          "affected_components": [
-            {
-              "code": "qg0qytmyzzr7",
-              "name": "Managed vSphere || RBX - Storage",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qg0qytmyzzr7",
-          "name": "Storage",
-          "status": "partial_outage",
-          "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "57t55jp0633h",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "15yd4kxst4mj",
@@ -1930,9 +1856,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -1984,9 +1910,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2092,9 +2018,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2146,9 +2072,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2254,9 +2180,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2308,9 +2234,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2362,9 +2288,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2416,9 +2342,9 @@
         {
           "id": "qg0qytmyzzr7",
           "name": "Storage",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-21T08:39:46.776Z",
-          "updated_at": "2025-11-25T02:24:25.083Z",
+          "updated_at": "2025-11-25T05:05:33.974Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -2518,97 +2444,10 @@
       ],
       "scheduled_for": "2025-11-24T21:00:00.000Z",
       "scheduled_until": "2025-11-25T06:00:00.000Z"
-    },
-    {
-      "id": "19hysqr6gtp0",
-      "name": "[LIM1C][Managed vSphere] - Storage maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-10-23T16:20:24.391Z",
-      "updated_at": "2025-11-24T07:30:21.184Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/410x7p0pz2dh",
-      "started_at": "2025-10-23T16:20:24.384Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "g8lmx5yhll3t",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "19hysqr6gtp0",
-          "created_at": "2025-11-24T07:30:21.181Z",
-          "updated_at": "2025-11-24T07:30:21.181Z",
-          "display_at": "2025-11-24T07:30:21.181Z",
-          "affected_components": [
-            {
-              "code": "z03dslm46ktz",
-              "name": "Managed vSphere || LIM - Storage",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3gmspfzhtndq",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "19hysqr6gtp0",
-          "created_at": "2025-11-24T06:30:23.206Z",
-          "updated_at": "2025-11-24T06:30:23.206Z",
-          "display_at": "2025-11-24T06:30:23.206Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "7d4dy972wz62",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed vSphere offer in LIM1C region.\n\n<b>Start time :</b> 24/11/2025 07:30 UTC\n<b>End time :</b> 24/11/2025 22:00 UTC\n<b>Service impact :</b> There will be no impact on the vSphere UI, data availability, or virtual machines during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we are rolling out an update for multiple storage servers.\n\nThank you for your understanding.",
-          "incident_id": "19hysqr6gtp0",
-          "created_at": "2025-10-23T16:20:24.435Z",
-          "updated_at": "2025-10-23T16:20:24.435Z",
-          "display_at": "2025-10-23T16:20:24.435Z",
-          "affected_components": [
-            {
-              "code": "z03dslm46ktz",
-              "name": "Managed vSphere || LIM - Storage",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "z03dslm46ktz",
-          "name": "Storage",
-          "status": "under_maintenance",
-          "created_at": "2021-07-21T08:40:10.951Z",
-          "updated_at": "2025-11-24T07:30:21.119Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-21",
-          "group_id": "n05r15rpb4gy",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-11-24T07:30:00.000Z",
-      "scheduled_until": "2025-11-24T22:00:00.000Z"
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
