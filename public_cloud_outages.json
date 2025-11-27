@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-27T14:36:27.829Z"
+    "updated_at": "2025-11-27T17:00:00.422Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "fmy1mbtr2jvd",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-04-06T09:33:58.595Z",
-      "updated_at": "2025-11-27T08:30:21.201Z",
+      "updated_at": "2025-11-27T17:00:00.305Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1259,9 +1259,9 @@
     {
       "id": "glnlr8wvr4cx",
       "name": "DE",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-05-30T13:36:25.382Z",
-      "updated_at": "2025-11-27T08:30:21.226Z",
+      "updated_at": "2025-11-27T17:00:00.324Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1889,9 +1889,9 @@
     {
       "id": "72kfcqnrn9y5",
       "name": "BHS",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2023-05-30T13:45:18.521Z",
-      "updated_at": "2025-11-27T08:30:21.249Z",
+      "updated_at": "2025-11-27T17:00:00.343Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -6962,7 +6962,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2025-11-18T10:37:50.046Z",
       "position": 21,
@@ -10268,6 +10268,60 @@
       "scheduled_until": "2025-12-01T16:00:00.000Z"
     },
     {
+      "id": "jxyld7wb32md",
+      "name": "[DE1][Public Cloud] - OpenStack Barbican maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-27T16:27:06.619Z",
+      "updated_at": "2025-11-27T16:27:06.691Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mtprrdr3gmr8",
+      "started_at": "2025-11-27T16:27:06.611Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "07t31tgg63s6",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our public cloud infrastructure.\n\n<b>Start time :</b> 02/12/2025 09:00 UTC \n<b>End time :</b> 02/12/2025 10:00 UTC \n<b>Service impact :</b> None.\n<b>Service improvement :</b> As part of our continuous infrastructure improvement plan, we need to add a new store for Barbican based on OVH KMS(Key Management Services) in DE1.\nThis will took effect on the Openstack region in DE1.\nAn individual communication will be sent to impacted customers.\n\nThank you for your understanding.",
+          "incident_id": "jxyld7wb32md",
+          "created_at": "2025-11-27T16:27:06.689Z",
+          "updated_at": "2025-11-27T16:27:06.689Z",
+          "display_at": "2025-11-27T16:27:06.689Z",
+          "affected_components": [
+            {
+              "code": "g6hk916qw11v",
+              "name": "Compute - Instance || LIM - DE1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "g6hk916qw11v",
+          "name": "DE1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:11.161Z",
+          "updated_at": "2025-11-15T23:45:01.561Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "0b67gm8w0sqk",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-02T09:00:00.000Z",
+      "scheduled_until": "2025-12-02T10:00:00.000Z"
+    },
+    {
       "id": "30816d178ltn",
       "name": "[VA1][Public Cloud] - Registries maintenance notification",
       "status": "scheduled",
@@ -10322,145 +10376,60 @@
       "scheduled_until": "2025-12-17T17:30:00.000Z"
     },
     {
-      "id": "s7k0qc1188yb",
-      "name": "[GRA7/GRA9/BHS5/DE1/EU-WEST-PAR][Public Cloud] - Registries maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-11-13T16:02:03.271Z",
-      "updated_at": "2025-11-27T08:30:21.313Z",
+      "id": "p45ytxq41832",
+      "name": "[GRA][Public Cloud] - OpenStack Barbican maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-27T16:23:49.464Z",
+      "updated_at": "2025-11-27T16:23:49.560Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/f99zdwc4f0mw",
-      "started_at": "2025-11-13T16:02:03.346Z",
+      "shortlink": "https://stspg.io/z7lp82053x64",
+      "started_at": "2025-11-27T16:23:49.449Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "jwrmk2ml7fgz",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "s7k0qc1188yb",
-          "created_at": "2025-11-27T08:30:21.309Z",
-          "updated_at": "2025-11-27T08:30:21.309Z",
-          "display_at": "2025-11-27T08:30:21.309Z",
+          "id": "w6l5d12c1dp9",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our public cloud infrastructure.\n\n<b>Start time :</b> 03/12/2025 09:00 UTC \n<b>End time :</b> 03/12/2025 10:00 UTC \n<b>Service impact :</b> None.\n<b>Service improvement :</b> As part of our continuous infrastructure improvement plan, we need to add a new store for Barbican based on OVH KMS(Key Management Services) in GRA1, GRA3, GRA5, GRA7, GRA9, GRA11.\nThis will took effect on the Openstack region in GRA1, GRA3, GRA5, GRA7, GRA9, GRA11.\nAn individual communication will be sent to impacted customers.\n\nThank you for your understanding.",
+          "incident_id": "p45ytxq41832",
+          "created_at": "2025-11-27T16:23:49.556Z",
+          "updated_at": "2025-11-27T16:23:49.556Z",
+          "display_at": "2025-11-27T16:23:49.556Z",
           "affected_components": [
             {
-              "code": "fmy1mbtr2jvd",
-              "name": "Containers & Orchestration || Managed Private Registry - GRA",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "glnlr8wvr4cx",
-              "name": "Containers & Orchestration || Managed Private Registry - DE",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            },
-            {
-              "code": "72kfcqnrn9y5",
-              "name": "Containers & Orchestration || Managed Private Registry - BHS",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "58j7r5lgxfd3",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "s7k0qc1188yb",
-          "created_at": "2025-11-27T07:30:21.691Z",
-          "updated_at": "2025-11-27T07:30:21.691Z",
-          "display_at": "2025-11-27T07:30:21.691Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fssw4cqjp3rq",
-          "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "s7k0qc1188yb",
-          "created_at": "2025-11-13T16:08:11.668Z",
-          "updated_at": "2025-11-13T16:08:11.668Z",
-          "display_at": "2025-11-13T16:08:11.668Z",
-          "affected_components": [
-            {
-              "code": "fmy1mbtr2jvd",
-              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
               "old_status": "operational",
               "new_status": "operational"
             },
             {
-              "code": "glnlr8wvr4cx",
-              "name": "Containers & Orchestration || Managed Private Registry - DE",
+              "code": "2k4xnh0pwlqx",
+              "name": "Compute - Instance || GRA - GRA3",
               "old_status": "operational",
               "new_status": "operational"
             },
             {
-              "code": "72kfcqnrn9y5",
-              "name": "Containers & Orchestration || Managed Private Registry - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0b5nzg1bx38l",
-          "status": "scheduled",
-          "body": "We will be undergoing scheduled maintenance during this time.",
-          "incident_id": "s7k0qc1188yb",
-          "created_at": "2025-11-13T16:04:11.588Z",
-          "updated_at": "2025-11-13T16:04:11.588Z",
-          "display_at": "2025-11-13T16:04:11.588Z",
-          "affected_components": [
-            {
-              "code": "fmy1mbtr2jvd",
-              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "code": "2f7vd120ygt3",
+              "name": "Compute - Instance || GRA - GRA5",
               "old_status": "operational",
               "new_status": "operational"
             },
             {
-              "code": "glnlr8wvr4cx",
-              "name": "Containers & Orchestration || Managed Private Registry - DE",
+              "code": "dwkwkx15h58c",
+              "name": "Compute - Instance || GRA - GRA7",
               "old_status": "operational",
               "new_status": "operational"
             },
             {
-              "code": "72kfcqnrn9y5",
-              "name": "Containers & Orchestration || Managed Private Registry - BHS",
+              "code": "gyxq55djvgqg",
+              "name": "Compute - Instance || GRA - GRA9",
               "old_status": "operational",
               "new_status": "operational"
             },
             {
-              "code": "4prtfwz0fx5s",
-              "name": "Containers & Orchestration || Managed Private Registry - VA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "qxvs2y03j8td",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Private Registry.\n\n<b>Start time :</b> 27/11/2025 08:30 UTC\n<b>End time :</b> 27/11/2025 17:30 UTC\n<b>Service impact :</b> Registries may be unavailable for 10s to 1mn, artifacts (Docker images, Helm chart...) pulling and pushing may be unavailable during this time.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing a maintenance on our infrastructure\n\nThank you for your understanding.",
-          "incident_id": "s7k0qc1188yb",
-          "created_at": "2025-11-13T16:02:03.346Z",
-          "updated_at": "2025-11-14T10:32:17.865Z",
-          "display_at": "2025-11-13T16:02:03.346Z",
-          "affected_components": [
-            {
-              "code": "4prtfwz0fx5s",
-              "name": "Containers & Orchestration || Managed Private Registry - VA",
+              "code": "jnrg6smtv9yw",
+              "name": "Compute - Instance || GRA - GRA11",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -10472,53 +10441,98 @@
       ],
       "components": [
         {
-          "id": "fmy1mbtr2jvd",
-          "name": "GRA",
-          "status": "under_maintenance",
-          "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2025-11-27T08:30:21.201Z",
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2025-11-13T10:53:10.347Z",
           "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2022-04-06",
-          "group_id": "dbhdvj49c2xr",
+          "group_id": "xfnf56jsxk5y",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         },
         {
-          "id": "glnlr8wvr4cx",
-          "name": "DE",
-          "status": "under_maintenance",
-          "created_at": "2023-05-30T13:36:25.382Z",
-          "updated_at": "2025-11-27T08:30:21.226Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2023-05-30",
-          "group_id": "dbhdvj49c2xr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "72kfcqnrn9y5",
-          "name": "BHS",
-          "status": "under_maintenance",
-          "created_at": "2023-05-30T13:45:18.521Z",
-          "updated_at": "2025-11-27T08:30:21.249Z",
+          "id": "2k4xnh0pwlqx",
+          "name": "GRA3",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:50.709Z",
+          "updated_at": "2025-11-13T10:53:10.367Z",
           "position": 3,
           "description": null,
           "showcase": false,
-          "start_date": "2023-05-30",
-          "group_id": "dbhdvj49c2xr",
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "2f7vd120ygt3",
+          "name": "GRA5",
+          "status": "operational",
+          "created_at": "2022-04-06T09:35:56.233Z",
+          "updated_at": "2025-11-24T16:35:21.766Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "dwkwkx15h58c",
+          "name": "GRA7",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:00.118Z",
+          "updated_at": "2025-11-24T16:35:21.785Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "gyxq55djvgqg",
+          "name": "GRA9",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:01.088Z",
+          "updated_at": "2025-11-24T16:35:21.802Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jnrg6smtv9yw",
+          "name": "GRA11",
+          "status": "operational",
+          "created_at": "2022-04-06T09:36:01.994Z",
+          "updated_at": "2025-11-24T16:35:21.819Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-11-27T08:30:00.000Z",
-      "scheduled_until": "2025-11-27T17:30:00.000Z"
+      "scheduled_for": "2026-01-03T09:00:00.000Z",
+      "scheduled_until": "2026-01-03T10:00:00.000Z"
     }
   ],
   "status": {
