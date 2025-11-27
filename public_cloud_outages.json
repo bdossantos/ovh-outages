@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-11-27T08:01:26.739Z"
+    "updated_at": "2025-11-27T08:30:21.328Z"
   },
   "components": [
     {
@@ -55,9 +55,9 @@
     {
       "id": "fmy1mbtr2jvd",
       "name": "GRA",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:58.595Z",
-      "updated_at": "2025-09-02T20:58:40.098Z",
+      "updated_at": "2025-11-27T08:30:21.201Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1259,9 +1259,9 @@
     {
       "id": "glnlr8wvr4cx",
       "name": "DE",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2023-05-30T13:36:25.382Z",
-      "updated_at": "2025-07-11T04:34:48.095Z",
+      "updated_at": "2025-11-27T08:30:21.226Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1889,9 +1889,9 @@
     {
       "id": "72kfcqnrn9y5",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2023-05-30T13:45:18.521Z",
-      "updated_at": "2025-06-17T17:09:50.439Z",
+      "updated_at": "2025-11-27T08:30:21.249Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -6962,7 +6962,7 @@
     {
       "id": "dbhdvj49c2xr",
       "name": "Containers & Orchestration || Managed Private Registry",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:33:59.680Z",
       "updated_at": "2025-11-18T10:37:50.046Z",
       "position": 21,
@@ -10214,11 +10214,119 @@
   ],
   "scheduled_maintenances": [
     {
+      "id": "wsnt01wsdq20",
+      "name": "[Global][Data & Analytics ] - Data Platform maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-18T21:58:55.367Z",
+      "updated_at": "2025-11-18T21:58:55.440Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/dxdbgp470qxd",
+      "started_at": "2025-11-18T21:58:55.362Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "954v9jbssb02",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Data Platform offer. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 01/12/2025 13:00 UTC \n<b>End time :</b> 01/12/2025 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Data Platform infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "wsnt01wsdq20",
+          "created_at": "2025-11-18T21:58:55.437Z",
+          "updated_at": "2025-11-18T21:58:55.437Z",
+          "display_at": "2025-11-18T21:58:55.437Z",
+          "affected_components": [
+            {
+              "code": "1m0dyvn10ht4",
+              "name": "Data & Analytics || Data Platform",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1m0dyvn10ht4",
+          "name": "Data & Analytics || Data Platform",
+          "status": "operational",
+          "created_at": "2024-04-12T16:07:29.893Z",
+          "updated_at": "2025-11-18T10:37:50.124Z",
+          "position": 29,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-04-12",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-01T13:00:00.000Z",
+      "scheduled_until": "2025-12-01T16:00:00.000Z"
+    },
+    {
+      "id": "30816d178ltn",
+      "name": "[VA1][Public Cloud] - Registries maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-13T16:09:16.917Z",
+      "updated_at": "2025-11-14T11:07:57.563Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/7jy83bz64g59",
+      "started_at": "2025-11-13T16:09:16.998Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "d3pmg81yxjcj",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Private Registry.\n\n<b>Start time :</b> 17/12/2025 09:30 UTC\n<b>End time :</b> 17/12/2025 17:30 UTC\n<b>Service impact :</b> Registries may be unavailable for 10s to 1mn, artifacts (Docker images, Helm chart...) pulling and pushing may be unavailable during this time.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing a maintenance on our infrastructure\n\nThank you for your understanding.",
+          "incident_id": "30816d178ltn",
+          "created_at": "2025-11-13T16:09:16.998Z",
+          "updated_at": "2025-11-14T11:03:58.027Z",
+          "display_at": "2025-11-13T16:09:16.998Z",
+          "affected_components": [
+            {
+              "code": "4prtfwz0fx5s",
+              "name": "Containers & Orchestration || Managed Private Registry - VA",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4prtfwz0fx5s",
+          "name": "VA",
+          "status": "operational",
+          "created_at": "2024-01-29T14:56:18.701Z",
+          "updated_at": "2025-06-17T17:09:50.455Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-29",
+          "group_id": "dbhdvj49c2xr",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-17T09:30:00.000Z",
+      "scheduled_until": "2025-12-17T17:30:00.000Z"
+    },
+    {
       "id": "s7k0qc1188yb",
       "name": "[GRA7/GRA9/BHS5/DE1/EU-WEST-PAR][Public Cloud] - Registries maintenance notification",
-      "status": "scheduled",
+      "status": "in_progress",
       "created_at": "2025-11-13T16:02:03.271Z",
-      "updated_at": "2025-11-27T08:01:26.732Z",
+      "updated_at": "2025-11-27T08:30:21.313Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -10226,6 +10334,38 @@
       "started_at": "2025-11-13T16:02:03.346Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "jwrmk2ml7fgz",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "s7k0qc1188yb",
+          "created_at": "2025-11-27T08:30:21.309Z",
+          "updated_at": "2025-11-27T08:30:21.309Z",
+          "display_at": "2025-11-27T08:30:21.309Z",
+          "affected_components": [
+            {
+              "code": "fmy1mbtr2jvd",
+              "name": "Containers & Orchestration || Managed Private Registry - GRA",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "glnlr8wvr4cx",
+              "name": "Containers & Orchestration || Managed Private Registry - DE",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "72kfcqnrn9y5",
+              "name": "Containers & Orchestration || Managed Private Registry - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "58j7r5lgxfd3",
           "status": "scheduled",
@@ -10334,9 +10474,9 @@
         {
           "id": "fmy1mbtr2jvd",
           "name": "GRA",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2022-04-06T09:33:58.595Z",
-          "updated_at": "2025-09-02T20:58:40.098Z",
+          "updated_at": "2025-11-27T08:30:21.201Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -10349,9 +10489,9 @@
         {
           "id": "glnlr8wvr4cx",
           "name": "DE",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2023-05-30T13:36:25.382Z",
-          "updated_at": "2025-07-11T04:34:48.095Z",
+          "updated_at": "2025-11-27T08:30:21.226Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -10364,9 +10504,9 @@
         {
           "id": "72kfcqnrn9y5",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2023-05-30T13:45:18.521Z",
-          "updated_at": "2025-06-17T17:09:50.439Z",
+          "updated_at": "2025-11-27T08:30:21.249Z",
           "position": 3,
           "description": null,
           "showcase": false,
@@ -10379,114 +10519,6 @@
       ],
       "scheduled_for": "2025-11-27T08:30:00.000Z",
       "scheduled_until": "2025-11-27T17:30:00.000Z"
-    },
-    {
-      "id": "wsnt01wsdq20",
-      "name": "[Global][Data & Analytics ] - Data Platform maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-18T21:58:55.367Z",
-      "updated_at": "2025-11-18T21:58:55.440Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/dxdbgp470qxd",
-      "started_at": "2025-11-18T21:58:55.362Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "954v9jbssb02",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our Data Platform offer. \n\nHere are the details of the maintenance: \n<b>Start time :</b> 01/12/2025 13:00 UTC \n<b>End time :</b> 01/12/2025 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Data Platform infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "wsnt01wsdq20",
-          "created_at": "2025-11-18T21:58:55.437Z",
-          "updated_at": "2025-11-18T21:58:55.437Z",
-          "display_at": "2025-11-18T21:58:55.437Z",
-          "affected_components": [
-            {
-              "code": "1m0dyvn10ht4",
-              "name": "Data & Analytics || Data Platform",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "1m0dyvn10ht4",
-          "name": "Data & Analytics || Data Platform",
-          "status": "operational",
-          "created_at": "2024-04-12T16:07:29.893Z",
-          "updated_at": "2025-11-18T10:37:50.124Z",
-          "position": 29,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-04-12",
-          "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-01T13:00:00.000Z",
-      "scheduled_until": "2025-12-01T16:00:00.000Z"
-    },
-    {
-      "id": "30816d178ltn",
-      "name": "[VA1][Public Cloud] - Registries maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-13T16:09:16.917Z",
-      "updated_at": "2025-11-14T11:07:57.563Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7jy83bz64g59",
-      "started_at": "2025-11-13T16:09:16.998Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "d3pmg81yxjcj",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Managed Private Registry.\n\n<b>Start time :</b> 17/12/2025 09:30 UTC\n<b>End time :</b> 17/12/2025 17:30 UTC\n<b>Service impact :</b> Registries may be unavailable for 10s to 1mn, artifacts (Docker images, Helm chart...) pulling and pushing may be unavailable during this time.\n<b>Service improvement :</b> Following our continuous improvement policy, we are doing a maintenance on our infrastructure\n\nThank you for your understanding.",
-          "incident_id": "30816d178ltn",
-          "created_at": "2025-11-13T16:09:16.998Z",
-          "updated_at": "2025-11-14T11:03:58.027Z",
-          "display_at": "2025-11-13T16:09:16.998Z",
-          "affected_components": [
-            {
-              "code": "4prtfwz0fx5s",
-              "name": "Containers & Orchestration || Managed Private Registry - VA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "4prtfwz0fx5s",
-          "name": "VA",
-          "status": "operational",
-          "created_at": "2024-01-29T14:56:18.701Z",
-          "updated_at": "2025-06-17T17:09:50.455Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-01-29",
-          "group_id": "dbhdvj49c2xr",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-17T09:30:00.000Z",
-      "scheduled_until": "2025-12-17T17:30:00.000Z"
     }
   ],
   "status": {
