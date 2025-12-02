@@ -4,15 +4,15 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-02T15:24:47.669Z"
+    "updated_at": "2025-12-02T16:41:55.827Z"
   },
   "components": [
     {
       "id": "mp4cw2ksr9mb",
       "name": "Registration",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:23.774Z",
-      "updated_at": "2025-11-13T22:09:21.844Z",
+      "updated_at": "2025-12-02T16:19:11.212Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -360,9 +360,9 @@
     {
       "id": "g6wkt1bjr0z1",
       "name": "Renew",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:24.336Z",
-      "updated_at": "2025-11-13T22:09:21.865Z",
+      "updated_at": "2025-12-02T16:19:11.228Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -650,9 +650,9 @@
     {
       "id": "hkf2y6lwrvy2",
       "name": "Transfer",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:25.220Z",
-      "updated_at": "2025-11-13T22:09:21.885Z",
+      "updated_at": "2025-12-02T16:19:11.242Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -1020,9 +1020,9 @@
     {
       "id": "8c2v312097pb",
       "name": "Restore",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-10-28T13:46:53.642Z",
-      "updated_at": "2025-11-13T22:09:21.903Z",
+      "updated_at": "2025-12-02T16:19:11.255Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1253,9 +1253,9 @@
     {
       "id": "51qdhg3rj63z",
       "name": "Delete",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-10-28T13:47:09.469Z",
-      "updated_at": "2025-11-13T22:09:21.922Z",
+      "updated_at": "2025-12-02T16:19:11.268Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2012,7 +2012,7 @@
     {
       "id": "vpdfhtpb0zph",
       "name": "Domains || Domains Name",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:25.813Z",
       "updated_at": "2025-08-13T12:55:51.633Z",
       "position": 14,
@@ -3191,7 +3191,145 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "11js8ngx6dn3",
+      "name": "[GLOBAL][Domains] - Domains Name incident notification on .MS",
+      "status": "identified",
+      "created_at": "2025-12-02T16:19:11.175Z",
+      "updated_at": "2025-12-02T16:20:21.645Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/fj6k95p9klf1",
+      "started_at": "2025-12-02T16:19:11.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "j97hqy8b1mqm",
+          "status": "identified",
+          "body": "We have determined the origin of the incident affecting our .MS Domains offer, customers in the impacted zone are unable to perform some tasks on .MS domains.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 02/12/2025 16:00 UTC\n<b>Impacted Service(s) :</b> Multiple operations (Registration, Renew, Transfer, Restore, Delete) are temporarily unavailable for .MS domains.\n<b>Customers Impact :</b> Customers are temporarily unable to perform specified operations on .MS domains.\n<b>Root Cause :</b> This incident is caused by a maintenance of one of our providers.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.",
+          "incident_id": "11js8ngx6dn3",
+          "created_at": "2025-12-02T16:19:11.314Z",
+          "updated_at": "2025-12-02T16:20:21.570Z",
+          "display_at": "2025-12-02T16:19:11.000Z",
+          "affected_components": [
+            {
+              "code": "mp4cw2ksr9mb",
+              "name": "Domains || Domains Name - Registration",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "g6wkt1bjr0z1",
+              "name": "Domains || Domains Name - Renew",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "hkf2y6lwrvy2",
+              "name": "Domains || Domains Name - Transfer",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "8c2v312097pb",
+              "name": "Domains || Domains Name - Restore",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "51qdhg3rj63z",
+              "name": "Domains || Domains Name - Delete",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mp4cw2ksr9mb",
+          "name": "Registration",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:23.774Z",
+          "updated_at": "2025-12-02T16:19:11.212Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "g6wkt1bjr0z1",
+          "name": "Renew",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:24.336Z",
+          "updated_at": "2025-12-02T16:19:11.228Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "hkf2y6lwrvy2",
+          "name": "Transfer",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:19:25.220Z",
+          "updated_at": "2025-12-02T16:19:11.242Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "8c2v312097pb",
+          "name": "Restore",
+          "status": "partial_outage",
+          "created_at": "2021-10-28T13:46:53.642Z",
+          "updated_at": "2025-12-02T16:19:11.255Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-10-28",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "51qdhg3rj63z",
+          "name": "Delete",
+          "status": "partial_outage",
+          "created_at": "2021-10-28T13:47:09.469Z",
+          "updated_at": "2025-12-02T16:19:11.268Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-10-28",
+          "group_id": "vpdfhtpb0zph",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yczrbvxf8p36",
@@ -3249,7 +3387,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
