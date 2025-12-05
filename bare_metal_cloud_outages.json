@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-05T17:21:00.865Z"
+    "updated_at": "2025-12-05T18:29:05.191Z"
   },
   "components": [
     {
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -2512,9 +2512,9 @@
     {
       "id": "7fq8tsvh76tn",
       "name": "WAW",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:55.369Z",
-      "updated_at": "2025-11-01T08:02:07.274Z",
+      "updated_at": "2025-12-05T18:29:05.128Z",
       "position": 12,
       "description": null,
       "showcase": false,
@@ -5292,10 +5292,84 @@
       ],
       "scheduled_for": "2026-02-10T01:00:00.000Z",
       "scheduled_until": "2026-02-10T05:00:00.000Z"
+    },
+    {
+      "id": "y8sbx4dzn184",
+      "name": "[WAW1][Dedicated Servers] - Rack WAW0107A02B maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-12-05T18:28:50.877Z",
+      "updated_at": "2025-12-05T18:29:05.179Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/bw6c6pscbmx5",
+      "started_at": "2025-12-05T18:28:50.869Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2qr1byrhf9j9",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "y8sbx4dzn184",
+          "created_at": "2025-12-05T18:29:05.176Z",
+          "updated_at": "2025-12-05T18:29:05.176Z",
+          "display_at": "2025-12-05T18:29:05.176Z",
+          "affected_components": [
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p1xpwp75t193",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 05/12/2025 18:20 UTC \n<b>End time :</b> 05/12/2025 20:00 UTC \n<b>Service impact :</b> Private network will be unreachable during the maintenance\n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will a maintenance on multiple eqiuipments in this rack WAW0107A02B.",
+          "incident_id": "y8sbx4dzn184",
+          "created_at": "2025-12-05T18:28:50.946Z",
+          "updated_at": "2025-12-05T18:28:50.946Z",
+          "display_at": "2025-12-05T18:28:50.946Z",
+          "affected_components": [
+            {
+              "code": "7fq8tsvh76tn",
+              "name": "Dedicated Servers || Network - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7fq8tsvh76tn",
+          "name": "WAW",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:55.369Z",
+          "updated_at": "2025-12-05T18:29:05.128Z",
+          "position": 12,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-05T18:30:00.000Z",
+      "scheduled_until": "2025-12-05T21:30:00.000Z"
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
