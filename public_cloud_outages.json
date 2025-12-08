@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-08T08:21:01.618Z"
+    "updated_at": "2025-12-08T10:01:23.260Z"
   },
   "components": [
     {
@@ -160,9 +160,9 @@
     {
       "id": "8x32jhcpqq1m",
       "name": "GRA1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:48.039Z",
-      "updated_at": "2025-12-04T17:26:08.868Z",
+      "updated_at": "2025-12-08T10:01:23.168Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -4615,7 +4615,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2025-11-18T10:37:49.930Z",
       "position": 10,
@@ -9306,6 +9306,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "m711zlktcgvj",
+      "name": "[Compute - Instance] - Event Notification",
+      "status": "investigating",
+      "created_at": "2025-12-08T10:01:23.122Z",
+      "updated_at": "2025-12-08T10:01:23.256Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/byxs59d8b1hc",
+      "started_at": "2025-12-08T10:01:23.113Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "9d3mhqcpmtfh",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Compute - Instance offer.\n\n<b>Start time :</b> 08/12/2025 09:24 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "m711zlktcgvj",
+          "created_at": "2025-12-08T10:01:23.252Z",
+          "updated_at": "2025-12-08T10:01:23.252Z",
+          "display_at": "2025-12-08T10:01:23.252Z",
+          "affected_components": [
+            {
+              "code": "8x32jhcpqq1m",
+              "name": "Compute - Instance || GRA - GRA1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "8x32jhcpqq1m",
+          "name": "GRA1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:35:48.039Z",
+          "updated_at": "2025-12-08T10:01:23.168Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "px4h298thntc",
       "name": "[EU-SOUTH-MIL][Storage] - Object Storage S3 Standard",
