@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-08T13:45:58.003Z"
+    "updated_at": "2025-12-08T15:06:11.805Z"
   },
   "components": [
     {
@@ -285,9 +285,9 @@
     {
       "id": "f8n5w4snbwhg",
       "name": "Web Access",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.384Z",
-      "updated_at": "2025-12-05T03:40:20.137Z",
+      "updated_at": "2025-12-08T15:06:11.742Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1836,7 +1836,7 @@
     {
       "id": "z91pbqw7vzcm",
       "name": "Collaborative solutions || Zimbra",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.357Z",
       "updated_at": "2025-08-13T12:55:51.596Z",
       "position": 11,
@@ -2102,9 +2102,9 @@
     {
       "id": "3v97r17r3wpj",
       "name": "Cluster024",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-06-30T12:19:13.993Z",
-      "updated_at": "2025-12-08T12:08:31.957Z",
+      "updated_at": "2025-12-08T14:15:50.073Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2658,7 +2658,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -3193,6 +3193,132 @@
   ],
   "incidents": [
     {
+      "id": "bkx2sx77z39m",
+      "name": "[EU][Collaborative solutions] - Zimbra incident notification",
+      "status": "investigating",
+      "created_at": "2025-12-08T15:06:11.698Z",
+      "updated_at": "2025-12-08T15:06:11.801Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/3nnvfbct627f",
+      "started_at": "2025-12-08T15:06:11.689Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "h42v6b1rwrf6",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Collaborative solutions offer on the specific EU region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 18/11/2025 14:15 UTC\n<b>Impacted Service(s) :</b> The webmail service is temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access their mailboxes (Zimbra) via webmail. Customers can still access their mails via a heavy client.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "bkx2sx77z39m",
+          "created_at": "2025-12-08T15:06:11.798Z",
+          "updated_at": "2025-12-08T15:06:11.798Z",
+          "display_at": "2025-12-08T15:06:11.798Z",
+          "affected_components": [
+            {
+              "code": "f8n5w4snbwhg",
+              "name": "Collaborative solutions || Zimbra - Web Access",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f8n5w4snbwhg",
+          "name": "Web Access",
+          "status": "partial_outage",
+          "created_at": "2025-02-20T16:36:07.384Z",
+          "updated_at": "2025-12-08T15:06:11.742Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-02-20",
+          "group_id": "z91pbqw7vzcm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "tpcq9n3br9zf",
+      "name": "[GRA][Web Hosting] - Cluster024 incident notification",
+      "status": "monitoring",
+      "created_at": "2025-12-08T12:08:31.920Z",
+      "updated_at": "2025-12-08T14:15:50.142Z",
+      "monitoring_at": "2025-12-08T14:15:50.121Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/w730mwz717cy",
+      "started_at": "2025-12-08T12:08:31.912Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "rb1s6zzp3zwv",
+          "status": "monitoring",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update :</b> Services have been restored. The file server on Web Hosting cluster024 are accessible again.\n<b>Root Cause :</b> This incident is caused by this incident : https://public-cloud.status-ovhcloud.com/incidents/m711zlktcgvj\n<b>Ongoing Actions :</b> The incident has been identified and corrected. It is being closely monitored to ensure long-term stability.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tpcq9n3br9zf",
+          "created_at": "2025-12-08T14:15:50.121Z",
+          "updated_at": "2025-12-08T14:15:50.121Z",
+          "display_at": "2025-12-08T14:15:50.121Z",
+          "affected_components": [
+            {
+              "code": "3v97r17r3wpj",
+              "name": "Web Hosting || Datacenter GRA - Cluster024",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "fxxzvf9v0x4m",
+          "status": "investigating",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Web Hosting offer on the specific Cluster024.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 08/12/2025 09:40 UTC\n<b>Impacted Service(s) :</b> Some file server are unreachable on Web Hosting cluster024.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their websites hosted on Cluster024.\n<b>Root Cause :</b> This incident is caused by this incident : https://public-cloud.status-ovhcloud.com/incidents/m711zlktcgvj\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "tpcq9n3br9zf",
+          "created_at": "2025-12-08T12:08:32.114Z",
+          "updated_at": "2025-12-08T12:08:32.114Z",
+          "display_at": "2025-12-08T12:08:32.114Z",
+          "affected_components": [
+            {
+              "code": "3v97r17r3wpj",
+              "name": "Web Hosting || Datacenter GRA - Cluster024",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3v97r17r3wpj",
+          "name": "Cluster024",
+          "status": "operational",
+          "created_at": "2021-06-30T12:19:13.993Z",
+          "updated_at": "2025-12-08T14:15:50.073Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "sbvm05ckms2k",
       "name": "[GRA][Web-Databases] - Web Cloud Databases incident notification",
       "status": "monitoring",
@@ -3384,59 +3510,6 @@
       "reminder_intervals": null
     },
     {
-      "id": "tpcq9n3br9zf",
-      "name": "[GRA][Web Hosting] - Cluster024 incident notification",
-      "status": "investigating",
-      "created_at": "2025-12-08T12:08:31.920Z",
-      "updated_at": "2025-12-08T12:13:09.817Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/w730mwz717cy",
-      "started_at": "2025-12-08T12:08:31.912Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "fxxzvf9v0x4m",
-          "status": "investigating",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Web Hosting offer on the specific Cluster024.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 08/12/2025 09:40 UTC\n<b>Impacted Service(s) :</b> Some file server are unreachable on Web Hosting cluster024.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their websites hosted on Cluster024.\n<b>Root Cause :</b> This incident is caused by this incident : https://public-cloud.status-ovhcloud.com/incidents/m711zlktcgvj\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
-          "incident_id": "tpcq9n3br9zf",
-          "created_at": "2025-12-08T12:08:32.114Z",
-          "updated_at": "2025-12-08T12:08:32.114Z",
-          "display_at": "2025-12-08T12:08:32.114Z",
-          "affected_components": [
-            {
-              "code": "3v97r17r3wpj",
-              "name": "Web Hosting || Datacenter GRA - Cluster024",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "3v97r17r3wpj",
-          "name": "Cluster024",
-          "status": "partial_outage",
-          "created_at": "2021-06-30T12:19:13.993Z",
-          "updated_at": "2025-12-08T12:08:31.957Z",
-          "position": 16,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-06-29",
-          "group_id": "2fkfhxvh1l1w",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
       "id": "11js8ngx6dn3",
       "name": "[GLOBAL][Domains] - Domains Name incident notification on .MS",
       "status": "identified",
@@ -3613,9 +3686,9 @@
         {
           "id": "f8n5w4snbwhg",
           "name": "Web Access",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2025-02-20T16:36:07.384Z",
-          "updated_at": "2025-12-05T03:40:20.137Z",
+          "updated_at": "2025-12-08T15:06:11.742Z",
           "position": 1,
           "description": null,
           "showcase": false,
