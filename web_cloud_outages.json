@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-09T21:20:33.793Z"
+    "updated_at": "2025-12-09T22:58:17.377Z"
   },
   "components": [
     {
@@ -285,9 +285,9 @@
     {
       "id": "f8n5w4snbwhg",
       "name": "Web Access",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2025-02-20T16:36:07.384Z",
-      "updated_at": "2025-12-09T21:00:21.573Z",
+      "updated_at": "2025-12-09T22:15:50.789Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1836,7 +1836,7 @@
     {
       "id": "z91pbqw7vzcm",
       "name": "Collaborative solutions || Zimbra",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2025-02-20T16:36:07.357Z",
       "updated_at": "2025-08-13T12:55:51.596Z",
       "position": 11,
@@ -2658,7 +2658,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -3073,9 +3073,9 @@
     {
       "id": "n3cd3qcq4d47",
       "name": "Cluster123",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-10-13T08:25:59.463Z",
-      "updated_at": "2025-12-09T13:28:01.544Z",
+      "updated_at": "2025-12-09T22:58:17.318Z",
       "position": 39,
       "description": null,
       "showcase": false,
@@ -3192,6 +3192,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "1h71ms9rhntk",
+      "name": "[GRA][Web Hosting] - Cluster123 Filerz143 incident notification",
+      "status": "identified",
+      "created_at": "2025-12-09T22:58:17.285Z",
+      "updated_at": "2025-12-09T22:58:17.374Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/5c8zkzvf1fn6",
+      "started_at": "2025-12-09T22:58:17.278Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "t7h2xb4gz7t6",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Web Hosting offer on the specific GRA region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 09/12/2025 22:26 UTC\n<b>Impacted Service(s) :</b> Cluster123 filerz143 are temporarily unavailable.\n<b>Customers Impact :</b> Websites for customers served by cluster123 filerz143 are temporarily unavailable.\n<b>Root Cause :</b> This incident is caused by a hardware issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1h71ms9rhntk",
+          "created_at": "2025-12-09T22:58:17.372Z",
+          "updated_at": "2025-12-09T22:58:17.372Z",
+          "display_at": "2025-12-09T22:58:17.372Z",
+          "affected_components": [
+            {
+              "code": "n3cd3qcq4d47",
+              "name": "Web Hosting || Datacenter GRA - Cluster123",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3cd3qcq4d47",
+          "name": "Cluster123",
+          "status": "partial_outage",
+          "created_at": "2025-10-13T08:25:59.463Z",
+          "updated_at": "2025-12-09T22:58:17.318Z",
+          "position": 39,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-10-13",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "zt5ln52phrrp",
       "name": "[GLOBAL][OverTheBox] - OverTheBox incident notification",
@@ -3354,93 +3407,6 @@
       ],
       "scheduled_for": "2025-12-15T21:00:00.000Z",
       "scheduled_until": "2026-02-17T22:00:00.000Z"
-    },
-    {
-      "id": "dlc8dh4l2rhw",
-      "name": "[GLOBAL][Collaborative solutions] - Zimbra maintenance notification",
-      "status": "in_progress",
-      "created_at": "2025-12-09T09:25:29.238Z",
-      "updated_at": "2025-12-09T21:00:21.748Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/7vvlw1ryj7zc",
-      "started_at": "2025-12-09T09:25:29.231Z",
-      "page_id": "gw3vvyn2b3bh",
-      "incident_updates": [
-        {
-          "id": "cptm004d2dn1",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "dlc8dh4l2rhw",
-          "created_at": "2025-12-09T21:00:21.741Z",
-          "updated_at": "2025-12-09T21:00:21.741Z",
-          "display_at": "2025-12-09T21:00:21.741Z",
-          "affected_components": [
-            {
-              "code": "f8n5w4snbwhg",
-              "name": "Collaborative solutions || Zimbra - Web Access",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zk4m3ffqyszq",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "dlc8dh4l2rhw",
-          "created_at": "2025-12-09T20:00:29.625Z",
-          "updated_at": "2025-12-09T20:00:29.625Z",
-          "display_at": "2025-12-09T20:00:29.625Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0cd655lyplf5",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Zimbra offer.\n\n<b>Start time :</b> 09/12/2025 21:00 UTC\n<b>End time :</b> 09/12/2025 23:00 UTC\n<b>Service impact :</b> Zimbra mailbox will be temporarily inaccessible during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Zimbra offer.\n\nThank you for your understanding.",
-          "incident_id": "dlc8dh4l2rhw",
-          "created_at": "2025-12-09T09:25:29.286Z",
-          "updated_at": "2025-12-09T09:25:29.286Z",
-          "display_at": "2025-12-09T09:25:29.286Z",
-          "affected_components": [
-            {
-              "code": "f8n5w4snbwhg",
-              "name": "Collaborative solutions || Zimbra - Web Access",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "f8n5w4snbwhg",
-          "name": "Web Access",
-          "status": "under_maintenance",
-          "created_at": "2025-02-20T16:36:07.384Z",
-          "updated_at": "2025-12-09T21:00:21.573Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-02-20",
-          "group_id": "z91pbqw7vzcm",
-          "page_id": "gw3vvyn2b3bh",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-09T21:00:00.000Z",
-      "scheduled_until": "2025-12-09T23:00:00.000Z"
     },
     {
       "id": "x6nrtc5ypkng",
