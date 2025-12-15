@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-15T07:00:31.998Z"
+    "updated_at": "2025-12-15T08:01:29.385Z"
   },
   "components": [
     {
@@ -2643,9 +2643,9 @@
     {
       "id": "2f7vd120ygt3",
       "name": "GRA5",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:35:56.233Z",
-      "updated_at": "2025-12-10T20:08:43.169Z",
+      "updated_at": "2025-12-15T08:01:29.287Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -4615,7 +4615,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2025-11-18T10:37:49.930Z",
       "position": 10,
@@ -5806,9 +5806,9 @@
     {
       "id": "n48k35drw70n",
       "name": "GRA5",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:21.519Z",
-      "updated_at": "2025-11-25T15:11:33.141Z",
+      "updated_at": "2025-12-15T08:01:29.309Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -6932,9 +6932,9 @@
     {
       "id": "rk41j13qvbpc",
       "name": "RBX-A",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2025-06-02T15:48:06.811Z",
-      "updated_at": "2025-11-24T15:00:29.254Z",
+      "updated_at": "2025-12-15T08:00:21.243Z",
       "position": 20,
       "description": null,
       "showcase": false,
@@ -7163,9 +7163,9 @@
     {
       "id": "w520v751hcrn",
       "name": "SBG5",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2022-04-06T09:37:04.775Z",
-      "updated_at": "2025-11-24T15:00:29.273Z",
+      "updated_at": "2025-12-15T08:00:21.322Z",
       "position": 22,
       "description": null,
       "showcase": false,
@@ -9045,7 +9045,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2025-11-18T10:37:50.394Z",
       "position": 55,
@@ -9306,6 +9306,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "jxnky4q3bgt3",
+      "name": "[GRA5][Storage] - Block storage/Compute latency incident notification",
+      "status": "investigating",
+      "created_at": "2025-12-15T08:01:29.241Z",
+      "updated_at": "2025-12-15T08:01:29.382Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/8w2wrgdxx88w",
+      "started_at": "2025-12-15T08:01:29.228Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "gnv2qn9tjy36",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Storage and Compute offering, which is causing temporary latency issue in the GRA5 region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 15/12/2025 07:52 UTC\n<b>Impacted Service(s) :</b> Block storage/Compute experiences latency for some customers.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "jxnky4q3bgt3",
+          "created_at": "2025-12-15T08:01:29.379Z",
+          "updated_at": "2025-12-15T08:01:29.379Z",
+          "display_at": "2025-12-15T08:01:29.379Z",
+          "affected_components": [
+            {
+              "code": "2f7vd120ygt3",
+              "name": "Compute - Instance || GRA - GRA5",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "n48k35drw70n",
+              "name": "Storage || Block storage - GRA5",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2f7vd120ygt3",
+          "name": "GRA5",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:35:56.233Z",
+          "updated_at": "2025-12-15T08:01:29.287Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "xfnf56jsxk5y",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "n48k35drw70n",
+          "name": "GRA5",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:37:21.519Z",
+          "updated_at": "2025-12-15T08:01:29.309Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "flxfxxzmlpkx",
       "name": "[RBX-ARCHIVE][Storage] - Cold Archive incident notification",
@@ -10254,94 +10328,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "swzby33k5l39",
-      "name": "[RBX-A/SBG5][Storage] - Block storage maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-12-10T18:12:32.883Z",
-      "updated_at": "2025-12-15T07:00:31.880Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0pqqpvgwklhn",
-      "started_at": "2025-12-10T18:12:32.873Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "bvyw7rmj8hxz",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "swzby33k5l39",
-          "created_at": "2025-12-15T07:00:30.992Z",
-          "updated_at": "2025-12-15T07:00:30.992Z",
-          "display_at": "2025-12-15T07:00:30.992Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3wnj91mps9p4",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in RBX-A and SBG5 regions.\n\n<b>Start time :</b> 15/12/2025 08:00 UTC\n<b>End time :</b> 15/12/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
-          "incident_id": "swzby33k5l39",
-          "created_at": "2025-12-10T18:12:32.959Z",
-          "updated_at": "2025-12-10T18:12:32.959Z",
-          "display_at": "2025-12-10T18:12:32.959Z",
-          "affected_components": [
-            {
-              "code": "rk41j13qvbpc",
-              "name": "Storage || Block storage - RBX-A",
-              "old_status": "operational",
-              "new_status": "operational"
-            },
-            {
-              "code": "w520v751hcrn",
-              "name": "Storage || Block storage - SBG5",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rk41j13qvbpc",
-          "name": "RBX-A",
-          "status": "operational",
-          "created_at": "2025-06-02T15:48:06.811Z",
-          "updated_at": "2025-11-24T15:00:29.254Z",
-          "position": 20,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-06-02",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        },
-        {
-          "id": "w520v751hcrn",
-          "name": "SBG5",
-          "status": "operational",
-          "created_at": "2022-04-06T09:37:04.775Z",
-          "updated_at": "2025-11-24T15:00:29.273Z",
-          "position": 22,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-15T08:00:00.000Z",
-      "scheduled_until": "2025-12-15T15:00:00.000Z"
-    },
-    {
       "id": "52xck273s4xg",
       "name": "[EU-WEST-PAR][Compute - Instance] - Infrastructure maintenance notification",
       "status": "scheduled",
@@ -10598,6 +10584,120 @@
       ],
       "scheduled_for": "2025-12-22T09:02:00.000Z",
       "scheduled_until": "2025-12-22T12:02:00.000Z"
+    },
+    {
+      "id": "swzby33k5l39",
+      "name": "[RBX-A/SBG5][Storage] - Block storage maintenance notification",
+      "status": "in_progress",
+      "created_at": "2025-12-10T18:12:32.883Z",
+      "updated_at": "2025-12-15T08:00:21.616Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0pqqpvgwklhn",
+      "started_at": "2025-12-10T18:12:32.873Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "yxc9xzyqd8n6",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "swzby33k5l39",
+          "created_at": "2025-12-15T08:00:21.605Z",
+          "updated_at": "2025-12-15T08:00:21.605Z",
+          "display_at": "2025-12-15T08:00:21.605Z",
+          "affected_components": [
+            {
+              "code": "rk41j13qvbpc",
+              "name": "Storage || Block storage - RBX-A",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            },
+            {
+              "code": "w520v751hcrn",
+              "name": "Storage || Block storage - SBG5",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bvyw7rmj8hxz",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "swzby33k5l39",
+          "created_at": "2025-12-15T07:00:30.992Z",
+          "updated_at": "2025-12-15T07:00:30.992Z",
+          "display_at": "2025-12-15T07:00:30.992Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3wnj91mps9p4",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in RBX-A and SBG5 regions.\n\n<b>Start time :</b> 15/12/2025 08:00 UTC\n<b>End time :</b> 15/12/2025 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
+          "incident_id": "swzby33k5l39",
+          "created_at": "2025-12-10T18:12:32.959Z",
+          "updated_at": "2025-12-10T18:12:32.959Z",
+          "display_at": "2025-12-10T18:12:32.959Z",
+          "affected_components": [
+            {
+              "code": "rk41j13qvbpc",
+              "name": "Storage || Block storage - RBX-A",
+              "old_status": "operational",
+              "new_status": "operational"
+            },
+            {
+              "code": "w520v751hcrn",
+              "name": "Storage || Block storage - SBG5",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rk41j13qvbpc",
+          "name": "RBX-A",
+          "status": "under_maintenance",
+          "created_at": "2025-06-02T15:48:06.811Z",
+          "updated_at": "2025-12-15T08:00:21.243Z",
+          "position": 20,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-06-02",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "w520v751hcrn",
+          "name": "SBG5",
+          "status": "under_maintenance",
+          "created_at": "2022-04-06T09:37:04.775Z",
+          "updated_at": "2025-12-15T08:00:21.322Z",
+          "position": 22,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-15T08:00:00.000Z",
+      "scheduled_until": "2025-12-15T15:00:00.000Z"
     }
   ],
   "status": {
