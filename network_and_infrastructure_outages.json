@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-17T11:00:26.111Z"
+    "updated_at": "2025-12-17T12:00:25.042Z"
   },
   "components": [
     {
@@ -540,7 +540,7 @@
     {
       "id": "p5hsr9gwdmns",
       "name": "Infrastructure || BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:32.796Z",
       "updated_at": "2024-11-13T16:53:55.682Z",
       "position": 4,
@@ -688,9 +688,9 @@
     {
       "id": "33xy09j449pk",
       "name": "BHS6",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:30.507Z",
-      "updated_at": "2025-12-16T21:17:07.958Z",
+      "updated_at": "2025-12-17T12:00:23.805Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -774,9 +774,9 @@
     {
       "id": "v0kyk7zsjqvd",
       "name": "BHS7",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:31.279Z",
-      "updated_at": "2025-12-16T00:55:56.906Z",
+      "updated_at": "2025-12-17T12:00:22.046Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -845,9 +845,9 @@
     {
       "id": "m4pzrlrxvvgt",
       "name": "BHS8",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-11-10T14:20:32.046Z",
-      "updated_at": "2025-12-16T21:18:04.709Z",
+      "updated_at": "2025-12-17T12:00:21.535Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -1135,45 +1135,32 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "v254p21vqgv5",
-      "name": "[BHS6][Cooling System] - Rack T06A35",
+      "id": "8qhym1x31w1v",
+      "name": "[PAR][Backbone] - Backbone maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-11-21T16:10:28.378Z",
-      "updated_at": "2025-12-17T11:00:25.491Z",
+      "created_at": "2025-12-09T23:17:34.649Z",
+      "updated_at": "2025-12-09T23:17:34.698Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/v79ctsplh48b",
-      "started_at": "2025-11-21T16:10:28.371Z",
+      "shortlink": "https://stspg.io/ps665mgz11g9",
+      "started_at": "2025-12-09T23:17:34.644Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "dls2zdssjcb9",
+          "id": "t9y4ncq0qlcg",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "v254p21vqgv5",
-          "created_at": "2025-12-17T11:00:25.337Z",
-          "updated_at": "2025-12-17T11:00:25.337Z",
-          "display_at": "2025-12-17T11:00:25.337Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w7kw5qvwctcx",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "v254p21vqgv5",
-          "created_at": "2025-11-21T16:10:28.423Z",
-          "updated_at": "2025-11-21T16:10:28.423Z",
-          "display_at": "2025-11-21T16:10:28.423Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backbone offer.\n\n<b>Start time: </b> 17/12/2025 21:00 UTC\n<b>End time: </b> 18/12/2025 03:00 UTC\n<b>Service impact: </b> None\n<b>Service improvement: </b> As part of our continuous improvement policy, we will be doing a maintenance on multiple network equipment located in Paris.\n\nThank you for your understanding.",
+          "incident_id": "8qhym1x31w1v",
+          "created_at": "2025-12-09T23:17:34.696Z",
+          "updated_at": "2025-12-09T23:17:34.696Z",
+          "display_at": "2025-12-09T23:17:34.696Z",
           "affected_components": [
             {
-              "code": "33xy09j449pk",
-              "name": "Infrastructure || BHS - BHS6",
-              "old_status": "operational",
-              "new_status": "operational"
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -1183,157 +1170,23 @@
       ],
       "components": [
         {
-          "id": "33xy09j449pk",
-          "name": "BHS6",
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
           "status": "operational",
-          "created_at": "2021-11-10T14:20:30.507Z",
-          "updated_at": "2025-12-16T21:17:07.958Z",
-          "position": 6,
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2025-12-16T10:27:36.472Z",
+          "position": 1,
           "description": null,
           "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
+          "start_date": "2022-05-20",
+          "group_id": null,
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2025-12-17T12:00:00.000Z",
-      "scheduled_until": "2025-12-17T20:30:00.000Z"
-    },
-    {
-      "id": "xr1mn24400bl",
-      "name": "[BHS8][Cooling System] - Rack BHS0814B04A",
-      "status": "scheduled",
-      "created_at": "2025-11-21T16:08:59.875Z",
-      "updated_at": "2025-12-17T11:00:26.101Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/hyhfbj2d1qt1",
-      "started_at": "2025-11-21T16:08:59.867Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "kh86jtxhh330",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "xr1mn24400bl",
-          "created_at": "2025-12-17T11:00:25.972Z",
-          "updated_at": "2025-12-17T11:00:25.972Z",
-          "display_at": "2025-12-17T11:00:25.972Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "w5cdbh8h2kt2",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "xr1mn24400bl",
-          "created_at": "2025-11-21T16:08:59.931Z",
-          "updated_at": "2025-11-21T16:08:59.931Z",
-          "display_at": "2025-11-21T16:08:59.931Z",
-          "affected_components": [
-            {
-              "code": "m4pzrlrxvvgt",
-              "name": "Infrastructure || BHS - BHS8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "m4pzrlrxvvgt",
-          "name": "BHS8",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2025-12-16T21:18:04.709Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-17T12:00:00.000Z",
-      "scheduled_until": "2025-12-17T20:30:00.000Z"
-    },
-    {
-      "id": "8cq9c5d849xl",
-      "name": "[BHS7][Cooling System] - Rack B717A04",
-      "status": "scheduled",
-      "created_at": "2025-11-21T13:35:56.511Z",
-      "updated_at": "2025-12-17T11:00:24.599Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/t523k56v6g6s",
-      "started_at": "2025-11-21T13:35:56.502Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "27q4xb54hgr7",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "8cq9c5d849xl",
-          "created_at": "2025-12-17T11:00:24.432Z",
-          "updated_at": "2025-12-17T11:00:24.432Z",
-          "display_at": "2025-12-17T11:00:24.432Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "t81msgng44hx",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "8cq9c5d849xl",
-          "created_at": "2025-11-21T13:35:56.607Z",
-          "updated_at": "2025-11-21T13:35:56.607Z",
-          "display_at": "2025-11-21T13:35:56.607Z",
-          "affected_components": [
-            {
-              "code": "v0kyk7zsjqvd",
-              "name": "Infrastructure || BHS - BHS7",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "v0kyk7zsjqvd",
-          "name": "BHS7",
-          "status": "operational",
-          "created_at": "2021-11-10T14:20:31.279Z",
-          "updated_at": "2025-12-16T00:55:56.906Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "p5hsr9gwdmns",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-17T12:00:00.000Z",
-      "scheduled_until": "2025-12-17T20:30:00.000Z"
+      "scheduled_for": "2025-12-17T21:00:00.000Z",
+      "scheduled_until": "2025-12-18T03:00:00.000Z"
     },
     {
       "id": "jv9qdgqsqnvj",
@@ -1388,60 +1241,6 @@
       ],
       "scheduled_for": "2025-12-17T21:00:00.000Z",
       "scheduled_until": "2025-12-18T12:00:00.000Z"
-    },
-    {
-      "id": "8qhym1x31w1v",
-      "name": "[PAR][Backbone] - Backbone maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-12-09T23:17:34.649Z",
-      "updated_at": "2025-12-09T23:17:34.698Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/ps665mgz11g9",
-      "started_at": "2025-12-09T23:17:34.644Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "t9y4ncq0qlcg",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backbone offer.\n\n<b>Start time: </b> 17/12/2025 21:00 UTC\n<b>End time: </b> 18/12/2025 03:00 UTC\n<b>Service impact: </b> None\n<b>Service improvement: </b> As part of our continuous improvement policy, we will be doing a maintenance on multiple network equipment located in Paris.\n\nThank you for your understanding.",
-          "incident_id": "8qhym1x31w1v",
-          "created_at": "2025-12-09T23:17:34.696Z",
-          "updated_at": "2025-12-09T23:17:34.696Z",
-          "display_at": "2025-12-09T23:17:34.696Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "degraded_performance",
-              "new_status": "degraded_performance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "operational",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2025-12-16T10:27:36.472Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-17T21:00:00.000Z",
-      "scheduled_until": "2025-12-18T03:00:00.000Z"
     },
     {
       "id": "1r7lmqx1x24n",
@@ -1660,30 +1459,30 @@
       "scheduled_until": "2025-12-18T16:00:00.000Z"
     },
     {
-      "id": "p1h6dc7yfv7m",
-      "name": "[GRA3][Cooling System] - Rack GRA0316B05C maintenance notification",
+      "id": "l2c1w3l4y80g",
+      "name": "[ERI1][Cooling System] - Rack ERI0113A01B",
       "status": "scheduled",
-      "created_at": "2025-11-27T00:46:46.031Z",
-      "updated_at": "2025-11-27T01:42:45.134Z",
+      "created_at": "2025-11-25T23:29:32.270Z",
+      "updated_at": "2025-11-25T23:29:32.326Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/rg2pm2w0r2y8",
-      "started_at": "2025-11-27T00:46:46.023Z",
+      "shortlink": "https://stspg.io/p3lhx7fscc3j",
+      "started_at": "2025-11-25T23:29:32.261Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "5blds8827m1m",
+          "id": "dv5jjzc6zrj1",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 15:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "p1h6dc7yfv7m",
-          "created_at": "2025-11-27T00:46:46.085Z",
-          "updated_at": "2025-11-27T01:42:38.592Z",
-          "display_at": "2025-11-27T00:46:46.085Z",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. \nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "l2c1w3l4y80g",
+          "created_at": "2025-11-25T23:29:32.323Z",
+          "updated_at": "2025-11-25T23:29:32.323Z",
+          "display_at": "2025-11-25T23:29:32.323Z",
           "affected_components": [
             {
-              "code": "mlw1x23q8nrt",
-              "name": "Infrastructure || GRA - GRA3",
+              "code": "l38v4l1b1vt8",
+              "name": "Infrastructure || ERI - ERI1",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             }
@@ -1695,23 +1494,23 @@
       ],
       "components": [
         {
-          "id": "mlw1x23q8nrt",
-          "name": "GRA3",
+          "id": "l38v4l1b1vt8",
+          "name": "ERI1",
           "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:39.377Z",
-          "updated_at": "2025-12-17T07:01:21.110Z",
-          "position": 3,
+          "created_at": "2021-11-10T14:20:45.650Z",
+          "updated_at": "2025-12-17T07:00:21.111Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "cxhdwyc4lvgf",
+          "group_id": "sdpm85zsx4w3",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
       "scheduled_for": "2025-12-18T07:00:00.000Z",
-      "scheduled_until": "2025-12-18T15:00:00.000Z"
+      "scheduled_until": "2025-12-18T17:00:00.000Z"
     },
     {
       "id": "sx873bb90zm0",
@@ -1768,30 +1567,30 @@
       "scheduled_until": "2025-12-18T15:00:00.000Z"
     },
     {
-      "id": "l2c1w3l4y80g",
-      "name": "[ERI1][Cooling System] - Rack ERI0113A01B",
+      "id": "p1h6dc7yfv7m",
+      "name": "[GRA3][Cooling System] - Rack GRA0316B05C maintenance notification",
       "status": "scheduled",
-      "created_at": "2025-11-25T23:29:32.270Z",
-      "updated_at": "2025-11-25T23:29:32.326Z",
+      "created_at": "2025-11-27T00:46:46.031Z",
+      "updated_at": "2025-11-27T01:42:45.134Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/p3lhx7fscc3j",
-      "started_at": "2025-11-25T23:29:32.261Z",
+      "shortlink": "https://stspg.io/rg2pm2w0r2y8",
+      "started_at": "2025-11-27T00:46:46.023Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "dv5jjzc6zrj1",
+          "id": "5blds8827m1m",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. \nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "l2c1w3l4y80g",
-          "created_at": "2025-11-25T23:29:32.323Z",
-          "updated_at": "2025-11-25T23:29:32.323Z",
-          "display_at": "2025-11-25T23:29:32.323Z",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 15:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "p1h6dc7yfv7m",
+          "created_at": "2025-11-27T00:46:46.085Z",
+          "updated_at": "2025-11-27T01:42:38.592Z",
+          "display_at": "2025-11-27T00:46:46.085Z",
           "affected_components": [
             {
-              "code": "l38v4l1b1vt8",
-              "name": "Infrastructure || ERI - ERI1",
+              "code": "mlw1x23q8nrt",
+              "name": "Infrastructure || GRA - GRA3",
               "old_status": "under_maintenance",
               "new_status": "under_maintenance"
             }
@@ -1803,77 +1602,23 @@
       ],
       "components": [
         {
-          "id": "l38v4l1b1vt8",
-          "name": "ERI1",
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
           "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2025-12-17T07:00:21.111Z",
-          "position": 1,
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2025-12-17T07:01:21.110Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-11-10",
-          "group_id": "sdpm85zsx4w3",
+          "group_id": "cxhdwyc4lvgf",
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
       "scheduled_for": "2025-12-18T07:00:00.000Z",
-      "scheduled_until": "2025-12-18T17:00:00.000Z"
-    },
-    {
-      "id": "j79b9mz77g6h",
-      "name": "[ERI1][Cooling System] - Rack ERI0113B01B maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-11-28T09:42:09.753Z",
-      "updated_at": "2025-11-28T09:42:09.808Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/tjsf88041pqn",
-      "started_at": "2025-11-28T09:42:09.746Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "kg259gbp0nll",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. \nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "j79b9mz77g6h",
-          "created_at": "2025-11-28T09:42:09.805Z",
-          "updated_at": "2025-11-28T09:42:09.805Z",
-          "display_at": "2025-11-28T09:42:09.805Z",
-          "affected_components": [
-            {
-              "code": "l38v4l1b1vt8",
-              "name": "Infrastructure || ERI - ERI1",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "l38v4l1b1vt8",
-          "name": "ERI1",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2025-12-17T07:00:21.111Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "sdpm85zsx4w3",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-18T07:00:00.000Z",
-      "scheduled_until": "2025-12-18T17:00:00.000Z"
+      "scheduled_until": "2025-12-18T15:00:00.000Z"
     },
     {
       "id": "tdmc227g3vml",
@@ -1928,6 +1673,60 @@
       ],
       "scheduled_for": "2025-12-18T07:00:00.000Z",
       "scheduled_until": "2025-12-18T15:00:00.000Z"
+    },
+    {
+      "id": "j79b9mz77g6h",
+      "name": "[ERI1][Cooling System] - Rack ERI0113B01B maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-28T09:42:09.753Z",
+      "updated_at": "2025-11-28T09:42:09.808Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tjsf88041pqn",
+      "started_at": "2025-11-28T09:42:09.746Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "kg259gbp0nll",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 18/12/2025 07:00 UTC\n<b>End time :</b> 18/12/2025 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. \nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "j79b9mz77g6h",
+          "created_at": "2025-11-28T09:42:09.805Z",
+          "updated_at": "2025-11-28T09:42:09.805Z",
+          "display_at": "2025-11-28T09:42:09.805Z",
+          "affected_components": [
+            {
+              "code": "l38v4l1b1vt8",
+              "name": "Infrastructure || ERI - ERI1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "l38v4l1b1vt8",
+          "name": "ERI1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:45.650Z",
+          "updated_at": "2025-12-17T07:00:21.111Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "sdpm85zsx4w3",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-18T07:00:00.000Z",
+      "scheduled_until": "2025-12-18T17:00:00.000Z"
     },
     {
       "id": "4r8cnbj6xl8g",
@@ -2021,9 +1820,9 @@
         {
           "id": "m4pzrlrxvvgt",
           "name": "BHS8",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:32.046Z",
-          "updated_at": "2025-12-16T21:18:04.709Z",
+          "updated_at": "2025-12-17T12:00:21.535Z",
           "position": 8,
           "description": null,
           "showcase": false,
@@ -2075,9 +1874,9 @@
         {
           "id": "v0kyk7zsjqvd",
           "name": "BHS7",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:31.279Z",
-          "updated_at": "2025-12-16T00:55:56.906Z",
+          "updated_at": "2025-12-17T12:00:22.046Z",
           "position": 7,
           "description": null,
           "showcase": false,
@@ -2129,9 +1928,9 @@
         {
           "id": "33xy09j449pk",
           "name": "BHS6",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-11-10T14:20:30.507Z",
-          "updated_at": "2025-12-16T21:17:07.958Z",
+          "updated_at": "2025-12-17T12:00:23.805Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2470,6 +2269,60 @@
       "scheduled_until": "2025-12-20T16:00:00.000Z"
     },
     {
+      "id": "9gz36tqftl5m",
+      "name": "[RBX8][Cooling System] - Rack R820L19 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-12-08T19:06:48.834Z",
+      "updated_at": "2025-12-08T19:06:48.888Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/0ybwr0gwzfsf",
+      "started_at": "2025-12-08T19:06:48.827Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "rhplh5pgkk5c",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 22/12/2025 05:00 UTC\n<b>End time :</b> 22/12/2025 16:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "9gz36tqftl5m",
+          "created_at": "2025-12-08T19:06:48.885Z",
+          "updated_at": "2025-12-08T19:06:48.885Z",
+          "display_at": "2025-12-08T19:06:48.885Z",
+          "affected_components": [
+            {
+              "code": "lpwtkmwp5rr2",
+              "name": "Infrastructure || RBX - RBX8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lpwtkmwp5rr2",
+          "name": "RBX8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:20.804Z",
+          "updated_at": "2025-12-17T05:00:21.101Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "zllgrccdn4nk",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-22T05:00:00.000Z",
+      "scheduled_until": "2025-12-22T16:00:00.000Z"
+    },
+    {
       "id": "brtk4vdkx2t5",
       "name": "[RBX8][Cooling System] - Rack R820L16 maintenance notification",
       "status": "scheduled",
@@ -2544,60 +2397,6 @@
           "created_at": "2025-12-08T19:08:30.952Z",
           "updated_at": "2025-12-08T19:08:30.952Z",
           "display_at": "2025-12-08T19:08:30.952Z",
-          "affected_components": [
-            {
-              "code": "lpwtkmwp5rr2",
-              "name": "Infrastructure || RBX - RBX8",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "lpwtkmwp5rr2",
-          "name": "RBX8",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:20.804Z",
-          "updated_at": "2025-12-17T05:00:21.101Z",
-          "position": 8,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "zllgrccdn4nk",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-22T05:00:00.000Z",
-      "scheduled_until": "2025-12-22T16:00:00.000Z"
-    },
-    {
-      "id": "9gz36tqftl5m",
-      "name": "[RBX8][Cooling System] - Rack R820L19 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2025-12-08T19:06:48.834Z",
-      "updated_at": "2025-12-08T19:06:48.888Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/0ybwr0gwzfsf",
-      "started_at": "2025-12-08T19:06:48.827Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "rhplh5pgkk5c",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 22/12/2025 05:00 UTC\n<b>End time :</b> 22/12/2025 16:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "9gz36tqftl5m",
-          "created_at": "2025-12-08T19:06:48.885Z",
-          "updated_at": "2025-12-08T19:06:48.885Z",
-          "display_at": "2025-12-08T19:06:48.885Z",
           "affected_components": [
             {
               "code": "lpwtkmwp5rr2",
@@ -3874,6 +3673,429 @@
       "scheduled_until": "2026-01-05T14:00:00.000Z"
     },
     {
+      "id": "n53gxvjl4b5f",
+      "name": "[ERI1][Cooling System] - Rack ERI0113A01C maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-27T01:00:37.677Z",
+      "updated_at": "2025-11-27T01:43:20.420Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/d4z7rgqfs7hq",
+      "started_at": "2025-11-27T01:00:37.670Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "jdrx63gkr5bd",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 05/01/2026 07:00 UTC\n<b>End time :</b> 05/01/2026 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "n53gxvjl4b5f",
+          "created_at": "2025-11-27T01:00:37.723Z",
+          "updated_at": "2025-11-27T01:43:20.414Z",
+          "display_at": "2025-11-27T01:00:37.723Z",
+          "affected_components": [
+            {
+              "code": "mlw1x23q8nrt",
+              "name": "Infrastructure || GRA - GRA3",
+              "old_status": "under_maintenance",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "mlw1x23q8nrt",
+          "name": "GRA3",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:39.377Z",
+          "updated_at": "2025-12-17T07:01:21.110Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "cxhdwyc4lvgf",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-05T07:00:00.000Z",
+      "scheduled_until": "2026-01-05T17:00:00.000Z"
+    },
+    {
+      "id": "226p8x51qr3b",
+      "name": "[ERI1][Cooling System] - Rack ERI0113A01C maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-11-27T01:02:36.087Z",
+      "updated_at": "2025-11-27T05:12:21.517Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jfh5x2ghwspd",
+      "started_at": "2025-11-27T01:02:36.078Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "1rc17tb8pn1q",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, a maintenance is scheduled on our cooling infrastructure. \n\n<b>Start time :</b> 05/01/2026 07:00 UTC\n<b>End time :</b> 05/01/2026 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "226p8x51qr3b",
+          "created_at": "2025-11-27T01:02:36.150Z",
+          "updated_at": "2025-11-27T05:12:21.512Z",
+          "display_at": "2025-11-27T01:02:36.150Z",
+          "affected_components": [
+            {
+              "code": "l38v4l1b1vt8",
+              "name": "Infrastructure || ERI - ERI1",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "l38v4l1b1vt8",
+          "name": "ERI1",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:45.650Z",
+          "updated_at": "2025-12-17T07:00:21.111Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "sdpm85zsx4w3",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-05T07:00:00.000Z",
+      "scheduled_until": "2026-01-05T17:00:00.000Z"
+    },
+    {
+      "id": "d8swxy01xjbc",
+      "name": "[SBG3][Cooling System] - Rack S322A06 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2025-12-15T17:13:21.058Z",
+      "updated_at": "2025-12-15T17:13:21.111Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/cpn60xcvhzh9",
+      "started_at": "2025-12-15T17:13:21.050Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "8szkqxvm63p7",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 05/01/2026 07:00 UTC\n<b>End time :</b> 05/01/2026 16:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "d8swxy01xjbc",
+          "created_at": "2025-12-15T17:13:21.108Z",
+          "updated_at": "2025-12-15T17:13:21.108Z",
+          "display_at": "2025-12-15T17:13:21.108Z",
+          "affected_components": [
+            {
+              "code": "n3pn0f28b99n",
+              "name": "Infrastructure || SBG - SBG3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "n3pn0f28b99n",
+          "name": "SBG3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:20:01.143Z",
+          "updated_at": "2025-12-06T01:01:40.940Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vhfy3slw3nj2",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-05T07:00:00.000Z",
+      "scheduled_until": "2026-01-05T16:00:00.000Z"
+    },
+    {
+      "id": "v254p21vqgv5",
+      "name": "[BHS6][Cooling System] - Rack T06A35",
+      "status": "in_progress",
+      "created_at": "2025-11-21T16:10:28.378Z",
+      "updated_at": "2025-12-17T12:00:24.930Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/v79ctsplh48b",
+      "started_at": "2025-11-21T16:10:28.371Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "t6nc2p8grcby",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "v254p21vqgv5",
+          "created_at": "2025-12-17T12:00:24.763Z",
+          "updated_at": "2025-12-17T12:00:24.763Z",
+          "display_at": "2025-12-17T12:00:24.763Z",
+          "affected_components": [
+            {
+              "code": "33xy09j449pk",
+              "name": "Infrastructure || BHS - BHS6",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "dls2zdssjcb9",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "v254p21vqgv5",
+          "created_at": "2025-12-17T11:00:25.337Z",
+          "updated_at": "2025-12-17T11:00:25.337Z",
+          "display_at": "2025-12-17T11:00:25.337Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w7kw5qvwctcx",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "v254p21vqgv5",
+          "created_at": "2025-11-21T16:10:28.423Z",
+          "updated_at": "2025-11-21T16:10:28.423Z",
+          "display_at": "2025-11-21T16:10:28.423Z",
+          "affected_components": [
+            {
+              "code": "33xy09j449pk",
+              "name": "Infrastructure || BHS - BHS6",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "33xy09j449pk",
+          "name": "BHS6",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:30.507Z",
+          "updated_at": "2025-12-17T12:00:23.805Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-17T12:00:00.000Z",
+      "scheduled_until": "2025-12-17T20:30:00.000Z"
+    },
+    {
+      "id": "8cq9c5d849xl",
+      "name": "[BHS7][Cooling System] - Rack B717A04",
+      "status": "in_progress",
+      "created_at": "2025-11-21T13:35:56.511Z",
+      "updated_at": "2025-12-17T12:00:22.142Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/t523k56v6g6s",
+      "started_at": "2025-11-21T13:35:56.502Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "5wc24x2fwktj",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "8cq9c5d849xl",
+          "created_at": "2025-12-17T12:00:22.137Z",
+          "updated_at": "2025-12-17T12:00:22.137Z",
+          "display_at": "2025-12-17T12:00:22.137Z",
+          "affected_components": [
+            {
+              "code": "v0kyk7zsjqvd",
+              "name": "Infrastructure || BHS - BHS7",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "27q4xb54hgr7",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "8cq9c5d849xl",
+          "created_at": "2025-12-17T11:00:24.432Z",
+          "updated_at": "2025-12-17T11:00:24.432Z",
+          "display_at": "2025-12-17T11:00:24.432Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t81msgng44hx",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "8cq9c5d849xl",
+          "created_at": "2025-11-21T13:35:56.607Z",
+          "updated_at": "2025-11-21T13:35:56.607Z",
+          "display_at": "2025-11-21T13:35:56.607Z",
+          "affected_components": [
+            {
+              "code": "v0kyk7zsjqvd",
+              "name": "Infrastructure || BHS - BHS7",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "v0kyk7zsjqvd",
+          "name": "BHS7",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:31.279Z",
+          "updated_at": "2025-12-17T12:00:22.046Z",
+          "position": 7,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-17T12:00:00.000Z",
+      "scheduled_until": "2025-12-17T20:30:00.000Z"
+    },
+    {
+      "id": "xr1mn24400bl",
+      "name": "[BHS8][Cooling System] - Rack BHS0814B04A",
+      "status": "in_progress",
+      "created_at": "2025-11-21T16:08:59.875Z",
+      "updated_at": "2025-12-17T12:00:21.583Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/hyhfbj2d1qt1",
+      "started_at": "2025-11-21T16:08:59.867Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "20s2swvt5tsq",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "xr1mn24400bl",
+          "created_at": "2025-12-17T12:00:21.579Z",
+          "updated_at": "2025-12-17T12:00:21.579Z",
+          "display_at": "2025-12-17T12:00:21.579Z",
+          "affected_components": [
+            {
+              "code": "m4pzrlrxvvgt",
+              "name": "Infrastructure || BHS - BHS8",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "kh86jtxhh330",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "xr1mn24400bl",
+          "created_at": "2025-12-17T11:00:25.972Z",
+          "updated_at": "2025-12-17T11:00:25.972Z",
+          "display_at": "2025-12-17T11:00:25.972Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w5cdbh8h2kt2",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 12:00 UTC\n<b>End time :</b> 17/12/2025 20:30 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance.\nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "xr1mn24400bl",
+          "created_at": "2025-11-21T16:08:59.931Z",
+          "updated_at": "2025-11-21T16:08:59.931Z",
+          "display_at": "2025-11-21T16:08:59.931Z",
+          "affected_components": [
+            {
+              "code": "m4pzrlrxvvgt",
+              "name": "Infrastructure || BHS - BHS8",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "m4pzrlrxvvgt",
+          "name": "BHS8",
+          "status": "under_maintenance",
+          "created_at": "2021-11-10T14:20:32.046Z",
+          "updated_at": "2025-12-17T12:00:21.535Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "p5hsr9gwdmns",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2025-12-17T12:00:00.000Z",
+      "scheduled_until": "2025-12-17T20:30:00.000Z"
+    },
+    {
       "id": "zr88s19cbwgr",
       "name": "[GRA3][Cooling System] - Rack GRA0314A05C maintenance notification",
       "status": "in_progress",
@@ -4032,86 +4254,6 @@
       ],
       "scheduled_for": "2025-12-17T07:00:00.000Z",
       "scheduled_until": "2025-12-17T15:00:00.000Z"
-    },
-    {
-      "id": "27h6pfx3ljpp",
-      "name": "[ERI1][Cooling System] - Rack ERI0113A01A",
-      "status": "in_progress",
-      "created_at": "2025-11-25T23:16:12.412Z",
-      "updated_at": "2025-12-17T07:02:21.128Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/2qkfxtlpcty0",
-      "started_at": "2025-11-25T23:16:12.403Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "6mb1jrcctvxd",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "27h6pfx3ljpp",
-          "created_at": "2025-12-17T07:02:21.126Z",
-          "updated_at": "2025-12-17T07:02:21.126Z",
-          "display_at": "2025-12-17T07:02:21.126Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "h0smbf31gfgq",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "27h6pfx3ljpp",
-          "created_at": "2025-12-17T06:00:29.682Z",
-          "updated_at": "2025-12-17T06:00:29.682Z",
-          "display_at": "2025-12-17T06:00:29.682Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l5j5m6fnnszy",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 17/12/2025 07:00 UTC\n<b>End time :</b> 17/12/2025 17:00 UTC\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. \nDespite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "27h6pfx3ljpp",
-          "created_at": "2025-11-25T23:16:12.467Z",
-          "updated_at": "2025-11-25T23:16:12.467Z",
-          "display_at": "2025-11-25T23:16:12.467Z",
-          "affected_components": [
-            {
-              "code": "l38v4l1b1vt8",
-              "name": "Infrastructure || ERI - ERI1",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "l38v4l1b1vt8",
-          "name": "ERI1",
-          "status": "under_maintenance",
-          "created_at": "2021-11-10T14:20:45.650Z",
-          "updated_at": "2025-12-17T07:00:21.111Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "sdpm85zsx4w3",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2025-12-17T07:00:00.000Z",
-      "scheduled_until": "2025-12-17T17:00:00.000Z"
     },
     {
       "id": "ryr70lcz1zxw",
