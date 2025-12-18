@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-18T11:06:07.510Z"
+    "updated_at": "2025-12-18T12:00:19.823Z"
   },
   "components": [
     {
@@ -285,9 +285,9 @@
     {
       "id": "f8n5w4snbwhg",
       "name": "Web Access",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.384Z",
-      "updated_at": "2025-12-09T22:15:50.789Z",
+      "updated_at": "2025-12-18T11:47:50.238Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1836,7 +1836,7 @@
     {
       "id": "z91pbqw7vzcm",
       "name": "Collaborative solutions || Zimbra",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.357Z",
       "updated_at": "2025-08-13T12:55:51.596Z",
       "position": 11,
@@ -3191,7 +3191,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "1jttcgjvv264",
+      "name": "[GLOBAL][Collaborative solutions] - Zimbra incident notification",
+      "status": "investigating",
+      "created_at": "2025-12-18T11:47:50.209Z",
+      "updated_at": "2025-12-18T12:00:19.814Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/7nl0xbv83y18",
+      "started_at": "2025-12-18T11:47:50.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "mdlhhp5tjs7f",
+          "status": "investigating",
+          "body": "We are currently experiencing an incident affecting our Zimbra offer.\n\nHere is detail for this incident :\n<b>Start time :</b> 17/12/2025 06:00 UTC\n<b>Impacted Service(s) :</b> Emails received before 18th December are currently unavailable.\n<b>Customers Impact :</b> Customers can log in to their email accounts via webmail or email clients, and sending and receiving emails is working normally.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it. \n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1jttcgjvv264",
+          "created_at": "2025-12-18T12:00:19.811Z",
+          "updated_at": "2025-12-18T12:00:19.811Z",
+          "display_at": "2025-12-18T12:00:19.811Z",
+          "affected_components": [
+            {
+              "code": "f8n5w4snbwhg",
+              "name": "Collaborative solutions || Zimbra - Web Access",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2s0cth69gbw2",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Collaborative solutions offer.\n\n<b>Start time :</b> 17/12/2025 06:00 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1jttcgjvv264",
+          "created_at": "2025-12-18T11:47:50.282Z",
+          "updated_at": "2025-12-18T11:51:50.444Z",
+          "display_at": "2025-12-18T11:47:50.000Z",
+          "affected_components": [
+            {
+              "code": "f8n5w4snbwhg",
+              "name": "Collaborative solutions || Zimbra - Web Access",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f8n5w4snbwhg",
+          "name": "Web Access",
+          "status": "partial_outage",
+          "created_at": "2025-02-20T16:36:07.384Z",
+          "updated_at": "2025-12-18T11:47:50.238Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-02-20",
+          "group_id": "z91pbqw7vzcm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5qp54jmgq2dg",
@@ -3369,7 +3443,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
