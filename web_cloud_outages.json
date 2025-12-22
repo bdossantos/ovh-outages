@@ -2,9 +2,9 @@
   "page": {
     "id": "gw3vvyn2b3bh",
     "name": "Web Cloud",
-    "url": "https://web-cloud.status-ovhcloud.com",
+    "url": "http://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-22T16:46:10.537Z"
+    "updated_at": "2025-12-22T21:01:04.037Z"
   },
   "components": [
     {
@@ -2102,9 +2102,9 @@
     {
       "id": "3v97r17r3wpj",
       "name": "Cluster024",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:13.993Z",
-      "updated_at": "2025-12-21T11:52:18.703Z",
+      "updated_at": "2025-12-22T20:27:10.781Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -2658,7 +2658,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -3191,7 +3191,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "tkcncpxdxgbq",
+      "name": "[GRA][Web Hosting] - Cluster024 incident notification",
+      "status": "identified",
+      "created_at": "2025-12-22T20:27:10.749Z",
+      "updated_at": "2025-12-22T21:01:04.027Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ddtqs3w12tyx",
+      "started_at": "2025-12-22T20:27:10.000Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "dv54669v7l6c",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Web Hosting offer on the specific cluster.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 22/12/2025 20:00 UTC\n<b>Impacted Service(s) :</b> Websites hosted in Cluster024 are temporarily facing latency.\n<b>Customers Impact :</b> Customers are temporarily facing latency while trying to access their website. \n<b>Root Cause :</b> This incident is caused by a software issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "tkcncpxdxgbq",
+          "created_at": "2025-12-22T21:01:04.024Z",
+          "updated_at": "2025-12-22T21:01:04.024Z",
+          "display_at": "2025-12-22T21:01:04.024Z",
+          "affected_components": [
+            {
+              "code": "3v97r17r3wpj",
+              "name": "Web Hosting || Datacenter GRA - Cluster024",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6tkptt84200q",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Web Hosting offering, which is causing temporary latency issue in the Cluster024.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 22/12/2025 20:00 UTC\n<b>Impacted Service(s) :</b> Some websites hosted in Cluster024 are temporarily facing latency.\n<b>Customers Impact :</b> Some customers are temporarily facing latency while trying to access their website.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tkcncpxdxgbq",
+          "created_at": "2025-12-22T20:27:10.826Z",
+          "updated_at": "2025-12-22T20:53:31.449Z",
+          "display_at": "2025-12-22T20:27:10.000Z",
+          "affected_components": [
+            {
+              "code": "3v97r17r3wpj",
+              "name": "Web Hosting || Datacenter GRA - Cluster024",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3v97r17r3wpj",
+          "name": "Cluster024",
+          "status": "degraded_performance",
+          "created_at": "2021-06-30T12:19:13.993Z",
+          "updated_at": "2025-12-22T20:27:10.781Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "5qp54jmgq2dg",
@@ -3369,7 +3443,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
