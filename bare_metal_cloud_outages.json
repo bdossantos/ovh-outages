@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2025-12-23T10:21:05.295Z"
+    "updated_at": "2025-12-23T13:10:29.457Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1610,9 +1610,9 @@
     {
       "id": "6cv1pzgk8v1n",
       "name": "SBG",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:25.618Z",
-      "updated_at": "2025-12-01T10:31:38.006Z",
+      "updated_at": "2025-12-23T13:10:29.206Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -3503,14 +3503,68 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "qzl7mx9bjdv2",
+      "name": "[SBG3][Dedicated Servers] - Rack S320B07 incident notification",
+      "status": "identified",
+      "created_at": "2025-12-23T13:10:29.170Z",
+      "updated_at": "2025-12-23T13:10:29.454Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8dpb8qsys6ct",
+      "started_at": "2025-12-23T13:10:29.162Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "2b7w025m3k7l",
+          "status": "identified",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack S320B07.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 23/12/2025 12:56 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack S320B07 temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access their servers located on the specified racks\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "qzl7mx9bjdv2",
+          "created_at": "2025-12-23T13:10:29.452Z",
+          "updated_at": "2025-12-23T13:10:29.452Z",
+          "display_at": "2025-12-23T13:10:29.452Z",
+          "affected_components": [
+            {
+              "code": "6cv1pzgk8v1n",
+              "name": "Dedicated Servers || Global Infrastructure - SBG",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "6cv1pzgk8v1n",
+          "name": "SBG",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:25.618Z",
+          "updated_at": "2025-12-23T13:10:29.206Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "n49x7s59n3ls",
       "name": "[RBX7][Storage and Backups] - Backup Storage maintenance notification",
       "status": "scheduled",
       "created_at": "2025-12-19T19:56:34.604Z",
-      "updated_at": "2025-12-19T19:56:34.682Z",
+      "updated_at": "2025-12-23T13:00:21.534Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3518,6 +3572,19 @@
       "started_at": "2025-12-19T19:56:34.594Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "90z05dm4rntr",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "n49x7s59n3ls",
+          "created_at": "2025-12-23T13:00:21.345Z",
+          "updated_at": "2025-12-23T13:00:21.345Z",
+          "display_at": "2025-12-23T13:00:21.345Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ct21c0stty3h",
           "status": "scheduled",
@@ -5187,7 +5254,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
