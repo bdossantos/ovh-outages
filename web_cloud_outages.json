@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-06T11:31:04.056Z"
+    "updated_at": "2026-01-06T13:29:49.855Z"
   },
   "components": [
     {
@@ -2538,9 +2538,9 @@
     {
       "id": "9nmddb02w9nq",
       "name": "Cluster100",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2024-06-19T09:26:50.690Z",
-      "updated_at": "2026-01-05T13:33:05.877Z",
+      "updated_at": "2026-01-06T13:29:49.798Z",
       "position": 24,
       "description": null,
       "showcase": false,
@@ -2658,7 +2658,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -3191,7 +3191,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "wb7h992cydnb",
+      "name": "[GRA][Web Hosting] - Cluster100 Filerz2186 incident notification",
+      "status": "investigating",
+      "created_at": "2026-01-06T13:29:49.761Z",
+      "updated_at": "2026-01-06T13:29:49.852Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/q4vgb33wy59l",
+      "started_at": "2026-01-06T13:29:49.753Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "l3jcxtqjk1g1",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Web Hosting offering, which is causing temporary latency issue in the Filerz2186 - Cluster100.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 06/01/2026 11:15 UTC\n<b>Impacted Service(s) :</b> File server 2186 is experiencing latency on Web Hosting Cluster 100.\n<b>Customers Impact :</b> Customers using filer servers 2186 on Cluster100 are temporarily experiencing latency when accessing their hosted websites.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "wb7h992cydnb",
+          "created_at": "2026-01-06T13:29:49.850Z",
+          "updated_at": "2026-01-06T13:29:49.850Z",
+          "display_at": "2026-01-06T13:29:49.850Z",
+          "affected_components": [
+            {
+              "code": "9nmddb02w9nq",
+              "name": "Web Hosting || Datacenter GRA - Cluster100",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9nmddb02w9nq",
+          "name": "Cluster100",
+          "status": "degraded_performance",
+          "created_at": "2024-06-19T09:26:50.690Z",
+          "updated_at": "2026-01-06T13:29:49.798Z",
+          "position": 24,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-06-19",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "tb5r3772gvp2",
@@ -3423,7 +3477,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Partially Degraded Service"
   }
 }
