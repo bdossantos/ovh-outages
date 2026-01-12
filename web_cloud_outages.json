@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-12T15:40:10.451Z"
+    "updated_at": "2026-01-12T16:39:46.894Z"
   },
   "components": [
     {
@@ -2313,7 +2313,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "degraded_performance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -2720,9 +2720,9 @@
     {
       "id": "zbc2lrf1z535",
       "name": "Cluster124",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-10-13T08:26:25.094Z",
-      "updated_at": "2026-01-12T15:40:10.318Z",
+      "updated_at": "2026-01-12T16:39:46.841Z",
       "position": 40,
       "description": null,
       "showcase": false,
@@ -2824,6 +2824,59 @@
     }
   ],
   "incidents": [
+    {
+      "id": "9s1j1pbfzqq6",
+      "name": "[GRA][Web Hosting] - Cluster 124 incident notification",
+      "status": "identified",
+      "created_at": "2026-01-12T16:39:46.808Z",
+      "updated_at": "2026-01-12T16:39:46.891Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mv3q810xlt33",
+      "started_at": "2026-01-12T16:39:46.801Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "5nqg76zn5qpp",
+          "status": "identified",
+          "body": "We are currently experiencing an event affecting our Web Hosting offer on the specific Cluster 124.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 12/01/2026 16:30 UTC                \n<b>Impacted Service(s) :</b> Customers in clusters 124, may experience difficulties to access their websites.\n<b>Root Cause :</b> This incident is caused by a software issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9s1j1pbfzqq6",
+          "created_at": "2026-01-12T16:39:46.888Z",
+          "updated_at": "2026-01-12T16:39:46.888Z",
+          "display_at": "2026-01-12T16:39:46.888Z",
+          "affected_components": [
+            {
+              "code": "zbc2lrf1z535",
+              "name": "Web Hosting || Datacenter GRA - Cluster124",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "zbc2lrf1z535",
+          "name": "Cluster124",
+          "status": "partial_outage",
+          "created_at": "2025-10-13T08:26:25.094Z",
+          "updated_at": "2026-01-12T16:39:46.841Z",
+          "position": 40,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-10-13",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "mst6w0zdg6dh",
       "name": "[GRA][Web Hosting] - Cluster100 incident notification",
