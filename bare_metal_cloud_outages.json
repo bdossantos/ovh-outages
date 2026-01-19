@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-19T09:17:12.762Z"
+    "updated_at": "2026-01-19T10:54:54.463Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-01-16T13:37:03.740Z",
+      "updated_at": "2026-01-19T10:11:02.607Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3519,7 +3519,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "9zdspdpzp8wv",
+      "name": "[RBX8][Dedicated Servers] - Rack R831B13 incident notification",
+      "status": "identified",
+      "created_at": "2026-01-19T10:11:02.570Z",
+      "updated_at": "2026-01-19T10:41:10.674Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/0kskh1bp18d7",
+      "started_at": "2026-01-19T10:11:02.562Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "4l7gwpybkmry",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 19/01/2026 10:34 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack R831B13 are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers in the specified rack.\n<b>Root Cause :</b> This incident is caused by this maintenance : https://network.status-ovhcloud.com/incidents/stfwb3wby786\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9zdspdpzp8wv",
+          "created_at": "2026-01-19T10:11:03.060Z",
+          "updated_at": "2026-01-19T10:41:10.667Z",
+          "display_at": "2026-01-19T10:11:03.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-01-19T10:11:02.607Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "4ylh38z3y5lb",
@@ -5390,73 +5444,6 @@
       "scheduled_until": "2026-01-19T11:00:00.000Z"
     },
     {
-      "id": "5mvsfkcx0vdy",
-      "name": "[SBG3][Dedicated Servers] - Rack S352B06 maintenance notification",
-      "status": "in_progress",
-      "created_at": "2026-01-19T07:44:58.847Z",
-      "updated_at": "2026-01-19T07:50:21.118Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/fv2rn9pf0rr0",
-      "started_at": "2026-01-19T07:44:58.837Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "jv5vkjkzjksk",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "5mvsfkcx0vdy",
-          "created_at": "2026-01-19T07:50:21.114Z",
-          "updated_at": "2026-01-19T07:50:21.114Z",
-          "display_at": "2026-01-19T07:50:21.114Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "d0b2jm943zq7",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Dedicated Servers offer on rack S352B06.\n\n<b>Start time :</b> 19/01/2026 07:28 UTC\n<b>End time :</b> 19/01/2026 16:00 UTC\n<b>Service impact :</b> None\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a cooling maintenance on rack S352B06.\n\nThank you for your understanding.",
-          "incident_id": "5mvsfkcx0vdy",
-          "created_at": "2026-01-19T07:44:58.917Z",
-          "updated_at": "2026-01-19T07:44:58.917Z",
-          "display_at": "2026-01-19T07:44:58.917Z",
-          "affected_components": [
-            {
-              "code": "6cv1pzgk8v1n",
-              "name": "Dedicated Servers || Global Infrastructure - SBG",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "6cv1pzgk8v1n",
-          "name": "SBG",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:25.618Z",
-          "updated_at": "2026-01-16T09:21:53.713Z",
-          "position": 6,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-19T07:50:00.000Z",
-      "scheduled_until": "2026-01-19T16:00:00.000Z"
-    },
-    {
       "id": "bpxhvddh47rk",
       "name": "[ERI1][Dedicated Servers] - Rack E101E20 maintenance notification",
       "status": "in_progress",
@@ -5545,7 +5532,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
