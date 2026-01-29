@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-29T02:51:09.528Z"
+    "updated_at": "2026-01-29T05:20:34.709Z"
   },
   "components": [
     {
@@ -3162,9 +3162,9 @@
     {
       "id": "42rlkfllkbpy",
       "name": "SGP",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:41:59.157Z",
-      "updated_at": "2025-11-26T15:52:58.925Z",
+      "updated_at": "2026-01-29T05:06:37.610Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -8518,9 +8518,9 @@
     {
       "id": "cm07ycr7tz81",
       "name": "Identity, Security & Operations || Authentication",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-11-05T15:36:40.848Z",
-      "updated_at": "2026-01-14T20:38:03.851Z",
+      "updated_at": "2026-01-29T04:47:09.725Z",
       "position": 36,
       "description": null,
       "showcase": false,
@@ -9191,7 +9191,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2025-12-17T02:18:47.463Z",
       "position": 60,
@@ -9336,6 +9336,152 @@
     }
   ],
   "incidents": [
+    {
+      "id": "wvh80kdqlq47",
+      "name": "[SGP1][Storage] - Object Storage incident notification",
+      "status": "identified",
+      "created_at": "2026-01-29T05:06:37.571Z",
+      "updated_at": "2026-01-29T05:18:58.779Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/89gw8yw01zzh",
+      "started_at": "2026-01-29T05:06:37.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "tv7rk0lsxg34",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Object Storage offer on the specific region SGP1.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 29/01/2026 04:30 UTC\n<b>Impacted Service(s) :</b> Object Storage is temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily getting 503 errors.\n<b>Root Cause :</b> This incident is caused by this incident : https://public-cloud.status-ovhcloud.com/incidents/35fw13hg9xfk\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "wvh80kdqlq47",
+          "created_at": "2026-01-29T05:13:40.223Z",
+          "updated_at": "2026-01-29T05:18:52.435Z",
+          "display_at": "2026-01-29T05:13:40.000Z",
+          "affected_components": [
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "czn20h6tgr3q",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Object Storage offer.\n\n<b>Start time :</b> 29/01/2026 04:30 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "wvh80kdqlq47",
+          "created_at": "2026-01-29T05:06:37.679Z",
+          "updated_at": "2026-01-29T05:18:58.726Z",
+          "display_at": "2026-01-29T05:06:37.000Z",
+          "affected_components": [
+            {
+              "code": "42rlkfllkbpy",
+              "name": "Storage || Object storage - SGP",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "42rlkfllkbpy",
+          "name": "SGP",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:41:59.157Z",
+          "updated_at": "2026-01-29T05:06:37.610Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "35fw13hg9xfk",
+      "name": "[SGP1/SGP2//MUM][Public Cloud] - Identity, Security & Operations incident notification",
+      "status": "investigating",
+      "created_at": "2026-01-29T04:47:09.680Z",
+      "updated_at": "2026-01-29T05:14:09.642Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/38q7lyhk6mn1",
+      "started_at": "2026-01-29T04:47:09.674Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "fv9x6qcpq8yz",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Identity, Security & Operations offering, which is causing temporary availability issue in the SGP1/SGP2/MUM regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 29/01/2026 04:30 UTC\n<b>Impacted Service(s) :</b> The Identity, Security & Operations service is temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to use the Identity, Security & Operations service in the SGP1, SGP2, and MUM regions.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "35fw13hg9xfk",
+          "created_at": "2026-01-29T05:11:08.438Z",
+          "updated_at": "2026-01-29T05:11:08.438Z",
+          "display_at": "2026-01-29T05:11:08.438Z",
+          "affected_components": [
+            {
+              "code": "cm07ycr7tz81",
+              "name": "Identity, Security & Operations || Authentication",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ns5p687r884v",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Identity, Security & Operations offer.\n\n<b>Start time :</b> 29/01/2026 04:30 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "35fw13hg9xfk",
+          "created_at": "2026-01-29T04:47:09.797Z",
+          "updated_at": "2026-01-29T04:47:09.797Z",
+          "display_at": "2026-01-29T04:47:09.797Z",
+          "affected_components": [
+            {
+              "code": "cm07ycr7tz81",
+              "name": "Identity, Security & Operations || Authentication",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "cm07ycr7tz81",
+          "name": "Identity, Security & Operations || Authentication",
+          "status": "partial_outage",
+          "created_at": "2025-11-05T15:36:40.848Z",
+          "updated_at": "2026-01-29T04:47:09.725Z",
+          "position": 36,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-11-05",
+          "group_id": null,
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "1d6rybkgm95z",
       "name": "[GLOBAL][Data & Analytics] - Data Platform incident notification",
@@ -11327,6 +11473,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
