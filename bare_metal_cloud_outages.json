@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-29T12:00:36.099Z"
+    "updated_at": "2026-01-29T13:08:06.177Z"
   },
   "components": [
     {
@@ -248,9 +248,9 @@
     {
       "id": "qcwk8kn06rpl",
       "name": "RBX",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:07.646Z",
-      "updated_at": "2026-01-29T02:56:38.012Z",
+      "updated_at": "2026-01-29T13:00:21.189Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2759,7 +2759,7 @@
     {
       "id": "7nxs1wy28gc7",
       "name": "Storage and Backups || Backup Storage",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:34:11.420Z",
       "updated_at": "2024-09-10T06:16:11.255Z",
       "position": 14,
@@ -3523,9 +3523,9 @@
     {
       "id": "3d4t8w4bhdp0",
       "name": "[GRA1][Dedicated Servers] - Room G132 incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2026-01-29T09:55:11.153Z",
-      "updated_at": "2026-01-29T09:55:11.270Z",
+      "updated_at": "2026-01-29T13:08:06.167Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -3533,6 +3533,26 @@
       "started_at": "2026-01-29T09:55:11.145Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "2b1c3ct88qh7",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer in the specific room.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 29/01/2026 09:28 UTC\n<b>Impacted Service(s) :</b> All servers in the room G132 were temporarily unavailable.\nThe majority of the servers are no longer impacted by the incident.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the specified room.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "3d4t8w4bhdp0",
+          "created_at": "2026-01-29T13:08:06.164Z",
+          "updated_at": "2026-01-29T13:08:06.164Z",
+          "display_at": "2026-01-29T13:08:06.164Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "v454pzm4z9t6",
           "status": "investigating",
@@ -3649,73 +3669,6 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "wldt77nf9dl6",
-      "name": "[RBX2][Storage and Backups] - FTP Backup maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-01-28T05:30:13.148Z",
-      "updated_at": "2026-01-29T12:00:36.086Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/xlsb9x16kyx3",
-      "started_at": "2026-01-28T05:30:13.141Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "r6s48m80wk8q",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "wldt77nf9dl6",
-          "created_at": "2026-01-29T12:00:33.530Z",
-          "updated_at": "2026-01-29T12:00:33.530Z",
-          "display_at": "2026-01-29T12:00:33.530Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0zldfs5nzfl3",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our FTP Backup offer.\n\n<b>Start time :</b> 29/01/2026 13:00 UTC\n<b>End time :</b> 30/01/2026 03:00 UTC\n<b>Service impact :</b> During the maintenance window, FTP Backup will be temporarily unavailable for approximately 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, maintenance will be performed on our FTP Backup offering to implement security and performance enhancements.\n\nThank you for your understanding.",
-          "incident_id": "wldt77nf9dl6",
-          "created_at": "2026-01-28T05:30:13.200Z",
-          "updated_at": "2026-01-28T05:30:13.200Z",
-          "display_at": "2026-01-28T05:30:13.200Z",
-          "affected_components": [
-            {
-              "code": "qcwk8kn06rpl",
-              "name": "Storage and Backups || Backup Storage - RBX",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "qcwk8kn06rpl",
-          "name": "RBX",
-          "status": "operational",
-          "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2026-01-29T02:56:38.012Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "7nxs1wy28gc7",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-01-29T13:00:00.000Z",
-      "scheduled_until": "2026-01-30T03:00:00.000Z"
-    },
-    {
       "id": "51nphwrrjd9w",
       "name": "[RBX2][Storage and Backups] - FTP Backup maintenance notification",
       "status": "scheduled",
@@ -3753,9 +3706,9 @@
         {
           "id": "qcwk8kn06rpl",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2026-01-29T02:56:38.012Z",
+          "updated_at": "2026-01-29T13:00:21.189Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3882,9 +3835,9 @@
         {
           "id": "qcwk8kn06rpl",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2026-01-29T02:56:38.012Z",
+          "updated_at": "2026-01-29T13:00:21.189Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4032,9 +3985,9 @@
         {
           "id": "qcwk8kn06rpl",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2026-01-29T02:56:38.012Z",
+          "updated_at": "2026-01-29T13:00:21.189Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4215,9 +4168,9 @@
         {
           "id": "qcwk8kn06rpl",
           "name": "RBX",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:34:07.646Z",
-          "updated_at": "2026-01-29T02:56:38.012Z",
+          "updated_at": "2026-01-29T13:00:21.189Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4542,6 +4495,93 @@
       ],
       "scheduled_for": "2026-03-10T10:00:00.000Z",
       "scheduled_until": "2026-03-10T20:00:00.000Z"
+    },
+    {
+      "id": "wldt77nf9dl6",
+      "name": "[RBX2][Storage and Backups] - FTP Backup maintenance notification",
+      "status": "in_progress",
+      "created_at": "2026-01-28T05:30:13.148Z",
+      "updated_at": "2026-01-29T13:00:21.303Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/xlsb9x16kyx3",
+      "started_at": "2026-01-28T05:30:13.141Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "bj86np5lfhlw",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "wldt77nf9dl6",
+          "created_at": "2026-01-29T13:00:21.298Z",
+          "updated_at": "2026-01-29T13:00:21.298Z",
+          "display_at": "2026-01-29T13:00:21.298Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "r6s48m80wk8q",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "wldt77nf9dl6",
+          "created_at": "2026-01-29T12:00:33.530Z",
+          "updated_at": "2026-01-29T12:00:33.530Z",
+          "display_at": "2026-01-29T12:00:33.530Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0zldfs5nzfl3",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our FTP Backup offer.\n\n<b>Start time :</b> 29/01/2026 13:00 UTC\n<b>End time :</b> 30/01/2026 03:00 UTC\n<b>Service impact :</b> During the maintenance window, FTP Backup will be temporarily unavailable for approximately 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, maintenance will be performed on our FTP Backup offering to implement security and performance enhancements.\n\nThank you for your understanding.",
+          "incident_id": "wldt77nf9dl6",
+          "created_at": "2026-01-28T05:30:13.200Z",
+          "updated_at": "2026-01-28T05:30:13.200Z",
+          "display_at": "2026-01-28T05:30:13.200Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2026-01-29T13:00:21.189Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-01-29T13:00:00.000Z",
+      "scheduled_until": "2026-01-30T03:00:00.000Z"
     },
     {
       "id": "sc71qn3tng8n",
