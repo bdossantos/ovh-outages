@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-29T15:43:02.288Z"
+    "updated_at": "2026-01-29T19:10:52.184Z"
   },
   "components": [
     {
@@ -308,9 +308,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2026-01-24T03:33:38.605Z",
+      "updated_at": "2026-01-29T18:51:10.903Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2026-01-29T09:55:11.184Z",
+      "updated_at": "2026-01-29T19:01:06.120Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -3521,70 +3521,30 @@
   ],
   "incidents": [
     {
-      "id": "3d4t8w4bhdp0",
-      "name": "[GRA1][Dedicated Servers] - Room G132 incident notification",
+      "id": "mcsj65dtyxfm",
+      "name": "[BHS6][Dedicated Servers] - Rack T06G31 incident notification",
       "status": "identified",
-      "created_at": "2026-01-29T09:55:11.153Z",
-      "updated_at": "2026-01-29T15:43:02.277Z",
+      "created_at": "2026-01-29T18:51:10.868Z",
+      "updated_at": "2026-01-29T18:51:10.961Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/04zzv38g5cj5",
-      "started_at": "2026-01-29T09:55:11.145Z",
+      "shortlink": "https://stspg.io/dnybr4kzcd4h",
+      "started_at": "2026-01-29T18:51:10.860Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "lk9r1mb2ctjh",
+          "id": "y82j4ttg5zlx",
           "status": "identified",
-          "body": "<b>Ongoing Actions :</b> Our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "3d4t8w4bhdp0",
-          "created_at": "2026-01-29T15:43:02.275Z",
-          "updated_at": "2026-01-29T15:43:02.275Z",
-          "display_at": "2026-01-29T15:43:02.275Z",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n<b>Start time :</b> 29/01/2026 18:40 UTC\n<b>Impacted Service(s) :</b> vRack network is temporarily unavailable for servers in rack T06G31.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers through vRack network.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "mcsj65dtyxfm",
+          "created_at": "2026-01-29T18:51:10.958Z",
+          "updated_at": "2026-01-29T18:51:10.958Z",
+          "display_at": "2026-01-29T18:51:10.958Z",
           "affected_components": [
             {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "2b1c3ct88qh7",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer in the specific room.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 29/01/2026 09:28 UTC\n<b>Impacted Service(s) :</b> All servers in the room G132 were temporarily unavailable.\nThe majority of the servers are no longer impacted by the incident.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the specified room.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
-          "incident_id": "3d4t8w4bhdp0",
-          "created_at": "2026-01-29T13:08:06.164Z",
-          "updated_at": "2026-01-29T13:08:06.164Z",
-          "display_at": "2026-01-29T13:08:06.164Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "v454pzm4z9t6",
-          "status": "investigating",
-          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary  issue in the room G132.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 29/01/2026 09:28 UTC\n<b>Impacted Service(s) :</b> All servers in the room G132 were temporarily unavailable.\nThe majority of the servers are no longer impacted by the incident.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the specified room.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "3d4t8w4bhdp0",
-          "created_at": "2026-01-29T09:55:11.268Z",
-          "updated_at": "2026-01-29T09:55:11.268Z",
-          "display_at": "2026-01-29T09:55:11.268Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
               "old_status": "operational",
               "new_status": "partial_outage"
             }
@@ -3596,22 +3556,22 @@
       ],
       "components": [
         {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
           "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2026-01-29T09:55:11.184Z",
-          "position": 3,
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2026-01-29T18:51:10.903Z",
+          "position": 1,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
+          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": "[]"
+      "reminder_intervals": null
     },
     {
       "id": "xshnxnzmfg55",
