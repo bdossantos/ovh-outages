@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-01-30T10:43:52.418Z"
+    "updated_at": "2026-01-30T12:07:28.670Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2026-01-29T19:01:06.120Z",
+      "updated_at": "2026-01-30T12:01:36.010Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -3521,6 +3521,79 @@
   ],
   "incidents": [
     {
+      "id": "j76z8714sd92",
+      "name": "[GRA1][Dedicated Servers] - Rack G103A13 incident notification",
+      "status": "identified",
+      "created_at": "2026-01-30T12:01:35.976Z",
+      "updated_at": "2026-01-30T12:07:28.661Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/8vc1h55p47y2",
+      "started_at": "2026-01-30T12:01:35.968Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "4jhk6d6qwtm5",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Most of the servers are now operational again.\n<b>Ongoing Actions :</b> Our teams are mobilised to restore the last servers remaining as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "j76z8714sd92",
+          "created_at": "2026-01-30T12:07:28.658Z",
+          "updated_at": "2026-01-30T12:07:28.658Z",
+          "display_at": "2026-01-30T12:07:28.658Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "07rwfs29rrsn",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n<b>Start time :</b> 30/01/2026 11:53 UTC\n<b>Service Impact :</b> Some servers in the rack G103A13 are temporarily unavailable.\n<b>Customers Impact :</b> Some customers cannot access their server in this specific rack.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "j76z8714sd92",
+          "created_at": "2026-01-30T12:01:36.265Z",
+          "updated_at": "2026-01-30T12:01:36.265Z",
+          "display_at": "2026-01-30T12:01:36.265Z",
+          "affected_components": [
+            {
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2026-01-30T12:01:36.010Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "txdgqvy7bzdk",
       "name": "[RBX/GRA/BHS/LIM/SBG][Storage] - Enterprise File Storage incident notification",
       "status": "identified",
@@ -4607,6 +4680,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
