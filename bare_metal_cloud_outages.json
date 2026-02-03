@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-03T20:06:26.086Z"
+    "updated_at": "2026-02-03T22:21:34.774Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-02-02T14:55:10.704Z",
+      "updated_at": "2026-02-03T22:17:42.664Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3521,6 +3521,59 @@
   ],
   "incidents": [
     {
+      "id": "qd93185m7t59",
+      "name": "[RBX8][Dedicated Servers] - Rack R807R04 incident notification",
+      "status": "identified",
+      "created_at": "2026-02-03T22:17:42.628Z",
+      "updated_at": "2026-02-03T22:17:43.061Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/v9v4k7knm55c",
+      "started_at": "2026-02-03T22:17:42.621Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "by2lbtmh2phn",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack R807R04.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/02/2026 22:05 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in rack R807R04.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "qd93185m7t59",
+          "created_at": "2026-02-03T22:17:43.058Z",
+          "updated_at": "2026-02-03T22:17:43.058Z",
+          "display_at": "2026-02-03T22:17:43.058Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-02-03T22:17:42.664Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "xshnxnzmfg55",
       "name": "[AP-SOUTH-MUM][Virtual Private Servers] - VPS Authentification incident notification",
       "status": "monitoring",
@@ -4062,9 +4115,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-02T14:55:10.704Z",
+          "updated_at": "2026-02-03T22:17:42.664Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4116,9 +4169,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-02T14:55:10.704Z",
+          "updated_at": "2026-02-03T22:17:42.664Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4329,7 +4382,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
