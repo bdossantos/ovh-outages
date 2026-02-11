@@ -4,7 +4,7 @@
     "name": "Hosted Private Cloud",
     "url": "https://hosted-private-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-11T03:23:57.841Z"
+    "updated_at": "2026-02-11T06:30:08.067Z"
   },
   "components": [
     {
@@ -1872,7 +1872,7 @@
       "name": "[RBX2D][Managed vSphere] - Storage maintenance notification",
       "status": "scheduled",
       "created_at": "2026-01-22T13:45:58.029Z",
-      "updated_at": "2026-01-22T13:46:54.074Z",
+      "updated_at": "2026-02-11T06:30:08.060Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -1880,6 +1880,19 @@
       "started_at": "2026-01-22T13:45:58.091Z",
       "page_id": "87zd6t8dwzd8",
       "incident_updates": [
+        {
+          "id": "92rxrf9p0tly",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "rz1qhxgg0pks",
+          "created_at": "2026-02-11T06:30:07.840Z",
+          "updated_at": "2026-02-11T06:30:07.840Z",
+          "display_at": "2026-02-11T06:30:07.840Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ngmrs8zrf7qf",
           "status": "scheduled",
@@ -2354,6 +2367,60 @@
       "scheduled_until": "2026-02-23T22:00:00.000Z"
     },
     {
+      "id": "wbmtrywhffl5",
+      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-02-10T21:20:10.056Z",
+      "updated_at": "2026-02-10T21:20:10.109Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/17d7yx84kl10",
+      "started_at": "2026-02-10T21:20:10.051Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "rn3l06ntwngl",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 23/02/2026 08:00 UTC\n<b>End time :</b> 26/02/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
+          "incident_id": "wbmtrywhffl5",
+          "created_at": "2026-02-10T21:20:10.106Z",
+          "updated_at": "2026-02-10T21:20:10.106Z",
+          "display_at": "2026-02-10T21:20:10.106Z",
+          "affected_components": [
+            {
+              "code": "rzzftwq0tvbv",
+              "name": "Backup as a Service || Zerto",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rzzftwq0tvbv",
+          "name": "Backup as a Service || Zerto",
+          "status": "operational",
+          "created_at": "2025-01-15T08:25:21.987Z",
+          "updated_at": "2025-06-06T15:59:36.270Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-02-23T08:00:00.000Z",
+      "scheduled_until": "2026-02-26T17:00:00.000Z"
+    },
+    {
       "id": "cshx2cxhlp8y",
       "name": "[EU/CA][Managed vSphere] - vSphere maintenance notification",
       "status": "scheduled",
@@ -2546,60 +2613,6 @@
           "showcase": false,
           "start_date": "2024-03-13",
           "group_id": "4hrz1q7y9dcf",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-02-23T08:00:00.000Z",
-      "scheduled_until": "2026-02-26T17:00:00.000Z"
-    },
-    {
-      "id": "wbmtrywhffl5",
-      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-02-10T21:20:10.056Z",
-      "updated_at": "2026-02-10T21:20:10.109Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/17d7yx84kl10",
-      "started_at": "2026-02-10T21:20:10.051Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "rn3l06ntwngl",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 23/02/2026 08:00 UTC\n<b>End time :</b> 26/02/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
-          "incident_id": "wbmtrywhffl5",
-          "created_at": "2026-02-10T21:20:10.106Z",
-          "updated_at": "2026-02-10T21:20:10.106Z",
-          "display_at": "2026-02-10T21:20:10.106Z",
-          "affected_components": [
-            {
-              "code": "rzzftwq0tvbv",
-              "name": "Backup as a Service || Zerto",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rzzftwq0tvbv",
-          "name": "Backup as a Service || Zerto",
-          "status": "operational",
-          "created_at": "2025-01-15T08:25:21.987Z",
-          "updated_at": "2025-06-06T15:59:36.270Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-15",
-          "group_id": null,
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -2879,6 +2892,60 @@
       "scheduled_until": "2026-03-02T22:00:00.000Z"
     },
     {
+      "id": "p1742djgy37g",
+      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-02-10T21:23:18.698Z",
+      "updated_at": "2026-02-10T21:23:18.755Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3blgn9sk9d1g",
+      "started_at": "2026-02-10T21:23:18.693Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "z2p4ls3bwzwb",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 02/03/2026 08:00 UTC\n<b>End time :</b> 05/03/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
+          "incident_id": "p1742djgy37g",
+          "created_at": "2026-02-10T21:23:18.752Z",
+          "updated_at": "2026-02-10T21:23:18.752Z",
+          "display_at": "2026-02-10T21:23:18.752Z",
+          "affected_components": [
+            {
+              "code": "rzzftwq0tvbv",
+              "name": "Backup as a Service || Zerto",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rzzftwq0tvbv",
+          "name": "Backup as a Service || Zerto",
+          "status": "operational",
+          "created_at": "2025-01-15T08:25:21.987Z",
+          "updated_at": "2025-06-06T15:59:36.270Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-02T08:00:00.000Z",
+      "scheduled_until": "2026-03-05T17:00:00.000Z"
+    },
+    {
       "id": "9cp6g810q172",
       "name": "[EU/CA][Managed vSphere] - vSphere maintenance notification",
       "status": "scheduled",
@@ -3071,60 +3138,6 @@
           "showcase": false,
           "start_date": "2024-03-13",
           "group_id": "4hrz1q7y9dcf",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-02T08:00:00.000Z",
-      "scheduled_until": "2026-03-05T17:00:00.000Z"
-    },
-    {
-      "id": "p1742djgy37g",
-      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-02-10T21:23:18.698Z",
-      "updated_at": "2026-02-10T21:23:18.755Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3blgn9sk9d1g",
-      "started_at": "2026-02-10T21:23:18.693Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "z2p4ls3bwzwb",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 02/03/2026 08:00 UTC\n<b>End time :</b> 05/03/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
-          "incident_id": "p1742djgy37g",
-          "created_at": "2026-02-10T21:23:18.752Z",
-          "updated_at": "2026-02-10T21:23:18.752Z",
-          "display_at": "2026-02-10T21:23:18.752Z",
-          "affected_components": [
-            {
-              "code": "rzzftwq0tvbv",
-              "name": "Backup as a Service || Zerto",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rzzftwq0tvbv",
-          "name": "Backup as a Service || Zerto",
-          "status": "operational",
-          "created_at": "2025-01-15T08:25:21.987Z",
-          "updated_at": "2025-06-06T15:59:36.270Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-15",
-          "group_id": null,
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
@@ -3350,6 +3363,60 @@
       "scheduled_until": "2026-03-09T22:00:00.000Z"
     },
     {
+      "id": "fc8r3sps0lwl",
+      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-02-10T21:25:44.406Z",
+      "updated_at": "2026-02-10T21:25:44.454Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/nwh4dkrv5rb2",
+      "started_at": "2026-02-10T21:25:44.402Z",
+      "page_id": "87zd6t8dwzd8",
+      "incident_updates": [
+        {
+          "id": "s1gvp7wr190b",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 09/03/2026 08:00 UTC\n<b>End time :</b> 12/03/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
+          "incident_id": "fc8r3sps0lwl",
+          "created_at": "2026-02-10T21:25:44.452Z",
+          "updated_at": "2026-02-10T21:25:44.452Z",
+          "display_at": "2026-02-10T21:25:44.452Z",
+          "affected_components": [
+            {
+              "code": "rzzftwq0tvbv",
+              "name": "Backup as a Service || Zerto",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rzzftwq0tvbv",
+          "name": "Backup as a Service || Zerto",
+          "status": "operational",
+          "created_at": "2025-01-15T08:25:21.987Z",
+          "updated_at": "2025-06-06T15:59:36.270Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-01-15",
+          "group_id": null,
+          "page_id": "87zd6t8dwzd8",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-09T08:00:00.000Z",
+      "scheduled_until": "2026-03-12T17:00:00.000Z"
+    },
+    {
       "id": "yvcl5sxgmz5h",
       "name": "[EU/CA][Hosted Private Cloud] - Managed VMware vSphere maintenance notification",
       "status": "scheduled",
@@ -3542,60 +3609,6 @@
           "showcase": false,
           "start_date": "2024-03-13",
           "group_id": "4hrz1q7y9dcf",
-          "page_id": "87zd6t8dwzd8",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-09T08:00:00.000Z",
-      "scheduled_until": "2026-03-12T17:00:00.000Z"
-    },
-    {
-      "id": "fc8r3sps0lwl",
-      "name": "[EU/CA][Backup as a Service] - Zerto maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-02-10T21:25:44.406Z",
-      "updated_at": "2026-02-10T21:25:44.454Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/nwh4dkrv5rb2",
-      "started_at": "2026-02-10T21:25:44.402Z",
-      "page_id": "87zd6t8dwzd8",
-      "incident_updates": [
-        {
-          "id": "s1gvp7wr190b",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Backup as a Service offer. \n\n<b>Start time :</b> 09/03/2026 08:00 UTC\n<b>End time :</b> 12/03/2026 17:00 UTC\n<b>Service impact :</b> During the maintenance window, the synchronization between the primary and secondary sites will be interrupted. As a result, the customer will not be able to activate the Disaster Recovery service.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup as a Service offer.\n\nThank you for your understanding.",
-          "incident_id": "fc8r3sps0lwl",
-          "created_at": "2026-02-10T21:25:44.452Z",
-          "updated_at": "2026-02-10T21:25:44.452Z",
-          "display_at": "2026-02-10T21:25:44.452Z",
-          "affected_components": [
-            {
-              "code": "rzzftwq0tvbv",
-              "name": "Backup as a Service || Zerto",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rzzftwq0tvbv",
-          "name": "Backup as a Service || Zerto",
-          "status": "operational",
-          "created_at": "2025-01-15T08:25:21.987Z",
-          "updated_at": "2025-06-06T15:59:36.270Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2025-01-15",
-          "group_id": null,
           "page_id": "87zd6t8dwzd8",
           "group": false,
           "only_show_if_degraded": false
