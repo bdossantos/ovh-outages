@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-23T15:20:39.616Z"
+    "updated_at": "2026-02-23T16:20:55.847Z"
   },
   "components": [
     {
@@ -270,9 +270,9 @@
     {
       "id": "f8n5w4snbwhg",
       "name": "Web Access",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.384Z",
-      "updated_at": "2026-01-29T21:01:12.123Z",
+      "updated_at": "2026-02-23T16:00:14.579Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -405,9 +405,9 @@
     {
       "id": "k69grzf4y2tm",
       "name": "Delivery email",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-10-27T09:26:55.071Z",
-      "updated_at": "2026-02-19T14:48:30.814Z",
+      "updated_at": "2026-02-23T16:04:45.606Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1155,7 +1155,7 @@
     {
       "id": "7935ckb29tc8",
       "name": "Collaborative solutions || MX Plan",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-06-30T12:22:06.827Z",
       "updated_at": "2023-05-16T12:09:06.686Z",
       "position": 5,
@@ -1268,9 +1268,9 @@
     {
       "id": "1lkpr13cqg9b",
       "name": "Delivery",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2021-06-30T12:22:04.433Z",
-      "updated_at": "2026-02-19T14:48:30.831Z",
+      "updated_at": "2026-02-23T16:04:45.644Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -1686,7 +1686,7 @@
     {
       "id": "z91pbqw7vzcm",
       "name": "Collaborative solutions || Zimbra",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-02-20T16:36:07.357Z",
       "updated_at": "2025-08-13T12:55:51.596Z",
       "position": 11,
@@ -2843,16 +2843,42 @@
     {
       "id": "98801tt3kj57",
       "name": "[Web Cloud][Collaborative solutions - MX Plan] - Microsoft Mailbox Delivery Issue",
-      "status": "investigating",
+      "status": "monitoring",
       "created_at": "2026-02-19T14:20:33.745Z",
-      "updated_at": "2026-02-19T14:58:47.414Z",
-      "monitoring_at": null,
+      "updated_at": "2026-02-23T16:04:45.730Z",
+      "monitoring_at": "2026-02-23T16:04:45.713Z",
       "resolved_at": null,
       "impact": "none",
       "shortlink": "https://stspg.io/hf91xsnyh6dp",
       "started_at": "2026-02-19T14:20:33.737Z",
       "page_id": "gw3vvyn2b3bh",
       "incident_updates": [
+        {
+          "id": "7dlj55h1s778",
+          "status": "monitoring",
+          "body": "Service has been fully restored since 23/02/2026 15:50 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 13/02/2026 15:00 UTC\n<b>Impacted Service(s) :</b> Mailbox delivery\n<b>Customers Impact :</b> Emails sent to Microsoft‑managed services (Outlook.com, Hotmail, Live, Office 365/Exchange Online) are being delayed, rejected, or not delivered. Deliveries to other providers (e.g., Gmail, Orange) remain unaffected.\n<b>Root Cause :</b> This incident is caused by our provider.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "98801tt3kj57",
+          "created_at": "2026-02-23T16:04:45.713Z",
+          "updated_at": "2026-02-23T16:04:45.713Z",
+          "display_at": "2026-02-23T16:04:45.713Z",
+          "affected_components": [
+            {
+              "code": "k69grzf4y2tm",
+              "name": "Collaborative solutions || MX Plan - Delivery email",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            },
+            {
+              "code": "1lkpr13cqg9b",
+              "name": "Collaborative solutions || MX Plan - Delivery",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "jqbh4xx458h8",
           "status": "investigating",
@@ -2897,9 +2923,9 @@
         {
           "id": "k69grzf4y2tm",
           "name": "Delivery email",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-10-27T09:26:55.071Z",
-          "updated_at": "2026-02-19T14:48:30.814Z",
+          "updated_at": "2026-02-23T16:04:45.606Z",
           "position": 2,
           "description": null,
           "showcase": false,
@@ -2912,9 +2938,9 @@
         {
           "id": "1lkpr13cqg9b",
           "name": "Delivery",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2021-06-30T12:22:04.433Z",
-          "updated_at": "2026-02-19T14:48:30.831Z",
+          "updated_at": "2026-02-23T16:04:45.644Z",
           "position": 6,
           "description": null,
           "showcase": false,
@@ -2926,6 +2952,59 @@
         }
       ],
       "reminder_intervals": "[]"
+    },
+    {
+      "id": "tbmp32k61t2z",
+      "name": "[GLOBAL][Collaborative solutions] - Zimbra incident notification",
+      "status": "identified",
+      "created_at": "2026-02-23T16:00:14.541Z",
+      "updated_at": "2026-02-23T16:00:14.632Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/2hh0rgk9d5vs",
+      "started_at": "2026-02-23T16:00:14.532Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "62lr318t5lwf",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Collaborative solutions offer on the specific zimbra services.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 23/02/2026 15:28 UTC\n<b>Impacted Service(s) :</b> Customer may be unable to access their mailbox, and perform any related action, such as browsing and sending. No data loss expected: all emails will be stored and delivered after the incident is resolved.\n<b>Root Cause :</b> This incident is caused by our provider.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "tbmp32k61t2z",
+          "created_at": "2026-02-23T16:00:14.629Z",
+          "updated_at": "2026-02-23T16:00:14.629Z",
+          "display_at": "2026-02-23T16:00:14.629Z",
+          "affected_components": [
+            {
+              "code": "f8n5w4snbwhg",
+              "name": "Collaborative solutions || Zimbra - Web Access",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f8n5w4snbwhg",
+          "name": "Web Access",
+          "status": "partial_outage",
+          "created_at": "2025-02-20T16:36:07.384Z",
+          "updated_at": "2026-02-23T16:00:14.579Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-02-20",
+          "group_id": "z91pbqw7vzcm",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
@@ -3352,6 +3431,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
