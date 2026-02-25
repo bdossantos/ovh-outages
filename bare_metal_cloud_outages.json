@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-25T14:20:34.320Z"
+    "updated_at": "2026-02-25T15:05:17.774Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-02-25T12:33:30.783Z",
+      "updated_at": "2026-02-25T14:40:53.417Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3523,9 +3523,9 @@
     {
       "id": "9vnh6gjw5gds",
       "name": "[RBX8][Dedicated Servers] - Rack R822R10 incident notification",
-      "status": "investigating",
+      "status": "identified",
       "created_at": "2026-02-25T13:45:35.126Z",
-      "updated_at": "2026-02-25T13:47:00.070Z",
+      "updated_at": "2026-02-25T15:05:17.763Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
@@ -3533,6 +3533,26 @@
       "started_at": "2026-02-25T13:45:35.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "bjp6khx2dtf4",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack R822R10.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 25/02/2026 13:29 UTC\n<b>Impacted Service(s) :</b> Some servers in the specified rack are no longer able to access the vRack and public network.\n<b>Customers Impact :</b> Some customers are temporarily unable to access their servers via vRack and public network located on the specified racks.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9vnh6gjw5gds",
+          "created_at": "2026-02-25T15:05:17.759Z",
+          "updated_at": "2026-02-25T15:05:17.759Z",
+          "display_at": "2026-02-25T15:05:17.759Z",
+          "affected_components": [
+            {
+              "code": "r7966tc9cpb9",
+              "name": "Dedicated Servers || Network - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "bft84y6b4f3m",
           "status": "investigating",
@@ -3566,79 +3586,6 @@
           "showcase": false,
           "start_date": "2021-07-09",
           "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "f9bbxnszqj0y",
-      "name": "[RBX5][Dedicated Servers] - Rack 45D27 incident notification",
-      "status": "identified",
-      "created_at": "2026-02-25T12:33:30.747Z",
-      "updated_at": "2026-02-25T13:12:12.563Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/0t7mr2mrb3hz",
-      "started_at": "2026-02-25T12:33:30.738Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "1t6ky4svq5w5",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack.\n\nHere are some supplementary details :\n<b>Start time :</b> 25/02/2026 12:19 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack 45D27 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified rack.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "f9bbxnszqj0y",
-          "created_at": "2026-02-25T13:12:12.559Z",
-          "updated_at": "2026-02-25T13:12:12.559Z",
-          "display_at": "2026-02-25T13:12:12.559Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0r909t22tw74",
-          "status": "investigating",
-          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack 45D27.\n\nHere are some supplementary details :\n<b>Start time :</b> 25/02/2026 12:19 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack 45D27 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified rack.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "f9bbxnszqj0y",
-          "created_at": "2026-02-25T12:33:30.980Z",
-          "updated_at": "2026-02-25T12:33:30.980Z",
-          "display_at": "2026-02-25T12:33:30.980Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-25T12:33:30.783Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
@@ -4178,9 +4125,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-25T12:33:30.783Z",
+          "updated_at": "2026-02-25T14:40:53.417Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4306,9 +4253,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "partial_outage",
+          "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-25T12:33:30.783Z",
+          "updated_at": "2026-02-25T14:40:53.417Z",
           "position": 5,
           "description": null,
           "showcase": false,
