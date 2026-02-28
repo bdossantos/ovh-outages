@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-02-28T07:23:49.159Z"
+    "updated_at": "2026-02-28T12:10:23.327Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-02-27T11:15:55.772Z",
+      "updated_at": "2026-02-28T12:09:47.151Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3519,7 +3519,61 @@
       ]
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lb5vbs670mzy",
+      "name": "[RBX8][Dedicated Servers] - Rack R802R06 Incident notification",
+      "status": "investigating",
+      "created_at": "2026-02-28T12:09:47.101Z",
+      "updated_at": "2026-02-28T12:10:23.323Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/zx7nvkwtnqnk",
+      "started_at": "2026-02-28T12:09:47.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "b6lg7zt64xp0",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack R802R06.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 28/02/2026 11:59 UTC\n<b>Impacted Service(s) :</b> All servers in the rack R802R06 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "lb5vbs670mzy",
+          "created_at": "2026-02-28T12:09:47.560Z",
+          "updated_at": "2026-02-28T12:10:23.262Z",
+          "display_at": "2026-02-28T12:09:47.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-02-28T12:09:47.151Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "2m5wvs9vwxvr",
@@ -3997,9 +4051,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-27T11:15:55.772Z",
+          "updated_at": "2026-02-28T12:09:47.151Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4125,9 +4179,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-02-27T11:15:55.772Z",
+          "updated_at": "2026-02-28T12:09:47.151Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4325,7 +4379,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
