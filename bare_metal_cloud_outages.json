@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-04T05:18:58.522Z"
+    "updated_at": "2026-03-04T05:58:59.831Z"
   },
   "components": [
     {
@@ -2289,9 +2289,9 @@
     {
       "id": "d336wdhstd37",
       "name": "US-EAST-LZ-ATL",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2025-10-29T16:14:56.174Z",
-      "updated_at": "2025-12-16T21:05:09.994Z",
+      "updated_at": "2026-03-04T05:58:59.774Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -3557,7 +3557,7 @@
       "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD][Virtual Private Servers] - VPS incident notification",
       "status": "investigating",
       "created_at": "2026-03-03T13:09:22.860Z",
-      "updated_at": "2026-03-03T13:09:22.957Z",
+      "updated_at": "2026-03-04T05:58:59.824Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -3565,6 +3565,64 @@
       "started_at": "2026-03-03T13:09:22.852Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "ds87csx5y4nv",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "sg0cl5tymvwc",
+          "created_at": "2026-03-04T05:58:59.822Z",
+          "updated_at": "2026-03-04T05:58:59.822Z",
+          "display_at": "2026-03-04T05:58:59.822Z",
+          "affected_components": [
+            {
+              "code": "d336wdhstd37",
+              "name": "Virtual Private Servers || Global Infrastructure - US-EAST-LZ-ATL",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1zjcghvlkpvg",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-BRU",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0820tr3nm9kr",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-MAD",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2pxfwzd3jldb",
+          "status": "investigating",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Some VPS instances in US-EAST-LZ-ATL are experiencing difficulties restarting or rebuilding.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sg0cl5tymvwc",
+          "created_at": "2026-03-04T05:58:49.931Z",
+          "updated_at": "2026-03-04T05:58:49.931Z",
+          "display_at": "2026-03-04T05:58:49.931Z",
+          "affected_components": [
+            {
+              "code": "1zjcghvlkpvg",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-BRU",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0820tr3nm9kr",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-MAD",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ffndd8cp1j04",
           "status": "investigating",
@@ -3593,6 +3651,21 @@
         }
       ],
       "components": [
+        {
+          "id": "d336wdhstd37",
+          "name": "US-EAST-LZ-ATL",
+          "status": "degraded_performance",
+          "created_at": "2025-10-29T16:14:56.174Z",
+          "updated_at": "2026-03-04T05:58:59.774Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-10-29",
+          "group_id": "3ygk7lc032zm",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "1zjcghvlkpvg",
           "name": "EU-WEST-LZ-BRU",
