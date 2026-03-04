@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-04T21:00:08.013Z"
+    "updated_at": "2026-03-04T23:08:55.170Z"
   },
   "components": [
     {
@@ -1216,9 +1216,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2026-03-04T21:00:07.787Z",
+      "updated_at": "2026-03-04T22:59:06.552Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1368,7 +1368,7 @@
       "name": "RBX",
       "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-03-04T12:04:42.552Z",
+      "updated_at": "2026-03-04T23:02:15.790Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -3553,6 +3553,79 @@
   ],
   "incidents": [
     {
+      "id": "pwvf1kldb5k7",
+      "name": "[RBX3][Dedicated Servers] - Rack 46J19 Incident Notification",
+      "status": "monitoring",
+      "created_at": "2026-03-04T22:47:24.910Z",
+      "updated_at": "2026-03-04T23:02:15.845Z",
+      "monitoring_at": "2026-03-04T23:02:15.829Z",
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/m4l7klhybsjn",
+      "started_at": "2026-03-04T22:47:24.902Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "pz0c746zbdzv",
+          "status": "monitoring",
+          "body": "Service has been fully restored since 04/03/2026 22:56 UTC. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 04/03/2026 22:35 UTC\n<b>Impacted Service(s) :</b> All servers in the rack 46J19 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "pwvf1kldb5k7",
+          "created_at": "2026-03-04T23:02:15.829Z",
+          "updated_at": "2026-03-04T23:02:15.829Z",
+          "display_at": "2026-03-04T23:02:15.829Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "0ry01zhjztkk",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the Rack 46J19.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 04/03/2026 22:35 UTC\n<b>Impacted Service(s) :</b> All servers in the rack 46J19 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "pwvf1kldb5k7",
+          "created_at": "2026-03-04T22:47:25.354Z",
+          "updated_at": "2026-03-04T22:47:25.354Z",
+          "display_at": "2026-03-04T22:47:25.354Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-03-04T23:02:15.790Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "sg0cl5tymvwc",
       "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD][Virtual Private Servers] - VPS incident notification",
       "status": "investigating",
@@ -3867,9 +3940,9 @@
         {
           "id": "rs6z6pyb307t",
           "name": "GRA",
-          "status": "under_maintenance",
+          "status": "operational",
           "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2026-03-04T21:00:07.787Z",
+          "updated_at": "2026-03-04T22:59:06.552Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -4179,7 +4252,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-03-04T12:04:42.552Z",
+          "updated_at": "2026-03-04T23:02:15.790Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -4307,7 +4380,7 @@
           "name": "RBX",
           "status": "operational",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-03-04T12:04:42.552Z",
+          "updated_at": "2026-03-04T23:02:15.790Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -6500,93 +6573,6 @@
       ],
       "scheduled_for": "2026-04-22T05:00:00.000Z",
       "scheduled_until": "2026-04-22T07:00:00.000Z"
-    },
-    {
-      "id": "jpggfndng7rz",
-      "name": "[GRA2][Dedicated Servers] - Multiple Racks",
-      "status": "in_progress",
-      "created_at": "2026-03-04T19:59:18.456Z",
-      "updated_at": "2026-03-04T21:00:07.992Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5fk1txc6q87v",
-      "started_at": "2026-03-04T19:59:18.449Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "85fypc6y3bnd",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "jpggfndng7rz",
-          "created_at": "2026-03-04T21:00:07.983Z",
-          "updated_at": "2026-03-04T21:00:07.983Z",
-          "display_at": "2026-03-04T21:00:07.983Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "g1l11ggs5ybd",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "jpggfndng7rz",
-          "created_at": "2026-03-04T20:00:08.429Z",
-          "updated_at": "2026-03-04T20:00:08.429Z",
-          "display_at": "2026-03-04T20:00:08.429Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "l8s90wlx3lst",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our private network (Vrack) on Multiple racks.   \n\n<b>Start time :</b> 04/03/2026 21:00 UTC \n<b>End time :</b> 04/03/2026 23:30 UTC \n<b>Service impact :</b> Private network (Vrack) will be temporarily unavailable during 15 mins for servers located in the following racks :\n-G205B21\n-G205B12\n-G205A23\n-G205A22\n-G205A24\n-G205B10\n-G205B11\n-G205A12\n-G205A10\n\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on a network equipment.\n\nThank you for your understanding.",
-          "incident_id": "jpggfndng7rz",
-          "created_at": "2026-03-04T19:59:18.508Z",
-          "updated_at": "2026-03-04T19:59:18.508Z",
-          "display_at": "2026-03-04T19:59:18.508Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2026-03-04T21:00:07.787Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-04T21:00:00.000Z",
-      "scheduled_until": "2026-03-04T23:30:00.000Z"
     }
   ],
   "status": {
