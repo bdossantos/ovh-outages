@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-05T07:48:47.469Z"
+    "updated_at": "2026-03-05T11:48:46.065Z"
   },
   "components": [
     {
@@ -790,9 +790,9 @@
     {
       "id": "3348cqrzct9d",
       "name": "AP-SOUTH-MUM",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-02-05T10:56:39.668Z",
-      "updated_at": "2026-02-05T12:17:21.211Z",
+      "updated_at": "2026-03-05T11:09:21.827Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -2433,9 +2433,9 @@
     {
       "id": "t206vgwsz51s",
       "name": "EU-SOUTH-MIL",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-02-05T10:56:01.328Z",
-      "updated_at": "2026-02-05T12:17:21.227Z",
+      "updated_at": "2026-03-05T11:09:21.844Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -2887,9 +2887,9 @@
     {
       "id": "3jtzmnzpgjqh",
       "name": "EU-WEST-PAR",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-02-05T10:55:40.879Z",
-      "updated_at": "2026-02-05T12:17:21.241Z",
+      "updated_at": "2026-03-05T11:09:21.860Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3432,9 +3432,9 @@
     {
       "id": "mx7g0r05db0c",
       "name": "RBX",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-02-05T10:56:20.834Z",
-      "updated_at": "2026-03-04T14:25:45.386Z",
+      "updated_at": "2026-03-05T11:09:21.875Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -7669,7 +7669,7 @@
     {
       "id": "wstnmn7ql79s",
       "name": "Containers & Orchestration || Managed Kubernetes Service",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:34:28.376Z",
       "updated_at": "2025-12-17T02:18:47.023Z",
       "position": 21,
@@ -10224,6 +10224,160 @@
     }
   ],
   "incidents": [
+    {
+      "id": "cfyc0j1wtz8w",
+      "name": "[AP-SOUTH-MUM/EU-WEST-PAR/EU-SOUTH-MIL/RBX][Containers & Orchestration] - Managed Kubernetes Service Incident Notification",
+      "status": "identified",
+      "created_at": "2026-03-05T11:09:21.787Z",
+      "updated_at": "2026-03-05T11:30:01.096Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "minor",
+      "shortlink": "https://stspg.io/m3k4spjt8qr7",
+      "started_at": "2026-03-05T11:09:21.776Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "mmrmsfzcq8y1",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Containers & Orchestration offer in AP-SOUTH-MUM/EU-WEST-PAR/EU-SOUTH-MIL/RBX.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 05/03/2026 09:00 UTC\n<b>Impacted Service(s) :</b> Nodepools may have been rolled out and reinstalled.\n<b>Customers Impact :</b> Some customers may still experience a partial impact during the nodepool updates.\n<b>Root Cause :</b> A service disruption is currently occurring due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
+          "incident_id": "cfyc0j1wtz8w",
+          "created_at": "2026-03-05T11:30:01.093Z",
+          "updated_at": "2026-03-05T11:30:01.093Z",
+          "display_at": "2026-03-05T11:30:01.093Z",
+          "affected_components": [
+            {
+              "code": "3348cqrzct9d",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - AP-SOUTH-MUM",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "t206vgwsz51s",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - EU-SOUTH-MIL",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3jtzmnzpgjqh",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - EU-WEST-PAR",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "mx7g0r05db0c",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - RBX",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n8j4f5qx6d2q",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our Containers & Orchestration Managed Kubernetes Service offer.\n\n<b>Start time :</b> 05/03/2026 09:00 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "cfyc0j1wtz8w",
+          "created_at": "2026-03-05T11:09:21.942Z",
+          "updated_at": "2026-03-05T11:09:21.942Z",
+          "display_at": "2026-03-05T11:09:21.942Z",
+          "affected_components": [
+            {
+              "code": "3348cqrzct9d",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - AP-SOUTH-MUM",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "t206vgwsz51s",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - EU-SOUTH-MIL",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "3jtzmnzpgjqh",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - EU-WEST-PAR",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "mx7g0r05db0c",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - RBX",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "3348cqrzct9d",
+          "name": "AP-SOUTH-MUM",
+          "status": "degraded_performance",
+          "created_at": "2026-02-05T10:56:39.668Z",
+          "updated_at": "2026-03-05T11:09:21.827Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-02-05",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "t206vgwsz51s",
+          "name": "EU-SOUTH-MIL",
+          "status": "degraded_performance",
+          "created_at": "2026-02-05T10:56:01.328Z",
+          "updated_at": "2026-03-05T11:09:21.844Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-02-05",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "3jtzmnzpgjqh",
+          "name": "EU-WEST-PAR",
+          "status": "degraded_performance",
+          "created_at": "2026-02-05T10:55:40.879Z",
+          "updated_at": "2026-03-05T11:09:21.860Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-02-05",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "mx7g0r05db0c",
+          "name": "RBX",
+          "status": "degraded_performance",
+          "created_at": "2026-02-05T10:56:20.834Z",
+          "updated_at": "2026-03-05T11:09:21.875Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2026-02-05",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "zpw7mvvvzp41",
       "name": "[GLOBAL][AI & Machine Learning] - LLama3.3-70B model incident notification",
