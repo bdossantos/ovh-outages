@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-09T10:00:08.289Z"
+    "updated_at": "2026-03-09T11:00:11.428Z"
   },
   "components": [
     {
@@ -175,9 +175,9 @@
     {
       "id": "gbwv1h71spbm",
       "name": "BHS",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:30.396Z",
-      "updated_at": "2026-03-06T07:23:59.560Z",
+      "updated_at": "2026-03-09T11:00:07.111Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -3348,9 +3348,9 @@
     {
       "id": "0820tr3nm9kr",
       "name": "EU-WEST-LZ-MAD",
-      "status": "degraded_performance",
+      "status": "operational",
       "created_at": "2026-03-03T13:04:11.150Z",
-      "updated_at": "2026-03-03T13:09:22.910Z",
+      "updated_at": "2026-03-09T10:53:22.338Z",
       "position": 19,
       "description": null,
       "showcase": true,
@@ -3554,10 +3554,10 @@
   "incidents": [
     {
       "id": "sg0cl5tymvwc",
-      "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD][Virtual Private Servers] - VPS incident notification",
-      "status": "investigating",
+      "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD/US-EAST-LZ-ATL][Virtual Private Servers] - VPS incident notification",
+      "status": "identified",
       "created_at": "2026-03-03T13:09:22.860Z",
-      "updated_at": "2026-03-04T05:58:59.824Z",
+      "updated_at": "2026-03-09T10:53:22.381Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -3565,6 +3565,38 @@
       "started_at": "2026-03-03T13:09:22.852Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "ml80h5yrw99l",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update :</b> The issue impacting EU-SOUTH-LZ-MAD has now been resolved. Some VPS instances in US-EAST-LZ-ATL and EU-WEST-LZ-BRU are still experiencing difficulties restarting or rebuilding.\n\n<b>Ongoing Actions :</b> Our teams continue to investigate and work on restoring normal service for the remaining impacted instances as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sg0cl5tymvwc",
+          "created_at": "2026-03-09T10:53:22.379Z",
+          "updated_at": "2026-03-09T10:53:22.379Z",
+          "display_at": "2026-03-09T10:53:22.379Z",
+          "affected_components": [
+            {
+              "code": "d336wdhstd37",
+              "name": "Virtual Private Servers || Global Infrastructure - US-EAST-LZ-ATL",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1zjcghvlkpvg",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-BRU",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0820tr3nm9kr",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-MAD",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ds87csx5y4nv",
           "status": "investigating",
@@ -3684,9 +3716,9 @@
         {
           "id": "0820tr3nm9kr",
           "name": "EU-WEST-LZ-MAD",
-          "status": "degraded_performance",
+          "status": "operational",
           "created_at": "2026-03-03T13:04:11.150Z",
-          "updated_at": "2026-03-03T13:09:22.910Z",
+          "updated_at": "2026-03-09T10:53:22.338Z",
           "position": 19,
           "description": null,
           "showcase": true,
@@ -3702,78 +3734,11 @@
   ],
   "scheduled_maintenances": [
     {
-      "id": "73z1ghwrz5bf",
-      "name": "[BHS1][Cooling System] - Rack T02B72 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-03T09:38:01.837Z",
-      "updated_at": "2026-03-09T10:00:08.248Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/5wjj879g7k2d",
-      "started_at": "2026-03-03T09:38:01.828Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "4r5h9yxr9g1j",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "73z1ghwrz5bf",
-          "created_at": "2026-03-09T10:00:08.006Z",
-          "updated_at": "2026-03-09T10:00:08.006Z",
-          "display_at": "2026-03-09T10:00:08.006Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "3vlc49rtq15v",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack T02B72.\n\n<b>Start time :</b> 09/03/2026 11:00 UTC\n<b>End time :</b> 09/03/2026 19:00 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "73z1ghwrz5bf",
-          "created_at": "2026-03-03T09:38:01.920Z",
-          "updated_at": "2026-03-03T09:38:01.920Z",
-          "display_at": "2026-03-03T09:38:01.920Z",
-          "affected_components": [
-            {
-              "code": "gbwv1h71spbm",
-              "name": "Dedicated Servers || Global Infrastructure - BHS",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "gbwv1h71spbm",
-          "name": "BHS",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2026-03-06T07:23:59.560Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-09T11:00:00.000Z",
-      "scheduled_until": "2026-03-09T19:00:00.000Z"
-    },
-    {
       "id": "8b8xyg78cbf4",
       "name": "[RBX2][Storage and Backups] - FTP Backup maintenance notification",
       "status": "scheduled",
       "created_at": "2026-03-06T21:20:58.553Z",
-      "updated_at": "2026-03-06T21:21:26.044Z",
+      "updated_at": "2026-03-09T11:00:11.421Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3781,6 +3746,19 @@
       "started_at": "2026-03-06T21:20:58.545Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "gnpxgl458rw2",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "8b8xyg78cbf4",
+          "created_at": "2026-03-09T11:00:11.233Z",
+          "updated_at": "2026-03-09T11:00:11.233Z",
+          "display_at": "2026-03-09T11:00:11.233Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "8lb5z5qqsjdf",
           "status": "scheduled",
@@ -4042,9 +4020,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2026-03-06T07:23:59.560Z",
+          "updated_at": "2026-03-09T11:00:07.111Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -4750,9 +4728,9 @@
         {
           "id": "gbwv1h71spbm",
           "name": "BHS",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2021-07-09T07:33:30.396Z",
-          "updated_at": "2026-03-06T07:23:59.560Z",
+          "updated_at": "2026-03-09T11:00:07.111Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -6493,6 +6471,147 @@
       ],
       "scheduled_for": "2026-04-20T11:00:00.000Z",
       "scheduled_until": "2026-04-20T13:00:00.000Z"
+    },
+    {
+      "id": "52jw12h7dny8",
+      "name": "[ERI1][Dedicated Servers] - Rack E101B15 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-03T20:10:58.021Z",
+      "updated_at": "2026-03-03T20:13:22.311Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/mvmt0gr0yd3j",
+      "started_at": "2026-03-03T20:10:58.015Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "k69qbhs2ytbh",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 20/04/2026 20:00 UTC \n<b>End time :</b> 20/04/2026 22:00 UTC  \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101B15 to rack ERI0102E01A.\n\nThank you for your understanding.",
+          "incident_id": "52jw12h7dny8",
+          "created_at": "2026-03-03T20:10:58.063Z",
+          "updated_at": "2026-03-03T20:10:58.063Z",
+          "display_at": "2026-03-03T20:10:58.063Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2026-01-23T05:18:44.989Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-20T20:00:00.000Z",
+      "scheduled_until": "2026-04-20T22:00:00.000Z"
+    },
+    {
+      "id": "73z1ghwrz5bf",
+      "name": "[BHS1][Cooling System] - Rack T02B72 maintenance notification",
+      "status": "in_progress",
+      "created_at": "2026-03-03T09:38:01.837Z",
+      "updated_at": "2026-03-09T11:00:07.242Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5wjj879g7k2d",
+      "started_at": "2026-03-03T09:38:01.828Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "n9p58hx807lc",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "73z1ghwrz5bf",
+          "created_at": "2026-03-09T11:00:07.238Z",
+          "updated_at": "2026-03-09T11:00:07.238Z",
+          "display_at": "2026-03-09T11:00:07.238Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4r5h9yxr9g1j",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "73z1ghwrz5bf",
+          "created_at": "2026-03-09T10:00:08.006Z",
+          "updated_at": "2026-03-09T10:00:08.006Z",
+          "display_at": "2026-03-09T10:00:08.006Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "3vlc49rtq15v",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack T02B72.\n\n<b>Start time :</b> 09/03/2026 11:00 UTC\n<b>End time :</b> 09/03/2026 19:00 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "73z1ghwrz5bf",
+          "created_at": "2026-03-03T09:38:01.920Z",
+          "updated_at": "2026-03-03T09:38:01.920Z",
+          "display_at": "2026-03-03T09:38:01.920Z",
+          "affected_components": [
+            {
+              "code": "gbwv1h71spbm",
+              "name": "Dedicated Servers || Global Infrastructure - BHS",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "gbwv1h71spbm",
+          "name": "BHS",
+          "status": "under_maintenance",
+          "created_at": "2021-07-09T07:33:30.396Z",
+          "updated_at": "2026-03-09T11:00:07.111Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-09T11:00:00.000Z",
+      "scheduled_until": "2026-03-09T19:00:00.000Z"
     }
   ],
   "status": {
