@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-09T15:08:43.708Z"
+    "updated_at": "2026-03-09T16:22:06.451Z"
   },
   "components": [
     {
@@ -1574,9 +1574,9 @@
     {
       "id": "2k4xnh0pwlqx",
       "name": "GRA3",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:35:50.709Z",
-      "updated_at": "2026-03-03T16:45:47.829Z",
+      "updated_at": "2026-03-09T15:50:54.374Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -4750,9 +4750,9 @@
     {
       "id": "rtcd9r5f2b73",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-05-04T10:36:27.522Z",
-      "updated_at": "2025-06-24T15:43:38.131Z",
+      "updated_at": "2026-03-09T16:11:00.568Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4840,9 +4840,9 @@
     {
       "id": "q10zg1z8ymkz",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-08-18T10:29:46.549Z",
-      "updated_at": "2026-03-08T22:56:54.247Z",
+      "updated_at": "2026-03-09T16:11:00.587Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -4885,9 +4885,9 @@
     {
       "id": "jqdy9pphbv0f",
       "name": "GRA11",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-12-12T12:21:28.661Z",
-      "updated_at": "2025-06-19T09:25:43.691Z",
+      "updated_at": "2026-03-09T16:11:00.606Z",
       "position": 10,
       "description": null,
       "showcase": false,
@@ -5080,7 +5080,7 @@
     {
       "id": "xfnf56jsxk5y",
       "name": "Compute - Instance || GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:36:03.463Z",
       "updated_at": "2025-12-17T02:18:46.918Z",
       "position": 11,
@@ -9652,7 +9652,7 @@
     {
       "id": "ydhs6hsr8s0s",
       "name": "Network || Load Balancer",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2024-12-12T12:15:53.182Z",
       "updated_at": "2026-03-03T15:56:09.078Z",
       "position": 52,
@@ -9696,7 +9696,7 @@
     {
       "id": "xjbj3776977d",
       "name": "Network || Private network (vRack)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:36:32.940Z",
       "updated_at": "2026-03-03T15:52:22.048Z",
       "position": 53,
@@ -9742,7 +9742,7 @@
     {
       "id": "txmh9qs0c937",
       "name": "Network || Public network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T10:07:22.842Z",
       "updated_at": "2026-03-03T15:52:22.059Z",
       "position": 54,
@@ -10225,6 +10225,101 @@
   ],
   "incidents": [
     {
+      "id": "1l825yyw7pmq",
+      "name": "[GRA11][Network] - API Network incident notification",
+      "status": "investigating",
+      "created_at": "2026-03-09T16:11:00.524Z",
+      "updated_at": "2026-03-09T16:11:00.677Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/sks3blbgsyrq",
+      "started_at": "2026-03-09T16:11:00.508Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "yvcgm0pbk373",
+          "status": "investigating",
+          "body": "We are currently experiencing an event affecting our API Network on our Public Cloud offer in GRA11.\n\n<b>Start time :</b> 09/03/2026 13:30 UTC\n\nOur teams are fully committed to investigating this issue and working towards a resolution as soon as possible. As investigations are ongoing, we will share any new findings or updates with you as soon as possible.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "1l825yyw7pmq",
+          "created_at": "2026-03-09T16:11:00.674Z",
+          "updated_at": "2026-03-09T16:11:00.674Z",
+          "display_at": "2026-03-09T16:11:00.674Z",
+          "affected_components": [
+            {
+              "code": "rtcd9r5f2b73",
+              "name": "Network || Private network (vRack) - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "q10zg1z8ymkz",
+              "name": "Network || Public network - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jqdy9pphbv0f",
+              "name": "Network || Load Balancer - GRA11",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rtcd9r5f2b73",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2022-05-04T10:36:27.522Z",
+          "updated_at": "2026-03-09T16:11:00.568Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-05-04",
+          "group_id": "xjbj3776977d",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "q10zg1z8ymkz",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2023-08-18T10:29:46.549Z",
+          "updated_at": "2026-03-09T16:11:00.587Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-08-18",
+          "group_id": "txmh9qs0c937",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jqdy9pphbv0f",
+          "name": "GRA11",
+          "status": "partial_outage",
+          "created_at": "2024-12-12T12:21:28.661Z",
+          "updated_at": "2026-03-09T16:11:00.606Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-12-12",
+          "group_id": "ydhs6hsr8s0s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "zpw7mvvvzp41",
       "name": "[GLOBAL][AI & Machine Learning] - LLama3.3-70B model incident notification",
       "status": "identified",
@@ -10330,119 +10425,6 @@
           "showcase": false,
           "start_date": "2025-04-18",
           "group_id": null,
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    },
-    {
-      "id": "q5pbw90h315x",
-      "name": "[GRA3][Compute - Instance] - Instances incident notification",
-      "status": "identified",
-      "created_at": "2026-03-03T16:45:47.789Z",
-      "updated_at": "2026-03-03T18:46:21.798Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/nz2lym1x2vp4",
-      "started_at": "2026-03-03T16:45:47.781Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "h00rds823cwp",
-          "status": "identified",
-          "body": "We are pleased to inform you that the incident affecting our Compute - Instance has been resolved.\n\n<b>Start time :</b> 03/03/2026 16:33 UTC\n<b>End time :</b> 03/03/2026 18:45 UTC\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure malfunction.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "q5pbw90h315x",
-          "created_at": "2026-03-03T18:45:59.481Z",
-          "updated_at": "2026-03-03T18:46:21.794Z",
-          "display_at": "2026-03-03T18:45:59.000Z",
-          "affected_components": [
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8d6mvtwv5kmw",
-          "status": "identified",
-          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Most of the instances are now operational again.\n<b>Ongoing Actions :</b> Our teams are mobilised to restore the remaining instances as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "q5pbw90h315x",
-          "created_at": "2026-03-03T17:47:43.462Z",
-          "updated_at": "2026-03-03T17:47:43.462Z",
-          "display_at": "2026-03-03T17:47:43.462Z",
-          "affected_components": [
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "8fpwbwn9krw5",
-          "status": "identified",
-          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n\n<b>Start time :</b>  03/03/2026 16:33 UTC\n<b>Impacted Service(s) :</b> Some instances in the Graveline region are unreachable.\n<b>Customers Impact :</b>  Some customers are temporarily unable to access and use their instances in the specified region.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.",
-          "incident_id": "q5pbw90h315x",
-          "created_at": "2026-03-03T16:54:39.245Z",
-          "updated_at": "2026-03-03T16:54:39.245Z",
-          "display_at": "2026-03-03T16:54:39.245Z",
-          "affected_components": [
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "9rdctx89zgch",
-          "status": "identified",
-          "body": "We are currently investigating an incident affecting our Compute - Instance offering, which is causing temporary availability issue in the Graveline region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/03/2026 16:33 UTC\n<b>Impacted Service(s) :</b> Some instances in the Graveline region are unreachable.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "q5pbw90h315x",
-          "created_at": "2026-03-03T16:45:47.901Z",
-          "updated_at": "2026-03-03T16:45:47.901Z",
-          "display_at": "2026-03-03T16:45:47.901Z",
-          "affected_components": [
-            {
-              "code": "2k4xnh0pwlqx",
-              "name": "Compute - Instance || GRA - GRA3",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "2k4xnh0pwlqx",
-          "name": "GRA3",
-          "status": "partial_outage",
-          "created_at": "2022-04-06T09:35:50.709Z",
-          "updated_at": "2026-03-03T16:45:47.829Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "xfnf56jsxk5y",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -13141,9 +13123,9 @@
         {
           "id": "jqdy9pphbv0f",
           "name": "GRA11",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2024-12-12T12:21:28.661Z",
-          "updated_at": "2025-06-19T09:25:43.691Z",
+          "updated_at": "2026-03-09T16:11:00.606Z",
           "position": 10,
           "description": null,
           "showcase": false,
