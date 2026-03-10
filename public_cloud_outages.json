@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-10T16:26:11.749Z"
+    "updated_at": "2026-03-10T17:20:30.656Z"
   },
   "components": [
     {
@@ -1904,9 +1904,9 @@
     {
       "id": "lng3n45dgl5g",
       "name": "GRA2",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2023-10-04T21:40:58.642Z",
-      "updated_at": "2026-03-10T10:30:42.819Z",
+      "updated_at": "2026-03-10T16:52:48.202Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -10072,7 +10072,7 @@
     {
       "id": "99vzp9gbvfqg",
       "name": "Storage || Volume Snapshot (Ceph)",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:35:21.383Z",
       "updated_at": "2026-03-03T15:52:22.157Z",
       "position": 63,
@@ -10257,6 +10257,79 @@
     }
   ],
   "incidents": [
+    {
+      "id": "myp81nc676b8",
+      "name": "[GRA2][Storage] - CEPH incident notification",
+      "status": "identified",
+      "created_at": "2026-03-10T16:52:48.171Z",
+      "updated_at": "2026-03-10T16:57:02.481Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/xtwmn3jfr3l7",
+      "started_at": "2026-03-10T16:52:48.164Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "q501bj946xvd",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\nUpdate :  Our teams have replaced the faulty network equipment.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "myp81nc676b8",
+          "created_at": "2026-03-10T16:57:02.476Z",
+          "updated_at": "2026-03-10T16:57:02.476Z",
+          "display_at": "2026-03-10T16:57:02.476Z",
+          "affected_components": [
+            {
+              "code": "lng3n45dgl5g",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ph6k0nzc3xng",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Storage offering, which is causing temporary availability issue in the GRA2.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 10/03/2026 07:26 UTC\n<b>Impacted Service(s) :</b> Some CEPH volumes are not available in this region. \n<b>Customers Impact :</b> Customers may experience performance degradation and deterioration in their data redundancy.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "myp81nc676b8",
+          "created_at": "2026-03-10T16:52:48.261Z",
+          "updated_at": "2026-03-10T16:52:48.261Z",
+          "display_at": "2026-03-10T16:52:48.261Z",
+          "affected_components": [
+            {
+              "code": "lng3n45dgl5g",
+              "name": "Storage || Volume Snapshot (Ceph) - GRA2",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lng3n45dgl5g",
+          "name": "GRA2",
+          "status": "partial_outage",
+          "created_at": "2023-10-04T21:40:58.642Z",
+          "updated_at": "2026-03-10T16:52:48.202Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2023-10-04",
+          "group_id": "99vzp9gbvfqg",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "zpw7mvvvzp41",
       "name": "[GLOBAL][AI & Machine Learning] - LLama3.3-70B model incident notification",
@@ -13927,6 +14000,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
