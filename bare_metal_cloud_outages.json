@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-11T13:31:29.072Z"
+    "updated_at": "2026-03-11T15:02:13.329Z"
   },
   "components": [
     {
@@ -868,9 +868,9 @@
     {
       "id": "jkwghz2dnq89",
       "name": "GRA",
-      "status": "under_maintenance",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:23.778Z",
-      "updated_at": "2026-03-11T08:10:07.081Z",
+      "updated_at": "2026-03-11T15:02:13.273Z",
       "position": 3,
       "description": null,
       "showcase": false,
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-03-11T09:02:17.281Z",
+      "updated_at": "2026-03-11T14:41:42.683Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3348,9 +3348,9 @@
     {
       "id": "0820tr3nm9kr",
       "name": "EU-WEST-LZ-MAD",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2026-03-03T13:04:11.150Z",
-      "updated_at": "2026-03-09T10:53:22.338Z",
+      "updated_at": "2026-03-11T14:33:13.441Z",
       "position": 19,
       "description": null,
       "showcase": true,
@@ -3553,11 +3553,64 @@
   ],
   "incidents": [
     {
+      "id": "6zwh3qhmbj6r",
+      "name": "[RBX4][Dedicated Servers] - Room 54 incident notification",
+      "status": "identified",
+      "created_at": "2026-03-11T14:41:42.642Z",
+      "updated_at": "2026-03-11T14:41:42.764Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/l1rbr9tqhmxv",
+      "started_at": "2026-03-11T14:41:42.633Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "j7nrf74tfxs5",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific room 54.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 11/03/2026 13:38 UTC\n<b>Impacted Service(s) :</b> Some servers in the room 54 are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers located in room 54.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "6zwh3qhmbj6r",
+          "created_at": "2026-03-11T14:41:42.761Z",
+          "updated_at": "2026-03-11T14:41:42.761Z",
+          "display_at": "2026-03-11T14:41:42.761Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-03-11T14:41:42.683Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
       "id": "sg0cl5tymvwc",
       "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD/US-EAST-LZ-ATL][Virtual Private Servers] - VPS incident notification",
       "status": "identified",
       "created_at": "2026-03-03T13:09:22.860Z",
-      "updated_at": "2026-03-09T13:17:47.055Z",
+      "updated_at": "2026-03-11T14:33:13.480Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -3565,6 +3618,38 @@
       "started_at": "2026-03-03T13:09:22.852Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "r57162w011mw",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Some VPS instances in EU-SOUTH-LZ-MAD, US-EAST-LZ-ATL and EU-WEST-LZ-BRU are still experiencing difficulties restarting or rebuilding.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "sg0cl5tymvwc",
+          "created_at": "2026-03-11T14:33:13.478Z",
+          "updated_at": "2026-03-11T14:33:13.478Z",
+          "display_at": "2026-03-11T14:33:13.478Z",
+          "affected_components": [
+            {
+              "code": "d336wdhstd37",
+              "name": "Virtual Private Servers || Global Infrastructure - US-EAST-LZ-ATL",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "1zjcghvlkpvg",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-BRU",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "0820tr3nm9kr",
+              "name": "Virtual Private Servers || Global Infrastructure - EU-WEST-LZ-MAD",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "ml80h5yrw99l",
           "status": "identified",
@@ -3716,9 +3801,9 @@
         {
           "id": "0820tr3nm9kr",
           "name": "EU-WEST-LZ-MAD",
-          "status": "operational",
+          "status": "degraded_performance",
           "created_at": "2026-03-03T13:04:11.150Z",
-          "updated_at": "2026-03-09T10:53:22.338Z",
+          "updated_at": "2026-03-11T14:33:13.441Z",
           "position": 19,
           "description": null,
           "showcase": true,
@@ -3845,9 +3930,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-03-11T09:02:17.281Z",
+          "updated_at": "2026-03-11T14:41:42.683Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -6559,84 +6644,10 @@
       ],
       "scheduled_for": "2026-03-11T12:00:00.000Z",
       "scheduled_until": "2026-03-12T02:00:00.000Z"
-    },
-    {
-      "id": "0j4pj3kqp9nt",
-      "name": "[GRA1][Cooling System] - Rack G106B15 maintenance notification",
-      "status": "in_progress",
-      "created_at": "2026-03-11T08:08:46.624Z",
-      "updated_at": "2026-03-11T08:12:30.961Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/c42f3t14v27y",
-      "started_at": "2026-03-11T08:08:46.617Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "6jq87rfc79s0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "0j4pj3kqp9nt",
-          "created_at": "2026-03-11T08:10:07.226Z",
-          "updated_at": "2026-03-11T08:10:07.226Z",
-          "display_at": "2026-03-11T08:10:07.226Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "t5ng209m2nkm",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack G106B15.\n\n<b>Start time :</b> 11/03/2026 07:45 UTC\n<b>End time :</b> 11/03/2026 15:30 UTC\n<b>Service impact :</b> During this maintenance, we will turn off the servers.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "0j4pj3kqp9nt",
-          "created_at": "2026-03-11T08:08:46.681Z",
-          "updated_at": "2026-03-11T08:12:30.956Z",
-          "display_at": "2026-03-11T08:08:46.681Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "under_maintenance",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2026-03-11T08:10:07.081Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-11T08:10:00.000Z",
-      "scheduled_until": "2026-03-11T15:30:00.000Z"
     }
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
