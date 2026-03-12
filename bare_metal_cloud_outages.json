@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-12T04:02:25.420Z"
+    "updated_at": "2026-03-12T06:20:27.453Z"
   },
   "components": [
     {
@@ -205,7 +205,7 @@
     {
       "id": "w0ltw3dpn3sq",
       "name": "Dedicated Servers || Additional services",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:51.265Z",
       "updated_at": "2023-05-16T11:45:36.915Z",
       "position": 1,
@@ -443,9 +443,9 @@
     {
       "id": "0mqm7k03cn7d",
       "name": "Zone APAC",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:08.999Z",
-      "updated_at": "2025-09-10T18:19:58.241Z",
+      "updated_at": "2026-03-12T05:36:49.872Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -458,7 +458,7 @@
     {
       "id": "nll849j8p6nq",
       "name": "Dedicated Servers || Delivery",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:11.312Z",
       "updated_at": "2023-05-16T11:45:36.925Z",
       "position": 2,
@@ -493,9 +493,9 @@
     {
       "id": "jds1mz2tgrx4",
       "name": "Zone APAC",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:25.511Z",
-      "updated_at": "2026-02-05T19:15:41.856Z",
+      "updated_at": "2026-03-12T05:36:49.890Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -1091,7 +1091,7 @@
     {
       "id": "7xz24f8j9l94",
       "name": "Dedicated Servers || Operating System",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:32:27.959Z",
       "updated_at": "2023-05-16T11:45:36.944Z",
       "position": 4,
@@ -1981,9 +1981,9 @@
     {
       "id": "7nhk80mgnyz5",
       "name": "SGP",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:49.293Z",
-      "updated_at": "2025-09-10T18:19:58.320Z",
+      "updated_at": "2026-03-12T05:36:49.908Z",
       "position": 8,
       "description": null,
       "showcase": false,
@@ -3552,6 +3552,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "04qmx65dq1z2",
+      "name": "[SGP][Dedicated Servers] - Servers delivery/reboot incident notification",
+      "status": "investigating",
+      "created_at": "2026-03-12T05:36:49.815Z",
+      "updated_at": "2026-03-12T05:36:49.975Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/hkpxpv1bvkh3",
+      "started_at": "2026-03-12T05:36:49.800Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "x4vhj0380rg4",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the in Canada and SGP regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 12/03/2026 03:06 UTC\n<b>Impacted Service(s) :</b> Servers reboot, delivery and install are temporarily unavailable in SGP.\n<b>Customers Impact :</b> Customers are temporarily unable to reboot their servers, install an OS on their servers and get their new servers they ordered in the specified regions.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident to fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "04qmx65dq1z2",
+          "created_at": "2026-03-12T05:36:49.971Z",
+          "updated_at": "2026-03-12T05:36:49.971Z",
+          "display_at": "2026-03-12T05:36:49.971Z",
+          "affected_components": [
+            {
+              "code": "0mqm7k03cn7d",
+              "name": "Dedicated Servers || Delivery - Zone APAC",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "jds1mz2tgrx4",
+              "name": "Dedicated Servers || Operating System - Zone APAC",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "7nhk80mgnyz5",
+              "name": "Dedicated Servers || Additional services - SGP",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "0mqm7k03cn7d",
+          "name": "Zone APAC",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:08.999Z",
+          "updated_at": "2026-03-12T05:36:49.872Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "nll849j8p6nq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "jds1mz2tgrx4",
+          "name": "Zone APAC",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:32:25.511Z",
+          "updated_at": "2026-03-12T05:36:49.890Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7xz24f8j9l94",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7nhk80mgnyz5",
+          "name": "SGP",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:49.293Z",
+          "updated_at": "2026-03-12T05:36:49.908Z",
+          "position": 8,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "w0ltw3dpn3sq",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
     {
       "id": "sg0cl5tymvwc",
       "name": "[EU-WEST-LZ-BRU/EU-SOUTH-LZ-MAD/US-EAST-LZ-ATL][Virtual Private Servers] - VPS incident notification",
@@ -6488,6 +6583,6 @@
   ],
   "status": {
     "indicator": "minor",
-    "description": "Partially Degraded Service"
+    "description": "Minor Service Outage"
   }
 }
