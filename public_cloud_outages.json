@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-12T10:01:08.559Z"
+    "updated_at": "2026-03-12T11:09:31.270Z"
   },
   "components": [
     {
@@ -10258,6 +10258,59 @@
   ],
   "incidents": [
     {
+      "id": "kpqtsyhwlq56",
+      "name": "[GRA11][Containers & Orchestration] - Managed Kubernetes Service Incident Notification",
+      "status": "monitoring",
+      "created_at": "2026-03-12T11:09:31.182Z",
+      "updated_at": "2026-03-12T11:09:31.267Z",
+      "monitoring_at": "2026-03-12T11:09:31.256Z",
+      "resolved_at": null,
+      "impact": "none",
+      "shortlink": "https://stspg.io/nc5qzv9s219p",
+      "started_at": "2026-03-12T11:09:31.172Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "3rwvx88fcy1s",
+          "status": "monitoring",
+          "body": "We had an incident on Managed Kubernetes Service offer which has now been resolved. Monitoring remains active to ensure long-term stability.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 12/03/2026 09:11 UTC\n<b>End time :</b> 12/03/2026 10:21 UTC\n<b>Impacted Service(s) :</b> All MKS Clusters on GRA11 are experiencing slow APIServer access from Worker Nodes.\n<b>Customers Impact :</b> Access to the MKSCluster APIServer is slow from some Worker Nodes, which can impact applications that frequently interact with the APIServer.\n<b>Ongoing Actions :</b> Our teams are continuing to monitor the system to ensure stable service.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kpqtsyhwlq56",
+          "created_at": "2026-03-12T11:09:31.256Z",
+          "updated_at": "2026-03-12T11:09:31.256Z",
+          "display_at": "2026-03-12T11:09:31.256Z",
+          "affected_components": [
+            {
+              "code": "lx3sbpqcn3q5",
+              "name": "Containers & Orchestration || Managed Kubernetes Service - GRA11",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "lx3sbpqcn3q5",
+          "name": "GRA11",
+          "status": "operational",
+          "created_at": "2024-01-24T14:39:11.288Z",
+          "updated_at": "2026-02-05T10:57:35.951Z",
+          "position": 10,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-01-24",
+          "group_id": "wstnmn7ql79s",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
       "id": "cdb9f5lmlptf",
       "name": "[GRA][Databases] - MongoDB Discovery incident notification",
       "status": "identified",
@@ -12117,7 +12170,7 @@
       "name": "[GRA7][Network] - Load Balancer maintenance notification",
       "status": "scheduled",
       "created_at": "2026-02-18T08:20:56.359Z",
-      "updated_at": "2026-02-18T08:20:56.489Z",
+      "updated_at": "2026-03-12T11:00:16.718Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -12125,6 +12178,19 @@
       "started_at": "2026-02-18T08:20:56.349Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
+        {
+          "id": "45yvh6yxkrn2",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "6pw0lmt2p15d",
+          "created_at": "2026-03-12T11:00:16.612Z",
+          "updated_at": "2026-03-12T11:00:16.612Z",
+          "display_at": "2026-03-12T11:00:16.612Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "gdqtljr3xy46",
           "status": "scheduled",
