@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-16T13:23:47.822Z"
+    "updated_at": "2026-03-16T16:21:34.948Z"
   },
   "components": [
     {
@@ -1140,9 +1140,9 @@
     {
       "id": "fj261sm926yg",
       "name": "Webmail",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:06.132Z",
-      "updated_at": "2026-03-09T15:23:30.484Z",
+      "updated_at": "2026-03-16T15:51:56.161Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -2871,7 +2871,82 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "cs67jbtbclzh",
+      "name": "[GLOBAL][Collaborative solutions] - MXPlan incident notification",
+      "status": "identified",
+      "created_at": "2026-03-16T15:51:56.114Z",
+      "updated_at": "2026-03-16T15:51:56.227Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/k0xpp5nvd860",
+      "started_at": "2026-03-16T15:51:56.103Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "tq0vq55b0dnz",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Collaborative solutions offer.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 16/03/2026 15:02 UTC\n<b>Impacted Service(s) :</b> Access to mailboxes and webmail is unavailable.\n<b>Customers Impact :</b> Customers are currently unable to access their mailboxes, which means they cannot read, send, or manage their emails.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "cs67jbtbclzh",
+          "created_at": "2026-03-16T15:51:56.223Z",
+          "updated_at": "2026-03-16T15:51:56.223Z",
+          "display_at": "2026-03-16T15:51:56.223Z",
+          "affected_components": [
+            {
+              "code": "qpx6g1kd74vy",
+              "name": "Collaborative solutions || MX Plan - Mailbox Access",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "fj261sm926yg",
+              "name": "Collaborative solutions || MX Plan - Webmail",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qpx6g1kd74vy",
+          "name": "Mailbox Access",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:04.946Z",
+          "updated_at": "2026-03-04T08:17:32.522Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "7935ckb29tc8",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "fj261sm926yg",
+          "name": "Webmail",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:06.132Z",
+          "updated_at": "2026-03-16T15:51:56.161Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "7935ckb29tc8",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "sk0fnmt7rvjb",
