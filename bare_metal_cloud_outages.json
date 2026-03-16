@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-16T16:03:58.158Z"
+    "updated_at": "2026-03-16T18:22:45.310Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1767,9 +1767,9 @@
     {
       "id": "p1l8zngh2vc3",
       "name": "SGP",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:32.651Z",
-      "updated_at": "2026-03-16T12:59:00.044Z",
+      "updated_at": "2026-03-16T18:22:45.241Z",
       "position": 7,
       "description": null,
       "showcase": false,
@@ -3631,81 +3631,7 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [
-    {
-      "id": "0jdwxy828zf5",
-      "name": "[SGP2][Dedicated Servers] - Racks SGP0201C03A/SGP0201C03B/SGP0201C03C Incident Notification",
-      "status": "identified",
-      "created_at": "2026-03-16T12:58:59.999Z",
-      "updated_at": "2026-03-16T15:01:49.896Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/w47y98n54v20",
-      "started_at": "2026-03-16T12:58:59.990Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "9pgwjmnqdlhw",
-          "status": "identified",
-          "body": "We have new informations regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> The IPMI service is now operational on the servers in the racks SGP0201C03A/SGP0201C03B/SGP0201C03C.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "0jdwxy828zf5",
-          "created_at": "2026-03-16T15:01:49.893Z",
-          "updated_at": "2026-03-16T15:01:49.893Z",
-          "display_at": "2026-03-16T15:01:49.893Z",
-          "affected_components": [
-            {
-              "code": "p1l8zngh2vc3",
-              "name": "Dedicated Servers || Global Infrastructure - SGP",
-              "old_status": "partial_outage",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "rt3bl64tx0f8",
-          "status": "identified",
-          "body": "We are currently investigating an incident affecting our Dedicated Servers offer in the racks SGP0201C03A/SGP0201C03B/SGP0201C03C.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 16/03/2026 12:23 UTC\n<b>Impacted Service(s) :</b> Some servers in rack SGP0201C03A are no longer able to access the vRack network, except for those configured in LACP. Servers located in racks SGP0201C03A/SGP0201C03B/SGP0201C03C are no longer reachable through their IPMI interfaces.\n<b>Customers Impact :</b> Some customers are temporarily unable to access or use their servers via the vRack network if LACP has not been configured in rack SGP0201C03A. In addition, they are unable to access their servers through the IPMI interface in racks SGP0201C03A/SGP0201C03B/SGP0201C03C.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "0jdwxy828zf5",
-          "created_at": "2026-03-16T12:59:00.192Z",
-          "updated_at": "2026-03-16T13:09:29.835Z",
-          "display_at": "2026-03-16T12:59:00.000Z",
-          "affected_components": [
-            {
-              "code": "p1l8zngh2vc3",
-              "name": "Dedicated Servers || Global Infrastructure - SGP",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "p1l8zngh2vc3",
-          "name": "SGP",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:32.651Z",
-          "updated_at": "2026-03-16T12:59:00.044Z",
-          "position": 7,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": null
-    }
-  ],
+  "incidents": [],
   "scheduled_maintenances": [
     {
       "id": "lcqfd6jfpc6l",
@@ -6496,7 +6422,7 @@
     }
   ],
   "status": {
-    "indicator": "minor",
-    "description": "Minor Service Outage"
+    "indicator": "maintenance",
+    "description": "Service Under Maintenance"
   }
 }
