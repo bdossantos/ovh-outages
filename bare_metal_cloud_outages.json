@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-17T20:49:25.839Z"
+    "updated_at": "2026-03-18T00:40:24.333Z"
   },
   "components": [
     {
@@ -293,9 +293,9 @@
     {
       "id": "hqn6pb8tdzdx",
       "name": "BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:56.304Z",
-      "updated_at": "2026-02-20T19:50:55.277Z",
+      "updated_at": "2026-03-18T00:40:24.266Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -3631,7 +3631,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "ld9rsc76tj5f",
+      "name": "[BHS7][Dedicated Servers] - Rack B719A06",
+      "status": "investigating",
+      "created_at": "2026-03-18T00:40:24.231Z",
+      "updated_at": "2026-03-18T00:40:24.330Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/gyjt62dc7x7q",
+      "started_at": "2026-03-18T00:40:24.223Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "q04f289n9gw6",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack B719A06.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 18/03/2026 00:33 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers via public network located on the specified racks.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "ld9rsc76tj5f",
+          "created_at": "2026-03-18T00:40:24.327Z",
+          "updated_at": "2026-03-18T00:40:24.327Z",
+          "display_at": "2026-03-18T00:40:24.327Z",
+          "affected_components": [
+            {
+              "code": "hqn6pb8tdzdx",
+              "name": "Dedicated Servers || Network - BHS",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "hqn6pb8tdzdx",
+          "name": "BHS",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:34:56.304Z",
+          "updated_at": "2026-03-18T00:40:24.266Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "vp6404b62nhf",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "161clr2g462n",
@@ -6422,7 +6476,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
