@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-24T11:53:50.188Z"
+    "updated_at": "2026-03-24T13:35:47.476Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-03-24T06:46:07.843Z",
+      "updated_at": "2026-03-24T13:35:47.421Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3631,14 +3631,68 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "fwrrxksfcd61",
+      "name": "[RBX8][Dedicated Servers] - RBX0840F05A Incident Notification",
+      "status": "investigating",
+      "created_at": "2026-03-24T13:35:47.386Z",
+      "updated_at": "2026-03-24T13:35:47.474Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/ttr5zqhmkrrr",
+      "started_at": "2026-03-24T13:35:47.376Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "y7287k01y8wh",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in rack RBX0840F05A.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 24/03/2026 10:33 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack RBX0840F05A are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located in rack RBX0840F05A.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "fwrrxksfcd61",
+          "created_at": "2026-03-24T13:35:47.471Z",
+          "updated_at": "2026-03-24T13:35:47.471Z",
+          "display_at": "2026-03-24T13:35:47.471Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-03-24T13:35:47.421Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "nlcsz1dxwt39",
       "name": "[RBX][Storage and Backups] - Backup Storage maintenance notification",
       "status": "scheduled",
       "created_at": "2026-03-20T13:50:03.049Z",
-      "updated_at": "2026-03-20T13:50:03.113Z",
+      "updated_at": "2026-03-24T13:00:12.235Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
@@ -3646,6 +3700,19 @@
       "started_at": "2026-03-20T13:50:03.041Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "6szbmn1dd6br",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "nlcsz1dxwt39",
+          "created_at": "2026-03-24T13:00:12.131Z",
+          "updated_at": "2026-03-24T13:00:12.131Z",
+          "display_at": "2026-03-24T13:00:12.131Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "4y2dy7drd2bv",
           "status": "scheduled",
@@ -4037,9 +4104,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-03-24T06:46:07.843Z",
+          "updated_at": "2026-03-24T13:35:47.421Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -6464,7 +6531,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
