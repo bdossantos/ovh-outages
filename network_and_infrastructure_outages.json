@@ -4,7 +4,7 @@
     "name": "Network & Infrastructure",
     "url": "https://network.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-25T11:08:44.769Z"
+    "updated_at": "2026-03-25T12:14:52.508Z"
   },
   "components": [
     {
@@ -190,9 +190,9 @@
     {
       "id": "5hsb61d9yd2l",
       "name": "YYZ01",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-03-13T09:25:09.873Z",
-      "updated_at": "2026-03-24T16:53:31.417Z",
+      "updated_at": "2026-03-25T12:00:07.121Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -1002,7 +1002,7 @@
     {
       "id": "9cqclwlrsnl9",
       "name": "Infrastructure || YYZ",
-      "status": "operational",
+      "status": "under_maintenance",
       "created_at": "2024-03-13T09:25:09.814Z",
       "updated_at": "2024-11-13T16:53:55.792Z",
       "position": 14,
@@ -1151,43 +1151,30 @@
   "incidents": [],
   "scheduled_maintenances": [
     {
-      "id": "0vbrlv41qw14",
-      "name": "[YYZ01][Cooling System] - Rack YYZ0101A01C maintenance notification",
+      "id": "2c3p75gd3kpm",
+      "name": "[US-EAST-VIN/US-EAST-HIL][Infrastructure] - Backbone maintenance notification",
       "status": "scheduled",
-      "created_at": "2026-03-04T14:33:13.685Z",
-      "updated_at": "2026-03-25T11:00:20.056Z",
+      "created_at": "2026-03-23T15:59:51.191Z",
+      "updated_at": "2026-03-23T15:59:51.244Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/jp5vldxqcnj5",
-      "started_at": "2026-03-04T14:33:13.675Z",
+      "shortlink": "https://stspg.io/1hzvm9r3y2m2",
+      "started_at": "2026-03-23T15:59:51.185Z",
       "page_id": "r3y8hrtg97vy",
       "incident_updates": [
         {
-          "id": "wqk8llv9n9g8",
+          "id": "gmdx3317cydm",
           "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "0vbrlv41qw14",
-          "created_at": "2026-03-25T11:00:19.918Z",
-          "updated_at": "2026-03-25T11:00:19.918Z",
-          "display_at": "2026-03-25T11:00:19.918Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zbnc0kvgjdtf",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack YYZ0101A01C.\n\n<b>Start time :</b> 25/03/2026 12:00 UTC\n<b>End time :</b> 25/03/2026 20:30 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "0vbrlv41qw14",
-          "created_at": "2026-03-04T14:33:13.749Z",
-          "updated_at": "2026-03-11T13:20:27.476Z",
-          "display_at": "2026-03-04T14:33:13.749Z",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our backbone infrastructure in US-EAST-VIN/US-EAST-HIL regions.\n\n<b>Start time :</b> 26/03/2026 08:00 UTC\n<b>End time :</b> 26/03/2026 12:00 UTC\n<b>Service impact :</b> Customers may experience latency during the One Network configuration.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade multiple network equipment.\n\nThank you for your understanding.",
+          "incident_id": "2c3p75gd3kpm",
+          "created_at": "2026-03-23T15:59:51.241Z",
+          "updated_at": "2026-03-23T15:59:51.241Z",
+          "display_at": "2026-03-23T15:59:51.241Z",
           "affected_components": [
             {
-              "code": "5hsb61d9yd2l",
-              "name": "Infrastructure || YYZ - YYZ01",
+              "code": "xxvy97qsff1g",
+              "name": "Infrastructure || Backbone",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -1199,23 +1186,23 @@
       ],
       "components": [
         {
-          "id": "5hsb61d9yd2l",
-          "name": "YYZ01",
-          "status": "operational",
-          "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "id": "xxvy97qsff1g",
+          "name": "Infrastructure || Backbone",
+          "status": "under_maintenance",
+          "created_at": "2022-05-20T08:38:13.277Z",
+          "updated_at": "2026-03-25T08:00:07.436Z",
           "position": 1,
           "description": null,
           "showcase": false,
-          "start_date": "2024-03-13",
-          "group_id": "9cqclwlrsnl9",
+          "start_date": "2022-05-20",
+          "group_id": null,
           "page_id": "r3y8hrtg97vy",
           "group": false,
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-03-25T12:00:00.000Z",
-      "scheduled_until": "2026-03-25T20:30:00.000Z"
+      "scheduled_for": "2026-03-26T08:00:00.000Z",
+      "scheduled_until": "2026-03-26T12:00:00.000Z"
     },
     {
       "id": "fcp7fblh70z1",
@@ -1270,60 +1257,6 @@
       ],
       "scheduled_for": "2026-03-26T08:00:00.000Z",
       "scheduled_until": "2026-03-26T17:00:00.000Z"
-    },
-    {
-      "id": "2c3p75gd3kpm",
-      "name": "[US-EAST-VIN/US-EAST-HIL][Infrastructure] - Backbone maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-23T15:59:51.191Z",
-      "updated_at": "2026-03-23T15:59:51.244Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/1hzvm9r3y2m2",
-      "started_at": "2026-03-23T15:59:51.185Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "gmdx3317cydm",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our backbone infrastructure in US-EAST-VIN/US-EAST-HIL regions.\n\n<b>Start time :</b> 26/03/2026 08:00 UTC\n<b>End time :</b> 26/03/2026 12:00 UTC\n<b>Service impact :</b> Customers may experience latency during the One Network configuration.\n<b>Service improvement :</b> As part of our continuous improvement policy, our teams are going to upgrade multiple network equipment.\n\nThank you for your understanding.",
-          "incident_id": "2c3p75gd3kpm",
-          "created_at": "2026-03-23T15:59:51.241Z",
-          "updated_at": "2026-03-23T15:59:51.241Z",
-          "display_at": "2026-03-23T15:59:51.241Z",
-          "affected_components": [
-            {
-              "code": "xxvy97qsff1g",
-              "name": "Infrastructure || Backbone",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "xxvy97qsff1g",
-          "name": "Infrastructure || Backbone",
-          "status": "under_maintenance",
-          "created_at": "2022-05-20T08:38:13.277Z",
-          "updated_at": "2026-03-25T08:00:07.436Z",
-          "position": 1,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-05-20",
-          "group_id": null,
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-26T08:00:00.000Z",
-      "scheduled_until": "2026-03-26T12:00:00.000Z"
     },
     {
       "id": "81pw5z8gd8y0",
@@ -1417,9 +1350,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1471,9 +1404,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -1741,9 +1674,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2065,9 +1998,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2335,9 +2268,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2406,60 +2339,6 @@
       "scheduled_until": "2026-04-08T16:00:00.000Z"
     },
     {
-      "id": "8l7gsyk8dly0",
-      "name": "[LIM3][Cooling System] - LIM0302A06A maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-16T12:23:58.986Z",
-      "updated_at": "2026-03-16T12:23:59.054Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/d4wtzxyh3ywf",
-      "started_at": "2026-03-16T12:23:58.977Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "ck32r152nb0f",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 08/04/2026 07:00 UTC\n<b>End time :</b> 08/04/2026 11:00 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "8l7gsyk8dly0",
-          "created_at": "2026-03-16T12:23:59.050Z",
-          "updated_at": "2026-03-16T12:23:59.050Z",
-          "display_at": "2026-03-16T12:23:59.050Z",
-          "affected_components": [
-            {
-              "code": "krxvw2yfrj4f",
-              "name": "Infrastructure || LIM - LIM3",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "krxvw2yfrj4f",
-          "name": "LIM3",
-          "status": "operational",
-          "created_at": "2021-11-10T14:19:54.583Z",
-          "updated_at": "2026-03-12T20:00:41.703Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-11-10",
-          "group_id": "vmrgldv3x56g",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-08T07:00:00.000Z",
-      "scheduled_until": "2026-04-08T11:00:00.000Z"
-    },
-    {
       "id": "byv33lx6tm85",
       "name": "[IEB01][Cooling System] - Rack IEB0101A01C maintenance notification",
       "status": "scheduled",
@@ -2512,6 +2391,60 @@
       ],
       "scheduled_for": "2026-04-08T07:00:00.000Z",
       "scheduled_until": "2026-04-08T16:00:00.000Z"
+    },
+    {
+      "id": "8l7gsyk8dly0",
+      "name": "[LIM3][Cooling System] - LIM0302A06A maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-16T12:23:58.986Z",
+      "updated_at": "2026-03-16T12:23:59.054Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/d4wtzxyh3ywf",
+      "started_at": "2026-03-16T12:23:58.977Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "ck32r152nb0f",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure.\n\n<b>Start time :</b> 08/04/2026 07:00 UTC\n<b>End time :</b> 08/04/2026 11:00 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "8l7gsyk8dly0",
+          "created_at": "2026-03-16T12:23:59.050Z",
+          "updated_at": "2026-03-16T12:23:59.050Z",
+          "display_at": "2026-03-16T12:23:59.050Z",
+          "affected_components": [
+            {
+              "code": "krxvw2yfrj4f",
+              "name": "Infrastructure || LIM - LIM3",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "krxvw2yfrj4f",
+          "name": "LIM3",
+          "status": "operational",
+          "created_at": "2021-11-10T14:19:54.583Z",
+          "updated_at": "2026-03-12T20:00:41.703Z",
+          "position": 3,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-11-10",
+          "group_id": "vmrgldv3x56g",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-08T07:00:00.000Z",
+      "scheduled_until": "2026-04-08T11:00:00.000Z"
     },
     {
       "id": "gphvz9gcjzdt",
@@ -2659,9 +2592,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -2983,9 +2916,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3307,9 +3240,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3577,9 +3510,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3685,9 +3618,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3793,9 +3726,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3847,9 +3780,9 @@
         {
           "id": "5hsb61d9yd2l",
           "name": "YYZ01",
-          "status": "operational",
+          "status": "under_maintenance",
           "created_at": "2024-03-13T09:25:09.873Z",
-          "updated_at": "2026-03-24T16:53:31.417Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
           "position": 1,
           "description": null,
           "showcase": false,
@@ -3862,6 +3795,147 @@
       ],
       "scheduled_for": "2026-04-27T11:00:00.000Z",
       "scheduled_until": "2026-04-27T19:30:00.000Z"
+    },
+    {
+      "id": "tg8t1nz7gw48",
+      "name": "[YYZ01][Cooling System] - Rack YYZ0101A02B maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-04T14:23:10.381Z",
+      "updated_at": "2026-03-04T14:23:10.440Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/tqg69jxltvt2",
+      "started_at": "2026-03-04T14:23:10.373Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "bzqxf0x189y3",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack YYZ0101A02B.\n\n<b>Start time :</b> 28/04/2026 11:00 UTC\n<b>End time :</b> 28/04/2026 19:30 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "tg8t1nz7gw48",
+          "created_at": "2026-03-04T14:23:10.437Z",
+          "updated_at": "2026-03-04T14:23:10.437Z",
+          "display_at": "2026-03-04T14:23:10.437Z",
+          "affected_components": [
+            {
+              "code": "5hsb61d9yd2l",
+              "name": "Infrastructure || YYZ - YYZ01",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5hsb61d9yd2l",
+          "name": "YYZ01",
+          "status": "under_maintenance",
+          "created_at": "2024-03-13T09:25:09.873Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "9cqclwlrsnl9",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-28T11:00:00.000Z",
+      "scheduled_until": "2026-04-28T19:30:00.000Z"
+    },
+    {
+      "id": "0vbrlv41qw14",
+      "name": "[YYZ01][Cooling System] - Rack YYZ0101A01C maintenance notification",
+      "status": "in_progress",
+      "created_at": "2026-03-04T14:33:13.685Z",
+      "updated_at": "2026-03-25T12:00:07.180Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jp5vldxqcnj5",
+      "started_at": "2026-03-04T14:33:13.675Z",
+      "page_id": "r3y8hrtg97vy",
+      "incident_updates": [
+        {
+          "id": "dh638ffh1w7j",
+          "status": "in_progress",
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "incident_id": "0vbrlv41qw14",
+          "created_at": "2026-03-25T12:00:07.175Z",
+          "updated_at": "2026-03-25T12:00:07.175Z",
+          "display_at": "2026-03-25T12:00:07.175Z",
+          "affected_components": [
+            {
+              "code": "5hsb61d9yd2l",
+              "name": "Infrastructure || YYZ - YYZ01",
+              "old_status": "operational",
+              "new_status": "under_maintenance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wqk8llv9n9g8",
+          "status": "scheduled",
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "incident_id": "0vbrlv41qw14",
+          "created_at": "2026-03-25T11:00:19.918Z",
+          "updated_at": "2026-03-25T11:00:19.918Z",
+          "display_at": "2026-03-25T11:00:19.918Z",
+          "affected_components": null,
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "zbnc0kvgjdtf",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack YYZ0101A01C.\n\n<b>Start time :</b> 25/03/2026 12:00 UTC\n<b>End time :</b> 25/03/2026 20:30 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "0vbrlv41qw14",
+          "created_at": "2026-03-04T14:33:13.749Z",
+          "updated_at": "2026-03-11T13:20:27.476Z",
+          "display_at": "2026-03-04T14:33:13.749Z",
+          "affected_components": [
+            {
+              "code": "5hsb61d9yd2l",
+              "name": "Infrastructure || YYZ - YYZ01",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5hsb61d9yd2l",
+          "name": "YYZ01",
+          "status": "under_maintenance",
+          "created_at": "2024-03-13T09:25:09.873Z",
+          "updated_at": "2026-03-25T12:00:07.121Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2024-03-13",
+          "group_id": "9cqclwlrsnl9",
+          "page_id": "r3y8hrtg97vy",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-03-25T12:00:00.000Z",
+      "scheduled_until": "2026-03-25T20:30:00.000Z"
     },
     {
       "id": "153vtb5tdxkd",
@@ -4718,113 +4792,6 @@
       ],
       "scheduled_for": "2026-03-24T12:34:00.000Z",
       "scheduled_until": "2026-03-25T16:00:00.000Z"
-    },
-    {
-      "id": "sr21ncmynpnp",
-      "name": "[CCH01][Cooling System] - Rack CCH0101E02A maintenance notification",
-      "status": "in_progress",
-      "created_at": "2026-03-04T13:35:27.769Z",
-      "updated_at": "2026-03-24T21:01:33.507Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/152z1wvgbcmg",
-      "started_at": "2026-03-04T13:35:27.761Z",
-      "page_id": "r3y8hrtg97vy",
-      "incident_updates": [
-        {
-          "id": "7zd9jdsjfzyr",
-          "status": "in_progress",
-          "body": "Maintenance will continue until tomorrow morning. Thank you for your patience and understanding.",
-          "incident_id": "sr21ncmynpnp",
-          "created_at": "2026-03-24T21:01:33.504Z",
-          "updated_at": "2026-03-24T21:01:33.504Z",
-          "display_at": "2026-03-24T21:01:33.504Z",
-          "affected_components": [
-            {
-              "code": "w6fb53kv0n0z",
-              "name": "Infrastructure || 3AZ - CCH",
-              "old_status": "under_maintenance",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "fm7tbztvhrm0",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "sr21ncmynpnp",
-          "created_at": "2026-03-24T08:00:07.601Z",
-          "updated_at": "2026-03-24T08:00:07.601Z",
-          "display_at": "2026-03-24T08:00:07.601Z",
-          "affected_components": [
-            {
-              "code": "w6fb53kv0n0z",
-              "name": "Infrastructure || 3AZ - CCH",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "0gt9fqzhc1db",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "sr21ncmynpnp",
-          "created_at": "2026-03-24T07:00:08.047Z",
-          "updated_at": "2026-03-24T07:00:08.047Z",
-          "display_at": "2026-03-24T07:00:08.047Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "n82lryhglwgr",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our cooling infrastructure in rack CCH0101E02A.\n\n<b>Start time :</b> 24/03/2026 08:00 UTC\n<b>End time :</b> 24/03/2026 17:00 UTC\n\n<b>Service impact :</b> During this maintenance, the cooling system's efficiency may be temporarily reduced for some servers, potentially lowering performance. Despite ongoing mitigation efforts, customers could still experience a temporary reboot or shutdown in the worst case.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our cooling infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "sr21ncmynpnp",
-          "created_at": "2026-03-04T13:35:27.825Z",
-          "updated_at": "2026-03-04T13:35:27.825Z",
-          "display_at": "2026-03-04T13:35:27.825Z",
-          "affected_components": [
-            {
-              "code": "w6fb53kv0n0z",
-              "name": "Infrastructure || 3AZ - CCH",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "w6fb53kv0n0z",
-          "name": "CCH",
-          "status": "under_maintenance",
-          "created_at": "2024-11-13T16:52:38.993Z",
-          "updated_at": "2026-03-24T08:00:07.485Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2024-11-13",
-          "group_id": "pt2q1brg3hrw",
-          "page_id": "r3y8hrtg97vy",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-24T08:00:00.000Z",
-      "scheduled_until": "2026-03-24T17:00:00.000Z"
     },
     {
       "id": "h9xjrjd5myhg",
