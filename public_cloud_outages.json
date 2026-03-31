@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-31T12:49:22.232Z"
+    "updated_at": "2026-03-31T14:24:01.463Z"
   },
   "components": [
     {
@@ -190,9 +190,9 @@
     {
       "id": "f48mzw7bpn0d",
       "name": "BHS1",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:34.420Z",
-      "updated_at": "2026-03-22T21:10:17.252Z",
+      "updated_at": "2026-03-31T14:24:01.333Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -974,9 +974,9 @@
     {
       "id": "my3dbz55pzrq",
       "name": "BHS3",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:35.569Z",
-      "updated_at": "2026-03-22T21:10:17.324Z",
+      "updated_at": "2026-03-31T14:24:01.356Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3112,7 +3112,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2025-04-18T13:47:32.479Z",
       "position": 6,
@@ -10182,6 +10182,80 @@
     }
   ],
   "incidents": [
+    {
+      "id": "kbb2v02vpmhn",
+      "name": "[BHS1/3][Compute - Instance] - Some instances incident notification",
+      "status": "identified",
+      "created_at": "2026-03-31T14:24:01.283Z",
+      "updated_at": "2026-03-31T14:24:01.459Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/mhxnwx3bbj73",
+      "started_at": "2026-03-31T14:24:01.272Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "r1bfdsr60db1",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Compute - Instance offer in the specific regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/03/2026 13:58 UTC\n<b>Impacted Service(s) :</b> Some instances in BHS1 and BHS3 are temporarily unreachable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their instances in the specified regions.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected underlying infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "kbb2v02vpmhn",
+          "created_at": "2026-03-31T14:24:01.455Z",
+          "updated_at": "2026-03-31T14:24:01.455Z",
+          "display_at": "2026-03-31T14:24:01.455Z",
+          "affected_components": [
+            {
+              "code": "f48mzw7bpn0d",
+              "name": "Compute - Instance || BHS - BHS1",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "my3dbz55pzrq",
+              "name": "Compute - Instance || BHS - BHS3",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "f48mzw7bpn0d",
+          "name": "BHS1",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:34.420Z",
+          "updated_at": "2026-03-31T14:24:01.333Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "my3dbz55pzrq",
+          "name": "BHS3",
+          "status": "partial_outage",
+          "created_at": "2022-04-06T09:38:35.569Z",
+          "updated_at": "2026-03-31T14:24:01.356Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "2tw1ry03dznj",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "5mb5m9d1p23d",
       "name": "[GLOBAL][Databases] - PostgreSQL 18 incident notification",
