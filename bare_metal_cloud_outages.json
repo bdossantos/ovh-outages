@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-31T15:23:55.859Z"
+    "updated_at": "2026-03-31T17:24:03.367Z"
   },
   "components": [
     {
@@ -1201,9 +1201,9 @@
     {
       "id": "rs6z6pyb307t",
       "name": "GRA",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:51.388Z",
-      "updated_at": "2026-03-31T14:30:33.920Z",
+      "updated_at": "2026-03-31T16:42:15.811Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -1411,7 +1411,7 @@
     {
       "id": "vp6404b62nhf",
       "name": "Dedicated Servers || Network",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:34:59.699Z",
       "updated_at": "2021-07-09T07:37:07.926Z",
       "position": 5,
@@ -3637,7 +3637,7 @@
       "name": "[GRA1/2][Storage and Backups] - Block Storage/ Cloud Disk Array incident notification",
       "status": "identified",
       "created_at": "2026-03-31T14:47:08.051Z",
-      "updated_at": "2026-03-31T14:47:08.168Z",
+      "updated_at": "2026-03-31T17:22:19.012Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "minor",
@@ -3645,6 +3645,32 @@
       "started_at": "2026-03-31T14:47:08.038Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
+        {
+          "id": "d7vxhd60158n",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> Our teams implemented a fix and the service is now recovering.\n<b>Ongoing Actions :</b> During the recovery, customers may experience slightly reduced performance.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "pfvc860y5fs5",
+          "created_at": "2026-03-31T17:22:19.009Z",
+          "updated_at": "2026-03-31T17:22:19.009Z",
+          "display_at": "2026-03-31T17:22:19.009Z",
+          "affected_components": [
+            {
+              "code": "l1mgrwg3914g",
+              "name": "Storage and Backups || Cloud Disk Array - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "y3dtxmcbzybk",
+              "name": "Storage and Backups || Block Storage - GRA",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
         {
           "id": "y9tsgj0c28w5",
           "status": "identified",
@@ -3699,59 +3725,6 @@
           "showcase": false,
           "start_date": "2024-10-25",
           "group_id": "fmhmd6m8hs98",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
-    },
-    {
-      "id": "w3rv069kyvy3",
-      "name": "[GRA1][Dedicated Servers] - Rack G133B02 incident notification",
-      "status": "identified",
-      "created_at": "2026-03-31T14:30:33.884Z",
-      "updated_at": "2026-03-31T14:30:58.742Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/5xhcklwf8366",
-      "started_at": "2026-03-31T14:30:33.876Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "dfy8llhzy1hr",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack G133B02.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/03/2026 09:17 UTC\n<b>Impacted Service(s) :</b> All servers in the rack GRA0320A03A are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the rack G133B02.\n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "w3rv069kyvy3",
-          "created_at": "2026-03-31T14:30:33.976Z",
-          "updated_at": "2026-03-31T14:30:33.976Z",
-          "display_at": "2026-03-31T14:30:33.976Z",
-          "affected_components": [
-            {
-              "code": "rs6z6pyb307t",
-              "name": "Dedicated Servers || Network - GRA",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "rs6z6pyb307t",
-          "name": "GRA",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:34:51.388Z",
-          "updated_at": "2026-03-31T14:30:33.920Z",
-          "position": 4,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "vp6404b62nhf",
           "page_id": "1qzzx4z9jvmv",
           "group": false,
           "only_show_if_degraded": false
