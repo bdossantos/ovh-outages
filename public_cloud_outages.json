@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-03-31T14:24:01.463Z"
+    "updated_at": "2026-03-31T15:23:52.818Z"
   },
   "components": [
     {
@@ -190,9 +190,9 @@
     {
       "id": "f48mzw7bpn0d",
       "name": "BHS1",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:38:34.420Z",
-      "updated_at": "2026-03-31T14:24:01.333Z",
+      "updated_at": "2026-03-31T15:07:34.985Z",
       "position": 1,
       "description": null,
       "showcase": false,
@@ -974,9 +974,9 @@
     {
       "id": "my3dbz55pzrq",
       "name": "BHS3",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:38:35.569Z",
-      "updated_at": "2026-03-31T14:24:01.356Z",
+      "updated_at": "2026-03-31T15:07:35.003Z",
       "position": 2,
       "description": null,
       "showcase": false,
@@ -3112,7 +3112,7 @@
     {
       "id": "2tw1ry03dznj",
       "name": "Compute - Instance || BHS",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2022-04-06T09:38:39.504Z",
       "updated_at": "2025-04-18T13:47:32.479Z",
       "position": 6,
@@ -5904,9 +5904,9 @@
     {
       "id": "f99hq5wwk7cq",
       "name": "GRA1",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:07.357Z",
-      "updated_at": "2025-11-18T12:35:44.673Z",
+      "updated_at": "2026-03-31T14:42:32.533Z",
       "position": 13,
       "description": null,
       "showcase": false,
@@ -6241,9 +6241,9 @@
     {
       "id": "q199fjgrj77z",
       "name": "GRA3",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:16.362Z",
-      "updated_at": "2026-03-30T14:31:42.569Z",
+      "updated_at": "2026-03-31T14:42:32.552Z",
       "position": 14,
       "description": null,
       "showcase": false,
@@ -6894,9 +6894,9 @@
     {
       "id": "970cjjq2z96q",
       "name": "GRA7",
-      "status": "operational",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:28.144Z",
-      "updated_at": "2026-03-30T14:31:42.612Z",
+      "updated_at": "2026-03-31T14:42:32.570Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -7306,9 +7306,9 @@
     {
       "id": "kgpnxn6rz6qm",
       "name": "GRA11",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:30.045Z",
-      "updated_at": "2026-03-31T07:00:12.759Z",
+      "updated_at": "2026-03-31T15:09:50.539Z",
       "position": 19,
       "description": null,
       "showcase": false,
@@ -9861,7 +9861,7 @@
     {
       "id": "t4jx55hmkzlx",
       "name": "Storage || Block storage",
-      "status": "under_maintenance",
+      "status": "degraded_performance",
       "created_at": "2022-04-06T09:37:37.676Z",
       "updated_at": "2026-03-03T15:52:22.090Z",
       "position": 57,
@@ -10183,38 +10183,44 @@
   ],
   "incidents": [
     {
-      "id": "kbb2v02vpmhn",
-      "name": "[BHS1/3][Compute - Instance] - Some instances incident notification",
+      "id": "3h8jprpv1ygv",
+      "name": "[GRA1/7/11][Storage] - Block Storage incident notification",
       "status": "identified",
-      "created_at": "2026-03-31T14:24:01.283Z",
-      "updated_at": "2026-03-31T14:24:01.459Z",
+      "created_at": "2026-03-31T14:42:32.485Z",
+      "updated_at": "2026-03-31T14:42:32.644Z",
       "monitoring_at": null,
       "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/mhxnwx3bbj73",
-      "started_at": "2026-03-31T14:24:01.272Z",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/n2zl2s8qjq8p",
+      "started_at": "2026-03-31T14:42:32.473Z",
       "page_id": "6j41kzyhcr9g",
       "incident_updates": [
         {
-          "id": "r1bfdsr60db1",
+          "id": "2rx2dr422xzp",
           "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Compute - Instance offer in the specific regions.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 30/03/2026 13:58 UTC\n<b>Impacted Service(s) :</b> Some instances in BHS1 and BHS3 are temporarily unreachable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their instances in the specified regions.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected underlying infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "kbb2v02vpmhn",
-          "created_at": "2026-03-31T14:24:01.455Z",
-          "updated_at": "2026-03-31T14:24:01.455Z",
-          "display_at": "2026-03-31T14:24:01.455Z",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Storage offer on the specific regions GRA1, GRA7 and GRA11.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 31/03/2026 14:08 UTC\n<b>Impacted Service(s) :</b> A low performance is being observed on Block Storage in the specified regions.\n<b>Customers Impact :</b> Some customers are facing latency when trying to access and use their Block Storage located in GRA1, GRA7 and GRA11.\n<b>Root Cause :</b> A service disruption occurred due to an unexpected underlying infrastructure malfunction.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "3h8jprpv1ygv",
+          "created_at": "2026-03-31T14:42:32.641Z",
+          "updated_at": "2026-03-31T14:42:32.641Z",
+          "display_at": "2026-03-31T14:42:32.641Z",
           "affected_components": [
             {
-              "code": "f48mzw7bpn0d",
-              "name": "Compute - Instance || BHS - BHS1",
+              "code": "f99hq5wwk7cq",
+              "name": "Storage || Block storage - GRA1",
               "old_status": "operational",
-              "new_status": "partial_outage"
+              "new_status": "degraded_performance"
             },
             {
-              "code": "my3dbz55pzrq",
-              "name": "Compute - Instance || BHS - BHS3",
+              "code": "q199fjgrj77z",
+              "name": "Storage || Block storage - GRA3",
               "old_status": "operational",
-              "new_status": "partial_outage"
+              "new_status": "degraded_performance"
+            },
+            {
+              "code": "970cjjq2z96q",
+              "name": "Storage || Block storage - GRA7",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
             }
           ],
           "deliver_notifications": true,
@@ -10224,31 +10230,46 @@
       ],
       "components": [
         {
-          "id": "f48mzw7bpn0d",
-          "name": "BHS1",
-          "status": "partial_outage",
-          "created_at": "2022-04-06T09:38:34.420Z",
-          "updated_at": "2026-03-31T14:24:01.333Z",
-          "position": 1,
+          "id": "f99hq5wwk7cq",
+          "name": "GRA1",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:37:07.357Z",
+          "updated_at": "2026-03-31T14:42:32.533Z",
+          "position": 13,
           "description": null,
           "showcase": false,
           "start_date": "2022-04-06",
-          "group_id": "2tw1ry03dznj",
+          "group_id": "t4jx55hmkzlx",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
         },
         {
-          "id": "my3dbz55pzrq",
-          "name": "BHS3",
-          "status": "partial_outage",
-          "created_at": "2022-04-06T09:38:35.569Z",
-          "updated_at": "2026-03-31T14:24:01.356Z",
-          "position": 2,
+          "id": "q199fjgrj77z",
+          "name": "GRA3",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:37:16.362Z",
+          "updated_at": "2026-03-31T14:42:32.552Z",
+          "position": 14,
           "description": null,
           "showcase": false,
           "start_date": "2022-04-06",
-          "group_id": "2tw1ry03dznj",
+          "group_id": "t4jx55hmkzlx",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "970cjjq2z96q",
+          "name": "GRA7",
+          "status": "degraded_performance",
+          "created_at": "2022-04-06T09:37:28.144Z",
+          "updated_at": "2026-03-31T14:42:32.570Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2022-04-06",
+          "group_id": "t4jx55hmkzlx",
           "page_id": "6j41kzyhcr9g",
           "group": false,
           "only_show_if_degraded": false
@@ -12428,9 +12449,9 @@
         {
           "id": "kgpnxn6rz6qm",
           "name": "GRA11",
-          "status": "under_maintenance",
+          "status": "degraded_performance",
           "created_at": "2022-04-06T09:37:30.045Z",
-          "updated_at": "2026-03-31T07:00:12.759Z",
+          "updated_at": "2026-03-31T15:09:50.539Z",
           "position": 19,
           "description": null,
           "showcase": false,
@@ -13502,93 +13523,6 @@
       ],
       "scheduled_for": "2026-04-29T04:00:00.000Z",
       "scheduled_until": "2026-04-29T15:00:00.000Z"
-    },
-    {
-      "id": "sd990v95x0gm",
-      "name": "[GRA11][Storage] - Block storage maintenance notification",
-      "status": "in_progress",
-      "created_at": "2026-03-26T14:10:03.948Z",
-      "updated_at": "2026-03-31T07:00:12.888Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/y7pzt445f8yy",
-      "started_at": "2026-03-26T14:10:03.940Z",
-      "page_id": "6j41kzyhcr9g",
-      "incident_updates": [
-        {
-          "id": "gkjpm7l2ndjx",
-          "status": "in_progress",
-          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
-          "incident_id": "sd990v95x0gm",
-          "created_at": "2026-03-31T07:00:12.863Z",
-          "updated_at": "2026-03-31T07:00:12.863Z",
-          "display_at": "2026-03-31T07:00:12.863Z",
-          "affected_components": [
-            {
-              "code": "kgpnxn6rz6qm",
-              "name": "Storage || Block storage - GRA11",
-              "old_status": "operational",
-              "new_status": "under_maintenance"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "zmq4qzgnnzr1",
-          "status": "scheduled",
-          "body": "Maintenance will begin as scheduled in 60 minutes.",
-          "incident_id": "sd990v95x0gm",
-          "created_at": "2026-03-31T06:00:19.205Z",
-          "updated_at": "2026-03-31T06:00:19.205Z",
-          "display_at": "2026-03-31T06:00:19.205Z",
-          "affected_components": null,
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        },
-        {
-          "id": "j58zqw11yf67",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our Block Storage offer in GRA11.\n\n<b>Start time :</b> 31/03/2026 07:00 UTC\n<b>End time :</b> 31/03/2026 15:00 UTC\n<b>Service impact :</b> During the maintenance window, customers may experience a temporary performance degradation.\n<b>Service improvement :</b> As part of our continuous improvement policy and to improve service quality, we will be doing a software upgrade for storage servers. \n\nThank you for your understanding.",
-          "incident_id": "sd990v95x0gm",
-          "created_at": "2026-03-26T14:10:04.026Z",
-          "updated_at": "2026-03-26T14:10:04.026Z",
-          "display_at": "2026-03-26T14:10:04.026Z",
-          "affected_components": [
-            {
-              "code": "kgpnxn6rz6qm",
-              "name": "Storage || Block storage - GRA11",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "kgpnxn6rz6qm",
-          "name": "GRA11",
-          "status": "under_maintenance",
-          "created_at": "2022-04-06T09:37:30.045Z",
-          "updated_at": "2026-03-31T07:00:12.759Z",
-          "position": 19,
-          "description": null,
-          "showcase": false,
-          "start_date": "2022-04-06",
-          "group_id": "t4jx55hmkzlx",
-          "page_id": "6j41kzyhcr9g",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-03-31T07:00:00.000Z",
-      "scheduled_until": "2026-03-31T15:00:00.000Z"
     },
     {
       "id": "cxm0fk3wyv91",
