@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-01T14:33:55.222Z"
+    "updated_at": "2026-04-01T15:21:48.192Z"
   },
   "components": [
     {
@@ -2314,9 +2314,9 @@
     {
       "id": "5qpz9b1cpd3f",
       "name": "Cluster103",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-10-13T08:18:40.067Z",
-      "updated_at": "2026-01-12T15:40:10.111Z",
+      "updated_at": "2026-04-01T15:19:54.037Z",
       "position": 26,
       "description": null,
       "showcase": false,
@@ -2329,7 +2329,7 @@
     {
       "id": "2fkfhxvh1l1w",
       "name": "Web Hosting || Datacenter GRA",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:19:18.689Z",
       "updated_at": "2025-08-13T12:55:51.778Z",
       "position": 27,
@@ -2871,7 +2871,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "v1jnt49rm72f",
+      "name": "[GRA][Web Hosting] - Cluster103 - Filerz866 incident notification",
+      "status": "identified",
+      "created_at": "2026-04-01T15:19:53.978Z",
+      "updated_at": "2026-04-01T15:19:54.100Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/pn5mrs27c8nw",
+      "started_at": "2026-04-01T15:19:53.968Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "m0xrtf53ptnv",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Web Hosting offer on Cluster103 - Filerz866 on the specific region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 01/04/2026 14:55 UTC\n<b>Impacted Service(s) :</b> File server 866 is unreachable on Web Hosting cluster 103.\n<b>Customers Impact :</b> Customers on temporarily unable to access and use their websites hosted on Filerz866.\n<b>Root Cause :</b> This incident is caused by a hardware issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "v1jnt49rm72f",
+          "created_at": "2026-04-01T15:19:54.096Z",
+          "updated_at": "2026-04-01T15:19:54.096Z",
+          "display_at": "2026-04-01T15:19:54.096Z",
+          "affected_components": [
+            {
+              "code": "5qpz9b1cpd3f",
+              "name": "Web Hosting || Datacenter GRA - Cluster103",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5qpz9b1cpd3f",
+          "name": "Cluster103",
+          "status": "partial_outage",
+          "created_at": "2025-10-13T08:18:40.067Z",
+          "updated_at": "2026-04-01T15:19:54.037Z",
+          "position": 26,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-10-13",
+          "group_id": "2fkfhxvh1l1w",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "pdd43dy9zrw3",
@@ -3315,7 +3369,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
