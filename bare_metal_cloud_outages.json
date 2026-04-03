@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-03T16:13:50.020Z"
+    "updated_at": "2026-04-03T20:10:32.991Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "under_maintenance",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-04-02T19:24:32.145Z",
+      "updated_at": "2026-04-03T19:51:52.457Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3631,7 +3631,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "n0br0xytsm0s",
+      "name": "[RBX3][Dedicated Servers] - Rack 43C01 incident notification",
+      "status": "identified",
+      "created_at": "2026-04-03T19:51:52.412Z",
+      "updated_at": "2026-04-03T20:06:57.628Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/5ffnbbrf0xfb",
+      "started_at": "2026-04-03T19:51:52.000Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "qf0917dr7y6b",
+          "status": "identified",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack 43C01.\n\nHere are some supplementary details :\n\n<b>Start time :</b>  03/04/2026 19:45 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Root Cause :</b> This incident is caused by an electrical equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "n0br0xytsm0s",
+          "created_at": "2026-04-03T20:06:57.625Z",
+          "updated_at": "2026-04-03T20:06:57.625Z",
+          "display_at": "2026-04-03T20:06:57.625Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "vbbl2p7m67sl",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack 43C01.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/04/2026 19:45 UTC\n<b>Impacted Service(s) :</b> Servers in the specified rack are no longer able to access the public network.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "n0br0xytsm0s",
+          "created_at": "2026-04-03T19:51:52.593Z",
+          "updated_at": "2026-04-03T19:52:46.621Z",
+          "display_at": "2026-04-03T19:51:52.000Z",
+          "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-04-03T19:51:52.457Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "nzlqqhv2dr23",
@@ -3671,9 +3745,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-04-02T19:24:32.145Z",
+          "updated_at": "2026-04-03T19:51:52.457Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3725,9 +3799,9 @@
         {
           "id": "ndg1yh0x4lpd",
           "name": "RBX",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-04-02T19:24:32.145Z",
+          "updated_at": "2026-04-03T19:51:52.457Z",
           "position": 5,
           "description": null,
           "showcase": false,
@@ -3902,6 +3976,60 @@
       ],
       "scheduled_for": "2026-04-07T11:00:00.000Z",
       "scheduled_until": "2026-04-07T13:00:00.000Z"
+    },
+    {
+      "id": "g6tszm5lddkm",
+      "name": "[RBX3][Storage and Backups] - Backup Storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-04-03T20:03:14.407Z",
+      "updated_at": "2026-04-03T20:03:14.471Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/n8q4tny9jswq",
+      "started_at": "2026-04-03T20:03:14.400Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "gzsq4n36n08k",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Backup Storage offer.\n\n<b>Start time :</b> 07/04/2026 14:00 UTC\n<b>End time :</b> 08/04/2026 02:00 UTC\n<b>Service impact :</b> During the maintenance window, some storage will be temporarily unavailable for approximately 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup Storage offering to implement security and performance enhancements.\n\nThank you for your understanding.",
+          "incident_id": "g6tszm5lddkm",
+          "created_at": "2026-04-03T20:03:14.468Z",
+          "updated_at": "2026-04-03T20:03:14.468Z",
+          "display_at": "2026-04-03T20:03:14.468Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2026-04-03T03:18:23.443Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-07T14:00:00.000Z",
+      "scheduled_until": "2026-04-08T02:00:00.000Z"
     },
     {
       "id": "j27hlbp21m0t",
@@ -4118,6 +4246,60 @@
       ],
       "scheduled_for": "2026-04-08T11:00:00.000Z",
       "scheduled_until": "2026-04-08T13:00:00.000Z"
+    },
+    {
+      "id": "mn2c1bx6f683",
+      "name": "[RBX3][Storage and Backups] - Backup Storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-04-03T20:06:20.849Z",
+      "updated_at": "2026-04-03T20:06:20.917Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/5d0vs9l77l8m",
+      "started_at": "2026-04-03T20:06:20.840Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "cb045rrwvl34",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Backup Storage offer.\n\n<b>Start time :</b> 08/04/2026 14:00 UTC\n<b>End time :</b> 09/04/2026 02:00 UTC\n<b>Service impact :</b> During the maintenance window, some storage will be temporarily unavailable for approximately 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup Storage offering to implement security and performance enhancements.\n\nThank you for your understanding.",
+          "incident_id": "mn2c1bx6f683",
+          "created_at": "2026-04-03T20:06:20.913Z",
+          "updated_at": "2026-04-03T20:06:20.913Z",
+          "display_at": "2026-04-03T20:06:20.913Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2026-04-03T03:18:23.443Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-08T14:00:00.000Z",
+      "scheduled_until": "2026-04-09T02:00:00.000Z"
     },
     {
       "id": "gtnh7k01hmbs",
@@ -4390,6 +4572,60 @@
       "scheduled_until": "2026-04-09T13:00:00.000Z"
     },
     {
+      "id": "5md41ggq53m3",
+      "name": "[RBX3][Storage and Backups] - Backup Storage maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-04-03T20:10:32.917Z",
+      "updated_at": "2026-04-03T20:10:32.987Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/jkqwkkk0yf4b",
+      "started_at": "2026-04-03T20:10:32.908Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "16thjnld1j1r",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our Backup Storage offer.\n\n<b>Start time :</b> 09/04/2026 14:00 UTC\n<b>End time :</b> 10/04/2026 02:00 UTC\n<b>Service impact :</b> During the maintenance window, some storage will be temporarily unavailable for approximately 30 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our Backup Storage offering to implement security and performance enhancements.\n\nThank you for your understanding.",
+          "incident_id": "5md41ggq53m3",
+          "created_at": "2026-04-03T20:10:32.983Z",
+          "updated_at": "2026-04-03T20:10:32.983Z",
+          "display_at": "2026-04-03T20:10:32.983Z",
+          "affected_components": [
+            {
+              "code": "qcwk8kn06rpl",
+              "name": "Storage and Backups || Backup Storage - RBX",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qcwk8kn06rpl",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:34:07.646Z",
+          "updated_at": "2026-04-03T03:18:23.443Z",
+          "position": 1,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "7nxs1wy28gc7",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-09T14:00:00.000Z",
+      "scheduled_until": "2026-04-10T02:00:00.000Z"
+    },
+    {
       "id": "9d76y21crq4j",
       "name": "[ERI1][Dedicated Servers] - Rack E101B21 maintenance notification",
       "status": "scheduled",
@@ -4498,60 +4734,6 @@
       "scheduled_until": "2026-04-13T07:00:00.000Z"
     },
     {
-      "id": "jzcvh4mmlc9v",
-      "name": "[ERI1][Dedicated Servers] - Rack E101F06 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-03T19:19:26.150Z",
-      "updated_at": "2026-03-03T19:19:26.211Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/yv9scftkjdqt",
-      "started_at": "2026-03-03T19:19:26.142Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "1qynkwsqv03n",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 13/04/2026 07:00 UTC \n<b>End time :</b> 13/04/2026 09:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101F06 to rack ERI0102D03A.\n\nThank you for your understanding.",
-          "incident_id": "jzcvh4mmlc9v",
-          "created_at": "2026-03-03T19:19:26.208Z",
-          "updated_at": "2026-03-03T19:19:26.208Z",
-          "display_at": "2026-03-03T19:19:26.208Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2026-03-25T12:09:28.423Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-13T07:00:00.000Z",
-      "scheduled_until": "2026-04-13T09:00:00.000Z"
-    },
-    {
       "id": "lglsvpwjpbx0",
       "name": "[WAW1][Dedicated Servers] - Rack W13B17 maintenance notification",
       "status": "scheduled",
@@ -4604,6 +4786,60 @@
       ],
       "scheduled_for": "2026-04-13T07:00:00.000Z",
       "scheduled_until": "2026-04-13T08:30:00.000Z"
+    },
+    {
+      "id": "jzcvh4mmlc9v",
+      "name": "[ERI1][Dedicated Servers] - Rack E101F06 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-03T19:19:26.150Z",
+      "updated_at": "2026-03-03T19:19:26.211Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/yv9scftkjdqt",
+      "started_at": "2026-03-03T19:19:26.142Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "1qynkwsqv03n",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 13/04/2026 07:00 UTC \n<b>End time :</b> 13/04/2026 09:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101F06 to rack ERI0102D03A.\n\nThank you for your understanding.",
+          "incident_id": "jzcvh4mmlc9v",
+          "created_at": "2026-03-03T19:19:26.208Z",
+          "updated_at": "2026-03-03T19:19:26.208Z",
+          "display_at": "2026-03-03T19:19:26.208Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2026-03-25T12:09:28.423Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-13T07:00:00.000Z",
+      "scheduled_until": "2026-04-13T09:00:00.000Z"
     },
     {
       "id": "zcdpnhs38p05",
@@ -4660,60 +4896,6 @@
       "scheduled_until": "2026-04-13T10:30:00.000Z"
     },
     {
-      "id": "9sjwqshvstjw",
-      "name": "[ERI1][Dedicated Servers] - Rack E101D15 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-03T19:21:56.720Z",
-      "updated_at": "2026-03-03T19:21:56.768Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/3nmtvy2vkhn8",
-      "started_at": "2026-03-03T19:21:56.713Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "69xrs0d595b1",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 13/04/2026 11:00 UTC \n<b>End time :</b> 13/04/2026 13:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101D15 to rack ERI0102D03B.\n\nThank you for your understanding.",
-          "incident_id": "9sjwqshvstjw",
-          "created_at": "2026-03-03T19:21:56.765Z",
-          "updated_at": "2026-03-03T19:21:56.765Z",
-          "display_at": "2026-03-03T19:21:56.765Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2026-03-25T12:09:28.423Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-13T11:00:00.000Z",
-      "scheduled_until": "2026-04-13T13:00:00.000Z"
-    },
-    {
       "id": "y8zd083np5x6",
       "name": "[WAW1][Dedicated Servers] - Rack W13B19 maintenance notification",
       "status": "scheduled",
@@ -4766,6 +4948,60 @@
       ],
       "scheduled_for": "2026-04-13T11:00:00.000Z",
       "scheduled_until": "2026-04-13T12:30:00.000Z"
+    },
+    {
+      "id": "9sjwqshvstjw",
+      "name": "[ERI1][Dedicated Servers] - Rack E101D15 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-03T19:21:56.720Z",
+      "updated_at": "2026-03-03T19:21:56.768Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/3nmtvy2vkhn8",
+      "started_at": "2026-03-03T19:21:56.713Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "69xrs0d595b1",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 13/04/2026 11:00 UTC \n<b>End time :</b> 13/04/2026 13:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101D15 to rack ERI0102D03B.\n\nThank you for your understanding.",
+          "incident_id": "9sjwqshvstjw",
+          "created_at": "2026-03-03T19:21:56.765Z",
+          "updated_at": "2026-03-03T19:21:56.765Z",
+          "display_at": "2026-03-03T19:21:56.765Z",
+          "affected_components": [
+            {
+              "code": "klylb1cv9dvj",
+              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "klylb1cv9dvj",
+          "name": "ERI",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:22.787Z",
+          "updated_at": "2026-03-25T12:09:28.423Z",
+          "position": 2,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-13T11:00:00.000Z",
+      "scheduled_until": "2026-04-13T13:00:00.000Z"
     },
     {
       "id": "ktsk838qf4rl",
@@ -4876,60 +5112,6 @@
       "scheduled_until": "2026-04-14T07:00:00.000Z"
     },
     {
-      "id": "3z0j6yzvf93v",
-      "name": "[WAW1][Dedicated Servers] - Rack W16B11 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-19T14:52:52.502Z",
-      "updated_at": "2026-03-19T14:52:52.568Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/lsk2wvl4hxdz",
-      "started_at": "2026-03-19T14:52:52.494Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "gsm7b880bq1y",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our electrical infrastructure.\n\n<b>Start time :</b> 14/04/2026 07:00 UTC\n<b>End time :</b> 14/04/2026 08:30 UTC\n<b>Service impact :</b> During the maintenance window, servers in the specified rack will be temporarily unavailable for 15 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our electrical infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "3z0j6yzvf93v",
-          "created_at": "2026-03-19T14:52:52.565Z",
-          "updated_at": "2026-03-19T14:52:52.565Z",
-          "display_at": "2026-03-19T14:52:52.565Z",
-          "affected_components": [
-            {
-              "code": "7qwkswh276f8",
-              "name": "Dedicated Servers || Global Infrastructure - WAW",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "7qwkswh276f8",
-          "name": "WAW",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:29.102Z",
-          "updated_at": "2026-03-18T09:24:29.832Z",
-          "position": 9,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-14T07:00:00.000Z",
-      "scheduled_until": "2026-04-14T08:30:00.000Z"
-    },
-    {
       "id": "w7zdg4nqcq4p",
       "name": "[ERI1][Dedicated Servers] - Rack E101C17 maintenance notification",
       "status": "scheduled",
@@ -4982,6 +5164,60 @@
       ],
       "scheduled_for": "2026-04-14T07:00:00.000Z",
       "scheduled_until": "2026-04-14T09:00:00.000Z"
+    },
+    {
+      "id": "3z0j6yzvf93v",
+      "name": "[WAW1][Dedicated Servers] - Rack W16B11 maintenance notification",
+      "status": "scheduled",
+      "created_at": "2026-03-19T14:52:52.502Z",
+      "updated_at": "2026-03-19T14:52:52.568Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "maintenance",
+      "shortlink": "https://stspg.io/lsk2wvl4hxdz",
+      "started_at": "2026-03-19T14:52:52.494Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "gsm7b880bq1y",
+          "status": "scheduled",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our electrical infrastructure.\n\n<b>Start time :</b> 14/04/2026 07:00 UTC\n<b>End time :</b> 14/04/2026 08:30 UTC\n<b>Service impact :</b> During the maintenance window, servers in the specified rack will be temporarily unavailable for 15 minutes.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our electrical infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "3z0j6yzvf93v",
+          "created_at": "2026-03-19T14:52:52.565Z",
+          "updated_at": "2026-03-19T14:52:52.565Z",
+          "display_at": "2026-03-19T14:52:52.565Z",
+          "affected_components": [
+            {
+              "code": "7qwkswh276f8",
+              "name": "Dedicated Servers || Global Infrastructure - WAW",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "7qwkswh276f8",
+          "name": "WAW",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:29.102Z",
+          "updated_at": "2026-03-18T09:24:29.832Z",
+          "position": 9,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "scheduled_for": "2026-04-14T07:00:00.000Z",
+      "scheduled_until": "2026-04-14T08:30:00.000Z"
     },
     {
       "id": "gmvc9x0x2clz",
@@ -6064,114 +6300,6 @@
       "scheduled_until": "2026-04-22T07:00:00.000Z"
     },
     {
-      "id": "40cn73qtbc8b",
-      "name": "[ERI1][Dedicated Servers] - Rack E101A04 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-03T20:27:53.441Z",
-      "updated_at": "2026-03-03T20:27:53.556Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/svy9cdfs7hxr",
-      "started_at": "2026-03-03T20:27:53.434Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "8r3sjq1thxbf",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 22/04/2026 07:00 UTC \n<b>End time :</b> 22/04/2026 09:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101A04 to rack ERI0102F01A.\n\nThank you for your understanding.",
-          "incident_id": "40cn73qtbc8b",
-          "created_at": "2026-03-03T20:27:53.553Z",
-          "updated_at": "2026-03-03T20:27:53.553Z",
-          "display_at": "2026-03-03T20:27:53.553Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2026-03-25T12:09:28.423Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-22T07:00:00.000Z",
-      "scheduled_until": "2026-04-22T09:00:00.000Z"
-    },
-    {
-      "id": "8hhz1w0xdmz4",
-      "name": "[GRA4][Dedicated Servers] - Rack GRA0403C02B maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-23T10:43:44.189Z",
-      "updated_at": "2026-03-23T10:43:44.252Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/115tqtm0xq5t",
-      "started_at": "2026-03-23T10:43:44.180Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "d31n3b983g8w",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our electrical infrastructure in rack GRA0403C02B.\n\n<b>Start time :</b> 22/04/2026 07:00 UTC\n<b>End time :</b> 22/04/2026 16:00 UTC\n<b>Service impact :</b> Servers will be unavailable during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our electrical infrastructure.\n\nThank you for your understanding.",
-          "incident_id": "8hhz1w0xdmz4",
-          "created_at": "2026-03-23T10:43:44.249Z",
-          "updated_at": "2026-03-23T10:43:44.249Z",
-          "display_at": "2026-03-23T10:43:44.249Z",
-          "affected_components": [
-            {
-              "code": "jkwghz2dnq89",
-              "name": "Dedicated Servers || Global Infrastructure - GRA",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "jkwghz2dnq89",
-          "name": "GRA",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:23.778Z",
-          "updated_at": "2026-04-03T00:18:10.383Z",
-          "position": 3,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-22T07:00:00.000Z",
-      "scheduled_until": "2026-04-22T16:00:00.000Z"
-    },
-    {
       "id": "pm1y8jywg1nb",
       "name": "[GRA4][Dedicated Servers] - Rack GRA0403D02B maintenance notification",
       "status": "scheduled",
@@ -6226,30 +6354,30 @@
       "scheduled_until": "2026-04-22T16:00:00.000Z"
     },
     {
-      "id": "kntpq5bm6jbp",
-      "name": "[ERI1][Dedicated Servers] - Rack E101E13 maintenance notification",
+      "id": "8hhz1w0xdmz4",
+      "name": "[GRA4][Dedicated Servers] - Rack GRA0403C02B maintenance notification",
       "status": "scheduled",
-      "created_at": "2026-03-03T20:29:20.914Z",
-      "updated_at": "2026-03-03T20:29:20.985Z",
+      "created_at": "2026-03-23T10:43:44.189Z",
+      "updated_at": "2026-03-23T10:43:44.252Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "maintenance",
-      "shortlink": "https://stspg.io/3kppbrrs6hfj",
-      "started_at": "2026-03-03T20:29:20.905Z",
+      "shortlink": "https://stspg.io/115tqtm0xq5t",
+      "started_at": "2026-03-23T10:43:44.180Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "hf5tzy066kz9",
+          "id": "d31n3b983g8w",
           "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 22/04/2026 11:00 UTC \n<b>End time :</b> 22/04/2026 14:00 UTC\n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101E13 to rack ERI0102D01C.\n\nThank you for your understanding.",
-          "incident_id": "kntpq5bm6jbp",
-          "created_at": "2026-03-03T20:29:20.981Z",
-          "updated_at": "2026-03-03T20:29:20.981Z",
-          "display_at": "2026-03-03T20:29:20.981Z",
+          "body": "As part of our continuous improvement plan, we will be carrying out a maintenance on our electrical infrastructure in rack GRA0403C02B.\n\n<b>Start time :</b> 22/04/2026 07:00 UTC\n<b>End time :</b> 22/04/2026 16:00 UTC\n<b>Service impact :</b> Servers will be unavailable during the maintenance.\n<b>Service improvement :</b> As part of our continuous improvement policy, we will be doing a maintenance on our electrical infrastructure.\n\nThank you for your understanding.",
+          "incident_id": "8hhz1w0xdmz4",
+          "created_at": "2026-03-23T10:43:44.249Z",
+          "updated_at": "2026-03-23T10:43:44.249Z",
+          "display_at": "2026-03-23T10:43:44.249Z",
           "affected_components": [
             {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
+              "code": "jkwghz2dnq89",
+              "name": "Dedicated Servers || Global Infrastructure - GRA",
               "old_status": "operational",
               "new_status": "operational"
             }
@@ -6261,12 +6389,12 @@
       ],
       "components": [
         {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
+          "id": "jkwghz2dnq89",
+          "name": "GRA",
           "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2026-03-25T12:09:28.423Z",
-          "position": 2,
+          "created_at": "2021-07-09T07:33:23.778Z",
+          "updated_at": "2026-04-03T00:18:10.383Z",
+          "position": 3,
           "description": null,
           "showcase": false,
           "start_date": "2021-07-09",
@@ -6276,62 +6404,8 @@
           "only_show_if_degraded": false
         }
       ],
-      "scheduled_for": "2026-04-22T11:00:00.000Z",
-      "scheduled_until": "2026-04-22T14:00:00.000Z"
-    },
-    {
-      "id": "jfmx7ry0kqwm",
-      "name": "[ERI1][Dedicated Servers] - Rack E101A09 maintenance notification",
-      "status": "scheduled",
-      "created_at": "2026-03-03T20:31:09.915Z",
-      "updated_at": "2026-03-03T20:31:09.980Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "maintenance",
-      "shortlink": "https://stspg.io/q5n2xwnc8vmz",
-      "started_at": "2026-03-03T20:31:09.907Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "f2pc8m0wnks2",
-          "status": "scheduled",
-          "body": "As part of our continuous improvement plan, maintenance is scheduled on our dedicated servers offer.  \n\n<b>Start time :</b> 22/04/2026 20:00 UTC \n<b>End time :</b> 22/04/2026 22:00 UTC \n<b>Service impact :</b> Servers will be unavailable during the maintenance for 90 minutes each. \n<b>Service improvement :</b> As part of our continuous improvement policy for our infrastructure, we will be relocating the servers currently located in rack E101A09 to rack ERI0102F01A.\n\nThank you for your understanding.",
-          "incident_id": "jfmx7ry0kqwm",
-          "created_at": "2026-03-03T20:31:09.977Z",
-          "updated_at": "2026-03-03T20:31:09.977Z",
-          "display_at": "2026-03-03T20:31:09.977Z",
-          "affected_components": [
-            {
-              "code": "klylb1cv9dvj",
-              "name": "Dedicated Servers || Global Infrastructure - ERI",
-              "old_status": "operational",
-              "new_status": "operational"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "klylb1cv9dvj",
-          "name": "ERI",
-          "status": "operational",
-          "created_at": "2021-07-09T07:33:22.787Z",
-          "updated_at": "2026-03-25T12:09:28.423Z",
-          "position": 2,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "scheduled_for": "2026-04-22T20:00:00.000Z",
-      "scheduled_until": "2026-04-22T22:00:00.000Z"
+      "scheduled_for": "2026-04-22T07:00:00.000Z",
+      "scheduled_until": "2026-04-22T16:00:00.000Z"
     },
     {
       "id": "tcffr8f1nr6h",
@@ -6422,7 +6496,7 @@
     }
   ],
   "status": {
-    "indicator": "maintenance",
-    "description": "Service Under Maintenance"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
