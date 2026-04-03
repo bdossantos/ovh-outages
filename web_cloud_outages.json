@@ -4,7 +4,7 @@
     "name": "Web Cloud",
     "url": "https://web-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-03T04:58:51.344Z"
+    "updated_at": "2026-04-03T07:46:59.099Z"
   },
   "components": [
     {
@@ -1155,7 +1155,7 @@
     {
       "id": "7935ckb29tc8",
       "name": "Collaborative solutions || MX Plan",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:06.827Z",
       "updated_at": "2023-05-16T12:09:06.686Z",
       "position": 5,
@@ -1268,9 +1268,9 @@
     {
       "id": "1lkpr13cqg9b",
       "name": "Delivery",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-06-30T12:22:04.433Z",
-      "updated_at": "2026-03-11T10:43:15.148Z",
+      "updated_at": "2026-04-03T07:46:59.036Z",
       "position": 6,
       "description": null,
       "showcase": false,
@@ -2871,7 +2871,61 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "wk2n53jvg6db",
+      "name": "[GLOBAL][Collaborative solutions] - MX Plan incident notification",
+      "status": "investigating",
+      "created_at": "2026-04-03T07:46:58.999Z",
+      "updated_at": "2026-04-03T07:46:59.096Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/k96pf0k18q6l",
+      "started_at": "2026-04-03T07:46:58.990Z",
+      "page_id": "gw3vvyn2b3bh",
+      "incident_updates": [
+        {
+          "id": "tgq9k98rzx4n",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Collaborative solutions offering, which is causing temporary functionality issue on MX Plan delivery services.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 03/04/2026 07:20 UTC\n<b>Impacted Service(s) :</b> Mail-out service temporarily degraded.\n<b>Customers Impact :</b> Delay or failure in sending customer's emails. Deliveries to specific destinations may be particularly impacted (e.g., Gmail, Orange, or hosted Exchange services).\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "wk2n53jvg6db",
+          "created_at": "2026-04-03T07:46:59.093Z",
+          "updated_at": "2026-04-03T07:46:59.093Z",
+          "display_at": "2026-04-03T07:46:59.093Z",
+          "affected_components": [
+            {
+              "code": "1lkpr13cqg9b",
+              "name": "Collaborative solutions || MX Plan - Delivery",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1lkpr13cqg9b",
+          "name": "Delivery",
+          "status": "partial_outage",
+          "created_at": "2021-06-30T12:22:04.433Z",
+          "updated_at": "2026-04-03T07:46:59.036Z",
+          "position": 6,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-06-29",
+          "group_id": "7935ckb29tc8",
+          "page_id": "gw3vvyn2b3bh",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "pdd43dy9zrw3",
@@ -3292,7 +3346,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
