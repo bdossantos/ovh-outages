@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-09T15:16:28.056Z"
+    "updated_at": "2026-04-09T16:29:07.295Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "partial_outage",
+      "status": "under_maintenance",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1366,9 +1366,9 @@
     {
       "id": "ndg1yh0x4lpd",
       "name": "RBX",
-      "status": "partial_outage",
+      "status": "operational",
       "created_at": "2021-07-09T07:33:24.688Z",
-      "updated_at": "2026-04-09T12:13:24.652Z",
+      "updated_at": "2026-04-09T16:29:07.235Z",
       "position": 5,
       "description": null,
       "showcase": false,
@@ -3633,27 +3633,33 @@
   ],
   "incidents": [
     {
-      "id": "svp300fdwy5y",
-      "name": "[RBX8][Dedicated Servers] - Rack R821L02/R821L03  Incident Notification",
+      "id": "9z918tm65jvl",
+      "name": "[RBX4][Dedicated Servers] - Rack 51B17 incident notification",
       "status": "identified",
-      "created_at": "2026-04-09T13:16:10.081Z",
-      "updated_at": "2026-04-09T15:16:28.046Z",
+      "created_at": "2026-04-09T15:59:11.780Z",
+      "updated_at": "2026-04-09T16:10:58.443Z",
       "monitoring_at": null,
       "resolved_at": null,
       "impact": "major",
-      "shortlink": "https://stspg.io/0y6vq6xrmdv7",
-      "started_at": "2026-04-09T13:16:10.000Z",
+      "shortlink": "https://stspg.io/lqlx7dv1zl67",
+      "started_at": "2026-04-09T15:59:11.000Z",
       "page_id": "1qzzx4z9jvmv",
       "incident_updates": [
         {
-          "id": "t9cpzht0szf4",
+          "id": "0ylk4t1zd3gp",
           "status": "identified",
-          "body": "Please find below an update on the situation:\n\n\n<b>Service impact :</b> Some servers in the rack R821L03 are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified rack.\n\n<b>Service impact :</b> vRack network was temporarily unavailable in the rack R821L02.\n<b>Customers Impact :</b> Customers were temporarily unable to access and use their servers through vRack network.\n<b>End time :</b> 09/04/2026 15:06 UTC\n\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nThank you for your understanding.",
-          "incident_id": "svp300fdwy5y",
-          "created_at": "2026-04-09T15:16:28.043Z",
-          "updated_at": "2026-04-09T15:16:28.043Z",
-          "display_at": "2026-04-09T15:16:28.043Z",
+          "body": "We are continuing to work on a fix for this issue.",
+          "incident_id": "9z918tm65jvl",
+          "created_at": "2026-04-09T15:59:54.126Z",
+          "updated_at": "2026-04-09T15:59:54.126Z",
+          "display_at": "2026-04-09T15:59:54.126Z",
           "affected_components": [
+            {
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
             {
               "code": "r7966tc9cpb9",
               "name": "Dedicated Servers || Network - RBX",
@@ -3666,18 +3672,18 @@
           "tweet_id": null
         },
         {
-          "id": "8qwmj28c3zd9",
+          "id": "xwt0g1bqjhcc",
           "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer in R821L02.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 09/04/2026 12:54 UTC\n<b>Impacted Service(s) :</b> The vRack network in R821L02 is temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers via vRack network located on the specified rack.\n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "svp300fdwy5y",
-          "created_at": "2026-04-09T13:16:10.176Z",
-          "updated_at": "2026-04-09T13:35:06.822Z",
-          "display_at": "2026-04-09T13:16:10.000Z",
+          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack 51B17.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 09/04/2026 15:47 UTC\n<b>Impacted Service(s) :</b> Public network is temporarily unavailable for servers located in the rack 51B17.\n<b>Customers Impact :</b> Customers are temporarily unable to access and use their servers in the specified rack. \n<b>Root Cause :</b> This incident is caused by a network equipment issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "9z918tm65jvl",
+          "created_at": "2026-04-09T15:59:11.833Z",
+          "updated_at": "2026-04-09T16:10:58.438Z",
+          "display_at": "2026-04-09T15:59:11.000Z",
           "affected_components": [
             {
-              "code": "r7966tc9cpb9",
-              "name": "Dedicated Servers || Network - RBX",
-              "old_status": "operational",
+              "code": "ndg1yh0x4lpd",
+              "name": "Dedicated Servers || Global Infrastructure - RBX",
+              "old_status": "partial_outage",
               "new_status": "partial_outage"
             }
           ],
@@ -3687,6 +3693,21 @@
         }
       ],
       "components": [
+        {
+          "id": "ndg1yh0x4lpd",
+          "name": "RBX",
+          "status": "operational",
+          "created_at": "2021-07-09T07:33:24.688Z",
+          "updated_at": "2026-04-09T16:29:07.235Z",
+          "position": 5,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        },
         {
           "id": "r7966tc9cpb9",
           "name": "RBX",
@@ -3703,60 +3724,7 @@
           "only_show_if_degraded": false
         }
       ],
-      "reminder_intervals": "[]"
-    },
-    {
-      "id": "m92b1gdkh6hp",
-      "name": "[RBX8][Dedicated Servers] - Rack RBX0840F01A incident notification",
-      "status": "identified",
-      "created_at": "2026-04-09T12:13:24.596Z",
-      "updated_at": "2026-04-09T12:13:24.785Z",
-      "monitoring_at": null,
-      "resolved_at": null,
-      "impact": "major",
-      "shortlink": "https://stspg.io/n49ytmtq3hxk",
-      "started_at": "2026-04-09T12:13:24.587Z",
-      "page_id": "1qzzx4z9jvmv",
-      "incident_updates": [
-        {
-          "id": "sj2gld448k1c",
-          "status": "identified",
-          "body": "We are currently experiencing an ongoing incident. We have determined the origin of the issue affecting our Dedicated Servers offer on the specific rack RBX0840F01A.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 09/04/2026 11:40 UTC\n<b>Impacted Service(s) :</b> Some servers in the rack RBX0840F01A are temporarily unavailable.\n<b>Customers Impact :</b> Some customers are temporarily unable to access and use their servers in the specified rack. \n<b>Root Cause :</b> This incident is caused by a cooling system issue.\n<b>Ongoing Actions :</b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
-          "incident_id": "m92b1gdkh6hp",
-          "created_at": "2026-04-09T12:13:24.783Z",
-          "updated_at": "2026-04-09T12:13:24.783Z",
-          "display_at": "2026-04-09T12:13:24.783Z",
-          "affected_components": [
-            {
-              "code": "ndg1yh0x4lpd",
-              "name": "Dedicated Servers || Global Infrastructure - RBX",
-              "old_status": "operational",
-              "new_status": "partial_outage"
-            }
-          ],
-          "deliver_notifications": true,
-          "custom_tweet": null,
-          "tweet_id": null
-        }
-      ],
-      "components": [
-        {
-          "id": "ndg1yh0x4lpd",
-          "name": "RBX",
-          "status": "partial_outage",
-          "created_at": "2021-07-09T07:33:24.688Z",
-          "updated_at": "2026-04-09T12:13:24.652Z",
-          "position": 5,
-          "description": null,
-          "showcase": false,
-          "start_date": "2021-07-09",
-          "group_id": "qbnk4c01glsl",
-          "page_id": "1qzzx4z9jvmv",
-          "group": false,
-          "only_show_if_degraded": false
-        }
-      ],
-      "reminder_intervals": "[]"
+      "reminder_intervals": null
     }
   ],
   "scheduled_maintenances": [
