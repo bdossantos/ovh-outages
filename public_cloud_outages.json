@@ -4,7 +4,7 @@
     "name": "Public Cloud",
     "url": "https://public-cloud.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-16T10:53:52.039Z"
+    "updated_at": "2026-04-16T13:20:35.398Z"
   },
   "components": [
     {
@@ -6650,9 +6650,9 @@
     {
       "id": "rtf74dt95spd",
       "name": "EU-WEST-PAR-A",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-03-03T10:40:54.721Z",
-      "updated_at": "2026-02-28T15:49:26.151Z",
+      "updated_at": "2026-04-16T12:56:01.415Z",
       "position": 15,
       "description": null,
       "showcase": false,
@@ -6864,9 +6864,9 @@
     {
       "id": "7pn0z4rqrxvc",
       "name": "EU-WEST-PAR-B",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-03-03T10:42:10.401Z",
-      "updated_at": "2026-02-28T15:49:26.169Z",
+      "updated_at": "2026-04-16T12:56:01.438Z",
       "position": 16,
       "description": null,
       "showcase": false,
@@ -7078,9 +7078,9 @@
     {
       "id": "cf0zfm36rq3b",
       "name": "EU-WEST-PAR-C",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2025-03-03T10:43:51.614Z",
-      "updated_at": "2026-02-28T15:49:26.184Z",
+      "updated_at": "2026-04-16T12:56:01.454Z",
       "position": 17,
       "description": null,
       "showcase": false,
@@ -9992,7 +9992,7 @@
     {
       "id": "yr9swqk9s0j8",
       "name": "Storage || Object storage",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2022-04-06T09:42:01.390Z",
       "updated_at": "2026-03-03T15:52:22.136Z",
       "position": 61,
@@ -10182,6 +10182,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "93q46l6nnycr",
+      "name": "[EU-WEST-PAR][Storage] - Object Storage Incident Notification",
+      "status": "investigating",
+      "created_at": "2026-04-16T12:56:01.378Z",
+      "updated_at": "2026-04-16T12:58:04.888Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/4f0rns7rhz1v",
+      "started_at": "2026-04-16T12:56:01.000Z",
+      "page_id": "6j41kzyhcr9g",
+      "incident_updates": [
+        {
+          "id": "gkg7l3jh3ftt",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Storage offering, which is causing temporary availability issue in the PAR region.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 16/04/2026 11:35 UTC\n<b>Impacted Service(s) :</b> The object storage service is temporarily unavailable.\n<b>Customers Impact :</b> Customers in the EU-WEST-PAR region may temporarily encounter 503 errors on their object storage.\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "93q46l6nnycr",
+          "created_at": "2026-04-16T12:56:01.525Z",
+          "updated_at": "2026-04-16T12:58:04.825Z",
+          "display_at": "2026-04-16T12:56:01.000Z",
+          "affected_components": [
+            {
+              "code": "rtf74dt95spd",
+              "name": "Storage || Object storage - EU-WEST-PAR-A",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "7pn0z4rqrxvc",
+              "name": "Storage || Object storage - EU-WEST-PAR-B",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "cf0zfm36rq3b",
+              "name": "Storage || Object storage - EU-WEST-PAR-C",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rtf74dt95spd",
+          "name": "EU-WEST-PAR-A",
+          "status": "partial_outage",
+          "created_at": "2025-03-03T10:40:54.721Z",
+          "updated_at": "2026-04-16T12:56:01.415Z",
+          "position": 15,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "7pn0z4rqrxvc",
+          "name": "EU-WEST-PAR-B",
+          "status": "partial_outage",
+          "created_at": "2025-03-03T10:42:10.401Z",
+          "updated_at": "2026-04-16T12:56:01.438Z",
+          "position": 16,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "cf0zfm36rq3b",
+          "name": "EU-WEST-PAR-C",
+          "status": "partial_outage",
+          "created_at": "2025-03-03T10:43:51.614Z",
+          "updated_at": "2026-04-16T12:56:01.454Z",
+          "position": 17,
+          "description": null,
+          "showcase": false,
+          "start_date": "2025-03-03",
+          "group_id": "yr9swqk9s0j8",
+          "page_id": "6j41kzyhcr9g",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
     {
       "id": "5mb5m9d1p23d",
       "name": "[GLOBAL][Databases] - PostgreSQL 18 incident notification",
@@ -13842,7 +13937,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
