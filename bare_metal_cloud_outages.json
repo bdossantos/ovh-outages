@@ -4,7 +4,7 @@
     "name": "Bare Metal Cloud",
     "url": "https://bare-metal-servers.status-ovhcloud.com",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-04-17T04:08:46.544Z"
+    "updated_at": "2026-04-17T06:20:34.037Z"
   },
   "components": [
     {
@@ -883,7 +883,7 @@
     {
       "id": "qbnk4c01glsl",
       "name": "Dedicated Servers || Global Infrastructure",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:36.186Z",
       "updated_at": "2023-05-16T11:45:36.934Z",
       "position": 3,
@@ -1143,9 +1143,9 @@
     {
       "id": "9y37g21l733b",
       "name": "LIM",
-      "status": "operational",
+      "status": "partial_outage",
       "created_at": "2021-07-09T07:33:26.565Z",
-      "updated_at": "2026-04-15T11:51:52.009Z",
+      "updated_at": "2026-04-17T05:54:11.230Z",
       "position": 4,
       "description": null,
       "showcase": false,
@@ -3663,7 +3663,81 @@
       "only_show_if_degraded": false
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "lnbqnd76lqpg",
+      "name": "[LIM3][Dedicated Servers] - Rack LIM0314B03B incident notification",
+      "status": "identified",
+      "created_at": "2026-04-17T05:54:11.195Z",
+      "updated_at": "2026-04-17T06:15:14.708Z",
+      "monitoring_at": null,
+      "resolved_at": null,
+      "impact": "major",
+      "shortlink": "https://stspg.io/vhxtb90j6g3r",
+      "started_at": "2026-04-17T05:54:11.187Z",
+      "page_id": "1qzzx4z9jvmv",
+      "incident_updates": [
+        {
+          "id": "tckhvjv5jvc7",
+          "status": "identified",
+          "body": "We have new information regarding the incident that affected your service(s).\n\nPlease find below an update on the situation:\n<b>Update : </b> The incident has been identified and our teams are mobilised to restore service as quickly as possible.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "lnbqnd76lqpg",
+          "created_at": "2026-04-17T06:15:14.706Z",
+          "updated_at": "2026-04-17T06:15:14.706Z",
+          "display_at": "2026-04-17T06:15:14.706Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "m9l8hslpdlr3",
+          "status": "investigating",
+          "body": "We are currently investigating an incident affecting our Dedicated Servers offering, which is causing temporary availability issue in the rack LIM0314B03B.\n\nHere are some supplementary details :\n\n<b>Start time :</b> 17/04/2026 05:46 UTC\n<b>Impacted Service(s) :</b> All servers in the rack LIM0314B03B are temporarily unavailable.\n<b>Customers Impact :</b> Customers are temporarily unable to access their servers located on the specified racks\n<b>Ongoing Actions :</b> Our teams are investigating to determine the origin of the incident and fix it.\n\nWe will keep you updated on the progress and resolution.\n\nWe apologize for any inconvenience caused and appreciate your understanding.",
+          "incident_id": "lnbqnd76lqpg",
+          "created_at": "2026-04-17T05:54:11.319Z",
+          "updated_at": "2026-04-17T05:54:11.319Z",
+          "display_at": "2026-04-17T05:54:11.319Z",
+          "affected_components": [
+            {
+              "code": "9y37g21l733b",
+              "name": "Dedicated Servers || Global Infrastructure - LIM",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "9y37g21l733b",
+          "name": "LIM",
+          "status": "partial_outage",
+          "created_at": "2021-07-09T07:33:26.565Z",
+          "updated_at": "2026-04-17T05:54:11.230Z",
+          "position": 4,
+          "description": null,
+          "showcase": false,
+          "start_date": "2021-07-09",
+          "group_id": "qbnk4c01glsl",
+          "page_id": "1qzzx4z9jvmv",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    }
+  ],
   "scheduled_maintenances": [
     {
       "id": "yq68jnd3ygd7",
@@ -3703,9 +3777,9 @@
         {
           "id": "9y37g21l733b",
           "name": "LIM",
-          "status": "operational",
+          "status": "partial_outage",
           "created_at": "2021-07-09T07:33:26.565Z",
-          "updated_at": "2026-04-15T11:51:52.009Z",
+          "updated_at": "2026-04-17T05:54:11.230Z",
           "position": 4,
           "description": null,
           "showcase": false,
@@ -5881,7 +5955,7 @@
     }
   ],
   "status": {
-    "indicator": "none",
-    "description": "All Systems Operational"
+    "indicator": "minor",
+    "description": "Minor Service Outage"
   }
 }
